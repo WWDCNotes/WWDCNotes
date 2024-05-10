@@ -1,2 +1,1 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+// Placeholder to ensure Xcode recognizes this as a framework. Notes reside within `WWDCNotes.docc`.
