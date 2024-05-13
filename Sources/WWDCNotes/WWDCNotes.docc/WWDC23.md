@@ -1,79 +1,46 @@
 # WWDC23
 
 Xcode 15, Swift 5.9, iOS 17, macOS 14, tvOS 17, visionOS 1, watchOS 10.
+New APIs: ``SwiftData``, ``Observation``, ``StoreKit`` views, and more. 
 
-## First Day Events
-
-### Consumer Keynote (Apple Event)
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-### Developer Keynote (Platforms State of the Union)
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3 
-
-### Apple Design Awards
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-## Introducting to New Tools or Frameworks
-
-### Meet SwiftData
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-### Meet StoreKit for SwiftUI
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-### Meet ActivityKit
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-### Meet Swift OpenAPI Generator
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-### Meet Reality Composer Pro
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-## Updates to Existing Tools
-
-### What's new in Swift
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-### What's new in Xcode
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
-
-### What's new in privacy
-
-- Mini Summary Point 1
-- Mini Summary Point 2
-- Mini Summary Point 3
+@Metadata {
+   @TitleHeading("Overview")
+}
 
 
+## Topics
 
-## Deep Dives into Topics
+### First Day Events
+
+@Links(visualStyle: list) {
+   - <doc:WWDC23-101-Consumer-Keynote>
+   - <doc:WWDC23-102-Developer-Keynote>
+   - Apple Design Awards
+}
+
+
+### New Tools & Frameworks
+
+@Links(visualStyle: list) {
+   - <doc:WWDC23-10187-Meet-SwiftData>
+   - Meet StoreKit for SwiftUI
+   - Meet ActivityKit
+   - Meet Swift OpenAPI Generator
+   - Meet Reality Composer Pro
+}
+
+
+### Updates to Tools & Frameworks
+
+@Links(visualStyle: list) {
+   - What's new in Swift
+   - What's new in Xcode
+   - What's new in privacy
+}
+
+
+### Deep Dives into Topics
+
+@Links(visualStyle: list) {
+   - TODO
+}
