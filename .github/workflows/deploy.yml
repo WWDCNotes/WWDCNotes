@@ -31,12 +31,12 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Build Documentation
-        run: >
-          swift package --allow-writing-to-directory ./docs
-            generate-documentation --target WWDCNotes
-            --disable-indexing
-            --transform-for-static-hosting
-            --hosting-base-path WWDCNotes
+        run: |
+          swift package --allow-writing-to-directory ./docs \
+            generate-documentation --target WWDCNotes \
+            --disable-indexing \
+            --transform-for-static-hosting \
+            --hosting-base-path WWDCNotes \
             --output-path ./docs
       
       - name: Setup Pages
