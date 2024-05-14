@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout
+      - name: Check out code
         uses: actions/checkout@v4
 
       - name: Install Swift
@@ -41,8 +41,14 @@ jobs:
             --transform-for-static-hosting \
             --hosting-base-path WWDCNotes \
             --output-path ./docs
+
+      - name: Override Favicons
+        run: |
+          rm ./docs/favicon.svg
+          rm ./docs/favicon.ico
+          cp ./favicon.ico ./docs/favicon.ico
       
-      - name: Deploy 🚀
+      - name: Deploy to Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.0
         with:
           branch: gh-pages
