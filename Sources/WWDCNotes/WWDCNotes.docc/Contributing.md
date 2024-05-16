@@ -35,7 +35,7 @@ The **first step** to edit or create notes is to **check out the WWDCNotes Git r
 From there, there are two possible paths for you:
 
 1. If you **already know** which session you want to provide notes for, you can simply search for the session title by using `Cmd+Shift+O` in Xcode and open the note. We auto-generate a page for every session, so there should be at least an empty file with stubs.
-2. If you're looking for sessions that have no notes yet, check out [this page](TODO) which lists all uncovered sessions.
+2. If you're looking for **sessions that have no notes** yet, check out [this page](TODO) which lists all uncovered sessions.
 
 If WWDC week just recently happened (= less than 2 weeks ago), then please additionally look into [this discussion](https://github.com/WWDCNotes/WWDCNotes/discussions/1) to avoid ongoing work in parallel on the same session.
 
@@ -65,3 +65,8 @@ Having this said, there are a few guidelines that make sure that what we are hos
 - While quoting of individual phrases is fine, don't quote entire blocks of text. 
 - While taking individual screenshots of the sessions is fine, avoid creating a picture book.
 - While a short personal take can help clarify context, stay close to the session in general.
+
+
+### Live Previews in Xcode
+
+TODO

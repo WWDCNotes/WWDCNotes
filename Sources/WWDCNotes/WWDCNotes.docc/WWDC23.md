@@ -30,7 +30,7 @@ New APIs: ``SwiftData``, ``Observation``, ``StoreKit`` views, and more.
 }
 
 
-### Updates to Tools & Frameworks
+### Updated Tools & Frameworks
 
 @Links(visualStyle: list) {
    - What's new in Swift
