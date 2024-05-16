@@ -6,7 +6,7 @@ All you need is Xcode and some time to watch a WWDC session video.
 @Metadata {
    @TitleHeading("Guide")
    @PageKind(article)
-   @CallToAction(url: "https://github.com/WWDCNotes/WWDCNotes", purpose: link, label: "GitHub Repository")
+   @CallToAction(url: "xcode://clone?repo=https%3A%2F%2Fgithub.com%2FWWDCNotes%2FWWDCNotes", purpose: link, label: "Clone Repo in Xcode")
 }
 
 ## Overview
@@ -14,7 +14,7 @@ All you need is Xcode and some time to watch a WWDC session video.
 This detailed guide explains everything you need to know to contribute to the WWDC Notes project. Anyone with a Mac can help, your experience level doesn't matter. Our goal is to cover 100% of all WWDC sessions with notes to save developers time. We can't reach that goal without your help!
 
 
-### Getting Started
+### Introduction
 
 Creating notes for a WWDC session is as simple as writing some basic [Markdown](https://www.markdownguide.org/basic-syntax/), a super simple text format. Markdown allows you to easily create titles, lists and code blocks. And Xcode will show you a live preview of how things will look on the website, which also means you get live feedback about broken links to images if you misspelled the file name.
 
@@ -25,25 +25,43 @@ WWDC Notes is using [Swift-DocC](https://www.swift.org/documentation/docc/), App
 3. [Adding Boxes for Notes, Warnings, etc.](https://www.swift.org/documentation/docc/other-formatting-options)
 4. [Adding Images (with support for Dark Mode)](https://www.swift.org/documentation/docc/adding-images)
 
-Here are some additional notes
+Note that while it's possible to provide image variants at different resolutions and even for dark mode, most notes will probably just need a simple singular image. No need to overcomplicate things.
 
-### Structure & Length of Notes 
 
-Other than the technical requirements outlined above (which are a result of using DocC), there are no strict rules as to how notes should be taken and structured. Everyone learns differently, and everyone prioritizes things differently. So you should really just ask yourself what kind of note would you personally find most useful for this specific session, and just write that.
+### Getting Started
 
-While you could look into some of the existing notes to get inspired, please note that sessions are very different by their very nature. Some sessions are overview sessions covering many topics & APIs without going very deep. Other sessions are deep dives and you might actually skip a specific section while watching the video because that aspect is not relevant for you. (In that case, please document the skipped parts in the note so others can fill the gaps.) Some sessions aren't even targeted to developers only, but cover more general things like design or privacy considerations. And some sessions even are practical code-alongs.
+The **first step** to edit or create notes is to **check out the WWDCNotes Git repository**. The easiest way to do this is to press the "Clone Repo in Xcode" button at the top of this page. Then, just confirm the `main` branch and choose the folder you want to clone it to.
 
-There is not **one** structure or length that makes sense for all notes. So don't feel like you have to follow a specific note taking style or stop after a specific length. Just do what you think would provide most benefits to yourself when reading your notes a few months later, that's probably also the best you can contribute for other people. This project is about creating **useful** notes. For most topics being short and concise is probably more useful than being overly detailed. But there might be exceptions even for that.
+From there, there are two possible paths for you:
 
-### Guidelines
+1. If you **already know** which session you want to provide notes for, you can simply search for the session title by using `Cmd+Shift+O` in Xcode and open the note. We auto-generate a page for every session, so there should be at least an empty file with stubs.
+2. If you're looking for sessions that have no notes yet, check out [this page](TODO) which lists all uncovered sessions.
 
-Having this said, there are a few guidelines that make sure we we are hosting _notes_:
+If WWDC week just recently happened (= less than 2 weeks ago), then please additionally look into [this discussion](https://github.com/WWDCNotes/WWDCNotes/discussions/1) to avoid ongoing work in parallel on the same session.
 
-- While quoting of individual phrases is fine, don't quote entire blocks of text. We don't want to copy the session scripts. 
-- While taking individual screenshots of the sessions is fine to visualize concepts, avoid creating a picture book.
-- While a personal opinion can help put things into perspective sometimes, stay close to what was actually presented.
-- Avoid large files, such as high-res PNG images. Prefer JPEG/WebP format and resolutions up to 1600 pixels.
+
+### Image Name & Format
+
+- Please avoid whitespaces in image file names. The web renderer doesn't handle them well.
+- Prefix your image file names with the year and number of the session, e.g. `WWDC23-10187`.
+- Avoid adding high-res PNG images. Prefer JPEG/WebP and resolutions up to 1600 pixels.
 
 > Tip: You can batch-convert images to JPEG (large) via the [Quick Actions menu in Finder](https://support.apple.com/en-us/guide/mac-help/mchl97ff9142/mac).
 
-TODO: complete article
+
+### Structure & Length
+
+Besides the technical requirements from using DocC, there are no strict rules for note-taking. Everyone learns and prioritizes differently. Focus on creating notes that you personally find useful for each session.
+
+You can look at existing notes for inspiration, but remember that sessions vary. Some are broad overviews, while others are deep dives into specific topics. If you skip sections of a video because they're not relevant, document that in the notes so others can fill in the gaps.
+
+There isn’t **one** right structure or length for all notes. Don’t feel obliged to follow a specific style or length. Create notes that will be most beneficial to you in the future, as this will likely be helpful to others too. The goal is to make **useful** notes. Generally, concise notes are more helpful than overly detailed ones, but there are exceptions.
+
+
+### Guidelines
+
+Having this said, there are a few guidelines that make sure that what we are hosting are _notes_:
+
+- While quoting of individual phrases is fine, don't quote entire blocks of text. 
+- While taking individual screenshots of the sessions is fine, avoid creating a picture book.
+- While a short personal take can help clarify context, stay close to the session in general.
