@@ -6,6 +6,7 @@ SwiftData is a powerful and expressive persistence framework built for Swift. We
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
    @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10187", purpose: link, label: "Watch Video")
+   
    @Contributors {
       @GitHubUser(mikakruschel)
       @GitHubUser(multitudes)
@@ -379,8 +380,9 @@ Learn more about using these frameworks together in our session:
    @Column(size: 4) {
       ## [Miká Kruschel](<doc:mikakruschel>)
       
-      Designer turned developer.
+      Some basic information about Miká gathered from GitHub.
       
+      [Contributed Notes](<doc:mikakruschel>)
       [GitHub](https://)
       [Website](https://)
       [Mastodon](https://)

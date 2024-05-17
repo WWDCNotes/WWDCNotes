@@ -27,6 +27,9 @@ WWDC Notes is using [Swift-DocC](https://www.swift.org/documentation/docc/), App
 
 Note that while it's possible to provide image variants at different resolutions and for dark mode, most notes will probably just need a simple singular image. No need to overcomplicate things.
 
+
+### Useful DocC Directives
+
 You can also use the `@Image` directive of DocC to include images rather than using Markdown:
 
 ```Swift
@@ -51,6 +54,13 @@ To place an image side by side with some text (like done in the next section bel
    }
 }
 ```
+
+Comments can be added with the `@Comment` directive like so:
+
+```Swift
+@Comment { This text will not be rendered on the final page. }
+```
+
 
 ### Getting Started
 
