@@ -1,10 +1,16 @@
 #  Miká Kruschel
 
-Software engineer with a strong passion for well-written code, thought-out composable architectures, automation, tests, and more.
+TODO: Add some description of contributor here
+
+@Metadata {
+   @TitleHeading("Contributors")
+   @PageKind(sampleCode)
+}
+
 
 ## About
 
-
+TODO
 
 
 ## Contributions

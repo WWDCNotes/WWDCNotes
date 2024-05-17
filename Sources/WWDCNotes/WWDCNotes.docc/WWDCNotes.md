@@ -38,3 +38,4 @@ Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnote
 - <doc:WWDC12>
 - <doc:WWDC11>
 - <doc:WWDC10>
+- <doc:Contributors>
