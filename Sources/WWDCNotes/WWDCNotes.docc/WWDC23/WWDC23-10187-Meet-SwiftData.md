@@ -1,16 +1,46 @@
 # Meet SwiftData
 
-SwiftData is a powerful and expressive persistence framework built for Swift. We’ll show you how you can model your data directly from Swift code, use SwiftData to work with your models, and integrate with SwiftUI.
+SwiftData is a powerful and expressive persistence framework built for Swift. We’ll show you how you can model your data directly from Swift code, use SwiftData to work with your models, and integrate with SwiftUI. By [Miká Kruschel](<doc:mikakruschel>).
 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
    @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10187", purpose: link, label: "Watch Video")
+   @Contributors {
+      @GitHubUser(mikakruschel)
+      @GitHubUser(multitudes)
+   }
 }
 
----
-contributors: mikakruschel, multitudes
----
+@Comment { TODO: Add chapter links during CI step before building docs. }
+
+## Key Takeaways
+
+📦 `@Model` macro for class \
+🔑 `@Attribute(.unique)` for fields \
+🔁 `@Relationship` for inverses/deletion \
+❌ `@Transient` to exclude \
+🌐 `@Environment(.modelContext)` context \
+🔍 `#Predicate` & `FetchDescriptor` in code \
+🔎 `@Query(sort:order:)` in view
+
+@Row {
+   @Column {
+      @Image(source: "WWDC23-10187-SwiftData")
+   }
+   @Column {
+      @Image(source: "WWDC23-10187-SwiftData")
+   }
+}
+@Row {
+   @Column {
+      @Image(source: "WWDC23-10187-SwiftData")
+   }
+   @Column {
+      @Image(source: "WWDC23-10187-SwiftData")
+   }
+}
+
 
 ## Chapters
 
@@ -316,14 +346,20 @@ Learn more about using these frameworks together in our session:
 
 ![SwiftData 2](WWDC23-10187-SwiftData2)
 
+
+@Comment { TODO: Add resources section to end during CI step before building docs. }
+
 ## Resources
 
 [Adopting SwiftData for a Core Data app](https://developer.apple.com/documentation/coredata/adopting_swiftdata_for_a_core_data_app)  
 [Have a question? Ask with tag wwdc2023-10187](https://developer.apple.com/forums/create/question?&tag1=719030&tag2=698030)  
 [Search the forums for tag wwdc2023-10187](https://developer.apple.com/forums/tags/wwdc2023-10187)  
-[SwiftData](https://developer.apple.com/documentation/SwiftData)  
+[SwiftData](https://developer.apple.com/documentation/SwiftData)
 
-# Related Videos
+@Comment { TODO: Add related videos section to end during CI step before building docs. }
+
+
+# Related Sessions
 
 [Build an app with SwiftData - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10154)  
 [Discover Observation in SwiftUI - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10149)  
@@ -331,4 +367,40 @@ Learn more about using these frameworks together in our session:
 [Migrate to SwiftData - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10189)  
 [Model your schema with SwiftData -                WWDC23](https://developer.apple.com/videos/play/wwdc2023/10195)  
 [What’s new in Swift - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10164)  
-[What’s new in SwiftUI - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10148)  
+[What’s new in SwiftUI - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10148)
+
+
+@Comment { TODO: Add written by section to end during CI step before building docs. }
+
+## Written by
+
+@Row(numberOfColumns: 5) {
+   @Column { ![Profile image of Miká Kruschel](https://avatars.githubusercontent.com/u/20423069?v=4) }
+   @Column(size: 4) {
+      ## [Miká Kruschel](<doc:mikakruschel>)
+      
+      Designer turned developer.
+      
+      [GitHub](https://)
+      [Website](https://)
+      [Mastodon](https://)
+   }
+}
+
+@Comment { TODO: Add legal notice section to end during CI step before building docs. }
+
+## Related Sessions
+
+@Links(visualStyle: list) {
+   - <doc:WWDC20>
+   - <doc:Contributing>
+}
+
+
+@Small {
+   **Legal Notice**
+   
+   All content copyright © 2012 – 2024 Apple Inc. All rights reserved.
+   Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, Apple Vision, Apple Watch, App Store, iPadOS, watchOS, visionOS, tvOS, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.
+   This website is not made by, affiliated with, nor endorsed by Apple.
+}
