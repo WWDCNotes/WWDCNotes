@@ -159,3 +159,12 @@ The takeaways section should not contain any links. It is good practice to provi
    }
 }
 ```
+
+
+@Small {
+   **Legal Notice**
+
+   All content copyright © 2012 – 2024 Apple Inc. All rights reserved.
+   Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, Apple Vision, Apple Watch, App Store, iPadOS, watchOS, visionOS, tvOS, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.
+   This website is not made by, affiliated with, nor endorsed by Apple.
+}
