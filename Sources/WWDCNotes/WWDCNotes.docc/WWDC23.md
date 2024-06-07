@@ -13,8 +13,8 @@ New APIs: ``SwiftData``, ``Observation``, ``StoreKit`` views, and more.
 ### First Day Events
 
 @Links(visualStyle: list) {
-   - <doc:WWDC23-101-Consumer-Keynote>
-   - <doc:WWDC23-102-Developer-Keynote>
+   - <doc:WWDC23-101-Keynote>
+   - <doc:WWDC23-102-Platforms-State-of-the-Union>
    - Apple Design Awards
 }
 

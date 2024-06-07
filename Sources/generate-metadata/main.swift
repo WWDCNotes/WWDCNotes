@@ -18,6 +18,17 @@ struct Contributor {
    }
 }
 
+let legalNotes = """
+
+   @Small {
+      **Legal Notice**
+
+      All content copyright © 2012 – 2024 Apple Inc. All rights reserved.
+      Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, Apple Vision, Apple Watch, App Store, iPadOS, watchOS, visionOS, tvOS, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.
+      This website is not made by, affiliated with, nor endorsed by Apple.
+   }
+   """
+
 let sessionByID = try Session.allSessionsByID()
 
 let events = ["WWDC23"]
@@ -26,6 +37,9 @@ var contributorsByProfile: [String: Contributor] = [:]
 var sessionIDsWithoutContributors: Set<String> = []
 var sessionIDsByProfile: [String: Set<String>] = [:]
 
+
+// MARK: Append 'Written by' section, Related Sessions section, and Legal Footer to all Notes
+
 for event in events {
    let eventSessionsPath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/\(event)"
    let sessionFileNames = try FileManager.default.contentsOfDirectory(atPath: eventSessionsPath).filter { $0.hasSuffix(".md") }
@@ -33,11 +47,7 @@ for event in events {
    let contributorRegex = try Regex(#"@GitHubUser\(([^\n]+)\)"#)
 
    for sessionFileName in sessionFileNames {
-      let sessionFileNameForSearch = sessionFileName
-         .replacing("Consumer-Keynote", with: "Keynote")
-         .replacing("Developer-Keynote", with: "Platforms-State-of-the-Union")
-
-      if let session = sessionByID.values.first(where: { $0.fileName.lowercased() + ".md" == sessionFileNameForSearch.lowercased() }) {
+      if let session = sessionByID.values.first(where: { $0.fileName.lowercased() + ".md" == sessionFileName.lowercased() }) {
          let sessionFilePath = "\(eventSessionsPath)/\(sessionFileName)"
          var sessionFileContents = try String(contentsOfFile: sessionFilePath, encoding: .utf8)
 
@@ -98,21 +108,15 @@ for event in events {
             sessionFileContents += "}\n\n"
          }
 
-         sessionFileContents += """
-            
-            @Small {
-               **Legal Notice**
-
-               All content copyright © 2012 – 2024 Apple Inc. All rights reserved.
-               Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, Apple Vision, Apple Watch, App Store, iPadOS, watchOS, visionOS, tvOS, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.
-               This website is not made by, affiliated with, nor endorsed by Apple.
-            }
-            """
+         sessionFileContents += legalNotes
 
          try sessionFileContents.write(toFile: sessionFilePath, atomically: true, encoding: .utf8)
       }
    }
 }
+
+
+// MARK: Generate all Contributor/<Profile>.md
 
 let contributorsPath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/Contributors"
 try FileManager.default.createDirectory(atPath: contributorsPath, withIntermediateDirectories: true)
@@ -165,10 +169,15 @@ for contributor in contributorsByProfile.values {
          """
    }
 
+   contributorFileContents += legalNotes
+
    try contributorFileContents.write(toFile: contributorFilePath, atomically: true, encoding: .utf8)
 }
 
-let contributorsOverviewFilpath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/Contributors.md"
+
+// MARK: Generate Contributors.md
+
+let contributorsOverviewFilePath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/Contributors.md"
 var contributorsOverviewContents = """
    # Contributors
 
@@ -188,4 +197,36 @@ var contributorsOverviewContents = """
 
    """
 
-try contributorsOverviewContents.write(toFile: contributorsOverviewFilpath, atomically: true, encoding: .utf8)
+contributorsOverviewContents += legalNotes
+
+try contributorsOverviewContents.write(toFile: contributorsOverviewFilePath, atomically: true, encoding: .utf8)
+
+
+// MARK: Generate MissingNotes.md
+
+let sessionsWithoutContributorsByYear = Dictionary(grouping: sessionIDsWithoutContributors.compactMap { sessionByID[$0] }, by: \.year)
+
+let missingNotesFilePath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/MissingNotes.md"
+var missingNotesContents = """
+   # Missing Sessions
+
+   This page gives you an overview of all sessions that have no notes yet. Many opportunities to contribute!
+
+   
+   """
+
+for (year, sessions) in sessionsWithoutContributorsByYear {
+   missingNotesContents += """
+
+      ## WWDC\(year - 2000)
+
+      @Links(visualStyle: list) {
+      \(sessions.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
+      }
+
+      """
+}
+
+missingNotesContents += legalNotes
+
+try missingNotesContents.write(toFile: missingNotesFilePath, atomically: true, encoding: .utf8)
