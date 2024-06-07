@@ -69,7 +69,7 @@ The **first step** to edit or create notes is to **check out the WWDCNotes Git r
 From there, there are two possible paths for you:
 
 1. If you **already know** which session you want to provide notes for, you can simply search for the session title by using `Cmd+Shift+O` in Xcode and open the note. We auto-generate a page for every session, so there should be at least an empty file with stubs.
-2. If you're looking for **sessions that have no notes** yet, check out [this page](TODO) which lists all uncovered sessions.
+2. If you're looking for **sessions that have no notes** yet, check out [this page](doc:MissingNotes) which lists all uncovered sessions.
 
 If the WWDC week just recently happened (= less than 2 weeks ago), then please additionally look into [this discussion](https://github.com/WWDCNotes/WWDCNotes/discussions/1) to avoid ongoing work in parallel on the same session.
 
@@ -79,13 +79,13 @@ If the WWDC week just recently happened (= less than 2 weeks ago), then please a
       
       1. Commit your changes locally in Xcode (see [Apple's Guide](https://developer.apple.com/documentation/xcode/tracking-code-changes-in-a-source-control-repository))
       1. [Fork the WWDCNotes repo](https://github.com/WWDCNotes/WWDCNotes/fork) on GitHub
-      1. Add your fork as another remote in Xcode (see image →)
+      1. Add your fork as another remote in Xcode (see image →/↓)
       1. Push your local changes to the fork
       1. Open your forks' GitHub page, navigate to "Pull Requests" and press "New pull request"
       1. Make sure the correct branch is selected in your repo, then press "Create pull request"
       1. Adjust the title to either "Create note '\<Session Title\>'" or "Update note '\<Session Title\>'" and press "Create" 🎉
       
-      Now one of the WWDC Notes maintainers will review your note, leave feedback if needed, or directly merge it. Thanks!
+      Now one of the WWDC Notes maintainers will review your note, leave feedback if needed, or directly merge it. Thank you for your help!
    }
    
    @Column(size: 1) {
@@ -96,11 +96,11 @@ If the WWDC week just recently happened (= less than 2 weeks ago), then please a
    
 ### Live Previews in Xcode
 
-To preview a note in Xcode while editing it, you need to open the Assistant Editor. The easiest way to do that is by holding all three keys left of the space bar on your keyboard (⌃ ⌥ ⌘) and pressing the ⏎ return key.
+To preview a note in Xcode while editing it, you need to open the Assistant Editor. Just hold all three keys left of the space bar on your keyboard (⌃ ⌥ ⌘) and press the ⏎ return key to toggle the Assistant Editor.
 
 @Image(source: "Contributing-Xcode-Live-Preview")
 
-> Tip: Sometimes the Assistant Editor might not refresh or show a blank screen. In those cases, you can quickly close & reopen the Assistant Editor with the shortcut. And make sure that "Documentation Preview" is selected in the Dropdown at the top of the Assistant Editor.
+> Tip: Sometimes the Assistant Editor might not refresh or show a blank screen. In those cases, you can quickly close & reopen the Assistant Editor by using the shortcut twie. And make sure that "Documentation Preview" is selected in the Dropdown at the top of the Assistant Editor.
 
 
 ### Image Name & Format

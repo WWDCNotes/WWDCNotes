@@ -30,8 +30,16 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
+      # TODO: add command to fail CI if any of the following commands have non-zero exit code
+
       - name: Install Swift
         uses: swift-actions/setup-swift@v2
+
+      - name: Generate Contributors Page
+        run: swift run generate-contributors-page
+
+      - name: Generate Missing Notes Page
+        run: swift run generate-missing-notes-page
       
       - name: Build Documentation
         run: |
@@ -42,6 +50,7 @@ jobs:
             --hosting-base-path WWDCNotes \
             --output-path ./docs
 
+      # TODO: fix favicon, the below code is not working as expected
       - name: Override Favicons
         run: |
           rm ./docs/favicon.svg
