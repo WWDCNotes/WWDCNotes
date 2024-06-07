@@ -66,7 +66,7 @@ for event in events {
                   @Row(numberOfColumns: 5) {
                      @Column { ![Profile image of \(contributor.fullName)](https://avatars.githubusercontent.com/u/\(contributor.githubUserID)?v=4) }
                      @Column(size: 4) {
-                        ## [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
+                        ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
 
                         \(contributor.shortDescription)
 
@@ -115,8 +115,57 @@ for event in events {
 }
 
 let contributorsPath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/Contributors"
+try FileManager.default.createDirectory(atPath: contributorsPath, withIntermediateDirectories: true)
 
 for contributor in contributorsByProfile.values {
+   guard let contributedSessionsIDs = sessionIDsByProfile[contributor.githubProfileName] else { continue }
+   let contributedSessions = contributedSessionsIDs.compactMap { sessionByID[$0] }
+   let contributedSessionByYear = Dictionary(grouping: contributedSessions, by: \.year)
+
+   let mostActiveYear = contributedSessionByYear.max { $0.value.count > $1.value.count }?.key ?? 0
+
    let contributorFilePath = "\(contributorsPath)/\(contributor.githubProfileName).md"
-   // TODO: create contributor markdown file
+   var contributorFileContents = """
+      # \(contributor.fullName)
+
+      \(contributor.shortDescription)
+
+      @Metadata {
+         @TitleHeading("Contributors")
+         @PageKind(sampleCode)
+      }
+
+      ## About
+
+      @Row(numberOfColumns: 5) {
+         @Column { ![Profile image of \(contributor.fullName)](https://avatars.githubusercontent.com/u/\(contributor.githubUserID)?v=4) }
+         @Column(size: 4) {
+            ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
+
+            \(contributor.shortDescription)
+      \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
+         }
+      }
+
+      ## Contributions
+
+      Contributed \(contributedSessions.count) session \(contributedSessions.count > 1 ? "notes" : "note") in total. Their most active year was \(mostActiveYear).
+
+      """
+
+   for (year, sessionsInYear) in contributedSessionByYear {
+      contributorFileContents += """
+
+         ### \(year)
+
+         @Links(visualStyle: list) {
+         \(sessionsInYear.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
+         }
+
+         """
+   }
+
+   try contributorFileContents.write(toFile: contributorFilePath, atomically: true, encoding: .utf8)
 }
+
+// TODO: generate contributors overview file
