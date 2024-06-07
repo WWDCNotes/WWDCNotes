@@ -126,7 +126,7 @@ for contributor in contributorsByProfile.values {
 
    let contributorFilePath = "\(contributorsPath)/\(contributor.githubProfileName).md"
    var contributorFileContents = """
-      # \(contributor.fullName)
+      # \(contributor.fullName) (\(contributedSessions.count) \(contributedSessions.count > 1 ? "notes" : "note"))
 
       \(contributor.shortDescription)
 
@@ -168,4 +168,24 @@ for contributor in contributorsByProfile.values {
    try contributorFileContents.write(toFile: contributorFilePath, atomically: true, encoding: .utf8)
 }
 
-// TODO: generate contributors overview file
+let contributorsOverviewFilpath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/Contributors.md"
+var contributorsOverviewContents = """
+   # Contributors
+
+   WWDCNotes is only possible thanks to these awesome volunteers! Contribute now to get listed here as well.
+
+   @Metadata {
+      @TitleHeading("Overview")
+      @PageKind(article)
+      @CallToAction(url: "/documentation/wwdcnotes/contributing", purpose: link, label: "Become a Contributor")
+   }
+
+   ## Topics
+
+   Here's a full list of all \(sessionIDsByProfile.keys.count) people who contributed to WWDCNotes – sorted by most contributions.
+
+   \(sessionIDsByProfile.sorted { $0.value.count > $1.value.count }.map { "- <doc:\($0.key)>" }.joined(separator: "\n"))
+
+   """
+
+try contributorsOverviewContents.write(toFile: contributorsOverviewFilpath, atomically: true, encoding: .utf8)
