@@ -29,7 +29,9 @@ public struct Session: Codable {
    public var fileName: String {
       let yearPrefix = "WWDC\(self.year - 2000)"
       let normalizedTitle = self.title
-         .folding(options: [.caseInsensitive, .diacriticInsensitive, .widthInsensitive], locale: Locale(identifier: "en-US"))
+         .folding(options: [.diacriticInsensitive, .widthInsensitive], locale: Locale(identifier: "en-US"))
+         .components(separatedBy: .punctuationCharacters)
+         .joined()
          .components(separatedBy: .whitespacesAndNewlines)
          .joined(separator: "-")
 
