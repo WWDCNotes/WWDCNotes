@@ -1,11 +1,11 @@
 # Meet SwiftData
 
-SwiftData is a powerful and expressive persistence framework built for Swift. We’ll show you how you can model your data directly from Swift code, use SwiftData to work with your models, and integrate with SwiftUI. By [Miká Kruschel](<doc:mikakruschel>).
+SwiftData is a powerful and expressive persistence framework built for Swift. We’ll show you how you can model your data directly from Swift code, use SwiftData to work with your models, and integrate with SwiftUI. By [Miká Kruschel](<doc:mikakruschel>) and [Multitudes](<doc:multitudes>).
 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10187", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10187", purpose: link, label: "Watch Video (8 min)")
    
    @Contributors {
       @GitHubUser(mikakruschel)
@@ -357,21 +357,11 @@ Learn more about using these frameworks together in our session:
 [Search the forums for tag wwdc2023-10187](https://developer.apple.com/forums/tags/wwdc2023-10187)  
 [SwiftData](https://developer.apple.com/documentation/SwiftData)
 
-@Comment { TODO: Add related videos section to end during CI step before building docs. }
 
-
-# Related Sessions
-
-[Build an app with SwiftData - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10154)  
-[Discover Observation in SwiftUI - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10149)  
-[Dive deeper into SwiftData - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10196)  
-[Migrate to SwiftData - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10189)  
-[Model your schema with SwiftData -                WWDC23](https://developer.apple.com/videos/play/wwdc2023/10195)  
-[What’s new in Swift - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10164)  
-[What’s new in SwiftUI - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10148)
-
-
-@Comment { TODO: Add written by section to end during CI step before building docs. }
+@Comment { 
+   Do not add the "Written by" and "Related Sessions" sections. They are auto-generated.
+   Keep this comment at the end of this file as a reminder for future contributors.
+}
 
 ## Written by
 
@@ -389,13 +379,34 @@ Learn more about using these frameworks together in our session:
    }
 }
 
-@Comment { TODO: Add legal notice section to end during CI step before building docs. }
+@Row(numberOfColumns: 5) {
+   @Column { ![Profile image of Multitudes](https://avatars.githubusercontent.com/u/20423069?v=4) }
+   @Column(size: 4) {
+      ## [Multitudes](<doc:multitudes>)
+      
+      Some basic information about Multitudes gathered from GitHub.
+      
+      [Contributed Notes](<doc:multitudes>)
+      [GitHub](https://)
+      [Website](https://)
+      [Mastodon](https://)
+   }
+}
 
 ## Related Sessions
 
 @Links(visualStyle: list) {
-   - <doc:WWDC20>
-   - <doc:Contributing>
+   - <doc:WWDC23-10148-Session-Title>
+   - <doc:WWDC23-10149-Session-Title>
+   - <doc:WWDC23-10154-Session-Title>
+   - <doc:WWDC23-10164-Session-Title>
+   - <doc:WWDC23-10189-Session-Title>
+   - <doc:WWDC23-10195-Session-Title>
+   - <doc:WWDC23-10196-Session-Title>
+   - <doc:WWDC23-10331-Session-Title>
+   - <doc:WWDC23-111497-Session-Title>
+   - <doc:WWDC23-111498-Session-Title>
+   - <doc:WWDC23-111543-Session-Title>
 }
 
 

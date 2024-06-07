@@ -35,11 +35,14 @@ jobs:
       - name: Install Swift
         uses: swift-actions/setup-swift@v2
 
-      - name: Generate Contributors Page
-        run: swift run generate-contributors-page
+      - name: Add Session Metadata
+        run: swift run add-session-metadata
 
-      - name: Generate Missing Notes Page
-        run: swift run generate-missing-notes-page
+      - name: Generate Contributors
+        run: swift run generate-contributors
+
+      - name: Generate Missing Notes
+        run: swift run generate-missing-notes
       
       - name: Build Documentation
         run: |

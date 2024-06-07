@@ -6,5 +6,6 @@ This page gives you an overview of all sessions that have no notes yet.
 
 ## WWDC23
 
-TODO: not yet implemented
-
+@Links(visualStyle: list) {
+   - <doc:WWDC23-10155-Discover-String-Catalogs>
+}
