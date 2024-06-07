@@ -36,6 +36,17 @@ public struct Session: Codable {
       return "\(yearPrefix)-\(code)-\(normalizedTitle)"
    }
 
+   public init(id: String, year: Int, code: String, title: String, description: String, permalink: URL?, lengthInMinutes: Int?, relatedSessionIDs: [String]) {
+      self.id = id
+      self.year = year
+      self.code = code
+      self.title = title
+      self.description = description
+      self.permalink = permalink
+      self.lengthInMinutes = lengthInMinutes
+      self.relatedSessionIDs = relatedSessionIDs
+   }
+
    public static func allSessionsByID() throws -> [String: Session] {
       let dataSourceURL = Bundle.module.url(forResource: "sessions", withExtension: "json")!
       let sessionsData = try Data(contentsOf: dataSourceURL)
