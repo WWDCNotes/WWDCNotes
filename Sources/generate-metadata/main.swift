@@ -261,12 +261,12 @@ for year in years {
    let yearOverviewFilePath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/\(eventName).md"
    var yearOverviewFileContents = try String(contentsOfFile: yearOverviewFilePath)
 
-   let yearSessions = sessionByID.values.filter { $0.year == year }
+   let yearSessions = sessionByID.values.filter { $0.year == year }.sorted { $0.title < $1.title }
 
    let firstDayEventSessions = yearSessions.filter { $0.title.lowercased() == "keynote" || $0.title.lowercased() == "platforms state of the union" }
    yearOverviewFileContents += """
 
-      
+
       ## Topics
 
       ### First Day Events
