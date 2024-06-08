@@ -2,8 +2,17 @@ import Foundation
 import Sessions
 
 struct Contributor {
+   struct GitHubUser: Codable {
+      let id: Int
+      let name: String?
+      let bio: String?
+      let blog: String?
+      let twitterUsername: String?
+      let avatarUrl: String?
+   }
+
    let githubProfileName: String
-   let githubUserID: String
+   let avatarURL: URL
    let fullName: String
    let shortDescription: String
    let socialLinks: [String: URL]
@@ -11,10 +20,28 @@ struct Contributor {
    init(githubProfileName: String) throws {
       self.githubProfileName = githubProfileName
 
-      self.githubUserID = "123"  // TODO: fetch from GitHub API
-      self.fullName = "To Do" // TODO: fetch from GitHub API
-      self.shortDescription = "An amazing developer."  // TODO: fetch from GitHub API (and shorten to one line?)
-      self.socialLinks = ["X/Twitter": URL(string: "https://x.com/Jeehut")!]  // TODO: fetch from GitHub API
+      let url = URL(string: "https://api.github.com/users/\(githubProfileName)")!
+
+      let data = try Data(contentsOf: url)
+      let gitHubUser = try JSONDecoder().decode(GitHubUser.self, from: data)
+
+      self.fullName = gitHubUser.name ?? githubProfileName
+
+      let fullNameTokens = self.fullName.components(separatedBy: .whitespaces)
+      self.avatarURL = URL(string: gitHubUser.avatarUrl ?? "https://ui-avatars.com/api/?name=\(fullNameTokens.joined(separator: "+"))")!
+      self.shortDescription = gitHubUser.bio ?? "No Bio on GitHub"
+
+      // Fetch social links
+      var links = [String: URL]()
+      if let blog = gitHubUser.blog, let blogURL = URL(string: blog) {
+         links["Blog"] = blogURL
+      }
+      
+      if let twitterUsername = gitHubUser.twitterUsername {
+         links["X/Twitter"] = URL(string: "https://x.com/\(twitterUsername)")
+      }
+
+      self.socialLinks = links
    }
 }
 
@@ -38,13 +65,13 @@ var sessionIDsWithoutContributors: Set<String> = []
 var sessionIDsByProfile: [String: Set<String>] = [:]
 
 
-// MARK: Append 'Written by' section, Related Sessions section, and Legal Footer to all Notes
+// MARK: - Append 'Written by' section, Related Sessions section, and Legal Footer to all Notes
 
 for event in events {
    let eventSessionsPath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/\(event)"
    let sessionFileNames = try FileManager.default.contentsOfDirectory(atPath: eventSessionsPath).filter { $0.hasSuffix(".md") }
 
-   let contributorRegex = try Regex(#"@GitHubUser\(([^\n]+)\)"#)
+   let contributorRegex = try Regex(#"@GitHubUser\(([^\n<>]+)\)"#)
 
    for sessionFileName in sessionFileNames {
       if let session = sessionByID.values.first(where: { $0.fileName.lowercased() + ".md" == sessionFileName.lowercased() }) {
@@ -74,11 +101,9 @@ for event in events {
                sessionFileContents += """
 
                   @Row(numberOfColumns: 5) {
-                     @Column { ![Profile image of \(contributor.fullName)](https://avatars.githubusercontent.com/u/\(contributor.githubUserID)?v=4) }
+                     @Column { ![Profile image of \(contributor.fullName)](\(contributor.avatarURL.absoluteString) }
                      @Column(size: 4) {
                         ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
-
-                        \(contributor.shortDescription)
 
                         [Contributed Notes](<doc:\(contributor.githubProfileName)>)
                   \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
@@ -116,7 +141,7 @@ for event in events {
 }
 
 
-// MARK: Generate all Contributor/<Profile>.md
+// MARK: - Generate all Contributor/<Profile>.md
 
 let contributorsPath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/Contributors"
 try FileManager.default.createDirectory(atPath: contributorsPath, withIntermediateDirectories: true)
@@ -142,12 +167,11 @@ for contributor in contributorsByProfile.values {
       ## About
 
       @Row(numberOfColumns: 5) {
-         @Column { ![Profile image of \(contributor.fullName)](https://avatars.githubusercontent.com/u/\(contributor.githubUserID)?v=4) }
+         @Column { ![Profile image of \(contributor.fullName)](\(contributor.avatarURL.absoluteString)) }
          @Column(size: 4) {
             ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
 
-            \(contributor.shortDescription)
-      \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
+            \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
          }
       }
 
@@ -169,13 +193,11 @@ for contributor in contributorsByProfile.values {
          """
    }
 
-   contributorFileContents += legalNotes
-
    try contributorFileContents.write(toFile: contributorFilePath, atomically: true, encoding: .utf8)
 }
 
 
-// MARK: Generate Contributors.md
+// MARK: - Generate Contributors.md
 
 let contributorsOverviewFilePath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/Contributors.md"
 var contributorsOverviewContents = """
@@ -202,7 +224,7 @@ contributorsOverviewContents += legalNotes
 try contributorsOverviewContents.write(toFile: contributorsOverviewFilePath, atomically: true, encoding: .utf8)
 
 
-// MARK: Generate MissingNotes.md
+// MARK: - Generate MissingNotes.md
 
 let sessionsWithoutContributorsByYear = Dictionary(grouping: sessionIDsWithoutContributors.compactMap { sessionByID[$0] }, by: \.year)
 
@@ -227,6 +249,64 @@ for (year, sessions) in sessionsWithoutContributorsByYear {
       """
 }
 
-missingNotesContents += legalNotes
-
 try missingNotesContents.write(toFile: missingNotesFilePath, atomically: true, encoding: .utf8)
+
+
+// MARK: - Generate WWDC year overview page contents
+
+let years = Set(sessionByID.values.map(\.year))
+
+for year in years {
+   let eventName = "WWDC\(year - 2000)"
+   let yearOverviewFilePath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/\(eventName).md"
+   var yearOverviewFileContents = try String(contentsOfFile: yearOverviewFilePath)
+
+   let yearSessions = sessionByID.values.filter { $0.year == year }
+
+   let firstDayEventSessions = yearSessions.filter { $0.title.lowercased() == "keynote" || $0.title.lowercased() == "platforms state of the union" }
+   yearOverviewFileContents += """
+      ## Topics
+
+      ### First Day Events
+
+      @Links(visualStyle: list) {
+      \(firstDayEventSessions.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
+      }
+
+      """
+
+   let newToolAndFrameworkSessions = yearSessions.filter { $0.title.lowercased().starts(with: "meet ") }
+   yearOverviewFileContents += """
+      
+      ### New Tools & Frameworks
+
+      @Links(visualStyle: list) {
+      \(newToolAndFrameworkSessions.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
+      }
+
+      """
+
+   let updatedToolAndFrameworkSessions = yearSessions.filter { $0.title.lowercased().starts(with: "what's new in ") }
+   yearOverviewFileContents += """
+
+      ### Updated Tools & Frameworks
+
+      @Links(visualStyle: list) {
+      \(updatedToolAndFrameworkSessions.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
+      }
+
+      """
+
+   let otherSessions = yearSessions.filter { !(firstDayEventSessions + newToolAndFrameworkSessions + updatedToolAndFrameworkSessions).map(\.id).contains($0.id) }
+   yearOverviewFileContents += """
+
+      ### Deep Dives into Topics
+
+      @Links(visualStyle: list) {
+      \(otherSessions.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
+      }
+
+      """
+
+   try yearOverviewFileContents.write(toFile: yearOverviewFilePath, atomically: true, encoding: .utf8)
+}

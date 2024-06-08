@@ -7,40 +7,4 @@ New APIs: ``SwiftData``, ``Observation``, ``StoreKit`` views, and more.
    @TitleHeading("Overview")
 }
 
-
-## Topics
-
-### First Day Events
-
-@Links(visualStyle: list) {
-   - <doc:WWDC23-101-Keynote>
-   - <doc:WWDC23-102-Platforms-State-of-the-Union>
-   - Apple Design Awards
-}
-
-
-### New Tools & Frameworks
-
-@Links(visualStyle: list) {
-   - <doc:WWDC23-10187-Meet-SwiftData>
-   - Meet StoreKit for SwiftUI
-   - Meet ActivityKit
-   - Meet Swift OpenAPI Generator
-   - Meet Reality Composer Pro
-}
-
-
-### Updated Tools & Frameworks
-
-@Links(visualStyle: list) {
-   - What's new in Swift
-   - What's new in Xcode
-   - What's new in privacy
-}
-
-
-### Deep Dives into Topics
-
-@Links(visualStyle: list) {
-   - TODO
-}
+@Comment { Do not manually edit this file below this comment. The session link will be auto-generated. }

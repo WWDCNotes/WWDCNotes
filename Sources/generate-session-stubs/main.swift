@@ -25,7 +25,7 @@ for session in sessionByID.values {
          @Metadata {
             @TitleHeading("\(event)")
             @PageKind(sampleCode)
-            @CallToAction(url: "\(session.permalink!)", purpose: link, label: "Watch Video")
+            @CallToAction(url: "\(session.permalink!)", purpose: link, label: "Watch Video\(session.lengthInMinutes != nil ? " (\(session.lengthInMinutes!) min)" : "")")
 
             @Contributors {
                @GitHubUser(<replace this with your GitHub handle>)
@@ -42,3 +42,5 @@ for session in sessionByID.values {
       try sessionFileContents.write(toFile: sessionFilePath, atomically: true, encoding: .utf8)
    }
 }
+
+// TODO: link to the sessions in the year overview document

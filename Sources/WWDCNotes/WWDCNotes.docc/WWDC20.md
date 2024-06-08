@@ -7,36 +7,4 @@ New APIs: ``TODO``, ``TODO``, ``TODO``, and more.
    @TitleHeading("Overview")
 }
 
-
-## Topics
-
-### First Day Events
-
-@Links(visualStyle: list) {
-   - <doc:WWDC20-101-Consumer-Keynote>
-   - <doc:WWDC20-102-Developer-Keynote>
-   - Apple Design Awards
-}
-
-
-### New Tools & Frameworks
-
-@Links(visualStyle: list) {
-   - TODO
-}
-
-
-### Updated Tools & Frameworks
-
-@Links(visualStyle: list) {
-   - What's new in Swift
-   - What's new in Xcode
-   - TODO
-}
-
-
-### Deep Dives into Topics
-
-@Links(visualStyle: list) {
-   - TODO
-}
+@Comment { Do not manually edit this file below this comment. The session link will be auto-generated. }
