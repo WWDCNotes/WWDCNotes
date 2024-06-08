@@ -5,7 +5,7 @@ Learn how you can restore someone’s in-app purchases access proactively when t
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110404", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110404", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

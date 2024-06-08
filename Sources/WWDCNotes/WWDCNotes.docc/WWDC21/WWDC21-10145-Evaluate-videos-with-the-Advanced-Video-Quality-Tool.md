@@ -7,7 +7,7 @@ AVQT uses Metal to achieve high processing speeds by offloading heavy pixel-leve
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10145", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10145", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

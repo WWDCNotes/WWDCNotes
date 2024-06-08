@@ -5,7 +5,7 @@ Peek behind the curtain into the core tenets of SwiftUI philosophy: Identity, Li
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10022", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10022", purpose: link, label: "Watch Video (40 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

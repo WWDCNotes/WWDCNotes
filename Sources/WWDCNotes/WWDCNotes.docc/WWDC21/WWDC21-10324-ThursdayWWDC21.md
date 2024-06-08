@@ -5,7 +5,7 @@ Where did the WWDC week go? We'll tell you: Check out everything you missed on T
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10324", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10324", purpose: link, label: "Watch Video (1 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

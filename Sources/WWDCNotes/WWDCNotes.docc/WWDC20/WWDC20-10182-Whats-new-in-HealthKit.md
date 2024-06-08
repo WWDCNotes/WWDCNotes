@@ -5,7 +5,7 @@ HealthKit is an essential framework that integrates first- and third-party healt
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10182", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10182", purpose: link, label: "Watch Video (6 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

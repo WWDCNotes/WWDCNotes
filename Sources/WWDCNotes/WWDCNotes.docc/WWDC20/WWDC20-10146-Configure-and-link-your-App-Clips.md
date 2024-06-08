@@ -7,7 +7,7 @@ To get the most out of this session, you should have experience using Universal 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10146", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10146", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

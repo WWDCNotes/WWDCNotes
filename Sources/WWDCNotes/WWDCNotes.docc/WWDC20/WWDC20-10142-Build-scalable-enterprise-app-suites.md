@@ -5,7 +5,7 @@ Learn how to build focused enterprise apps that work well together. In this sess
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10142", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10142", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

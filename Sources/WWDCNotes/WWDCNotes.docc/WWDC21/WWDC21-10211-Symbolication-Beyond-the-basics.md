@@ -5,7 +5,7 @@ Discover how you can achieve maximum performance and insightful debugging with y
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10211", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10211", purpose: link, label: "Watch Video (37 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

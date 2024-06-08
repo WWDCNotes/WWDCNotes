@@ -9,7 +9,7 @@ For more on the latest privacy improvements to our platforms, watch “Build tru
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10115", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10115", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

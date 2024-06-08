@@ -5,7 +5,7 @@ The day's almost over, but there's still so much to explore: Catch up on the bes
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10322", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10322", purpose: link, label: "Watch Video (1 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

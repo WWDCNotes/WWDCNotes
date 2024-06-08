@@ -5,7 +5,7 @@ Learn how you can process strings more effectively when you take advantage of Sw
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110357", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110357", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

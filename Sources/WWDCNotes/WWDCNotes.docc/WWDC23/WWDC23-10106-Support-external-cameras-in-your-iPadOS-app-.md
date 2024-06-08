@@ -5,7 +5,7 @@ Learn how you can discover and connect to external cameras in your iPadOS app us
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10106", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10106", purpose: link, label: "Watch Video (32 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ Once you’re familiar with the basics of Reality Composer Pro, check out "Explo
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10083", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10083", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

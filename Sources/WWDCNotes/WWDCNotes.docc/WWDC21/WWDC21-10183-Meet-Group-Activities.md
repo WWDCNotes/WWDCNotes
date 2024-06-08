@@ -5,7 +5,7 @@ Learn more about the framework powering SharePlay, and discover the different ty
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10183", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10183", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

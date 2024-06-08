@@ -5,7 +5,7 @@ Learn how you can make spatial computing apps that work well for everyone. Like 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10034", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10034", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

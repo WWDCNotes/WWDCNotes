@@ -5,7 +5,7 @@ Discover how you can create iPad apps that take advantage of desktop class featu
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10070", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10070", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

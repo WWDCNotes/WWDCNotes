@@ -7,7 +7,7 @@ To get the most out of this session, we recommend first watching “Meet Xcode C
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10268", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10268", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

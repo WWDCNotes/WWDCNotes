@@ -5,7 +5,7 @@ RoomPlan can help your app quickly create simplified parametric 3D scans of a ro
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10127", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10127", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

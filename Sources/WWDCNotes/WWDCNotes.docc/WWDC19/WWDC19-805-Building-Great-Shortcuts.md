@@ -5,7 +5,7 @@ Shortcuts enable people to quickly and easily accomplish actions or get things d
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/805", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/805", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

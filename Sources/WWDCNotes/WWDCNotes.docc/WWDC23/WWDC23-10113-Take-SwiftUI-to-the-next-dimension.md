@@ -5,7 +5,7 @@ Get ready to add depth and dimension to your visionOS apps. Find out how to brin
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10113", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10113", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

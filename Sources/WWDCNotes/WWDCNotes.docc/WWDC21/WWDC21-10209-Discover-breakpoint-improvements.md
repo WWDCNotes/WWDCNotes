@@ -5,7 +5,7 @@ Breakpoints can help you debug issues by allowing you to pause and inspect probl
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10209", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10209", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

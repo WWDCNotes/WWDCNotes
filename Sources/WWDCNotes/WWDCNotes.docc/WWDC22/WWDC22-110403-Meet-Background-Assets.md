@@ -5,7 +5,7 @@ Discover how you can use the Background Assets framework to download large files
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110403", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110403", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

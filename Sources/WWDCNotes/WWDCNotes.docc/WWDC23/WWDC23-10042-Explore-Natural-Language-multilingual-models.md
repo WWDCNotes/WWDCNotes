@@ -7,7 +7,7 @@ For more on Natural Language, check out "Make apps smarter with Natural Language
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10042", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10042", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

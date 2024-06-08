@@ -5,7 +5,7 @@ Learn how you can highlight your app's Now Playing information on every platform
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110338", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110338", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

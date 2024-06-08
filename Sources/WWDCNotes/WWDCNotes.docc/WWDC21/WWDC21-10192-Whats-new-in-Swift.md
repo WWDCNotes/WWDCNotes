@@ -5,7 +5,7 @@ Join us for an update on Swift. Discover the latest language advancements that m
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10192", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10192", purpose: link, label: "Watch Video (32 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

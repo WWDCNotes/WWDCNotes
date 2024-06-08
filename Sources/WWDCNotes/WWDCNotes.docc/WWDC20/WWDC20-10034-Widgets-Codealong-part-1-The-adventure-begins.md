@@ -7,7 +7,7 @@ Once you’re finished, travel onward with us to part two of the Widgets Code-al
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10034", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10034", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ For more on WidgetKit, watch “Complications and Widgets: Reloaded” from WWDC
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10051", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10051", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

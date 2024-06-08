@@ -5,7 +5,7 @@ Get a quick overview of everything new in Siri and Shortcuts to help people get 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10068", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10068", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Discover how to optimize your image processing app for Apple silicon. Explore ho
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10153", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10153", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Time is of the essence: Discover how your Apple Watch complications can provide 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10049", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10049", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

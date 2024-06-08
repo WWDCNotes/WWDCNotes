@@ -5,7 +5,7 @@ StoreKit 2 delivers powerful, Swift-native APIs for in-app purchases and auto-re
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10114", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10114", purpose: link, label: "Watch Video (37 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

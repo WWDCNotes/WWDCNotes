@@ -5,7 +5,7 @@ Shortcuts are a natural fit on Apple Watch, allowing people to get things done w
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10190", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10190", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ Learn more about designing for intelligence in the next part of our series, "Dis
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10086", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10086", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

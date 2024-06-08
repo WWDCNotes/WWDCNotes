@@ -7,7 +7,7 @@ To get the most out of this session and learn more about the Markdown language a
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10220", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10220", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

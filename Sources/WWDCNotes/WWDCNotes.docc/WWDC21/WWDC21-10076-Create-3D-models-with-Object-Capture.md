@@ -5,7 +5,7 @@ Object Capture provides a quick and easy way to create lifelike 3D models of rea
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10076", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10076", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

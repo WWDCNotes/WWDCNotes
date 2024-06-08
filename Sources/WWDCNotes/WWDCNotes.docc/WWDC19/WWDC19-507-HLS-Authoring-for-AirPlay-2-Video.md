@@ -5,7 +5,7 @@ AirPlay 2 Video lets you share video from Apple devices to popular smart TVs. Le
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/507", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/507", purpose: link, label: "Watch Video (6 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

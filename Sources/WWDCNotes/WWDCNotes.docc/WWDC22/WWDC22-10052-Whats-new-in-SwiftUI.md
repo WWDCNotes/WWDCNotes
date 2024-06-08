@@ -5,7 +5,7 @@ It's a SwiftUI party — and you're invited! Join us as we share the latest upda
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10052", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10052", purpose: link, label: "Watch Video (33 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Every app uses Buttons. With iOS 15, you can adopt updated styles to create gorg
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10064", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10064", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

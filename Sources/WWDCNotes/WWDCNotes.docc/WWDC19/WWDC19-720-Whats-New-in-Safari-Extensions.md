@@ -5,7 +5,7 @@ Safari Extensions surface your app's unique capabilities within Safari. Discover
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/720", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/720", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

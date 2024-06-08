@@ -7,7 +7,7 @@ For an overview on camera capture capabilities, watch "What’s new in camera ca
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110429", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110429", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

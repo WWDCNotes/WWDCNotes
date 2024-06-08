@@ -11,7 +11,7 @@ To learn how to improve your testing suites, check out "Write tests to fail".
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10164", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10164", purpose: link, label: "Watch Video (6 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

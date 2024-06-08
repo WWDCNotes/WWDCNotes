@@ -5,7 +5,7 @@ WebKit provides a rich set of classes designed to load, display, and manage web 
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/518", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/518", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

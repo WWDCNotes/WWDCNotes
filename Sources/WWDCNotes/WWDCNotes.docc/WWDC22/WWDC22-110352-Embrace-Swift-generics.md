@@ -5,7 +5,7 @@ Generics are a fundamental tool for writing abstract code in Swift. Learn how yo
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110352", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110352", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Learn how to integrate and load Core Image kernels written in the Metal Shading 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10021", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10021", purpose: link, label: "Watch Video (6 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

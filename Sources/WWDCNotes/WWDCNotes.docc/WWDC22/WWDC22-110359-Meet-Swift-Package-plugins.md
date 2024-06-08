@@ -5,7 +5,7 @@ Discover how you can perform actions on Swift packages and Xcode projects with S
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110359", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110359", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ For more on creating great widgets, watch "Build SwiftUI views for widgets”.
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10036", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10036", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

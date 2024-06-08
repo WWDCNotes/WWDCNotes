@@ -7,7 +7,7 @@ To learn more techniques for image tracking, check out “Detect animal poses in
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10304", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10304", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

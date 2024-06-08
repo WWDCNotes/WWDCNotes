@@ -6,7 +6,7 @@ SwiftUI now offers powerful tools to level up your layouts and arrange views for
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10056", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10056", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

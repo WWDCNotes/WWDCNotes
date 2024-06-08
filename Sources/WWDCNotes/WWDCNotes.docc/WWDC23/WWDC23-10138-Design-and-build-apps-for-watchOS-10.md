@@ -5,7 +5,7 @@ Dive into the details of watchOS design principles and learn how to apply them i
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10138", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10138", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

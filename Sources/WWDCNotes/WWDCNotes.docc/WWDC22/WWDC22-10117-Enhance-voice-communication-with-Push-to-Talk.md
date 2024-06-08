@@ -7,7 +7,7 @@ To get the most out of this session, we recommend familiarity with handling audi
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10117", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10117", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

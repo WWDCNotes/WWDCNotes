@@ -5,7 +5,7 @@ Learn how Apple platforms calculate and allocate memory for your game. We'll sho
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10106", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10106", purpose: link, label: "Watch Video (38 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

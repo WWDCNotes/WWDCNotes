@@ -9,7 +9,7 @@ To learn more about the powerful technology that enables Action Classification f
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10043", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10043", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

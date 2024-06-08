@@ -5,7 +5,7 @@ Learn how relays can make your app’s network traffic more private and secure w
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10002", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10002", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

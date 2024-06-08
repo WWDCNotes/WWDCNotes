@@ -5,7 +5,7 @@ Explore how you can use Variable Color to make SF Symbols even more expressive. 
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10158", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10158", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

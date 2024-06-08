@@ -5,7 +5,7 @@ Discover the latest updates to Universal Scene Description (USD) on Apple platfo
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10086", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10086", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

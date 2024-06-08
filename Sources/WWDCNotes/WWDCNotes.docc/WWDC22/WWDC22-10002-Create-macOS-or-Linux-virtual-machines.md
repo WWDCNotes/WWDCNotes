@@ -5,7 +5,7 @@ Learn how you can use the Virtualization framework to quickly create virtual mac
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10002", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10002", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

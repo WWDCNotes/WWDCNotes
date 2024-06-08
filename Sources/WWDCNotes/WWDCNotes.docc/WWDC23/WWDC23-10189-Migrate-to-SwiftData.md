@@ -7,7 +7,7 @@ Before watching this session, make sure you check out "Meet SwiftData."
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10189", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10189", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

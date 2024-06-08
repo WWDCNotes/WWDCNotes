@@ -7,7 +7,7 @@ While you can get a quick overview of Simulator in this session, for more detail
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10647", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10647", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

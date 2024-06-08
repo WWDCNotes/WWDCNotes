@@ -7,7 +7,7 @@ Check out “Meet the New Photos Picker” to learn more about PHPicker and how 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10641", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10641", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ To learn more about Photos library integration, be sure to watch "What's new in 
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10132", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10132", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

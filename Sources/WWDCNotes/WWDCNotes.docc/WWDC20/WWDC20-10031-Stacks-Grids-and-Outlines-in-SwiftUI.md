@@ -7,7 +7,7 @@ To get the most out of this video, we recommend first checking out “SwiftUI Ap
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10031", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10031", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

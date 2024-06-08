@@ -11,7 +11,7 @@ Check out “Discover Metal debugging, profiling, and asset creation tools” or
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10148", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10148", purpose: link, label: "Watch Video (32 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ For even more inspiration, check out “Classify hand poses and actions with Cre
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10037", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10037", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

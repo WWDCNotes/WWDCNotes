@@ -9,7 +9,7 @@ For more on how you can integrate Reality Composer into your augmented reality w
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10612", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10612", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

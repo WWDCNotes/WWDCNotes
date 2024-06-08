@@ -5,7 +5,7 @@ Discover the latest updates to Wallet & Apple Pay. We'll show you how to support
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10041", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10041", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

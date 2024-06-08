@@ -6,7 +6,7 @@ The words and phrases you choose for your app matter. Whether you’re writing a
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10037", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10037", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

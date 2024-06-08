@@ -11,7 +11,7 @@ And don’t forget to stop by the Developer Forums and share your solution for o
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10683", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10683", purpose: link, label: "Watch Video (5 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

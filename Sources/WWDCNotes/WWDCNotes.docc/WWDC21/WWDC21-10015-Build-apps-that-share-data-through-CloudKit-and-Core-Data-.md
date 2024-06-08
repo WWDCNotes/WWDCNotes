@@ -7,7 +7,7 @@ To get the most out of this session, check out our previous videos on NSPersiste
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10015", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10015", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

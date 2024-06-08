@@ -5,7 +5,7 @@ Discover how you can easily connect Thunderbolt and USB accessories to iPad with
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110373", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110373", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

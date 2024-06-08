@@ -5,7 +5,7 @@ The Apple Worldwide Developers Conference kicks off with exciting reveals, inspi
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/111", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/111", purpose: link, label: "Watch Video (108 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Notarization works in tandem with macOS to help people safely download software 
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10109", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10109", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

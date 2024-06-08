@@ -7,7 +7,7 @@ To get the most out of this session, you should be familiar with AVFoundation an
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10022", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10022", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

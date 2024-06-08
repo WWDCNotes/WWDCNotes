@@ -5,7 +5,7 @@ HTTP Live Streaming enables the reliable delivery of media content over a wide v
 @Metadata {
    @TitleHeading("WWDC16")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc16/510", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc16/510", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

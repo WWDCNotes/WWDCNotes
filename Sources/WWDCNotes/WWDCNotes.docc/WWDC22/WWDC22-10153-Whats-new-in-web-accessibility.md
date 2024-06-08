@@ -5,7 +5,7 @@ Discover techniques for building rich, accessible web apps with custom controls,
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10153", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10153", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

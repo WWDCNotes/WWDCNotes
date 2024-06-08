@@ -9,7 +9,7 @@ For more on refining your Mac Catalyst app, consider watching “Optimize the in
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10143", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10143", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

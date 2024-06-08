@@ -9,7 +9,7 @@ We’d love to hear feedback about the preliminary schemas. After you watch this
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10613", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10613", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

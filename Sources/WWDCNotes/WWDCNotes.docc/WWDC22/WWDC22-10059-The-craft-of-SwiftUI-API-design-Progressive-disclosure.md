@@ -5,7 +5,7 @@ Explore progressive disclosure — one of SwiftUI’s core principles — and le
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10059", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10059", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

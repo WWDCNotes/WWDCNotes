@@ -5,7 +5,7 @@ Learn how App Store App Analytics can provide unique insights and help you measu
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10044", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10044", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

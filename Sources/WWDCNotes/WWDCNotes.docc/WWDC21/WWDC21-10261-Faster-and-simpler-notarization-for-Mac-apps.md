@@ -7,7 +7,7 @@ To learn about the notarization workflow, watch the 2019 video "All About Notari
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10261", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10261", purpose: link, label: "Watch Video (6 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

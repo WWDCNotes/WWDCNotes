@@ -5,7 +5,7 @@ With device input — as with all things in life — where you put focus matters
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10023", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10023", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Web Inspector provides the tools for you to understand and debug your web pages 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10031", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10031", purpose: link, label: "Watch Video (28 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

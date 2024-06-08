@@ -7,7 +7,7 @@ For more on implementing actions with the latest UI frameworks, check out "Swift
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10171", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10171", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

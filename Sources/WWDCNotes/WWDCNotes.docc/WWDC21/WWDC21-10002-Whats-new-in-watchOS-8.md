@@ -5,7 +5,7 @@ watchOS 8 brings all-new opportunities to keep people up to date on their watch 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10002", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10002", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

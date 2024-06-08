@@ -5,7 +5,7 @@ Discover how you can use Swift’s concurrency features to build even better Swi
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10019", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10019", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

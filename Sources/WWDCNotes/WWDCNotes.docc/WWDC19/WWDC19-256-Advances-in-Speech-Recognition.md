@@ -5,7 +5,7 @@ Speech Recognizer can now be used locally on iOS or macOS devices with no networ
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/256", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/256", purpose: link, label: "Watch Video (6 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

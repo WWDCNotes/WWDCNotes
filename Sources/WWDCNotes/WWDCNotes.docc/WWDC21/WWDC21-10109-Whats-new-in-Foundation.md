@@ -5,7 +5,7 @@ Discover how the latest updates to Foundation can help you improve your app's lo
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10109", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10109", purpose: link, label: "Watch Video (37 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

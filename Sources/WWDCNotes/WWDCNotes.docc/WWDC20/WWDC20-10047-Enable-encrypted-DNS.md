@@ -7,7 +7,7 @@ Enabling encrypted DNS is yet another way your app can help preserve privacy for
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10047", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10047", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

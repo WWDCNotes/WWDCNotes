@@ -7,7 +7,7 @@ To get the most out of this session, you should have a basic understanding of co
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10097", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10097", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

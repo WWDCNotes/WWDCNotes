@@ -5,7 +5,7 @@ Discover the building blocks for designing a great iPad app: Learn how to minimi
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10206", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10206", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

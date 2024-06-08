@@ -5,7 +5,7 @@ Discover the latest enhancements to App Store pre-orders, including regional pub
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10015", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10015", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

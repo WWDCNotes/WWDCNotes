@@ -5,7 +5,7 @@ Discover how you can make key parts of your app available for someone at exactly
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10231", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10231", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ See how the updates to UIKit controls and text styles in iOS 11 can help you des
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/810", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/810", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

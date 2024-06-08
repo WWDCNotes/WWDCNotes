@@ -5,7 +5,7 @@ Learn how you can create powerful apps and games for visionOS by optimizing for 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10100", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10100", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

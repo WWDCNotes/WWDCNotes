@@ -5,7 +5,7 @@ When you create an intent for your app, you can help people accomplish tasks qui
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10073", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10073", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ You should come to the session with a basic knowledge of Metal and graphics rend
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10602", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10602", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

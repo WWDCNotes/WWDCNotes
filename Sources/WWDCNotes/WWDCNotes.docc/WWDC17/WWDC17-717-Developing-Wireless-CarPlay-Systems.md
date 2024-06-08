@@ -5,7 +5,7 @@ Wireless CarPlay is perfect for any trip. Get in your car without taking your iP
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/717", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/717", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ It's more important than ever to consider vulnerabilities and potential threats 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10189", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10189", purpose: link, label: "Watch Video (38 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

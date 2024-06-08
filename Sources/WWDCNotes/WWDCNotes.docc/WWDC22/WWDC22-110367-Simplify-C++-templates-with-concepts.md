@@ -5,7 +5,7 @@ Discover how C++20 features can take your C++ code to the next level. We’ll in
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110367", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110367", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

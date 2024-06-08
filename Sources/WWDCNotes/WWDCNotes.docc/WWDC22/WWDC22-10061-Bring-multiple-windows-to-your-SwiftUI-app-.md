@@ -5,7 +5,7 @@ Discover the latest SwiftUI APIs to help you present windows within your app’s
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10061", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10061", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ For a refresher on the differences between recurring and classic leaderboards be
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10067", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10067", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

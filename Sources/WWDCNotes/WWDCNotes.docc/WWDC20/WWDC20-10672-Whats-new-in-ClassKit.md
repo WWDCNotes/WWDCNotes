@@ -5,7 +5,7 @@ The ClassKit framework helps you surface educational activities within your app 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10672", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10672", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

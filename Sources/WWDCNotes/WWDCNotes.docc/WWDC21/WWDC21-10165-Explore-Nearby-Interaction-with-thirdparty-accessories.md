@@ -7,7 +7,7 @@ To find out more about Nearby Interaction, check out the framework documentation
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10165", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10165", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

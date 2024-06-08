@@ -5,7 +5,7 @@ The recipe for a great app begins with a clear and robust navigation structure. 
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10054", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10054", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

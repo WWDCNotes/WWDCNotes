@@ -5,7 +5,7 @@ Discover how you can use Swift macros to make your codebase more expressive and 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10166", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10166", purpose: link, label: "Watch Video (33 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Discover the latest advances in Mac app development. We’ll share improvements 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10054", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10054", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

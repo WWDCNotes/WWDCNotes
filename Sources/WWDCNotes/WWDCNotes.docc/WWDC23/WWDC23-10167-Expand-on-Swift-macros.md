@@ -5,7 +5,7 @@ Discover how Swift macros can help you reduce boilerplate in your codebase and a
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10167", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10167", purpose: link, label: "Watch Video (39 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

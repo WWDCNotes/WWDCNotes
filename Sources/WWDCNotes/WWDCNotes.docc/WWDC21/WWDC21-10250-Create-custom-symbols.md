@@ -7,7 +7,7 @@ For a primer on working with custom symbol templates, we recommend first watchin
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10250", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10250", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

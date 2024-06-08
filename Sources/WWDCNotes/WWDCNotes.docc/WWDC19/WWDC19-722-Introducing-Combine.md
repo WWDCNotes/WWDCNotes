@@ -5,7 +5,7 @@ Combine is a unified declarative framework for processing values over time. Lear
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/722", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/722", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

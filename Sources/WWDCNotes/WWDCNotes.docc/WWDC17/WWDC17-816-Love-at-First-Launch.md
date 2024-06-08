@@ -5,7 +5,7 @@ Engage people from the first moment they open your app, and keep them coming bac
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/816", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/816", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

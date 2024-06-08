@@ -5,7 +5,7 @@ Discover how you can simplify development of your device management solution wit
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10046", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10046", purpose: link, label: "Watch Video (31 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

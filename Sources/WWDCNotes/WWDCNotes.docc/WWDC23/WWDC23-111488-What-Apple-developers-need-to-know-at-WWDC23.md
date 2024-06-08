@@ -9,7 +9,7 @@ All to help bring your ideas to over two billion Apple devices worldwide.
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/111488", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/111488", purpose: link, label: "Watch Video (1 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

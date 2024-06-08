@@ -265,6 +265,8 @@ for year in years {
 
    let firstDayEventSessions = yearSessions.filter { $0.title.lowercased() == "keynote" || $0.title.lowercased() == "platforms state of the union" }
    yearOverviewFileContents += """
+
+      
       ## Topics
 
       ### First Day Events

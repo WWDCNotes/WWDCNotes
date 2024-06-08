@@ -5,7 +5,7 @@ Discover the keys to creating informative, useful and beautiful rich notificatio
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/817", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/817", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

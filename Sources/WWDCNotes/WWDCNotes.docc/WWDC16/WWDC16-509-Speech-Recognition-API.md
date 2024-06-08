@@ -5,7 +5,7 @@ iOS 10 brings a brand new Speech Recognition API that allows you to perform rapi
 @Metadata {
    @TitleHeading("WWDC16")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc16/509", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc16/509", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

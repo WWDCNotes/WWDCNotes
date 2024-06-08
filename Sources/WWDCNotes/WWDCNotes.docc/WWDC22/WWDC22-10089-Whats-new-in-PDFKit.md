@@ -5,7 +5,7 @@ Discover PDFKit — a full-featured framework that helps your app view, edit, an
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10089", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10089", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

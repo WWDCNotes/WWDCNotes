@@ -7,7 +7,7 @@ For more on the Speech framework, check out “Advances in Speech Recognition”
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10101", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10101", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

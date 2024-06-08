@@ -5,7 +5,7 @@ Learn how extensibility is key to surfacing the most important features of your 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10088", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10088", purpose: link, label: "Watch Video (5 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

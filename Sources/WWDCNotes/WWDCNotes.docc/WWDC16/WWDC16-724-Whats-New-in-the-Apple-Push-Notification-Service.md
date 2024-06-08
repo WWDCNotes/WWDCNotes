@@ -5,7 +5,7 @@ Starting with a review of the HTTP/2 based provider API, you will learn about an
 @Metadata {
    @TitleHeading("WWDC16")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc16/724", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc16/724", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

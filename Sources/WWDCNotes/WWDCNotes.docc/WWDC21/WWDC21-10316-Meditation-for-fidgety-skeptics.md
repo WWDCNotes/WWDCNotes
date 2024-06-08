@@ -5,7 +5,7 @@ Dan Harris is an Emmy Award-winning journalist and the co-anchor of ABC's weeken
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10316", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10316", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

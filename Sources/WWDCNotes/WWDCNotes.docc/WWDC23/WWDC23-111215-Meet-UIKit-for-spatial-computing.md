@@ -5,7 +5,7 @@ Learn how to bring your UIKit app to visionOS. We’ll show you how to build for
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/111215", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/111215", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

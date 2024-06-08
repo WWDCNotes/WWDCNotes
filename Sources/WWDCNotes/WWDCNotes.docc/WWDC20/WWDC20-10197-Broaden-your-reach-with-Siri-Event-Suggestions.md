@@ -5,7 +5,7 @@ Whether you’re hosting event information in your app, on the web, or in an ema
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10197", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10197", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ It’s time for a security upgrade: Learn how to add support for passkeys to cre
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10092", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10092", purpose: link, label: "Watch Video (33 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

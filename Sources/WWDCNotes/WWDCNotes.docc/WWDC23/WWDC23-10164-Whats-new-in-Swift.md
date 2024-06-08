@@ -5,7 +5,7 @@ Join us for an update on Swift. We’ll show you how APIs are becoming more exte
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10164", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10164", purpose: link, label: "Watch Video (43 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

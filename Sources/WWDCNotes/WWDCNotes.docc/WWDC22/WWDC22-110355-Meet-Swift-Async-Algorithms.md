@@ -7,7 +7,7 @@ To get the most out of this session, we recommend watching "Meet AsyncSequence."
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110355", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110355", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

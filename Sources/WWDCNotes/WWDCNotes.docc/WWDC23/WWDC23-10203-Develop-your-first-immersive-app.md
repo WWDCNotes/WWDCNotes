@@ -5,7 +5,7 @@ Find out how you can build immersive apps for visionOS using Xcode and Reality C
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10203", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10203", purpose: link, label: "Watch Video (31 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

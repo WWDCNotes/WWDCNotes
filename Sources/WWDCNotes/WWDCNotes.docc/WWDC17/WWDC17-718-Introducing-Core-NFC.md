@@ -5,7 +5,7 @@ Core NFC is an exciting new framework that enables you to read NFC tags in your 
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/718", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/718", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

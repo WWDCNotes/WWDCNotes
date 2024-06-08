@@ -7,7 +7,7 @@ To get the most out of this session, you should be familiar with ActivityKit and
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10185", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10185", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

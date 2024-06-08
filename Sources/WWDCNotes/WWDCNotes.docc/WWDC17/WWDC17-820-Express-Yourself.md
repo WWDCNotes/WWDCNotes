@@ -5,7 +5,7 @@ iMessage Apps help people easily create and share content, play games, and colla
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/820", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/820", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

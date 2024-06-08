@@ -5,7 +5,7 @@ The Indoor Maps Program enables organizations with large public or private space
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/245", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/245", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

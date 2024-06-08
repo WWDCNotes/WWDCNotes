@@ -5,7 +5,7 @@ It's time to review Day 4. Check out the Thursday highlights and tune in for a q
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110932", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110932", purpose: link, label: "Watch Video (1 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

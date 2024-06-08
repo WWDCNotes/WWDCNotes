@@ -9,7 +9,7 @@ For an introduction to SharedWithYou, watch "Add Shared with You to your app" fr
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10093", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10093", purpose: link, label: "Watch Video (28 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

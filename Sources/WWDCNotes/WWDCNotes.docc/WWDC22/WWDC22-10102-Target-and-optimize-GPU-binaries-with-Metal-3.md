@@ -5,7 +5,7 @@ Discover how you can reduce in-app stutters, first launch times, and new level l
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10102", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10102", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

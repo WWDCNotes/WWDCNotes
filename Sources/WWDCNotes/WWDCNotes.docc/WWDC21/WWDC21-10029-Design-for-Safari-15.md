@@ -5,7 +5,7 @@ Meet Safari 15: redesigned and ready to help people explore the web. Discover ho
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10029", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10029", purpose: link, label: "Watch Video (33 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

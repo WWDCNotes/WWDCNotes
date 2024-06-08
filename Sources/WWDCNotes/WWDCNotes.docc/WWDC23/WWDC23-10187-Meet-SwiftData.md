@@ -1,12 +1,12 @@
 # Meet SwiftData
 
-SwiftData is a powerful and expressive persistence framework built for Swift. We’ll show you how you can model your data directly from Swift code, use SwiftData to work with your models, and integrate with SwiftUI. By [Miká Kruschel](<doc:mikakruschel>) and [Multitudes](<doc:multitudes>).
+SwiftData is a powerful and expressive persistence framework built for Swift. We’ll show you how you can model your data directly from Swift code, use SwiftData to work with your models, and integrate with SwiftUI.
 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10187", purpose: link, label: "Watch Video (8 min)")
-   
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10187", purpose: link, label: "Watch Video (8 min)")
+
    @Contributors {
       @GitHubUser(mikakruschel)
       @GitHubUser(multitudes)
@@ -391,29 +391,4 @@ Learn more about using these frameworks together in our session:
       [Website](https://)
       [Mastodon](https://)
    }
-}
-
-## Related Sessions
-
-@Links(visualStyle: list) {
-   - <doc:WWDC23-10148-Session-Title>
-   - <doc:WWDC23-10149-Session-Title>
-   - <doc:WWDC23-10154-Session-Title>
-   - <doc:WWDC23-10164-Session-Title>
-   - <doc:WWDC23-10189-Session-Title>
-   - <doc:WWDC23-10195-Session-Title>
-   - <doc:WWDC23-10196-Session-Title>
-   - <doc:WWDC23-10331-Session-Title>
-   - <doc:WWDC23-111497-Session-Title>
-   - <doc:WWDC23-111498-Session-Title>
-   - <doc:WWDC23-111543-Session-Title>
-}
-
-
-@Small {
-   **Legal Notice**
-   
-   All content copyright © 2012 – 2024 Apple Inc. All rights reserved.
-   Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, Apple Vision, Apple Watch, App Store, iPadOS, watchOS, visionOS, tvOS, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.
-   This website is not made by, affiliated with, nor endorsed by Apple.
 }

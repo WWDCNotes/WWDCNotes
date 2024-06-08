@@ -7,7 +7,7 @@ To get the most out of this session, we recommend first watching “Bring your g
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10125", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10125", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Get ready to develop apps and games for visionOS! Discover the fundamental build
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10260", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10260", purpose: link, label: "Watch Video (31 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

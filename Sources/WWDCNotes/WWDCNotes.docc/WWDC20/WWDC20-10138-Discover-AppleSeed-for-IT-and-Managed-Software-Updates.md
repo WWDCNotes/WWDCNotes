@@ -5,7 +5,7 @@ With AppleSeed for IT, you can help your school or business test pre-release ver
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10138", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10138", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

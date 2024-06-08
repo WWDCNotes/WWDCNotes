@@ -5,7 +5,7 @@ Discover the redesigned Apple Pay for in-app and web payments and learn how you 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10092", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10092", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Here’s your guide to some of the big (and little) things announced on the firs
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/111486", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/111486", purpose: link, label: "Watch Video (2 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

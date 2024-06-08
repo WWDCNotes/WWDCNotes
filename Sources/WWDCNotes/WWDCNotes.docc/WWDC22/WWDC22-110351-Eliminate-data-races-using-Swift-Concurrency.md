@@ -5,7 +5,7 @@ Join us as we explore one of the core concepts in Swift concurrency: isolation o
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110351", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110351", purpose: link, label: "Watch Video (28 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

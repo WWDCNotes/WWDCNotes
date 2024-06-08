@@ -5,7 +5,7 @@ Learn how CarPlay integrates with your car's infotainment system. Understand how
 @Metadata {
    @TitleHeading("WWDC16")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc16/723", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc16/723", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

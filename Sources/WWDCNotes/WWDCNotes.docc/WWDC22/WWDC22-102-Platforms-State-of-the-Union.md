@@ -5,7 +5,7 @@ Take a deeper dive into the latest tools, technologies, and advances across Appl
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/102", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/102", purpose: link, label: "Watch Video (70 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

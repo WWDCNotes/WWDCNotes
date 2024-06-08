@@ -5,7 +5,7 @@ Launched last year with iOS 9 and macOS El Capitan, the new Transit feature in A
 @Metadata {
    @TitleHeading("WWDC16")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc16/241", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc16/241", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

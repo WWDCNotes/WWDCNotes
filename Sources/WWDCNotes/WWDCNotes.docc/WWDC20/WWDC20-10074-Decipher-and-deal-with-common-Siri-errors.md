@@ -7,7 +7,7 @@ Don’t let Siri errors get you down: Learn how to debug your Siri intents and c
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10074", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10074", purpose: link, label: "Watch Video (2 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

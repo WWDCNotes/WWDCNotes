@@ -6,7 +6,7 @@ Discover how you can use Core Media IO to easily create macOS system extensions 
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10022", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10022", purpose: link, label: "Watch Video (32 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

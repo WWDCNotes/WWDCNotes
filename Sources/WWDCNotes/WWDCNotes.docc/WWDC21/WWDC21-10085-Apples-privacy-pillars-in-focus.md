@@ -5,7 +5,7 @@ At Apple, we believe that privacy is a fundamental human right. Learn about our 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10085", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10085", purpose: link, label: "Watch Video (33 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

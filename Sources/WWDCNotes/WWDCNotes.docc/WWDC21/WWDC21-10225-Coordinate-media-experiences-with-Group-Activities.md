@@ -5,7 +5,7 @@ Discover how you can help people watch or listen to content all in sync with Sha
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10225", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10225", purpose: link, label: "Watch Video (37 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

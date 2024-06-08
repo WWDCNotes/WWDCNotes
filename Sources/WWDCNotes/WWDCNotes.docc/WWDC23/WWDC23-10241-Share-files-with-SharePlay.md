@@ -5,7 +5,7 @@ Discover how to work with files and attachments in a SharePlay activity. We’ll
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10241", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10241", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

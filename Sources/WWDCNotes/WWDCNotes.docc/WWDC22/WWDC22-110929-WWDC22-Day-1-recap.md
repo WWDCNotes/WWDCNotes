@@ -5,7 +5,7 @@ It's time for your Day 1 report from Apple HQ. Check out all the exciting announ
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110929", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110929", purpose: link, label: "Watch Video (3 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

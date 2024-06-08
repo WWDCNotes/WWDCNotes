@@ -11,7 +11,7 @@ For more, watch “Harness Apple GPUs with Metal” to learn how TBDR applies to
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10632", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10632", purpose: link, label: "Watch Video (45 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

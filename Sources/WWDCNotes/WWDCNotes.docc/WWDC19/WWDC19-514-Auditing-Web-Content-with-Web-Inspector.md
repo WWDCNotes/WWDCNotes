@@ -5,7 +5,7 @@ Discover a new way to ensure your web content meets team coding standards and th
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/514", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/514", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

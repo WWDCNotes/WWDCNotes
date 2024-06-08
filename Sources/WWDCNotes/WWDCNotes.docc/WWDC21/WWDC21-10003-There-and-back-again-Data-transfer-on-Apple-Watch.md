@@ -5,7 +5,7 @@ Advances in Apple Watch give you more ways to communicate to and from your app, 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10003", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10003", purpose: link, label: "Watch Video (31 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

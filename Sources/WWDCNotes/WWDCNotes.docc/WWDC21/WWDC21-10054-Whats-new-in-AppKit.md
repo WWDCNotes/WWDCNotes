@@ -5,7 +5,7 @@ Explore the latest advancements in Mac app development with AppKit. We’ll show
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10054", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10054", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ In AVCapture on iOS 13 it is now possible to simultaneously capture photos and v
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/249", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/249", purpose: link, label: "Watch Video (44 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

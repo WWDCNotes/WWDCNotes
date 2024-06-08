@@ -9,7 +9,7 @@ Whether you are building a fitness coaching app, or exploring new ways of intera
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10099", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10099", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -7,7 +7,7 @@ For an overview of Low-Latency HLS, watch “Introducing Low-Latency HLS” from
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10228", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10228", purpose: link, label: "Watch Video (5 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

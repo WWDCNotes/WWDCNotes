@@ -5,7 +5,7 @@ Learn how to simplify your ray tracing code and increase performance with the po
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10105", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10105", purpose: link, label: "Watch Video (31 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

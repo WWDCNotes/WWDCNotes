@@ -5,7 +5,7 @@ Discover two of the latest additions to the list of open-source Swift packages f
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10256", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10256", purpose: link, label: "Watch Video (30 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

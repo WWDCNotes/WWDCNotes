@@ -32,10 +32,6 @@ Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnote
 - <doc:WWDC18>
 - <doc:WWDC17>
 - <doc:WWDC16>
-- <doc:WWDC15>
-- <doc:WWDC14>
-- <doc:WWDC13>
-- <doc:WWDC12>
-- <doc:WWDC11>
-- <doc:WWDC10>
 - <doc:Contributors>
+
+@Comment { Add more years! }

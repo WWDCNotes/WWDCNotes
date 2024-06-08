@@ -5,7 +5,7 @@ Meet TextKit 2: Apple’s next-generation text engine, redesigned for improved c
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10061", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10061", purpose: link, label: "Watch Video (41 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

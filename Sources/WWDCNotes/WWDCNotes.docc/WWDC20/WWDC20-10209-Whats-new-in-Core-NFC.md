@@ -5,7 +5,7 @@ Core NFC helps you scan and write to NFC tags in your apps, helping people get m
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10209", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10209", purpose: link, label: "Watch Video (5 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

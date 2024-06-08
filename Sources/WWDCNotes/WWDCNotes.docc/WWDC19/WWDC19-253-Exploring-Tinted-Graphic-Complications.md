@@ -5,7 +5,7 @@ Many Watch faces in watchOS 6 allow for customizing the tint color of content, a
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/253", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/253", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

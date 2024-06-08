@@ -5,7 +5,7 @@ Build a workout app from scratch using SwiftUI and HealthKit during this code al
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10009", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10009", purpose: link, label: "Watch Video (54 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

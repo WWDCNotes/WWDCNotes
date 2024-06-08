@@ -5,7 +5,7 @@ Discover the latest updates to App Store Connect, your suite of tools to create,
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10043", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10043", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

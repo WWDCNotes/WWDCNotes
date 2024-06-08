@@ -5,7 +5,7 @@ Bring the power of the pointer to your iPad app: We’ll show you how Apple's de
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10640", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10640", purpose: link, label: "Watch Video (41 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

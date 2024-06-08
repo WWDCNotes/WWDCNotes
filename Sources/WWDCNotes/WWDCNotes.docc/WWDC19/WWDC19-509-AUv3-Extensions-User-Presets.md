@@ -5,7 +5,7 @@ Audio Unit app extensions gives users a convenient way to create or modify audio
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/509", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc19/509", purpose: link, label: "Watch Video (5 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

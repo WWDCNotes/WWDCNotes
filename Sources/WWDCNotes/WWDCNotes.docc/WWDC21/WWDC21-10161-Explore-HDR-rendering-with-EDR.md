@@ -7,7 +7,7 @@ We’ll show you how game and pro app developers can take advantage of the nativ
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10161", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10161", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

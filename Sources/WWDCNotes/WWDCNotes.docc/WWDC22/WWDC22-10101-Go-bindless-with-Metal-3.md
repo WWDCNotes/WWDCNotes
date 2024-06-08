@@ -6,7 +6,7 @@ Learn how you can unleash powerful rendering techniques like ray tracing when yo
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10101", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10101", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

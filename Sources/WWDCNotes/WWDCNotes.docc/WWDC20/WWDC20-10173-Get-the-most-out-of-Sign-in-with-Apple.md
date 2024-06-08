@@ -5,7 +5,7 @@ Sign in with Apple makes it easy for people to sign in to your apps and websites
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10173", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10173", purpose: link, label: "Watch Video (30 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

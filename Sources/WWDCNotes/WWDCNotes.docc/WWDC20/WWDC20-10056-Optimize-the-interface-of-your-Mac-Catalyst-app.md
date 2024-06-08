@@ -9,7 +9,7 @@ For more on working with Mac Catalyst, check out "What's new in Mac Catalyst”
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10056", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10056", purpose: link, label: "Watch Video (37 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

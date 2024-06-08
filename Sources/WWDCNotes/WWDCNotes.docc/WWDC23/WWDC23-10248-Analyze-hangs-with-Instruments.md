@@ -7,7 +7,7 @@ If you aren’t familiar with using Instruments, we recommend first watching "Ge
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10248", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10248", purpose: link, label: "Watch Video (42 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Join us as we surprise the 2020 winners of the Apple Design Awards. The Apple De
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/20022", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/20022", purpose: link, label: "Watch Video (2 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

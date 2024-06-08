@@ -5,7 +5,7 @@ Design features such as the tvOS Top Shelf and Universal Links help customers im
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/246", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/246", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

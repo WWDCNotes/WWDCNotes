@@ -5,7 +5,7 @@ Discover the latest tools to help you test your in-app purchases and subscriptio
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10039", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc22/10039", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

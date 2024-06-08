@@ -5,7 +5,7 @@ Help your users share the great content in your app by using the built-in iOS sh
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/247", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc17/247", purpose: link, label: "Watch Video (4 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

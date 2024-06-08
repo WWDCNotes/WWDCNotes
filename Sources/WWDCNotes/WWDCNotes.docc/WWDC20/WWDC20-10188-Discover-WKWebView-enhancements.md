@@ -5,7 +5,7 @@ WKWebView is the best way to present rich, interactive web content right within 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10188", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10188", purpose: link, label: "Watch Video (30 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Explore SwiftUI’s powerful animation capabilities and find out how these featu
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10156", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/10156", purpose: link, label: "Watch Video (30 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

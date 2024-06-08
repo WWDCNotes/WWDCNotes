@@ -5,7 +5,7 @@ Explore the world of declarative-style programming: Discover how to build a full
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10119", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10119", purpose: link, label: "Watch Video (54 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

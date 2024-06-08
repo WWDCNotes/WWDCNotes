@@ -9,7 +9,7 @@ For more on working with Swift and Objective-C, check out our Developer Document
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10680", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10680", purpose: link, label: "Watch Video (42 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

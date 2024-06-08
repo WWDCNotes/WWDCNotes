@@ -5,7 +5,7 @@ Develop in JavaScript, WebGL, or WebAssembly? Learn how the latest updates to Sa
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10030", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10030", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

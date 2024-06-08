@@ -5,7 +5,7 @@ Learn about the latest tools, technologies, and advancements to help you create 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/112", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc23/112", purpose: link, label: "Watch Video (89 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

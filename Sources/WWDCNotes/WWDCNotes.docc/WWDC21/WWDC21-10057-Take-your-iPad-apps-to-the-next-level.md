@@ -5,7 +5,7 @@ Make even better iPad apps: Learn how you can adopt prominent scenes for uninter
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10057", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10057", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

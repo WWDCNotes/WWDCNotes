@@ -7,7 +7,7 @@ To learn more about camera capture, we also recommend watching "Capture high-qua
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10047", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc21/10047", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

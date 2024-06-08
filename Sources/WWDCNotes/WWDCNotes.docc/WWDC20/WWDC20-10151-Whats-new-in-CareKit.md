@@ -5,7 +5,7 @@ Build feature-rich research and care apps with CareKit: Learn about the latest a
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10151", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/wwdc20/10151", purpose: link, label: "Watch Video (35 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)
