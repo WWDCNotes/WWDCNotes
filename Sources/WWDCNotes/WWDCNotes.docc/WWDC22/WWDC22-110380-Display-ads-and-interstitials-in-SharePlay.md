@@ -1,0 +1,18 @@
+# Display ads and interstitials in SharePlay
+
+Find out how you can deliver a coordinated playback experience in SharePlay when your app delivers different ad schedules to each participant. We'll explore how to build playback experiences with stitched-in ads and scheduled HLS interstitials, and share tips and best practices.
+
+@Metadata {
+   @TitleHeading("WWDC22")
+   @PageKind(sampleCode)
+   @CallToAction(url: "https://developer.apple.com/wwdc22/110380", purpose: link, label: "Watch Video")
+
+   @Contributors {
+      @GitHubUser(<replace this with your GitHub handle>)
+   }
+}
+
+😱 "No Overview Available!"
+
+Be the hero to change that by watching the video and providing notes! It's super easy:
+ [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
