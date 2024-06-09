@@ -292,7 +292,9 @@ for year in years {
 
       """
 
-   let newToolAndFrameworkSessions = yearSessions.filter { $0.title.lowercased().starts(with: "meet ") }
+   let newToolAndFrameworkSessions = yearSessions.filter { session in
+      session.title.lowercased().starts(with: "meet ") || session.title.lowercased().starts(with: "introducing ")
+   }
    yearOverviewFileContents += """
       
       ### New Tools & Frameworks
@@ -303,7 +305,9 @@ for year in years {
 
       """
 
-   let updatedToolAndFrameworkSessions = yearSessions.filter { $0.title.lowercased().starts(with: "what's new in ") }
+   let updatedToolAndFrameworkSessions = yearSessions.filter { session in
+      session.title.lowercased().replacing("'", with: "").replacing("’", with: "").starts(with: "whats new in ")
+   }
    yearOverviewFileContents += """
 
       ### Updated Tools & Frameworks
