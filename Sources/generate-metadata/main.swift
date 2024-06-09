@@ -31,9 +31,19 @@ struct Contributor {
       self.fullName = gitHubUser.name ?? githubProfileName
 
       let fullNameTokens = self.fullName.components(separatedBy: .whitespaces)
-      print("gitHubUser.avatarURL: \(gitHubUser.avatarUrl)")
-      print("Fallback: https://ui-avatars.com/api/?name=\(fullNameTokens.joined(separator: "+"))")
-      self.avatarURL = URL(string: gitHubUser.avatarUrl ?? "https://ui-avatars.com/api/?name=\(fullNameTokens.joined(separator: "+"))")!
+
+      if let avatarURLString = gitHubUser.avatarUrl, let avatarURL = URL(string: avatarURLString) {
+         self.avatarURL = avatarURL
+      } else {
+         var urlComponents = URLComponents()
+         urlComponents.scheme = "https"
+         urlComponents.host = "ui-avatars.com"
+         urlComponents.path = "/api/"
+         urlComponents.queryItems = [URLQueryItem(name: "name", value: fullNameTokens.joined(separator: "+"))]
+
+         self.avatarURL = urlComponents.url!
+      }
+
       self.shortDescription = gitHubUser.bio ?? "No Bio on GitHub"
 
       // Fetch social links
