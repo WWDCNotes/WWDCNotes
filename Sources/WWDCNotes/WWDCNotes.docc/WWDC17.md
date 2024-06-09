@@ -1,7 +1,7 @@
 # WWDC17
 
 Xcode 9, Swift 4.0, iOS 10, macOS 10.13, tvOS 11, watchOS 4.
-New APIs: ``TODO``, ``TODO``, ``TODO``, and more. 
+New APIs: ``Core NFC`` and more. 
 
 @Metadata {
    @TitleHeading("Overview")
