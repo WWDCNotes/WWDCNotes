@@ -31,6 +31,8 @@ struct Contributor {
       self.fullName = gitHubUser.name ?? githubProfileName
 
       let fullNameTokens = self.fullName.components(separatedBy: .whitespaces)
+      print("gitHubUser.avatarURL: \(gitHubUser.avatarUrl)")
+      print("Fallback: https://ui-avatars.com/api/?name=\(fullNameTokens.joined(separator: "+"))")
       self.avatarURL = URL(string: gitHubUser.avatarUrl ?? "https://ui-avatars.com/api/?name=\(fullNameTokens.joined(separator: "+"))")!
       self.shortDescription = gitHubUser.bio ?? "No Bio on GitHub"
 
