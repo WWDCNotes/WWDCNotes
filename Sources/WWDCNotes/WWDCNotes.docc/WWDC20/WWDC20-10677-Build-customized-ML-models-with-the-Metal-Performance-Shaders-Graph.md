@@ -2,8 +2,6 @@
 
 Discover the Metal Performance Shaders (MPS) Graph, which extends Metal's Compute capabilities to multi-dimensional Tensors. MPS Graph builds on the highly tuned library of data parallel primitives that are vital to machine learning and leverages the tremendous power of the GPU. Explore how MPS Graph can help express sophisticated and dynamic neural network training architectures and optimize across them to get acceleration on the GPU.
 
-For a deeper understanding of the concepts covered in this session, check out "Metal for Machine Learning” from WWDC19.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

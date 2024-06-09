@@ -2,8 +2,6 @@
 
 Widgets elevate timely information from your app to primary locations on iPhone, iPad and Mac. Discover the keys to designing glanceable widgets, developing a strong widget idea, and clearly communicating with content, color, sizing, layout, and typography.
 
-If you'd like to learn more about the technical implementation for adding widgets into your app, check out "Get Started with WidgetKit" and our three-part code-along series.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

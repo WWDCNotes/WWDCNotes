@@ -2,8 +2,6 @@
 
 Learn how to easily build apps that share data between multiple iCloud users with NSPersistentCloudKitContainer. Discover how to create informative experiences around shared data and learn about the CloudKit technologies that support these features in Core Data.
 
-To get the most out of this session, check out our previous videos on NSPersistentCloudKitContainer: "Using Core Data With CloudKit" from WWDC19 and "Sync a Core Data store with the CloudKit public database" from WWDC20.
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

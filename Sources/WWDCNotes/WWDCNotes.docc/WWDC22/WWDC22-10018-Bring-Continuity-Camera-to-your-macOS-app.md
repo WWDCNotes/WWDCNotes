@@ -2,8 +2,6 @@
 
 Discover how you can use iPhone as an external camera in any Mac app with Continuity Camera. Whether you’re building video conferencing software or an experience that makes creative use of cameras, we’ll show you how you can enhance your app with automatic camera switching. We’ll also explore how to recognize user-preferred and system-preferred cameras, take you through APIs for high-resolution and high-quality photo capture from iPhone’s video stream, and more.
 
-To learn more about camera capture, watch "Discover advancements in iOS camera capture" from WWDC22.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

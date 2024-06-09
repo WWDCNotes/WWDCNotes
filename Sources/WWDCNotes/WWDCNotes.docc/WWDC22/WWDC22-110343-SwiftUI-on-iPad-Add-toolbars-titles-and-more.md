@@ -2,8 +2,6 @@
 
 Get ready to tune up your iPad app’s toolbars with SwiftUI. We’ll show you how you can structure toolbars to take advantage of the space available on iPad and help people maximize their productivity. We’ll also take you through customization, explore the latest ways you can represent documents, and more.
 
-This is the second session in a two-part series. To get the most out of this video, we recommend starting with “SwiftUI on iPad: Organize your interface.”
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

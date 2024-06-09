@@ -2,8 +2,6 @@
 
 Discover the latest updates to the Virtualization framework. We’ll show you how to configure a virtual machine (VM) to automatically resize its display, take you through saving and restoring a running VM, and explore storage and performance options for Virtualization apps running on the desktop or in the data center.
 
-To learn more about the Virtualization framework, check out “Create macOS or Linux virtual machines” from WWDC22.
-
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)

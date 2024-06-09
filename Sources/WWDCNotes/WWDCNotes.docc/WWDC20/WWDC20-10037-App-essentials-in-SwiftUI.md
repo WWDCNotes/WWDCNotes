@@ -2,10 +2,6 @@
 
 Thanks to the new App protocol, SwiftUI now supports building entire apps! See how Apps, Scenes, and Views fit together. Learn how easy it is to implement the features people expect from a best-in-class product while saving time and reducing complexity. Easily add expected functionality to your interface using the new commands modifier, and explore the ins and outs of the new WindowGroup API.
 
-To get the most out of this session, you should have some experience with SwiftUI. Watch “Introduction to SwiftUI” for a primer.
-
-Want more SwiftUI? Take your pick: “What’s new in SwiftUI”, “Data essentials in Swift UI ”, "Stacks, grids, and outlines in SwiftUI", and “Build document-based apps in SwiftUI”.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

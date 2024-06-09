@@ -2,8 +2,6 @@
 
 Discover how you can use WidgetKit to create beautiful complications on watch faces. We'll introduce you to the watchOS-specific features found in WidgetKit, and help you migrate from existing ClockKit complications.
 
-For more on WidgetKit, watch “Complications and Widgets: Reloaded” from WWDC22.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

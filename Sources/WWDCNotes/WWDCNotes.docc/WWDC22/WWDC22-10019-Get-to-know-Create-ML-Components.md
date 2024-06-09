@@ -2,8 +2,6 @@
 
 Create ML makes it easy to build custom machine learning models for image classification, object detection, sound classification, hand pose classification, action classification, tabular data regression, and more. And with the Create ML Components framework, you can further customize underlying tasks and improve your model. We’ll explore the feature extractors, transformers, and estimators that make up these tasks, and show you how you can combine them with other components and pre-processing steps to build custom tasks for concepts like image regression.
 
-For more information on creating complex customizable tasks, we recommend watching "Compose advanced models with Create ML Components" from WWDC22.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

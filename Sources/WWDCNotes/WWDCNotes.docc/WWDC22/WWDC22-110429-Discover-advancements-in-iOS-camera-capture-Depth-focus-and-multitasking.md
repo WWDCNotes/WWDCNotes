@@ -2,8 +2,6 @@
 
 Discover how you can take advantage of advanced camera capture features in your app. We'll show you how to use the LiDAR scanner to create photo and video effects and perform accurate depth measurement. Learn how your app can use the camera for picture-in-picture or multitasking, control face-driven autofocus and autoexposure during camera capture, and more. We'll also share strategies for using multiple video outputs so that you can optimize live preview while capturing high-quality video output.
 
-For an overview on camera capture capabilities, watch "What’s new in camera capture" from WWDC21.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

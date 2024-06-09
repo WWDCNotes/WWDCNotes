@@ -2,10 +2,6 @@
 
 Put your test failures to work: Learn how to triage and diagnose uncaught issues in your app using the latest testing APIs in Xcode. We’ll show you how to help ease your testing workflow and put failures into context to help you deliver the best quality product.
 
-For more information on designing your tests to improve triaging, see “Write tests to fail.”
-
-And check out the latest improvements to Xcode’s testing workflow by watching “Get your test results faster”, “Handle interruptions and alerts in UI tests”, and “XCTSkip your tests.”
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

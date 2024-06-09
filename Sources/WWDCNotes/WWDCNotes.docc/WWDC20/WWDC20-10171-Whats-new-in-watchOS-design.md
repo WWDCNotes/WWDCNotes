@@ -2,8 +2,6 @@
 
 Great watchOS apps are simple and direct. Actions should be discoverable, predictable and relevant. This session covers effective strategies for displaying actions in your watchOS app, whether they are primary buttons that begin core tasks, or contextual actions that might be less commonly used but are still important to offer.
 
-For more on implementing actions with the latest UI frameworks, check out "SwiftUI on watchOS."
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

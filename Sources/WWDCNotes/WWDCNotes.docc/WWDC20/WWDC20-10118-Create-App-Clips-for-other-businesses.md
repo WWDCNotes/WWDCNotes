@@ -2,8 +2,6 @@
 
 Create App Clips for table reservations, food ordering, and more on behalf of brands, businesses, or services that appear within your app. We’ll show you how you can deliver customized experiences for each business, offering them a unique look, invocation card, and icon — all within a single App Clips binary. Learn best practices for uploading unique metadata, handling links, routing notifications, and keeping track of session states. And discover different types of icons in the context of App Clips, where they appear, and how to customize them.
 
-For more on designing and creating App Clips, make sure to watch “Explore App Clips” and “Configure and link your App Clips.”
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

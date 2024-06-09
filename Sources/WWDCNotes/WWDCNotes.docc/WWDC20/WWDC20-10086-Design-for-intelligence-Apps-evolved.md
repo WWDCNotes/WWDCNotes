@@ -2,8 +2,6 @@
 
 Intelligence is a core part of building a great modern app. App extensions, Siri suggestions, voice, widgets, App Clips — we’ve designed all of these features to help make everyday tasks easier for people who use our platforms. Learn about the origins of the intelligent system experience, and find out how integrating intelligently with the system can help make your app more convenient, relevant, and intuitive, making your features the focus.
 
-Learn more about designing for intelligence in the next part of our series, "Discover new opportunities."
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 Notarization works in tandem with macOS to help people safely download software for their Mac outside of the App Store. Discover how notarytool can help you quickly and easily notarize your Mac app for distribution. We’ll show you how you can now notarize your apps with just a single command, and how to bring notarization into your continuous integration workflows.
 
-To learn about the notarization workflow, watch the 2019 video "All About Notarization."
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 Learn how you can take advantage of the latest features in Swift-DocC to create rich and detailed documentation for your app or framework. We’ll show you how to use the Xcode 15 Documentation Preview editor to efficiently iterate on your existing project’s documentation, and explore expanded authoring capabilities like grid-based layouts, video support, and custom themes.
 
-To get the most out of this session, you should have a working knowledge of the basics of Swift-DocC documentation.
-
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)

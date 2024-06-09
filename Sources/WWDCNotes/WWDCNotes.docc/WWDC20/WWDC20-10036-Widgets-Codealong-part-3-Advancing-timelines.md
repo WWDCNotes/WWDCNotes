@@ -2,8 +2,6 @@
 
 Take your widget to the next level as we embark upon the third and final stage of the widgets code-along. Pick up where you left off in Part 2 or start with the Part 3 starter project to go warp speed ahead. We’ll explore advanced concepts for widgets, timelines, and configuration. Learn how to load in-process and background URLs and link directly to content within your app. And discover how to create multiple widgets that explore different features within your app, as well as making your widget dynamically configurable.
 
-For more on creating great widgets, watch "Build SwiftUI views for widgets”.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

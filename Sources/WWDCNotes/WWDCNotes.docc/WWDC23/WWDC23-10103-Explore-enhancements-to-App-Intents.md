@@ -2,8 +2,6 @@
 
 Bring your widgets to life with App Intents! Explore the latest updates and learn how you can take advantage of dynamic options and user interactivity to build better experiences for your App Shortcuts. We’ll share how you can integrate with Apple Pay, structure your code more efficiently, and take your Shortcuts app integration to the next level.
 
-For more on App Intents and App Shortcuts, watch “Spotlight your app with App Shortcuts" from WWDC23.
-
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 What exactly makes code “unsafe”? Join the Swift team as we take a look at the programming language’s safety precautions — and when you might need to reach for unsafe operations. We’ll take a look at APIs that can cause unexpected states if not used correctly, and how you can write code more specifically to avoid undefined behavior. Learn how to work with C APIs that use pointers and the steps to take when you want to use Swift’s unsafe pointer APIs.
 
-To get the most out of this session, you should have some familiarity with Swift and the C programming language. And for more information on working with pointers, check out "Safely Manage Pointers in Swift".
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

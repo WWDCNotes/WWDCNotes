@@ -2,8 +2,6 @@
 
 Iterating over a sequence of values over time is now as easy as writing a “for” loop. Find out how the new AsyncSequence protocol enables a natural, simple syntax for iterating over anything from notifications to bytes being streamed from a server. We'll also show you how to adapt existing code to provide asynchronous sequences of your own.
 
-To get the most out of this session, we recommend first watching “Meet async/await in Swift.”
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

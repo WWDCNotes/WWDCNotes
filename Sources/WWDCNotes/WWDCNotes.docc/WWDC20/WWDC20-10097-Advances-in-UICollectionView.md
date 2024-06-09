@@ -2,8 +2,6 @@
 
 Learn about new features of UICollectionView that make it easier to use and unlock powerful new functionality. We'll show you how to use section snapshots with your diffable data source to create outlines that can expand and collapse, and introduce you to building lists with compositional layout to create UITableView-like interfaces with a collection view. And discover modern techniques for dequeuing cells and configuring their content and styling.
 
-To get the most out of this session, you should have a basic understanding of compositional layouts. Watch “Advances in Collection View Layout” from WWDC19 for more information.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

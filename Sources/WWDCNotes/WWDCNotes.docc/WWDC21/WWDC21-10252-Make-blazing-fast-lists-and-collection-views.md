@@ -2,8 +2,6 @@
 
 Build consistently smooth scrolling list and collection views: Explore the lifecycle of a cell and learn how to apply that knowledge to eliminate rough scrolling and missed frames. We’ll also show you how to improve your overall scrolling experience and avoid costly hitches, with optimized image loading and automatic cell prefetching.
 
-To get the most out of this video, we recommend a basic familiarity with diffable data sources and compositional layout.
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

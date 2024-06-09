@@ -2,8 +2,6 @@
 
 Widgets are bite-sized pieces of information from your app that someone can choose to place on their home screen or Today view. Discover the process of building the views for a widget from scratch using SwiftUI. Brush up on the syntax that you’ll need for widget-specific construction and learn how to incorporate those commands and customize your widget’s interface for a great glanceable experience.
 
-To learn more about widgets, be sure to check out "Meet WidgetKit" and "Widgets Code-along".
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 It’s time to supercharge the interface of your iPad app with SwiftUI lists and tables. We’ll show how you can add selection interactions and context menus and help people who use your app be more productive. We'll also give you best practices on structuring your navigation and explore how you can avoid modality using split views to ensure a top-notch desktop-class iPad experience.
 
-This is the first session in a two-part series. To get the most out of this video, we recommend you have some basic familiarity with SwiftUI. After watching this session, check out "SwiftUI on iPad: Add toolbars, titles, and more" to learn how SwiftUI can help you make even better toolbars for your iPad app.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

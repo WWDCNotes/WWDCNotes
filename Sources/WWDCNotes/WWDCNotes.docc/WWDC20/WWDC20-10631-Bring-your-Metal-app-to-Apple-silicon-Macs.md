@@ -2,8 +2,6 @@
 
 Meet the Tile Based Deferred Rendering (TBDR) GPU architecture for Apple silicon Macs — the heart of your Metal app or game’s graphics performance. Learn how you can translate or port your graphics-intensive app over to Apple silicon, and how to take advantage of TBDR and Metal when building natively for the platform. We’ll look at how TBDR compares with the Immediate Mode Rendering pipeline of older Macs, go through common issues you may face when bringing an app or game over, and explore how to offer incredible performance when building with the native SDK.
 
-We’ve designed this session in tandem with “Optimize Metal Performance for Apple silicon Macs.” After you’ve watched this session be sure to check that out next.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 With the Create ML framework you have more power than ever to easily develop models and automate workflows. We'll show you how to explore and interact with your machine learning models while you train them, helping you get a better model quickly. Discover how training control in Create ML can customize your training workflow with checkpointing APIs to pause, save, resume, and extend your training process. And find out how you can monitor your progress programmatically using Combine APIs.
 
-If you're not already familiar with Create ML and curious about training machine learning models, be sure to watch “Introducing the Create ML App.”
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

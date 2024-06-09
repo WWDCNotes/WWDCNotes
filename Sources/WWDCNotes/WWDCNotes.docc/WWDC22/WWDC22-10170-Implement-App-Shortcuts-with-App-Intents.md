@@ -2,8 +2,6 @@
 
 Discover how you can create Shortcuts in your app with zero user setup. We'll show you how App Intents can help you present custom Shortcuts views, and explore how you can add support for parameterized phrases to allow people to quickly express their intent. We'll also share how you can make your App Shortcuts discoverable with a Siri Tip, and Shortcuts links.
 
-To get the most out of this session, we recommend a basic familiarity with SwiftUI.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

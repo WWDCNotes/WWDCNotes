@@ -2,8 +2,6 @@
 
 Find out how to integrate advertising into your Low-Latency HLS streams through server-side ad insertion. We'll show you how to segment your ad content, and examine how ad insertion works with LL-HLS features such as Blocking Playlist Reload and Blocking Preload Hints.
 
-For more information about Blocking Playlist Reload and Preload Hinting, watch "Reduce Latency with HLS Blocking Playlist Reload" and "Discover HLS Blocking Preload Hints."
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

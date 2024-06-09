@@ -2,8 +2,6 @@
 
 Meet the Data Scanner in VisionKit: This framework combines AVCapture and Vision to enable live capture of machine-readable codes and text through a simple Swift API. We’ll show you how to control the types of content your app can capture by specifying barcode symbologies and language selection. We’ll also explore how you can enable guidance in your app, customize item highlighting or regions of interest, and handle interactions after your app detects an item.
 
-For more on interacting with Live Text through still images or paused video frames, watch "Add Live Text interaction to your app" from WWDC22.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

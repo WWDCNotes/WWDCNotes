@@ -2,10 +2,6 @@
 
 PHPicker provides simple and secure integration between your app and the system Photos library. Learn how SwiftUI and Transferable can help you offer integration across iOS, iPadOS, macOS, and watchOS.
 
-We’ll also show you how you can use AppKit and NSOpenPanel to bring the Photos picker on Mac into your macOS apps.
-
-For even more on the Photos picker, watch "Improve access to Photos in your app" from WWDC21.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

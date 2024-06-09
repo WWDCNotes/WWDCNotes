@@ -2,8 +2,6 @@
 
 Discover how you can use automatic grammatical agreement in your apps and games to create inclusive and more natural-sounding expressions. We’ll share best practices for working with Foundation, showcase examples in multiple languages, and demonstrate how to use these APIs to enhance the user experience for your apps.
 
-For an introduction to automatic grammatical agreement, watch “What’s new in Foundation” from WWDC21.
-
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)

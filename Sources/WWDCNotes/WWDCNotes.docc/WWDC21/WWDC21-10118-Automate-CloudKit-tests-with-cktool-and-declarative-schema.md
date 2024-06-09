@@ -2,8 +2,6 @@
 
 It’s never been easier to test your CloudKit containers. We’ll introduce you to cktool, a command-line utility that makes quick work of CloudKit configuration, and learn about the new schema language that allows you to rapidly prototype and evolve containers. We’ll also show you how to combine these tools and configure your containers before running tests in Xcode.
 
-To get the most out of this session, we recommend being familiar with CloudKit and its development and production environments, as well as a basic understanding of record and data types.
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

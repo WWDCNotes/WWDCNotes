@@ -2,8 +2,6 @@
 
 Discover how you can create custom iconography with the latest rendering modes in SF Symbols 3. We’ll help you learn how to draw, edit, and annotate symbols, as well as explore more advanced techniques to improve the design process.
 
-For a primer on working with custom symbol templates, we recommend first watching “Introducing SF Symbols” from WWDC19.
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

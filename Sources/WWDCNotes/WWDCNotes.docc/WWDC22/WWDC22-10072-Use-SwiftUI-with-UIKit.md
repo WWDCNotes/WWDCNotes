@@ -2,8 +2,6 @@
 
 Learn how to take advantage of the power of SwiftUI in your UIKit app. Build custom UICollectionView and UITableView cells seamlessly with SwiftUI using UIHostingConfiguration. We’ll also show you how to manage data flow between UIKit and SwiftUI components within your app.
 
-To get the most out of this session, we encourage basic familiarity with SwiftUI.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 Bring your widgets to watchOS with the new Smart Stack. We’ll show you how to use standard design layouts, color and iconography, and signal-based relevancy to ensure your app’s widgets are glanceable, distinctive and smart.
 
-When you’re ready to make your own, watch this code-along: "Build widgets for the Smart Stack on watchOS"
-
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)

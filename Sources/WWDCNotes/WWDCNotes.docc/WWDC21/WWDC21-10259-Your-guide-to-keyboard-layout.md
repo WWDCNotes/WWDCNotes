@@ -2,8 +2,6 @@
 
 Discover how you can use the Keyboard Layout Guide to manage how keyboards work within your iOS or iPadOS app. Learn how you can avoid writing lengthy code blocks when you use UIKeyboardLayoutGuide and UITrackingLayoutGuide to integrate the keyboard into your interface, helping people have a smoother, more enjoyable experience whenever they use the on-screen keyboard within your app.
 
-To get the most out of this session, we recommend familiarity with both Auto Layout and UILayoutGuide.
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 Discover the latest updates to TextKit and text views in UI frameworks. Explore layout refinements and API enhancements, learn how you can maintain compatibility across multiple OS versions, and find out how to modernize your app with TextKit 2. 
 
-To get the most out of this session, watch “Meet TextKit 2” from WWDC21.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

@@ -2,8 +2,6 @@
 
 Learn how to bring great machine learning (ML) based experiences to your app. We'll take you through model discovery, conversion, and training and provide tips and best practices for ML. We'll share considerations to take into account as you begin your ML journey, demonstrate techniques for evaluating model performance, and explore how you can tune models to achieve real-time performance on device.
 
-To learn more about the techniques covered in this session, watch "Optimize your Core ML usage" and "Accelerate machine learning with Metal" from WWDC22.
-
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)

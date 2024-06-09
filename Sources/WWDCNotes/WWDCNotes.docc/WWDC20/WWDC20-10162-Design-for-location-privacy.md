@@ -2,8 +2,6 @@
 
 When someone uses iPhone or iPad, they have control over how their location is shared with the apps they use — including sharing an approximate location rather than precise coordinates. This creates a more private experience across their device, and it impacts all apps that rely on location data or use it to supplement certain elements of their experience.
 
-Discover how the designers of the Maps app redesigned elements within the Maps interface to provide people with more privacy. Learn tips, techniques, and strategies for creating an interface where people can share location data comfortably and confidently.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

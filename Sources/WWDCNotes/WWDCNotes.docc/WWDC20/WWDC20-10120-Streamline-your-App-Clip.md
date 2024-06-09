@@ -2,8 +2,6 @@
 
 App Clips are best when they provide an “in the moment” experience for people using them, like ordering your favorite refreshing beverage or paying for parking. We’ll share guidelines and best practices for building focused and consistent App Clips, show you how to streamline transaction experiences by taking advantage of technologies like App Clip notifications and location confirmation, and explore how you can help people move from your App Clip over to your full app. 
 
-To get the most out of this session, we recommend first watching “Explore App Clips” and “Configure and link your App Clips.”
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

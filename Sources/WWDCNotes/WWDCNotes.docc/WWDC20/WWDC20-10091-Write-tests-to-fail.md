@@ -2,10 +2,6 @@
 
 Plan for failure: Design great tests to help you find and diagnose even the toughest bugs. Learn how to improve your automated tests with XCTest to find hidden issues in even the best code. We’ll explain how to prepare your tests for failure to make triaging issues easier, letting you solve interface issues and deliver fixes quickly.
 
-To get the most out of this session, you should already be familiar with writing UI tests within the XCTest framework.
-
-For more on testing tools, head over to “The suite life of testing”.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

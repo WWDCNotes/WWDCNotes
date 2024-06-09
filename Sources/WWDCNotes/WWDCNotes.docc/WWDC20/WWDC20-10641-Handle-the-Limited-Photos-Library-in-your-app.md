@@ -2,8 +2,6 @@
 
 Access the photos and videos you need for your app while preserving privacy. With the new Limited Photos Library feature, people can directly control which photos and videos an app can access to protect their private content. We’ll explore how this feature may affect your app, and take you through alternatives like PHPicker.
 
-Check out “Meet the New Photos Picker” to learn more about PHPicker and how this this fully private picker can help you avoid requiring full Photos Library access in your app.
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

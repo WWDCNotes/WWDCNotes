@@ -2,8 +2,6 @@
 
 Learn how to create Swift Playgrounds books that work fluidly across both Mac and iPad and help people of all ages explore the fun of coding in Swift. We’ll walk you through how to customize content for each platform while considering platform settings, and help you take advantage of them in your playgrounds while still providing a smooth cross-platform experience.
 
-For more on Swift Playgrounds, check out "Build a SwiftUI view in Swift Playgrounds", and try your hand with "Swan’s Quest".
-
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)

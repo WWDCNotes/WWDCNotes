@@ -2,8 +2,6 @@
 
 Learn about the latest improvements to Safari extensions. We’ll take you through new APIs, explore per-site permissions for Safari app extensions, and share how you can make sure your extensions work great in both Private Browsing and Profiles.
 
-
-
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)

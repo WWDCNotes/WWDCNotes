@@ -2,8 +2,6 @@
 
 It’s time to up your input game: Learn about the latest improvements to virtual and physical game controllers for iPhone, iPad, Mac, and Apple TV. Meet the virtual on-screen controller, which turns touch input into game controller input, and find out how to add controller sharing features to your app. We’ll also show you how to support adaptive trigger technology found in DualSense controllers, provide best practices for controller support, and take you through some common pre-flight checks around accessible and customizable input before submitting to the App Store.
 
-For more information on saving highlight clips from a game controller, check out “Discover rolling clips in ReplayKit” from WWDC21.
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)

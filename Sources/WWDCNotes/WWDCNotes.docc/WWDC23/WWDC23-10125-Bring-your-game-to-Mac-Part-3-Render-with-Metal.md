@@ -2,8 +2,6 @@
 
 Discover how you can support Metal in your rendering code as we close out our three-part series on bringing your game to Mac. Once you’ve evaluated your existing Windows binary with the game porting toolkit and brought your HLSL shaders over to Metal, learn how you can optimally implement the features that high-end, modern games require. We’ll show you how to manage GPU resource bindings, residency, and synchronization. Find out how to optimize GPU commands submission, render rich visuals with MetalFX Upscaling, and more.
 
-To get the most out of this session, we recommend first watching “Bring your game to Mac, Part 1: Make a game plan” and “Bring your game to Mac, Part 2: Compile your shaders" from WWDC23.
-
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)

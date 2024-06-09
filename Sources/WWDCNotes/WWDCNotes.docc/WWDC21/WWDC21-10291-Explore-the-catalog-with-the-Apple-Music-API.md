@@ -2,8 +2,6 @@
 
 Discover how you can use the Apple Music API to fetch music catalog metadata for your app. Explore the latest updates to the API as well as some advanced techniques for shaping your requests and highlighting the right metadata for a project.
 
-To get the most out of this session, we recommend some familiarity with the Apple Music API.
-
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
