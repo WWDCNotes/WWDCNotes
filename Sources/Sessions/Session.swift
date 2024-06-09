@@ -1,4 +1,7 @@
 import Foundation
+#if os(Linux)
+import FoundationNetworking
+#endif
 
 public struct Session: Codable {
    /// A combination of year and code that uniquely identifies the session.

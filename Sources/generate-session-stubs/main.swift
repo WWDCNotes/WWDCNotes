@@ -1,5 +1,8 @@
 import Foundation
 import Sessions
+#if os(Linux)
+import FoundationNetworking
+#endif
 
 let sessionByID = try Session.allSessionsByID()
 

@@ -1,5 +1,8 @@
 import Foundation
 import Sessions
+#if os(Linux)
+import FoundationNetworking
+#endif
 
 struct Contributor {
    struct GitHubUser: Codable {
