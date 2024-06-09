@@ -230,9 +230,11 @@ var contributorsOverviewContents = """
 
    Here's a full list of all \(sessionIDsByProfile.keys.count) people who contributed to WWDCNotes – sorted by most contributions.
 
-   \(sessionIDsByProfile.sorted { $0.value.count > $1.value.count }.map { "- <doc:\($0.key)>" }.joined(separator: "\n"))
-
    """
+
+for (profile, _) in sessionIDsByProfile.sorted(by: { $0.value.count > $1.value.count }) {
+   contributorsOverviewContents += "- <doc:\(profile)>\n"
+}
 
 contributorsOverviewContents += legalNotes
 
@@ -252,13 +254,13 @@ var missingNotesContents = """
    
    """
 
-for (year, sessions) in sessionsWithoutContributorsByYear {
+for (year, sessions) in sessionsWithoutContributorsByYear.sorted(by: { $0.key > $1.key }) {
    missingNotesContents += """
 
       ## WWDC\(year - 2000)
 
       @Links(visualStyle: list) {
-      \(sessions.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
+      \(sessions.sorted { $0.title < $1.title }.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
       }
 
       """
