@@ -8,11 +8,13 @@ Discover how to implement AutoFill in your app and help people enter their infor
    @CallToAction(url: "https://developer.apple.com/wwdc20/10115", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- iOS will suggest recent addresses in text fields intelligently, adopt `.textContentType = .fullStreetAddress` on `UITextView` and `UITextField` (works with other types, too)
+- Instead of asking for contact access, consider using `CNContactPickerViewController` (needs no access)
+- In iOS 14 contact information in the QuickType keyboard is suggested for quick input (no access needed)
+- AutoFill comes to macOS Big Sur, too (didn't exist before) – works just like in iOS, supports other password managers

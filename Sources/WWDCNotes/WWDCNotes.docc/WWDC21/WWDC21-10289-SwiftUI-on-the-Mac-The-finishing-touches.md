@@ -8,11 +8,21 @@ Join us for part two of our Code-Along series as we use SwiftUI to build a Mac a
    @CallToAction(url: "https://developer.apple.com/wwdc21/10289", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+> Code along session, download the project [here][project].
+
+## Takeaways
+
+- use [`itemProvider(_:)`][itemProvider(_:)] + [`onInsert(of:perform:)`][onInsert(of:perform:)] to support drag and drop
+- use [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)`][fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)] to export data out of your app
+- use `importItemProviders()` to support importing data from other apps/system services
+
+[project]: https://developer.apple.com/documentation/swiftui/building_a_great_mac_app_with_swiftui
+[fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)]: https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:)-32vwk
+[itemProvider(_:)]: https://developer.apple.com/documentation/swiftui/view/itemprovider(_:)
+[onInsert(of:perform:)]: https://developer.apple.com/documentation/swiftui/dynamicviewcontent/oninsert(of:perform:)-418bq

@@ -8,11 +8,58 @@ Explore the latest updates to SF Symbols, Apple’s extensive library of iconogr
    @CallToAction(url: "https://developer.apple.com/wwdc22/10157", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## New symbols
+
+- great additions to home, like lights, doors, furniture, power outlets
+- health symbols, fitness figures available, more currencies, new objects, more localized symbols (right-to-left etc.)
+- 700+ new, bringing to 4,000+ symbols overall
+- 5 new categories added:
+  - Camera & Photos
+  - Accessibility
+  - Privacy & Security
+  - Home
+  - Fitness
+
+## Rendering modes
+
+- Reminder of existing
+  - Monochrome (single-color)
+  - Hierarchical (subtle emphasis, but single color hue)
+  - Palette (allow customized color palette, unique look)
+  - Multicolor (intrinsic color of the symbol used)
+
+- New default changes from “monochrome” to “preferred” per symbol
+  - called “Automatic Rendering”
+
+- Automatic is a good default, but in some context you should specify explicitly for better contrast (e.g. monochrome for very small sizes)
+
+## Variable Color
+
+| ![][gif1] | ![][gif2] | ![][gif3] |
+
+- Layers organized in sequential order
+- Some symbols have only some portion included in layers
+- Highlight sequence of steps or stages, not depth
+- Variable color is opacity-based, works together with colors
+
+## Unified annotations
+
+- Easy annotation for custom symbols
+- You define a shape setup, e.g. “frosting”, “cup cake base” here
+
+| ![](https://user-images.githubusercontent.com/6942160/172727010-c769b9eb-aab7-4088-8e1c-617d1de1b7d5.png) | ![](https://user-images.githubusercontent.com/6942160/172727026-e43cd2a6-e257-4897-8084-f00fb632d520.png) |
+
+- allows erasing of parts of the shape to customize shapes, like here
+
+![](https://user-images.githubusercontent.com/6942160/172727088-29b09c94-470a-4f25-803e-c3889b7f1445.png)
+
+
+[gif1]: speaker.gif
+[gif2]: mic.gif
+[gif3]: text.gif

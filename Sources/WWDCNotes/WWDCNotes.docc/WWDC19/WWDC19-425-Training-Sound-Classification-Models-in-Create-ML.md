@@ -8,11 +8,22 @@ Learn how to quickly and easily create Core ML models capable of classifying the
    @CallToAction(url: "https://developer.apple.com/wwdc19/425", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+Sound classification is the task of taking a sound, and placing it into one of many categories. 
+
+Different ways to categorize the sound:
+
+- Instrument/object that made the sound (guitar/drums)
+- Location/texture of the sound (Nature/City), even when there’s no particular sound that necessarily stands out
+- Attributes/property of the sound (Laugh/cry)
+
+When we tell Create ML to train a new model, the first thing Create ML is going to be doing when training this model is walking through each of the sound files we provided, and extracting audio features across the entire file.
+
+When testing, we can pass a sound with multiple classes: CreateML will separate each recognized class by time. We can even do microphone recording and see CreateML recognizing things live! How cool is that?
+
+New framework for sound recognition: [`SoundAnalysis`](https://developer.apple.com/documentation/soundanalysis).

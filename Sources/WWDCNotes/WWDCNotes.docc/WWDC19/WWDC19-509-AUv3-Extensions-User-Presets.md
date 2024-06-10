@@ -8,11 +8,19 @@ Audio Unit app extensions gives users a convenient way to create or modify audio
    @CallToAction(url: "https://developer.apple.com/wwdc19/509", purpose: link, label: "Watch Video (5 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Blackjacx)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- **Presets** fine-tunes set of parameter values
+- **Capture Snapshot** of state of Audio Unit's parameters
+- Loading preset restores Audio Unit to same state
+- `AUAudioUnit.factoryPresets` built into the unit by manufacturer. Immutable.
+- `AUAudioUnit.userPresets` are new and are created by user. Mutable. Unit exposes them to all host applications.
+- `supportsUserPreset: Bool` used to verify support by the host
+- `saveUserPreset(_:)` & `deleteUserPreset(_:)`
+- `presetState(for:) throws -> [String : Any]` to get state.
+- `isLoadedInProcess: Bool` is a macOS only feature
+- Methods above have default implementations. Can be overridden.

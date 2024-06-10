@@ -8,11 +8,68 @@ The widget ecosystem is expanding: Discover how you can use the latest WidgetKit
    @CallToAction(url: "https://developer.apple.com/wwdc23/10027", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(arnoappenzeller)
+      @GitHubUser(mikakruschel)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Widgets in 4 new locations
+
+- Desktop on Mac, Lock screen on iPad, StandBy mode on iPhone, Smart Stack on Apple Watch
+- Widgets can appear in all these places automatically
+- iOS Widgets can be used on Mac without Mac App
+
+## New content margins
+
+- Automatically added padding to prevent the content to go to close to the edge of the widget container
+- Replaces safe areas used on watchOS 9 and below
+- To allow content to go to the edge of the widget container, add the `.contentMarginsDisabled()` modifier to the widget configuration
+  - For content that should stay in the default content margins, use the `widgetContentMargins` environment and add `.padding(margins)` back in
+
+```swift
+struct SafeAreasWidgetView: View {
+    @Environment(\.widgetContentMargins) var margins
+
+    var body: some View {
+        ZStack {
+            Color.blue
+            Group {
+                Color.lightBlue
+                Text("Hello, world!")
+            }
+            .padding(margins) 
+        }
+    }
+}
+
+struct SafeAreasWidget: Widget {
+    var body: some WidgetConfiguration {
+        StaticConfiguration(...) {_ in
+            SafeAreasWidgetView()
+        }
+        .contentMarginsDisabled()
+    }
+}
+```
+
+## Removable background
+
+- Use `.containerBackground` modifier
+  - System automatically takes out the widget's background depending on where it's being shown (e.g. iPad Lock screen)
+  - Smart Stack on Apple Watch also uses the `containerBackground` instead of the default a dark material background
+- Add `.containerBackgroundRemovable(false)`  to widget configuration to prevent background removal
+  - This makes the widget ineligible in various contexts that require a removable background (e.g. StandBy on iPhone or iPad Lock screen)
+
+## Dynamically adjust layout
+
+- Layout should adopt for when the background is removed by pushing the content to the edges (happens automatically with content margins) and enlarging important elements (like current temperature in the weather widget)
+- Make it dependent on environment variable  `showsWidgetContainerBackground`
+
+## Vibrant rendering mode
+
+- Vibrant rendering mode automatically applied on iPad Lock screen and StandBy Night mode
+  - Widgets will be desaturated and colored appropriately for the Lock screen background
+  - This could remove contrast and impact the widget's legibility
+- Detect with `widgetRenderingMode` environment variable

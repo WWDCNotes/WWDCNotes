@@ -8,11 +8,19 @@ The latest version of Safari on macOS and iOS is packed with new capabilities th
    @CallToAction(url: "https://developer.apple.com/wwdc19/515", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Blackjacx)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- **Desktop-class website browsing**
+- **Legacy Safari Extension Support** dropped for sake of `Content Blockers`, `Share Extensions`, `Safari App Extensions`
+- **Safari Extensions**
+  - deliver bundles with app OR after notarization via web site
+  - Get the visible content of the web page (screenshot)
+  - show and dismiss popovers
+  - delegate informs about navigating/redirect to new site
+- **Content Blocker**
+  - associate content blocker with Safari Extension to get notified when content is blocked
+- **Universal Links** for macOS so ordinary https links open app if installed

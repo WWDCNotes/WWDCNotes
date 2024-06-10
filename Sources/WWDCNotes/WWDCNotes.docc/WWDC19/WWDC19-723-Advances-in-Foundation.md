@@ -8,11 +8,31 @@ The Foundation framework provides a base layer of functionality for apps and fra
    @CallToAction(url: "https://developer.apple.com/wwdc19/723", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+New:
+
+- A native diffing algorithm 
+- A native way to compress `Data` (zlib and more)
+- New Units:
+  - `UnitDuration`: Added milliseconds, microseconds, nanoseconds, and picoseconds
+  - `UnitFrequency`: Added framesPerSecond
+  - `UnitInformationStorage`: Bits, Bytes, and more
+
+- `MeasurementFormatter` and `ByteCountFormatter` to display the new `UnitInformationStorage`
+- `RelativeDateTimeFormatter`: “one hour ago”, “in two weeks” etc
+- New `ListFormatter`
+
+```swift
+let string = ListFormatter.localizedString(byJoining: ["🐶","🐷","🦄"])
+
+// en_US: "🐶, 🐷, and 🦄"
+// es_ES: "🐶, 🐷 y 🦄"
+// zh_TW: "🐶、🐷和🦄"
+```
+
+- GDC Improvement: barriers: in concurrent threads/environments we can now use a barrier, which makes sure that no other tasks can run while the barrier operation is ongoing.

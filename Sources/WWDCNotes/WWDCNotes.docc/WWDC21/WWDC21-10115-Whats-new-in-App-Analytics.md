@@ -8,11 +8,17 @@ App Analytics helps you maximize your opportunity on the App Store by providing 
    @CallToAction(url: "https://developer.apple.com/wwdc21/10115", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- Redesigned App Analytics, no code needed in app, automatic
+- New metrics: Pre-orders, Proceeds, Updates, Re-downloads, Total downloads
+- New pre-order dashboard with impressions, page views, by device / source / territory
+- Apple Silicon Macs can be filtered in iOS apps, falls under "Desktop" device category
+- New App Clips ribbon, dashboard with views, sessions, crashes, installations, territories
+- Product Page Optimization: A/B testing, dashboard, conversion, statistical analysis
+- Custom Product Pages: page views, downloads, conversion, proceeds, retention
+- In-App Events: impressions, notifications, downloads, opens

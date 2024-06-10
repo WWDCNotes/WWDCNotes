@@ -8,11 +8,23 @@ Meet TextKit 2: Apple’s next-generation text engine, redesigned for improved c
    @CallToAction(url: "https://developer.apple.com/wwdc21/10061", purpose: link, label: "Watch Video (41 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- Text controls in the system are based on TextKit 1
+- Started in OpenStep even before first version of Mac OS
+- TextKit 2 is built on forward-looking design principles, used on macOS since v11
+- TextKit 2 will coexist with TextKit 1 (for now), many new classes added, some updated
+- Principles designed by:
+    - Correctness: abstract away glyph handling
+    - Safety: heavier focus on value semantics
+    - Performance: viewport-based layout and rendering
+
+- Glyph: Visual representation of a variable number of characters, e.g. ñ is 2 glyphs
+- Ligature: Single glyph representing multiple characters
+- Glyph ranges were impossible to use right in many languages, TextKit 2 simplifies it
+- In TextKit 2 all text is rendered with CoreText, no glyph ranges needed, higher level objects like `NSTextSelection`, `NSTextSelectionNavigation`
+- Contributor comment: *didn't continue watching from here as too low-level/irrelevant for me*

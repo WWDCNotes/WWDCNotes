@@ -8,11 +8,20 @@ Explore progressive disclosure — one of SwiftUI’s core principles — and le
    @CallToAction(url: "https://developer.apple.com/wwdc22/10059", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Progressive disclosure
+
+- designing APIs so that the complexity of the call site grows with the complexity of the use case
+- an ideal API is both simple and approachable but also be able to accommodate powerful use cases
+
+## How to design APIS embracing progressive disclosure
+
+- consider common use cases - identify what the simple cases should be.
+- provide intelligent defaults - so those common cases can specify only what they need to
+- optimize the call site - ensuring every character of your call site has a purpose
+- compose, don't enumerate

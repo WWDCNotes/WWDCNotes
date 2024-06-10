@@ -24,9 +24,36 @@ struct Contributor {
       self.githubProfileName = githubProfileName
 
       let url = URL(string: "https://api.github.com/users/\(githubProfileName)")!
+      var request = URLRequest(url: url)
 
-      let data = try Data(contentsOf: url)
-      let gitHubUser = try JSONDecoder().decode(GitHubUser.self, from: data)
+      guard let token = ProcessInfo.processInfo.environment["GITHUB_TOKEN"] else {
+          fatalError("GitHub token is not set in the environment variables")
+      }
+
+      request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+
+      let semaphore = DispatchSemaphore(value: 0)
+
+      var fetchedData: Data?
+      var fetchError: Error?
+
+      print("Fetching GitHub profile details for '\(githubProfileName)'…")
+
+      let task = URLSession.shared.dataTask(with: request) { data, response, error in
+         fetchedData = data
+         fetchError = error
+         semaphore.signal()
+      }
+
+      task.resume()
+      semaphore.wait()
+
+      if let error = fetchError {
+         print("Error fetching data: \(error.localizedDescription)")
+         throw error
+      }
+
+      let gitHubUser = try JSONDecoder().decode(GitHubUser.self, from: fetchedData!)
 
       self.fullName = gitHubUser.name ?? githubProfileName
 
@@ -198,7 +225,7 @@ for contributor in contributorsByProfile.values {
 
       """
 
-   for (year, sessionsInYear) in contributedSessionByYear {
+   for (year, sessionsInYear) in contributedSessionByYear.sorted(by: { $0.key > $1.key }) {
       contributorFileContents += """
 
          ### \(year)
@@ -231,6 +258,7 @@ var contributorsOverviewContents = """
    ## Topics
 
    Here's a full list of all \(sessionIDsByProfile.keys.count) people who contributed to WWDCNotes – sorted by most contributions.
+
 
    """
 

@@ -8,11 +8,19 @@ Discover how you can promote timely events happening in your apps and games — 
    @CallToAction(url: "https://developer.apple.com/wwdc21/10171", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- App Store will show event cards, in product page & elsewhere
+- Promotion possible up to 2 weeks before event start
+- Supported on iOS & iPadOS
+- Events created directly in AppStore Connect
+- Require start & end, min 15 minutes, max 31 days
+- After end, event archived for 30 days, accessible via link
+- Approval process by Apple needed
+- 10 events approved at a time, 5 published max
+- Event Analytics provided, including Impressions, Opens, Downloads, Notifications
+- Will launch "later this fall"

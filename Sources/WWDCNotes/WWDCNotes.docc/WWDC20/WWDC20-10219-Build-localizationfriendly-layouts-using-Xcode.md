@@ -8,11 +8,22 @@ Localizing your app is a wonderful way to share your work with a worldwide audie
    @CallToAction(url: "https://developer.apple.com/wwdc20/10219", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Design best practices
+
+- Avoid fixed widths or frames
+- Avoid fixed spacing between distant objects
+- Allow multiple lines of wrapped text when it makes sense
+- Do not place too many controls in a fixed space (e.g. four buttons side by side)
+
+## Demo project
+
+The [demo project][dwl] comes with a `ReadjustingStackView` which switches axis (horizontal -> vertical) when the optimal horizontal space, computed via [`systemLayoutSizeFitting()`][systemLayoutSizeFitting()], exceeds the available space.
+
+[dwl]: https://developer.apple.com/documentation/xcode/autosizing_views_for_localization_in_ios
+[systemLayoutSizeFitting()]: https://developer.apple.com/documentation/uikit/uiview/1622624-systemlayoutsizefitting

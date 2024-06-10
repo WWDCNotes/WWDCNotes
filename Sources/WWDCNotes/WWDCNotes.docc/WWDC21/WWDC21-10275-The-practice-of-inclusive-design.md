@@ -8,11 +8,12 @@ An inclusive app or game is not only usable by different people, but also welcom
    @CallToAction(url: "https://developer.apple.com/wwdc21/10275", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(fbernutz)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+![Sketchnote about 'The practice of inclusive design' at WWDC21 with a lot of practical tips on how to make your app or game more inclusive. Favorite takeaways are Tell diverse stories, adopt accessibility, avoid stereotypes, there's nothing like a normal person, language is constantly evolving.][sketchnote]
+
+[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-the-practice-of-inclusive-design.jpg

@@ -8,11 +8,45 @@ Test repetitions can help you debug even the most unreliable code. Discover how 
    @CallToAction(url: "https://developer.apple.com/wwdc21/10296", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Test repetitions
+
+- new in Xcode 13
+- allow you to repeat a test up to a specified number of iterations with a stopping condition
+
+Three test repetition modes:
+
+1. Fixed iterations
+  - will repeat your tests a fixed number of times regardless of the outcome status
+  - great for understanding the reliability of your test suite and helping keep it reliable as new tests are introduced over time
+
+2. Until failure
+  - will repeat a test until it fails
+  - useful to reproduce a nondeterministic test failure to catch it in the debugger
+
+3. Retry on failure
+  - will retry your test until it succeeds up to a specified maximum
+  - useful to identify unreliable tests which fail initially but eventually succeed on reattempt
+
+To enable, either:
+
+- specify the mode within a test plan
+- control+click on a test diamond in your test file and choose the menu <kbd>Run "test...()" Repeatedly…</kbd>
+- on the terminal
+
+```shell
+xcodebuild test -project ....xcodeproj -scheme ... -destination '...' -test-iterations 100 -run-tests-until-failure
+```
+
+The `xcodebuild` test repetition flags are:
+
+```shell
+-test-iterations <number>
+-retry-tests-on-failure
+-run-tests-until-failure
+```

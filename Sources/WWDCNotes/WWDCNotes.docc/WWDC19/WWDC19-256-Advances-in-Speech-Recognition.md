@@ -8,11 +8,28 @@ Speech Recognizer can now be used locally on iOS or macOS devices with no networ
    @CallToAction(url: "https://developer.apple.com/wwdc19/256", purpose: link, label: "Watch Video (6 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- MacOS support
+- over 50 languages supported
+
+![][Image]
+
+## Jitter, shimmer analysis
+
+Jitter is a measure of frequency instability, while shimmer is a measure of amplitude instability.
+
+Basically can measure if the person is chilling or panicking.
+
+## Pitch, voicing analysis
+
+Pitch measures the frequency characteristics, voicing determine voiced regions (their wideness).
+
+Basically can measure if the person is active or tired, length of pauses.
+
+
+[Image]: image.png

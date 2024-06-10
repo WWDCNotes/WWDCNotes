@@ -8,11 +8,16 @@ Face ID and Touch ID provide a frictionless experience when logging in — and n
    @CallToAction(url: "https://developer.apple.com/wwdc20/10670", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+* Use web authentication standard, FIDO sticks are now basically integrated into iOS!
+* Supports multi factor authentication in a single step
+* 2 information combined: something you own, something you are
+* Optional attestation available in web authentication API, Apple makes this privacy-safe
+* Can be turned on after signing in via password, future sign ins possible safely
+* Doesn't replace existing authentication, just a secure and convenient re-signin
+* Code outline and steps for backend in JavaScript provided in session

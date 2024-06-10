@@ -8,11 +8,52 @@ Custom Actions simplify the experience for people using assistive technologies w
    @CallToAction(url: "https://developer.apple.com/wwdc19/250", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+Custom actions help remove clutter in your app.
+
+If we have a table with multiple cells and each cell has multiple buttons, by default voiceover will read each button for each cell.
+
+Voiceover should only focus on the cell content, and provide custom actions instead.
+
+Old way:
+
+```swift
+override var accessibilityCustomActions: [UIAccessibilityCustomAction]? { 
+	get {
+		let myAction = UIAccessibilityCustomAction(
+			name: "Custom Action",
+			target: self,
+			selector: #selector(handleAction(_:)
+		) 
+		return [myAction] 
+	}
+	set {}
+}
+
+@objc func handleAction(_ action: UIAccessibilityCustomAction) -> Bool {
+	var success = false 
+	// action logic 
+	return success
+}
+```
+
+New way:
+
+```swift
+override var accessibilityCustomActions: [UIAccessibilityCustomAction]? { 
+	get {
+		let actions = [UIAccessibilityCustomAction]() 
+    let myAction = UIAccessibilityCustomAction(name: "Custom Action") { 
+    	(customAction: UIAccessibilityCustomAction) -> Bool in 
+    	var success = false // action logic return success
+    } 
+    actions.append(myAction) return actions
+  } 
+  set {} 
+}
+```

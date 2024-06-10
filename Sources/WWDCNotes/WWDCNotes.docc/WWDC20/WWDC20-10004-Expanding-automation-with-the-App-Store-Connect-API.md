@@ -8,11 +8,33 @@ Make routine tasks in App Store Connect a thing of the past when you automate yo
    @CallToAction(url: "https://developer.apple.com/wwdc20/10004", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## New API endpoints (200+)
+
+- versions
+- previews
+- screenshots
+- localizations
+- pricing
+- submit for review
+- ratings
+- categories
+- plarforms
+- encryption declarations
+- pre-orders
+- phased release
+- license agreements
+- routing app coverage
+- power and Performance Metrics
+- diagnostic logs
+
+## OpenAPI
+
+- [downloadable OpenAPI specification File][openAPI]
+
+[openAPI]: https://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip

@@ -8,11 +8,30 @@ Explore how you can use Variable Color to make SF Symbols even more expressive. 
    @CallToAction(url: "https://developer.apple.com/wwdc22/10158", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Variable Color
+
+| ![][gif1] | ![][gif2] | ![][gif3] |
+
+- new SF Symbols feature
+- allows you to affect the appearance of a symbol using a percentage value
+- by changing this value, you can create symbols that reflect values that can change over time
+- can be previewed in the SF Symbols.app
+- all rendering modes support it
+- not all symbols support it
+- custom symbols support
+
+Thresholds:
+
+- the various states/layers of each symbol are evenly spaced out between 0 and 100 percent
+- 0% is a special case where no layers will be active
+- anything above 0% will have at least the first layer active
+
+[gif1]: speaker.gif
+[gif2]: mic.gif
+[gif3]: text.gif

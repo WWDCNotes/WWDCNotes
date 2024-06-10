@@ -8,11 +8,13 @@ Searching your tvOS app just got even better. Get ready to explore the new simpl
    @CallToAction(url: "https://developer.apple.com/wwdc20/10634", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- New search controller available
+- New `UISearchSuggestion` APIs
+- Use `searchResultsUpdater` on search controller for live filtering, new callback for search suggestions
+- Keyboard layouts change according to language

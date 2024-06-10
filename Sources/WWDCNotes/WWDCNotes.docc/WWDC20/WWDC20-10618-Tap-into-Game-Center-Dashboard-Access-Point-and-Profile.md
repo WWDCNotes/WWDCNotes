@@ -8,11 +8,19 @@ Apple’s social gaming network is ready to play. We’ll walk you through the l
    @CallToAction(url: "https://developer.apple.com/wwdc20/10618", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- Most features can be used with custom UI, too (using API)
+- New interface if using default interface
+- Player avatar should be in title screen, notifications will be automatically shown (e.g. for new achievements)
+- In-Game-Dashboard contains profile, achievements & leaderboards
+- In-Progress Achievements available, achievement art can and should be provided
+- Leaderboard art highlighted more, again should be provided
+- "Current leaderboard" available, updates live
+- Optional "challenges" dashboard available, will not appear by default
+- Custom multiplayer UI & default UI available
+- Contributor comment: *skipped the implementation part of the session*

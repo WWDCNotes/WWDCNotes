@@ -8,11 +8,12 @@ Discover how you can deliver inclusive apps that can foster amazing experiences 
    @CallToAction(url: "https://developer.apple.com/wwdc21/10304", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(fbernutz)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+![Sketchnote about 'The process of inclusive design' at WWDC21 about different diversity axes, common misconcepts about inclusion and the process of building an inclusive app or game][sketchnote]
+
+[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-the-process-of-inclusive-design.jpg

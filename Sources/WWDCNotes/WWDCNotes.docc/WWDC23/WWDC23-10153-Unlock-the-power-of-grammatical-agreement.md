@@ -8,11 +8,58 @@ Discover how you can use automatic grammatical agreement in your apps and games 
    @CallToAction(url: "https://developer.apple.com/wwdc23/10153", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Grammatical agreement
+
+- Use `^[Bienvenido](inflect: true) a tu iPhone` to provide automatic inflection (in supported languages like Spanish, French, or Italian)
+- New locales added: European Portuguese and German
+
+## Dependency agreement
+
+- New API on localization options named `concepts` to pass a distinct string to another string which are related (e.g. ingredients of a food)
+
+```Swift
+var options = AttributedString.LocalizationOptions()
+options.concepts = [.localizedPhrase(food.localizedName)]
+
+let size = AttributedString(localized: "small", options: options)
+```
+
+- To choose the concept, provide a 1-indexed value like in `^pequeno](agreeWithConcept: 1)`
+- The new `agreeWithConcept` option can be used even in older OS versions – it'll be ignored in them
+
+![][agreeWithConcept]
+
+[agreeWithConcept]: agreeWithConcept.png
+
+- When multiple inflections in one text needed but only one gets `%@` argument passed, use new `agreeWithArgument: 1` instead on other
+
+![][agreeWithArgument]
+
+[agreeWithArgument]: agreeWithArgument.png
+
+![][agreeWithComparison]
+
+[agreeWithComparison]: agreeWithComparison.png
+
+- To make demonstrative adjectives grammatically agree in French, use `^[Ce %@](inflect: true) conteient : %@.`
+
+## Inclusive language
+
+- New type `TermOfAddress` for `.masculine`, `.feminine`, or `.neutral` – can be passed as localization option in `.concepts` array
+
+![][neutral]
+
+[neutral]: TermsOfAddress.neutral.png
+
+- New `referenceConcept` attribute in agreement, like `"\(person.name) is on ^[their](referentConcept: 1) way."`
+- You can provide custom `TermOfAddress` using `TermOfAddress.localized(language:pronouns:)` and pass array of `Mophology.Pronoun`
+
+![][LocalizationOptions]
+
+[LocalizationOptions]: LocalizationOptions.png

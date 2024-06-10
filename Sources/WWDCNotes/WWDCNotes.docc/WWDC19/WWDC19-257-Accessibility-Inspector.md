@@ -8,11 +8,20 @@ The Accessibility Inspector enables you to identify parts of your app that are n
    @CallToAction(url: "https://developer.apple.com/wwdc19/257", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+While with Xcode 11 we have the new environment overrides, the Accessibility Inspector is the go to place when auditing our app for accessibility.
+
+Accessibility Inspector comes with three tabs:
+
+1. Inspector
+2. Audit
+3. Settings (like environment overrides)
+
+The Audit tab runs some tests to check how accessible the current screen is, and points out what needs to be done to make the app accessible. This should be done for each screen in the app.
+
+Accessibility Inspector comes with a Color Contrast Calculator (Windows -> Show Color Contrast Calculator)

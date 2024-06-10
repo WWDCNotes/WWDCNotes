@@ -8,11 +8,12 @@ Discover how Apple creates products that work well for everyone. Learn from a fe
    @CallToAction(url: "https://developer.apple.com/wwdc21/10308", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+One of the jobs of being a developer, especially in accessibility, is to know the landscape of the technology so that you can use these things and solve the problems in new, unique ways. 
+
+This video is the story/reasoning behind the [AssistiveTouch for Apple Watch](https://support.apple.com/en-us/HT212760) (new on WatchOS 8)

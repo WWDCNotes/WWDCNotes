@@ -8,11 +8,16 @@ Shortcuts enable people to quickly and easily accomplish actions or get things d
    @CallToAction(url: "https://developer.apple.com/wwdc19/805", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Blackjacx)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- Summary of an Action should be short and only contain necessary parameter
+- Best way to add shortcut is right inside the app after the action that should be added has been completed
+- Offer to add shortcuts for repeatable actions
+- **Activation Phrase** should be short and pronounceable
+- **Suggested Shortcuts List** can be updated by app via API a often as wanted. Apple also populated this list based on device usage like recently used apps.
+- **Input and Output** concept used to make actions work together. Actions can now output information for others to use, e.g. action could find a note wheas action 2 processes this. Both can be chained together.
+- **Intent Editor** lets the developer modify intents

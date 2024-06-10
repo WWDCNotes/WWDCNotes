@@ -8,11 +8,10 @@ Dive into the details of window management in your Multitasking app, including h
    @CallToAction(url: "https://developer.apple.com/wwdc19/246", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+See [Introducing Multiple Windows on iPad](../212) session.

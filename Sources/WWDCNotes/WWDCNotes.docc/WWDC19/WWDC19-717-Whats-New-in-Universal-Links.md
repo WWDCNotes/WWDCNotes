@@ -8,11 +8,26 @@ Universal Links allow your users to intelligently follow links to content inside
    @CallToAction(url: "https://developer.apple.com/wwdc19/717", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Blackjacx)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- **macOS 10.15** supports Universal Links with AppKit / UIKit
+- **Securely associated** between your app & website
+- recommended over custom URL schemes
+- **Webserver Config**
+  - HTTPS certificate mandatory. Custom root certificates not supported
+  - Add the file at `https://yourDomain.com/.well-known/apple-app-site-association`
+  - URLs and pattern matching are ASCII
+
+- **App Config**
+  - add `Associated Domains` capability and add `applinks:www.example.com` entries (patterns possible - specific subdomains prioritized)
+  - `userActivity.activityType == NSUserActivityTypeBrowsingWeb` in `func application(_ application: UIApplication, continue userActivity: NSUserActivity, ...)` indicates Universal Link
+  - get URL components `URLComponents(url: userActivity.webpageURL, resolvingAgainstBaseURL: true)`
+
+- **For macOS Apps**
+  - app must be on local volume
+  - App Store distribution recommended
+  - Developer ID signed apps must be launched first

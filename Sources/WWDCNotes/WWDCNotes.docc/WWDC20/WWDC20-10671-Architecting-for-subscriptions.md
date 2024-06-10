@@ -8,11 +8,29 @@ Learn how you can build simple entitlement logic to enhance the customer experie
    @CallToAction(url: "https://developer.apple.com/wwdc20/10671", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(davidleee)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+The subscriber states has changed from:
+
+- Inactive
+- Active 
+
+to:
+
+- Inactive
+- Billing Retry
+- Billing Grace Period
+- Active 
+
+which makes the subscriber journey more complex.
+
+And we have some additional considerations to make such as:
+
+- Upgrade, downgrade, or cross grade events
+- Subscription Offer opportunities
+- Billing retry and grace period messaging
+- Refunds

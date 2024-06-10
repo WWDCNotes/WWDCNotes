@@ -8,11 +8,37 @@ Your iPhone and Apple Watch are loaded with a number of powerful sensors includi
    @CallToAction(url: "https://developer.apple.com/wwdc19/426", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Sensors
+
+Our devices have tons of sensors:
+
+![][sensorsImage]
+
+## What is an Activity Classification? 
+
+Activity Classification is a task that allows us to recognize our pre-defined set of physical actions that the user does with their devices.
+
+In the session, the presenter shows us an example of a Fressbee throws classifier.
+
+An example of activity data (it’s a csv table with time stamps and `x, y, z` values):
+
+![][trainingImage]
+
+In Create ML we can filter which axis of which acceleration/rotation we should consider for the training, we can also define a Prediction Window Size to let Create ML know how much is the size of the sample to analyze (this way we can have multiple gestures/measurements in one table).
+
+## Best practices
+
+- Use relevant sensor for your motion (understand your motion)
+- Collect irrelevant motions as “other”, to avoid false positive
+- Provide balanced classes (same number of samples for each class/category)
+- Provide raw data instead of processed device motion data
+
+[sensorsImage]: sensors.png
+[trainingImage]: training.png
+[Image]: ../../../images/notes/wwdc19/426/.png

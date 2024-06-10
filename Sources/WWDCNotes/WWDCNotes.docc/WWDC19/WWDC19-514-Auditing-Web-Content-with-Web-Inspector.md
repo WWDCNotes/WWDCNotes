@@ -8,11 +8,16 @@ Discover a new way to ensure your web content meets team coding standards and th
    @CallToAction(url: "https://developer.apple.com/wwdc19/514", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Blackjacx)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- Web Inspector includes built in audit system which can catch code changes and inconsistencies in webpage content
+- Enable Safari Develop menu from `Preferences > Advanced > Show Develop menu in menu bar`
+- Use **⌘ + ⌥ + I** to open Web Inspector
+- Audits consist of TestGroups and Tests
+- Audit results stay visible across page reloads and cleared when Web Inspector is closed
+- Results can be im-/exported from/to JSON
+- Write custom Audits in JSON format - makes them easily sharable

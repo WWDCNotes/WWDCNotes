@@ -8,11 +8,22 @@ Discover the latest updates to Mac Catalyst and find out how you can make your a
    @CallToAction(url: "https://developer.apple.com/wwdc21/10052", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Jeehut)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- New: `changesSelectionAsPrimaryAction` for toggle buttons
+- New: ToolTips are now available via `UIToolTipInteraction`, works on all views
+- `UIControl` gets an extra `.toolTip` for convenience
+- `UILabel` receives new `showsExpansionTextWhenTruncated` option
+- New `UIApplicationSupportsPrintCommand` in `Info.plist` for adding print menu item
+- New `UIResponder` action `printContent` for preparing views for print
+- New windows subtitle support via `UIScene` `.subtitle`
+- `UIButton` and `UISlider` can now be opted-out for custom resizing
+- `UIBehavioralStyle` can be changed via `preferredBehavioralStyle` for Catalyst
+- Opting out of window tabbing via `UIApplicationSupportsTabbedSceneCollection`
+- New `UIPointerLockState` especially for games to control cursor
+- New `UIPointerShape` via `beam(preferredLength:axis:)` will give cursor shapes
+- Cursor can be hidden now when necessary by `UIPointerStyle.hidden`

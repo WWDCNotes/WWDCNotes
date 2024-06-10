@@ -8,11 +8,28 @@ Recommendation models for Core ML can enable a very personal experience for the 
    @CallToAction(url: "https://developer.apple.com/wwdc19/427", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+Create ML Recommenders are a fantastic way to add personalization and intelligence into the user experience of our app. 
+
+Recommenders work by looking for patterns in groups of items. 
+
+Recommenders use a tabular approach:
+
+![][tableImage]
+
+Each row here says that a particular item belongs to a particular group. In this example the groups are recipes and the items are ingredients.
+
+A rating is a measure of how good or how desirable a particular interaction is.
+
+Now, when we throw all the items into the mix, the Recommender builds a graph of which items tend to go with which other items. How they're all related.
+
+And it's this _graph_ that gets packaged into our model. 
+
+All of the user data and the group data present in our training data is not explicitly present in the final model.
+
+[tableImage]: table.png

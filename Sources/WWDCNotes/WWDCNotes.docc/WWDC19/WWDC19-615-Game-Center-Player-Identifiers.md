@@ -8,11 +8,20 @@ Game Center now supports persistent player identifiers scoped to individual game
    @CallToAction(url: "https://developer.apple.com/wwdc19/615", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Blackjacx)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- **GKLocalPlayer** represents authenticated player. Has persistent teamPlayerID & gamePlayerID
+- **GKPlayer** provides info about other players. Uses scoped IDs
+- **Scoped IDs** teamplayerID and gamePlayerID
+  - properties on GKPlayer
+  - increase player privacy
+  - replace the playerID (has been deprecated) with scoped IDs (save game data / backend)
+  - perform conversion after next authentication
+  - teamPlayerID scoped to development team
+  - gamePlayerID scoped to game
+
+- `loadPlayersForIdentifiers:withCompletionHandler:`

@@ -8,11 +8,24 @@ Learn about the importance of supporting Large Text. Hear about Differentiate Wi
    @CallToAction(url: "https://developer.apple.com/wwdc19/244", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(Blackjacx)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+- **Dynamic Type**
+  - make as much text as possible dynamic
+  - use as much of the screen width as possible
+  - don't truncate text
+  - scale glyphs (icons/images) next to your text with your text
+  - iOS provides 11 text styles
+  - custom font support made easier in iOS 11
+
+- **Reduce Motion**
+  - adapt animations if `UIAccessibility.isReduceMotionEnabled == true` (there is a notification too)
+  - consider disabling autoplaying videos if `UIAccessibility.isVideoAutoplayEnabled == false` (there is a notification too)
+
+- **Differentiate Without Color** is new in iOS13
+  - do not rely on color alone
+  - add additional indicators (icons) where color is the only way to convey information if `UIAccessibility.shouldDifferentiateWithoutColor == true` (there is a notification too)

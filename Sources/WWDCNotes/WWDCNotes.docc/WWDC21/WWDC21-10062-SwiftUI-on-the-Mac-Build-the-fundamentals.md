@@ -8,11 +8,30 @@ Code along with us as we use SwiftUI to build a Mac app from start to finish. Di
    @CallToAction(url: "https://developer.apple.com/wwdc21/10062", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+> Code along session, download the project [here][project].
+
+## SwiftUI app key principles
+
+- Flexible
+- Familiar
+- Expansive
+- Precise
+
+## Takeaways
+
+- You can set a `.frame(minWidth:)` view modifier to a sidebar to declare its minimum width
+- When you have visual elements to show:
+  - if you don't need complex sorting, use `List`
+  - if you need complex sorting and/or multiple columns, use `Table`
+    - when making a Table sortable, we need to pass a `sortOrder` binding
+
+- [`focusedSceneValue(_:_:)`][focusedSceneValue(_:_:)] tells the system to expose the given value when the entire system is in focus
+
+[project]: https://developer.apple.com/documentation/swiftui/building_a_great_mac_app_with_swiftui
+[focusedSceneValue(_:_:)]: https://developer.apple.com/documentation/swiftui/text/focusedscenevalue%28_%3A_%3A%29

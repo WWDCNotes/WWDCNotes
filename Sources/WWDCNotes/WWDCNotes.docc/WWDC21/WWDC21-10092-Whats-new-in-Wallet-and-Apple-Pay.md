@@ -8,11 +8,30 @@ Discover the redesigned Apple Pay for in-app and web payments and learn how you 
    @CallToAction(url: "https://developer.apple.com/wwdc21/10092", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Wallet updates
+
+- Identity card support (driver's license or state ID)
+  - starting in the US, with a few select states
+  - your ID is protected by the Secure Element
+
+- HomeKit-connected locks support
+  - users can now tap to unlock a door with a home key pass. 
+
+- Multipass downloads from Safari
+  - you can bundle multiple pass together to be downloaded at once
+  - how to:
+    1. zip the `PkPass` files together
+    2. set the file extension to `.pkpasses`
+    3. use the correct mime type `Mime Type: application/vnd.apple.pkpasses`
+
+- Automatic hiding of expired passes
+  - Wallet looks at three `pass.json` fields to determine if a pass should be automatically hidden:
+    1. `expirationDate`
+    2. `relevantDate`
+    3. `voided`

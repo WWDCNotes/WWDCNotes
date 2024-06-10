@@ -8,11 +8,12 @@ Discover the latest updates and improvements to UIKit and learn how to build bet
    @CallToAction(url: "https://developer.apple.com/wwdc21/10059", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(fbernutz)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+![Sketchnote about what’s new in UIKit at WWDC21 about improvements in productivity, UI refinements, performance, API Enhancements and security and privacy changes. My favorite changes are new half height sheets, new UIButton API and the system location button for one-time access to locations.][sketchnote]
+
+[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-whats-new-in-uikit.jpg

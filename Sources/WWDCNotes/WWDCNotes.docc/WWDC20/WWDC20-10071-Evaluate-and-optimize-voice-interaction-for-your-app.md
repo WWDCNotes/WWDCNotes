@@ -8,11 +8,14 @@ Optimize your app for Siri and give people a more natural way to interact with t
    @CallToAction(url: "https://developer.apple.com/wwdc20/10071", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Best practices for Siri dialog
+
+- avoid jargon in your dialogue
+- use best practices for _spoken_ English, not _written_ English.
+- keep dialogue short

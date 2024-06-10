@@ -8,11 +8,28 @@ CarPlay is a smarter, safer way to use your iPhone in the car. Learn how to upda
    @CallToAction(url: "https://developer.apple.com/wwdc19/252", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(zntfdr)
    }
 }
 
-😱 "No Overview Available!"
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+
+## Irregularly shaped displays
+
+From iOS 13, like in UIKit, air play now gets a view area and a safe area.
+
+## Second Screen Support
+
+Some cars have a second screen in the instrument cluster (in front of the wheel):
+From iOS 13, our iPhones can now send a second, separate stream over there as well.
+
+![][screenImage]
+
+We can have multiple screens in the Instrument cluster.
+Every screen has its own “night mode”, therefore different screens might have different modes. 
+
+## Dynamic Screen sizes
+
+From iOS 13, a screen can change size (to let more space for other car dashboard elements for example).
+
+[screenImage]: screen.png
