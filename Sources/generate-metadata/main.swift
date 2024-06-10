@@ -73,7 +73,7 @@ let legalNotes = """
 
 let sessionByID = try Session.allSessionsByID()
 
-let events = ["WWDC23"]
+let events = ["WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11"]
 
 var contributorsByProfile: [String: Contributor] = [:]
 var sessionIDsWithoutContributors: Set<String> = []
@@ -84,6 +84,8 @@ var sessionIDsByProfile: [String: Set<String>] = [:]
 
 for event in events {
    let eventSessionsPath = "\(FileManager.default.currentDirectoryPath)/Sources/WWDCNotes/WWDCNotes.docc/\(event)"
+   guard FileManager.default.fileExists(atPath: eventSessionsPath) else { continue }
+
    let sessionFileNames = try FileManager.default.contentsOfDirectory(atPath: eventSessionsPath).filter { $0.hasSuffix(".md") }
 
    let contributorRegex = try Regex(#"@GitHubUser\(([^\n<>]+)\)"#)
@@ -257,7 +259,7 @@ var missingNotesContents = """
 for (year, sessions) in sessionsWithoutContributorsByYear.sorted(by: { $0.key > $1.key }) {
    missingNotesContents += """
 
-      ## WWDC\(year - 2000)
+      ## WWDC\(year - 2000) (\(sessions.count) missing)
 
       @Links(visualStyle: list) {
       \(sessions.sorted { $0.title < $1.title }.map { "   - <doc:\($0.fileName)>" }.joined(separator: "\n"))
