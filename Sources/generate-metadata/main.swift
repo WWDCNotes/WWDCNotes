@@ -23,7 +23,12 @@ struct Contributor {
    init(githubProfileName: String) throws {
       self.githubProfileName = githubProfileName
 
-      let url = URL(string: "https://api.github.com/users/\(githubProfileName)")!
+      var components = URLComponents()
+      components.scheme = "https"
+      components.host = "api.github.com"
+      components.path = "/search/repositories/\(githubProfileName)"
+      
+      let url = components.url!
       var request = URLRequest(url: url)
 
       guard let token = ProcessInfo.processInfo.environment["GITHUB_TOKEN"] else {
