@@ -35,7 +35,10 @@ for session in sessionByID.values {
    let notesHeader = notesContentComponents[1]
    let notesContents = notesContentComponents.dropFirst(2).joined(separator: "---")
 
-   let contributors = notesHeader.components(separatedBy: "\n")[1].firstMatch(of: try Regex("contributors:\\s*(.*)"))![1].substring!.components(separatedBy: ", ")
+   let contributors = notesHeader.components(separatedBy: "\n")[1]
+      .firstMatch(of: try Regex("contributors:\\s*(.*)"))![1].substring!
+      .components(separatedBy: ", ")
+      .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
 
    var sessionFileContents = """
       # \(session.title)

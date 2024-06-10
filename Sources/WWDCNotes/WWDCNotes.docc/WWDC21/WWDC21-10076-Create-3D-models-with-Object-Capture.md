@@ -8,7 +8,7 @@ Object Capture provides a quick and easy way to create lifelike 3D models of rea
    @CallToAction(url: "https://developer.apple.com/wwdc21/10076", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
-      @GitHubUser(derrickshowers )
+      @GitHubUser(derrickshowers)
    }
 }
 
