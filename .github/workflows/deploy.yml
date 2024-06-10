@@ -36,6 +36,8 @@ jobs:
         uses: swift-actions/setup-swift@v2
 
       - name: Generate Metadata
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: swift run generate-metadata
       
       - name: Build Documentation
