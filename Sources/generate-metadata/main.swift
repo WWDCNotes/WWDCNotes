@@ -227,12 +227,12 @@ for contributor in contributorsByProfile.values {
          @PageKind(sampleCode)
       }
 
-      ## Links
+      ## About
 
       @Row(numberOfColumns: 5) {
          @Column { ![Profile image of \(contributor.fullName)](\(contributor.avatarURL.absoluteString)) }
          @Column(size: 4) {
-      \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
+      \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n\n"))
          }
       }
 
