@@ -26,8 +26,8 @@ struct Contributor {
       var components = URLComponents()
       components.scheme = "https"
       components.host = "api.github.com"
-      components.path = "/search/repositories/\(githubProfileName)"
-      
+      components.path = "/users/\(githubProfileName)"
+
       let url = components.url!
       var request = URLRequest(url: url)
 
