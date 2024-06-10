@@ -77,6 +77,7 @@ If the WWDC week just recently happened (= less than 2 weeks ago), then please a
    @Column(size: 2) {
       Once your note is written, you need to create a Pull Request on GitHub to get your changes onto this website. Detailed Steps:
       
+      1. Add your GitHub handle into the `@GitHubUser(<replace this with your GitHub handle>)` stub
       1. Commit your changes locally in Xcode (see [Apple's Guide](https://developer.apple.com/documentation/xcode/tracking-code-changes-in-a-source-control-repository))
       1. [Fork the WWDCNotes repo](https://github.com/WWDCNotes/WWDCNotes/fork) on GitHub
       1. Add your fork as another remote in Xcode (see image →/↓)
@@ -107,7 +108,7 @@ To preview a note in Xcode while editing it, you need to open the Assistant Edit
 
 - Place images always in the folder with the same name as the session Markdown file.
 - Please avoid whitespaces in image file names. The web renderer doesn't handle them well.
-- Prefix your image file names with the year and number of the session, e.g. `WWDC23-10187`.
+- Prefix your image file names with the year and number of the session, e.g. `WWDC23-10187-Image`.
 - Avoid adding high-res PNG images. Prefer JPEG (if possible) and resolutions <= 1600 pixels.
 
 > Tip: Simply (batch-)convert images to JPEG (large) via the [Quick Actions menu in Finder](https://support.apple.com/en-us/guide/mac-help/mchl97ff9142/mac).
