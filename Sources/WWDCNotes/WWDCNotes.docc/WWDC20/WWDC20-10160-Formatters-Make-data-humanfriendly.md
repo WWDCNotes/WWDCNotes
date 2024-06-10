@@ -248,22 +248,22 @@ The more parts of your app you can localize, the more you can benefit from impro
 ## Sample App
 To explore all the different types of formatters, there's a [sample app](https://developer.apple.com/documentation/foundation/formatter/displaying_human-friendly_content) you can download and play with in Xcode Playgrounds.
 
-[weather_health_notes]: weather_health_notes.png
+[weather_health_notes]: WWDC20-10160-weather_health_notes
 
-[weather_health_notes_intl]: weather_health_notes_intl.png
+[weather_health_notes_intl]: WWDC20-10160-weather_health_notes_intl
 
-[day_of_week_template]: day_of_week_template.png
+[day_of_week_template]: WWDC20-10160-day_of_week_template
 
-[template_locale]: template_locale.png
+[template_locale]: WWDC20-10160-template_locale
 
-[mix_up_dateformatter]: mix_up_dateformatter.png
+[mix_up_dateformatter]: WWDC20-10160-mix_up_dateformatter
 
-[all_measurements]: all_measurements.png
+[all_measurements]: WWDC20-10160-all_measurements
 
-[monogram]: monogram.png
+[monogram]: WWDC20-10160-monogram
 
-[number_formatter]: number_formatter.png
+[number_formatter]: WWDC20-10160-number_formatter
 
-[percent_symbol]: percent_symbol.png
+[percent_symbol]: WWDC20-10160-percent_symbol
 
-[stringsdict]: stringsdict.png
+[stringsdict]: WWDC20-10160-stringsdict

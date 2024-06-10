@@ -118,5 +118,5 @@ Avoiding the need for weak and unowned references may have additional implementa
 - With this build setting turned on, you may see objects being deallocated immediately after last use much more consistently, bringing observed object lifetimes closer to their guaranteed minimum
 - This may expose hidden object lifetime bugs
 
-[compilerReference]: compile-time.gif
-[runtimeReference]: runtime.gif
+[compilerReference]: WWDC21-10216-compile-time
+[runtimeReference]: WWDC21-10216-runtime

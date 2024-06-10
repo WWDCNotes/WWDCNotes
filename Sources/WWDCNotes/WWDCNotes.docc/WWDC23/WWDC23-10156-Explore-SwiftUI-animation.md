@@ -309,6 +309,6 @@ Recommended:
 - WWDC23 Animate with Springs
 - WWDC23 Wind your way through advanced animations in SwiftUI
 
-[attribute-graph]: attribute-graph.png
-[animation-timeline]: animation-timeline.jpeg
-[animation-timeline-position-body]: animation-timeline-position-body.jpeg
+[attribute-graph]: WWDC23-10156-attribute-graph
+[animation-timeline]: WWDC23-10156-animation-timeline
+[animation-timeline-position-body]: WWDC23-10156-animation-timeline-position-body

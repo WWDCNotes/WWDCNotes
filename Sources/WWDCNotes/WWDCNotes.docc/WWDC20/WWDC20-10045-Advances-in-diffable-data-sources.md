@@ -201,4 +201,4 @@ dataSource.reorderingHandlers.didReorder = { [weak self] transaction in
 ```
 
 [wwdc19220]: ../../wwdc19/220
-[section_snapshots]: section_snapshots.png
+[section_snapshots]: WWDC20-10045-section_snapshots

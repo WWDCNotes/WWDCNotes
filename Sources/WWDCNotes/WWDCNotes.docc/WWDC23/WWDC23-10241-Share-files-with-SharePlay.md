@@ -124,4 +124,4 @@ func handle(_ attachments: GroupSessionJournal.Attachments.Element) async {
 
 ![Example: Sync image across devices][10241-example-code-shareplay-attachments]
 
-[10241-example-code-shareplay-attachments]: example-code-shareplay-attachments.png
+[10241-example-code-shareplay-attachments]: WWDC23-10241-example-code-shareplay-attachments

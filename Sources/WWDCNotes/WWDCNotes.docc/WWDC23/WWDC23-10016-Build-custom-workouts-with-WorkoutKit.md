@@ -54,7 +54,7 @@ Here's a code sample of a custom workout:
 - The user is able to see workouts scheduled in the next seven days and the previous seven days.
 - You can query for scheduled workouts that the user has completed from your app. It contains scheduled date, and whether it was completed or not. They don't contain health data. If you want to pull the health data, refer to HealthKit APIs.
 
-[workout-stages]: workout-stages.png
-[workout-code-sample]: workout-code-sample.png
-[workout-preview]: workout-preview.png
-[scheduled-workouts]: scheduled-workouts.png
+[workout-stages]: WWDC23-10016-workout-stages
+[workout-code-sample]: WWDC23-10016-workout-code-sample
+[workout-preview]: WWDC23-10016-workout-preview
+[scheduled-workouts]: WWDC23-10016-scheduled-workouts

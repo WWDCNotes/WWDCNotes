@@ -208,5 +208,5 @@ Actor reentrancy:
 [Call_stack]: https://en.wikipedia.org/wiki/Call_stack
 [heap]: https://en.wikipedia.org/w/index.php?title=Heap_(memory_management)
 [Priority_inversion]: https://en.wikipedia.org/wiki/Priority_inversion
-[gcd-timeline]: gcd-timeline.png
-[swift-concurrency-timeline]: swift-concurrency-timeline.png
+[gcd-timeline]: WWDC21-10254-gcd-timeline
+[swift-concurrency-timeline]: WWDC21-10254-swift-concurrency-timeline

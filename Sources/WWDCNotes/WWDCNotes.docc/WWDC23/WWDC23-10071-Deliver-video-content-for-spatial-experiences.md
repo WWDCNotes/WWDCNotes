@@ -27,7 +27,7 @@ Considering the content pipeline, we'll start with media encoding of video, audi
 
 ![Content pipeline][contentPipeline]
 
-[contentPipeline]: contentPipeline.jpg
+[contentPipeline]: WWDC23-10071-contentPipeline
 
 HLS adds new support for fragmented MP4 timed metadata that allows an important adaptation. 
 
@@ -49,7 +49,7 @@ For video, encode the source video. Edit it to the right length and color correc
 
 ![2D audiovisual media][audiovisualMedia]
 
-[audiovisualMedia]: audiovisualMedia.jpg
+[audiovisualMedia]: WWDC23-10071-audiovisualMedia
 
 This platform supports playback of up to 4K resolution, allowing your highest-quality video to be experienced. The display's refresh rate is 90 Hertz, And for 24-frames-per-second video, a special 96-hertz mode may be used automatically. There's support for standard and high dynamic range. 
 
@@ -60,7 +60,7 @@ This platform supports playback of up to 4K resolution, allowing your highest-qu
 
 ![2D audiovisual media][audiovisualMedia2]
 
-[audiovisualMedia2]: audiovisualMedia2.jpg
+[audiovisualMedia2]: WWDC23-10071-audiovisualMedia2
 
 # Encode audio
 
@@ -68,7 +68,7 @@ For your video's corresponding audio, identify and produce the number of source 
 
 ![2D audiovisual media][audiovisualMedia3]
 
-[audiovisualMedia3]: audiovisualMedia3.jpg
+[audiovisualMedia3]: WWDC23-10071-audiovisualMedia3
 
 Encode these sources for delivery with HLS in mind. You may want to deliver Spatial Audio, along with a fallback stereo audio track. This ensures a great experience for those devices supporting Spatial Audio and reliable playback everywhere. The HLS Developer page has links to documentation on preparing audio. 
 
@@ -78,7 +78,7 @@ And then there are captions. Here, captions includes both subtitles and closed c
 
 ![2D audiovisual media][audiovisualMedia4]
 
-[audiovisualMedia4]: audiovisualMedia4.jpg
+[audiovisualMedia4]: WWDC23-10071-audiovisualMedia4
 
 
 Closed captions is like subtitles but is intended when the audio can't be heard by the viewer. Close captions provide a transcription of not only the dialogue but also of sound effects and other relevant audio cues. There might also be subtitles for the Deaf and hard of hearing, SDH, serving the same purpose. Akin to video and audio encoding, you should produce caption files and formats supported by HLS, most commonly WebVTT. 
@@ -89,14 +89,14 @@ With source video, audio, and captions in hand, next comes packaging. Packaging 
 
 ![2D audiovisual media][audiovisualMedia5]
 
-[audiovisualMedia5]: audiovisualMedia5.jpg
+[audiovisualMedia5]: WWDC23-10071-audiovisualMedia5
 
 # Segmenting a movie file
 Two kinds of HLS media segments are most typically used today. Fragmented MP4 media segments are produced by starting with an already encoded movie file of video or audio and generating a number of resources. These resources are known as media segments.
 
 ![2D audiovisual media][audiovisualMedia6]
 
-[audiovisualMedia6]: audiovisualMedia6.jpg
+[audiovisualMedia6]: WWDC23-10071-audiovisualMedia6
 
 It is these segments that are retrieved by client devices during playback. 
 
@@ -106,14 +106,14 @@ Subtitle files also require segmenting. This is done with a subtitle-segmenting 
 
 ![2D audiovisual media][audiovisualMedia7]
 
-[audiovisualMedia7]: audiovisualMedia7.jpg
+[audiovisualMedia7]: WWDC23-10071-audiovisualMedia7
 
 # Deliver with HLS
 Finally, the collection of HLS resources is hosted on a web server for HTTP delivery. This might be to one server that serves clients directly or to an origin server used with a content delivery network, or a CDN.
 
 ![2D audiovisual media][audiovisualMedia8]
 
-[audiovisualMedia8]: audiovisualMedia8.jpg
+[audiovisualMedia8]: WWDC23-10071-audiovisualMedia8
 
 Either way, it is these resources that are delivered to client devices for playback. 
 
@@ -126,13 +126,13 @@ Let's deconstruct this term. First, it's video, so a sequence of frames in a mov
 
 ![3D audiovisual media][threeDAudiovisualMedia]
 
-[threeDAudiovisualMedia]: threeDAudiovisualMedia.jpg
+[threeDAudiovisualMedia]: WWDC23-10071-threeDAudiovisualMedia
 
 These differences between the left and right images, called parallax, causes you to perceive three-dimensional depth in the video when presented.
 
 ![3D audiovisual media][threeDAudiovisualMedia2]
 
-[threeDAudiovisualMedia2]: threeDAudiovisualMedia2.jpg
+[threeDAudiovisualMedia2]: WWDC23-10071-threeDAudiovisualMedia2
 
 While there are choices in how 3D video frames might be carried there are some guiding principles that seem useful. 
 
@@ -170,7 +170,7 @@ Efficiency is achieved because the differences between base 2D images uses stand
 
 ![3D audiovisual media][threeDAudiovisualMedia3]
 
-[threeDAudiovisualMedia3]: threeDAudiovisualMedia3.jpg
+[threeDAudiovisualMedia3]: WWDC23-10071-threeDAudiovisualMedia3
 
 # In video track signaling
 
@@ -178,13 +178,13 @@ The video format description, or the visual sample entry in MPEG-4, indicates th
 
 ![3D audiovisual media][threeDAudiovisualMedia4]
 
-[threeDAudiovisualMedia4]: threeDAudiovisualMedia4.jpg
+[threeDAudiovisualMedia4]: WWDC23-10071-threeDAudiovisualMedia4
 
 A new extension to the video format description is introduced. Termed the Video Extended Usage box, it serves as a lightweight, easily discoverable signal that the video is stereoscopic, and which stereo eye views are present. For HLS delivery, this will be both left and right. A specification describing this new VEXU box is available with the SDK.
 
 ![3D audiovisual media][threeDAudiovisualMedia5]
 
-[threeDAudiovisualMedia5]: threeDAudiovisualMedia5.jpg
+[threeDAudiovisualMedia5]: WWDC23-10071-threeDAudiovisualMedia5
 
 Its structure will evolve, and that will be described in the specification. 
 
@@ -201,14 +201,14 @@ Having both a left and a right image presented to the corresponding eye produces
 
 ![3D audiovisual media][threeDAudiovisualMedia6]
 
-[threeDAudiovisualMedia6]: threeDAudiovisualMedia6.jpg
+[threeDAudiovisualMedia6]: WWDC23-10071-threeDAudiovisualMedia6
 
 An object in the video scene might be perceived nearer or farther than another due to the differing amounts of parallax.
 Three primary zones of stereoscopic depth can be defined. They are the screen plane with no parallax cues; negative parallax, which will cause objects to be perceived in front of the screen plane; and positive parallax, which will cause objects to be perceived behind the screen plane. If an element like a caption is rendered with no parallax in the same area of the frame as negative parallax cues, then a depth conflict will be created and cause discomfort when viewing.
 
 ![3D audiovisual media][threeDAudiovisualMedia7]
 
-[threeDAudiovisualMedia7]: threeDAudiovisualMedia7.jpg
+[threeDAudiovisualMedia7]: WWDC23-10071-threeDAudiovisualMedia7
 
 # Captions and 3D video
 Question. Given stereoscopic parallax and potential for depth conflict, how involved is producing captions for 3D video? 
@@ -225,7 +225,7 @@ With stereoscopic video, avoiding depth conflict and visual elements overlaying 
 
 ![3D audiovisual media][threeDAudiovisualMedia8]
 
-[threeDAudiovisualMedia8]: threeDAudiovisualMedia8.jpg
+[threeDAudiovisualMedia8]: WWDC23-10071-threeDAudiovisualMedia8
 
 If we tile the 3D video and indicate the depth parallax for each tile, we can use that to ensure that captions never interfere with elements in the stereo video. During playback, the parallax of the caption will be automatically adjusted to avoid depth conflict. 
 
@@ -234,7 +234,7 @@ Each metadata item with such a parallax video contour describes a 2D tiling of t
 
 ![3D audiovisual media][threeDAudiovisualMedia9]
 
-[threeDAudiovisualMedia9]: threeDAudiovisualMedia9.jpg
+[threeDAudiovisualMedia9]: WWDC23-10071-threeDAudiovisualMedia9
 
 Each video frame's presentation should be associated with a metadata item describing the video frame's contour. We recommend a 10 by 10 tiling as a good balance between storage and resolution to characterize different areas of parallax in the video. 
 
@@ -243,7 +243,7 @@ Considering how this parallax metadata is produced, start with left and right vi
 
 ![3D audiovisual media][threeDAudiovisualMedia10]
 
-[threeDAudiovisualMedia10]: threeDAudiovisualMedia10.jpg
+[threeDAudiovisualMedia10]: WWDC23-10071-threeDAudiovisualMedia10
 
 For each stereo frame, this is then packaged in a metadata payload for the next step. A specification describing the format of this metadata is available with the SDK. 
 
@@ -252,7 +252,7 @@ This parallax information is packaged in metadata samples and written into a tim
 
 ![3D audiovisual media][threeDAudiovisualMedia11]
 
-[threeDAudiovisualMedia11]: threeDAudiovisualMedia11.jpg
+[threeDAudiovisualMedia11]: WWDC23-10071-threeDAudiovisualMedia11
 
 The metadata and video track should be multiplexed with the video so that HLS packaging will produce video segments with both the video and the parallax metadata.
 
@@ -280,7 +280,7 @@ Turning to packaging of 3D, updated HLS tools take care of the details, with 3D 
 
 ![3D audiovisual media][threeDAudiovisualMedia13]
 
-[threeDAudiovisualMedia13]: threeDAudiovisualMedia13.jpg
+[threeDAudiovisualMedia13]: WWDC23-10071-threeDAudiovisualMedia13
 
 # HLS multivariant playlist format update
 New REQ-VIDEO-LAYOUT attribute
@@ -315,7 +315,7 @@ Finally, HLS delivery works the same with 3D assets.
 
 ![3D audiovisual media][threeDAudiovisualMedia14]
 
-[threeDAudiovisualMedia14]: threeDAudiovisualMedia14.jpg
+[threeDAudiovisualMedia14]: WWDC23-10071-threeDAudiovisualMedia14
 
 # 3D packaging and delivery
 - Prepare your source assets  
@@ -334,7 +334,7 @@ So in our journey, we've looked at 2D and 3D delivery with HTTP Live Streaming. 
 
 ![3D audiovisual media][threeDAudiovisualMedia15]
 
-[threeDAudiovisualMedia15]: threeDAudiovisualMedia15.jpg
+[threeDAudiovisualMedia15]: WWDC23-10071-threeDAudiovisualMedia15
 
 ## Wrap Up
 With some small modifications to your current 2D pipeline, you can support 3D content using MV-HEVC. You can even continue to use all your existing captions from 2D assets. But if you provide timed metadata, those captions can be unobscured and provide a comfortable viewing experience.
@@ -352,5 +352,5 @@ With some small modifications to your current 2D pipeline, you can support 3D co
 [Video Contour Map Payload Metadata within the QuickTime Movie File Format](https://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf)  
 
 
-[contentPipeline]: contentPipeline.jpg
+[contentPipeline]: WWDC23-10071-contentPipeline
 

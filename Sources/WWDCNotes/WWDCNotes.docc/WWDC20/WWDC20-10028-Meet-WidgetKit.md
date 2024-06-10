@@ -130,7 +130,7 @@ When our extension [`TimelineProvider`][tp] is asked to provide a [`Timeline`][t
 [syslarge]: https://developer.apple.com/documentation/widgetkit/widgetfamily/systemlarge
 [intentsDoc]: https://developer.apple.com/documentation/sirikit
 
-[widget_works]: widget_works.png
-[static_configuration]: static_configuration.png
-[intent_configuration]: intent_configuration.png
-[placeholderImage]: placeholder.png
+[widget_works]: WWDC20-10028-widget_works
+[static_configuration]: WWDC20-10028-static_configuration
+[intent_configuration]: WWDC20-10028-intent_configuration
+[placeholderImage]: WWDC20-10028-placeholder

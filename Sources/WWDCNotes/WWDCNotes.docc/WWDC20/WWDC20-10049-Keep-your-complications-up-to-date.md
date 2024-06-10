@@ -291,4 +291,4 @@ Guidelines:
 [CLKComplicationDataSource]: https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource
 [scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)]: https://developer.apple.com/documentation/watchkit/wkextension/1650848-schedulebackgroundrefresh
 [demo]: https://developer.apple.com/documentation/clockkit/creating_and_updating_complications
-[recapImage]: recap.png
+[recapImage]: WWDC20-10049-recap

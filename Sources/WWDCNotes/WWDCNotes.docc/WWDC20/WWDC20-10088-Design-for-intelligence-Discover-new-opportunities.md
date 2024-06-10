@@ -46,4 +46,4 @@ when a user engages on their first sharing suggestion for your app, they will on
 
 - Some third-party apps are seen on average five times every day on the Lock screen and sharing in search and other entry points throughout the system.
 
-[entryPointsImage]: entryPoints.png
+[entryPointsImage]: WWDC20-10088-entryPoints

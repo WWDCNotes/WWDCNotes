@@ -63,6 +63,6 @@ Note that not all customization are possible, Xcode will warn you with log messa
 
 ![][oneTimePrompt]
 
-[oneTimePrompt]: oneTimePrompt.png
+[oneTimePrompt]: WWDC21-10102-oneTimePrompt
 [CLLocationButton]: https://developer.apple.com/documentation/corelocationui/cllocationbutton
 [LocationButton]: https://developer.apple.com/documentation/corelocationui/locationbutton

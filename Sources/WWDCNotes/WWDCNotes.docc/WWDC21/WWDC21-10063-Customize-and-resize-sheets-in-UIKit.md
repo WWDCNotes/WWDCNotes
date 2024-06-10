@@ -175,6 +175,6 @@ if let popover = picker.popoverPresentationController { // reach for popoverPres
 present(viewController, animated: true)
 ```
 
-[detents]: fullSheet.png
-[landscape]: landscape.png
-[landscape-1]: landscape-1.png
+[detents]: WWDC21-10063-fullSheet
+[landscape]: WWDC21-10063-landscape
+[landscape-1]: WWDC21-10063-landscape-1

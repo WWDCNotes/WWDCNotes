@@ -108,7 +108,7 @@ Image(systemName: "pencil.tip.crop.circle.badge.plus")
 [SymbolConfiguration]: https://developer.apple.com/documentation/uikit/uiimage/symbolconfiguration
 [Label]: https://developer.apple.com/documentation/swiftui/label
 
-[capHeightImage]: capHeight.png
-[thicknessImage]: thickness.png
-[collectionImage]: collection.png
-[localeImage]: locale.png
+[capHeightImage]: WWDC20-10207-capHeight
+[thicknessImage]: WWDC20-10207-thickness
+[collectionImage]: WWDC20-10207-collection
+[localeImage]: WWDC20-10207-locale

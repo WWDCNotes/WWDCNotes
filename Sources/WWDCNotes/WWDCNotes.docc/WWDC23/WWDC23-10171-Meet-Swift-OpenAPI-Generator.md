@@ -18,7 +18,7 @@ Discover how Swift OpenAPI Generator can help you work with HTTP server APIs whe
 
 ![API definition: Serve URL, API endpoint, HTTP method, Path parameters, Query string, HTTP header fields, Content type, Request body, Status codes, Response body, Errors, Required parameters, Optional parameters, Encoding, Authorization, API version, ...][api-definition-challenges]
 
-[api-definition-challenges]: api-definition-challenges.png
+[api-definition-challenges]: WWDC23-10171-api-definition-challenges
 
 - Most services have some kind of documentation, but hand-written can be outdated
 - With access to source code, implementation can be used – but incomplete understanding
@@ -37,7 +37,7 @@ Discover how Swift OpenAPI Generator can help you work with HTTP server APIs whe
 
 ![OpenAPI tools: Client code generation, API gateways, Data validation, Statis analysis, Fuzz testing, Middleware, Interactive documentation, API evolution, Graphical editors, Server stub generation, Mock testing, Specification generation, Documentation generation, Format conversion, Editor support, ...][openapi-tools]
 
-[openapi-tools]: openapi-tools.png
+[openapi-tools]: WWDC23-10171-openapi-tools
 
 Example OpenAPI document:
 
@@ -86,7 +86,7 @@ case .ok(let response):
 
 ![][code-generation]
 
-[code-generation]: code-generation.png
+[code-generation]: WWDC23-10171-code-generation
 
 ## Making API calls from your app
 
@@ -97,7 +97,7 @@ case .ok(let response):
 
 ![][build-tool-plugins]
 
-[build-tool-plugins]: build-tool-plugins.png
+[build-tool-plugins]: WWDC23-10171-build-tool-plugins
 
 - The plugin expects 2 files in project: `openapi-generator-config.yaml` (config) and `openapi.yaml` (spec)
 - The config file specifies what code to generate, e.g. `generate: [types, client]`

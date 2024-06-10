@@ -21,19 +21,19 @@ Level up your screen sharing experience with the latest features in ScreenCaptur
 
 ![][small]
 
-[small]: small.png
+[small]: WWDC23-10136-small
 
 - Large overlay: Separates the presenters face & body from the background & layers screen content between them (more immersive)
 
 ![][large]
 
-[large]: large.png
+[large]: WWDC23-10136-large
 
 - Overlay integrated in `SCStream` – video menu bar will show automatically, user controls sharing there
 
 ![][integration]
 
-[integration]: integration.png
+[integration]: WWDC23-10136-integration
 
 - User can control the stream there & customize things like camera / microphone effects
 - Currently content frames sent to its process from ScreenCaptureKit
@@ -42,7 +42,7 @@ Level up your screen sharing experience with the latest features in ScreenCaptur
 
 ![][flow]
 
-[flow]: flow.png
+[flow]: WWDC23-10136-flow
 
 - Apps get notified about presenter overlay started/stopped via `SCStream` delegate method `stream(_:outputEffectDidStart:)`
 - Considerations to take: Hide camera view when turned on, update app UI, optimize experience (higher frame rates)
@@ -83,7 +83,7 @@ SCContentFilter, for stream: SCStream?) {
 
 ![][customize]
 
-[customize]: customize.png
+[customize]: WWDC23-10136-customize
 
 ## Screenshot
 

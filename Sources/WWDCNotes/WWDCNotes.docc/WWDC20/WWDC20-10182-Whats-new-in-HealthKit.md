@@ -71,7 +71,7 @@ New set of mobility types:
 - stair ascent and descent speed
 - six minute walk test
 
-[symptoms]: hk2020.png
+[symptoms]: WWDC20-10182-hk2020
 
 [hkElectroDoc]: https://developer.apple.com/documentation/healthkit/hkelectrocardiogram
 [classDoc]: https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/3551981-classification

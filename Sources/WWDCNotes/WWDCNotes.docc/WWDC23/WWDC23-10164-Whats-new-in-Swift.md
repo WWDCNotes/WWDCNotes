@@ -51,13 +51,13 @@ These documents lay out a proposal for larger changes to the language. The first
 
 ![vision documents][visionDocuments]
 
-[visionDocuments]: visionDocuments.jpg
+[visionDocuments]: WWDC23-10164-visionDocuments
 
 Of course, evolution of the language is only part of the work of the Swift community. A successful language needs much more than this. It needs great tooling, robust support for multiple platforms, and rich documentation. To oversee progress in this area, the core team is creating an ecosystem steering group parallel to the language steering group. This new structure was recently laid out in a blog post on Swift.org, a look out for further announcements about the formation of this new group soon.
 
 ![vision documents][visionDocuments2]
 
-[visionDocuments2]: visionDocuments2.jpg
+[visionDocuments2]: WWDC23-10164-visionDocuments2
 
 # Expressive code
 
@@ -119,13 +119,13 @@ As of Swift 5.8, invalid code type checks much faster, and error messages on inv
 
 ![][1]
 
-[1]: IMG_9B4379D3B587-1.jpeg
+[1]: WWDC23-10164-IMG_9B4379D3B587-1
 
 when the mistake actually lies up here:
 
 ![][2]
 
-[2]: IMG_FFC563B46E50-1.jpeg
+[2]: WWDC23-10164-IMG_FFC563B46E50-1
 
 ## Generic improvement
 
@@ -170,7 +170,7 @@ In Swift 5.9, the generics system is gaining first-class support for this API pa
 
 ![Each Result][eachResult]
 
-[eachResult]: eachResult.jpg
+[eachResult]: WWDC23-10164-eachResult
 
 Instead of accepting a single type parameter, Result, representing the result type of a single request, the evaluate function now accepts a separate request over `each Result` type.
 ```swift
@@ -221,13 +221,13 @@ Assert will stop the program if the condition is false, but when that happens, y
 
 ![Macro Assert][macroAssert]
 
-[macroAssert]: macroAssert.jpg
+[macroAssert]: WWDC23-10164-macroAssert
 
 There have been attempts to improve on this. XCTest provides an assert-equal operation that takes the two values separately, so when things fail, you can at least see the two values that aren't equal.
 
 ![Macro Assert][macroAssert2]
 
-[macroAssert2]: macroAssert2.jpg
+[macroAssert2]: WWDC23-10164-macroAssert2
 
 But we still don't know which value is wrong here. Was it a, b, or the result of max? And this approach really doesn't scale for all of the kinds of checks we perform in asserts. If we go back to the original assertion, there is so much information here in the source code that we'd like to see in the log when our assertion fails. What was the code? What are the values of a, and b, and c? What did max produce? We couldn't improve this in Swift before without some custom feature, but macros make it possible.
 ```swift
@@ -241,7 +241,7 @@ Now the program is showing the code for the failing assertion, along with each o
 
 ![Macro Assert][macroAssert3]
 
-[macroAssert3]: macroAssert3.jpg
+[macroAssert3]: WWDC23-10164-macroAssert3
 
 In Swift, macros are APIs, just like types or functions, so you access them by importing the module that defines them. Like many other APIs, macros are distributed as packages. The assert macro here comes from the power asserts library, an open-source Swift package available on GitHub.
 
@@ -265,7 +265,7 @@ Here, the macro is expanding the assertion into code that captures the individua
 
 ![Macro Assert][macroAssert4]
 
-[macroAssert4]: macroAssert4.jpg
+[macroAssert4]: WWDC23-10164-macroAssert4
 
 - You can extend the capabilities of the lang itself, eliminate boilerplate  
 - Assert macro looks and feels like the function version, but, as it’s a macro, it can provide a richer experience.  
@@ -363,7 +363,7 @@ Attached macros are classified into five different roles based on how they augme
 
 ![attachedMacroRoles][attachedMacroRoles]
 
-[attachedMacroRoles]: attachedMacroRoles.jpeg
+[attachedMacroRoles]: WWDC23-10164-attachedMacroRoles
 
 The case detection macro we just discussed is a "member" attached macro, meaning that it creates new members in a type or extension.
 
@@ -453,7 +453,7 @@ Whenever you need to see how any macro expands, Xcode 15 comes up with “Expand
 
 ![Expand Macros][expandMacros]
 
-[expandMacros]: expandMacros.jpeg
+[expandMacros]: WWDC23-10164-expandMacros
 
 This session will go deep into the design of Swift macros to answer all of those questions you must have:
 
@@ -473,7 +473,7 @@ We recently open sourced the start of a rewrite of the Foundation framework in S
 
 ![Swift everywhere][swiftEverywhere]
 
-[swiftEverywhere]: swiftEverywhere.jpg
+[swiftEverywhere]: WWDC23-10164-swiftEverywhere
 
 As of MacOS Sonoma and iOS 17, there are new Swift-backed implementations of essential types like Date and Calendar, of formatting and internationalization essentials like Locale and AttributedString, and a new Swift implementation of JSON encoding and decoding. And the performance wins have been significant.
 
@@ -488,7 +488,7 @@ Foundation has a brand-new Swift implementation for JSONDecoder and JSONEncoder,
 
 ![Swift everywhere][swiftEverywhere2]
 
-[swiftEverywhere2]: swiftEverywhere2.jpg
+[swiftEverywhere2]: WWDC23-10164-swiftEverywhere2
 
 Now, sometimes, when you're operating at lower levels of the system, you need more fine-grained control to achieve a necessary level of performance. Swift 5.9 introduces some new opt-in capabilities that help you achieve this level of control. These capabilities focus on the concept of ownership, that is, what part of the code "owns" a value as it passes around your application.
 
@@ -594,7 +594,7 @@ This means, if you close the file first and then attempt to call another method,
 
 ![consuming][consuming]
 
-[consuming]: consuming.jpeg
+[consuming]: WWDC23-10164-consuming
 
 
 # C++ Interoperability
@@ -608,7 +608,7 @@ Swift 5.9 introduces the ability to interact with C++ types and funcs directly f
 
 ![interact with C++][interactWithCplusplus]
 
-[interactWithCplusplus]: interactWithCplusplus.jpeg
+[interactWithCplusplus]: WWDC23-10164-interactWithCplusplus
 
 C++ is a large language with its own notions of ideas like classes, methods, containers, and so on. The Swift compiler understands common C++ idioms, so many types can be used directly. For example, this Person type defines the five special member functions expected of a C++ value type: Copy and move constructors, assignment operators, and a destructor.
 ```C++
@@ -811,14 +811,14 @@ FoundationDB is an open-source project with a large code base written in C++. Th
 
 ![case study with C++][caseStudy]
 
-[caseStudy]: caseStudy.jpg
+[caseStudy]: WWDC23-10164-caseStudy
 
 A complete rewrite would be a big, risky endeavor. Instead, we leveraged Swift's interoperability to integrate into the existing code base. For example, here's a part of the C++ implementation of FoundationDB's "master data" actor.
 This function can be directly implemented as an async function in Swift. 
 
 ![case study with C++][caseStudy2]
 
-[caseStudy2]: caseStudy2.jpg
+[caseStudy2]: WWDC23-10164-caseStudy2
 
 ## Wrap-up
 

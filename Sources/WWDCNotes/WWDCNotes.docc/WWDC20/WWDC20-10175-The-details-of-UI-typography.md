@@ -219,10 +219,10 @@ Text("Fixed").font(.custom("Courier", fixedSize: 17))
 * Only override system behavior in exceptional cases
 * Custom tracking should be size specific
 
-[image-1]:	variable_font.png
-[image-2]:	font_tracking.png
-[image-3]:	font_kerning.png
-[image-4]:	sf_text_tracking.png
-[image-5]:	sf_display_tracking.png
-[image-6]:	line_height_leading.png
-[image-7]:	fonts_dynamic_type.png
+[image-1]:	WWDC20-10175-variable_font
+[image-2]:	WWDC20-10175-font_tracking
+[image-3]:	WWDC20-10175-font_kerning
+[image-4]:	WWDC20-10175-sf_text_tracking
+[image-5]:	WWDC20-10175-sf_display_tracking
+[image-6]:	WWDC20-10175-line_height_leading
+[image-7]:	WWDC20-10175-fonts_dynamic_type

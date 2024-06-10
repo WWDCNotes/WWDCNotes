@@ -130,24 +130,24 @@ To run using `xcodebuild`, ensure that you have the `-parallel-testing-enabled Y
 - Use Parallel Distributed Testing to speed up your tests.
 - Use Parallel Destination Testing to simultaneously run your tests on more OS versions and devices.
 
-[testing_feedback_loop]: testing_feedback_loop.png
+[testing_feedback_loop]: WWDC20-10221-testing_feedback_loop
 
-[hanging_ci_test]: hanging_ci_test.png
+[hanging_ci_test]: WWDC20-10221-hanging_ci_test
 
-[new_test_report]: new_test_report.png
+[new_test_report]: WWDC20-10221-new_test_report
 
-[double_lock]: double_lock.png
+[double_lock]: WWDC20-10221-double_lock
 
-[customizing_default_allowance]: customizing_default_allowance.png
+[customizing_default_allowance]: WWDC20-10221-customizing_default_allowance
 
-[time_precedence]: time_precedence.png
+[time_precedence]: WWDC20-10221-time_precedence
 
-[maximum_allowance]: maximum_allowance.png
+[maximum_allowance]: WWDC20-10221-maximum_allowance
 
-[sample_long_test_report]: sample_long_test_report.png
+[sample_long_test_report]: WWDC20-10221-sample_long_test_report
 
-[non_distributed_testing]: non_distributed_testing.png
+[non_distributed_testing]: WWDC20-10221-non_distributed_testing
 
-[parallel_distributed_testing]: parallel_distributed_testing.png
+[parallel_distributed_testing]: WWDC20-10221-parallel_distributed_testing
 
-[parallel_distributed_support]: parallel_distributed_support.png
+[parallel_distributed_support]: WWDC20-10221-parallel_distributed_support

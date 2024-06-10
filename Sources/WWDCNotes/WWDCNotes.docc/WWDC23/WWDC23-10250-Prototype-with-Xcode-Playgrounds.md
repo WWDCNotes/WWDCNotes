@@ -29,7 +29,7 @@ New improvements in Xcode Playgrounds make it easier to prototype new features.
 
 ![Rapid iterations][iterations]
 
-[iterations]: iterations.jpg
+[iterations]: WWDC23-10250-iterations
 
 The presenter is working on a small app that's meant to help with wildlife photography. At the moment, the app keeps track of the species already found and photographed. 
 
@@ -52,13 +52,13 @@ To avoid the frequent rebuilding and relaunching the project and then navigating
 
 ![Rapid iterations][iterations2]
 
-[iterations2]: iterations2.jpg
+[iterations2]: WWDC23-10250-iterations2
 
 Switch to "Automatically run" in the menu that shows up when I long click the run button on the bottom bar.
 
 ![Rapid iterations][iterations3]
 
-[iterations3]: iterations3.jpg
+[iterations3]: WWDC23-10250-iterations3
 
 This causes the playground to automatically execute the whole code.
 
@@ -66,7 +66,7 @@ The playgrounds added to projects have two settings enabled by default: Build Ac
 
 ![Rapid iterations][iterations4]
 
-[iterations4]: iterations4.jpg
+[iterations4]: WWDC23-10250-iterations4
 
 Declaring a BirdProvider instance like in the birdsToShow property of the ChecklistView.
 
@@ -76,7 +76,7 @@ The inline result shows the details of this BirdProvider instance along with its
 
 ![Rapid iterations][iterations5]
 
-[iterations5]: iterations5.jpg
+[iterations5]: WWDC23-10250-iterations5
 
 Now in Xcode 15, each row also has a type information label, which shows a short summary of the type, and we can use the tooltips for each row to see more details.
 
@@ -86,7 +86,7 @@ Interacting with the inline result view, Xcode 15 highlights the source code tha
 
 ![Rapid iterations][iterations6]
 
-[iterations6]: iterations6.jpg
+[iterations6]: WWDC23-10250-iterations6
 
 While the region and birds array properties show nice summaries, by default, the rows representing each bird only tell us about the array indexes. 
 
@@ -102,13 +102,13 @@ extension Bird: CustomStringConvertible {
 
 ![Rapid iterations][iterations7]
 
-[iterations7]: iterations7.jpg
+[iterations7]: WWDC23-10250-iterations7
 
 With the new description definition, each row should show the common and scientific name of the bird. In the automatic mode of playground execution, the playground will automatically re-execute when we reopen it.
 
 ![Rapid iterations][iterations8]
 
-[iterations8]: iterations8.jpg
+[iterations8]: WWDC23-10250-iterations8
 
 Let's take a look at other properties of the Bird type.
 
@@ -118,13 +118,13 @@ Once I click on its row, the photo is displayed in the new split view-based user
 
 ![Rapid iterations][iterations9]
 
-[iterations9]: iterations9.jpg
+[iterations9]: WWDC23-10250-iterations9
 
 By default, there is no such preview for custom Bird types when clicking on its row.
 
 ![Rapid iterations][iterations10]
 
-[iterations10]: iterations10.jpg
+[iterations10]: WWDC23-10250-iterations10
 
 To achieve that, we can use the CustomPlaygroundDisplayConvertible protocol. This conformance only affects the playground representation.
 Import the app module and add a simple extension that returns the photo property as the playgroundDescription.
@@ -142,7 +142,7 @@ extension Bird: CustomPlaygroundDisplayConvertible {
 
 ![Rapid iterations][iterations11]
 
-[iterations11]: iterations11.jpg
+[iterations11]: WWDC23-10250-iterations11
 
 We are explicitly casting photo to Any in the return statement. Without it, the compiler would warn that we are losing an important piece of information about the value being an optional.
 
@@ -152,7 +152,7 @@ Now, the birds that already have a photo will quickly show it without the need o
 
 ![Rapid iterations][iterations12]
 
-[iterations12]: iterations12.jpg
+[iterations12]: WWDC23-10250-iterations12
 
 Lets focus on birds that don't have the photos yet filtering out all the birds that have a photo already.
 
@@ -160,20 +160,20 @@ Hovering over the inline result toggles highlights their source code ranges. Thi
 
 ![Rapid iterations][iterations13]
 
-[iterations13]: iterations13.jpg
+[iterations13]: WWDC23-10250-iterations13
 
 The result sidebar tells us the number of all birds. We filter for owls. The array only has five elements now... 
 We create a ChecklistView instance and add each bird one by one. As a UIView subclass, it now also shows a few properties along with the snapshot. The Value history mode, now also uses the new split-view-based user interface.
 
 ![Rapid iterations][iterations14]
 
-[iterations14]: iterations14.jpg
+[iterations14]: WWDC23-10250-iterations14
 
 The view incorrectly says "birds" in the header for just one bird. 
 
 ![Rapid iterations][iterations15]
 
-[iterations15]: iterations15.jpg
+[iterations15]: WWDC23-10250-iterations15
 
 To fix this we adjust the strings defined in the new String Catalog.
 
@@ -181,17 +181,17 @@ Bring up the context menu and select Vary By Plural.
 
 ![Rapid iterations][iterations16]
 
-[iterations16]: iterations16.jpg
+[iterations16]: WWDC23-10250-iterations16
 
 And adjust the singular form of this string.
 
 ![Rapid iterations][iterations16a]
 
-[iterations16a]: iterations16a.jpg
+[iterations16a]: WWDC23-10250-iterations16a
 
 ![Rapid iterations][iterations17]
 
-[iterations17]: iterations17.jpg
+[iterations17]: WWDC23-10250-iterations17
 
 Learn more about the new String Catalogs: 
 
@@ -201,7 +201,7 @@ The ChecklistView is now ready to use.
 
 ![Rapid iterations][iterations18]
 
-[iterations18]: iterations18.jpg
+[iterations18]: WWDC23-10250-iterations18
 
 Each row in the custom Checklist View had a disclosure indicator. Once I select a row in the list, it opens a simple map view. 
 
@@ -220,7 +220,7 @@ The BirdSightings package makes it easy to fetch the data from one of the citize
 
 ![Rapid iterations][iterations19]
 
-[iterations19]: iterations19.jpg
+[iterations19]: WWDC23-10250-iterations19
 
 Import the CoreLocation framework to be able to work with coordinates and the BirdSighting framework to use its API.
 
@@ -228,7 +228,7 @@ For the function arguments, we can simply start with the first bird from the lis
 
 ![Rapid iterations][iterations20]
 
-[iterations20]: iterations20.jpg
+[iterations20]: WWDC23-10250-iterations20
 
 The ability to provide specific coordinates will be great for two things: testing the code and planning all the road trips.
 ```swift
@@ -239,7 +239,7 @@ Before to introduce a network call, we will switch to the manual mode of playgro
 
 ![Rapid iterations][iterations21]
 
-[iterations21]: iterations21.jpg
+[iterations21]: WWDC23-10250-iterations21
 
 Let's add the fetching code.
 
@@ -256,7 +256,7 @@ Looks like we are way too far east.
 
 ![Rapid iterations][iterations22]
 
-[iterations22]: iterations22.jpg
+[iterations22]: WWDC23-10250-iterations22
 
 Let's close the live view in the Editor Options and try to see where the problem was introduced.
 
@@ -264,7 +264,7 @@ In Xcode 15, playgrounds can now show a preview for CLLocationCoordinate2D, so l
 
 ![Rapid iterations][iterations23]
 
-[iterations23]: iterations23.jpg
+[iterations23]: WWDC23-10250-iterations23
 
 This might just be a matter of mixing west with east. Let's try to fix this by adding the minus sign in front of the longitude and re-executing the playground.
 
@@ -272,7 +272,7 @@ Now this is definitely Apple Park.
 
 ![Rapid iterations][iterations23]
 
-[iterations23]: iterations23.jpg
+[iterations23]: WWDC23-10250-iterations23
 
 Let's quickly bring the fetching code to the ChecklistView. Copy these three lines to the sightingsToShow function.
 
@@ -299,13 +299,13 @@ extension ChecklistView {
 
 ![Rapid iterations][iterations24]
 
-[iterations24]: iterations24.jpg
+[iterations24]: WWDC23-10250-iterations24
 
 The app can now show the most recent sighting for the selected bird. 
 
 ![Rapid iterations][iterations25]
 
-[iterations25]: iterations25.jpg
+[iterations25]: WWDC23-10250-iterations25
 
 ## Wrap Up
 - Customize playground representation. We used CustomStringConvertible and CustomPlaygroundDisplayConvertible protocols to customize the representations of our custom types.  

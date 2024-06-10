@@ -215,7 +215,7 @@ logger.log("\(seconds, format: .fixed(precision: 2)) seconds")
 #### [Swift StandardLibraryPreview](https://github.com/apple/swift-standard-library-preview) 
 * Early access to new StandardLibary features.
 
-[binarySizeImage]: binary_size.png
-[overheadCutImage]: overhead_cut.png
-[languageFeaturesImage]: language_features.png
-[IEEE_754]: IEEE_754.png
+[binarySizeImage]: WWDC20-10170-binary_size
+[overheadCutImage]: WWDC20-10170-overhead_cut
+[languageFeaturesImage]: WWDC20-10170-language_features
+[IEEE_754]: WWDC20-10170-IEEE_754

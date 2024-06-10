@@ -284,14 +284,14 @@ Here's a benchmark of `Float16` against `Float`:
 - Visit the GitHub page at [github.com/apple/swift-numerics](https://github.com/apple/swift-numerics)
 - Participate in [Swift forums](https://forums.swift.org) under the category "Related Projects"
 
-[protocols_in_standard_lib]: protocols_in_standard_lib.png
-[protocols_in_numerics]: protocols_in_numerics.png
-[generic_numerical_programming]: generic_numerical_programming.png
-[signednumeric_protocol_extension]: signednumeric_protocol_extension.png
-[polar_complex]: polar_complex.png
-[complex_benchmark]: complex_benchmark.png
-[float16_size_constraints]: float16_size_constraints.png
-[float16_benchmark]: float16_benchmark.png
+[protocols_in_standard_lib]: WWDC20-10217-protocols_in_standard_lib
+[protocols_in_numerics]: WWDC20-10217-protocols_in_numerics
+[generic_numerical_programming]: WWDC20-10217-generic_numerical_programming
+[signednumeric_protocol_extension]: WWDC20-10217-signednumeric_protocol_extension
+[polar_complex]: WWDC20-10217-polar_complex
+[complex_benchmark]: WWDC20-10217-complex_benchmark
+[float16_size_constraints]: WWDC20-10217-float16_size_constraints
+[float16_benchmark]: WWDC20-10217-float16_benchmark
 
 [sngh]: https://github.com/apple/swift-numerics
 [realgh]: https://github.com/apple/swift-numerics/blob/c634b5ddcea8445244b7cde1e5deddb8adf58e37/Sources/RealModule/Real.swift#L30

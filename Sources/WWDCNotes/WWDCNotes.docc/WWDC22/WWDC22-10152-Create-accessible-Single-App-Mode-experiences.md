@@ -64,7 +64,7 @@ Doing the above promotes user independence in your app!
 
 A custom restriction to disable the Account Settings button in the app when in Guided Access. The restriction lives in the same overlay as the system restrictions when Guided Access is enabled.
 
-| ![Reading Observatory app on iPhone. Guided Access overlay is showing over the app. The Account Settings switch has been turned off](app1.png) | ![Reading Observatory app on iPhone. The Account Settings button is not longer able to be interacted with, as it is grayed-out.](app2.png) |
+| ![Reading Observatory app on iPhone. Guided Access overlay is showing over the app. The Account Settings switch has been turned off](WWDC22-10152-app1) | ![Reading Observatory app on iPhone. The Account Settings button is not longer able to be interacted with, as it is grayed-out.](WWDC22-10152-app2) |
 
 Notice now the Account Settings button is disabled.
 
@@ -114,7 +114,7 @@ newRestrictionState:UIAccessibility.GuidedAccessRestrictionState) {
 	- This software can put many devices in SAM at one time
 	- In Apple Configurator: select a device -> Advanced -> Start Single App Mode -> Select App to lock into
 
-![Mac laptop showing Apple Configurator software. Users has selected a supervised iPad and a menu is showing where they've navigated to Advanced, then Start Single App Mode.](mac.png "Starting Single App Mode on a supervised device")
+![Mac laptop showing Apple Configurator software. Users has selected a supervised iPad and a menu is showing where they've navigated to Advanced, then Start Single App Mode.](WWDC22-10152-mac "Starting Single App Mode on a supervised device")
 
 ### Autonomous Single App Mode (ASAM)
 

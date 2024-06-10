@@ -42,8 +42,8 @@ LLDB is a powerful tool for exploring and debugging your app at runtime. Discove
 
 [customDoc]: https://developer.apple.com/documentation/swift/customdebugstringconvertible
 
-[tripImage]: trip.png
-[poUnderImage]: poUnder.png
-[pUnderImage]: pUnder.png
-[vUnderImage]: vUnder.png
-[diffImage]: diff.png
+[tripImage]: WWDC19-429-trip
+[poUnderImage]: WWDC19-429-poUnder
+[pUnderImage]: WWDC19-429-pUnder
+[vUnderImage]: WWDC19-429-vUnder
+[diffImage]: WWDC19-429-diff

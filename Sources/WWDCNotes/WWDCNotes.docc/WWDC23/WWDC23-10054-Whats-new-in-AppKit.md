@@ -375,17 +375,17 @@ class ViewController: NSViewController {
 }
 ```
 
-[column-hiding]: column.jpg
-[nsbutton-naming]: nsbutton-naming.jpg
-[inspector-panel]: inspector-panel.jpg
-[toolbar-popover]: toolbar-popover.jpg
-[popover-full-size-content]: popover-full-size-content.jpg
-[palette-menu]: palette-menu.jpg
-[palette-menu-tinted]: palette-menu-tinted.jpg
-[palette-menu-on-off-image]: palette-menu-on-off-image.jpg
-[menu-badges]: menu-badges.jpg
-[section-headers]: section-headers.jpg
-[system-fill-colors]: system-fill-colors.jpg
-[locale-specific-images]: locale-specific-images.jpg
-[cursor-accessory]: cursor-accessory.jpg
-[text-entry-glow]: text-entry-glow.jpg
+[column-hiding]: WWDC23-10054-column
+[nsbutton-naming]: WWDC23-10054-nsbutton-naming
+[inspector-panel]: WWDC23-10054-inspector-panel
+[toolbar-popover]: WWDC23-10054-toolbar-popover
+[popover-full-size-content]: WWDC23-10054-popover-full-size-content
+[palette-menu]: WWDC23-10054-palette-menu
+[palette-menu-tinted]: WWDC23-10054-palette-menu-tinted
+[palette-menu-on-off-image]: WWDC23-10054-palette-menu-on-off-image
+[menu-badges]: WWDC23-10054-menu-badges
+[section-headers]: WWDC23-10054-section-headers
+[system-fill-colors]: WWDC23-10054-system-fill-colors
+[locale-specific-images]: WWDC23-10054-locale-specific-images
+[cursor-accessory]: WWDC23-10054-cursor-accessory
+[text-entry-glow]: WWDC23-10054-text-entry-glow

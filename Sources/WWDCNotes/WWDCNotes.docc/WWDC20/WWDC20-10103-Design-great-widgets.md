@@ -92,8 +92,8 @@ Tapping a widget should deep link into your app to the content displayed in the 
 
 ![][placeholderImage]
 
-[stocksImage]: stocks.png
-[patternSmallImage]: pattern-small.png
-[patternMediumImage]: pattern-med.png
-[patternBigImage]: pattern-big.png
-[placeholderImage]: placeholder.png
+[stocksImage]: WWDC20-10103-stocks
+[patternSmallImage]: WWDC20-10103-pattern-small
+[patternMediumImage]: WWDC20-10103-pattern-med
+[patternBigImage]: WWDC20-10103-pattern-big
+[placeholderImage]: WWDC20-10103-placeholder

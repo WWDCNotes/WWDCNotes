@@ -17,7 +17,7 @@ Learn about the latest tools, technologies, and advancements to help you create 
 
 ![Sketchnote of WWDC 2023 State of the Union with details about news in Swift, SwiftUI, APIs and frameworks][sketchnote]
 
-[sketchnote]: sketchnote.jpg
+[sketchnote]: WWDC23-102-sketchnote
 
 - What is a good platform?
 - One where the most natural way to write code is also the best.

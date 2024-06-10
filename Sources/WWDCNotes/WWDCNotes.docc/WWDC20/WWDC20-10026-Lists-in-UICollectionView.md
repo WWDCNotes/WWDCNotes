@@ -184,6 +184,6 @@ cell.accessories = [
 ]
 ```
 
-[components_list]: components_list.png
-[wrong_separator]: wrong_separator.png
-[right_separator]: right_separator.png
+[components_list]: WWDC20-10026-components_list
+[wrong_separator]: WWDC20-10026-wrong_separator
+[right_separator]: WWDC20-10026-right_separator

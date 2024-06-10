@@ -32,6 +32,6 @@ Thresholds:
 - 0% is a special case where no layers will be active
 - anything above 0% will have at least the first layer active
 
-[gif1]: speaker.gif
-[gif2]: mic.gif
-[gif3]: text.gif
+[gif1]: WWDC22-10158-speaker
+[gif2]: WWDC22-10158-mic
+[gif3]: WWDC22-10158-text

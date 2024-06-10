@@ -18,28 +18,28 @@ Apple Maps app offers various end-user experiences to Apple customers around the
 
 ![MapKit][maps]
 
-[maps]: maps.jpg  
+[maps]: WWDC22-10006-maps  
 
 ![MapKit JS][mapkitajs]
 
-[mapkitajs]: mapkitajs.jpg
+[mapkitajs]: WWDC22-10006-mapkitajs
 
 New! introducing the Apple Maps Server APIs.
 
 ![MapKit server APIs][server]
   
-[server]: server.jpg
+[server]: WWDC22-10006-server
 
 ![MapKit server APIs][three]
   
-[three]: three.jpg
+[three]: WWDC22-10006-three
 
 These APIs will help integrating Maps into apps. With Geocoding APIs, an address an be converted to geographic coordinates latitude and longitude. Similarly, with Reverse Geocoding, we can do the opposite -- go from geographic coordinates to an address. With Search API, we enter a search string to discover places like businesses, points of interest...
 The ETA API can help find the closest store.
 
 ![the stack][fullStack]
 
-[fullStack]: fullStack.jpg
+[fullStack]: WWDC22-10006-fullStack
 
 A benefit is the reduction in network calls.  
 Many times, users are making repetitive and redundant requests, maybe looking up the same address over and over again from an app running on different user devices. This causes a lot of network calls and wasted bandwidth.  
@@ -51,7 +51,7 @@ Example: Building contact cards for a store locator application. There are three
 
 ![the comic Book][comicBook]
 
-[comicBook]: comicBook.jpg
+[comicBook]: WWDC22-10006-comicBook
 
 Let's assume that these addresses are on a server which stores and serves the locations of comic bookstores.  
 There are many ways to build this, but for a second, let's assume we don't have these new server APIs.
@@ -59,7 +59,7 @@ What would a basic architecture look like? How would a client application get th
 
 ![Basic Architecture][basicArchitecture]
 
-[basicArchitecture]: basicArchitecture.jpg
+[basicArchitecture]: WWDC22-10006-basicArchitecture
 
 The back-end server returns a list of store addresses to your client device.  
 Since we don't have the server APIs in this example, now our client application has to perform various actions on the address to build the contact card.  
@@ -76,7 +76,7 @@ Now, let's look at a model architecture with access to Apple Maps Server APIs. S
 
 ![Server Aggregation][serverAggregation]
   
-[serverAggregation]: serverAggregation.jpg
+[serverAggregation]: WWDC22-10006-serverAggregation
 
 Just like before, we request a list of stores to be displayed from our client. Next, we make a request from the server to do geocoding. We then receive responses for each API from the Apple Maps Server.  
 
@@ -93,13 +93,13 @@ In this example, first, we are going to take the address for the comic book stor
 
 ![Geocoding Example][fetch]
   
-[fetch]: fetch.jpg
+[fetch]: WWDC22-10006-fetch
 
 Next, we'll use the Geocode API and pass this URL-encoded address as a query parameter. (skipping over the authentication details for now). In the response, you can see the latitude and longitude for the address returned.
 
 ![Fetch Coordinates][fetchCoordinates]
   
-[fetchCoordinates]: fetchCoordinates.jpg
+[fetchCoordinates]: WWDC22-10006-fetchCoordinates
 
 We'll repeat the same process to find the latitude and longitude for the customer's address. This will be later used for ETA calculations.
 
@@ -109,14 +109,14 @@ Let's set the origin and destination on the ETA API with the data we got from th
 
 ![fetching ETA][ETA2]
   
-[ETA2]: ETA.jpg
+[ETA2]: WWDC22-10006-ETA
 
 We have the origin latitude, longitude and the destination latitude, longitude.
 Specify up to 10 destinations here if needed, and feeding that in the ETA API as origin and as destination query parameters which are URL encoded. The response to the API is a list of ETAs, one for each destination provided.
 
 ![fetching ETA][fetchingETA]
   
-[fetchingETA]: fetchingETA.jpg
+[fetchingETA]: WWDC22-10006-fetchingETA
 
 In this case, we only have one since we provided one destination.  
 Here for our example, we are interested in distanceMeters to calculate the distance to the store and we have all the pieces we need: the store address and the distance for the user to reach the store. we can also choose to augment or overlay this data with our store information, like store hours.
@@ -131,7 +131,7 @@ Using MapKit JS, we are already halfway there. Apple Maps Server APIs use the sa
 
 ![Authentication flow][authflow]
   
-[authflow]: authflow.jpg
+[authflow]: WWDC22-10006-authflow
 
 - First, download our private key from our developer account.  
 - Then use this private key to generate a Maps auth token in JWT format. (There is a detailed doc about how to generate one linked below.)  
@@ -144,7 +144,7 @@ Here is a simple example of how to use the token API to fetch the access token.
 
 ![accessToken][accessToken]
   
-[accessToken]: accessToken.jpg
+[accessToken]: WWDC22-10006-accessToken
 
 We are using the token API here, passing the Maps auth token as a header. Getting back a Maps access token that can be used to access the API. This will be in JWT format and will have standard fields like expiry, issuedAt, etc.
 
@@ -156,7 +156,7 @@ Maps auth token is not the same as Maps access token, we exchange the Maps auth 
 
 ![API interaction with Maps access token][authflow2]
   
-[authflow2]: authflow2.jpg
+[authflow2]: WWDC22-10006-authflow2
 
 We'll pass the Maps access token along with server API call.  
 It is added as a header to the API call, just like we saw a few slides ago.  
@@ -169,7 +169,7 @@ There is a daily cap on how many API calls the app can make, and it's big!
 
 ![daily cap][25000]
   
-[25000]: 25000.jpg
+[25000]: WWDC22-10006-25000
 
 Devs will get a quota of 25,000 service calls per day in total.
 
@@ -178,7 +178,7 @@ Developers can view usage stats at the Maps developer dashboard.
 
 ![dashboard][devDash]
   
-[devDash]: devDash.jpg
+[devDash]: WWDC22-10006-devDash
 
 If using MapKit JS, the server API usage is categorized as Services, which we can see highlighted here.
 
@@ -189,7 +189,7 @@ When the daily quota is exceeded, which means more than 25,000 server API calls,
 
 ![Exceeding Quota][exceedingq]
 
-[exceedingq]: exceedingq.jpg
+[exceedingq]: WWDC22-10006-exceedingq
 
 ddevelopers should make sure that the app experience degrades gracefully in such scenarios.  
 In rare scenarios, when our services makes an unusual amount of requests -- maybe it's due to some bug in code or infrastructure -- it's possible to get HTTP status 429 as well.  

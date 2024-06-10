@@ -30,7 +30,7 @@ Refer to this session for more details about these formats.
 
 ![Frameworks][Frameworks]  
 
-[Frameworks]: Frameworks.jpg
+[Frameworks]: WWDC23-10070-Frameworks
 
 This includes all the playback controls you expect, but also has many unique capabilities. What's required to take advantage of this in your app? 
 
@@ -89,7 +89,7 @@ Add the view controller, which we just defined, so it fills the window. Just lik
 
 ![PlayerView][PlayerView]  
 
-[PlayerView]: PlayerView.jpg
+[PlayerView]: WWDC23-10070-PlayerView
 
 
 When moving, the screen stays in place, and the audio stays anchored to the screen. To show playback controls, look at the screen and tap. The controls float just in front of the video. While playing, do nothing and they will disappear on their own. Or make them disappear by looking at the screen and tapping again. Grab the window bar below the screen to reposition it.
@@ -102,7 +102,7 @@ This last option is Dimming Effect. I love watching movies in the dark to really
 
 ![Dimming Effect][dimmingEffect]  
 
-[dimmingEffect]: dimmingEffect.jpg
+[dimmingEffect]: WWDC23-10070-dimmingEffect
 
 ## Advanced features. 
 
@@ -112,7 +112,7 @@ Thumbnail scrubbing shows a small image of the video while scrubbing, allowing s
 
 ![iframes][iframes]  
 
-[iframes]: iframes.jpg
+[iframes]: WWDC23-10070-iframes
 
 ### Interstitials support
 Sometimes media needs to be inserted into the timeline for a logo, a recap, or an ad. Interstitials support enables this ability. When interstitials are present, the controls will automatically reflect them with an indicator in the timeline. These interstitials can be configured programmatically with an AVPlayerInterstital EventController, or they can be described within the HLS stream.
@@ -120,7 +120,7 @@ Sometimes media needs to be inserted into the timeline for a logo, a recap, or a
 
 ![Interstitials support][interstitials]  
 
-[interstitials]: interstitials.jpg
+[interstitials]: WWDC23-10070-interstitials
 
 Refer to this session for more details.  
 [What's new in HLS interstitials - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10145)
@@ -132,7 +132,7 @@ Custom info view controllers can be used to show metadata about the content or t
 
 ![Additional UI][AdditionalUI]  
 
-[AdditionalUI]: AdditionalUI.jpg
+[AdditionalUI]: WWDC23-10070-AdditionalUI
 
 Refer to this session for more details.  
 [What's new in AVKit - WWDC21](https://developer.apple.com/videos/play/wwdc2021/10290)
@@ -142,7 +142,7 @@ Your app can also transport you to another place with a feature called Immersive
 
 ![Immersive Spaces][immersiveSpaces]  
 
-[immersiveSpaces]: immersiveSpaces.jpg
+[immersiveSpaces]: WWDC23-10070-immersiveSpaces
 
 Let's check out some code. Here is our MoviePlayingApp from earlier.
 First, we'll add an Immersive Space. The 3D content will be described by RealityKit entities. Then we'll use onAppear on our PlayerView to open the space. Make sure your Immersive Space is designed to accommodate the movie player when it's docked.
@@ -196,7 +196,7 @@ Sometimes you may want to use video in a 3D scene where the video is used as an 
 
 ![Video Effects][videoEffects]  
 
-[videoEffects]: videoEffects.jpg
+[videoEffects]: WWDC23-10070-videoEffects
 
 
 Check out this related talk for more details.  
@@ -210,7 +210,7 @@ There are several ways to display video in your app. Let's compare them. These a
 
 ![Comparing][comparing]  
 
-[comparing]: comparing.jpg
+[comparing]: WWDC23-10070-comparing
 
 Spatial media capabilities represent an opportunity for people to experience video in a whole new way. 
 
@@ -218,7 +218,7 @@ To recap:
 
 ![Recap][recap]
 
-[recap]: recap.jpg
+[recap]: WWDC23-10070-recap
 
 To get started, check out DestinationVideo Sample Project. 
 [Sample Project: DestinationVideo](https://developer.apple.com/documentation/visionos/destination-video)

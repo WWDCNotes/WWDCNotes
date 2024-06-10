@@ -18,7 +18,7 @@ Discover how Core Location helps your app find its place in the world — litera
 
 ![coreLocation][coreLocation]  
 
-[coreLocation]: coreLocation.jpg
+[coreLocation]: WWDC23-10146-coreLocation
 
 So let's start by looking at some sample code for this demo application associated with my colleague's session, "Discover streamlined location updates." In this actor, we request live updates from CLLocationUpdate, and we'll get them asynchronously down here as they become available.
 ```swift
@@ -49,7 +49,7 @@ We also have to ensure that we set this string in the app's info under Build Set
 
 ![request permission][permission]  
 
-[permission]: permission.jpg
+[permission]: WWDC23-10146-permission
 
 Again, apps must ask the user's permission before they can get sensitive information such as location, and this string is there to explain to the user why.  
 It will later be displayed in a prompt shown to the user requesting this access.  
@@ -57,7 +57,7 @@ So let's see how this looks when we run it in the simulator.
 
 ![request permission][request]  
 
-[request]: request.jpg
+[request]: WWDC23-10146-request
 
 You can see that we get a prompt asking the user if they will grant access to their private information.  
 You will not get location updates without user consent. You can ask for consent on this system by creating a location manager and invoking `requestWhenInUseAuthorization`, along with setting the usage description string in your app's `Info.plist`.  
@@ -87,7 +87,7 @@ On this system, Core Location provides location information to your app, so long
 
 ![looking at the app window can make the app get location updates][looking]  
 
-[looking]: looking.jpg
+[looking]: WWDC23-10146-looking
 
 And this will remain true until the user looks somewhere else, such as at the app on the right, or moves the two apps together such that they can look at both of the apps at the same time.
 Just like in iOS, there is also a grace period before Core Location considers the app to no longer be in use.

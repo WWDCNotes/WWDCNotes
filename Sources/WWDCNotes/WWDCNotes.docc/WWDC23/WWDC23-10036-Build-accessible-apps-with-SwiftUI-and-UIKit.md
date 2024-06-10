@@ -16,4 +16,4 @@ Discover how advancements in UI frameworks make it easier to build rich, accessi
 
 ![Sketchnote of WWDC 2023 talk about how to build accessible apps with Swift and SwiftUI and additions and enhancements in APIs][sketchnote]
 
-[sketchnote]: sketchnote.jpg
+[sketchnote]: WWDC23-10036-sketchnote

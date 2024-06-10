@@ -22,13 +22,13 @@ Third-party SDK developers can create a new privacy manifest right from the Xcod
 
 ![Privacy Manifests][privacymanifest]
 
-[privacymanifest]: privacymanifest.png
+[privacymanifest]: WWDC23-10060-privacymanifest
 
 This file is a property list that declares what data types the SDK collects, how each data type is used, whether they are linked to the user, and whether they're used for tracking as defined by the App Tracking Transparency policy.
 
 ![Privacy Manifests][examplemanifest]
 
-[examplemanifest]: examplemanifest.png
+[examplemanifest]: WWDC23-10060-examplemanifest
 
 Taking a closer look at this manifest, the Example Sharing SDK is listed as not tracking. It collects name and user ID, linked to the user, for both app functionality and product personalization. It also collects photos or videos, linked to the user, for just app functionality.
 
@@ -40,13 +40,13 @@ When you're building your app to submit to the App Store, Xcode 15 can aggregate
 
 ![Generate Privacy Report][generateprivacyreport]
 
-[generateprivacyreport]: generateprivacyreport.png
+[generateprivacyreport]: WWDC23-10060-generateprivacyreport
 
 The privacy report is a PDF and easy to use. It is organized in a similar way to Privacy Nutrition Labels. So you can easily reference this report when you provide your app's privacy details in App Store Connect.
 
 ![Privacy Report][privacyreport]
 
-[privacyreport]: privacyreport.png
+[privacyreport]: WWDC23-10060-privacyreport
 
 This helps you review, understand, and describe the privacy practices of your app and its dependencies.
 
@@ -56,7 +56,7 @@ Privacy manifests, that declare tracking, may include tracking domains. This hel
 
 ![Specify tracking domains in your privacy manifest][trackingdomain]
 
-[trackingdomain]: trackingdomain.png
+[trackingdomain]: WWDC23-10060-trackingdomain
 
 In cases when a user has not provided tracking permission, iOS 17 automatically blocks connections to tracking domains that have been specified in any privacy manifest included in your app.
 
@@ -81,7 +81,7 @@ App & third party SDK developers are highly encouraged to adopt package manifest
 
 ![Privacy-impacting SDKs][privacyimpactingsdks]
 
-[privacyimpactingsdks]: privacyimpactingsdks.png
+[privacyimpactingsdks]: WWDC23-10060-privacyimpactingsdks
 
 Apple will a list of privacy-impacting SDKs later this year.
 

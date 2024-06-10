@@ -129,7 +129,7 @@ What's new:
 - new Developer menu option
 - if active,  all debug logging from Safari's Intelligent Tracking Prevention will appear in the Web Inspector Console, and in the macOS system Console.app
 
-[sourcesImage]: sources.png
-[stepImage]: step.png
-[localOverridesImage]: localOverrides.png
-[layersImage]: layers.png
+[sourcesImage]: WWDC20-10646-sources
+[stepImage]: WWDC20-10646-step
+[localOverridesImage]: WWDC20-10646-localOverrides
+[layersImage]: WWDC20-10646-layers

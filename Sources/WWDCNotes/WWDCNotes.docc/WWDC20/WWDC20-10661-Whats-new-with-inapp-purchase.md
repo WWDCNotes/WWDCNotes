@@ -97,6 +97,6 @@ You can manage and test your subscriptions inside the Sandbox configuration from
 
 This session introduces two new notification types available in the Sandbox environment: `DID_CHANGE_RENEWAL_STATUS` & `DID_RENEW`
 
-[app_store_server_notifications]: app_store_server_notifications.png
+[app_store_server_notifications]: WWDC20-10661-app_store_server_notifications
 
 

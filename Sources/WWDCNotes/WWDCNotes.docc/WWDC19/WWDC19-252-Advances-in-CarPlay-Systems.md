@@ -32,4 +32,4 @@ Every screen has its own “night mode”, therefore different screens might hav
 
 From iOS 13, a screen can change size (to let more space for other car dashboard elements for example).
 
-[screenImage]: screen.png
+[screenImage]: WWDC19-252-screen

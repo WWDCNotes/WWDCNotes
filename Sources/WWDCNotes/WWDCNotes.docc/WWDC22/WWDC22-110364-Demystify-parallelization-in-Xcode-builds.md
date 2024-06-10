@@ -116,9 +116,9 @@ To enable this:
 [ld64]: https://github.com/apple-opensource/ld64
 [swift-driver]: https://github.com/apple/swift-driver
 
-[beforeImg]: before.png
-[before2Img]: before2.png
-[before3Img]: before3.png
-[afterImg]: after.png
-[after2Img]: after2.png
-[after3Img]: after3.png
+[beforeImg]: WWDC22-110364-before
+[before2Img]: WWDC22-110364-before2
+[before3Img]: WWDC22-110364-before3
+[afterImg]: WWDC22-110364-after
+[after2Img]: WWDC22-110364-after2
+[after3Img]: WWDC22-110364-after3

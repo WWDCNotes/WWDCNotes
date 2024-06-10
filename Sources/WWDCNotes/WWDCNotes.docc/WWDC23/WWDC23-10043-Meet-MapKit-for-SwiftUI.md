@@ -689,39 +689,39 @@ Apple Maps Server APIs has been extended to support Autocomplete and Directions.
 [Wind your way through advanced animations in SwiftUI - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10157)  
 [Meet Apple Maps Server APIs -  WWDC22](https://developer.apple.com/videos/play/wwdc2022/10006)
 
-[newAnnotations]: newAnnotations.jpg
-[look around]: lookAround.jpg 
-[overlay]: overlay.jpg 
-[enablingRegions]: enablingRegions.jpg 
-[enablingRegions2]: enablingRegions2.jpg 
-[enablingRealisticElevetion]: enablingRealisticElevetion.jpg 
-[userLocationButtons]: userLocationButtons.jpg
-[marker]: marker.jpg 
-[marker2]: marker2.jpg 
-[annotations2]: annotations2.jpg
-[otherContent]: otherContent.jpg
-[senseOfPlace]: senseOfPlace.jpg
-[standard]: standard.jpg 
-[imagery]: imagery.jpg
-[hybrid]: hybrid.jpg
-[searchForPlaces]: searchForPlaces.jpg
-[customMarkers]: customMarkers.jpg
-[displayRegion]: displayRegion.jpg
-[item]: item.jpg
-[item]: cameraPosition.jpg
-[mapCameraPosition]: mapCameraPosition.jpg
-[mapCameraPosition2]: mapCameraPosition2.jpg
-[mapCameraPosition3]: mapCameraPosition3.jpg 
-[searchInRegion]: searchInRegion.jpg
-[selectionTag]: selectionTag.jpg
-[lookaround1]: lookaround1.jpg
-[lookaround2]: lookaround2.jpg
-[overlayRoute]: overlayRoute.jpg
-[ownPolyline]: ownPolyline.jpg
-[ownPolyline2]: ownPolyline2.jpg
-[mapPoligon]: mapPoligon.jpg
-[mapCircles]: mapCircles.jpg
-[compass]: compass.jpg
-[compass2]: compass2.jpg
-[compass3]: compass3.jpg
+[newAnnotations]: WWDC23-10043-newAnnotations
+[look around]: WWDC23-10043-lookAround 
+[overlay]: WWDC23-10043-overlay 
+[enablingRegions]: WWDC23-10043-enablingRegions 
+[enablingRegions2]: WWDC23-10043-enablingRegions2 
+[enablingRealisticElevetion]: WWDC23-10043-enablingRealisticElevetion 
+[userLocationButtons]: WWDC23-10043-userLocationButtons
+[marker]: WWDC23-10043-marker 
+[marker2]: WWDC23-10043-marker2 
+[annotations2]: WWDC23-10043-annotations2
+[otherContent]: WWDC23-10043-otherContent
+[senseOfPlace]: WWDC23-10043-senseOfPlace
+[standard]: WWDC23-10043-standard 
+[imagery]: WWDC23-10043-imagery
+[hybrid]: WWDC23-10043-hybrid
+[searchForPlaces]: WWDC23-10043-searchForPlaces
+[customMarkers]: WWDC23-10043-customMarkers
+[displayRegion]: WWDC23-10043-displayRegion
+[item]: WWDC23-10043-item
+[item]: WWDC23-10043-cameraPosition
+[mapCameraPosition]: WWDC23-10043-mapCameraPosition
+[mapCameraPosition2]: WWDC23-10043-mapCameraPosition2
+[mapCameraPosition3]: WWDC23-10043-mapCameraPosition3 
+[searchInRegion]: WWDC23-10043-searchInRegion
+[selectionTag]: WWDC23-10043-selectionTag
+[lookaround1]: WWDC23-10043-lookaround1
+[lookaround2]: WWDC23-10043-lookaround2
+[overlayRoute]: WWDC23-10043-overlayRoute
+[ownPolyline]: WWDC23-10043-ownPolyline
+[ownPolyline2]: WWDC23-10043-ownPolyline2
+[mapPoligon]: WWDC23-10043-mapPoligon
+[mapCircles]: WWDC23-10043-mapCircles
+[compass]: WWDC23-10043-compass
+[compass2]: WWDC23-10043-compass2
+[compass3]: WWDC23-10043-compass3
 

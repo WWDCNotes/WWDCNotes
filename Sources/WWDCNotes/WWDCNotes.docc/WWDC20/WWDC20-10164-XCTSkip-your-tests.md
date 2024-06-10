@@ -86,8 +86,8 @@ public struct XCTSkip: Error {
 }
 ```
 
-[test_1]: test_1.png
-[test_2]: test_2.png
+[test_1]: WWDC20-10164-test_1
+[test_2]: WWDC20-10164-test_2
 
 [skipDoc]: https://developer.apple.com/documentation/xctest/xctskip
 [skipIfDoc]: https://developer.apple.com/documentation/xctest/3521325-xctskipif

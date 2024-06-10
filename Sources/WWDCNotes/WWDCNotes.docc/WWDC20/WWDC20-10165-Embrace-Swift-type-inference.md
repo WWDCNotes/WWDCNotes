@@ -298,14 +298,14 @@ To learn more about integrated error tracking, read the [blog post on Swift's ne
 
 To learn more about generics, watch [WWDC 2018's video on Swift Generics](../../wwdc18/406).
 
-[search_smoothie]: search_smoothie.png
-[fail_behavior]: fail_behavior.png
-[smoothie_preview]: smoothie_preview.png
-[textfield_vstack]: textfield_vstack.png
-[compiler_error_line]: compiler_error_line.png
-[compiler_error_expanded]: compiler_error_expanded.png
-[filteredlist_error]: filteredlist_error.png
-[destination_chooser]: destination_chooser.png
-[side_by_side_error]: side_by_side_error.png
-[conformance]: conformance.png
-[add_conformance]: add_conformance.png
+[search_smoothie]: WWDC20-10165-search_smoothie
+[fail_behavior]: WWDC20-10165-fail_behavior
+[smoothie_preview]: WWDC20-10165-smoothie_preview
+[textfield_vstack]: WWDC20-10165-textfield_vstack
+[compiler_error_line]: WWDC20-10165-compiler_error_line
+[compiler_error_expanded]: WWDC20-10165-compiler_error_expanded
+[filteredlist_error]: WWDC20-10165-filteredlist_error
+[destination_chooser]: WWDC20-10165-destination_chooser
+[side_by_side_error]: WWDC20-10165-side_by_side_error
+[conformance]: WWDC20-10165-conformance
+[add_conformance]: WWDC20-10165-add_conformance

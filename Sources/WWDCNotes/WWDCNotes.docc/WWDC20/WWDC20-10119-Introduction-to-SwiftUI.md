@@ -37,4 +37,4 @@ Some takeaway for everyone:
 
 [toolbarDoc]: https://developer.apple.com/documentation/swiftui/view/toolbar(content:)
 
-[previewImage]: preview.png
+[previewImage]: WWDC20-10119-preview

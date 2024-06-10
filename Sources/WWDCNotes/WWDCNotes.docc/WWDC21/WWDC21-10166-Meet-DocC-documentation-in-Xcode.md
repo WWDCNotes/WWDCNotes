@@ -41,7 +41,7 @@ It is called DocC (pronounced doxxi), and it is integrated throughout Xcode to e
 
 ![DOCc][DOCc1]
 
-[DOCc1]: DOCc1.jpg
+[DOCc1]: WWDC21-10166-DOCc1
 
 More sessions about DOCc at WWDC:
  
@@ -59,7 +59,7 @@ More sessions about DOCc at WWDC:
 
 ![DOCc][DOCc2]
 
-[DOCc2]: DOCc2.jpg
+[DOCc2]: WWDC21-10166-DOCc2
 
  To learn more about documentation catalogs and organizing docs, check out the [Elevate your DocC documentation in Xcode - WWDC21](https://developer.apple.com/videos/play/wwdc2021/10167) session.
 
@@ -71,13 +71,13 @@ And thanks to DocC's integration with Xcode's build system, this process repeats
 
 ![DOCc][DOCc3]
 
-[DOCc3]: DOCc3.jpg
+[DOCc3]: WWDC21-10166-DOCc3
 
 - if working on a Swift framework and wanting to preview documentation, there's also a new `Build Documentation during ‘Build’` build setting to build docs every time we compile
 
 ![DOCc][DOCc4]
 
-[DOCc4]: DOCc4.jpg
+[DOCc4]: WWDC21-10166-DOCc4
 
 - via `$ xcodebuild docbuild`
 
@@ -87,25 +87,25 @@ Introducing the SlothCreator package, which is all about cataloging and customiz
 
 ![DOCc][DOCc4a]
 
-[DOCc4a]: DOCc4a.jpg
+[DOCc4a]: WWDC21-10166-DOCc4a
 
 Setting up the app called Slothy. Using SlothCreator to customize sloths and preview them. SlothCreator is set as a dependency of the app already, so let's open up the Product menu, and select Build Documentation.
 
 ![DOCc][DOCc5]
 
-[DOCc5]: DOCc5.jpg
+[DOCc5]: WWDC21-10166-DOCc5
 
 the Developer Documentation window opens, and over in the Navigator, we can expand the Slothy project and the SlothCreator package to see an overview in the Navigator.
 
 ![DOCc][DOCc6]
 
-[DOCc6]: DOCc6.jpg
+[DOCc6]: WWDC21-10166-DOCc6
 
 Loading the SlothCreator overview in the main view, and scrolling down, there's a list of types and protocols available.
 
 ![DOCc][DOCc7]
 
-[DOCc7]: DOCc7.jpg
+[DOCc7]: WWDC21-10166-DOCc7
 
 ## Authoring
 
@@ -127,7 +127,7 @@ The comment will be included in the symbol's compiled documentation page and acc
 
 ![DOCc][DOCc8]
 
-[DOCc8]: DOCc8.jpg
+[DOCc8]: WWDC21-10166-DOCc8
 
 DocC only generates documentation pages for the public and open symbols in our framework. Here there's just a couple of symbols in SlothCreator that still need documenting.
 
@@ -137,7 +137,7 @@ The first line of the documentation comment will turn into the symbol's summary,
 
 ![DOCc][DOCc9]
 
-[DOCc9]: DOCc9.jpg
+[DOCc9]: WWDC21-10166-DOCc9
 
 Now rebuilding documentation. Do that by moving the mouse up to the Product menu and then selecting Build Documentation. Xcode will now rebuild SlothCreator's documentation alongside the framework itself.
 
@@ -147,7 +147,7 @@ So the comment is right here in the Summary and Discussion sections. Also, new i
 
 ![DOCc][DOCc10]
 
-[DOCc10]: DOCc10.jpg
+[DOCc10]: WWDC21-10166-DOCc10
 
 The Eat method still needs a documentation comment. We do that with a triple-slash comment above the method's declaration and adding text that will make up its documentation summary.
 ```swift
@@ -206,13 +206,13 @@ Holding down the Command key and then clicking on the method's declaration open 
 
 ![DOCc][DOCc12]
 
-[DOCc12]: DOCc12.jpg
+[DOCc12]: WWDC21-10166-DOCc12
 
 We get a template:
 
 ![DOCc][DOCc13]
 
-[DOCc13]: DOCc13.jpg
+[DOCc13]: WWDC21-10166-DOCc13
 
 Fill out the method's summary, and then describe the food and quantity parameters as well as what this method returns. And then finish off the documentation by adding a Discussion section along with a code example.
 ```swift
@@ -243,7 +243,7 @@ If we navigate to the Sloth struct via the window's Navigator, we will find Slot
 
 ![DOCc][DOCc14]
 
-[DOCc14]: DOCc14.jpg
+[DOCc14]: WWDC21-10166-DOCc14
 
 ## Connecting documentation
 
@@ -293,7 +293,7 @@ Xcode's code completion will help to make sure we are getting the correct link.
 
 ![DOCc][DOCc15]
 
-[DOCc15]: DOCc15.jpg
+[DOCc15]: WWDC21-10166-DOCc15
 
 And links are even accessible in Quick Help.
 
@@ -302,7 +302,7 @@ Here's the Discussion section we added and, of course, in the discussion, the tw
 
 ![DOCc][DOCc16]
 
-[DOCc16]: DOCc16.jpg
+[DOCc16]: WWDC21-10166-DOCc16
 
 
 # Sharing
@@ -316,7 +316,7 @@ But Xcode also supports exporting and importing documentation directly from the 
 
 ![DOCc][DOCc17]
 
-[DOCc17]: DOCc17.jpg
+[DOCc17]: WWDC21-10166-DOCc17
 
 Export SlothCreator from the documentation window by first moving the mouse over to the window's Navigator. When hovering over the SlothCreator framework item, a contextual menu icon will appear. Click on it, and Export.
 
@@ -326,7 +326,7 @@ Adding a command line interface to SlothCreator, for instance ArgumentParser. Re
 
 ![DOCc][DOCc18]
 
-[DOCc18]: DOCc18.jpg
+[DOCc18]: WWDC21-10166-DOCc18
 
 # Wrap up
 

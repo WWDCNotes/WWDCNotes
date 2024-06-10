@@ -78,6 +78,6 @@ Widgets rise to the top of the Smart Stack based on relevance. Widgets can be pr
 - Active workout. For example, showing the activity rings when a workout is in progress.
 - Wakeup and bedtime. 
 
-[stack]: stack.png
-[layouts]: layouts.png
-[combo]: combo.png
+[stack]: WWDC23-10309-stack
+[layouts]: WWDC23-10309-layouts
+[combo]: WWDC23-10309-combo

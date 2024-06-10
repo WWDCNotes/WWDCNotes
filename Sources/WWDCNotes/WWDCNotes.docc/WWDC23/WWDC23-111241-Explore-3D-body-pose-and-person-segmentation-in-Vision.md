@@ -190,18 +190,18 @@ When more than four people are present request may be missing people in backgrou
 
 Also See more in the session "Detect animal poses in Vision" from WWDC23. 
 
-[1-human_detect]: 1-human_detect.jpg
-[2-head-group]: 2-head-group.jpg
-[3-torso-group]: 3-torso-group.jpg
-[4-left-arm-group]: 4-left-arm-group.jpg
-[5-right-arm-group]: 5-right-arm-group.jpg
-[6-left-leg-group]: 6-left-leg-group.jpg
-[7-right-leg-group]: 7-right-leg-group.jpg
-[8-snippet]: 8-snippet.jpg
-[9-advantage1]: 9-advantage1.jpg
-[10-advantage2]: 10-advantage2.jpg
-[11-3d]: 11-3d.jpg
-[12-person_segmentation1]: 12-person_segmentation1.jpg
-[13-person_segmentation2]: 13-person_segmentation2.jpg
-[14-instances]: 14-instances.jpg
-[15-multiple]: 15-multiple.jpg
+[1-human_detect]: WWDC23-111241-1-human_detect
+[2-head-group]: WWDC23-111241-2-head-group
+[3-torso-group]: WWDC23-111241-3-torso-group
+[4-left-arm-group]: WWDC23-111241-4-left-arm-group
+[5-right-arm-group]: WWDC23-111241-5-right-arm-group
+[6-left-leg-group]: WWDC23-111241-6-left-leg-group
+[7-right-leg-group]: WWDC23-111241-7-right-leg-group
+[8-snippet]: WWDC23-111241-8-snippet
+[9-advantage1]: WWDC23-111241-9-advantage1
+[10-advantage2]: WWDC23-111241-10-advantage2
+[11-3d]: WWDC23-111241-11-3d
+[12-person_segmentation1]: WWDC23-111241-12-person_segmentation1
+[13-person_segmentation2]: WWDC23-111241-13-person_segmentation2
+[14-instances]: WWDC23-111241-14-instances
+[15-multiple]: WWDC23-111241-15-multiple

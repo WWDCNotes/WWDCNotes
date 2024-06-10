@@ -35,17 +35,17 @@ let size = AttributedString(localized: "small", options: options)
 
 ![][agreeWithConcept]
 
-[agreeWithConcept]: agreeWithConcept.png
+[agreeWithConcept]: WWDC23-10153-agreeWithConcept
 
 - When multiple inflections in one text needed but only one gets `%@` argument passed, use new `agreeWithArgument: 1` instead on other
 
 ![][agreeWithArgument]
 
-[agreeWithArgument]: agreeWithArgument.png
+[agreeWithArgument]: WWDC23-10153-agreeWithArgument
 
 ![][agreeWithComparison]
 
-[agreeWithComparison]: agreeWithComparison.png
+[agreeWithComparison]: WWDC23-10153-agreeWithComparison
 
 - To make demonstrative adjectives grammatically agree in French, use `^[Ce %@](inflect: true) conteient : %@.`
 
@@ -55,11 +55,11 @@ let size = AttributedString(localized: "small", options: options)
 
 ![][neutral]
 
-[neutral]: TermsOfAddress.neutral.png
+[neutral]: WWDC23-10153-TermsOfAddress
 
 - New `referenceConcept` attribute in agreement, like `"\(person.name) is on ^[their](referentConcept: 1) way."`
 - You can provide custom `TermOfAddress` using `TermOfAddress.localized(language:pronouns:)` and pass array of `Mophology.Pronoun`
 
 ![][LocalizationOptions]
 
-[LocalizationOptions]: LocalizationOptions.png
+[LocalizationOptions]: WWDC23-10153-LocalizationOptions

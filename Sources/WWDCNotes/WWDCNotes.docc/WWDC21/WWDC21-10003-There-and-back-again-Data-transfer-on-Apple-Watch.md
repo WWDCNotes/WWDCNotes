@@ -494,8 +494,8 @@ Foreground URL sessions have a <kbd>2.5</kbd> minute timeout, but you should lim
 | URL Sessions | Server | No | Yes | Most server communication |
 | Sockets | Server | No | Yes | Streaming audio |
 
-[ps1]: ps1.png
-[ks1]: ks1.png
+[ps1]: WWDC21-10003-ps1
+[ks1]: WWDC21-10003-ks1
 [textcontenttype]: https://developer.apple.com/documentation/swiftui/geometryreader/textcontenttype(_:)-ki0h
 [updateApplicationContext(_:)]: https://developer.apple.com/documentation/watchconnectivity/wcsession/1615621-updateapplicationcontext
 [outstandingUserInfoTransfers]: https://developer.apple.com/documentation/watchconnectivity/wcsession/1615627-outstandinguserinfotransfers

@@ -88,6 +88,6 @@ func testAddingPhotosFirstTime() throws {
 }
 ```
 
-[alertChart]: alertChart.png
+[alertChart]: WWDC20-10220-alertChart
 [addUIInterruptionMonitor(withDescription:handler:)]: https://developer.apple.com/documentation/xctest/xctestcase/1496273-adduiinterruptionmonitor
 [resetAuthorizationStatus(for:)]: https://developer.apple.com/documentation/xctest/xcuiapplication/3526066-resetauthorizationstatus

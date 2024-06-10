@@ -150,9 +150,9 @@ let control = UISegmentedControl(frame: .zero, actions: Colors.allCases.map { co
 [deferredDoc]: https://developer.apple.com/documentation/uikit/UIDeferredMenuElement
 [actionDoc]: https://developer.apple.com/documentation/uikit/uiaction
 
-[UIPageControl]: UIPageControl.png
-[UIColorPickerController]: UIColorPickerController.png
-[UIDatePickeriOS]: UIDatePicker-iOS.png
-[UIDatePickermacOS]: UIDatePicker-macOS.png
-[NavigationBarBackButtonMenu]: NavigationBarBackButtonMenu.png
-[UIDeferredMenuElement]: UIDeferredMenuElement.png
+[UIPageControl]: WWDC20-10052-UIPageControl
+[UIColorPickerController]: WWDC20-10052-UIColorPickerController
+[UIDatePickeriOS]: WWDC20-10052-UIDatePicker-iOS
+[UIDatePickermacOS]: WWDC20-10052-UIDatePicker-macOS
+[NavigationBarBackButtonMenu]: WWDC20-10052-NavigationBarBackButtonMenu
+[UIDeferredMenuElement]: WWDC20-10052-UIDeferredMenuElement

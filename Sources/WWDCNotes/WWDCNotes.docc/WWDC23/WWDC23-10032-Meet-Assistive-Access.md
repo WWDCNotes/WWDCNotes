@@ -35,7 +35,7 @@ Once entering into Assistive Access, the system displays a new lock screen with 
 
 ![Lock Screen][lockScreen]  
 
-[lockScreen]: lockScreen.jpg
+[lockScreen]: WWDC23-10032-lockScreen
 
 ## Home screen
 - Large Icons  
@@ -52,11 +52,11 @@ The Home screen is now displaying larger app icons and larger text, and apps ado
 
 ![Home screen][homeScreen]  
 
-[homeScreen]: homeScreen.jpg
+[homeScreen]: WWDC23-10032-homeScreen
 
 ![Home screen][homeScreen2]  
 
-[homeScreen2]: homeScreen2.jpg
+[homeScreen2]: WWDC23-10032-homeScreen2
 
 # Principles of Assistive Access
 - Streamlined task completion
@@ -79,7 +79,7 @@ The app is displayed in a reduced frame by default.
 
 ![Your app][app]
 
-[app]: app.jpg
+[app]: WWDC23-10032-app
 
 
 # Optimized for Assistive Access
@@ -90,7 +90,7 @@ Great apps on iPhone and iPad are designed to have a consistent layout that adap
 
 ![Your app][app2]  
 
-[app2]: app2.jpg
+[app2]: WWDC23-10032-app2
 
 ## SwiftUI
 In SwiftUI use the `HStack`, `VStack`, `Grid` and `GridRow` views to arrange views, and the layout modifiers `.alignmentGuide` and `.safeAreaInset`.

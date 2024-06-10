@@ -63,6 +63,6 @@ When you create an intent for your app, you can help people accomplish tasks qui
   - You can now specify your generated class name in the Xcode inspector of your intent
   - Alternatively, you can specify a common class prefix used for all custom intense types and enums in the project document inspector of your target where the code generation needs to happen
 
-[overviewImage]: overview.png
-[deprecImage]: deprec.png
+[overviewImage]: WWDC20-10073-overview
+[deprecImage]: WWDC20-10073-deprec
 [application(_:handlerFor:)]: https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-application

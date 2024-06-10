@@ -165,8 +165,8 @@ To help you debug issues during development, you can view donation logs in the C
 - filter by `siri-event-suggestions` category
 - donate again
 
-[overviewImage]: overview.png
-[itemReferenceImage]: itemReference.png
+[overviewImage]: WWDC20-10197-overview
+[itemReferenceImage]: WWDC20-10197-itemReference
 
 [INGetReservationDetailsIntent]: https://developer.apple.com/documentation/sirikit/ingetreservationdetailsintent
 [INInteraction]: https://developer.apple.com/documentation/sirikit/ininteraction

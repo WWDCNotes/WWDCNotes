@@ -28,7 +28,7 @@ Reality Composer Pro is a developer tool for preparing RealityKit content to be 
 
 ![Reality Composer Pro Icon][composer]  
 
-[composer]: composer.jpg
+[composer]: WWDC23-10273-composer
 
 The editor UI and features of Reality Composer Pro are covered in the sessions:
 
@@ -39,13 +39,13 @@ We're looking at a topographical map of Yosemite National Park.
 
 ![Yosemite National Park][Yosemite]  
 
-[Yosemite]: yosemite.jpg
+[Yosemite]: WWDC23-10273-yosemite
 
 We've added a slider to morph between two different California landmarks. Now we're looking at Catalina Island off the coast of Los Angeles. 
 
 ![Catalina Island off the coast of Los Angeles.][Catalina]  
 
-[Catalina]: catalina.jpg
+[Catalina]: WWDC23-10273-catalina
 
 We also have hovering 2D SwiftUI buttons positioned in 3D space to learn more about various points of interest in that map. 
 
@@ -57,7 +57,7 @@ Let's load this scene named DioramaAssembled at runtime.
 
 ![dioramaAssembled][dioramaAssembled]  
 
-[dioramaAssembled]: dioramaAssembled.jpg
+[dioramaAssembled]: WWDC23-10273-dioramaAssembled
 
 We use entity's asynchronous initializer to make us an entity with the contents from our Reality Composer Pro package.
 
@@ -85,14 +85,14 @@ Put assets into a Swift Package, with an .rkassets directory inside it, like thi
 
 ![Anatomy of a Reality Composer Pro package][Anatomy]  
 
-[Anatomy]: anatomy.jpg
+[Anatomy]: WWDC23-10273-anatomy
 
 Xcode compiles the .rkassets folder into a format that's faster to load at runtime.  
 The entity we just loaded is actually the root of a larger entity hierarchy. It has child entities and they in turn have child entities. If we wanted to address one of the entities lower down in the hierarchy, we could give it a name in Reality Composer Pro, and then at runtime, we could ask the scene to find that entity by its name.
 
 ![Anatomy of a Reality Composer Pro package][Anatomy2]  
 
-[Anatomy2]: anatomy2.jpg
+[Anatomy2]: WWDC23-10273-anatomy2
 
 ## Entity Component System.
 Entities are a part of ECS, which stands for Entity Component System.
@@ -104,7 +104,7 @@ In the ECS world, an entity is any thing you see in the scene. They can also be 
 
 ![Entity Component System][ecs]  
 
-[ecs]: ecs.jpg
+[ecs]: WWDC23-10273-ecs
 
 ### Components
 Components can be added to or removed from entities at any time during app execution, which provides a way to dynamically change the nature of an entity.
@@ -128,13 +128,13 @@ To do the same in Reality Composer Pro, select the entity you want either in the
 
 ![Entity Component System][component]  
 
-[component]: component.jpg
+[component]: WWDC23-10273-component
 
 Then, at the bottom of the Inspector Panel, click the Add Component button to bring up a list of all RealityKit's available components.
 
 ![Entity Component System][component2]  
 
-[component2]: component2.jpg
+[component2]: WWDC23-10273-component2
 
 We can add as many components to an entity as we want, and we can only add one of each type; it's a set. We'll also see any custom components we've made in this list as well. Let's create our own custom components.
 
@@ -142,7 +142,7 @@ We're going to make those floating buttons that hover over specific points on ou
 
 ![Entity Component System][component3]  
 
-[component3]: component3.jpg
+[component3]: WWDC23-10273-component3
 
 To do this, we're going to 
 - add entities at locations above our terrain map, which will signify to the app that these are the places we want to show our floating buttons. 
@@ -153,39 +153,39 @@ To do this, we're going to
 
 ![Entity Component System][component4]  
 
-[component4]: component4.jpg
+[component4]: WWDC23-10273-component4
 
 Let's make our first location marker entity, Ribbon Beach, which is a place on Catalina Island. We click the plus menu and select Transform to make us a new invisible entity.
 
 ![Entity Component System][component5]  
 
-[component5]: component5.jpg
+[component5]: WWDC23-10273-component5
 
 We can name our entity Ribbon_Beach.
 
 ![Entity Component System][component6]  
 
-[component6]: component6.jpg
+[component6]: WWDC23-10273-component6
 
 Let's put this entity where Ribbon Beach actually is on the island.  
 
 ![Entity Component System][component7]  
 
-[component7]: component7.jpg
+[component7]: WWDC23-10273-component7
 
 We click on the Add Component button, but this time, we select New Component because we're going to make our own.
 Let's give it a name, PointOfInterest.  
 
 ![Entity Component System][component8]  
 
-[component8]: component8.jpg
+[component8]: WWDC23-10273-component8
 
 Now it shows up in the Inspector Panel just like our other components do.
 But what's this count property? 
 
 ![Entity Component System][component9]  
 
-[component9]: component9.jpg
+[component9]: WWDC23-10273-component9
 
 Let's open our new component in Xcode. In Xcode, we see that Reality Composer Pro created PointOfInterestComponent.swift for us.
 
@@ -193,7 +193,7 @@ Reality Composer Pro projects are Swift packages, and the Swift code we just gen
 
 ![Entity Component System][component10]  
 
-[component10]: component10.jpg
+[component10]: WWDC23-10273-component10
 
 Let's have another property instead. We want each point of interest to know which map it's associated with so that when you change maps, we can fade out the old points of interest and fade in the appropriate ones. So we add an enumeration property, var region.  Let's make our enum region up here...  ...and give it two cases, since we're only building two maps right now: Catalina and Yosemite.  It can serialize as a string. We also conform it to the Codable protocol so that Reality Composer Pro can see it and serialize instances of it.
 ```swift
@@ -216,13 +216,13 @@ public struct Point0fInterestComponent: Component, Codable {
 
 ![Entity Component System][component11]  
 
-[component11]: component11.jpg
+[component11]: WWDC23-10273-component11
 
 Back in Reality Composer Pro, the count property has gone away and our new region property shows up. It has a default value of yosemite because that's what we initialized in the code, but we can override it here for this particular entity.
 
 ![Entity Component System][component12]  
 
-[component12]: component12.jpg
+[component12]: WWDC23-10273-component12
 
 If we override it, this value will only take effect on this particular entity. The rest of the point of interest components will have the default value of yosemite unless we override them too. 
 
@@ -288,19 +288,19 @@ The three parameters of this RealityView initializer:
 
 ![Entity Component System][component13]  
 
-[component13]: component13.jpg
+[component13]: WWDC23-10273-component13
 
 SwiftUI views start out in the attachments ViewBuilder, then they are delivered in the update closure in the attachments parameter.
 
 ![Entity Component System][component14]  
 
-[component14]: component14.jpg
+[component14]: WWDC23-10273-component14
 
 Here, asking the attachments parameter if it has an entity using the same tag we gave to the button in the attachments ViewBuilder.
 
 ![Entity Component System][component15]  
 
-[component15]: component15.jpg
+[component15]: WWDC23-10273-component15
 
 If there is one, we get a RealityKit entity. In the update closure, we set its 3D position and add it to your RealityKit scene so we can see it floating in space wherever we want. 
 
@@ -308,13 +308,13 @@ Here, we've added the button entity as a child of a sphere entity positioned 0.2
 
 ![Entity Component System][component16]  
 
-[component16]: component16.jpg
+[component16]: WWDC23-10273-component16
 
 The make closure also has an attachments parameter. This one is for adding any attachments that we have ready to go at the time this view is first evaluated, because the make closure is only run once.
 
 ![Entity Component System][component17]  
 
-[component17]: component17.jpg
+[component17]: WWDC23-10273-component17
 
 This is the general flow of a RealityView, let's check the update closure. The parameter to make and update closures is a RealityKitContent. When adding an entity to the RealityKit content, it becomes a top-level entity in the scene. 
 
@@ -322,7 +322,7 @@ Likewise, from the update function, adding an entity to the content gives a new 
 
 ![Entity Component System][component18]  
 
-[component18]: component18.jpg
+[component18]: WWDC23-10273-component18
 
 To guard against that, we should only add entities to content that are created somewhere that's only run once. We don't need to check if the content.entities already contains the entity. 
 
@@ -352,7 +352,7 @@ RealityView { content, in
 
 ![Entity Component System][component19]  
 
-[component19]: component19.jpg
+[component19]: WWDC23-10273-component19
 
 Attachment entities are not created by us; they're created by the RealityView for each attachment view that we provide in your attachments ViewBuilder. That means it's safe to add them to the content in our update closure without checking if it's already there.
 
@@ -379,37 +379,37 @@ We're making use of the Transform Component here, which all entities have by def
 
 ![Entity Component System][component21]  
 
-[component21]: component21.jpg
+[component21]: WWDC23-10273-component21
 
 Then we add our PointOfInterestComponent to each of them. In our code, we get references to these entities by querying for all entities in the scene that have the PointOfInterestComponent on them. The query returns the three invisible entities we set up in Reality Composer Pro.
 
 ![Entity Component System][component22]  
 
-[component22]: component22.jpg
+[component22]: WWDC23-10273-component22
 
 We create a new SwiftUI view for each one and store them in a collection. 
 
 ![Entity Component System][component23]  
 
-[component23]: component23.jpg
+[component23]: WWDC23-10273-component23
 
 To get our buttons into our RealityView, we'll make use of the SwiftUI view-updating flow. This means adding the property wrapper @State to the collection of buttons in our View. The @State property wrapper tells SwiftUI that when we add items to this collection, SwiftUI should trigger a view update on our ImmersiveView. That will cause SwiftUI to evaluate our attachments ViewBuilder and our update closure again.
 
 ![Entity Component System][component24]  
 
-[component24]: component24.jpg
+[component24]: WWDC23-10273-component24
 
 The RealityView's attachments ViewBuilder is where we'll declare to SwiftUI that we want these buttons to be made into entities. Our RealityView's update closure will be called next, and our buttons will be delivered to us as entities.   They're no longer SwiftUI Views now. That's why we can add them to our entity hierarchy.
 
 ![Entity Component System][component25]  
 
-[component25]: component25.jpg
+[component25]: WWDC23-10273-component25
 
 In the update closure, we add our attachment entities to the scene, positioned floating above each of our invisible entities. Now they will show up visually when we look at our diorama scene.
 
 ![Entity Component System][component26]  
 
-[component26]: component26.jpg
+[component26]: WWDC23-10273-component26
 
 Let's see how each of these steps is done.
 
@@ -417,7 +417,7 @@ First, we mark our invisible entities in our Reality Composer Pro scene.
 
 ![Entity Component System][component27]  
 
-[component27]: component27.jpg
+[component27]: WWDC23-10273-component27
 
 To find our entities that we marked, we'll make an EntityQuery. We'll use it to ask for all entities that have a PointOfInterestComponent on them.
 
@@ -475,7 +475,7 @@ why didn't we just add a tag property to our PointOfInterestComponent instead?
 
 ![Entity Component System][component28]  
 
-[component28]: component28.jpg
+[component28]: WWDC23-10273-component28
 
 Attachment tags need to be unique, both for the ForEach struct and the attachments mechanism to work. And since all the properties in our custom component will be shown in Reality Composer Pro's Inspector Panel when we add the component to an entity, that means the attachmentTag would show up there too. 
 
@@ -512,7 +512,7 @@ That one is our design-time component, while all the others may be used as runti
 
 ![Entity Component System][component29]  
 
-[component29]: component29.jpg
+[component29]: WWDC23-10273-component29
 
 Design-time components are for housing simpler data, such as ints, strings, and SIMD values, things that 3D artists and designers will make use of. 
 
@@ -577,7 +577,7 @@ Let's run our app again...
 
 ![Entity Component System][component30]  
 
-[component30]: component30.jpg
+[component30]: WWDC23-10273-component30
 
 # Play audio
 
@@ -585,13 +585,13 @@ To set up something that plays audio in Reality Composer Pro, we can bring in an
 
 ![Play audio][audio]  
 
-[audio]: audio.jpg
+[audio]: WWDC23-10273-audio
 
 This creates a regular invisible entity with an AmbientAudioComponent on it. Let's name it OceanEmitter. It will be used to play ocean sounds for Catalina Island.
 
 ![Play audio][audio2]  
 
-[audio2]: audio2.jpg
+[audio2]: WWDC23-10273-audio2
 
 You need to add an audio file.
 
@@ -622,13 +622,13 @@ In the other session, the Apple engineer Niels, created a geometry modifier usin
 
 ![Material properties][materials]  
 
-[materials]: materials.jpg
+[materials]: WWDC23-10273-materials
 
 This tells the project that we intend to supply data at runtime to this part of the material. We'll name this promoted node Progress, so we can address it by that name at runtime.
 
 ![Material properties][materials2]  
 
-[materials2]: materials2.jpg
+[materials2]: WWDC23-10273-materials2
 
 We can now dynamically change this value in code. We get a reference to the entity that our material is on. Then we get its ModelComponent, which is the RealityKit component that houses materials. From the ModelComponent, we get its first material.
 
@@ -703,7 +703,7 @@ Moving the slider, we can see our Shader Graph material changing the geometry of
 
 ![Material properties][audio3]  
 
-[audio3]: audio3.jpg
+[audio3]: WWDC23-10273-audio3
 
 ## Wrap Up
 - Use Reality Composer Pro to prepare RealityKit content

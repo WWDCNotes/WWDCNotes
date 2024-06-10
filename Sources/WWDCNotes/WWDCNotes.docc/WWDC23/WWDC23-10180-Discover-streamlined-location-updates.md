@@ -36,7 +36,7 @@ There is a new class CLLocationUpdate, which has a static function liveUpdates, 
 
 ![location updates][location1]
 
-[location1]: location1.jpg
+[location1]: WWDC23-10180-location1
 
 # Getting updates
 The Apple engineer will do some code walkthrough building a basic app that starts location updates from the Foreground. 
@@ -130,7 +130,7 @@ LiveActivity is the best way to enable background location updates.
 
 ![location updates][location2]
 
-[location2]: location2.jpg
+[location2]: WWDC23-10180-location2
 
 As long as the LiveActivity remains active, the app can receive updates without any other additional setup. 
 
@@ -138,13 +138,13 @@ No problem if the app doesn't have a LiveActivity yet. Instead we use CLBackgrou
 
 ![location updates][location3]
 
-[location3]: location3.jpg
+[location3]: WWDC23-10180-location3
 
 when an app authorized as 'While Using' gets updates in the background we get this blue background location indicator. 
 
 ![location updates][location4]
 
-[location4]: location4.jpg
+[location4]: WWDC23-10180-location4
 
 CLBackgroundActivitySession uses the same indicator to provide background location capability to the app. 
 
@@ -193,13 +193,13 @@ Normally the app is receiving updates while the user is moving, multiple times i
 
 ![location updates][location5]
 
-[location5]: location5.jpg
+[location5]: WWDC23-10180-location5
 
 Later, when the device becomes non-stationary, updates will automatically resume without any user interaction. With this resuming update, we will send isStationary marked as False, continuing the delivery of updates.
 
 ![location updates][location6]
 
-[location6]: location6.jpg
+[location6]: WWDC23-10180-location6
 
 # Process lifecycle
 So automatically pausing and resuming the updates while the app is in background does have an impact on its lifecycle. 
@@ -212,7 +212,7 @@ CLLocationUpdate is not going to leave the app in the suspended state. Instead, 
 
 ![location updates][location7]
 
-[location7]: location7.jpg
+[location7]: WWDC23-10180-location7
 
 Suspended is not the only state. It's possible that the app can transition all the way into the terminated state. 
 
@@ -223,7 +223,7 @@ And this transition can happen in several ways.
 
 ![location updates][location8]
 
-[location8]: location8.jpg
+[location8]: WWDC23-10180-location8
 
 The API can recover the app in most cases, even when it's terminated and not running at all. 
 The app will recover as soon as location updates are available and will be relaunched in the background, and this will transition the app from terminated to background running 

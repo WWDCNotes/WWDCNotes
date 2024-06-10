@@ -20,7 +20,7 @@ Speakers: John Calsbeek, RealityKit Engineer
 
 ![Schematic of features included in RealityKit.][realitykit-features]
 
-[realitykit-features]: realitykit-features.png
+[realitykit-features]: WWDC23-10080-realitykit-features
 
 ## How RealityKit and SwiftUI work together [02:49](https://developer.apple.com/videos/play/wwdc2023/10080/?time=169)
 
@@ -34,7 +34,7 @@ The `Model3D` structure takes a content closure to include code that customizes 
 
 ![Structure of Model3D.][model3d-struc]
 
-[model3d-struc]: model3d-struc.png
+[model3d-struc]: WWDC23-10080-model3d-struc
 
 You can create a volumetric window by creating window groups. [05:48](https://developer.apple.com/videos/play/wwdc2023/10080/?time=348)
 - _Window groups act as a template that an app can use to open new windows_.
@@ -57,7 +57,7 @@ Learn more about the nuances when building Immersive Spaces and what's new in Sw
 
 ![Schematic of components included in RealityKit.][realitykit-components]
 
-[realitykit-components]: realitykit-components.png
+[realitykit-components]: WWDC23-10080-realitykit-components
 
 ### Simple entity example
 
@@ -65,7 +65,7 @@ In the following example, the `model` component renders a 3D model, while the `t
 
 ![Example of the structure of an entity.][simple-entity]
 
-[simple-entity]: simple-entity.png
+[simple-entity]: WWDC23-10080-simple-entity
 
 ### Robust entity example
 
@@ -75,7 +75,7 @@ In the following example, the entity is assembled out of mulitple child entities
 
 ![Example of the structure of an entity with nested children entities.][robust-entity]
 
-[robust-entity]: robust-entity.png
+[robust-entity]: WWDC23-10080-robust-entity
 
 ### Gotchas
 
@@ -85,7 +85,7 @@ _Note: XYZ conventions in RealityKit are different than XYZ conventions in Swift
 
 ![XYZ conventions in RealityKit are different than XYZ conventions in SwiftUI.][coordinate-conventions]
 
-[coordinate-conventions]: coordinate-conventions.png
+[coordinate-conventions]: WWDC23-10080-coordinate-conventions
 
 ## Use RealityView to place entities in-app [12:18](https://developer.apple.com/videos/play/wwdc2023/10080/?time=738)
 
@@ -111,13 +111,13 @@ In order to add a gesture to RealityView, an entity must have both an **input ta
 
 ![RealityView gestures only respond to entities with input target and collision components.][realityview-gestures]
 
-[realityview-gestures]: realityview-gestures.png
+[realityview-gestures]: WWDC23-10080-realityview-gestures
 
 > _It's important for the collision shape to be a reasonable approximation of the visual model. The closer the match, the more intuitive interactions with the model will be._
 
 ![Collision shapes should match the shape of your model for inutitive interactions.][collision-shapes]
 
-[collision-shapes]: collision-shapes.png
+[collision-shapes]: WWDC23-10080-collision-shapes
 
 You can change the shape of the collider inside Reality Composer Pro under the Collider component.
 
@@ -168,7 +168,7 @@ _Example of a custom component_ [23:46](https://developer.apple.com/videos/play/
 
 ![Schematic of systems.][systems]
 
-[systems]: systems.png
+[systems]: WWDC23-10080-systems
 
 - Once a system is registered, it automatically applies everywhere in your app that you use RealityKit.
 

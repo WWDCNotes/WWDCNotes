@@ -149,5 +149,5 @@ This feature can be enabled in 3 ways:
 
 
 
-[runtime]: runtime.JPG
-[psodescriptor]: psodescriptor.JPG
+[runtime]: WWDC22-10102-runtime
+[psodescriptor]: WWDC22-10102-psodescriptor

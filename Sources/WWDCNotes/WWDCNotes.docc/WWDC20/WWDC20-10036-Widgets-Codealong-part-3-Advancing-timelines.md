@@ -87,8 +87,8 @@ class IntentHandler: INExtension, DynamicCharacterSelectionIntentHandling {
 
 - lastly, we will need to update our `IntentTimelineProvider` to support our dynamic configuration
 
-[customTypeImage]: custom-type.png
-[customTypeImage2]: custom-type2.png
+[customTypeImage]: WWDC20-10036-custom-type
+[customTypeImage2]: WWDC20-10036-custom-type2
 
 
 [bgSessionDoc]: https://developer.apple.com/documentation/widgetkit/staticconfiguration/onbackgroundurlsessionevents(matching:_:)-2c8e7

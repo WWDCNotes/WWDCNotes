@@ -28,13 +28,13 @@ Chart (data, id: .name) {
 ```
 ![swiftui charts][charts1]
 
-[charts1]: charts1.jpg  
+[charts1]: WWDC22-10137-charts1  
 
 Which can be easily customisable.
 
 ![swiftui charts][charts2]
 
-[charts2]: charts2.jpg  
+[charts2]: WWDC22-10137-charts2  
 
 - declarative syntax, like SwiftUI
 - create charts by composition
@@ -43,7 +43,7 @@ Some examples of charts on the Apple platform:
 
 ![swiftui charts][charts3]
 
-[charts3]: charts3.jpg  
+[charts3]: WWDC22-10137-charts3  
 
 - Problem space of chart libraries
   - Data Visualization
@@ -63,11 +63,11 @@ Some examples of charts on the Apple platform:
 
 ![swiftui charts][charts4]
 
-[charts4]: charts4.jpg
+[charts4]: WWDC22-10137-charts4
 
 ![swiftui charts][charts5]
 
-[charts5]: charts5.jpg
+[charts5]: WWDC22-10137-charts5
 
 - `Chart` is a SwiftUI view used as the wrapper for charts
 
@@ -86,7 +86,7 @@ struct TopStyle: View {
 
 ![swiftui charts][charts5]
 
-[charts5]: charts5.jpg
+[charts5]: WWDC22-10137-charts5
 
 - This is a chart  with one BarMark
 ```swift
@@ -100,7 +100,7 @@ Chart {
 
 ![swiftui charts][charts6]
 
-[charts6]: charts6.jpg
+[charts6]: WWDC22-10137-charts6
 
 - Provide multiple `BarMark` views to show multiple bars
 - `.foregroundStyle` can be used to specify a color
@@ -123,7 +123,7 @@ Chart(data, id: \.name) {
 
 ![swiftui charts][charts7]
 
-[charts7]: charts7.jpg
+[charts7]: WWDC22-10137-charts7
 
 - `.accessisibilityLabel` and `.accessibilityValue` can be used to customize the default VoiceOver value
 
@@ -160,7 +160,7 @@ Chart {
 
 ![swiftui charts][charts8]
 
-[charts8]: charts8.jpg
+[charts8]: WWDC22-10137-charts8
 
 - switching chart types is easy, e.g. replace `BarChart` with `LineChart` (or `PointChart`) as in this example with two series of data.
 
@@ -189,7 +189,7 @@ Chart {
 ```
 ![swiftui charts][charts9]
 
-[charts9]: charts9.jpg
+[charts9]: WWDC22-10137-charts9
 
 - `x` parameter specifies the x-axis, `y` param the y-axis
 - use `.foregroundStyle(by: .value("City", series.city)` for automatic coloring
@@ -203,13 +203,13 @@ Chart {
 
 ![swiftui charts][charts10]
 
-[charts10]: charts10.jpg
+[charts10]: WWDC22-10137-charts10
 
 ## More types of marks
 
 ![swiftui charts][charts11]
 
-[charts11]: charts11.jpg
+[charts11]: WWDC22-10137-charts11
 
 - `AreaMark` with `x:yStart:yEnd` to show a range of data
 
@@ -241,7 +241,7 @@ Chart {
 
 ![swiftui charts][charts12]
 
-[charts12]: charts12.jpg
+[charts12]: WWDC22-10137-charts12
 
 - Also works with `BarMark` (to show range of data)
 - `RectangleMark` shows distinct marks for mid instead of building a graph in `BarMark`
@@ -270,7 +270,7 @@ Chart {
 
 ![swiftui charts][charts13]
 
-[charts13]: charts13.jpg
+[charts13]: WWDC22-10137-charts13
 
 - `RuleMark(y:)` can be used alongside with `.annotation(position:)` for guiding lines
 
@@ -299,7 +299,7 @@ Chart {
 
 ![swiftui charts][charts14]
 
-[charts14]: charts14.jpg
+[charts14]: WWDC22-10137-charts14
 
 Example of different ways to use and combine these basic marks. In order
 
@@ -314,14 +314,14 @@ Example of different ways to use and combine these basic marks. In order
 
 ![swiftui charts][charts15]
 
-[charts15]: charts15.jpg
+[charts15]: WWDC22-10137-charts15
 
 
 ## Plotting data with mark properties
 
 ![swiftui charts][charts16]
 
-[charts16]: charts16.jpg
+[charts16]: WWDC22-10137-charts16
 
 - Data Types
   - Quantitative (Int, Double, Decimal)
@@ -332,19 +332,19 @@ Example of different ways to use and combine these basic marks. In order
 
 ![swiftui charts][charts17]
 
-[charts17]: charts17.jpg
+[charts17]: WWDC22-10137-charts17
 
 - Orientation of the bar depends on where the nominal data is
 
 ![swiftui charts][charts18]
 
-[charts18]: charts18.jpg
+[charts18]: WWDC22-10137-charts18
 
 - Available data marks and properties:
 
 ![swiftui charts][charts19]
 
-[charts19]: charts19.jpg
+[charts19]: WWDC22-10137-charts19
 
 - `scale` is available for all data types, e.g. `yScale`
 
@@ -356,13 +356,13 @@ func yScale(sales: Int) -> CGFloat {
 
 ![swiftui charts][charts20]
 
-[charts20]: charts20.jpg
+[charts20]: WWDC22-10137-charts20
 
 - by default, the lib infers the scales automatically
 
 ![swiftui charts][charts21]
 
-[charts21]: charts21.jpg
+[charts21]: WWDC22-10137-charts21
 
 - Use `.chartYScale(domain:)` modifier to have fixed range of values on the y axis
 
@@ -384,7 +384,7 @@ Chart {
 
 ![swiftui charts][charts22]
 
-[charts22]: charts22.jpg
+[charts22]: WWDC22-10137-charts22
 
 - use the chartForegroundStyleScale modifier to change the colors of the lines on the chart 
 
@@ -410,7 +410,7 @@ Chart {
 
 ![swiftui charts][charts23]
 
-[charts23]: charts23.jpg
+[charts23]: WWDC22-10137-charts23
 
 # Customizations
 
@@ -418,7 +418,7 @@ Chart {
 
 ![swiftui charts][charts24]
 
-[charts24]: charts24.jpg
+[charts24]: WWDC22-10137-charts24
 
 - `.chartXAxis {}` with `AxisMarks` inside can be used for custom axis
 
@@ -460,7 +460,7 @@ Chart(data, id: \.month) {
 
 ![swiftui charts][charts25]
 
-[charts25]: charts25.jpg
+[charts25]: WWDC22-10137-charts25
 
 - also supports `if` kind of conditionals for dynamic axis and showing quarter data
 
@@ -487,7 +487,7 @@ Chart(data, id: \.month) {
 
 ![swiftui charts][charts26]
 
-[charts26]: charts26.jpg
+[charts26]: WWDC22-10137-charts26
 
 - `AxisMarks` accepts a `position` param, e.g. `.leading`
 - `AxisMarks` accepts `preset` param, e.g. `.extended` to align visually with rest of interface
@@ -527,7 +527,7 @@ Chart {
 
 ![swiftui charts][charts27]
 
-[charts27]: charts27.jpg
+[charts27]: WWDC22-10137-charts27
 
 - `ChartProxy` can be used to access the `position(forX:)` or `value(atX:)`
 
@@ -589,7 +589,7 @@ struct InteractiveBrushingChart: View {
 
 ![swiftui charts][charts28]
 
-[charts28]: charts28.jpg
+[charts28]: WWDC22-10137-charts28
 
 the code will look like this
 
@@ -615,7 +615,7 @@ Chart {
 
 ![swiftui charts][charts29]
 
-[charts29]: charts29.jpg
+[charts29]: WWDC22-10137-charts29
 
 
 

@@ -20,7 +20,7 @@ By identifying your app’s needs, you can decide when to use charts, how to use
 
 ![Charts example][charts]
 
-[charts]: charts.jpg  
+[charts]: WWDC22-110340-charts  
 
 
 To learn more about the first steps of the design process watch:
@@ -38,12 +38,12 @@ There is an example app about a food truck selling international pancakes in San
 
 ![Charts example][charts2]
 
-[charts2]: charts2.jpg  
+[charts2]: WWDC22-110340-charts2  
 
 
 Good chart design begins with identifying the chart’s goal. For example, a goal to communicate information like ‘Pancake sales in the last 30 days’ may go in many directions.
 
-![image](directions.png)
+![image](WWDC22-110340-directions)
 
 - Pattern: how sales are fluctuated
 - Range: how big these fluctuations were
@@ -62,7 +62,7 @@ Design charts with intention. An effective chart focuses on a few key pieces of 
 
 ![Charts example][charts3]
 
-[charts3]: charts3.jpg  
+[charts3]: WWDC22-110340-charts3  
 
 # Marks
 
@@ -70,7 +70,7 @@ A mark is the bar in a bar chart, the line in a line chart, and the point in a s
 
 ![Charts example][charts4]
 
-[charts4]: charts4.jpg  
+[charts4]: WWDC22-110340-charts4  
 
 Bars, for example, can be lined up to represent data's change over time, stacked to show proportions (how different categories add up to a total). Or side by side to compare values between different categories. 
 
@@ -78,7 +78,7 @@ These are just a few examples
 
 ![Charts example][charts5]
 
-[charts5]: charts5.jpg  
+[charts5]: WWDC22-110340-charts5  
 
 ### Choosing the mark to use
 
@@ -86,23 +86,23 @@ As we choose our mark, we will pay close attention to pattern. It would be usefu
 
 One option for a mark could be to use points to represent each day of pancake sales.
 
-![image](smooth_points.png)
+![image](WWDC22-110340-smooth_points)
 
 Envisioning nice smooth data like this, points look great.  
 But real data is rarely this neat.
 
-![image](real_points.png)
+![image](WWDC22-110340-real_points)
 
 WIth realistic data, using points make it difficult to make out any pattern.
 > It’s important to test your desings with real data early.
 
 To make the pattern of sales easier to see, we could connect sales counts by using a line mark. Lines are great at representing rates of change.
 
-![image](line.png)
+![image](WWDC22-110340-line)
 
 Here patterns and trajectories are clear. But what if our food truck needed to close for five alternative days?
 
-![image](line_with_closes.png)
+![image](WWDC22-110340-line_with_closes)
 
 In this situtaion the segements connecting far-apart values become more prominent than the values themselves.
 > Remember to design for a variety of scenarios in your data.
@@ -110,7 +110,7 @@ In this situtaion the segements connecting far-apart values become more prominen
 ### Bar Marks
 Bar marks are more flexible for our chart. Here, zeros are visible without creating a distraction.
 
-![image](bar.png)
+![image](WWDC22-110340-bar)
 
 This chart are more intuitive to read: more white means more sales.
 
@@ -118,7 +118,7 @@ This chart are more intuitive to read: more white means more sales.
 
 ![Charts example][charts6]
 
-[charts6]: charts6.jpg  
+[charts6]: WWDC22-110340-charts6  
 
 - Design for goals and data
 - Make accessible in VoiceOver: for all the information you show visually, you also need to design how to represent it non-visually.
@@ -148,21 +148,21 @@ One part of the question was: "how were pancake sales over the last 30 days?" an
 	- Dynamic range
 - Tailor the density of grid lines and labels
 
-![image](axes.png)
+![image](WWDC22-110340-axes)
 
 ## Fixed range 
 An example of a fixed range is the vertical axis of the battery chart in the Settings app. We know that the battery level will always go from 0 to 100%. 
 
 ![Charts example][charts7]
 
-[charts7]: charts7.jpg  
+[charts7]: WWDC22-110340-charts7  
 
 ## Dynamic range example
 Consider the step count chart in the Health app, which uses a dynamic range. There is no fixed maximum step count, so it makes sense to dynamically adapt the vertical axis range to fit the data. 
 
 ![Charts example][charts8]
 
-[charts8]: charts8.jpg
+[charts8]: WWDC22-110340-charts8
 
 In our case for the app a dynamic range is better. The lower bound is 0. It keeps the heights of the bars meaningful. This way, a bar that's twice as tall as another has twice as many sales. 
 
@@ -172,13 +172,13 @@ Some charts don't need grid lines and labels at all, such as the trend platter i
 
 ![Charts example][charts9]
 
-[charts9]: charts9.jpg
+[charts9]: WWDC22-110340-charts9
 
 These charts tend to be sneak peeks of larger charts in another view like this:
 
 ![Charts example][charts10]
 
-[charts10]: charts10.jpg
+[charts10]: WWDC22-110340-charts10
 
 ## Tailor the density of grid lines and labels
 
@@ -188,7 +188,7 @@ Having seven horizontal grid lines might be overwhelming. For this chart's conte
 
 ![Charts example][charts11]
 
-[charts11]: charts11.jpg
+[charts11]: WWDC22-110340-charts11
 
 # Descriptions
 
@@ -204,7 +204,7 @@ By using "Pancakes sold" as a heading for the chart, the chart's meaning is fron
 
 ![Charts example][charts12]
 
-[charts12]: charts12.jpg
+[charts12]: WWDC22-110340-charts12
 
 ## Summarize the main take-away
 
@@ -214,7 +214,7 @@ For example, the text above a precipitation chart in Weather describes its main 
 
 ![Charts example][charts13]
 
-[charts13]: charts13.jpg
+[charts13]: WWDC22-110340-charts13
 
 Let's rewriting our chart title to say "Total Sales: 1,234 Pancakes". This description summarizes the most critical information. Providing descriptions that contextualize the data and summarize key take-aways makes a chart more approachable and accessible for everyone. 
 
@@ -222,7 +222,7 @@ Can be especially helpful for people with certain disabilities that make examini
 
 ![Charts example][charts14]
 
-[charts14]: charts14.jpg
+[charts14]: WWDC22-110340-charts14
 
 # Interaction
 
@@ -245,7 +245,7 @@ Enhancing the pancake sales chart with interaction, with an interactive tooltip,
 
 ![Charts example][charts15]
 
-[charts15]: charts15.jpg
+[charts15]: WWDC22-110340-charts15
 
 ### Design for multiple types of input
 
@@ -254,7 +254,7 @@ It's important to make changes on the screen visible, like sizing the focus indi
 
 ![Charts example][charts16]
 
-[charts16]: charts16.jpg
+[charts16]: WWDC22-110340-charts16
 
 ### Accessibility labels
 
@@ -264,20 +264,20 @@ When VoiceOver navigates onto one of the bars, it reads out values like "June 1,
 
 ![Charts example][charts17]
 
-[charts17]: charts17.jpg
+[charts17]: WWDC22-110340-charts17
 
 The kind of labels depend a lot on the goals of the chart. For example, the charts on elevation changes in cycling routes don't show individual values, but a route's pattern of elevation gains and losses. A well-designed accessibility label could then label a section of bars with: "From 3.6 miles to 4.4 miles: Climb 100 feet, descend 5 feet".
 
 ![Charts example][charts18]
 
-[charts18]: charts18.jpg
+[charts18]: WWDC22-110340-charts18
 
 In contrast, if a chart is a tiny preview inside a button for opening the same chart in more detail, it might make sense to summarize the entire button, chart and all, with one label.
 
 
 ![Charts example][charts19]
 
-[charts19]: charts19.jpg
+[charts19]: WWDC22-110340-charts19
 
 # Color
 
@@ -295,13 +295,13 @@ Use color to distinguish categories, as with the three activity rings in the Fit
 
 ![Charts example][charts20]
 
-[charts20]: charts20.jpg
+[charts20]: WWDC22-110340-charts20
 
 Use it to communicate intensity, such as heat in a weather forecast. Or even remove color to draw attention to features of a chart. Here the health app does so to highlight the minimum and maximum heart rate within a day.
 
 ![Charts example][charts21]
 
-[charts21]: charts21.jpg
+[charts21]: WWDC22-110340-charts21
 
 
 ### Color can carry meaning. 
@@ -310,13 +310,13 @@ For example, red and green for low versus charged battery levels.
 
 ![Charts example][charts22]
 
-[charts22]: charts22.jpg
+[charts22]: WWDC22-110340-charts22
 
 Culture can inform the meanings of colors too. In the US, it makes sense to color code Stocks with green for gains and red for losses. In some countries like China, however, people expect the opposite, with red indicating gains and green indicating losses.
 
 ![Charts example][charts23]
 
-[charts23]: charts23.jpg
+[charts23]: WWDC22-110340-charts23
 
 When choosing a palette, it's also important to choose visually distinct colors to improve accessibility and readability. Ensuring that colors have high contrast both from each other and the rest of the chart makes the chart more accessible for people with visual impairments and is a better overall design for everyone. 
 
@@ -326,7 +326,7 @@ Can check with color blindness filters. Finally, respects system settings by des
 
 ![Charts example][charts24]
 
-[charts24]: charts24.jpg
+[charts24]: WWDC22-110340-charts24
 
 
 

@@ -24,7 +24,7 @@ Take a tour of the solar system with us and explore SwiftUI for visionOS! Discov
 
 ![Overview of SwiftUI view components optimized for visionOS][ui-components]
 
-[ui-components]: ui-components.png
+[ui-components]: WWDC23-10109-ui-components
 
 * SwiftUI elements adapt to the idioms of visionOS:
 	* bordered buttons use a vibrant material background.
@@ -38,7 +38,7 @@ Take a tour of the solar system with us and explore SwiftUI for visionOS! Discov
 
 ![Kinds of Scenes on visionOS: Window, Volume, or Full Space][spatial-scenes]
 
-[spatial-scenes]: spatial-scenes.png
+[spatial-scenes]: WWDC23-10109-spatial-scenes
 
 With spatial computing, there are 3 types of scenes that make up an app:
 * **Windows**: great for building traditional and familiar interfaces (e.g. Safari, Freeform), and menus that lead into more immersive experiences (e.g. Mindfulness)
@@ -73,7 +73,7 @@ New gestures added to SwiftUI, like `RotateGesture3D`.
 
 ![New SwiftUI gestures: RotateGesture3D, targetedToEntity, SpatialEventGesture, preferredHandAction, 3D properties on spatial gestures][spacial-swiftui-gestures]
 
-[spacial-swiftui-gestures]: spacial-swiftui-gestures.png
+[spacial-swiftui-gestures]: WWDC23-10109-spacial-swiftui-gestures
 
 #### Hover effects
 * Critical to making your app responsive.
@@ -88,7 +88,7 @@ New gestures added to SwiftUI, like `RotateGesture3D`.
 
 ![Use Model3D in SwiftUI like an AsyncImage][model3d]
 
-[model3d]: model3d.png
+[model3d]: WWDC23-10109-model3d
 
 * To display a 3D model, use the new `Model3D` API from RealityKit.
 
@@ -120,7 +120,7 @@ New gestures added to SwiftUI, like `RotateGesture3D`.
 
 ![Styles of Immersion on visionOS: Mixed, Progressive, or Full][immersion-styles]
 
-[immersion-styles]: immersion-styles.png
+[immersion-styles]: WWDC23-10109-immersion-styles
 
 * Mixed, Progressive and Full immersion are supported.
 

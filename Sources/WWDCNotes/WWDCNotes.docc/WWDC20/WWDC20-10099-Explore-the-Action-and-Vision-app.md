@@ -344,16 +344,16 @@ guard let pixelBuffer = output.copyPixelBuffer(forItemTime: itemTime, itemTimeFo
 ## Wrap up
 This type of application can work for other sports, like tennis, soccer, and cricket (35:40 - 36:00).
 
-[bean_bag_rules]: bean_bag_rules.png
+[bean_bag_rules]: WWDC20-10099-bean_bag_rules
 
-[key_algorithms]: key_algorithms.png
+[key_algorithms]: WWDC20-10099-key_algorithms
 
-[trajectory_detection]: trajectory_detection.png
+[trajectory_detection]: WWDC20-10099-trajectory_detection
 
-[trajectory_observation]: trajectory_observation.png
+[trajectory_observation]: WWDC20-10099-trajectory_observation
 
-[action_classification]: action_classification.png
+[action_classification]: WWDC20-10099-action_classification
 
-[input_data_object_detection]: input_data_object_detection.png
+[input_data_object_detection]: WWDC20-10099-input_data_object_detection
 
-[negative_actions]: negative_actions.png
+[negative_actions]: WWDC20-10099-negative_actions

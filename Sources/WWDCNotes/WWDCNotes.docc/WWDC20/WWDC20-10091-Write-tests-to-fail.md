@@ -159,5 +159,5 @@ public func verify(ingredients: [String]) throws {
 
 * Remember to reset the environment from the changes that were done during the set up
 
-[image-1]:	custom_error_message.png
-[image-2]:	context_result_bundle.png
+[image-1]:	WWDC20-10091-custom_error_message
+[image-2]:	WWDC20-10091-context_result_bundle

@@ -97,5 +97,5 @@ library.presentLimitedLibraryPicker(from: viewController)
 
 * Set `PHPhotoLibraryPreventAutomaticLimitedAccessAlert` to `YES` in app’s `info.plist`
 
-[image-1]:	full_access_diagram.png
-[image-2]:	limited_access_diagram.png
+[image-1]:	WWDC20-10641-full_access_diagram
+[image-2]:	WWDC20-10641-limited_access_diagram

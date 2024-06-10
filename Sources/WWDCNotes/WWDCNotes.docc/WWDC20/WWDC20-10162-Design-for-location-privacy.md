@@ -92,18 +92,18 @@ For a walkthrough of what this looks like for approximate location users, jump t
 - Request precise location in response to user action
 - Position the request close to the value it provides
 
-[precise_location]: precise_location.png
+[precise_location]: WWDC20-10162-precise_location
 
-[approximate_location]: approximate_location.png
+[approximate_location]: WWDC20-10162-approximate_location
 
-[precise_calculate]: precise_calculate.png
+[precise_calculate]: WWDC20-10162-precise_calculate
 
-[precise_calculate_after]: precise_calculate_after.png
+[precise_calculate_after]: WWDC20-10162-precise_calculate_after
 
-[request_location_maps]: request_location_maps.png
+[request_location_maps]: WWDC20-10162-request_location_maps
 
-[communicate_results]: communicate_results.png
+[communicate_results]: WWDC20-10162-communicate_results
 
-[less_prominent_indicator]: less_prominent_indicator.png
+[less_prominent_indicator]: WWDC20-10162-less_prominent_indicator
 
-[ask_precise_once]: ask_precise_once.png
+[ask_precise_once]: WWDC20-10162-ask_precise_once

@@ -24,12 +24,12 @@ https://github.com/apple/unityplugins
 In this demo, cards can be flipped by tapping the button. However, VoiceOver would not read the text on the screen and an external switch would not tap the button.
 ![Example-Card-Game][0]
 
-[0]: 0.jpg
+[0]: WWDC22-10151-0
 
 The text, cards, and button need to be accessibility elements so the user can understand what is on the screen.
 ![Elements][1]
 
-[1]: 1.JPG
+[1]: WWDC22-10151-1
 
 If the app supports multiple languages, the labels should also be localized.
 
@@ -40,7 +40,7 @@ By adding an accessibility trait, VoiceOver would read the button as "Flip Butto
 
 ![Elements][2]
 
-[2]: 2.JPG
+[2]: WWDC22-10151-2
 
 There are many different types of traits, full list can be found here:
 
@@ -51,7 +51,7 @@ In this example, the cards would need a `value` trait to be able to provide the 
 
 ![Value][3]
 
-[3]: 3.JPG
+[3]: WWDC22-10151-3
 
 ### Unity Implementation
 
@@ -64,7 +64,7 @@ Accessibility elements are added using the `Accessibility Node` component. This 
 
 ![Script][4]
 
-[4]: 4.JPG
+[4]: WWDC22-10151-4
 Buttons in Unity UI already have the `Accessibility Node` component by default.
 
 Creating custom C# scripts using Apple's Accessibility requires `using Apple.Accessibility` 
@@ -124,10 +124,10 @@ In a similar way, the face of the cards could also be modified during these acce
 ```
 ![Value][5]
 
-[5]: 5.JPG
+[5]: WWDC22-10151-5
 ![Value][6]
 
-[6]: 6.JPG
+[6]: WWDC22-10151-6
 ## UI Accommodations
 
 ### Reduce Transparency
@@ -137,7 +137,7 @@ In a similar way, the face of the cards could also be modified during these acce
 
 ![Reduce-Transparency][8]
 
-[8]: 8.jpg
+[8]: WWDC22-10151-8
 
 ### Increase Contrast
 - Colors stand out more
@@ -146,7 +146,7 @@ In a similar way, the face of the cards could also be modified during these acce
 
 ![Increase-Contrast][7]
 
-[7]: 9.jpg
+[7]: WWDC22-10151-9
 
 ### Reduce Motion
 - Animations should be removed if this is enabled

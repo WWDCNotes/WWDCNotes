@@ -103,10 +103,10 @@ For more information, see the [App Clips's Human Interface Guidelines][hig]
 [20-10118]: ../10118
 [hig]: https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/
 
-[iconDiffImage]: iconDiff.png
-[businessIconImage]: businessIcon.png
-[clipCodeImage]: clipCode.png
-[mapsClipImage]: mapsClip.png
-[siriSuggestionsImage]: siriSuggestions.png
-[safariClipImage]: safariClip.png
-[messagesClipImage]: messagesClip.png
+[iconDiffImage]: WWDC20-10172-iconDiff
+[businessIconImage]: WWDC20-10172-businessIcon
+[clipCodeImage]: WWDC20-10172-clipCode
+[mapsClipImage]: WWDC20-10172-mapsClip
+[siriSuggestionsImage]: WWDC20-10172-siriSuggestions
+[safariClipImage]: WWDC20-10172-safariClip
+[messagesClipImage]: WWDC20-10172-messagesClip

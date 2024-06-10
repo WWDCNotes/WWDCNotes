@@ -202,6 +202,6 @@ Considerations specific to the instrument cluster:
   - override `viewSafeAreaInsetsDidChange`
   - use `safeAreaLayoutGuide`
 
-[templates]: templates.png
+[templates]: WWDC22-10016-templates
 [CPInstrumentClusterControllerDelegate]: https://developer.apple.com/documentation/carplay/cpinstrumentclustercontrollerdelegate
 [acdw]: https://developer.apple.com/carplay/

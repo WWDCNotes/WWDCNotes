@@ -37,7 +37,7 @@ By default, symbols animate by **layer**. You can optionally animate a whole sym
 
 ![Visualize three planes through which a symbol can move.][symbol]
 
-[symbol]: FrontMiddleBackLayers.png
+[symbol]: WWDC23-10197-FrontMiddleBackLayers
 
 Symbols animate conceptually through front, back and middle planes, with the ability to move up (appear bigger), down (appear smaller, like a more distant object) or even disappear entirely.
 
@@ -66,7 +66,7 @@ Symbols animate conceptually through front, back and middle planes, with the abi
 
 ![Describe a custom symbol's layers in the SF Symbols app][layers]
 
-[layers]: CustomSymbolLayersInApp.png
+[layers]: WWDC23-10197-CustomSymbolLayersInApp
 
 Bring your custom symbol into the SF Symbols app to set Draw and Erase layers. This is also where you can set layer colors for multicolor animations.
 

@@ -87,8 +87,8 @@ iPadOS provides three pointer effects, based on context and content type, and yo
 
 [autoDoc]: https://developer.apple.com/documentation/uikit/uipointereffect/automatic
 
-[pointersImage]: pointers.gif
-[highlightImage]: highlight.gif
-[liftImage]: lift.gif
-[hoverImage]: hover.gif
-[paddingImage]: padding.png
+[pointersImage]: WWDC20-10640-pointers
+[highlightImage]: WWDC20-10640-highlight
+[liftImage]: WWDC20-10640-lift
+[hoverImage]: WWDC20-10640-hover
+[paddingImage]: WWDC20-10640-padding

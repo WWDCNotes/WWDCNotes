@@ -44,7 +44,7 @@ After the state of the application changes, SwiftUI applies animations that inte
 
 ![scale animation][first]  
 
-[first]: first.jpg
+[first]: WWDC23-10157-first
 
 
 But some animations don’t simply animate from a previous state into a new state.
@@ -72,7 +72,7 @@ Trail races can be very long. Ultramarathons can take a whole day, or even multi
 
 ![the app][app]  
 
-[app]: app.jpg
+[app]: WWDC23-10157-app
 
 Here, the reminder at the bottom of the screen is letting know that it is time for a meal. We want to give it an animated highlight effect to make it extra visible.
 
@@ -102,7 +102,7 @@ OverdueReminderView()
 
 ![the ".phaseAnimator" modifier][phaseAnimator]  
 
-[phaseAnimator]: phaseAnimator.jpg
+[phaseAnimator]: WWDC23-10157-phaseAnimator
 
 We provided two phases to the phase animator modifier: false, and true.
 
@@ -110,19 +110,19 @@ When the view first appears, the first phase is active, causing the view to be 5
 
 ![the ".phaseAnimator" modifier][phaseAnimator2]
 
-[phaseAnimator2]: phaseAnimator2.jpg
+[phaseAnimator2]: WWDC23-10157-phaseAnimator2
 
 Then when that animation is finished, SwiftUI advances again.
 
 ![the ".phaseAnimator" modifier][phaseAnimator3]
 
-[phaseAnimator3]: phaseAnimator3.jpg
+[phaseAnimator3]: WWDC23-10157-phaseAnimator3
 
 There are only have two phases, so this causes the animation to cycle between the two states. Of course, we can also define animations that include more than two phases, and any number of additional view modifiers.
 
 ![the ".phaseAnimator" modifier][phaseAnimator4]
 
-[phaseAnimator4]: phaseAnimator4.jpg
+[phaseAnimator4]: WWDC23-10157-phaseAnimator4
 
 Now, instead of changing the opacity, this changes the foreground style, using red when highlighted, and otherwise the primary foreground style.
 ```swift
@@ -146,7 +146,7 @@ OverdueReminderView()
 
 ![the ".phaseAnimator" modifier][phaseAnimator6]  
 
-[phaseAnimator6]: phaseAnimator6.jpg
+[phaseAnimator6]: WWDC23-10157-phaseAnimator6
 
 The phase that is being animated to is passed in, in case we want to use a different animation for each phase. 
 
@@ -156,7 +156,7 @@ Animating the emoji show reactions left by others.
 
 ![emoji show reactions left by others][reactions]
 
-[reactions]: reactions.jpg
+[reactions]: WWDC23-10157-reactions
 
 Unlike in the previous example that simply alternated between two states, we want a more complex animation. An enum is a great way to define a list of steps for the animation.
 ```swift
@@ -211,7 +211,7 @@ enum Phase: CaseIterable {
 
 ![emoji show reactions left by others][reactionsPhases]  
 
-[reactionsPhases]: reactionsPhases.jpg
+[reactionsPhases]: WWDC23-10157-reactionsPhases
 
 
 We add the phaseAnimator modifier, but this time, we give it a "trigger" value which observes the value that we specify for changes. And when a change occurs, it begins animating through the phases.
@@ -232,7 +232,7 @@ ReactionView()
 
 ![emoji show reactions left by others][reactionsPhases2]  
 
-[reactionsPhases2]: reactionsPhases2.jpg
+[reactionsPhases2]: WWDC23-10157-reactionsPhases2
 
 Customizing the animation for each transition to get the effect that we want...
 ```swift
@@ -257,7 +257,7 @@ ReactionView()
 
 ![emoji show reactions left by others][reactionsPhases3]  
 
-[reactionsPhases3]: reactionsPhases3.jpg
+[reactionsPhases3]: WWDC23-10157-reactionsPhases3
 
 
 
@@ -269,13 +269,13 @@ Keyframes are different from phases. Phases define discrete states that are prov
 
 ![keyframes][keyframes]  
 
-[keyframes]: keyframes.jpg
+[keyframes]: WWDC23-10157-keyframes
 
 And then, when that animation is finished, SwiftUI animates to the next state.
 
 ![keyframes][keyframes2]  
 
-[keyframes2]: keyframes2.jpg
+[keyframes2]: WWDC23-10157-keyframes2
 
 And this continues across all of the phases of the animation.
 
@@ -286,14 +286,14 @@ The dots here indicate keyframes: angles to use at each point during the animati
 
 ![dots diagram][dots]  
 
-[dots]: dots.jpg
+[dots]: WWDC23-10157-dots
 
 When the animation plays back, SwiftUI interpolates values in between these keyframes, which we can then use to apply modifiers to the view.  
 And keyframes allow to independently animate multiple effects at the same time by defining separate tracks, each with their own unique timing.
 
 ![keyframes][keyframes3]  
 
-[keyframes3]: keyframes3.jpg
+[keyframes3]: WWDC23-10157-keyframes3
 
 In this example, keyframes are driving several other tracks, including vertical stretch, scale, and translation.
 
@@ -312,7 +312,7 @@ struct AnimationValues {
 
 ![keyframes][keyframes4]  
 
-[keyframes4]: keyframes4.jpg
+[keyframes4]: WWDC23-10157-keyframes4
 
 Keyframes can animate any value conforming to the "Animatable" protocol.
 
@@ -380,7 +380,7 @@ ReactionView()
 
 ![keyframes][keyframes5]  
 
-[keyframes5]: keyframes5.jpg
+[keyframes5]: WWDC23-10157-keyframes5
 
 Previews in Xcode can be a great way to fine-tune animations...
 
@@ -420,13 +420,13 @@ ReactionView()
 
 ![keyframes][keyframes6]  
 
-[keyframes6]: keyframes6.jpg
+[keyframes6]: WWDC23-10157-keyframes6
 
 There are actually four different types of keyframes.
 
 ![keyframes][moreKeyframes]  
 
-[moreKeyframes]: moreKeyframes.jpg
+[moreKeyframes]: WWDC23-10157-moreKeyframes
 
 - LinearKeyframe interpolates linearly in vector space from the previous keyframe.
 
@@ -464,7 +464,7 @@ ReactionView()
 
 ![keyframes][moreKeyframes2]  
 
-[moreKeyframes2]: moreKeyframes2.jpg
+[moreKeyframes2]: WWDC23-10157-moreKeyframes2
 
 
 Right before the view jumps up, it pulls back.
@@ -497,7 +497,7 @@ ReactionView()
 
 ![keyframes][moreKeyframes3]  
 
-[moreKeyframes3]: moreKeyframes3.jpg
+[moreKeyframes3]: WWDC23-10157-moreKeyframes3
 
 Finally, the rotation will be animated.
 ```swift
@@ -526,19 +526,19 @@ ReactionView()
 
 ![keyframes][moreKeyframes4]  
 
-[moreKeyframes4]: moreKeyframes4.jpg
+[moreKeyframes4]: WWDC23-10157-moreKeyframes4
 
 And those curves? Those are a visualization of the animation 
 
 ![keyframes][moreKeyframes5]  
 
-[moreKeyframes5]: moreKeyframes5.jpg
+[moreKeyframes5]: WWDC23-10157-moreKeyframes5
 
 Keyframes are like video clips that can be played. They give you a ton of control, but there’s a tradeoff. Keyframe animations can’t gracefully retarget the way that springs can, so it’s generally best to avoid changing keyframes mid-animation.
 
 ![remember][remember]  
 
-[remember]: remember.jpg
+[remember]: WWDC23-10157-remember
 
 Updates happen on every frame, so we should avoid performing any expensive operations while applying a keyframe animation to the view.
 
@@ -591,7 +591,7 @@ struct RaceMap: View {
 
 ![race][race]  
 
-[race]: race.jpg
+[race]: WWDC23-10157-race
 
 Lets use the new "mapCameraKeyframeAnimator" modifier, giving the trigger value to it, then adding keyframes.
 ```swift
@@ -617,7 +617,7 @@ The final value of the keyframes determines the camera value that is used at the
 
 ![mapAnimation][mapAnimation]
 
-[mapAnimation]: mapAnimation.jpg
+[mapAnimation]: WWDC23-10157-mapAnimation
 
 If the user performs a gesture while animating, the animation will be removed and the user will have full control over the camera.  
 We can independently animate the center coordinate, heading, and distance.

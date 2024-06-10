@@ -195,4 +195,4 @@ enum SmoothieArrayBuilder {
 }
 ```
 
-[swiftuiExampleGif]: swiftui-example.gif
+[swiftuiExampleGif]: WWDC21-10253-swiftui-example

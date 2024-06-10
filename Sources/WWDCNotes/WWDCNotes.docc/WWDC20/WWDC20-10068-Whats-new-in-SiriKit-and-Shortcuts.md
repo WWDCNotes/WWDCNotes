@@ -89,7 +89,7 @@ If your app has sleep-friendly shortcuts, use the new [`INShortcutAvailabilityOp
 
 [INShortcutAvailabilityOptions]: https://developer.apple.com/documentation/sirikit/inshortcutavailabilityoptions
 
-[listImage]: list.png
-[intentsImage]: intents.png
-[foldersImage]: folders.png
-[watchImage]: watch.png
+[listImage]: WWDC20-10068-list
+[intentsImage]: WWDC20-10068-intents
+[foldersImage]: WWDC20-10068-folders
+[watchImage]: WWDC20-10068-watch

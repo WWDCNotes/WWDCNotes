@@ -26,7 +26,7 @@ Discover the latest enhancements to App Store pre-orders, including regional pub
 
 ![Map with an example of regional pre-orders][map]
 
-[map]: map.jpg
+[map]: WWDC23-10015-map
 
 ## Pre-orders set up examples
 
@@ -34,13 +34,13 @@ To set up your first pre-order in App Store Connect, go to App Store tab, Pricin
 
 ![App Store Connect with Set Up Availability button][setup-availability]
 
-[setup-availability]: setup-availability.jpg
+[setup-availability]: WWDC23-10015-setup-availability
 
 After pre-orders are set up, uou can check where the app is available and not available. Here you can also expand pre-order to other regions. You can also edit and update release date, release your app immediately or remove your pre-order.
 
 ![App Store Status list and option to manage availability][setup-manage]
 
-[setup-manage]: setup-manage.jpg
+[setup-manage]: WWDC23-10015-setup-manage
 
 The expected release date you can set for pre-orders:
 - unreleased app - up to 180 days in the future
@@ -55,7 +55,7 @@ The expected release date you can set for pre-orders:
 
 ![Optimization tests][optimization_tests]
 
-[optimization_tests]: optimization_tests.jpg
+[optimization_tests]: WWDC23-10015-optimization_tests
 
 ## Wrap-up
 
@@ -65,4 +65,4 @@ The expected release date you can set for pre-orders:
 
 ![Wrap-up][wrap-up]
 
-[wrap-up]: wrap-up.jpg
+[wrap-up]: WWDC23-10015-wrap-up

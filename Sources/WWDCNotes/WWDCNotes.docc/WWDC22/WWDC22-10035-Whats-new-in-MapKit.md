@@ -18,23 +18,23 @@ Originally launched with U.S. support, the all-new map and Look Around coverage 
 
 ![maps][maps1]
 
-[maps1]: maps1.jpg
+[maps1]: WWDC22-10035-maps1
 
 Last year, Apple Maps introduced the 3D City Experiences, featuring turn lanes, crosswalks, bike lanes, and handcrafted 3D landmarks like the Ferry Building.
 
 ![Ferry Building][ferryBuilding]
 
-[ferryBuilding]: ferryBuilding.jpg
+[ferryBuilding]: WWDC22-10035-ferryBuilding
 
 The additional detail of the map allows to provide context and precision and a high level of realism.
 
 ![London St Paul][london]
 
-[london]: london.jpg
+[london]: WWDC22-10035-london
 
 ![Golden Gate][goldenGate]
 
-[goldenGate]: goldenGate.jpg
+[goldenGate]: WWDC22-10035-goldenGate
 
 
 # New MapKit features. 
@@ -52,7 +52,7 @@ In iOS 15, the way to configure the map is through various properties on MKMapVi
 
 ![Deprecated API][DeprecatedAPI]
 
-[DeprecatedAPI]: DeprecatedAPI.jpg
+[DeprecatedAPI]: WWDC22-10035-DeprecatedAPI
 
 and a new Map Configuration API is being introduced as a replacement.
 
@@ -85,7 +85,7 @@ class MKStandardMapConfiguration : MKMapConfiguration {
 
 ![Maps Imagery][mapsImagery]
 
-[mapsImagery]: mapsImagery.jpg
+[mapsImagery]: WWDC22-10035-mapsImagery
 
 ### The elevation style property.   
 The base map configuration class supports an `elevationStyle` property, which can be either flat or realistic. A flat elevation style means that the ground appears flat. Roads, including bridges and overpasses, also appear flat.
@@ -134,7 +134,7 @@ As the name implies, this is the default emphasis style unless otherwise stated.
 
 ![Standard Map Config][standardMapConfig]
 
-[standardMapConfig]: standardMapConfig.jpg
+[standardMapConfig]: WWDC22-10035-standardMapConfig
 
 The standard map configuration also has additional properties to control filtering of point of interest categories and whether to show traffic or not.
 
@@ -152,13 +152,13 @@ Here's a table that shows the correspondence between the new map configuration c
 
 ![Map type mapping][mapTypeMapping]
 
-[mapTypeMapping]: mapTypeMapping.jpg
+[mapTypeMapping]: WWDC22-10035-mapTypeMapping
 
 The all-new map with the 3D City Experience requires compatible hardware. On iOS, the new map support requires A12-based iPhones and iPads or later. On macOS, the new map support requires any M1-based computer or later.
 
 ![Device Support][deviceSupport]
 
-[deviceSupport]: deviceSupport.jpg
+[deviceSupport]: WWDC22-10035-deviceSupport
 
 In areas where the 3D City Experience is not available, the map will automatically fall back to present the all-new map with a flat elevation. On all other devices, the all-new map will be presented with a flat elevation.
 
@@ -203,7 +203,7 @@ Above roads will be the new default mode in iOS 16.
 
 ![Above Levels][aboveLevels]
 
-[aboveLevels]: aboveLevels.jpg
+[aboveLevels]: WWDC22-10035-aboveLevels
 
 # Transparent buildings
 There is a new feature in iOS 16 called transparent buildings.
@@ -212,7 +212,7 @@ Regardless of whether the overlay level is above roads or above labels, it will 
 
 ![Above Levels][aboveLevels2]
 
-[aboveLevels2]: aboveLevels2.jpg
+[aboveLevels2]: WWDC22-10035-aboveLevels2
 
 Ground objects such as trees and buildings are now automatically rendered with transparency when appearing above overlays, so as not to fully obscure them. The alpha value varies with the map's pitch angle. Reverting to showing the map top-down with a 0º pitch angle, colliding ground objects effectively disappear from view, leaving the overlays fully visible.
 
@@ -220,25 +220,25 @@ Transparent buildings also work for semi-transparent overlays. The alpha value o
 
 ![Above Levels][aboveLevels3]
 
-[aboveLevels3]: aboveLevels3.jpg
+[aboveLevels3]: WWDC22-10035-aboveLevels3
 
 There's one more change to overlays. When adding an overlay to a map with realistic terrain,
 
 ![Above Levels][aboveLevels4]
 
-[aboveLevels4]: aboveLevels4.jpg
+[aboveLevels4]: WWDC22-10035-aboveLevels4
 
 MapKit will automatically transition the map to a flat representation.
 
 ![Above Levels][aboveLevels5]
 
-[aboveLevels5]: aboveLevels5.jpg
+[aboveLevels5]: WWDC22-10035-aboveLevels5
 
 The map will automatically go back to realistic when removing the last overlay. One notable exception to this rule are overlays sourced through MapKit's directions API. Those overlays automatically follow the terrain.
 
 ![Above Levels][aboveLevels6]
 
-[aboveLevels6]: aboveLevels6.jpg
+[aboveLevels6]: WWDC22-10035-aboveLevels6
 
 ## Adding Polygon Overlays
  
@@ -250,7 +250,7 @@ We are going to use the Operating Area feature.
 
 ![Sample App Levels][sampleApp1]
 
-[sampleApp1]: sampleApp1.jpg
+[sampleApp1]: WWDC22-10035-sampleApp1
 
 let's add a polygon overlay to visualize the operating area. When the view is loaded, we'll first set the region and the camera boundary.
 
@@ -301,7 +301,7 @@ The polygon overlay is opaque when viewed straight down. As we zoom in and pitch
 
 ![Sample App Levels][sampleApp2]
 
-[sampleApp2]: sampleApp2.jpg
+[sampleApp2]: WWDC22-10035-sampleApp2
 
 To want to leverage transparent buildings and trees, choose the correct overlay level.
 
@@ -311,7 +311,7 @@ Now we have a transparent overlay and we can see roads and buildings even when n
 
 ![Sample App][sampleApp3]
 
-[sampleApp3]: sampleApp3.jpg
+[sampleApp3]: WWDC22-10035-sampleApp3
 
 ## Integrate realistic terrain and show adding an elevated route line
 
@@ -323,7 +323,7 @@ Here are the available map view configuration settings. Let's select "elevation:
 
 ![Sample App Levels][sampleApp4]
 
-[sampleApp4]: sampleApp4.jpg
+[sampleApp4]: WWDC22-10035-sampleApp4
 
 Next, let's work on the route.
 
@@ -429,13 +429,13 @@ The route line follows the elevated terrain. It also follows the road across the
 
 ![Sample App Levels][sampleApp5]
 
-[sampleApp5]: sampleApp5.jpg
+[sampleApp5]: WWDC22-10035-sampleApp5
 
 Finally, we can see the route show through the trees that stand in front of it. 
 
 ![Sample App Levels][sampleApp6]
 
-[sampleApp6]: sampleApp6.jpg
+[sampleApp6]: WWDC22-10035-sampleApp6
 
 Here a part of the route goes through a tunnel, so we get transparency for it. ElevationRealisticStyle and the elevated route line feature are supported on A12-based iOS devices. The same app on an older iOS device, will automatically get a 2D route on a 2D map...
 
@@ -447,17 +447,17 @@ In this scenario, we want to highlight the area of the Presidio National Park in
 
 ![Blend modes][blendModes]
 
-[blendModes]: blendModes.jpg
+[blendModes]: WWDC22-10035-blendModes
 
 ![Blend modes][blendModes2]
 
-[blendModes2]: blendModes2.jpg
+[blendModes2]: WWDC22-10035-blendModes2
 
 We are not using any blend modes yet. This is just a plain overlay, in the shape of a big square doughnut. Next, we assign a hue blend mode to the overlay, with a gray fill. This desaturates the map outside of the Presidio. 
 
 ![Blend modes][blendModes3]
 
-[blendModes3]: blendModes3.jpg
+[blendModes3]: WWDC22-10035-blendModes3
 
 Next, we are going to duplicate that overlay and assign it a hard light blend mode, with a dark gray fill.
 
@@ -465,7 +465,7 @@ This has the effect of darkening the area around the Presidio. This already look
 
 ![Blend modes][blendModes4]
 
-[blendModes4]: blendModes4.jpg
+[blendModes4]: WWDC22-10035-blendModes4
 
 We added a property to MKOverlayRenderer, called blendMode. All we need to do is set the desired CoreGraphics blend mode on the overlay renderer.
 
@@ -514,14 +514,14 @@ In iOS 16, using the new Selectable Map Features API, we'll have the option to l
 
 ![Selectable Map Features][selectableMapFeatures]
 
-[selectableMapFeatures]: selectableMapFeatures.jpg
+[selectableMapFeatures]: WWDC22-10035-selectableMapFeatures
 
 
 Selectable map features include points of interest, such as stores, restaurants, and landmarks; territories, such as cities and states; and physical features, such as mountain ranges and lakes. 
 
 ![Selectable Map Features][selectableMapFeatures2]
 
-[selectableMapFeatures2]: selectableMapFeatures2.jpg
+[selectableMapFeatures2]: WWDC22-10035-selectableMapFeatures2
 
 To adopt Selectable Map Features in your app:
 
@@ -657,7 +657,7 @@ lets select the categories that we don't want, for example: airport, car rental,
 
 ![Explore Map Features][exploreMapFeatures]
 
-[exploreMapFeatures]: exploreMapFeatures.jpg
+[exploreMapFeatures]: WWDC22-10035-exploreMapFeatures
 
 It's very simple to enable Selectable Map Features. All we need to do is to specify an option set of desired selectable features.  
 In the scope of this sample app, we'll just use points of interest, but we also can support selectable physical features and territories.
@@ -720,7 +720,7 @@ The gradient annotations show up. The camera animates to the tab location. Then 
 
 ![Explore Map Features][exploreMapFeatures2]
 
-[exploreMapFeatures2]: exploreMapFeatures2.jpg
+[exploreMapFeatures2]: WWDC22-10035-exploreMapFeatures2
 
 Now let's customize our annotation for the selection state.  
 Instead of nil, let's create a `MarkerAnnotationView`. We'll cast the annotation to `featureAnnotation` first, so we can use specific data from it to customize the view. Let's tint the annotation with a purple-ish color so it's in line with our corporate identity.
@@ -752,14 +752,14 @@ Now we have an annotation that matches our corporate colors, but still uses Appl
 
 ![Explore Map Features][exploreMapFeatures3]
 
-[exploreMapFeatures3]: exploreMapFeatures3.jpg
+[exploreMapFeatures3]: WWDC22-10035-exploreMapFeatures3
 
 # Look Around!
 The Maps app introduced Look Around in iOS 13
 
 ![Look Around][lookAround]
 
-[lookAround]: lookAround.jpg
+[lookAround]: WWDC22-10035-lookAround
 
 Look Around is available in many places around the world, including these cities, and entire countries.
 
@@ -819,7 +819,7 @@ The Look Around view controller is designed to embed a smaller static preview of
 
 ![Look Around][lookAround2]
 
-[lookAround2]: lookAround2.jpg
+[lookAround2]: WWDC22-10035-lookAround2
 
 # Highlights feature of the sample app
 
@@ -829,13 +829,13 @@ We already have a couple of San Francisco landmark names in the segment control 
 
 ![highlights][highlights]
 
-[highlights]: highlights.jpg
+[highlights]: WWDC22-10035-highlights
 
 Let's go to the size inspector. Let's give it a position and size.
 
 ![highlights][highlights2]
 
-[highlights2]: highlights2.jpg
+[highlights2]: WWDC22-10035-highlights2
 
 We want to hide this preview at the beginning, so let's open the attributes inspector and check Hidden.
 
@@ -843,19 +843,19 @@ Next, we need to create a Look Around view controller...
 
 ![highlights][highlights3]
 
-[highlights3]: highlights3.jpg
+[highlights3]: WWDC22-10035-highlights3
 
 And embed it to the container view.
 
 ![highlights][highlights4]
 
-[highlights4]: highlights4.jpg
+[highlights4]: WWDC22-10035-highlights4
 
 Same as any other segue, we need to give it an identifier.
 
 ![highlights][highlights5]
 
-[highlights5]: highlights5.jpg
+[highlights5]: WWDC22-10035-highlights5
 
 Let's call it `presentLookAroundEmbedded`. And import it to code so we can update its visibility later.
 
@@ -863,7 +863,7 @@ Let's name it "preview." Here, we already have a LookAroundViewController declar
 
 ![highlights][highlights6]
 
-[highlights6]: highlights6.jpg
+[highlights6]: WWDC22-10035-highlights6
 
 
 Make sure the segue identifier is matched.
@@ -948,7 +948,7 @@ If there is no error but we get nil for the scene, it means Look Around data is 
 
 ![look around preview][last]
 
-[last]: last.jpg
+[last]: WWDC22-10035-last
 
 
 # Check out also 

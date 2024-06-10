@@ -25,7 +25,7 @@ Learn how to design engaging immersive experiences for visionOS that respect the
 
 ![Diagram illustrating the convergence of the eyes on an image][Eyes_Converge]
 
-[Eyes_Converge]: Eyes_Converge.jpeg
+[Eyes_Converge]: WWDC23-10078-Eyes_Converge
 
 ## How to use image cues to maintain vision comfort   
 - Color perception helps us recognize familiar size cues   
@@ -36,7 +36,7 @@ Learn how to design engaging immersive experiences for visionOS that respect the
 
 ![Lime picture with a variety of depth clues][Depth_Cues]
 
-[Depth_Cues]: Depth_Cues.jpeg
+[Depth_Cues]: WWDC23-10078-Depth_Cues
 
 ### Conflicting cues are troublesome   
 - Correct visual cues that can be confusing, like repeating patterns   
@@ -44,7 +44,7 @@ Learn how to design engaging immersive experiences for visionOS that respect the
 
 ![Suggestions for patterns display][Patterns]
 
-[Patterns]: Patterns.jpeg
+[Patterns]: WWDC23-10078-Patterns
 
 > **Warning**
 > If you decide to create stereo video content manually, it is extremely important to have the correct depth cues and also the correct disparity for each eye   
@@ -63,7 +63,7 @@ Learn how to design engaging immersive experiences for visionOS that respect the
 
 ![Do's and don'ts for fonts and window sizes][Font_Window_Size]
 
-[Font_Window_Size]: Font_Window_Size.png
+[Font_Window_Size]: WWDC23-10078-Font_Window_Size
   
 - When a large portion of the field of view is dark, slow down the transition to a bright scene to give time to the eye for brightness adaptation   
 
@@ -73,7 +73,7 @@ Learn how to design engaging immersive experiences for visionOS that respect the
 
 ![Comfort versus effort in eye direction][Eye_Effort]
 
-[Eye_Effort]: Eye_Effort.jpeg
+[Eye_Effort]: WWDC23-10078-Eye_Effort
  
 - Content requiring extended reading or elongated target fixations should be placed towards the center and slightly below line of sight   
 - Design for natural breaks in your experience to allow the person's eyes to rest   
@@ -106,7 +106,7 @@ If head-locked views are necessary:
 
 ![The focus of expansion is the point where all the pixels appear to be coming from][Focus_Expansion]
 
-[Focus_Expansion]: Focus_Expansion.jpeg
+[Focus_Expansion]: WWDC23-10078-Focus_Expansion
  
 - If possible, use plain textures with low luminance contrast   
 

@@ -351,7 +351,7 @@ print(kernelVersion())
 * Use `UnsafeBufferPointer` for memory buffers.
 * Test with the sanitizers.
 
-[memory]: memory.png
-[address_sanitizer]: address_sanitizer.png
-[c_pointers_mapping]: c_pointers_mapping.png
-[value_to_pointer]: value_to_pointer.png
+[memory]: WWDC20-10648-memory
+[address_sanitizer]: WWDC20-10648-address_sanitizer
+[c_pointers_mapping]: WWDC20-10648-c_pointers_mapping
+[value_to_pointer]: WWDC20-10648-value_to_pointer

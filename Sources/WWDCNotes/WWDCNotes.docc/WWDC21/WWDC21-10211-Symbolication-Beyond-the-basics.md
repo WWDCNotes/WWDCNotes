@@ -622,7 +622,7 @@ If you don't have the `get-task-allow` entitlement enabled, you should check you
 - limited to 4GB
 - consider splitting the project into separate components/modules so that each one has its own smaller dSYM
 
-[diskSpace]: diskSpace.png
-[functionStarts]: functionStarts.png
-[stripXcode]: stripXcode.png
-[dwarfBinary]: dwarfBinary.png
+[diskSpace]: WWDC21-10211-diskSpace
+[functionStarts]: WWDC21-10211-functionStarts
+[stripXcode]: WWDC21-10211-stripXcode
+[dwarfBinary]: WWDC21-10211-dwarfBinary

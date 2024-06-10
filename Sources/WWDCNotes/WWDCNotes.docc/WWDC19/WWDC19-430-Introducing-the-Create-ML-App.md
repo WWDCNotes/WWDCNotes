@@ -115,9 +115,9 @@ The session goes on and shows how to train a flower recognizer, it skips some st
 > It goes without saying, but all is mentioned here run on devices in their Neural Engine: no cpu and gpu wasted on these (only if you have a A12 or S4 device, earlier devices will run CoreML in the GPU instead).
 
 
-[appIconImage]: appIcon.jpg
-[modelsImage]: models.png
-[classifyImage]: classify.png
-[detectImage]: detect.png
-[soundImage]: sound.png
-[activityImage]: activity.png
+[appIconImage]: WWDC19-430-appIcon
+[modelsImage]: WWDC19-430-models
+[classifyImage]: WWDC19-430-classify
+[detectImage]: WWDC19-430-detect
+[soundImage]: WWDC19-430-sound
+[activityImage]: WWDC19-430-activity

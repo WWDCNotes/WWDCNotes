@@ -60,6 +60,6 @@ Explore the latest updates to SF Symbols, Apple’s extensive library of iconogr
 ![](https://user-images.githubusercontent.com/6942160/172727088-29b09c94-470a-4f25-803e-c3889b7f1445.png)
 
 
-[gif1]: speaker.gif
-[gif2]: mic.gif
-[gif3]: text.gif
+[gif1]: WWDC22-10157-speaker
+[gif2]: WWDC22-10157-mic
+[gif3]: WWDC22-10157-text

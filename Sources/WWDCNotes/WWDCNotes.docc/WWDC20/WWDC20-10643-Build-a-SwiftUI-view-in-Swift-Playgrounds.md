@@ -44,4 +44,4 @@ PlaygroundPage.current.setLiveView(WWDCNotesView())
 
 [psDoc]: https://developer.apple.com/documentation/playgroundsupport
 
-[startingPointsImage]: startingPoints.png
+[startingPointsImage]: WWDC20-10643-startingPoints

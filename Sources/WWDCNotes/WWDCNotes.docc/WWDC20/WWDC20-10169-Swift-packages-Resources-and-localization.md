@@ -82,5 +82,5 @@ let package = Package(
 - no need to declare the `.lproj` in the package manifest
 - localized resources within the assets catalog are also supported
 
-[clearResourcesImage]: clearResources.png
-[ambiguousResourcesImage]: ambiguousResources.png
+[clearResourcesImage]: WWDC20-10169-clearResources
+[ambiguousResourcesImage]: WWDC20-10169-ambiguousResources

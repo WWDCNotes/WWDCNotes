@@ -236,15 +236,15 @@ For more information, refer to the [`What's New with in App Purchases`][20-10661
 [appTrackDoc]: https://developer.apple.com/documentation/apptrackingtransparency
 [skAdDoc]: https://developer.apple.com/documentation/storekit/skadnetwork
 
-[photoAccessImage]: photoAccess.png
-[locationAccessImage]: locationAccess.png
-[tempImage]: temp.png
-[contactsAutoFillImage]: contactsAutoFill.png
-[dataUsageImage]: dataUsage.png
-[trackMeImage]: trackMe.png
-[pasteboardImage]: pasteboard.png
-[indicatorStatusBarImage]: indicatorStatusBar.png
-[networkImage]: network.png
-[safariExtImage]:  safariExt.png
-[trackTranspImage]: trackTransp.png
-[dontTrackImage]: dontTrack.png
+[photoAccessImage]: WWDC20-10676-photoAccess
+[locationAccessImage]: WWDC20-10676-locationAccess
+[tempImage]: WWDC20-10676-temp
+[contactsAutoFillImage]: WWDC20-10676-contactsAutoFill
+[dataUsageImage]: WWDC20-10676-dataUsage
+[trackMeImage]: WWDC20-10676-trackMe
+[pasteboardImage]: WWDC20-10676-pasteboard
+[indicatorStatusBarImage]: WWDC20-10676-indicatorStatusBar
+[networkImage]: WWDC20-10676-network
+[safariExtImage]:  WWDC20-10676-safariExt
+[trackTranspImage]: WWDC20-10676-trackTransp
+[dontTrackImage]: WWDC20-10676-dontTrack

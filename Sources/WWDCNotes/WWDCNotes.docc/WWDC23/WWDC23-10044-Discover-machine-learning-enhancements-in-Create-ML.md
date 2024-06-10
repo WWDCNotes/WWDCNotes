@@ -26,14 +26,14 @@ Training a large-scale model from scratch can take thousands of hours, millions 
 
 ![Search experience in the Photos app and Custom Sound Recognition in Accessibility][machineLearning]  
 
-[machineLearning]: machineLearning.jpg
+[machineLearning]: WWDC23-10044-machineLearning
 
 
 Create ML gives you access to our latest technology so you can build your own custom machine learning experiences, without the hassle. 
 
 ![Search experience in the Photos app and Custom Sound Recognition in Accessibility][machineLearning2]  
 
-[machineLearning2]: machineLearning2.jpg
+[machineLearning2]: WWDC23-10044-machineLearning2
 
 # Create ML improvements
 ## Text Classification 
@@ -42,31 +42,31 @@ A text classifier is a machine learning task designed to recognize patterns in n
 
 ![textClassifier][textClassifier]  
 
-[textClassifier]: textClassifier.jpg
+[textClassifier]: WWDC23-10044-textClassifier
 
 You can choose the transfer-learning algorithm that uses a pre-trained embedding model as a feature extractor. 
 
 ![textClassifier][textClassifier2]  
 
-[textClassifier2]: textClassifier2.jpg
+[textClassifier2]: WWDC23-10044-textClassifier2
 
 This year, we designed a new embedding model and trained it on billions of labeled text examples. It's a bidirectional encoder representations from transformers model, or BERT for short. 
 
 ![textClassifier][textClassifier3]  
 
-[textClassifier3]: textClassifier3.jpg
+[textClassifier3]: WWDC23-10044-textClassifier3
 
 You can find the new option in the Create ML app in the model parameters section of the Settings tab. 
 
 ![textClassifier][textClassifier4]  
 
-[textClassifier4]: textClassifier4.jpg
+[textClassifier4]: WWDC23-10044-textClassifier4
 
 The BERT embedding model is multilingual, which means your training data can now contain more than just one language. 
 
 ![textClassifier][textClassifier5]  
 
-[textClassifier5]: textClassifier5.jpg
+[textClassifier5]: WWDC23-10044-textClassifier5
 
 On top of supporting multilingual text classifiers, BERT can also boost the accuracy of your monolingual text classifiers.
 
@@ -82,19 +82,19 @@ The image classifier in Create ML is designed to help you build models to answer
 
 ![Image Classification Task][imageClassification]  
 
-[imageClassification]: imageClassification.jpg
+[imageClassification]: WWDC23-10044-imageClassification
 
 Similar to the text classifier, the image classifier leverages a pre-trained model to extract relevant information from images. 
 
 ![Image Classification Task][imageClassification2]  
 
-[imageClassification2]: imageClassification2.jpg
+[imageClassification2]: WWDC23-10044-imageClassification2
 
 The latest version of the Apple Neural Scene Analyzer is now available to you for building state-of-the-art models with very little training data. 
 
 ![Image Classification Task][imageClassification3]  
 
-[imageClassification3]: imageClassification3.jpg
+[imageClassification3]: WWDC23-10044-imageClassification3
 
 Image understanding models in the OS continue to evolve to give you the best possible experience. You can find out more by checking out our article on the machine learning research website. 
 
@@ -104,7 +104,7 @@ In the Create ML app, you'll notice a new feature extractor option in the model 
 
 ![Image Classification Task][imageClassification4]  
 
-[imageClassification4]: imageClassification4.jpg
+[imageClassification4]: WWDC23-10044-imageClassification4
 
 The new feature extractor has a smaller output embedding size when compared to our previous version. On top of general improvements, this can boost the accuracy of your classifier, lead to faster training time, and reduce the memory needed to store the extracted features. 
 
@@ -114,25 +114,25 @@ For example, you might describe this image as dog or maybe outdoors. But you nee
 
 ![Image Classification Task][imageClassification5]  
 
-[imageClassification5]: imageClassification5.jpg
+[imageClassification5]: WWDC23-10044-imageClassification5
 
 If you're interested in objects, then you can use the object detector to locate objects within a scene. For example, I've drawn a bounding box around the dog and another one around the ball. 
 
 ![Image Classification Task][imageClassification6]  
 
-[imageClassification6]: imageClassification6.jpg
+[imageClassification6]: WWDC23-10044-imageClassification6
 
 Now, this is great, but I'm also interested in the scene that the objects are in. I can't really draw a bounding box to represent that the dog is in a park or outdoors. That's where the new multi-label image classifier comes in. It allows you to predict a set of objects, attributes, or labels for your images. For example this image contains a dog, toy, grass, and park.
 
 ![Image Classification Task][imageClassification7]  
 
-[imageClassification7]: imageClassification7.jpg
+[imageClassification7]: WWDC23-10044-imageClassification7
 
 Let's go build one using Create ML. As usual, the first thing I'll need to do is collect some training data. I decided to have a bit of fun and build a classifier that detects multiple succulent plants in different scenes. For example, here I have an image of Haworthia, Jade, and Aloe in pots on a window sill. 
 
 ![Image Classification Task][imageClassification8]  
 
-[imageClassification8]: imageClassification8.jpg
+[imageClassification8]: WWDC23-10044-imageClassification8
 
 In the next image, I have a person holding a cactus in a pot. While collecting training images, it's also okay to include some images that only have a single label, like a photo of just aloe. You'll need to organize your annotations in a JSON file. All you need to do is annotate each file with a set of annotations.
 ```swift
@@ -157,7 +157,7 @@ Now, let me give you a demo of building a model in the Create ML app. In the Cre
 
 ![Image Classification Task][imageClassification9]  
 
-[imageClassification9]: imageClassification9.jpg
+[imageClassification9]: WWDC23-10044-imageClassification9
 
 
 And create a project named Succulent Classifier.
@@ -166,13 +166,13 @@ This takes me to the Settings tab. To start, I'll drag in my training data, whic
 
 ![Image Classification Task][imageClassification10]  
 
-[imageClassification10]: imageClassification10.jpg
+[imageClassification10]: WWDC23-10044-imageClassification10
 
 I also have the option to drag in validation data, but I'll choose to randomly split the training data for now. I'll use the default number of iterations and also leave out augmentations. I'm done setting up my model, so I'll go ahead and click Train.
 
 ![Image Classification Task][imageClassification11]  
 
-[imageClassification11]: imageClassification11.jpg
+[imageClassification11]: WWDC23-10044-imageClassification11
 
 This model takes only a few minutes to train on my Mac. Right away, the model starts extracting features using the new feature extractor that I introduced earlier. Once that's finished, the app starts to train a classifier. During the training process, the app measures the quality of my model by computing a mean-average precision score, or MAP for short. In general, I want to maximize the MAP score because that means my model has both a higher precision and a higher recall on average for all of the labels in my dataset. My model finished training and converged early at 74 iterations, with an MAP score of 97% on the training set and 93% on the validation set. The next step is to evaluate my model on test data.
 
@@ -180,7 +180,7 @@ I'll drag a folder in from my desktop and click the Test button.
 
 ![Image Classification Task][imageClassification12]  
 
-[imageClassification12]: imageClassification12.jpg
+[imageClassification12]: WWDC23-10044-imageClassification12
 
 The test data should contain the same set of class labels that I used to train my model. 
 
@@ -189,14 +189,14 @@ The app calculated a few high-level statistics, like the MAP Score and which cla
 
 ![Image Classification Task][imageClassification13]  
 
-[imageClassification13]: imageClassification13.jpg
+[imageClassification13]: WWDC23-10044-imageClassification13
 
 
 The app calculates metrics for each class label, like False Positives, False Negatives, Precision, Recall, and Confidence Threshold. When making predictions with my model, a prediction is correct if the confidence is above the threshold for a given class label. Let's explore the images that the model predicted above the confidence threshold for aloe. Now I'll click on an example.
 
 ![Image Classification Task][imageClassification14]  
 
-[imageClassification14]: imageClassification14.jpg
+[imageClassification14]: WWDC23-10044-imageClassification14
 
 
 The model predicted that this image contains aloe with a 90% confidence, which is above the aloe confidence threshold of 40%. For other labels, the model predicted a confidence below their respective thresholds. In other words, the model did not predict them. Next, I want to explore images that my model did not predict aloe but are labeled as aloe. I can do that by selecting the False Negatives result type.
@@ -204,7 +204,7 @@ The model predicted that this image contains aloe with a 90% confidence, which i
 
 ![Image Classification Task][imageClassification15]  
 
-[imageClassification15]: imageClassification15.jpg
+[imageClassification15]: WWDC23-10044-imageClassification15
 
 
 This image is interesting. Let's explore further. Here, the aloe is behind the barrel cactus and the moon cactus, so the model has a hard time predicting aloe. But the good news is that the model predicts two other labels correctly. Next, I'll head over to the Preview tab.
@@ -213,7 +213,7 @@ This is where I can preview my model predictions on images that I haven't labele
 
 ![Image Classification Task][imageClassification16]  
 
-[imageClassification16]: imageClassification16.jpg
+[imageClassification16]: WWDC23-10044-imageClassification16
 
 
 Nailed it. My model correctly predicted my moon cactus, bunny ears cactus, and barrel cactus in my kitchen. I'm pretty happy with the quality of my model, but I'll definitely continue experimenting to understand my model's limitations as well as adding more succulents and scenes to my dataset. For now, let's move on. From the Output tab, I can save the model that I trained to disk.
@@ -246,14 +246,14 @@ Before I move on, I want to take a moment and mention that, similar to our image
 
 ![Image Classification Task][imageClassification17]  
 
-[imageClassification17]: imageClassification17.jpg
+[imageClassification17]: WWDC23-10044-imageClassification17
 
 ## Data Augmentation 
 To get a model that generalizes well, the images in your training set should have a variety of characteristics like different lighting conditions, orientations, and backgrounds. But capturing and labeling training images in different situations can be time-consuming. Data augmentation is a technique that generates new training examples from your existing ones by applying transformations. 
 
 ![Data Augmentation][dataAugmentation]  
 
-[dataAugmentation]: dataAugmentation.jpg
+[dataAugmentation]: WWDC23-10044-dataAugmentation
 
 In the case of images, the transformations can be horizontal or vertical flipping, cropping, or contrast, just to name a few. In this example, I start with an image of a succulent and generate four variations. And transformations can be combined, like flipping and increasing the contrast. Augmentations can **boost the quality of your model**, especially when you have a small training data set. You can use them to **improve your model's generalization** because it prevents your model from learning attributes like the exact location of an object in a scene. However, it's important to consider that **training is usually slower** because feature extraction happens at each training iteration. 
 
@@ -267,7 +267,7 @@ We designed the framework to help you build custom machine learning models using
 
 ![Data Augmentation][augmenter]  
 
-[augmenter]: augmenter.jpg
+[augmenter]: WWDC23-10044-augmenter
 
 
 If you have experience with SwiftUI, this may be familiar to you. The first step is to create an augmenter. Similar to SwiftUI, the augmenter uses result builders.
@@ -311,7 +311,7 @@ In order to build a robust classifier, it's important to capture your training i
 
 ![Data Augmentation][augmenter2]  
 
-[augmenter2]: augmenter2.jpg
+[augmenter2]: WWDC23-10044-augmenter2
 
 I'll start by defining a RandomImageBackground. It conforms to a new protocol, RandomTransformer, which is similar to a transformer but takes a random number generator.  
 Since I want my augmentations to place succulents randomly with different background scenes, I'll create an initializer that takes background images. To conform to the RandomTransformer protocol, I'll need to implement the applied method.
@@ -378,7 +378,7 @@ When using augmentations it makes more sense to train progressively using the up
 
 ![Data Augmentation][augmenter3]  
 
-[augmenter3]: augmenter3.jpg
+[augmenter3]: WWDC23-10044-augmenter3
 
 With that in mind, let's go through an example of training using augmentations. And I won't hold back: I'll also incorporate batching, randomization, and early stopping. I'll start by creating an empty image classifier model. Then I'll create a training loop.
 ```swift
@@ -403,7 +403,7 @@ I selected 100 iterations, but ideally you should stop training when the validat
 
 ![Data Augmentation][augmenter4]  
 
-[augmenter4]: augmenter4.jpg
+[augmenter4]: WWDC23-10044-augmenter4
 
 This means that the model is memorizing the training data, making it less generalizable to new data and performing worse on validation and test data. Continuing training after this is detrimental. As a final example, I'll add early stopping to the training loop. After the update step, you can compute validation metrics. I'm using validation accuracy to stop training early, which works for classifier models. But that is really up to you. You can use validation loss or even design your own metric to assess the quality of your model.
 ```swift

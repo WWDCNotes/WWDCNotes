@@ -129,15 +129,15 @@ task.taskIdentifier // 👈🏻 this identifier will be shown in instruments
 - Adopt latest networking protocols
 - Audit your app requests to check if can send less information
 
-[8]: 8.png
-[11]: 11.png
-[12]: 12.png
-[13]: 13.png
-[14]: 14.png
-[15]: 15.png
-[16]: 16.png
-[17]: 17.png
-[18]: 18.png
-[19]: 19.png
+[8]: WWDC21-10212-8
+[11]: WWDC21-10212-11
+[12]: WWDC21-10212-12
+[13]: WWDC21-10212-13
+[14]: WWDC21-10212-14
+[15]: WWDC21-10212-15
+[16]: WWDC21-10212-16
+[17]: WWDC21-10212-17
+[18]: WWDC21-10212-18
+[19]: WWDC21-10212-19
 
 [taskIdentifier]: https://developer.apple.com/documentation/foundation/nsurlsessiontask/1411231-taskidentifier

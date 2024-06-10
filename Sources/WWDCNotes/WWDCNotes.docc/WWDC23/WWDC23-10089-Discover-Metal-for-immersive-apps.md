@@ -37,7 +37,7 @@ RecRoom is a great example of an application that provides a fully immersive exp
 
 ![RecRoom][recRoom]  
 
-[recRoom]: recRoom.jpg
+[recRoom]: WWDC23-10089-recRoom
 
 They were able to bring support to all these technologies thanks to the Unity editor. 
 
@@ -49,7 +49,7 @@ we'll get the most out of today's session if we have previous experience with Me
 
 ![Metal][metal]  
 
-[metal]: metal.jpg
+[metal]: WWDC23-10089-metal
 
 When we create immersive experiences on xrOS with Metal, we'll start with SwiftUI to create the application and the rendering session.
 
@@ -63,7 +63,7 @@ The window type provides an experience similar to 2D platforms like macOS. The v
 
 ![Metal][metal1]  
 
-[metal1]: metal1.jpg
+[metal1]: WWDC23-10089-metal1
 
 Whenever we render fully immersive experiences with Metal, we will choose the ImmersiveSpace type.
 
@@ -84,13 +84,13 @@ When we create an ImmersiveSpace scene, our application provides the content by 
 
 ![Metal][metal2]  
 
-[metal2]: metal2.jpg
+[metal2]: WWDC23-10089-metal2
 
 It uses CoreAnimation and MaterialX under the hood. But we canuse the power of Metal to render the content of our application.
 
 ![Metal][metal3]  
 
-[metal3]: metal3.jpg
+[metal3]: WWDC23-10089-metal3
 
 ## CompositorServices API
 - Metal rendering interface
@@ -107,7 +107,7 @@ To create a CompositorLayer we will need to provide two parameters. The first on
 
 ![Metal][metal4]  
 
-[metal4]: metal4.jpg
+[metal4]: WWDC23-10089-metal4
 
 This is the interface to the layer rendering session. our application will use this object to schedule and render new frames.
 
@@ -147,7 +147,7 @@ If we are using a space with a Compositor SpaceContent, we will use CPSceneSessi
 
 ![Metal][metal5]  
 
-[metal5]: metal5.jpg
+[metal5]: WWDC23-10089-metal5
 
 # Render configuration
 
@@ -163,7 +163,7 @@ And the second parameter is the LayerRenderer Configuration.This type defines th
 
 ![Metal][metal6]  
 
-[metal6]: metal6.jpg
+[metal6]: WWDC23-10089-metal6
 
 ## Render with foveation
 
@@ -171,13 +171,13 @@ The main goal of foveated rendering is to allow we to render content at a higher
 
 ![Metal][metal7]  
 
-[metal7]: metal7.jpg
+[metal7]: WWDC23-10089-metal7
 
 xrOS optimizes this workflow by creating a map that defines what regions in a display can use a lower sampling rate.
 
 ![Metal][metal8]  
 
-[metal8]: metal8.jpg
+[metal8]: WWDC23-10089-metal8
 
 This helps reduce the power required to render our frame while maintaining the visual fidelity of the display. Using foveation whenever possible is important, as it will result in a better visual experience.
 
@@ -187,7 +187,7 @@ This capture shows the contents of the texture without scaling for the rasteriza
 
 ![Metal][metal9]  
 
-[metal9]: metal9.jpg
+[metal9]: WWDC23-10089-metal9
 
 we can notice the different sample rates by focusing in the regions of the texture that are more compressed.With the attachment viewer options in Metal Debugger, we can scale the image to visualize the final result that the display will show. Compositor provides the foveation map using an MTLRasterizationRateMap for each frame.
 
@@ -217,7 +217,7 @@ Each eye first maps into a Metal texture provided by Compositor. Then Compositor
 
 ![Metal][metal10]  
 
-[metal10]: metal10.jpg
+[metal10]: WWDC23-10089-metal10
 
 And finally, Compositor provides the viewport to use within that texture slice. The LayerRenderer lawet lets we choose different mappings between the texture slice and viewport. 
 
@@ -229,7 +229,7 @@ And finally, Compositor provides the viewport to use within that texture slice. 
 
 ![Metal][metal11]  
 
-[metal11]: metal11.jpg
+[metal11]: WWDC23-10089-metal11
 
 Choosing which lawet to use will depend on how we set up our rendering pipeline. For example, with layered and shared, we will be able to perform our rendering in one single pass, so we can optimize our rendering pipeline.
 
@@ -253,7 +253,7 @@ That is two times the SDR range. By default, Compositor does not use a pixel for
 
 ![Metal][metal12]  
 
-[metal12]: metal12.jpg
+[metal12]: WWDC23-10089-metal12
 
 If we want to know more about how to render HDR with EDR, checkout the session:
 
@@ -320,7 +320,7 @@ And once that frame is rendered, check the layer state again before rendering th
 
 ![Metal][metal13]  
 
-[metal13]: metal13.jpg
+[metal13]: WWDC23-10089-metal13
 
 Now, it's time to define the main function of the render_loop.
 ```swift
@@ -396,7 +396,7 @@ The second section of the frame is the submission section. Here's where we will 
 
 ![Metal][metal14]  
 
-[metal14]: metal14.jpg
+[metal14]: WWDC23-10089-metal14
 
 In order to define the timing for each of those sections, Compositor provides a timing object. This diagram defines how the timing affects the different frame sections. The CPU and GPU tracks represent the work that is being done by our application. And the Compositor track represents the work done by the Compositor server to display our frame. The timing type from Compositor Services defines three main time values. First is the optimal input time. That is the best time to query the latency-critical input and start rendering our frame. Second is the rendering deadline. That is the time by when our CPU and GPU work to render a frame should be finished. And third is presentation time. That is the time when our frame will be presented on display.
 
@@ -404,7 +404,7 @@ In the two sections of our frame, The update section should happen before the op
 
 ![Metal][metal15]  
 
-[metal15]: metal15.jpg
+[metal15]: WWDC23-10089-metal15
 
 Back to the render loop code, it's time to define the render_new_frame function. In our engine's render_new_frame function, we will first query a frame from the layerRenderer. With the frame object, we will be able to predict the timing information. Use that timing information to scope the update and submit intervals.
 
@@ -476,7 +476,7 @@ In order to make the experience interactive, we'll first gather the user input a
 
 ![Metal][metal16]  
 
-[metal16]: metal16.jpg
+[metal16]: WWDC23-10089-metal16
 
 There are two main input sources, the LayerRenderer and the ARKit HandTracking provider. With the LayerRenderer, we will get updates every time the application receives a pinch event. These updates are exposed in the form of spatial events. These events contains three main properties. The phase will tell we if the event is active, if it finished, or if it got canceled. The selection ray will allow we to determine the content of the scene that had the attention when the event began. And the last event property is the manipulator pose. This is the pose of the pinch and gets updated every frame for the duration of the event. From the HandTracking API, we will be able to get skeleton for both the left and right hands.
 

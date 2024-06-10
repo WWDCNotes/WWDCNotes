@@ -164,6 +164,6 @@ OBJC_TAG_7                 = 7
 - thanks to this change and how arm pointers are read, a tagged pointer can contain a normal pointer in its payload
 - this opens up the ability for a tagged pointer to refer to constant data in your binary such as strings or other data structures that would otherwise have to occupy dirty memory
 
-[cod]: cod.png
-[cim]: cim.png
-[cim2]: cim2.png
+[cod]: WWDC20-10163-cod
+[cim]: WWDC20-10163-cim
+[cim2]: WWDC20-10163-cim2

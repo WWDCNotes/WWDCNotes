@@ -32,4 +32,4 @@ Pitch measures the frequency characteristics, voicing determine voiced regions (
 Basically can measure if the person is active or tired, length of pauses.
 
 
-[Image]: image.png
+[Image]: WWDC19-256-image

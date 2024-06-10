@@ -236,32 +236,32 @@ You can also add the certificate by visually dragging it onto the Simulator wind
 
 You can do a lot of other things with the keychain utility, such as clearing passwords. For more information, check the help pages.
 
-[overview]: overview.jpeg
+[overview]: WWDC20-10647-overview
 
-[push_notification]: push_notification.jpeg
+[push_notification]: WWDC20-10647-push_notification
 
-[full_screen]: full_screen.jpeg
+[full_screen]: WWDC20-10647-full_screen
 
-[ipad_pointer]: ipad_pointer.jpeg
+[ipad_pointer]: WWDC20-10647-ipad_pointer
 
-[preferences]: preferences.jpeg
+[preferences]: WWDC20-10647-preferences
 
-[device_features]: device_features.jpeg
+[device_features]: WWDC20-10647-device_features
 
-[new_simulator]: new_simulator.jpeg
+[new_simulator]: WWDC20-10647-new_simulator
 
-[physical_size]: physical_size.jpeg
+[physical_size]: WWDC20-10647-physical_size
 
-[point_accurate]: point_accurate.jpeg
+[point_accurate]: WWDC20-10647-point_accurate
 
-[point_accurate_detail]: point_accurate_detail.jpeg
+[point_accurate_detail]: WWDC20-10647-point_accurate_detail
 
-[pixel_accurate]: pixel_accurate.jpeg
+[pixel_accurate]: WWDC20-10647-pixel_accurate
 
-[pixel_accurate_detail]: pixel_accurate_detail.jpeg
+[pixel_accurate_detail]: WWDC20-10647-pixel_accurate_detail
 
-[normal_status_bar]: normal_status_bar.jpeg
+[normal_status_bar]: WWDC20-10647-normal_status_bar
 
-[modified_status_bar]: modified_status_bar.jpeg
+[modified_status_bar]: WWDC20-10647-modified_status_bar
 
-[trust_certificate]: trust_certificate.jpeg
+[trust_certificate]: WWDC20-10647-trust_certificate

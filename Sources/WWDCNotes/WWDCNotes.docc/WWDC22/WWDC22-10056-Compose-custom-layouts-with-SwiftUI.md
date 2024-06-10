@@ -251,8 +251,8 @@ var body: some View {
 }
 ```
 
-[leaderboard]: leaderboard.png
-[buttons]: buttons.png
+[leaderboard]: WWDC22-10056-leaderboard
+[buttons]: WWDC22-10056-buttons
 
 [viewthatfits]: https://developer.apple.com/documentation/swiftui/viewthatfits
 [anylayout]: https://developer.apple.com/documentation/swiftui/anylayout

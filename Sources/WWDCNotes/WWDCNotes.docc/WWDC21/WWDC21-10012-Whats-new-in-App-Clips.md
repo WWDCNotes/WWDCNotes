@@ -66,5 +66,5 @@ $ AppClipCodeGenerator generate --type nfc --url https://fruta.example --index 4
 - make the code at least one-inch wide
 - ensure good visibility: the code shouldn't be blocked, damaged, or placed too close to other codes
 
-[appClipSafari]: appClipSafari.png
+[appClipSafari]: WWDC21-10012-appClipSafari
 [resources]: https://developer.apple.com/app-clips/resources/

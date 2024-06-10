@@ -191,6 +191,6 @@ Above only applies when you set followsUndockedKeyboard to true.
 	- If you collapse it into a small launch button, it can be moved around so it can be `.near` the leading or trailing edge.
 
 
-[10259-example-default-keyboard-with-top-actions]: 10259-example-default-keyboard-with-top-actions.png
-[10259-top-actions-move-to-bottom]: 10259-top-actions-move-to-bottom.png
-[10259-content-shifts-left]: 10259-content-shifts-left.png
+[10259-example-default-keyboard-with-top-actions]: WWDC21-10259-10259-example-default-keyboard-with-top-actions
+[10259-top-actions-move-to-bottom]: WWDC21-10259-10259-top-actions-move-to-bottom
+[10259-content-shifts-left]: WWDC21-10259-10259-content-shifts-left

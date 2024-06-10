@@ -82,6 +82,6 @@ All the `CHHApticEvents`, are then grouped into **Haptic Patterns**, [`CHHapticP
 [CHHPDocs]: https://developer.apple.com/documentation/corehaptics/chhapticpattern
 [AHAPDocs]: https://developer.apple.com/documentation/corehaptics/representing_haptic_patterns_in_ahap_files
 
-[chVSfgImage]: chVSfg.png
-[devicesImage]: devices.png
-[classesImage]: classes.png
+[chVSfgImage]: WWDC19-520-chVSfg
+[devicesImage]: WWDC19-520-devices
+[classesImage]: WWDC19-520-classes

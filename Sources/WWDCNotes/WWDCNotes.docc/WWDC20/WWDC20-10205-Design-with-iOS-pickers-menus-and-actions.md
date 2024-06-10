@@ -67,14 +67,14 @@ Tapping on that key would present the date/time picker in a modal style
   
 * Picked colors are saved for the user to use them across apps
 
-[image-1]:	menu_constructs.png
-[image-2]:	no_menu_cancel.png
-[image-3]:	grouping_all_actions.png
-[image-4]:	not_grouping_all_actions.png
-[image-5]:	destructive_confirmation.png
-[image-6]:	uidatepicker.png
-[image-7]:	date_time_picker_compact.png
-[image-8]:	uicolorpicker.png
+[image-1]:	WWDC20-10205-menu_constructs
+[image-2]:	WWDC20-10205-no_menu_cancel
+[image-3]:	WWDC20-10205-grouping_all_actions
+[image-4]:	WWDC20-10205-not_grouping_all_actions
+[image-5]:	WWDC20-10205-destructive_confirmation
+[image-6]:	WWDC20-10205-uidatepicker
+[image-7]:	WWDC20-10205-date_time_picker_compact
+[image-8]:	WWDC20-10205-uicolorpicker
 
 [UIDatePickerDoc]: https://developer.apple.com/documentation/uikit/uidatepicker
 [colorPickerDoc]: https://developer.apple.com/documentation/uikit/uicolorpickerviewcontroller

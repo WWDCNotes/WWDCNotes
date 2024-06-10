@@ -36,7 +36,7 @@ The Console allows you to test many types of notifications and different attribu
 
 ![Send Notification][consolesendnotification]
 
-[consolesendnotification]: consolesendnotification.png
+[consolesendnotification]: WWDC23-10025-consolesendnotification
 
 ## Delivery Log
 
@@ -46,7 +46,7 @@ As a notification travels through the APNs stack the events that reflect its del
 
 ![apns-unique-id][uniqueid]
 
-[uniqueid]: uniqueid.png
+[uniqueid]: WWDC23-10025-uniqueid
 
 For example, you can identify a push notification was not yet delivered because the device has enabled Low Power mode.
 
@@ -54,7 +54,7 @@ Or notification can go to APNs storage if the device is offline or can be discar
 
 ![Delivery Log][deliverylog]
 
-[deliverylog]: deliverylog.png
+[deliverylog]: WWDC23-10025-deliverylog
 
 ## Generate JWT
 
@@ -62,7 +62,7 @@ Token-based authentication uses JSON Web Tokens for secure and efficient authent
 
 ![Generate JWT][jwtgenerator]
 
-[jwtgenerator]: jwtgenerator.png
+[jwtgenerator]: WWDC23-10025-jwtgenerator
 
 You can then use it to authenticate your requests against APNs. Keep in mind that the validity period of these tokens can not exceed one hour, so they need to be rotated periodically.
 
@@ -72,7 +72,7 @@ If you already have a token, but think it might not be working, you can validate
 
 ![Validate JWT][jwtvalidation]
 
-[jwtvalidation]: jwtvalidation.png
+[jwtvalidation]: WWDC23-10025-jwtvalidation
 
 In the example above the validation result is telling me that the “issued at” claim is too old, which effectively means that the token has expired.
 
@@ -84,4 +84,4 @@ When you enter a token, you will get a response that will tell you which environ
 
 ![Validate Device Token][devicetokenvalidation]
 
-[devicetokenvalidation]: devicetokenvalidation.png
+[devicetokenvalidation]: WWDC23-10025-devicetokenvalidation

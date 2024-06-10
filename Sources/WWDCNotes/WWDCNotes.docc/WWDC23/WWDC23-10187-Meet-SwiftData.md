@@ -26,7 +26,7 @@ SwiftData is a powerful and expressive persistence framework built for Swift. We
 
 ![SwiftData Logo][SwiftData]  
 
-[SwiftData]: SwiftData.jpg
+[SwiftData]: WWDC23-10187-SwiftData
 
 # Intro
 
@@ -322,7 +322,7 @@ Learn more about using these frameworks together in our session:
 
 ![SwiftData Logo][SwiftData2]  
 
-[SwiftData2]: SwiftData2.jpg
+[SwiftData2]: WWDC23-10187-SwiftData2
 
 ## Resources
 

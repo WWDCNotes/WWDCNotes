@@ -69,5 +69,5 @@ Videos can be cropped and rotated in the preview (if we enable so).
 [documentBrowserDoc]: https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller
 [thuDoc]: https://developer.apple.com/documentation/quicklookthumbnailing
 
-[beforeImage]: before.png
-[afterImage]: after.png
+[beforeImage]: WWDC19-719-before
+[afterImage]: WWDC19-719-after

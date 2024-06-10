@@ -22,18 +22,18 @@ There is a new framework: Swift Charts. Swift Charts is a flexible framework for
 
 ![Swift Charts][charts1]  
 
-[charts1]: charts1.jpg
+[charts1]: WWDC22-10136-charts1
 
 Introducing the sample app about a pop-up pancake food truck sales.
 ![The sample app][truck1]  
 
-[truck1]: truck1.jpg
+[truck1]: WWDC22-10136-truck1
 
 The truck serves an international variety of sweet and savory pancakes like cachapa, injera, crêpe, jian bing, dosa, or American pancakes.
 
 ![The sample app][truck2]  
 
-[truck2]: truck2.jpg
+[truck2]: WWDC22-10136-truck2
 
 The food truck served more than 4500 pancakes across these styles in the last 30 days. Cachapa were the most popular and the app already shows the most important information in the title.
 
@@ -43,7 +43,7 @@ In Swift Charts, we build charts by composition. The main components of a bar ch
 
 ![Swift Charts][charts2]  
 
-[charts2]: charts2.jpg
+[charts2]: WWDC22-10136-charts2
 
 ## Chart
 
@@ -76,7 +76,7 @@ struct StylesDetailsChart: View {
 
 ![Swift Charts][charts3]  
 
-[charts3]: charts3.jpg
+[charts3]: WWDC22-10136-charts3
 
 The height of each bar described by the y attribute should be set by the number of cachapas sold, which were 916. To indicate that we're not setting the position or height of the bar directly, we use .value. Swift Charts automatically creates not only the bar but also a label for the bars on the x-axis and a y-axis that shows what the length of a bar means. Let's add a second bar for injera, of which the truck sold 850.
 
@@ -151,7 +151,7 @@ Chart(sales) { element in
 
 ![Swift Charts][charts4]  
 
-[charts4]: charts4.jpg
+[charts4]: WWDC22-10136-charts4
 
 The Swift Charts framework automatically chooses an appropriate axis style. 
 
@@ -169,14 +169,14 @@ Adding now two locations to the truck, Cupertino and San Francisco. where to par
 
 ![Swift Charts][charts5]  
 
-[charts5]: charts5.jpg
+[charts5]: WWDC22-10136-charts5
 
 To answer this question, let's visualize the data as a time series for our two cities.
 We will start by making a bar graph for Cupertino. Then, we will add the data for San Francisco and add a picker. And finally, we will combine the data into one multiseries line chart. 
 
 ![Swift Charts][charts6]  
 
-[charts6]: charts6.jpg
+[charts6]: WWDC22-10136-charts6
 
 Let's start with the bar chart showing the average number of pancakes sold per day of the week. The sales data has the weekday stored as a date and how many pancakes the truck sold as an integer. The data for Cupertino is in a variable, cupertinoData.
 
@@ -233,7 +233,7 @@ struct CupertinoDetailsChart: View {
 
 ![Swift Charts][charts7]  
 
-[charts7]: charts7.jpg
+[charts7]: WWDC22-10136-charts7
 
 For the second iteration, let's add the data for San Francisco. The sales data for San Francisco is in the sfData variable.
 
@@ -294,7 +294,7 @@ Swift Charts works with SwiftUI animations, so if we specify that the transition
 
 ![Swift Charts][charts8]  
 
-[charts8]: charts8.jpg
+[charts8]: WWDC22-10136-charts8
 
 ## Working with series
 
@@ -335,7 +335,7 @@ Change the mark type from a BarMark to a PointMark to display the pancakes sold 
 
 ![Swift Charts][charts9]  
 
-[charts9]: charts9.jpg
+[charts9]: WWDC22-10136-charts9
 
 A line chart is a good fit for the sales data since it can compare the two cities in each day of the week. Charts can combine multiple marks. For example, adding a PointMark. To make the series differentiable without color, we set the symbol to be derived from the city.
 
@@ -377,7 +377,7 @@ Chart(seriesData) { series in
 
 ![Swift Charts][charts10]  
 
-[charts10]: charts10.jpg
+[charts10]: WWDC22-10136-charts10
 
 ## Features
 
@@ -408,43 +408,43 @@ BarMark with x and y properties:
 
 ![Swift Charts][charts11]  
 
-[charts11]: charts11.jpg
+[charts11]: WWDC22-10136-charts11
 
 With points: 
 
 ![Swift Charts][charts12]  
 
-[charts12]: charts12.jpg
+[charts12]: WWDC22-10136-charts12
 
 With lines:
 
 ![Swift Charts][charts13]  
 
-[charts13]: charts13.jpg
+[charts13]: WWDC22-10136-charts13
 
 Showing multiple series:
 
 ![Swift Charts][charts14]  
 
-[charts14]: charts14.jpg
+[charts14]: WWDC22-10136-charts14
 
 Even more options:
 
 ![Swift Charts][charts15]  
 
-[charts15]: charts15.jpg
+[charts15]: WWDC22-10136-charts15
 
 till advanced!
 
 ![Swift Charts][charts16]  
 
-[charts16]: charts16.jpg
+[charts16]: WWDC22-10136-charts16
 
 Support for:
 
 ![Swift Charts][charts17]  
 
-[charts17]: charts17.jpg
+[charts17]: WWDC22-10136-charts17
 
 
 

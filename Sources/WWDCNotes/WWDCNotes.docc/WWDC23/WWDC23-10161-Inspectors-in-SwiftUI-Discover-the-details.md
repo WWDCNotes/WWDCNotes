@@ -23,13 +23,13 @@ Meet Inspectors — a structural API that can help bring a new level of detail t
 
 ![Keynote app example][keynote]
 
-[keynote]: keynote.jpg
+[keynote]: WWDC23-10161-keynote
 
 Inspector is an addition to other SwiftUI Structural APIs like: NavigationSplitView, NavigationStack, .sheet, .popover, .alert, .confirmationDialog
 
 ![SwiftUI Structural APIs][structuralAPIs]
 
-[structuralAPIs]: structuralAPIs.jpg
+[structuralAPIs]: WWDC23-10161-structuralAPIs
 
 The inspector API includes programmatic control over:
 - column width
@@ -66,7 +66,7 @@ Example:
 
 ![Toggle Button][toggleButton]
 
-[toggleButton]: toggleButton.jpg
+[toggleButton]: WWDC23-10161-toggleButton
 
 ## Placement
 
@@ -74,7 +74,7 @@ Context and placemend of the .inspector modifier and its .toolbar matters. Inspe
 
 ![Inspector placement][placement]
 
-[placement]: placement.jpg
+[placement]: WWDC23-10161-placement
 
 If you are using an inspector within a NavigationSplitView, the inspector should be placed in the detail column's view builder, or it can also be placed entirely outside the navigation structure.
 

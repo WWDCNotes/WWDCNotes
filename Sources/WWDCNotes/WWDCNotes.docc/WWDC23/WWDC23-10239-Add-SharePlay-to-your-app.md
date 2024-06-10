@@ -113,5 +113,5 @@ Every app has an opportunity for SharePlay:
 * Provides a performant and private data channel for syncing your app's data
 * Takes care of group management UI like people pickers, notifications, and state management
 
-[GroupActivityShareSheet]: GroupActivityShareSheet.png
-[GroupActivityJoin]: GroupActivityJoin.png
+[GroupActivityShareSheet]: WWDC23-10239-GroupActivityShareSheet
+[GroupActivityJoin]: WWDC23-10239-GroupActivityJoin

@@ -18,7 +18,7 @@ Apple has been building on the foundation based on the new key technologies that
 
 ![USD and MaterialX][intro1]
 
-[intro1]: intro1.jpg
+[intro1]: WWDC23-10086-intro1
 
 The first of these technologies is Universal Scene Description, or USD for short.  
 It allows for a standard form of representing 3D content to share between applications.  
@@ -53,13 +53,13 @@ There is a great talk on how to easily author content that will look great on xr
 
 ![3D content in Apple apps][content1]
 
-[content1]: content1.jpg
+[content1]: WWDC23-10086-content1
 
 Freeform, introduced last year is a powerful and easy-to-use brainstorming app. Freeform now gives the ability to embed USDZ content, and now collaborate on 3D assets is possible across all supported platforms like macOS, iOS, iPadOS, and now xrOS.
 
 ![USD and MaterialX][content2]
 
-[content2]: content2.jpg
+[content2]: WWDC23-10086-content2
 
 Safari also introduces new support for 3D Content with the Model element. The Model element is available on all Apple platforms with Safari and can be enabled under the Developer menu on macOS or Settings on other platforms. 
 
@@ -69,13 +69,13 @@ This allows creation of more interactive websites, and apple is working with the
 
 ![USD and MaterialX][content3]
 
-[content3]: content3.jpg
+[content3]: WWDC23-10086-content3
 
 We also have Reality Composer Pro, a new macOS application joining our suite of tools for creators and developers. Using USD's composition features, it lets multiple people work in parallel, enabling each person to tackle a different aspect of the scene and see them combined together as each asset updates.
 
 ![USD and MaterialX][content4]
 
-[content4]: content4.jpg
+[content4]: WWDC23-10086-content4
 
 Assets can be authored to USD in your own content creation applications, and Reality Composer Pro lets us prepare them for use in xrOS apps and experiences.
 
@@ -90,7 +90,7 @@ MaterialX allows to have bespoke visuals that can be transported inside the USD 
 
 ![USD and MaterialX][content5]
 
-[content5]: content5.jpg
+[content5]: WWDC23-10086-content5
 
 This enables the creation of shaders using an interactive node graph to compose the shader logic. MaterialX shader graphs are how creators will be constructing custom shaders for xrOS content. In addition to many of the standard MaterialX nodes, Reality Composer Pro also has a few custom MaterialX nodes that enable a range of xrOS-specific platform features.
 
@@ -98,7 +98,7 @@ This enables the creation of shaders using an interactive node graph to compose 
 
 ![USD and MaterialX][content6]
 
-[content6]: content6.jpg
+[content6]: WWDC23-10086-content6
 
 Some of these shader nodes are: RealityKit PBR, physically based rendering shader which enables realistic-looking 3D content; RealityKit Unlit, an unlit shader that do more stylized shading; Geometry Modifiers that allow to modify surface deformations; as well as several custom utility nodes.
 
@@ -110,7 +110,7 @@ Support for MaterialX with USD grows across established third-party 3D applicati
 
 ![USD and MaterialX][content7]
 
-[content7]: content7.jpg
+[content7]: WWDC23-10086-content7
 
 Reality Composer Pro then lets preview the shaders to see how they'll look before deployment to device.
 
@@ -147,7 +147,7 @@ In fact, it's capable of displaying up to 25 percent more colors than traditiona
 
 ![USD and MaterialX][content8]
 
-[content8]: content8.jpg
+[content8]: WWDC23-10086-content8
 
 This allows for representing more of the colors we see in the real world. Most color and image workflows tend to use sRGB, which represents a standard range of colors used by many monitors for decades.
 
@@ -167,7 +167,7 @@ colorSpace = "srgb_displayp3"
 
 ![USD and MaterialX][content9]
 
-[content9]: content9.jpg
+[content9]: WWDC23-10086-content9
 
 Textures authored with Display P3 in mind, and appropriately tagged, are able to express a much larger range of colors, with deeper and more saturated tones. This effect may be subtle, but allows for the creation of more vibrant and authentic-looking assets.
 
@@ -234,13 +234,13 @@ The Animal Logic ALab scene is representative of many feature film-level assets.
 
 ![USD and MaterialX][content10]
 
-[content10]: content10.jpg
+[content10]: WWDC23-10086-content10
 
 Now, with Metal in Hydra Storm, and unified memory on Apple silicon, a MacBook Pro is enough to work on the go, even on demanding scenes like this, while retaining interactive performance. This high-performance rendering in Storm also enables Blackmagic Design to add fast viewport rendering of USD to Fusion in DaVinci Resolve.
 
 ![USD and MaterialX][content11]
 
-[content11]: content11.jpg
+[content11]: WWDC23-10086-content11
 
 Building on the collaboration from previous years, Apple is working with Autodesk on their open source Maya USD plugin.
 
@@ -262,7 +262,7 @@ This includes USDZ support for the first time. Apple also worked with the Blende
 
 ![USD and MaterialX][content12]
 
-[content12]: content12.jpg
+[content12]: WWDC23-10086-content12
 
 
 ## Resources

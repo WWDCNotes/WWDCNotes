@@ -29,31 +29,31 @@ Discover animation presets and learn how to use them with SF Symbols and custom 
 
 ![SF Symbols][symbols1]  
 
-[symbols1]: symbols1.jpg
+[symbols1]: WWDC23-10257-symbols1
 
 SF Symbols have been a huge part of what makes Apple platforms look and feel the way they do.
 
 ![SF Symbols][symbols2]  
 
-[symbols2]: symbols2.jpg
+[symbols2]: WWDC23-10257-symbols2
 
 There are thousands of symbols built into Apple's platforms, sharing common visual designs and behaviors. Symbols are customizable.
 
 ![SF Symbols][symbols3]  
 
-[symbols3]: symbols3.jpg
+[symbols3]: WWDC23-10257-symbols3
 
 Symbols can communicate complex concepts in a small amount of screen real estate.
 
 ![SF Symbols][symbols4]  
 
-[symbols4]: symbols4.jpg
+[symbols4]: WWDC23-10257-symbols4
 
 With SF Symbols 5, symbols get a whole new dimension.
 
 ![SF Symbols][symbols5]  
 
-[symbols5]: symbols5.jpg
+[symbols5]: WWDC23-10257-symbols5
 
 
 # Previewing animations
@@ -63,13 +63,13 @@ Taking a look at some examples.
 
 ![Previewing animations][animations1]  
 
-[animations1]: animations1.jpg
+[animations1]: WWDC23-10257-animations1
 
 There is a new tab here in the sidebar. This is the animation inspector, and can be used to preview the new animation effects.
 
 ![Previewing animations][animations2]  
 
-[animations2]: animations2.jpg
+[animations2]: WWDC23-10257-animations2
 
 Selecting the new animation effects from this pop up button like the Bounce animation. Hitting the preview button, the animation plays in the main Gallery view, as well as in the symbol row below it and the preview area in the sidebar. Around the preview button, there are controls for configuring the animation. Choose options like whether the symbol should bounce upwards or downwards, and whether the layers of the symbol will bounce separately or if the whole symbol should bounce at once.
 
@@ -79,7 +79,7 @@ Click this button to copy the name of the effect we'll need for the Swift or Obj
 
 ![Previewing animations][animations3]  
 
-[animations3]: animations3.jpg
+[animations3]: WWDC23-10257-animations3
 
 This speaker symbol also supports variable color.
 
@@ -93,13 +93,13 @@ Here's a 3x3 cube symbol, annotated for Hierarchical and Multicolor rendering, a
 
 ![Previewing animations][animations4]  
 
-[animations4]: animations4.jpg
+[animations4]: WWDC23-10257-animations4
 
 There's a new control in the annotation list that allows to specify which layers should pulse when using the By Layer setting. If none of the layers in the symbol are marked, the whole symbol will pulse. Let's mark all of the layers that make up the front face to pulse, and preview again.
 
 ![Previewing animations][animations5]  
 
-[animations5]: animations5.jpg
+[animations5]: WWDC23-10257-animations5
 
 Motion. Symbols that were exported from version 4 or earlier of the SF Symbols app, or exported to be compatible with Xcode 14, won't include motion information, and will always move as a whole symbol. But let's see what happens when we are exporting from this version of the SF Symbols app, version 5, for use in Xcode 15.
 
@@ -118,13 +118,13 @@ This circular enclosure is a common design element in SF Symbols.
 
 ![Previewing animations][animations6]  
 
-[animations6]: animations6.jpg
+[animations6]: WWDC23-10257-animations6
 
 There are lots of symbols in the built-in library that use a similar circular treatment, and the consistency is one of the key things that makes SF Symbols instantly recognizable and familiar.
 
 ![Previewing animations][animations7]  
 
-[animations7]: animations7.jpg
+[animations7]: WWDC23-10257-animations7
 
 Custom symbols should try to match these treatments too.
 
@@ -134,13 +134,13 @@ A symbol component provides artwork and behavior that looks and feels like a sys
 
 ![Previewing animations][animations8]  
 
-[animations8]: animations8.jpg
+[animations8]: WWDC23-10257-animations8
 
 Look through the library of components and choose which ones we want to use. There are enclosures, badges, and a slash component.
 
 ![Previewing animations][animations8]  
 
-[animations8]: animations8.jpg
+[animations8]: WWDC23-10257-animations8
 
 These new symbols have appeared in the custom symbols library.
 
@@ -150,19 +150,19 @@ Now, we'll also want to make sure our new symbol looks great in all of the diffe
 
 ![Previewing animations][animations10]  
 
-[animations10]: animations10.jpg
+[animations10]: WWDC23-10257-animations10
 
 Symbol components are powered by variable templates, which take care of most of the work for us.
 
 ![Previewing animations][animations11]  
 
-[animations11]: animations11.jpg
+[animations11]: WWDC23-10257-animations11
 
 Variable templates were introduced in SF Symbols 3; we only need to provide three drawings in the Small scale: one each for the Ultralight, Regular, and Black weights. Then, as long at the bezier paths used in each drawing are compatible, the system can mix the drawings together to create the remaining 24 possible variants.
 
 ![Previewing animations][animations12]  
 
-[animations12]: animations12.jpg
+[animations12]: WWDC23-10257-animations12
 
 There's a set of previews at the top of the Gallery view...
 
@@ -171,7 +171,7 @@ As the base symbol is scaled down to fit in the enclosure, the system is using t
 
 ![Previewing animations][animations13]  
 
-[animations13]: animations13.jpg
+[animations13]: WWDC23-10257-animations13
 
 this helps to keep it looking consistent with both its larger, non-enclosed version and with the circle surrounding it. And like many other parts of symbol components, we can do additional fine-tuning to the enclosed symbol's weight to get the final visual result we want.
 
@@ -185,7 +185,7 @@ There are more than 40 components included in the SF Symbols app this year.
 
 ![Previewing animations][animations14]  
 
-[animations14]: animations14.jpg
+[animations14]: WWDC23-10257-animations14
 
 # Compatibility
 
@@ -193,7 +193,7 @@ When exporting an editable template to modify a symbol's shape and structure, we
 
 ![Compatibility][compatibility]  
 
-[compatibility]: compatibility.jpg
+[compatibility]: WWDC23-10257-compatibility
 
 Symbols that are optimized for motion often include shapes that are used to erase portions of other shapes during rendering. Therefore the wireframe will help.
 There's also a new Compatibility picker exporting a template. And if we're targeting older platforms, the SF Symbols app will give us a template that better suits that platform. For example, targeting SF Symbols 3, which corresponds to iOS 15 and macOS Monterey, we'll get a simpler drawing that isn't optimized for motion, because the layer structures we use for motion weren't fully supported in SF Symbols 3. 
@@ -202,7 +202,7 @@ And targeting SF Symbols 2, which corresponds to iOS 14 and macOS Big Sur, we'll
 
 ![Compatibility][compatibility1]  
 
-[compatibility1]: compatibility1.jpg
+[compatibility1]: WWDC23-10257-compatibility1
 
 The same concepts apply when annotating custom symbols. For example, choosing SF Symbols 3 or earlier, we are no longer able to edit the monochrome annotation of the symbol, because monochrome annotations weren't customizable until SF Symbols 4.
 
@@ -210,7 +210,7 @@ When the symbol is ready to be exported for Xcode, we tell the app what version 
 
 ![Compatibility][compatibility2]  
 
-[compatibility2]: compatibility2.jpg
+[compatibility2]: WWDC23-10257-compatibility2
 
 # Resources
 

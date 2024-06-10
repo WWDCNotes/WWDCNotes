@@ -18,7 +18,7 @@ To recap, last year Live Text support was added in VisionKit, enabling interacti
 
 ![Recap of WWDC 2022][recap2022]
 
-[recap2022]: recap2022.jpg
+[recap2022]: WWDC23-10048-recap2022
 
 You can get the links to the talks below at the end of this post.
 
@@ -32,7 +32,7 @@ This year VisionKit is adding support for:
 
 ![Subject Lifting][subjectLifting]
 
-[subjectLifting]: subjectLifting.jpg
+[subjectLifting]: WWDC23-10048-subjectLifting
 
 With a simple long press on the subject of an image, it lifts it from its surroundings and becomes highlighted with this beautiful animated glow, and then I am presented with several options to share it, or invoke Visual Look Up.
 
@@ -40,7 +40,7 @@ With a simple long press on the subject of an image, it lifts it from its surrou
 
 ![Stickers][sticker1]
 
-[sticker1]: sticker1.jpg
+[sticker1]: WWDC23-10048-sticker1
 
 You can now use any lifted subject to create a sticker, with fun effects such as shiny, puffy, and more to share with your friends and family. 
 
@@ -82,7 +82,7 @@ And finally, if Subject Lifting just does not make sense for your app, but you w
 
 ![Interaction Types][interactionTypes]
 
-[interactionTypes]: interactionTypes.jpg
+[interactionTypes]: WWDC23-10048-interactionTypes
 
 We have a detailed session specifically on Subject Lifting available if you would like to learn advanced topics about this amazing new technology in both VisionKit, and Vision. 
 
@@ -96,12 +96,12 @@ And In iOS 17, Visual Look Up will support additional domains, including food, p
 
 ![Visual Look Up][visualLookUp]
 
-[visualLookUp]: visualLookUp.jpg
+[visualLookUp]: WWDC23-10048-visualLookUp
 
 
 ![Visual Look Up][visualLookUp2]
 
-[visualLookUp2]: visualLookUp2.jpg
+[visualLookUp2]: WWDC23-10048-visualLookUp2
 
 Now, finally, it's easy to look up what those symbols on your laundry tags mean. I mean, that's pretty cool! 
 
@@ -119,26 +119,26 @@ If the .visualLookUp type is present in the analyzer configuration, Visual Look 
 
 ![Visual Look Up][visualLookUp3]
 
-[visualLookUp3]: visualLookUp3.jpg
+[visualLookUp3]: WWDC23-10048-visualLookUp3
 
 Once the user requests to look up an object, then, and only then, are the domain and image embeddings from feature extraction sent to the server for additional processing. 
 
 ![Visual Look Up][visualLookUp4]
 
-[visualLookUp4]: visualLookUp4.jpg
+[visualLookUp4]: WWDC23-10048-visualLookUp4
 
 Now you know how Visual Look Up works, let's quickly explore how to use it, and what actions you need to take to add it to your app. Visual Look Up can be invoked in two different ways. The first is in conjunction with Subject Lifting, if the current lifted subject contains one, and only one, correlated Visual Look Up result, the Look Up option will be offered in the menu, 
 
 ![Selection][selection]
 
-[selection]: selection.jpg
+[selection]: WWDC23-10048-selection
 
 
 and selecting it will show the full Look Up result. 
 
 ![Selection Look Up][selection2]
 
-[selection2]: selection2.jpg
+[selection2]: WWDC23-10048-selection2
 
 VisionKit handles this interaction for you automatically. As an adopter all you need to do is have `.visualLookUp` added to your analyzer configuration at analysis time.  
 
@@ -146,14 +146,14 @@ Second, there is a modal interaction available where badges are placed over each
 
 ![Badges][badges]
 
-[badges]: badges.jpg
+[badges]: WWDC23-10048-badges
 
 
 This mode is invoked by setting `.visualLookUp` as the `preferredInteractionType` on your interaction. 
 
 ![Badges][badges2]
 
-[badges2]: badges2.jpg
+[badges2]: WWDC23-10048-badges2
 
 
 Please note: this type will have precedence over the other interaction types. For example, you cannot select text or data detectors at the same time that the visualLookup Mode is set. As such, this is normally used in conjunction with a button, or some other bespoke way to get in and out of this mode. For example, Quick Look uses the info button to enter Visual Look Up mode. 
@@ -173,7 +173,7 @@ But new in iOS17 with optical flow tracking the highlights feel much more stable
 
 ![New Tracking][tracking]
 
-[tracking]: tracking.jpg
+[tracking]: WWDC23-10048-tracking
 
 Optical flow tracking comes for free whenever you use the DataScannerViewController, however, it is only available when recognizing text, and not machine readable codes. And you're also required to scan for text without a specific text content type set. And finally, once again, ensure high frame-rate tracking is enabled. Which is, conveniently, the default.
 ```swift
@@ -198,14 +198,14 @@ Next, the data scanner has a new option allowing users to find and interact with
 
 ![New currency tracker][currency]
 
-[currency]: currency.jpg
+[currency]: WWDC23-10048-currency
 
 
 Now I'm going to explore this new type in more detail with a quick example. When the data scanner recognizes currency in text, It contains both a bounds and a transcript. 
 
 ![New currency tracker][transcript]
 
-[transcript]: transcript.jpg
+[transcript]: WWDC23-10048-transcript
 
 The transcript has both the currency symbol and the amount.
 ```swift
@@ -240,13 +240,13 @@ First off, Live Text is coming to more regions by expanding our supported langua
 
 ![Live Text enhancements][languages]
 
-[languages]: languages.jpg
+[languages]: WWDC23-10048-languages
 
 Live Text includes enhancements for document structure detection as well this year. As an example, in iOS 16 Live Text supported list detection. This allows you to easily copy and paste a list into an app that understands lists, such as Notes, and the list formatting will be maintained. 
 
 ![List detection][listDetection]
 
-[listDetection]: listDetection.jpg
+[listDetection]: WWDC23-10048-listDetection
 
 Live Text handles several list styles, such as numbers or bullets.  
 
@@ -254,7 +254,7 @@ And now, Live Text is offering the same support for Tables, making it far easier
 
 ![Tables detection][tables]
 
-[tables]: tables.jpg
+[tables]: WWDC23-10048-tables
 
 ## Context Aware Data Detectors
 
@@ -262,11 +262,11 @@ We are also adding Context Aware Data Detectors in Live Text. For this feature, 
 
 ![Contacts detection][contacts]
 
-[contacts]: contacts.jpg
+[contacts]: WWDC23-10048-contacts
 
 ![Contacts detection][contacts2]
 
-[contacts2]: contacts2.jpg
+[contacts2]: WWDC23-10048-contacts2
 
 In addition to these great features you are also getting for free, VisionKit also has some new APIs specifically for text. Last year, you could get the entire text contents by accessing the transcript property on the image analysis.
 ```swift
@@ -331,14 +331,14 @@ For iOS, the ImageAnalysisInteraction is a UIInteraction that is added to a view
 
 ![ImageAnalysisInteraction][ImageAnalysisInteraction]
 
-[ImageAnalysisInteraction]: ImageAnalysisInteraction.jpg
+[ImageAnalysisInteraction]: WWDC23-10048-ImageAnalysisInteraction
 
 
 But UIInteraction does not exist on the Mac. So what do you do? In this case, as the name suggests, the `ImageAnalysisOverlayView` is a subclass of NSView. I simply need to add the overlay view in my view hierarchy above my image content. 
 
 ![ImageAnalysisOverlayView][ImageAnalysisOverlayView]
 
-[ImageAnalysisOverlayView]: ImageAnalysisOverlayView.jpg
+[ImageAnalysisOverlayView]: WWDC23-10048-ImageAnalysisOverlayView
 
 The simplest way is to add it as a sub view of my content view. Any way you choose is perfectly fine, but I've found adding it as a subView is generally simpler, and easier to manage as you don't have to handle repositioning the overlay view when the contents view position changes. 
 
@@ -350,13 +350,13 @@ Since the overlay view is placed directly over the imageView, they have same bou
 
 ![Contents rect][contentsRect]
 
-[contentsRect]: contentsRect.jpg
+[contentsRect]: WWDC23-10048-contentsRect
 
 Now, here is an aspect fit. 
 
 ![Contents rect][contentsRect2]
 
-[contentsRect2]: contentsRect2.jpg
+[contentsRect2]: WWDC23-10048-contentsRect2
 
 Notice this portion of the imageView now has no content underneath it. And is reflected in the contents rect. 
 
@@ -364,7 +364,7 @@ And here is an aspect fill. This portion of the image is no longer visible to th
 
 ![Contents rect][contentsRect3]
 
-[contentsRect3]: contentsRect3.jpg
+[contentsRect3]: WWDC23-10048-contentsRect3
 
 Just as with UIImageView on iOS, if you are using NSImageView, you can simply set the trackingImageView property on the overlay view, and it will calculate all of this for you automatically.
 ```swift
@@ -397,13 +397,13 @@ Contextual menus are a huge part of the Mac experience. Now Its now easy to add 
 
 ![Contextual Menus][contextualMenus]
 
-[contextualMenus]: contextualMenus.jpg
+[contextualMenus]: WWDC23-10048-contextualMenus
 
 If it were not over text, I would be offered the app menu instead, without any text items. This is not ideal. Now in macOS Sonoma, items can be combined into the same menu. You can easily get to both text and image functionality, no matter where the menu event was initiated. 
 
 ![Contextual Menus][contextualMenus2]
 
-[contextualMenus2]: contextualMenus2.jpg
+[contextualMenus2]: WWDC23-10048-contextualMenus2
 
 This is a far better experience for the user, and is simple to implement. Let's explore how this can be accomplished in your own app. You now have a new delegate method available, `overlayview:updatedmenu:forevent:atpoint`.
 ```swift
@@ -464,7 +464,7 @@ You will notice that some of these menu items have special properties. For examp
 
 ![Contextual Menus][contextualMenus3]
 
-[contextualMenus3]: contextualMenus3.jpg
+[contextualMenus3]: WWDC23-10048-contextualMenus3
 
 VisionKit uses the menu appearing as a trigger to begin subject analysis, if it hasn't began already. This is all handled for you automatically. In order to provide these features, VisionKit will set itself as a delegate for any menu you return from the update menu method. If you were previously relying on these NSMenuDelegate callbacks, VisionKit now provides its own Delegate callbacks allowing you to retain functionality with your menu items if you were using that previously.
 ```swift

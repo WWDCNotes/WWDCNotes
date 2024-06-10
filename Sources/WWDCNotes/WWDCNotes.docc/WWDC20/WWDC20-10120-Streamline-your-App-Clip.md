@@ -137,5 +137,5 @@ provider.getCredentialState(forUserID: user) { state, error in
 [NSAppClipRequestLocationConfirmation]: https://developer.apple.com/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestlocationconfirmation
 [NSAppClipRequestEphemeralUserNotification]: https://developer.apple.com/documentation/bundleresources/information_property_list/nsappclip/nsappcliprequestephemeralusernotification
 
-[locationCardImage]: locationCard.png
-[notifiCardImage]: notifiCard.png
+[locationCardImage]: WWDC20-10120-locationCard
+[notifiCardImage]: WWDC20-10120-notifiCard

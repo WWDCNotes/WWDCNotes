@@ -42,19 +42,19 @@ A preview is a snippet of code that makes and configures a view. They are writte
 
 ![What are previews][preview]
 
-[preview]: preview.jpg
+[preview]: WWDC23-10252-preview
 
 Previews are compiled into the app, right alongside the rest of the code and the resources.
 
 ![What are previews][preview2]
 
-[preview2]: preview2.jpg
+[preview2]: WWDC23-10252-preview2
 
 When editing any of the Swift code in our project, Xcode will examine the changes made and recompile the minimal amount of code. And then, re-run the preview.
 
 ![What are previews][preview3]
 
-[preview3]: preview3.jpg
+[preview3]: WWDC23-10252-preview3
 
 
 ## Previews are like tests
@@ -89,7 +89,7 @@ There are two main kinds of previews: views and widgets. Views can come from Swi
 
 ![What are previews][preview4]
 
-[preview4]: preview4.jpg
+[preview4]: WWDC23-10252-preview4
 
 For SwiftUI, we can just return any view that we are working on. or we can place it in whatever other views that we need. Like a List.
 
@@ -150,19 +150,19 @@ Example of an app that makes collages of images.
 
 ![What are previews][preview5]
 
-[preview5]: preview5.jpg
+[preview5]: WWDC23-10252-preview5
 
 Let's go to Xcode and explore the features of the Preview canvas. There are views that lets us add a filter to an image.
 
 ![What are previews][preview6]
 
-[preview6]: preview6.jpg
+[preview6]: WWDC23-10252-preview6
 
 Even with the canvas mode enabled, the canvas stays hidden unless there is a preview defined in the file.
 
 ![What are previews][preview7]
 
-[preview7]: preview7.jpg
+[preview7]: WWDC23-10252-preview7
 
 There are three different modes we can use to work on my view. These appear in the bottom left corner of the canvas. The first and default mode is the live or interactive mode. I can test animations and I can call and respond to asynchronous code.
 
@@ -171,19 +171,19 @@ This mode takes a snapshot of the view and allows to interact with the elements 
 
 ![What are previews][preview8]
 
-[preview8]: preview8.jpg
+[preview8]: WWDC23-10252-preview8
 
 The preview environment. We can use the Device Settings popover in the canvas clicking the controls icon to bring up the settings and enable dark mode or a specific dynamic type size.
 
 ![What are previews][preview9]
 
-[preview9]: preview9.jpg
+[preview9]: WWDC23-10252-preview9
 
 The third mode of previews: variants.
 
 ![What are previews][preview10]
 
-[preview10]: preview10.jpg
+[preview10]: WWDC23-10252-preview10
 
 There we can pick which device setting we’d like to see all the values for, like color scheme, or all of the dynamic type sizes.
 
@@ -193,7 +193,7 @@ We add a header for each Section, which is provided in a second trailing closure
 
 ![What are previews][preview11]
 
-[preview11]: preview11.jpg
+[preview11]: WWDC23-10252-preview11
 
 We’ll switch tab to the view controller that renders a filter using CoreImage, and switch the canvas back to live mode. In the preview macro, we created a view controller and passed it a sample image.
 ```swift
@@ -227,7 +227,7 @@ For example, we can set the preview to start in landscape.
 
 ![What are previews][preview12]
 
-[preview12]: preview12.jpg
+[preview12]: WWDC23-10252-preview12
 
 # Widgets
 
@@ -237,13 +237,13 @@ In Xcode, we can preview either an entire timeline provider, or make our own tim
 
 ![Widgets][widgets]
 
-[widgets]: widgets.jpg
+[widgets]: WWDC23-10252-widgets
 
 The image collage app has a widget with a timeline provider that shows a randomly built collage every hour. For the timeline provider, we’ll make a preview with three things: First, the widget to preview. Second, the timeline provider. And, third, the widget family to use for previewing.
 
 ![Widgets][widgets2]
 
-[widgets2]: widgets2.jpg
+[widgets2]: WWDC23-10252-widgets2
 
 We don’t need to wait to see every entry in the timeline. Previews snapshots each timeline entry and shows them in the canvas. we can click through them, or use the arrow keys. Xcode shows the transitions with animations between these entries, allowing us to spot any issues. Like here, between entries 8 and 9. The animation just cross fades. We want to fix it but the timeline provider is random.
 
@@ -265,7 +265,7 @@ This is where a timeline of specific entries comes in handy. We can craft the ex
 
 ![Widgets][widgets3]
 
-[widgets3]: widgets3.jpg
+[widgets3]: WWDC23-10252-widgets3
 
 But the code we need lives in another file, and we don’t want to lose this preview when I navigate away. Can keep the preview in the canvas by using pinning. Clicking on the pin button in the upper left of the canvas, it'll keep the preview active even when we navigate to another file.
 
@@ -273,7 +273,7 @@ In the canvas, there is a play button in the timeline, and a loop button. Now Xc
 
 ![Widgets][widgets4]
 
-[widgets4]: widgets4.jpg
+[widgets4]: WWDC23-10252-widgets4
 
 ### Live Activities
 
@@ -281,7 +281,7 @@ The API looks nearly the same but instead of providing a timeline provider and e
 
 ![Widgets][widgets5]
 
-[widgets5]: widgets5.jpg
+[widgets5]: WWDC23-10252-widgets5
 
 Another example. First, we pass in the attributes we want to use in the initializer. Then, we pass in content states for those attributes. For example, building a widget for ordering pizza, we could provide a custom set of states for how the baking and the delivery of that pizza is going, and then test the animations between all of those states.
 
@@ -304,14 +304,14 @@ There are three different scenarios that affect setting up a project, providing 
 
 ![Previews in your project][project]
 
-[project]: project.jpg
+[project]: WWDC23-10252-project
 
 ## Previewing content in library targets
 This includes frameworks, Swift packages, or dynamic libraries.
 
 ![Previews in your project][project2]
 
-[project2]: project2.jpg
+[project2]: WWDC23-10252-project2
 
 ### How previews find an executable
 
@@ -327,19 +327,19 @@ Let’s look at a few examples. In the simplest case, we might be working in a s
 
 ![Previews in your project][project3]
 
-[project3]: project3.jpg
+[project3]: WWDC23-10252-project3
 
 Here’s another example: Say you have two Swift files open, each belonging to a package that might also be imported by another package, which are then all imported by an app. We’ll traverse up from those files to find the first common executable at the top.
 
 ![Previews in your project][project4]
 
-[project4]: project4.jpg
+[project4]: WWDC23-10252-project4
 
 What if we don’t have an app at all? In this case, previews makes an app on our behalf, called the XCPreviewAgent, which will load our library. This all happens automatically, but it’s helpful to know how this works and especially the name of this process.
 
 ![Previews in your project][project5]
 
-[project5]: project5.jpg
+[project5]: WWDC23-10252-project5
 
 ## Previewing in libraries
 ### How to use libraries to your advantage
@@ -357,55 +357,55 @@ Example of making a view that uses the Photo library, which requires a specific 
 
 ![Previews in your project][project6]
 
-[project6]: project6.jpg
+[project6]: WWDC23-10252-project6
 
 Preview with the right capabilities by making a new app target.
 
 ![Previews in your project][project7]
 
-[project7]: project7.jpg
+[project7]: WWDC23-10252-project7
 
 Then, we’ll add whatever capabilities we need. In this case, we need to add an Info.plist key, so we’ll go to the build settings, filter for the Photo library usage string,
 
 ![Previews in your project][project8]
 
-[project8]: project8.jpg
+[project8]: WWDC23-10252-project8
 
 and set it.
 
 ![Previews in your project][project9]
 
-[project9]: project9.jpg
+[project9]: WWDC23-10252-project9
 
 Next, we’ll make sure the library with the view is embedded into our app. Using the build phases tab,
 
 ![Previews in your project][project10]
 
-[project10]: project10.jpg
+[project10]: WWDC23-10252-project10
 
 we’ll add it as a target dependency,
 
 ![Previews in your project][project11]
 
-[project11]: project11.jpg
+[project11]: WWDC23-10252-project11
 
 and embed it with a copy files phase.
 
 ![Previews in your project][project12]
 
-[project12]: project12.jpg
+[project12]: WWDC23-10252-project12
 
 Now select the scheme that contains just this preview app and our library. 
 
 ![Previews in your project][project13]
 
-[project13]: project13.jpg
+[project13]: WWDC23-10252-project13
 
 When previewing the view, it'll use the app we just made for previewing, and all of the right Info.plist keys will be in place.
 
 ![Previews in your project][project14]
 
-[project14]: project14.jpg
+[project14]: WWDC23-10252-project14
 
 This lets us take advantage of smaller schemes with faster build times while keeping the ability to preview all of the views we are working on. 
 
@@ -415,7 +415,7 @@ When we configured the preview, I passed in a sample image. This image is coming
 
 ![Previews in your project][project16]
 
-[project16]: project16.jpg
+[project16]: WWDC23-10252-project16
 
 But if we don’t want to ship these in the app we can avoid that with a feature called Development Assets. These are folders in my project that we configure in our build settings, and anything in those folders is removed from thr app when submitted to the App Store. This could include asset catalogs or any resources we use to help the previews.
 
@@ -423,13 +423,13 @@ In the project settings, go to the build settings tab, and filter for the develo
 
 ![Previews in your project][project17]
 
-[project17]: project17.jpg
+[project17]: WWDC23-10252-project17
 
 After double clicking to edit, manually type in a path or drag the Preview Content folder into the popover.
 
 ![Previews in your project][project18]
 
-[project18]: project18.jpg
+[project18]: WWDC23-10252-project18
 
 With that added, now this path will be removed from the app when we submit to the App Store. A development asset path is set up automatically when we make a new project or app target, but we can add additional paths or add them to other target types or existing projects.
 
@@ -443,7 +443,7 @@ On the literal opposite side of the menu is the More submenu. This lists all of 
 
 ![Previews in your project][project19]
 
-[project19]: project19.jpg
+[project19]: WWDC23-10252-project19
 
 The middle section of the menu offers devices by common features...
 
@@ -451,13 +451,13 @@ The preview device picker also includes any devices connected to our Mac. Pickin
 
 ![Previews in your project][project20]
 
-[project20]: project20.jpg
+[project20]: WWDC23-10252-project20
 
 Previewing using the photos on the iphone: 
 
 ![Previews in your project][project21]
 
-[project21]: project21.jpg
+[project21]: WWDC23-10252-project21
 
 ## Wrap up
 

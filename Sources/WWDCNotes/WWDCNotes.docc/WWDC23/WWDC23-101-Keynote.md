@@ -17,7 +17,7 @@ The Apple Worldwide Developers Conference kicks off with exciting news, inspirat
 
 ![Sketchnote of WWDC Keynote 2023 with announcements of iOS 17, iPadOS 17, macOS and more, like Vision Pro][sketchnote]
 
-[sketchnote]: sketchnote.jpg
+[sketchnote]: WWDC23-101-sketchnote
 
 ## New Macs
 

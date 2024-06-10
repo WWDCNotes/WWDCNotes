@@ -27,7 +27,7 @@ You are enjoying music on AirPods in Personalized Spatial Audio with iPhone and 
 
 ![connected banner][connected]  
 
-[connected]: connected.jpg
+[connected]: WWDC23-10233-connected
 
 Next, as you join the meeting, audio will be played from Mac through your AirPods as you would expect, and the music you were listening to on iPhone pauses. In the middle of your work call, someone in office comes over to talk, or with remote work, someone rings your doorbell at home for a delivery.
 
@@ -35,13 +35,13 @@ Now, you can press the AirPods stem to mute yourself on the call, and when you d
 
 ![muted banner][off]  
 
-[off]: off.jpg
+[off]: WWDC23-10233-off
 
 Then, as you would expect, you can press the AirPods stem again to unmute yourself and continue on with the meeting. And of course, you will see the banner and hear a chime on unmute.
 
 ![unmuted banner][on]  
 
-[on]: on.jpg
+[on]: WWDC23-10233-on
 
 Finally, you are finished with your work meeting and it's time to unwind. You pick up your iPhone, press play on your favorite Apple Music playlist, and audio switches back to your AirPods from iPhone seamlessly, so you can continue on with your day without missing a beat.
 
@@ -75,7 +75,7 @@ For communications app not using CallKit, we have introduced new API that I will
 
 ![unmuted - muted banner][onOff]  
 
-[onOff]: onOff.jpg
+[onOff]: WWDC23-10233-onOff
 
 This features adds significant convenience for people. Let me show you how quickly you can add it on iOS17.
 
@@ -152,7 +152,7 @@ For macOS, we support Spatial Audio for AVPlayer as well as AVSampleBufferAudioR
 
 ![Spatial Audio Support][SpatialAudio]  
 
-[SpatialAudio]: spatialAudio.jpg
+[SpatialAudio]: WWDC23-10233-spatialAudio
 
 
 Do note that Spatial Audio for AudioQueue and AURemoteIO does not have an API interface. Instead, it is automatically enabled for apps that register for Now Playing.

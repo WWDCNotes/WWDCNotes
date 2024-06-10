@@ -16,7 +16,7 @@ Discover the latest advances in Mac app development using AppKit. We’ll take y
 
 ## Stage Manager
 
-![Stage Manager](stage-manager.jpg)
+![Stage Manager](WWDC22-10074-stage-manager)
 
 * Keeps the workspace tidy
 * Cleans up inactive windows in your workspace by showing only the active window
@@ -47,7 +47,7 @@ Wont displace the active window in center stage.
 
 ## System Preferences (now 'System Settings')
 
-![System Settings](system-settings.jpg)
+![System Settings](WWDC22-10074-system-settings)
 
 * refreshed navigation scheme
 * aligns with iOS
@@ -125,17 +125,17 @@ Two styles :
 
 separate arrow portion just for the menu
 
-![NSComboButton Split Style](nscombobutton-split.jpg)
+![NSComboButton Split Style](WWDC22-10074-nscombobutton-split)
 
 #### unified
 
 Primary action on click, menu action with click and hold.
 
-![NSComboButton Unified Style](nscombobutton-unified.jpg)
+![NSComboButton Unified Style](WWDC22-10074-nscombobutton-unified)
 
 ### NSColorWell
 
-![NSComboButton Unified Style](nscolorwell.jpg)
+![NSComboButton Unified Style](WWDC22-10074-nscolorwell)
 
 Default color well has new look. No adoption required - will just happen.
 
@@ -164,7 +164,7 @@ You can customize the popover content (e.g., for a different palette, or to disp
 
 **Note** Once the alert it displayed changing the text doesn't change the alert size.
 
-![NSAlert with lots of text](nsalert-large-text.jpg)
+![NSAlert with lots of text](WWDC22-10074-nsalert-large-text)
 
 ### NSTableView
 
@@ -207,7 +207,7 @@ class NSImage {
 
 ## Sharing
 
-![New sharing panel in macOS](sharing.jpg)
+![New sharing panel in macOS](WWDC22-10074-sharing)
 
 ### New style
 

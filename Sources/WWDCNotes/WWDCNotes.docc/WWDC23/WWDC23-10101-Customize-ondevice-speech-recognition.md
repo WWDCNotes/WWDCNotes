@@ -153,5 +153,5 @@ This method call can have a large amount of associated latency, so it's best to 
 
 When your app constructs the speech recognition request, you first enforce that the recognition is run on device. Failing to do so will cause requests to be serviced without customization.
 
-[10101-customized-speech-recognition-workflow]: customized-speech-recognition-workflow.png
-[10101-default-speech-recognition-workflow]: default-speech-recognition-workflow.png
+[10101-customized-speech-recognition-workflow]: WWDC23-10101-customized-speech-recognition-workflow
+[10101-default-speech-recognition-workflow]: WWDC23-10101-default-speech-recognition-workflow

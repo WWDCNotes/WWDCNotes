@@ -33,4 +33,4 @@ NFC UI:
 
 ![][uiImage]
 
-[uiImage]: ui.png
+[uiImage]: WWDC17-718-ui

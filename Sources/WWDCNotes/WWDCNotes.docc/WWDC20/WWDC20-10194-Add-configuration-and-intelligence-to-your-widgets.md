@@ -112,5 +112,5 @@ The system will try to surface widgets based on two reasons:
 [descDoc]: https://developer.apple.com/documentation/widgetkit/intentconfiguration/description(_:)-1yars
 [timeEntryRelDoc]: https://developer.apple.com/documentation/widgetkit/timelineentryrelevance
 
-[descImage]: desc.png
-[colorImage]: color.png
+[descImage]: WWDC20-10194-desc
+[colorImage]: WWDC20-10194-color

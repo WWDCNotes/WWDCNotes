@@ -18,15 +18,15 @@ Intro: examples of charts with health, weather and fitness.
 
 ![charts example][charts]
 
-[charts]: charts1.jpg
+[charts]: WWDC22-110342-charts1
 
 ![charts example][charts2]
 
-[charts2]: charts2.jpg
+[charts2]: WWDC22-110342-charts2
 
 ![charts example][charts3]
 
-[charts3]: charts3.jpg
+[charts3]: WWDC22-110342-charts3
 
 
 # When to use charts
@@ -35,7 +35,7 @@ Back to our food truck selling pancakes app:
 
 ![charts example][charts4]
 
-[charts4]: charts4.jpg
+[charts4]: WWDC22-110342-charts4
 
 Here are some common cases where a chart can be used to highlight the information being presented: 
 - When showing historical or predicted values
@@ -44,7 +44,7 @@ Here are some common cases where a chart can be used to highlight the informatio
 
 ![charts example][charts5]
 
-[charts5]: charts5.jpg
+[charts5]: WWDC22-110342-charts5
 
 ## When used correctly, charts provide focus. 
 
@@ -61,7 +61,7 @@ A chart should be accompanied by text that describes the chart contents. If read
 
 ![charts example][charts6]
 
-[charts6]: charts6.jpg
+[charts6]: WWDC22-110342-charts6
 
 For example: "Sales in the past 30 days totaled 1,234 pancakes." Another way of framing the chart is to interpret the data. For example: "Sales for the past 30 days are up 12%, totaling 1,234 pancakes." This will help someone understand if the level of recent sales is high or low or if it is increasing or decreasing.
 
@@ -74,19 +74,19 @@ Try to incorporate details from other perspectives. A chart can become multi-dim
 
 ![charts example][charts7]
 
-[charts7]: charts7.jpg
+[charts7]: WWDC22-110342-charts7
 
 - At a medium scale, shows sub-sets of data. These might be time-based, like comparing weekdays to weekends or investigating changes related to the time of day.
 
 ![charts example][charts8]
 
-[charts8]: charts8.jpg
+[charts8]: WWDC22-110342-charts8
 
 - At the micro level, it focus on individual data points. The last transaction or largest sale are important small-scale details.
 
 ![charts example][charts9]
 
-[charts9]: charts9.jpg
+[charts9]: WWDC22-110342-charts9
 
 The more carefully we observe a data set, the more detail will emerge.
 
@@ -94,13 +94,13 @@ Ex. A set of tappable rows under the chart. Each row provides a summary statisti
 
 ![charts example][charts10]
 
-[charts10]: charts10.jpg
+[charts10]: WWDC22-110342-charts10
 
 Smaller charts tend to be static. Examples include Watch complications, the repeating thumbnail charts in Stocks, and the trend platters in Health.
 
 ![charts example][charts11]
 
-[charts11]: charts11.jpg
+[charts11]: WWDC22-110342-charts11
 
 Static charts tend to provide a preview of a larger chart in another view. As they are generally small, static charts don’t require grid lines, labels, or interactivity, since they create the expectation that additional detail is just a tap away. 
 
@@ -108,7 +108,7 @@ Interactive charts tend to be larger, and include much more detail, like the cha
 
 ![charts example][charts12]
 
-[charts12]: charts12.jpg
+[charts12]: WWDC22-110342-charts12
 
 An interactive chart should include axis lines and labels so that values can be estimated.
 
@@ -116,7 +116,7 @@ Interactivity is recommended at this size for accessing precise values in the ch
 
 ![charts example][charts12a]
 
-[charts12a]: charts12a.jpg
+[charts12a]: WWDC22-110342-charts12a
 
 ### Progressively reveal complexity
 
@@ -130,12 +130,12 @@ Start from a static chart, which tapped leads to an expanded interactive chart.
 
 ![charts example][charts13]
 
-[charts13]: charts13.jpg
+[charts13]: WWDC22-110342-charts13
 
 
 ![charts example][charts14]
 
-[charts14]: charts14.jpg
+[charts14]: WWDC22-110342-charts14
 
 
 Charts need descriptions to inform the contents and the details in the data can add richness to the charts, and should progressively reveal chart complexity.
@@ -145,7 +145,7 @@ When planning multiple charts: Use familiar forms.
 
 ![charts example][charts15]
 
-[charts15]: charts15.jpg
+[charts15]: WWDC22-110342-charts15
 
 Start with common chart styles. Bar charts and line charts are forms that many people encounter and use daily, while a scatter plot is less common and may require extra guidance
 
@@ -153,12 +153,12 @@ Something unique should be introduced clearly, like here in the onboarding flow 
 
 ![charts example][charts16]
 
-[charts16]: charts16.jpg
+[charts16]: WWDC22-110342-charts16
 
 
 ![charts example][charts17]
 
-[charts17]: charts17.jpg
+[charts17]: WWDC22-110342-charts17
 
 let’s start with two copies of the recent sales chart. 
 
@@ -168,25 +168,25 @@ Changing the time scope of the chart on the right. Rather than showing recent sa
 
 ![charts example][charts18]
 
-[charts18]: charts18.jpg
+[charts18]: WWDC22-110342-charts18
 
 Noticing this change in text could be easily missed, so each of these charts gets a distinct color. Now it is easier to notice that these charts are unique.
 
 ![charts example][charts19]
 
-[charts19]: charts19.jpg
+[charts19]: WWDC22-110342-charts19
 
 Updating the chart on the right to show the range of daily sales for each of past 12 months. This requires both a change to the description and the way that the data is represented.
 
 ![charts example][charts20]
 
-[charts20]: charts20.jpg
+[charts20]: WWDC22-110342-charts20
 
 To underscore the significance of this change, modifying the styling of the bars is ok.
 
 ![charts example][charts21]
 
-[charts21]: charts21.jpg
+[charts21]: WWDC22-110342-charts21
 
 Let show the most popular style of pancake.
 
@@ -196,7 +196,7 @@ In the detail view, each bar is labeled, and the relative values are visible.
 
 ![charts example][charts22]
 
-[charts22]: charts22.jpg
+[charts22]: WWDC22-110342-charts22
 
 Next let's show the sales in the two cities where the truck operates for each day of the week.
 
@@ -206,14 +206,14 @@ In this case, the best sales day over the past 30 days was Sunday in San Francis
 
 ![charts example][charts23]
 
-[charts23]: charts23.jpg
+[charts23]: WWDC22-110342-charts23
 
 
 Using charts to show recent sales, popular items, and top days and locations.
 
 ![charts example][charts24]
 
-[charts24]: charts24.jpg
+[charts24]: WWDC22-110342-charts24
 
 
 # Resources

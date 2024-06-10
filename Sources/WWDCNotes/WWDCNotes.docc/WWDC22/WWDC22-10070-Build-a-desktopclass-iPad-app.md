@@ -151,7 +151,7 @@ extension ViewController: UINavigationItemRenameDelegate {
 }
 ```
 
-[navStyleImg]: navStyleImg.png
+[navStyleImg]: WWDC22-10070-navStyleImg
 [UINavigationItem]: https://developer.apple.com/documentation/uikit/uinavigationitem
 [style]: https://developer.apple.com/documentation/uikit/uinavigationitem/3987969-style
 [UINavigationItem.ItemStyle]: https://developer.apple.com/documentation/uikit/uinavigationitem/itemstyle

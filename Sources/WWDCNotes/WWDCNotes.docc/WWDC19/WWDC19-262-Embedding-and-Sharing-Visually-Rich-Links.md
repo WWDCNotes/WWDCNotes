@@ -115,14 +115,14 @@ func activityViewControllerLinkMetadata(_: UIActivityViewController) -> LPLinkMe
 ![][summary]
 
 
-[starting_point]: starting_point.png
+[starting_point]: WWDC19-262-starting_point
 
-[lp_metadata_diagram]: lp_metadata_diagram.png
+[lp_metadata_diagram]: WWDC19-262-lp_metadata_diagram
 
-[lp_link_view]: lp_link_view.png
+[lp_link_view]: WWDC19-262-lp_link_view
 
-[rich_links]: rich_links.png
+[rich_links]: WWDC19-262-rich_links
 
-[link_at_top]: link_at_top.png
+[link_at_top]: WWDC19-262-link_at_top
 
-[summary]: summary.png
+[summary]: WWDC19-262-summary

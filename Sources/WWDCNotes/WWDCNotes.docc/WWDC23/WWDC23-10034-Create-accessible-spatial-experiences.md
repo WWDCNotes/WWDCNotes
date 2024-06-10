@@ -21,7 +21,7 @@ Learn how you can make spatial computing apps that work well for everyone. Like 
 
 ![List of accessibility features included on visionOS][Accessibility_Features]
 
-[Accessibility_Features]: visionOS_Accessibility_Features.jpeg
+[Accessibility_Features]: WWDC23-10034-visionOS_Accessibility_Features
 
 ## Vision accessibility
 
@@ -34,7 +34,7 @@ Support people who are blind or low vision
 
 ![VoiceOver Accessibility Shortcut in Settings][VoiceOver_Accessibility_Shortcut]
 
-[VoiceOver_Accessibility_shortcut]: VoiceOver_Accessibility_Shortcut.jpeg
+[VoiceOver_Accessibility_shortcut]: WWDC23-10034-VoiceOver_Accessibility_Shortcut
 
 - Triple-press on the Digital Crown will turn on or off VoiceOver
 - Use different finger pinches on different hands to perform different actions
@@ -130,7 +130,7 @@ UlAccessibility. reduceMotionStatusDidChangeNotification
 
 ![Reduce Motion accessibility settings][Reduce_Motion]
 
-[Reduce_Motion]: Reduce_Motion.jpeg
+[Reduce_Motion]: WWDC23-10034-Reduce_Motion
 
 If you can't find a good replacement for the motion in your app, try using a crossfade.
 
@@ -145,11 +145,11 @@ Allows people to select and interact with the UI without using their hands. Dwel
 
 ![Dwell Control accessibility feature gestures diagram][Motor_Dwell_Control_Gestures]
 
-[Motor_Dwell_Control_Gestures]: Motor_Dwell_Control_Gestures.jpeg
+[Motor_Dwell_Control_Gestures]: WWDC23-10034-Motor_Dwell_Control_Gestures
 
 ![Dwell Control menu controlling Safari][Motor_Dwell_Control_Menu]
 
-[Motor_Dwell_Control_Menu]: Motor_Dwell_Control_Menu.jpeg
+[Motor_Dwell_Control_Menu]: WWDC23-10034-Motor_Dwell_Control_Menu
 
 > **Note**
 > Plan and design for your app to support different inputs. This is the best way to ensure you don't accidentally exclude people
@@ -162,7 +162,7 @@ Lets people control the system focus with different input sources instead of usi
 
 ![Pointer Control accessibility feature settings with wrist selected as option][Motor_Pointer_Control_Wrist]
 
-[Motor_Pointer_Control_Wrist]: Motor_Pointer_Control_Wrist.jpeg
+[Motor_Pointer_Control_Wrist]: WWDC23-10034-Motor_Pointer_Control_Wrist
 
 ### Switch Control
 
@@ -171,7 +171,7 @@ Lets people control the system focus with different input sources instead of usi
 
 ![Switch Control accessibility feature  adjusting the camera's position in world space][Motor_Switch_Control_Camera]
 
-[Motor_Switch_Control_Camera]: Motor_Switch_Control_Camera.jpeg
+[Motor_Switch_Control_Camera]: WWDC23-10034-Motor_Switch_Control_Camera
 
 ## Cognitive
 
@@ -185,7 +185,7 @@ Cognitive accessibility can support people with disabilities that affect their l
 
 ![Cognitive_Guided_Access accessibility feature constraining to a single session Safari video][Cognitive_Guided_Access]
 
-[Cognitive_Guided_Access]: Cognitive_Guided_Access.jpeg
+[Cognitive_Guided_Access]: WWDC23-10034-Cognitive_Guided_Access
 
 > **Note**
 > Immersive content can promote focus and attention, which is a fantastic way to create a comfortable environment for someone with sensory processing disorders
@@ -196,7 +196,7 @@ Quality captions are one of the most impactful things you can do for people with
 
 ![Pop On captions recommended instead roll-up ones ][Hearing_Pop_On_Captions]
 
-[Hearing_Pop_On_Captions]: Hearing_Pop_On_Captions.jpeg
+[Hearing_Pop_On_Captions]: WWDC23-10034-Hearing_Pop_On_Captions
 
 - Captions can be changed in many ways
 - Using these options, people can make their captions easy to see and read

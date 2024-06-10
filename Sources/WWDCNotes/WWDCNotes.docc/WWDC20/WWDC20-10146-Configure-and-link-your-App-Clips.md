@@ -146,8 +146,8 @@ In the TestFlight section of our app, we now also have an `Add App Clip Invocati
 
 ![][testFlightImage]
 
-[appClipCodeImage]: appClipCode.png
-[schemeEditorImage]: schemeEditor.png
-[cardImage]: card.png
-[appStoreImage]: appStore.png
+[appClipCodeImage]: WWDC20-10146-appClipCode
+[schemeEditorImage]: WWDC20-10146-schemeEditor
+[cardImage]: WWDC20-10146-card
+[appStoreImage]: WWDC20-10146-appStore
 [testFlightImage]: ../../../images/notes/wwdc20/10146/testFlight.png

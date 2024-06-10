@@ -120,9 +120,9 @@ ZStack {
 }
 ```
 
-[watch-vs-lockscreen]: watch-vs-lockscreen.jpg
-[rendering-modes]: rendering-modes.jpg
-[tints]: tints.jpg
+[watch-vs-lockscreen]: WWDC22-10050-watch-vs-lockscreen
+[rendering-modes]: WWDC22-10050-rendering-modes
+[tints]: WWDC22-10050-tints
 [AccessoryWidgetBackground]: https://developer.apple.com/documentation/widgetkit/accessorywidgetbackground
 [widgetrenderingmode]: https://developer.apple.com/documentation/widgetkit/widgetrenderingmode
 [cc]: https://developer.apple.com/documentation/clockkit

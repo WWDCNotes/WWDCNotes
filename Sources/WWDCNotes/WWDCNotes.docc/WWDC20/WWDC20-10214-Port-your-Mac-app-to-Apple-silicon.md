@@ -113,8 +113,8 @@ Alternatively, the plug-ins can be spawned as new processes, and we call those *
 | Out-of-process | Supported | Supported, even when the binary is intel only (Rosetta will take care of that process) |
 | In-process | Supported only if the running architecture matches the one in the precompiled binary) | not supported |
 
-[activityMonitorImage]: activityMonitor.png
-[instrumentsImage]: instruments.png
+[activityMonitorImage]: WWDC20-10214-activityMonitor
+[instrumentsImage]: WWDC20-10214-instruments
 
 [asdoc]: https://developer.apple.com/documentation/apple_silicon
 [machowiki]: https://en.wikipedia.org/wiki/Mach-O

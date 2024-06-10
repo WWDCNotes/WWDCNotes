@@ -37,13 +37,13 @@ The **attachments view builder** is where you can provide SwiftUI views that you
 
 ![Structure of attachments.][attachments]
 
-[attachments]: attachments.png
+[attachments]: WWDC23-10081-attachments
 
 You can also update entities inside of the update closure whenever there are changes to SwiftUI view state.
 
 ![Attachments with update closure.][attachments-update]
 
-[attachments-update]: attachments-update.png
+[attachments-update]: WWDC23-10081-attachments-update
 
 ## How to add Video Playback in RealityKit scenes [06:17](https://developer.apple.com/videos/play/wwdc2023/10081?time=377)
 
@@ -58,7 +58,7 @@ You can also update entities inside of the update closure whenever there are cha
 
 ![Video Player Component Flow.][videoplayercomponent]
 
-[videoplayercomponent]: videoplayercomponent.png
+[videoplayercomponent]: WWDC23-10081-videoplayercomponent
 
 - Since RealityKit is a 3D framework, video is represented as an entity with a mesh so that you can move and position it in 3D space.
 - `VideoPlayerComponent` also supports **Passthrough Tinting** by setting the `isPassthroughTintingEnabled` property to true.
@@ -77,7 +77,7 @@ Once you have your World entity, you create a mesh with a portal material, then 
 
 ![Schematic of portals.][portals]
 
-[portals]: portals.png
+[portals]: WWDC23-10081-portals
 
 - Basically there's a separate component called `World` which is what you use in portals and I think is the only way to render portals
 - Lighting is unique and can learn more in another session

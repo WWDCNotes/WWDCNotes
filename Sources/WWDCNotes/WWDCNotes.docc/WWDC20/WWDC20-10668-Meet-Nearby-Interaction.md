@@ -178,9 +178,9 @@ public protocol NISessionDelegate : NSObjectProtocol {
 - If there is any kind of obstacles between the two devices, this will result into limited measurement availability.
 - Test your app in the simulator
 
-[airdropImage]: airdrop.png
-[twoDevicesImage]: twoDevices.png
-[fovImage]: fov.png
+[airdropImage]: WWDC20-10668-airdrop
+[twoDevicesImage]: WWDC20-10668-twoDevices
+[fovImage]: WWDC20-10668-fov
 
 [niDoc]: https://developer.apple.com/documentation/nearbyinteraction
 [getStartedDoc]: https://developer.apple.com/documentation/nearbyinteraction/initiating_and_maintaining_a_session

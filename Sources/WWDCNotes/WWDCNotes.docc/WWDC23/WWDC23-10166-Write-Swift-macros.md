@@ -73,7 +73,7 @@ For example, passing a string literal to this macro, the compiler complains that
 
 ![Example of repetitive code][example1]
 
-[example1]: example1.jpg
+[example1]: WWDC23-10166-example1
 
 This is different to, for example, C macros, which are evaluated at the pre-processor stage before type-checking.
 Also this macro is declared with the freestanding expression macro role. This means that we can use the macro wherever we can use an expression, and that it will be indicated by the hash character, like we see with #stringify.
@@ -88,13 +88,13 @@ To perform the expansion, each macro defines its implementation in a compiler pl
 
 ![Example of macro expansion][macro]
 
-[macro]: macro.jpg
+[macro]: WWDC23-10166-macro
 
 The macro's implementation is itself a program written in Swift and can perform any transformation to the syntax tree it wants. In this case, it generates a tuple like. It will then serialize the generated syntax tree into source code again and send it to the compiler, which will replace the macro expression by the expanded code.
 
 ![Example of macro expansion][macro1]
 
-[macro1]: macro1.jpg
+[macro1]: WWDC23-10166-macro1
 
 # Create a macro
 
@@ -106,19 +106,19 @@ Here we have an invocation of the #stringify macro, similar to what we have seen
 
 ![Example of macro expansion][macro2]
 
-[macro2]: macro2.jpg
+[macro2]: WWDC23-10166-macro2
 
 To see what the macro expands to, right-click on it and select Expand Macro.
 
 ![Example of macro expansion][macro3]
 
-[macro3]: macro3.jpg
+[macro3]: WWDC23-10166-macro3
 
 That's exactly what we saw before. 
 
 ![Example of macro expansion][macro4]
 
-[macro4]: macro4.jpg
+[macro4]: WWDC23-10166-macro4
 
 But how is the macro defined? Let's jump to its definition. (right click again, first manu item from top).
 
@@ -126,7 +126,7 @@ Here we have a slightly generalized version of our previous 'stringify' macro. I
 
 ![Example of macro expansion][macro5]
 
-[macro5]: macro5.jpg
+[macro5]: WWDC23-10166-macro5
 
 This tells the compiler that to perform the expansion, it needs to look at the StringifyMacro type in the WWDCMacros module.
 
@@ -194,7 +194,7 @@ To tell the test case how to expand the macros, it passes the 'testMacros' param
 
 ![Example of macro expansion][macro6]
 
-[macro6]: macro6.jpg
+[macro6]: WWDC23-10166-macro6
 
 ## Swift macro template recap
 
@@ -260,7 +260,7 @@ enum EasySlope {
 
 ![Example of macro expansion][macro7]
 
-[macro7]: macro7.jpg
+[macro7]: WWDC23-10166-macro7
 
 While this provides great type safety, it is really repetitive. To add an easy slope, we need to add it to Slope...EasySlope, the initializer, and the computed property. Let's see if we can improve things using a macro.
 
@@ -300,7 +300,7 @@ public macro SlopeSubset() = #externalMacro(module: "WWDCMacros", type: "SlopeSu
 
 ![Example of macro expansion][macro8]
 
-[macro8]: macro8.jpg
+[macro8]: WWDC23-10166-macro8
 
 In this demo, we will see how to generate the initializer. Generating the computed property is very similar, because it's also just a switch statement that switches over all the cases. With this declaration, we have defined the macro, but we have not implemented the expansion that it actually performs.  For this, our macro references the SlopeSubsetMacro type in the WWDCMacros module.
 
@@ -328,7 +328,7 @@ struct WWDCPlugin: CompilerPlugin {
 
 ![Example of macro expansion][macro9]
 
-[macro9]: macro9.jpg
+[macro9]: WWDC23-10166-macro9
 
 The 'expansion' function takes the attribute with which we apply the macro to a declaration, as well as the declaration that the macro is being applied to. In our case, this will be the EasySlope enum declaration.
 
@@ -361,7 +361,7 @@ struct WWDCPlugin: CompilerPlugin {
 
 ![Example of macro expansion][macro10]
 
-[macro10]: macro10.jpg
+[macro10]: WWDC23-10166-macro10
 
 start by writing a test case for it. So for now, let us just return an empty array, indicating that no new members should be added.
 
@@ -411,7 +411,7 @@ Running the tests
 
 ![Example of macro expansion][macro11]
 
-[macro11]: macro11.jpg
+[macro11]: WWDC23-10166-macro11
 
 But is the macro actually generating the initializer and not just removing the attribute? We copy the code previously wrote by hand into the test case because that's what we want the plug-in to generate.
 
@@ -438,7 +438,7 @@ enum EasySlope {
 
 ![Example of macro expansion][macro12]
 
-[macro12]: macro12.jpg
+[macro12]: WWDC23-10166-macro12
 
 
 The initializer switches over all the enum elements declared in the EasySlopes enum. So the first thing that we need to do is to retrieve these enum elements from the declaration. Since enum elements can only be declared inside enum declarations, we start by casting 'declaration' to an enum declaration.
@@ -448,26 +448,26 @@ Next, we need to get all the elements that the enum declares. To figure out how 
 
 ![Example of macro expansion][macro13]
 
-[macro13]: macro13.jpg
+[macro13]: WWDC23-10166-macro13
 
 Since the macro's implementation is just an ordinary Swift program, we can debug it in Xcode. For example, we can set a breakpoint inside the expansion function and run the test cases to hit that breakpoint.
 
 ![Example of macro expansion][macro14]
 
-[macro14]: macro14.jpg
+[macro14]: WWDC23-10166-macro14
 
 We now have the debugger paused inside the macro’s implementation and 'enumDecl' is the EasySlopes enum. We can print it in the debugger by typing 'po enumDecl'.
 
 
 ![Example of macro expansion][macro15]
 
-[macro15]: macro15.jpg
+[macro15]: WWDC23-10166-macro15
 
 The innermost nodes of the syntax tree represent the enum elements, the 'beginnersParadise', and 'practiceRun' slopes. To retrieve them, we need to follow the structure that is outlined to us in the syntax tree.
 
 ![Example of macro expansion][macro16]
 
-[macro16]: macro16.jpg
+[macro16]: WWDC23-10166-macro16
 
 The enum declaration has a child called 'memberBlock'. This member block contains both the braces and the actual members. So to access the members, we start with 'enumDecl.memberBlock.members'.
 
@@ -505,7 +505,7 @@ Two great ways of finding the syntax nodes to create, are either by printing the
 
 ![Reading the swift syntax docs][docs]
 
-[docs]: docs.jpg
+[docs]: WWDC23-10166-docs
 
 We start by constructing an InitializerDeclSyntax.
 
@@ -513,7 +513,7 @@ This type can be constructed by building the body using a result builder and spe
 
 ![creating init][init]
 
-[init]: init.jpg
+[init]: WWDC23-10166-init
 
 Copy the init header from our test case.
 
@@ -521,7 +521,7 @@ Inside the body, we need a switch expression. This type also has an initializer 
 
 ![creating init][init2]
 
-[init2]: init2.jpg
+[init2]: WWDC23-10166-init2
 
 Now we iterate over all elements. For each element, we want to create a new case item, which we can construct using string interpolation just like we saw for ‘#stringify'. We also need to add a default case that returns nil.
 
@@ -550,19 +550,19 @@ return [DecISyntax(initializer)]
 
 ![creating init][init3]
 
-[init3]: init3.jpg
+[init3]: WWDC23-10166-init3
 
 To add the macro package to the Xcode project, we right-click on it and select "Add Package Dependencies" and select the local package that we just created.
 
 ![add our macro package to my Xcode project][init4]
 
-[init4]: init4.jpg
+[init4]: WWDC23-10166-init4
 
 To be able to use the macro, we add the WWDC target as a dependency of the app.
 
 ![add our macro package to my Xcode project][init5]
 
-[init5]: init5.jpg
+[init5]: WWDC23-10166-init5
 
 Now import the WWDC module from the package and apply the SlopeSubset macro to the EasySlope type.
 
@@ -570,13 +570,13 @@ If we build... ...the compiler complains that the hand-written initializer is an
 
 ![add our macro package to my Xcode project][init6]
 
-[init6]: init6.jpg
+[init6]: WWDC23-10166-init6
 
 And if I forgot what the macro does, we can also Option-click on it to read its documentation.
 
 ![add our macro package to my Xcode project][init7]
 
-[init7]: init7.jpg
+[init7]: WWDC23-10166-init7
 
 ## Write macro recap
 
@@ -636,7 +636,7 @@ If we throw the error from the expansion function, it will be shown at the attri
 
 ![add our macro package to my Xcode project][init8]
 
-[init8]: init8.jpg
+[init8]: WWDC23-10166-init8
 
 If we want to show the error message at a different location than the attribute, generate warnings, or even show Fix-Its in Xcode, there's an 'addDiagnostic' method on the context parameter that allows to generate rich diagnostics. 
 
@@ -646,7 +646,7 @@ Xcode shows the custom error message inline with all other compilation errors. T
 
 ![add our macro package to my Xcode project][init9]
 
-[init9]: init9.jpg
+[init9]: WWDC23-10166-init9
 
 Now that we have good error handling, go and generalize it.
 
@@ -654,20 +654,20 @@ To specify the superset of the enum, that we have so far hard-coded as Slope, we
 
 ![add our macro package to my Xcode project][init10]
 
-[init10]: init10.jpg
+[init10]: WWDC23-10166-init10
 
 And since the macro is now no longer specific to slopes, let's rename it to EnumSubset by right clicking on SlopeSubset and selecting Refactor, Rename.  
 (Rename all occurences inside string literals and comments by Command-clicking them.)
 
 ![add our macro package to my Xcode project][init11]
 
-[init11]: init11.jpg
+[init11]: WWDC23-10166-init11
 
 We adjust our macro implementation to use the generic parameter, instead of the hard-coded Slopes type. If we print the attribute inside the debugger and inspect its layout, just like we did for 'enumDecl', we can see that we can retrieve the generic parameter by accessing the 'argumentType' of the first argument in the 'genericArgumentClause' of the attribute's name. So now that we've retrieved the generic parameter, we can replace the so-far hardcoded Slope type by the variable 'supersetType'.
 
 ![add our macro package to my Xcode project][init12]
 
-[init12]: init12.jpg
+[init12]: WWDC23-10166-init12
 
 Need a couple more changes, like renaming the initializer's parameter, changing the macro implementation's type name, and updating the documentation. For now, we make sure that our tests are still passing.
 
@@ -675,7 +675,7 @@ Since we made EnumSubset generic, we need to explicitly specify that EasySlope i
 
 ![add our macro package to my Xcode project][init13]
 
-[init13]: init13.jpg
+[init13]: WWDC23-10166-init13
 
 
 # Wrap up

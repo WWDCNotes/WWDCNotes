@@ -16,7 +16,7 @@ Discover how you can use App Store product metadata and Xcode Previews to add in
 
 ![][EncapsulatedLogic]
 
-[EncapsulatedLogic]: EncapsulatedLogic.png
+[EncapsulatedLogic]: WWDC23-10013-EncapsulatedLogic
 
 - Assets, Localization, Style provided by the Developer
 - `StoreView`, `ProductView`, and `SubscriptionStoreView` can be used when `StoreKit` and `SwiftUI` are imported
@@ -35,15 +35,15 @@ Discover how you can use App Store product metadata and Xcode Previews to add in
 
 ![][AuxiliaryButtons]
 
-[AuxiliaryButtons]: AuxiliaryButtons.png
+[AuxiliaryButtons]: WWDC23-10013-AuxiliaryButtons
 
 ![][RedeemCode]
 
-[RedeemCode]: RedeemCode.png
+[RedeemCode]: WWDC23-10013-RedeemCode
 
 ![][Policies]
 
-[Policies]: Policies.png
+[Policies]: WWDC23-10013-Policies
 
 - New `.subscriptionStoreSignInAction { ... }` modifier triggered on press of `.signIn` store button
 - `.policies` shows terms and privacy policy buttons above plan list (in iOS / macOS)
@@ -52,7 +52,7 @@ Discover how you can use App Store product metadata and Xcode Previews to add in
 
 ![][ButtonsStyle]
 
-[ButtonsStyle]: ButtonsStyle.png
+[ButtonsStyle]: WWDC23-10013-ButtonsStyle
 
 - Use `.subscriptionSToreButtonLabel(.displayName|.price)` in custom style
 - `.subscriptionStoreControlIcon { subscription, info in ... }` for further styling

@@ -63,4 +63,4 @@ PencilKit helps power creativity, writing, drawing, and animation in your iPad a
 [drawingPolicy]: https://developer.apple.com/documentation/pencilkit/pkcanvasview/3552388-drawingpolicy
 [prefersPencilOnlyDrawing]: https://developer.apple.com/documentation/uikit/uipencilinteraction/3552414-preferspencilonlydrawing
 
-[prefersImage]: prefers.png
+[prefersImage]: WWDC20-10107-prefers

@@ -146,7 +146,7 @@ var content = UIListContentConfiguration.sidebarCell()
 - Content configurations give you control over the layout margins (blue), and various padding properties (orange)
 ![][layoutImage]
 
-[layoutImage]: layout.png
+[layoutImage]: WWDC20-10027-layout
 
 [updateConfiguration(using:)]: https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600950-updateconfiguration
 [automaticallyUpdatesBackgroundConfiguration]: https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600427-automaticallyupdatesbackgroundco

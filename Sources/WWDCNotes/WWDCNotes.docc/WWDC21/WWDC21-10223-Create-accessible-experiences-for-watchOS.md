@@ -124,7 +124,7 @@ Hand motion (alternative to hand gestures, leverages wrist motion):
 By tilting their wrist, people are able to move the onscreen pointer and interact with the UI elements. Similar to AssistiveTouch on iOS, with Dwell Control you can perform an action by resting the pointer over an element for a set amount of time.
 
 <video autoplay muted loop style="max-width: 100%;">
-  <source src="motion.mp4">
+  <source src="WWDC21-10223-motion">
 </video>
 
 ## Improve AssistiveTouch usage in your app

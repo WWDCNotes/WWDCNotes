@@ -113,6 +113,6 @@ func testScrollingAnimationPerformance() throws {
 * Switch off Automatic Screenshots and Code Coverage
 * Turn off all diagnostic options, checkers, sanitizers and memory management
 
-[image-1]:	frame_delay.png
-[image-2]:	hitch_ratio_targets.png
-[image-3]:	hitch_measurement_tools.png
+[image-1]:	WWDC20-10077-frame_delay
+[image-2]:	WWDC20-10077-hitch_ratio_targets
+[image-3]:	WWDC20-10077-hitch_measurement_tools

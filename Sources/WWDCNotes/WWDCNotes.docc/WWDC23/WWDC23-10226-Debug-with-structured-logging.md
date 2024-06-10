@@ -65,10 +65,10 @@ Finally, to get most out of your logging:
 - Take advantage of `OSLogStore` to collect valuable diagnostics when issues occur with your application in production.
 - `OSLog` is a tracing facility. This means it is capable of providing you with complex performance analysis of your application using tools like Instruments.
 
-[console-metadata]: console-metadata.png
-[quick-look]: quick-look.png
-[filtering]: filtering.png
-[toggle-similar-items]: toggle-similar-items.png
-[lldb-commands]: lldb-commands.png
-[logging-bad-practice]: logging-bad-practice.png
-[logging-best-practice]: logging-best-practice.png
+[console-metadata]: WWDC23-10226-console-metadata
+[quick-look]: WWDC23-10226-quick-look
+[filtering]: WWDC23-10226-filtering
+[toggle-similar-items]: WWDC23-10226-toggle-similar-items
+[lldb-commands]: WWDC23-10226-lldb-commands
+[logging-bad-practice]: WWDC23-10226-logging-bad-practice
+[logging-best-practice]: WWDC23-10226-logging-best-practice

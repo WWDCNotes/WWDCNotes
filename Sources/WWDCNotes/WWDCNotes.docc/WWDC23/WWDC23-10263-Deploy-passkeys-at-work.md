@@ -52,7 +52,7 @@ With passkeys, layering on SMS, time-based one-time password, and push notificat
 Using passkeys provides the user with a much better experience. Creating/signing in is as simple as using Face ID
 ![UX][UX]
 
-[UX]: 1experience.jpg
+[UX]: WWDC23-10263-1experience
 
 ## Managing Passkeys at Work
 Requirements in managed environments:

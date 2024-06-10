@@ -65,7 +65,10 @@ for session in sessionByID.values {
       let newImageFilePath = "\(sessionMediaFolderPath)/\(event)-\(session.code)-\(imageFileName)"
       try FileManager.default.copyItem(atPath: imagePath, toPath: newImageFilePath)
 
-      sessionFileContents = sessionFileContents.replacing("../../../images/notes/\(event.lowercased())/\(session.code)/\(imageFileName)", with: imageFileName)
+      sessionFileContents = sessionFileContents.replacing(
+         "../../../images/notes/\(event.lowercased())/\(session.code)/\(imageFileName)",
+         with: newImageFilePath.components(separatedBy: "/").last!.components(separatedBy: ".")[0]
+      )
    }
 
    if !FileManager.default.fileExists(atPath: eventSessionsPath) {

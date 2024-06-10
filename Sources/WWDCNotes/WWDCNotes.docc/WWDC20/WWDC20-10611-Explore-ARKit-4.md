@@ -350,20 +350,20 @@ ARKit 4 brings face tracking support to devices without a TrueDepth camera as lo
 
 ![][extended_facetracking]
 
-[geo_sculpture]: geo_sculpture.png
+[geo_sculpture]: WWDC20-10611-geo_sculpture
 
-[ferry_building_demo]: ferry_building_demo.png
+[ferry_building_demo]: WWDC20-10611-ferry_building_demo
 
-[coordinate_system]: coordinate_system.png
+[coordinate_system]: WWDC20-10611-coordinate_system
 
-[ferry_building_demo_improved]: ferry_building_demo_improved.png
+[ferry_building_demo_improved]: WWDC20-10611-ferry_building_demo_improved
 
-[lidar_scanner]: lidar_scanner.png
+[lidar_scanner]: WWDC20-10611-lidar_scanner
 
-[scene_geometry]: scene_geometry.png
+[scene_geometry]: WWDC20-10611-scene_geometry
 
-[depth_debug]: depth_debug.png
+[depth_debug]: WWDC20-10611-depth_debug
 
-[point_cloud_demo_app]: point_cloud_demo_app.png
+[point_cloud_demo_app]: WWDC20-10611-point_cloud_demo_app
 
-[extended_facetracking]: extended_facetracking.png
+[extended_facetracking]: WWDC20-10611-extended_facetracking

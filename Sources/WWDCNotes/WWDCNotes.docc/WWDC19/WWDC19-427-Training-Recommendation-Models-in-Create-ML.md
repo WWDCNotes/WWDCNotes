@@ -32,4 +32,4 @@ And it's this _graph_ that gets packaged into our model.
 
 All of the user data and the group data present in our training data is not explicitly present in the final model.
 
-[tableImage]: table.png
+[tableImage]: WWDC19-427-table

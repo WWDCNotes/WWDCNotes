@@ -33,7 +33,7 @@ Spatial computing brings SwiftUI into a bold new future with all-new 3D capabili
 
 ![Overview of the section titled 'SwiftUI in more places'][1]
 
-[1]: SwiftUI-in-more-places.png
+[1]: WWDC23-10148-SwiftUI-in-more-places
 
 ### Scenes for spatial computing
 
@@ -42,7 +42,7 @@ Add `.windowStyle(.volumetric)` to get a volume.
 
 ![WindowGroup][WindowGroup]
 
-[WindowGroup]: WindowGroup.jpg
+[WindowGroup]: WWDC23-10148-WindowGroup
 
 ### NavigationSplitViews are available.
 
@@ -56,7 +56,7 @@ NavigationSplitView {
 
 ![NavigationSplitViews][NavigationSplitViews]
 
-[NavigationSplitViews]: NavigationSplitViews.jpg
+[NavigationSplitViews]: WWDC23-10148-NavigationSplitViews
 
 
 ### TabViews
@@ -74,7 +74,7 @@ TabView {
 
 ![TabViews][TabViews]
 
-[TabViews]: TabViews.jpg
+[TabViews]: WWDC23-10148-TabViews
 
 ### Volume content
 
@@ -82,7 +82,7 @@ Fill a volume with a static model using `Model3D`.
 
 ![volume content][volume]
 
-[volume]: globe.jpg
+[volume]: WWDC23-10148-globe
 
 For dynamic, interactive models with lighting effects and more, use the new `RealityView`.
 ```swift
@@ -114,7 +114,7 @@ See more in the session:
 
 ![watchOS 10 redesigned user experience][watch]
 
-[watch]: watch.jpg
+[watch]: WWDC23-10148-watch
 
 - Newly empowered with new transitions:
     - NavigationSplitView
@@ -123,7 +123,7 @@ See more in the session:
 
 ![watchOS 10 redesigned user experience][watch2]
 
-[watch2]: watch2.jpg
+[watch2]: WWDC23-10148-watch2
 
 - `.containerBackground` modifier lets you configure the background of the container which animate when you push and pop content.
 
@@ -135,7 +135,7 @@ CityDetails(city: city)
 
 ![watchOS 10 redesigned user experience][watch3]
 
-[watch3]: watch3.jpg
+[watch3]: WWDC23-10148-watch3
 
 - Multiplatform toolbar placements (`.topBarLeading` and `.topBarTrailing`, along with the existing `.bottomBar`) let you perfectly place small detail views in your Apple Watch apps.
 
@@ -149,7 +149,7 @@ CityDetails(city: city)
 
 ![watchOS 10 redesigned user experience][watch4]
 
-[watch4]: watch4.jpg
+[watch4]: WWDC23-10148-watch4
 
 - New additions
     - `DatePicker`
@@ -175,7 +175,7 @@ NavigationSplitView {
 
 ![watchOS 10 redesigned user experience][watch5]
 
-[watch5]: watch5.jpg
+[watch5]: WWDC23-10148-watch5
 
 
 See more in the sessions:
@@ -188,13 +188,13 @@ Widgets for the Smart Stack on watchOS 10 let the people using your app see thei
 
 ![watchOS 10 redesigned user experience][watch6]
 
-[watch6]: watch6.jpg
+[watch6]: WWDC23-10148-watch6
 
 SwiftUI is core to widgets wherever they appear, like these other new places. Widgets on the Lock Screen on iPadOS 17 are a great complement to widgets on the Home Screen.
 
 ![iPad Widgets][iPadWidgets]
 
-[iPadWidgets]: iPadWidgets.jpg
+[iPadWidgets]: WWDC23-10148-iPadWidgets
 
 
 Big, bold widgets shine on the iPhone Always-On display with Standby Mode. 
@@ -276,7 +276,7 @@ struct CaffeineTrackerwidgetView : View {
 
 ![Widgets][widgets]
 
-[widgets]: widgets.jpg
+[widgets]: WWDC23-10148-widgets
 
 New Previews syntax:
 
@@ -333,7 +333,7 @@ Map {
 
 ![mapkit][mapkit]
 
-[mapkit]: mapkit.jpg
+[mapkit]: WWDC23-10148-mapkit
 
 
 **NEW:** Use maps in your view.
@@ -391,7 +391,7 @@ Chart {
 
 ![charts][charts]
 
-[charts]: charts.jpg
+[charts]: WWDC23-10148-charts
 
 **NEW:** Scrolling and selection in charts.
 
@@ -417,7 +417,7 @@ struct ScrollingChart_Snippet: View {
 
 ![charts][charts2]
 
-[charts2]: charts2.jpg
+[charts2]: WWDC23-10148-charts2
 
 
 **NEW:** Donut and pie charts with the new `SectorMark`.
@@ -444,7 +444,7 @@ struct DonutChart_Snippet: View {
 
 ![charts][charts3]
 
-[charts3]: charts3.jpg
+[charts3]: WWDC23-10148-charts3
 
 
 See more in the session:
@@ -481,7 +481,7 @@ SubscriptionStoreView(groupID: passGroupID) {
 ![storeKit][storeKit]
 
 
-[storeKit]: storeKit.jpg
+[storeKit]: WWDC23-10148-storeKit
 
 
 ```swift
@@ -513,7 +513,7 @@ See more in the session:
 
 ![Overview of the section titled 'Simplified data flow'][Simplified-data-flow]
 
-[Simplified-data-flow]: Simplified-data-flow.png
+[Simplified-data-flow]: WWDC23-10148-Simplified-data-flow
 
 
 - `@Observable` macro
@@ -562,7 +562,7 @@ struct DogCard: View {
 
 ![observable][observable]
 
-[observable]: observable.jpg
+[observable]: WWDC23-10148-observable
 
 - `@State` can be passed into the environment
     - can then be read either via the type (e.g. `User.self`) or with a custom key
@@ -602,7 +602,7 @@ Observables are also a natural fit to represent mutable state, like on this form
 
 ![state example][state]
 
-[state]: state.jpg
+[state]: WWDC23-10148-state
 
 Lastly, Observable types integrate seamlessly into the environment.
 ```swift
@@ -771,15 +771,15 @@ struct ContentView: View {
 ```
 ![inspector][inspector]
 
-[inspector]: inspector.jpg
+[inspector]: WWDC23-10148-inspector
 
 ![inspector][inspector3]
 
-[inspector3]: inspector3.jpg
+[inspector3]: WWDC23-10148-inspector3
 
 ![inspector][inspector4]
 
-[inspector4]: inspector4.jpg
+[inspector4]: WWDC23-10148-inspector4
 
 
 To uncover all the details on Inspector, watch:
@@ -804,7 +804,7 @@ ContentView()
 
 ![dialog][dialog]
 
-[dialog]: dialog.jpg
+[dialog]: WWDC23-10148-dialog
 
 - Dialogs get new powers
     - e.g. severity, suppression toggle
@@ -832,7 +832,7 @@ Button("Delete dog tag", role: .destructive) {
 
 ![dialog][dialog2]
 
-[dialog2]: dialog2.jpg
+[dialog2]: WWDC23-10148-dialog2
 
 ### Lists and tables
 - Lists and Tables
@@ -884,7 +884,7 @@ Table (of: DogGenealogy.self) {
 
 ![tables][tables]
 
-[tables]: tables.jpg
+[tables]: WWDC23-10148-tables
 
 
 ### Sections
@@ -901,7 +901,7 @@ Section ("Locations", isExpanded: SisLocationSectionExpanded) {
 
 ![sections][sections]
 
-[sections]: sections.jpg
+[sections]: WWDC23-10148-sections
 
 For smaller data sets, tables have also gained a few new styling affordances, such as how row backgrounds and column headers are displayed.
 ```swift
@@ -940,7 +940,7 @@ struct StarRatingForegroundStyle: ShapeStyle {
 
 ![sections][section2]
 
-[section2]: section2.jpg
+[section2]: WWDC23-10148-section2
 
 We've also made big improvements to the performance, particularly when dealing with large data sets. To learn more about this and the ways you can optimize your own SwiftUI views, check out:
 
@@ -950,7 +950,7 @@ We've also made big improvements to the performance, particularly when dealing w
 
 ![Overview of the section titled 'Extraordinary animations'][Extraordinary-animations]
 
-[Extraordinary-animations]: Extraordinary-animations.png
+[Extraordinary-animations]: WWDC23-10148-Extraordinary-animations
 
 - Keyframe Animator API
     - animate multiple values in parallel
@@ -1012,7 +1012,7 @@ HappyDog()
 
 ![Phase Animator][phaseAnimator]
 
-[phaseAnimator]: phaseAnimator.jpg
+[phaseAnimator]: WWDC23-10148-phaseAnimator
 
 - define multiple phases and hand them to the `.phaseAnimator` modifier, together with a trigger that triggers the animation whenever a value changes
 - define the content and how the elements of the phases change it (e.g. rotation, scale)
@@ -1074,7 +1074,7 @@ struct DogCircle: View {
 
 ![Visual Effects Modifier][visualEffectsModifier]
 
-[visualEffectsModifier]: visualEffectsModifier.jpg
+[visualEffectsModifier]: WWDC23-10148-visualEffectsModifier
 
 
 I can use the geometry proxy to get the size of my grid view and the frame of a single dog circle relative to my grid view. That lets me compute how far any dog is from the focal point of the simulation, so I can scale up the focused doggos. With visual effects, I can do all of this without using a GeometryReader. And it automatically adapts to different sizes.
@@ -1116,7 +1116,7 @@ var stripes: Shader {
 
 ![Text Styles][textStyles]
 
-[textStyles]: textStyles.jpg
+[textStyles]: WWDC23-10148-textStyles
 
 Using SwiftUI's new ShaderLibrary, I can turn Metal shader functions directly into SwiftUI shape styles, like this one that renders the stripes in Furdinand's name.
 ```swift
@@ -1150,7 +1150,7 @@ Image(systemName: "..").symbolEffect(...)
 
 ![Symbol effect modifier][symbolEffectModifier]
 
-[symbolEffectModifier]: symbolEffectModifier.jpg
+[symbolEffectModifier]: WWDC23-10148-symbolEffectModifier
 
 
 Check also:
@@ -1168,7 +1168,7 @@ Text ("\(angle) \(Text("RAD").textScale(.secondary))")
 ```
 ![New textScale modifier][textScaleModifier]
 
-[textScaleModifier]: textScaleModifier.jpg
+[textScaleModifier]: WWDC23-10148-textScaleModifier
 
 ### The typesettingLanguage modifier
 We have another tool to help apps work great in multiple locales. Some languages, like Thai, use taller letter forms. When text from one of these languages is embedded in text localized in a language with shorter letter forms, like English, the taller text can be crowded or clipped. When we know that this might be an issue -- for example, if our dog names were globally crowd-sourced -- we can apply the typesettingLanguage modifier. This lets SwiftUI know that the text might need more space.
@@ -1193,14 +1193,14 @@ Text(
 
 ![New typesettingLanguage modifier][typesettingLanguage]
 
-[typesettingLanguage]: typesettingLanguage.jpg
+[typesettingLanguage]: WWDC23-10148-typesettingLanguage
 
 
 # Enhanced interactions
 
 ![Overview of the section titled 'Enhanced interactions'][4]
 
-[4]: Enhanced-interactions.png
+[4]: WWDC23-10148-Enhanced-interactions
 
 ### Scroll Transition Effect
 
@@ -1234,7 +1234,7 @@ ScrollView {
 
 ![Scroll Transition Effect][scrollTransitionEffect]
 
-[scrollTransitionEffect]: scrollTransitionEffect.jpg
+[scrollTransitionEffect]: WWDC23-10148-scrollTransitionEffect
 
 I'd also like to add a side-scrolling list of my favorite dog parks to this screen. Above my vertical stack of dogs, I'll drop in a horizontal stack for the park cards. I'm using the new containerRelativeFrame modifier to size these park cards relative to the visible size of the horizontal scroll view. The count specifies how many chunks to divide the screen into. The span says how many of those chunks each view should take.This is pretty great, but I'd like my park cards to snap into place. The new scrollTargetLayout modifier makes that easy. I'll add it to the LazyHStack and modify the scroll view to align to views in the targeted layout.
 
@@ -1260,7 +1260,7 @@ ScrollView {
 
 ![Scroll Transition Effect][scrollTransitionEffect2]
 
-[scrollTransitionEffect2]: scrollTransitionEffect2.jpg
+[scrollTransitionEffect2]: WWDC23-10148-scrollTransitionEffect2
 
 Scroll views can also be defined to use a paging behavior. And you can define your own behavior using the scrollTargetBehavior protocol. The new scrollPosition modifier takes a binding to the topmost item's ID, and it's updated as I scroll.
 ```swift
@@ -1277,7 +1277,7 @@ safeAreaInset(edge: .top) {
 
 ![Scroll Transition Effect][scrollTransitionEffect3]
 
-[scrollTransitionEffect3]: scrollTransitionEffect3.jpg
+[scrollTransitionEffect3]: WWDC23-10148-scrollTransitionEffect3
 
 To learn more about all these and the other great improvements to Scroll View, be sure to watch:
 
@@ -1308,7 +1308,7 @@ struct GalleryDetail: View {
 
 ![HDR images][HDRImages]
 
-[HDRImages]: HDRImages.jpg
+[HDRImages]: WWDC23-10148-HDRImages
 
 ### new accessibility APIs
 I'm also going to add the new accessibilityZoomAction modifier to my view. This allows assistive technologies like VoiceOver to access the same functionality without using the gesture. I'll just update the zoom level depending on the action's direction, and I can see what mischief she's been up to now. VoiceOver: Zooming image view. Image.
@@ -1353,7 +1353,7 @@ Picker("Tag Color", selection: $selection) {
 
 ![Static Colors][staticColors]
 
-[staticColors]: staticColors.jpg
+[staticColors]: WWDC23-10148-staticColors
 
 
 Lastly, the paletteSelectionEffect modifier lets me use a symbol variant to represent the selected item in the picker. With my menu in place, Buddy's dog tag can now be his favorite color, tennis-ball yellow.
@@ -1372,7 +1372,7 @@ Picker("Tag Color", selection: $selectedTagColor) {
 
 ![Static Colors][staticColors2]
 
-[staticColors2]: staticColors2.jpg
+[staticColors2]: WWDC23-10148-staticColors2
 
 
 
@@ -1400,7 +1400,7 @@ ControlGroup {
 
 ![The new compactMenu style][controlGroupStyle]
 
-[controlGroupStyle]: controlGroupStyle.jpg
+[controlGroupStyle]: WWDC23-10148-controlGroupStyle
 
 The tag color selector is defined as a picker with the new palette style. Using this style in concert with symbol images gives a great visual representation in menus, especially one like this where I can use the label's tint to differentiate them. Lastly, the paletteSelectionEffect modifier lets me use a symbol variant to represent the selected item in the picker.
 
@@ -1418,7 +1418,7 @@ Picker ("Tag Color", selection: $selectedTagColor) {
 
 ![The new compactMenu style][controlGroupStyle2]
 
-[controlGroupStyle2]: controlGroupStyle2.jpg
+[controlGroupStyle2]: WWDC23-10148-controlGroupStyle2
 
 
 ### Bordered buttons
@@ -1429,7 +1429,7 @@ Picker ("Tag Color", selection: $selectedTagColor) {
 
 ![Bordered buttons][borderedButtons]
 
-[borderedButtons]: borderedButtons.jpg
+[borderedButtons]: WWDC23-10148-borderedButtons
 
 Bordered buttons can now be defined with new built-in shapes, such as circle and rounded rectangle. These new border shape styles work on iOS, watchOS, and macOS.
 ```swift
@@ -1470,7 +1470,7 @@ Button {
 
 ![Bordered buttons][borderedButtons2]
 
-[borderedButtons2]: borderedButtons2.jpg
+[borderedButtons2]: WWDC23-10148-borderedButtons2
 
 ### New highlight hover effect (tvOS)
 - New `.hoverEffect(.highlight)` (only available for tvOS?)

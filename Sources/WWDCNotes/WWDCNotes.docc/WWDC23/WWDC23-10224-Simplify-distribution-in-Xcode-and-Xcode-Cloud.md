@@ -39,7 +39,7 @@ Creating an archive can be done by going to the Product menu in Xcode and select
 From there, the archive can be distributed by clicking the "Distribute App" button. Xcode 15 has added new streamlined options
 ![options][options]
 
-[options]: 1streamline.JPG
+[options]: WWDC23-10224-1streamline
 
 These options include:
 - TestFlight & App Store - has the full capabilities of TestFlight and allow App Store submission

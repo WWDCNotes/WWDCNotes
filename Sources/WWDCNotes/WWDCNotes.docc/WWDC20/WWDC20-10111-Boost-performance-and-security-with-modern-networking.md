@@ -106,18 +106,18 @@ In macOS Big Sur, you can also enable HTTP/3 for apps that use `URLSession`:
 
 Apple is looking for developers to try out HTTP/3 and file bugs!
 
-[ipv6_stats]: ipv6_stats.png
+[ipv6_stats]: WWDC20-10111-ipv6_stats
 
-[http2_stats]: http2_stats.png
+[http2_stats]: WWDC20-10111-http2_stats
 
-[tls_stats]: tls_stats.png
+[tls_stats]: WWDC20-10111-tls_stats
 
-[tcp_stats]: tcp_stats.png
+[tcp_stats]: WWDC20-10111-tcp_stats
 
-[dns]: dns.png
+[dns]: WWDC20-10111-dns
 
-[encrypted_tls_handshakes]: encrypted_tls_handshakes.png
+[encrypted_tls_handshakes]: WWDC20-10111-encrypted_tls_handshakes
 
-[experimental_http3]: experimental_http3.png
+[experimental_http3]: WWDC20-10111-experimental_http3
 
-[experimental_http3_mac]: experimental_http3_mac.png
+[experimental_http3_mac]: WWDC20-10111-experimental_http3_mac

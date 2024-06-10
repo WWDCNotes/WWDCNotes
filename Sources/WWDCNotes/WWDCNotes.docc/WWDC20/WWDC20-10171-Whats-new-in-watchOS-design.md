@@ -113,13 +113,13 @@ If you'd like to show only one more extra action, you can do so by showing an ad
 
 - In a hierarchical navigation model, the app should remember the destination the user chose the next time they open the app.
 
-[sortImage]: sort.png
-[deleteImage]: delete.png
-[moreImage]: more.png
-[oneMoreImage]: oneMore.png
-[bottomButtonImage]: bottomButton.png
-[toolbarImage]: toolbar.png
-[level-0Image]: level-0.png
-[level-1Image]: level-1.png
+[sortImage]: WWDC20-10171-sort
+[deleteImage]: WWDC20-10171-delete
+[moreImage]: WWDC20-10171-more
+[oneMoreImage]: WWDC20-10171-oneMore
+[bottomButtonImage]: WWDC20-10171-bottomButton
+[toolbarImage]: WWDC20-10171-toolbar
+[level-0Image]: WWDC20-10171-level-0
+[level-1Image]: WWDC20-10171-level-1
 
 [watchHIG]: https://developer.apple.com/design/human-interface-guidelines/watchos/elements/buttons/

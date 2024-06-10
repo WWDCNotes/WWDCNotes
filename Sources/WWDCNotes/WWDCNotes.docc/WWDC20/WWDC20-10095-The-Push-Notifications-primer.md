@@ -208,6 +208,6 @@ This function also requires calling the `completionHandler`, but you will have s
 
 Here are sample apps that shows implementing [Alert][AlertSampleApp] and [Background][BackgroundSampleApp] notifications.
 
-[notification_example]: notification_example.png
+[notification_example]: WWDC20-10095-notification_example
 [AlertSampleApp]: https://developer.apple.com/documentation/usernotifications/implementing_alert_push_notifications
 [BackgroundSampleApp]: https://developer.apple.com/documentation/usernotifications/implementing_background_push_notifications

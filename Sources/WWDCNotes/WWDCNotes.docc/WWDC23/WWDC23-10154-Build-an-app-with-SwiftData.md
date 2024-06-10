@@ -26,7 +26,7 @@ Discover how SwiftData can help you persist data in your app. Code along with us
 
 ![SwiftData Logo][SwiftData]  
 
-[SwiftData]: SwiftData.jpg
+[SwiftData]: WWDC23-10154-SwiftData
 
 To cover your basics, watch the "Meet SwiftData" session first if you haven’t already.
 
@@ -36,7 +36,7 @@ This is a code-along. The sample project includes both the starting point and ho
 
 ![Code Along][codeAlong]  
 
-[codeAlong]: codeAlong.jpg
+[codeAlong]: WWDC23-10154-codeAlong
 
 Download the sample project here: [Code Along - Building a document based app using SwiftData](https://developer.apple.com/documentation/SwiftUI/Building-a-document-based-app-using-SwiftData)
 
@@ -45,7 +45,7 @@ Let’s build a flashcards app. This app should work everywhere: on Mac, iPhone,
 
 ![Code Along][codeAlong2]  
 
-[codeAlong2]: codeAlong2.jpg
+[codeAlong2]: WWDC23-10154-codeAlong2
 
 There is a new Xcode feature, embedded interactive live Previews for Mac.
 
@@ -59,7 +59,7 @@ In the starter project, there is a Card model that represents a single flash car
 
 ![Code Along][codeAlong3]  
 
-[codeAlong3]: codeAlong3.jpg
+[codeAlong3]: WWDC23-10154-codeAlong3
 
 It is a pretty typical model.
 
@@ -69,13 +69,13 @@ With @Model, the Card gets conformance to the Observable protocol, and we will u
 
 ![Code Along][codeAlong4]  
 
-[codeAlong4]: codeAlong4.jpg
+[codeAlong4]: WWDC23-10154-codeAlong4
 
 To adopt Observable in the CardEditorView file, replace the "ObservedObject" property wrapper with "Bindable." It allows the text fields to bind directly to the card's front... and back text.
 
 ![Code Along][codeAlong5]  
 
-[codeAlong5]: codeAlong5.jpg
+[codeAlong5]: WWDC23-10154-codeAlong5
 
 
 ## @Observable
@@ -95,7 +95,7 @@ And replace @State property wrapper with @Query.  Use @Query whenever you want t
 
 ![Code Along][codeAlong6]  
 
-[codeAlong6]: codeAlong6.jpg
+[codeAlong6]: WWDC23-10154-codeAlong6
 
 ## @Query (Property wrapper)
 - Provides the view with data
@@ -141,7 +141,7 @@ struct FlashCardApp: App {
 
 ![Code Along][codeAlong7]  
 
-[codeAlong7]: codeAlong7.jpg
+[codeAlong7]: WWDC23-10154-codeAlong7
 
 In this case, we can set it up for the whole window group scene. The window and its views will inherit the container, as well as any other windows created from the same group. All of these views will write and read from a single container.
 Some apps need a few storage stacks, and they can set up several model containers for different windows.
@@ -165,7 +165,7 @@ struct FlashCardApp: App {
 
 ![Code Along][codeAlong8]  
 
-[codeAlong8]: codeAlong8.jpg
+[codeAlong8]: WWDC23-10154-codeAlong8
 
 Different views in the same window can have separate containers, and saving in one container won’t affect another.
 
@@ -183,7 +183,7 @@ struct CardDesignInspector: View {
 
 ![Code Along][codeAlong9]  
 
-[codeAlong9]: codeAlong9.jpg
+[codeAlong9]: WWDC23-10154-codeAlong9
 
 Now, let's set up the modelContainer to provide the Query with a source of data. I open the app definition...  And set a model container for app's windows. Note that the subviews can create, read, update, and delete only the model types listed in the view modifier.
 
@@ -191,19 +191,19 @@ And let's provide the previews with sample data.
 
 ![Code Along][codeAlong10]  
 
-[codeAlong10]: codeAlong10.jpg
+[codeAlong10]: WWDC23-10154-codeAlong10
 
 In the app, we have defined an in-memory container with sample cards. Open the "PreviewSampleData" file and include it in the target. This file contains the definition of a container with the sample data.
 
 ![Code Along][codeAlong11]  
 
-[codeAlong11]: codeAlong11.jpg
+[codeAlong11]: WWDC23-10154-codeAlong11
 
 Now that @Query has a source of data, the preview displays the cards!
 
 ![Code Along][codeAlong12]  
 
-[codeAlong12]: codeAlong12.jpg
+[codeAlong12]: WWDC23-10154-codeAlong12
 
 # Creating and updating
 
@@ -226,7 +226,7 @@ We will need to access the modelContext to save and update the cards.
 
 ![Code Along][codeAlong13]  
 
-[codeAlong13]: codeAlong13.jpg
+[codeAlong13]: WWDC23-10154-codeAlong13
 
 SwiftData autosaves the model context. The autosaves are triggered by UI-related events and user input. Call "save()" explicitly, when we want to make sure that all the changes are persisted immediately, but this only in some special cases.
 
@@ -238,7 +238,7 @@ Document-based apps is a concept used on macOS, iOS, and iPadOS. It describes th
 
 ![Code Along][codeAlong14]  
 
-[codeAlong14]: codeAlong14.jpg
+[codeAlong14]: WWDC23-10154-codeAlong14
 
 Document-based apps exist on iOS and macOS, and on these platforms, we'll switch to using the DocumentGroup initializer. We will be passing in the model type Card.self, content type, and a view builder.
 
@@ -246,13 +246,13 @@ About the content type:
 
 ![Code Along][codeAlong15]  
 
-[codeAlong15]: codeAlong15.jpg
+[codeAlong15]: WWDC23-10154-codeAlong15
 
 SwiftData Document-based apps need to declare custom content types. Each SwiftData document is built from a unique set of models and so has a unique representation on disk. In the context of documents, a content type is like a binary file format, ex JPEG. Another type of documents, a package, is a directory with a fixed structure on disk, like an Xcode project. For example, all the JPEG images have the same binary structure. Otherwise, photo editors wouldn’t know how to read them. Similarly, all the Xcode projects contain certain directories and files.
 
 ![Code Along][codeAlong16]  
 
-[codeAlong16]: codeAlong16.jpg
+[codeAlong16]: WWDC23-10154-codeAlong16
 
 When the user opens the deck, we need the operating system to associate the deck format and file extension with our app. That’s why we need to declare the content type. SwiftData documents are packages: if you mark some properties of a SwiftData model with the “externalStorage” attribute, all the externally stored items will be a part of the document package.
 
@@ -264,14 +264,14 @@ Because SwiftData documents are packages, we have to make sure our type conforms
 
 ![Code Along][codeAlong17]  
 
-[codeAlong17]: codeAlong17.jpg
+[codeAlong17]: WWDC23-10154-codeAlong17
 
 And now, returning to the app definition and passing the content type to the DocumentGroup. The view builder looks identical.  
 We don’t set up the model container. The document infrastructure will set up one for each document.
 
 ![Code Along][codeAlong18]  
 
-[codeAlong18]: codeAlong18.jpg
+[codeAlong18]: WWDC23-10154-codeAlong18
 
 A workflow: 
 The app launches with the open panel, which is standard behavior for Document-based applications. We'll create a new document and add a card there. The document now has a toolbar subtitle indicating that it has unsaved changes. We press Command+S, and the save dialog appears. The deck will be saved with the same file extension that we put in the Info.plist. Can also press Command+N to create a new deck, or Command+O to open one. These shortcuts, as well as many other features, Document-based applications get automatically. 

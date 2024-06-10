@@ -227,7 +227,7 @@ view.addInteraction(selectionInteraction)
 - iPadOS 15 introduces the concept of `latchingAxes` on [`UIPointerRegion`][UIPointerRegion]
 - e.g. a horizontally latching region lets you drag freely along the x-axis while still rubberbanding along the y-axis
 
-[prominent]: prominent.png
+[prominent]: WWDC21-10057-prominent
 
 [UIPointerRegion]: https://developer.apple.com/documentation/uikit/uipointerregion 
 [UIBandSelectionInteraction]: https://developer.apple.com/documentation/uikit/uibandselectioninteraction

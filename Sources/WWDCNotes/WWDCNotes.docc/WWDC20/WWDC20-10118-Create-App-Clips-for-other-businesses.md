@@ -52,6 +52,6 @@ If the business does not have uploaded a custom icon, the system will display a 
 [notificationsDoc]: https://developer.apple.com/documentation/app_clips/enabling_notifications_in_app_clips
 [mc]: https://mapsconnect.apple.com
 
-[shinyImage]: shiny.png
-[comparisonImage]: comparison.png
-[poiImage]: poi.png
+[shinyImage]: WWDC20-10118-shiny
+[comparisonImage]: WWDC20-10118-comparison
+[poiImage]: WWDC20-10118-poi

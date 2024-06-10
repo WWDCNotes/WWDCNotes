@@ -161,9 +161,9 @@ In the app Associated Domains entitlement we will need to define a url for each 
 [suppAssDomDoc]: https://developer.apple.com/documentation/safariservices/supporting_associated_domains
 [openSystemURLDoc]: https://developer.apple.com/documentation/watchkit/wkextension/1628224-opensystemurl
 
-[errImage]:  err.png
-[asciiImage]:  ascii.png
-[defaultsImage]: defaults.png
-[predImage]:  pred.png
-[beneImage]:  bene.png
-[altModesImage]: altModes.png
+[errImage]:  WWDC20-10098-err
+[asciiImage]:  WWDC20-10098-ascii
+[defaultsImage]: WWDC20-10098-defaults
+[predImage]:  WWDC20-10098-pred
+[beneImage]:  WWDC20-10098-bene
+[altModesImage]: WWDC20-10098-altModes

@@ -43,19 +43,19 @@ public extension Image {
 
 ![Xcode 15's Documentation Preview, with code on the left that's documented and the rigth is a preview of what that documentation will look like rendered with DocC][Documentation Preview]
 
-[Documentation Preview]: document-preview-editor.jpeg
+[Documentation Preview]: WWDC23-10244-document-preview-editor
 
 ## Swift-DocC direcives
 
 ![Overview of some of the new directives to customize the look of documentation.][overview]
 
-[overview]: overview.png
+[overview]: WWDC23-10244-overview
 
 * `@Row` and `@Column`
 
 ![Swift Documentation code on the left for a row with two columns, and the right shows the rendered version that row.][Grids]
 
-[Grids]: grids.jpeg
+[Grids]: WWDC23-10244-grids
 
     * `@Links`
         * `visualStyle`: `list` and `detailedGrid`
@@ -76,7 +76,7 @@ public extension Image {
 
 ![Updated styles to Swift DocC documentation using PageColor, PageImage, and Links.][New Directives]
 
-[New Directives]: new-directives.jpeg
+[New Directives]: WWDC23-10244-new-directives
 
 * Create custom layouts
 
@@ -87,7 +87,7 @@ public extension Image {
 
 ![Examples `theme-settings.json` file with custom color and typography.][theme-settings]
 
-[theme-settings]: theme-settings.png
+[theme-settings]: WWDC23-10244-theme-settings
 
 ## Navigation
 * Quick navigation, like Xcode's Open quickly
@@ -96,4 +96,4 @@ public extension Image {
 
 ![Xcode 15's Quick Navigator. A search bar on top, list of possible results on the left and a preview of the selected result on the right.][Quick Navigation]
 
-[Quick Navigation]: quick-nav.jpeg
+[Quick Navigation]: WWDC23-10244-quick-nav

@@ -230,8 +230,8 @@ For more custom tinting, we can get the current [`ComplicationRenderingMode`][Co
 - Circular and Rectangular complication families will mask your view
 - Rectangular full view complication features a safe area for layout to help prevent your content from being clipped on the watch face.
 
-[pvgImage]: pvg.png
-[tintingImage]: tinting.png
+[pvgImage]: WWDC20-10048-pvg
+[tintingImage]: WWDC20-10048-tinting
 
 [allColors]: https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeview/previewfacecolor/3593768-allcolors
 [previewContext]: https://developer.apple.com/documentation/swiftui/view/previewcontext(_:)

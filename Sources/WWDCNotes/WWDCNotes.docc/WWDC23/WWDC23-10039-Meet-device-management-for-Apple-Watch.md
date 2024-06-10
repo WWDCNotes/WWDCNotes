@@ -33,13 +33,13 @@ https://developer.apple.com/videos/play/wwdc2023/10041
 Starting with a managed iPhone device, the administrator will send a new declaration to the phone. This example shows the new Watch Enrollment configuration
 ![Configuration][configuration]
 
-[configuration]: 2configuration.JPG
+[configuration]: WWDC23-10039-2configuration
 This signifies that any Watch paired to the iPhone needs to be enrolled in MDM.
 
 The payload would look like this:
 ![payload][payload]
 
-[payload]: 2examplepayload.JPG
+[payload]: WWDC23-10039-2examplepayload
 
 In this payload:
 - `EnrollmentProfileURL` delivers the MDM profile that the Apple Watch will download and install
@@ -49,7 +49,7 @@ In this payload:
 Once the user initiates pairing from the phone, they will be prompted to accept Remote Management. The pairing flow will end if the user does not accept.
 ![enrollment][enrollment]
 
-[enrollment]: 3enrollment.JPG
+[enrollment]: WWDC23-10039-3enrollment
 
 ### Secure Enrollment Process
 There are two key pieces to ensure security.
@@ -114,6 +114,6 @@ Apple Watch has three deployment types for applications:
 
 Administrators will need to install paired and dependent apps on iPhone first before installing them on the Apple Watch.
 
-[checkin]: 4checkin.JPG
-[token]: 5token.JPG
-[passcode]: 6passcode.JPG
+[checkin]: WWDC23-10039-4checkin
+[token]: WWDC23-10039-5token
+[passcode]: WWDC23-10039-6passcode

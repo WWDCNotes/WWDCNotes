@@ -157,4 +157,4 @@ Task{
 - Using duplicate CLMonitors in widgets and plug-ins will launch your app and cause issues in states and conditions
 - Try not to maintain condition states in your own data store, instead act on them as they arrive from CLMonitor to avoid them getting out of sync
 
-[10147-inspecting-records]: CLMonitorInspectingRecords.jpg
+[10147-inspecting-records]: WWDC23-10147-CLMonitorInspectingRecords

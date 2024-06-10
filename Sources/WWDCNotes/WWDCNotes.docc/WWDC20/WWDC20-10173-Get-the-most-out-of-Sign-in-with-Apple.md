@@ -42,7 +42,7 @@ These `nonce` and `state` properties will allow you to verify that the authoriza
 
 #### Nonce
 
-![1.png](1.png)
+![WWDC20-10173-1](WWDC20-10173-1)
 
 The nonce is an opaque blob of data sent as a string in the request.
 
@@ -58,7 +58,7 @@ The state value is also an opaque blob of data sent with the request.
 
 ### Private email relay
 
-![2.png](2.png)
+![WWDC20-10173-2](WWDC20-10173-2)
 
 Example on how to get a credential from an authorization
 
@@ -130,7 +130,7 @@ The response contains an authorization code an identity token. Send these values
 
 #### Identity token and authorization code
 
-![5.png](5.png)
+![WWDC20-10173-5](WWDC20-10173-5)
 
 You can exchange the authorization code with the Apple ID servers. And when this is successful you will receive a refreshed token and an access token for future calls as well as a new identity token that should be identical to the one you already have.
 
@@ -254,7 +254,7 @@ The `consent-revoked` event will be sent to you when a user decided to stop usin
 
 ### 🆕 SwiftUI support
 
-![10.png](10.png)
+![WWDC20-10173-10](WWDC20-10173-10)
 
 ```swift
 // SwiftUI example: 
@@ -292,11 +292,11 @@ If you need to personalize the Sign in with Apple Button more to match the speci
 
 ### 🆕 Online Button editor
 
-![12.png](12.png)
+![WWDC20-10173-12](WWDC20-10173-12)
 
 [https://appleid.apple.com/signinwithapple/button](https://appleid.apple.com/signinwithapple/button)
 
-![13.png](13.png)
+![WWDC20-10173-13](WWDC20-10173-13)
 
 ##  🆕 Upgrading  to Sign in with Apple
 
@@ -313,14 +313,14 @@ Utilizing this API will prevent the duplication of accounts.
 
 ### Overview
 
-![14.png](14.png)
+![WWDC20-10173-14](WWDC20-10173-14)
 
 > One Tap Account Security Upgrades - WWDC20
 
 ### Three flow for upgrades
 ||||
 |-|-|-|
-|![15.png](15.png)|![16.png](16.png)|![17.png](17.png)|
+|![WWDC20-10173-15](WWDC20-10173-15)|![WWDC20-10173-16](WWDC20-10173-16)|![WWDC20-10173-17](WWDC20-10173-17)|
 
 1. When security recommendations identifies a weak credential in the new password manager and settings. 
 2. When a user is interacting with your app utilizes password autofill and the selected credential is a weak credential.
@@ -418,7 +418,7 @@ public struct ASExtensionError {
 
 #### Prepare to convert without UI
 
-![21.png](21.png)
+![WWDC20-10173-21](WWDC20-10173-21)
 
 1. We begin the flow in the OS when toe user interacts with a weak credential and wants to upgrade that credential to Sign in with Apple.
 2. Your account modification extension is initialized by the password managing process.
@@ -479,7 +479,7 @@ To avoid users having to do extra work in most cases where a user is already aut
 
 There could be circumstances where UI flows might be warranted.
 
-![24.png](24.png)
+![WWDC20-10173-24](WWDC20-10173-24)
 
 1. After the extension contacts cancelled with the user interaction required error, the password managing process initializes a new instance of the account modification view controller
 2. And calls it prepared to convert with your function. Passing the ASPasswordCredential.
@@ -493,7 +493,7 @@ There could be circumstances where UI flows might be warranted.
 
 ### Upgrading account
 
-![25.png](25.png)
+![WWDC20-10173-25](WWDC20-10173-25)
 
 1. It is important to secure your request, to do so your extension would generate a state and nonce and pass them as parameters for the getAppleIDCredential call.
 2. This results in an upgrade to Sign in with Apple UI being displayed to the user.

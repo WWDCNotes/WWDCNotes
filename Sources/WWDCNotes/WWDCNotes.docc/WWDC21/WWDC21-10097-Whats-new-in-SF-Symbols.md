@@ -83,5 +83,5 @@ Four rendering modes:
   - most unified and consistent rendering mode
   - color and opacity is applied consistently in the whole symbol, no hierarchies
 
-[rendering]: rendering.png
-[variants]: variants.png
+[rendering]: WWDC21-10097-rendering
+[variants]: WWDC21-10097-variants

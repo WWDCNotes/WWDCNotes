@@ -80,7 +80,7 @@ Use real-world data:
 - Different lighting conditions
 - Other objects in images
 
-[dogImage]: dog.png
-[trainingImage]: training.png
-[accuracyImage]: accuracy.png
-[outputImage]: output.png
+[dogImage]: WWDC19-424-dog
+[trainingImage]: WWDC19-424-training
+[accuracyImage]: WWDC19-424-accuracy
+[outputImage]: WWDC19-424-output

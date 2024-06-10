@@ -24,7 +24,7 @@ Xcode now shows a new section in the Inspector that displays the signature statu
 
 ![Signature status][xcodesignaturestatus]
 
-[xcodesignaturestatus]: xcodesignaturestatus.png
+[xcodesignaturestatus]: WWDC23-10061-xcodesignaturestatus
 
 
 This section includes information about the signature, such as the author's identity. It will show whether the xcframework is signed by
@@ -37,13 +37,13 @@ Xcode will record the identity the first time you use the xcframework and verify
 
 ![Signature changed][signaturechanged]
 
-[signaturechanged]: signaturechanged.png
+[signaturechanged]: WWDC23-10061-signaturechanged
 
 If the signature changed your app's build will fail with an appropriate error message.
 
 ![Build failed on signature change][signatureverificationfailed]
 
-[signatureverificationfailed]: signatureverificationfailed.png
+[signatureverificationfailed]: WWDC23-10061-signatureverificationfailed
 
 Selecting the error offers an alert explaining that the developer's identity has changed, showing how the expected identity compares to what is present in the new version.
 
@@ -53,7 +53,7 @@ Cancel if you are not sure. This will move the new version to trash in Xcode.
 
 ![Confirm or discard change][confirmordiscardsignaturechange]
 
-[confirmordiscardsignaturechange]: confirmordiscardsignaturechange.png
+[confirmordiscardsignaturechange]: WWDC23-10061-confirmordiscardsignaturechange
 
 [Article: Verifying the origin of your XCFrameworks](https://developer.apple.com/documentation/Xcode/verifying-the-origin-of-your-xcframeworks)
 
@@ -67,7 +67,7 @@ SDK authors are encouraged to use their Apple Developer Program identity for sig
 
 ![Signing XCFrameworks - Identity types][identitytypes]
 
-[identitytypes]: identitytypes.png
+[identitytypes]: WWDC23-10061-identitytypes
 
 Use the `codesign` tool to sign your binary frameworks. The example below is using an Apple Developer Program identity.
 

@@ -58,5 +58,5 @@ When creating something for all platforms, instead of using [`liveViewSafeAreaGu
 [liveViewSafe]: https://developer.apple.com/documentation/playgroundsupport/playgroundliveviewsafeareacontainer/3029546-liveviewsafeareaguide
 [safeGuide]: https://developer.apple.com/documentation/uikit/uiview/2891102-safearealayoutguide 
 
-[iPadImage]: ipad.png
-[macImage]: mac.png
+[iPadImage]: WWDC20-10654-ipad
+[macImage]: WWDC20-10654-mac

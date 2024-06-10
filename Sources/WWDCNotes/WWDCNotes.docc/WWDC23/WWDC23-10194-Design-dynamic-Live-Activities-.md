@@ -169,26 +169,26 @@ IMPORTANT: Ensure your Live Activities are not too tall, since this area is shar
 - Avoid reverting to purely just a logo here, and think about how your session can continue to convey information even in this tiny state.
 
 
-[0-lock-screen-activity]: 0-lock-screen-activity.jpg
-[1-lock-screen-margins]: 1-lock-screen-margins.jpg
-[2-show-unique-layout]: 2-show-unique-layout.jpg
-[3-matching-app-style]: 3-matching-app-style.jpg
-[4-change-colors]: 4-change-colors.jpg
-[5-integrate-logo]: 5-integrate-logo.jpg
-[6-automatic-dismiss-button]: 6-automatic-dismiss-button.jpg
-[7-grow-and-shrink]: 7-grow-and-shrink.jpg
-[8-standby]: 8-standby.jpg
-[9-avoid-edge-styling]: 9-avoid-edge-styling.jpg
-[10-remove-background]: 10-remove-background.jpg
-[11-night-mode]: 11-night-mode.jpg
-[12-dynamic-island]: 12-dynamic-island.jpg
-[13-concentric-shape]: 13-concentric-shape.jpg
-[14-compact-view]: 14-compact-view.jpg
-[15-snug]: 15-snug.jpg
-[16-alerts]: 16-alerts.jpg
-[17-expanded-view]: 17-expanded-view.jpg
-[18-cohesive-style]: 18-cohesive-style.jpg
-[19-expanded-tallness]: 19-expanded-tallness.jpg
-[20-minimal-view]: 20-minimal-view.jpg
-[21-minimal-show-data]: 21-minimal-show-data.jpg
+[0-lock-screen-activity]: WWDC23-10194-0-lock-screen-activity
+[1-lock-screen-margins]: WWDC23-10194-1-lock-screen-margins
+[2-show-unique-layout]: WWDC23-10194-2-show-unique-layout
+[3-matching-app-style]: WWDC23-10194-3-matching-app-style
+[4-change-colors]: WWDC23-10194-4-change-colors
+[5-integrate-logo]: WWDC23-10194-5-integrate-logo
+[6-automatic-dismiss-button]: WWDC23-10194-6-automatic-dismiss-button
+[7-grow-and-shrink]: WWDC23-10194-7-grow-and-shrink
+[8-standby]: WWDC23-10194-8-standby
+[9-avoid-edge-styling]: WWDC23-10194-9-avoid-edge-styling
+[10-remove-background]: WWDC23-10194-10-remove-background
+[11-night-mode]: WWDC23-10194-11-night-mode
+[12-dynamic-island]: WWDC23-10194-12-dynamic-island
+[13-concentric-shape]: WWDC23-10194-13-concentric-shape
+[14-compact-view]: WWDC23-10194-14-compact-view
+[15-snug]: WWDC23-10194-15-snug
+[16-alerts]: WWDC23-10194-16-alerts
+[17-expanded-view]: WWDC23-10194-17-expanded-view
+[18-cohesive-style]: WWDC23-10194-18-cohesive-style
+[19-expanded-tallness]: WWDC23-10194-19-expanded-tallness
+[20-minimal-view]: WWDC23-10194-20-minimal-view
+[21-minimal-show-data]: WWDC23-10194-21-minimal-show-data
 

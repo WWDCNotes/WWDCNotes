@@ -265,16 +265,16 @@ override func record(_ issue: XCTIssue) {
   - This helps support more natural factoring of test code, such as code reuse and other best practices
 - Attachments improve "how?" and "why?"
 
-[gray_line]: gray_line.png
+[gray_line]: WWDC20-10687-gray_line
 
-[error_source]: error_source.png
+[error_source]: WWDC20-10687-error_source
 
-[assistant_button]: assistant_button.png
+[assistant_button]: WWDC20-10687-assistant_button
 
-[throwing_setup_teardown]: throwing_setup_teardown.png
+[throwing_setup_teardown]: WWDC20-10687-throwing_setup_teardown
 
-[shared_failure]: shared_failure.png
+[shared_failure]: WWDC20-10687-shared_failure
 
-[capture_helper]: capture_helper.png
+[capture_helper]: WWDC20-10687-capture_helper
 
-[failure_with_xctissue]: failure_with_xctissue.png
+[failure_with_xctissue]: WWDC20-10687-failure_with_xctissue

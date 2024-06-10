@@ -17,7 +17,7 @@ Discover how you can test your app for accessibility with every build. Learn how
 
 ![Sketchnote of WWDC 2023 talk about how to perform accessibility audits for your app][sketchnote]
 
-[sketchnote]: sketchnote.jpg
+[sketchnote]: WWDC23-10035-sketchnote
 
 # Chapters
 [0:40 - Discover accessibility audits](https://developer.apple.com/videos/play/wwdc2023/10035/?time=40)  
@@ -32,7 +32,7 @@ Discover how you can test your app for accessibility with every build. Learn how
 
 ![testing and a accessibility][testingAndAccessibility]
 
-[testingAndAccessibility]: testingAndAccessibility.jpg
+[testingAndAccessibility]: WWDC23-10035-testingAndAccessibility
 
 # Accessibility audits
 By writing tests, we're able to catch and fix bugs before we ship code. It's how we ensure the quality of the product. And an accessible product is a high-quality product.
@@ -41,7 +41,7 @@ Xcode ships with a tool called the Accessibility Inspector. This tool provides a
 
 ![Accessibility inspector][inspector]
 
-[inspector]: inspector.jpg
+[inspector]: WWDC23-10035-inspector
 
 The Inspector can audit individual views in your app for common accessibility issues.
 
@@ -50,13 +50,13 @@ This is my sample app. It has two tabs. The first tab provides me with motivatio
 
 ![Accessibility inspector][app]
 
-[app]: app.jpg
+[app]: WWDC23-10035-app
 
 I can launch the Accessibility Inspector and perform an audit of my app. The Inspector checks for all kinds of issues, like providing sufficient element descriptions and ensuring proper contrast. And the issues it finds are displayed in a table with detailed descriptions about each issue.
 
 ![Accessibility inspector][inspector2]
 
-[inspector2]: inspector2.jpg
+[inspector2]: WWDC23-10035-inspector2
 
 Accessibility audits are automatable. You are now able to perform audits in your UI tests.  
 Calling performAccessibilityAudit on your XCUIApplication will audit the current view for accessibility issues just as the Inspector does. There's no need for assertions: if any issues are found, your test automatically fails.
@@ -104,7 +104,7 @@ final class WWDC23_SampleDemoUITests: XCTestCase {
 
 ![Accessibility inspector][tests]
 
-[tests]: tests.jpg
+[tests]: WWDC23-10035-tests
 
 For example, testQuoteTabView verifies that the image view and the text view exist in the quote tab. One thing to note is that these tests also help us test accessibility. In order for XCTest to find these views, they must be accessibility elements. That means if your UI tests can find the elements, so can our assistive technologies. 
 
@@ -132,7 +132,7 @@ Seems like my test failed.
 
 ![Test Fail][testFail]
 
-[testFail]: testFail.jpg
+[testFail]: WWDC23-10035-testFail
 
 The issues are reported in-line within the Xcode source editor. My audit caught two issues: Element has no description, and the label is not human-readable. 
 
@@ -140,19 +140,19 @@ I can dig deeper into these two issues by going to the Report navigator, clickin
 
 ![Test Fail][testFail2]
 
-[testFail2]: testFail2.jpg
+[testFail2]: WWDC23-10035-testFail2
 
 For the first issue, "element has no description," I can double-click the element screenshot which shows me that the image view has no description.
 
 ![Test Fail][testFail3]
 
-[testFail3]: testFail3.jpg
+[testFail3]: WWDC23-10035-testFail3
 
 I can do so similarly for the second issue, which shows me that the label on the text view is not human-readable. 
 
 ![Test Fail][testFail4]
 
-[testFail4]: testFail4.jpg
+[testFail4]: WWDC23-10035-testFail4
 
 # Handling audit issues
 
@@ -164,13 +164,13 @@ The accessibility label on the text view is not human-readable.
 
 ![Fixing the first issue][testFail5]
 
-[testFail5]: testFail5.jpg
+[testFail5]: WWDC23-10035-testFail5
 
 If I inspect the text view in the Storyboard, I can see that the accessibility label has been set to QUOTE_TEXTVIEW.
 
 ![Fixing the first issue][testFail6]
 
-[testFail6]: testFail6.jpg
+[testFail6]: WWDC23-10035-testFail6
 
 Users who rely on assistive technologies like VoiceOver will first hear the accessibility label, and then the accessibility value, like this. VoiceOver: QUOTE_TEXTVIEW, "Live one day at a time and make it a masterpiece.".  
 The label doesn't sound great, and ideally, VoiceOver should skip it and speak just the quote itself.  
@@ -181,7 +181,7 @@ I'll select my text view, cut this string from the label, and paste it into the 
 
 ![Fixing the first issue][testFail7]
 
-[testFail7]: testFail7.jpg
+[testFail7]: WWDC23-10035-testFail7
 
 The other issue my audit found was that the image view has no description. In my app, this is a background image which is decorative. Ideally, technologies like VoiceOver should skip this image view.  
 I can achieve this behavior by overriding accessibility elements on the view controller's view.
@@ -233,7 +233,7 @@ try app.performAccessibilityAudit(for: [.dynamicType, .contrast]) { issue in
 ```
 ![filtering issues to ignore because false positive][issues]
 
-[issues]: issues.jpg
+[issues]: WWDC23-10035-issues
 
 By default, issues should not be ignored. Let's say I'd like to ignore a contrast issue on an element with the label "My Label." I can get the XCUIElement associated with the issue using issue.element. If this element has the label "My Label" and the type of issue is a contrast issue, then I know I've got the right issue, so I'll set shouldIgnore to true.  
 Setting it to true indicates that I'd like the issue to be ignored. At the end, I'll return shouldIgnore. If the conditions above aren't met, then shouldIgnore will be false, indicating the issue should be reported as a failure. And that's it. 
@@ -257,7 +257,7 @@ You may remember from earlier that as I fixed the issues from my audit, I also b
 
 ![it broke one of my UI tests. The image view doesn't seem to be available anymor][issues2]
 
-[issues2]: issues2.jpg
+[issues2]: WWDC23-10035-issues2
 
 Because this image view was decorative, I overrode accessibility elements to exclude it from accessibility. However, by doing so, I also caused it to become excluded from my UI test. Let's explore how automation elements can help me expose my image view to my UI test. 
 

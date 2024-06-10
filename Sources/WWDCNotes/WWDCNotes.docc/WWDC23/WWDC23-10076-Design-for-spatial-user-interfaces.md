@@ -23,7 +23,7 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![The 3 layers an App Icon consists of in visionOS][AppIcon]
 
-[AppIcon]: AppIcon.jpeg
+[AppIcon]: WWDC23-10076-AppIcon
 
 - App icons are familiar but 3D
 - When looked at, they expand
@@ -57,7 +57,7 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![System font weights are bolder on visionOS by default][TextWeight]
 
-[TextWeight]: TextWeight.jpeg
+[TextWeight]: WWDC23-10076-TextWeight
 
 - Semantic names
 - Point based unit sytem
@@ -87,7 +87,7 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![Don't: Use color in a button label, Do: Use color in a buttons background][ColoredButtons]
 
-[ColoredButtons]: ColoredButtons.jpeg
+[ColoredButtons]: WWDC23-10076-ColoredButtons
 
 ## Layout
 
@@ -103,13 +103,13 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![][ButtonTargetArea]
 
-[ButtonTargetArea]: ButtonTargetArea.jpeg
+[ButtonTargetArea]: WWDC23-10076-ButtonTargetArea
 
 - Buttons in stacks should have at least 16 points of space around them
 
 ![][ButtonsGap]
 
-[ButtonsGap]: ButtonsGap.jpeg
+[ButtonsGap]: WWDC23-10076-ButtonsGap
 
 - Mini buttons like 28 pixel size in section headers may look small but they have at least 60 points of space around them
 - Large and XL buttons require less spacing around them
@@ -122,7 +122,7 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![][ButtonContainerGap]
 
-[ButtonContainerGap]: ButtonContainerGap.jpeg
+[ButtonContainerGap]: WWDC23-10076-ButtonContainerGap
 
 - Same for a lockup like Music.
 - Define a custom region for a single selectable element.
@@ -130,13 +130,13 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![][NestedCornerRadius]
 
-[NestedCornerRadius]: NestedCornerRadius.jpeg
+[NestedCornerRadius]: WWDC23-10076-NestedCornerRadius
 
 - inner corner radius + padding = outer corner radius
 
 ![][OutsideCornerRadiusCalc]
 
-[OutsideCornerRadiusCalc]: OutsideCornerRadiusCalc.jpeg
+[OutsideCornerRadiusCalc]: WWDC23-10076-OutsideCornerRadiusCalc
 
 - Every element is concentric to its nested elements
 
@@ -150,7 +150,7 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![A slide showing a bunch of different system components][SystemComponents]
 
-[SystemComponents]: SystemComponents.jpeg
+[SystemComponents]: WWDC23-10076-SystemComponents
 
 ### Window
 - made of glass material
@@ -163,7 +163,7 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![A tab bar in its automatically expanded style when looking at it for longer][TabBarLongLook]
 
-[TabBarLongLook]: TabBarLongLook.jpeg
+[TabBarLongLook]: WWDC23-10076-TabBarLongLook
 
 ### Side bar
 - Used to provide sub navigation from the tab bar
@@ -177,14 +177,14 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![Don't: Add border around icons in ornaments, Do: use borderless buttons in ornaments][OrnamentButtons]
 
-[OrnamentButtons]: OrnamentButtons.jpeg
+[OrnamentButtons]: WWDC23-10076-OrnamentButtons
 
 - Examples: Years/Months/Days in Photos, Playback Controls in Music
 - At the bottom: Overlap by 20 points
 
 ![Ornaments overlapping window by 20 points][OrnamentGap]
 
-[OrnamentGap]: OrnamentGap.jpeg
+[OrnamentGap]: WWDC23-10076-OrnamentGap
 
 - Only hide ornaments when looking at a single piece of content
 - Ornaments can expand or have navigation hierarchy
@@ -202,7 +202,7 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![A paywall sheet in the Music app with another payment confirmation sheet on top][NestedModals]
 
-[NestedModals]: NestedModals.jpeg
+[NestedModals]: WWDC23-10076-NestedModals
 
 - Consider push navigation within modals
 - Close and back buttons should be in the top left
@@ -212,6 +212,6 @@ Speakers: Lorena Pazmio, Miquel Estany Rodriguez
 
 ![A view showing content in the Photos app that with an 'Expand View' button for a more immersive experience][OutsideViews]
 
-[OutsideViews]: OutsideViews.jpeg
+[OutsideViews]: WWDC23-10076-OutsideViews
 
 - Spatial Captures, can be expanded

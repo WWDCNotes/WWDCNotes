@@ -18,7 +18,7 @@ Object Capture utilizes cutting-edge computer vision technologies to generate re
 
 ![Recap of Object Capture for macOS][capture-object-recap]
 
-[capture-object-recap]: capture-object-recap.png
+[capture-object-recap]: WWDC23-10191-capture-object-recap
 
 > For a recap, watch [Create 3D models with Object Capture](https://developer.apple.com/videos/play/wwdc2021/10076).
 
@@ -40,43 +40,43 @@ The sample cannot run on a simulator, if you want to try it out, you will meet t
 
 ![Point to the object][capture-object-1]
 
-[capture-object-1]: capture-object-1.png
+[capture-object-1]: WWDC23-10191-capture-object-1
 
 2. An automatic bounding box will be generated before starting the capture. You can adjust the edges to define the scanning area.
 
 ![Bounding box][capture-object-2]
 
-[capture-object-2]: capture-object-2.png
+[capture-object-2]: WWDC23-10191-capture-object-2
 
 3. The app will guide you through the regions that require more image scanning.
 
 ![Scanning Regions][capture-object-3]
 
-[capture-object-3]: capture-object-3.png
+[capture-object-3]: WWDC23-10191-capture-object-3
 
 4. The app provides feedback to help you capture high-quality shots.
 
 ![Feedback requesting more lights, moving slower and arrow to center camera][capture-object-4]
 
-[capture-object-4]: capture-object-4.png
+[capture-object-4]: WWDC23-10191-capture-object-4
 
 5. After completing the first scanning, you can flip the object to capture the bottom (if necessary).
 
 ![Flipping Object][capture-object-5]
 
-[capture-object-5]: capture-object-5.png
+[capture-object-5]: WWDC23-10191-capture-object-5
 
 6. The app requires two more scan rounds. Once all scans are completed, the app will start generating the 3D object model. This process may take a few minutes.
 
 ![Scans complete][capture-object-6]
 
-[capture-object-6]: capture-object-6.png
+[capture-object-6]: WWDC23-10191-capture-object-6
 
 7. Once the processing is complete, the app will provide a visualization of your new 3D model and you will be able to save it as a usdz file.
 
 ![Final 3D Model][capture-object-7]
 
-[capture-object-7]: capture-object-7.png
+[capture-object-7]: WWDC23-10191-capture-object-7
 
 
 # Support for more objects with LiDAR
@@ -85,7 +85,7 @@ The LiDAR Scanner has received improvements to scan and reconstruct low-texture 
 
 ![Chair with low textures][capture-object-8]
 
-[capture-object-8]: capture-object-8.png
+[capture-object-8]: WWDC23-10191-capture-object-8
 
 Although low-texture objects are supported, scanning certain objects still presents challenges. It is best to avoid objects that are reflective, transparent, or have thin structures.
 
@@ -96,7 +96,7 @@ Textured and rigid objects are ideal for capturing the bottom side. However, obj
 
 ![Flippable vs Non-flipabble objects][capture-object-9]
 
-[capture-object-9]: capture-object-9.png
+[capture-object-9]: WWDC23-10191-capture-object-9
 
 When flipping an object, it is advisable to use diffuse lights to minimize shadow and reflections on the object's surface.
 
@@ -106,7 +106,7 @@ For non-flippable objects, it is recommended to scan them from three different h
 
 ![Chair with low textures][capture-object-10]
 
-[capture-object-10]: capture-object-10.png
+[capture-object-10]: WWDC23-10191-capture-object-10
 
 
 # Object Capture API
@@ -138,7 +138,7 @@ These are the different session states:
 
 ![Session States][session-states]
 
-[session-states]: session-states.png
+[session-states]: WWDC23-10191-session-states
 
 Continuing, call the `start` method with a directory indicating where to store the captured images:
 
@@ -287,7 +287,7 @@ var body: some View {
 
 ![Point Cloud View][capture-object-11]
 
-[capture-object-11]: capture-object-11.png
+[capture-object-11]: WWDC23-10191-capture-object-11
 
 ## Model Reconstruction API
 
@@ -347,7 +347,7 @@ No code is required. Simply import the images into Reality Composer Pro, choose 
 
 ![Reality Composer Pro][composer-pro]
 
-[composer-pro]: composer-pro.png
+[composer-pro]: WWDC23-10191-composer-pro
 
 > For more details, check out [Meet Reality Composer Pro](https://developer.apple.com/videos/play/wwdc2023/10083/)
 
@@ -377,5 +377,5 @@ for try await output in session.outputs {
 
 ![Custom Detail Level][custom-detail-level]
 
-[custom-detail-level]: custom-detail-level.png
+[custom-detail-level]: WWDC23-10191-custom-detail-level
 

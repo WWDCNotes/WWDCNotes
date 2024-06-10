@@ -37,7 +37,7 @@ and copies that code into the app binary -> since it's copied, *the library isn'
 
 ![Static vs Dynamic libraries][static-vs-dynamic]
 
-[static-vs-dynamic]: static-vs-dynamic.png
+[static-vs-dynamic]: WWDC23-10268-static-vs-dynamic
 
 
 When an app is launched, the dynamic linker named dyld must find and load framework dependencies including libraries those frameworks depend on. As more are used, this results in a steady increase in memory consumption and app launch time
@@ -46,7 +46,7 @@ And when you factor in dependencies from the Apple SDK, apps can often load hund
 
 ![Static vs Dynamic libraries][dynamic-linking]
 
-[dynamic-linking]: dynamic-linking.png
+[dynamic-linking]: WWDC23-10268-dynamic-linking
 
  
 ### Recap
@@ -59,7 +59,7 @@ Due to this, we have historically recommended measuring what's best for your app
 
 ![Static vs Dynamic libraries][recap]
 
-[recap]: sweet-spot.png
+[recap]: WWDC23-10268-sweet-spot
 
 ## Meet mergeable libraries: how mergeable libraries work to make your apps build and run faster.
 
@@ -77,7 +77,7 @@ Static linker generates **metadata** when creating the library (use option -make
 
 ![Static vs Dynamic libraries][mergeable-libraries]
 
-[mergeable-libraries]: mergeable-libraries.png
+[mergeable-libraries]: WWDC23-10268-mergeable-libraries
 
 ### But how is merging better than just linking? 
 
@@ -102,7 +102,7 @@ Dyld only needs to load that one library containing all segments across the embe
 
 ![Static vs Dynamic libraries][mergeable-libraries-2]
 
-[mergeable-libraries-2]: mergeable-libraries-2.png
+[mergeable-libraries-2]: WWDC23-10268-mergeable-libraries-2
 
 ## Using mergeable libraries: how to enable mergeable libraries in Xcode 15
 
@@ -122,7 +122,7 @@ To enable Automatic merging inside Xcode 15 go to Build Settings, search for MER
 
 ![Static vs Dynamic libraries][automatic]
 
-[automatic]: automatic.png
+[automatic]: WWDC23-10268-automatic
 
 ###  Manual Merging
 * Fine-grained approach to specifying the libraries to merge (when only some of your frameworks should be merged together). 
@@ -144,7 +144,7 @@ Consider now we have a XCTest target that depends on the Forest framework too; a
 
 ![Static vs Dynamic libraries][manual]
 
-[manual]: manual.png
+[manual]: WWDC23-10268-manual
 
 I'm finished creating my merged ForestKit framework. But I need to update some dependencies. Because I've created a framework that encapsulates most of my dynamic libraries, I need to ensure my app and **tests link against ForestKit and not the others**. 
  * Go inside the project target, select Build Phases and under "Link Binary with Libraries" remove the three frameworks and leave only the ForestKit. Do the same with the text target and add ForestKit if not present. 

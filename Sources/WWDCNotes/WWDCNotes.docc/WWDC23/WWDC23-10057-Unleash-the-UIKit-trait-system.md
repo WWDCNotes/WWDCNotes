@@ -31,19 +31,19 @@ There are some new APIs in iOS 17 that make it easier to work with trait collect
 
 ![Trait environments and hierarchy][trait-hierarchy]  
 
-[trait-hierarchy]: trait-hierarchy.png
+[trait-hierarchy]: WWDC23-10057-trait-hierarchy
 
 Example of how trait hierarchy worked prior to iOS 17. Flow of traits in the view hierarchy stopped at each view owned by a view controller. This behavior could be surprising.
 
 ![Trait hierarchy before iOS 17][traits-ios16]  
 
-[traits-ios16]: traits-ios16.png
+[traits-ios16]: WWDC23-10057-traits-ios16
 
 Updated trait hierarchy on iOS 17. View controllers inherit their trait collection from their view’s superview, instead of directly from their parent view controller. This creates a simple linear flow of traits through view controllers and views. 
 
 ![Trait hierarchy after iOS 17][traits-ios17]  
 
-[traits-ios17]: traits-ios17.png
+[traits-ios17]: WWDC23-10057-traits-ios17
 
 #### View controller trait updates
 

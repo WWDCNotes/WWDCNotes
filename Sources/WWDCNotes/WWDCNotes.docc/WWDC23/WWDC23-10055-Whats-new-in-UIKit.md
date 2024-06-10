@@ -30,7 +30,7 @@ class LibraryViewController: UIViewController {
 }
 ```
 
-![preview-for-viewController](preview-for-viewController.jpeg)
+![preview-for-viewController](WWDC23-10055-preview-for-viewController)
 
 ```swift
 class SlideshowView: UIView {
@@ -47,7 +47,7 @@ class SlideshowView: UIView {
 }
 ```
 
-![preview-for-view](preview-for-view.jpeg)
+![preview-for-view](WWDC23-10055-preview-for-view)
 
 
 ### `viewIsAppearing` life cycle Event 🆕
@@ -60,7 +60,7 @@ class SlideshowView: UIView {
 2. View added to hierarchy, has accurate geometry.
 
 
-![view-controller-life-cycle](view-controller-life-cycle.jpeg)
+![view-controller-life-cycle](WWDC23-10055-view-controller-life-cycle)
 
 ### Trait System enhancements 🆕
 
@@ -103,15 +103,15 @@ Allow us to set empty state of view controllers. You can use `UIHostingConfigura
 
 * Empty State
 
-![UIContentUnavailableConfiguration1](UIContentUnavailableConfiguration1.jpeg)
+![UIContentUnavailableConfiguration1](WWDC23-10055-UIContentUnavailableConfiguration1)
 
 * Search
 
-![UIContentUnavailableConfiguration2](UIContentUnavailableConfiguration2.jpeg)
+![UIContentUnavailableConfiguration2](WWDC23-10055-UIContentUnavailableConfiguration2)
 
 * Update View
 
-![UIContentUnavailableConfiguration3](UIContentUnavailableConfiguration3.jpeg)
+![UIContentUnavailableConfiguration3](WWDC23-10055-UIContentUnavailableConfiguration3)
 
 
 ### Dynamic line-height adjustments 🆕
@@ -124,7 +124,7 @@ To mitigate the problem of overlapping ascenders and descenders in all languages
 
 These improvements apply distinct rules depending on the specific text style being utilized.
 
-![dynamic-line-height](dynamic-line-height.jpeg)
+![dynamic-line-height](WWDC23-10055-dynamic-line-height)
 
 ### Retrieve UIImages by locale 🆕
 
@@ -140,7 +140,7 @@ withConfiguration: UIImage. SymbolConfiguration(locale: locale)
 )
 ```
 
-![locale-images](locale-images.jpeg)
+![locale-images](WWDC23-10055-locale-images)
 
 ### Page Control Improvement 🆕
 
@@ -150,11 +150,11 @@ For pages that need to follow video players or external timers, which have their
 
 * With Timer
 
-![page-control-1](page-control-1.jpeg)
+![page-control-1](WWDC23-10055-page-control-1)
 
 * With Custom Periodic Timer
 
-![page-control-2](page-control-2.jpeg)
+![page-control-2](WWDC23-10055-page-control-2)
 
 
 ## More Tidbits from the Session

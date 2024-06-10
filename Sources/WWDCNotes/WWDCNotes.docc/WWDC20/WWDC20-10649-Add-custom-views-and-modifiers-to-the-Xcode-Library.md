@@ -106,5 +106,5 @@ Now we can easily search the method name in your Xcode library.
 [viewsDoc]: https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/views-25pdm
 [modDoc]: https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/modifiers(base:)-4svii
 
-[xcode_library]: xcode_library.png
-[xcode_modifier]: xcode_modifier.png
+[xcode_library]: WWDC20-10649-xcode_library
+[xcode_modifier]: WWDC20-10649-xcode_modifier

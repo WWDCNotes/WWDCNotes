@@ -125,26 +125,26 @@ Also, since previews are just views, we can inspect them too.
 
 ![][inspect_preview]
 
-[row_view_outline]: row_view_outline.png
+[row_view_outline]: WWDC20-10185-row_view_outline
 
-[drag_and_drop]: drag_and_drop.png
+[drag_and_drop]: WWDC20-10185-drag_and_drop
 
-[live_update]: live_update.png
+[live_update]: WWDC20-10185-live_update
 
-[live_update_variables]: live_update_variables.png
+[live_update_variables]: WWDC20-10185-live_update_variables
 
-[custom_media]: custom_media.png
+[custom_media]: WWDC20-10185-custom_media
 
-[large_image]: large_image.png
+[large_image]: WWDC20-10185-large_image
 
-[add_modifier]: add_modifier.png
+[add_modifier]: WWDC20-10185-add_modifier
 
-[custom_drag_and_drop]: custom_drag_and_drop.png
+[custom_drag_and_drop]: WWDC20-10185-custom_drag_and_drop
 
-[embed_hstack]: embed_hstack.png
+[embed_hstack]: WWDC20-10185-embed_hstack
 
-[clear_modifier]: clear_modifier.png
+[clear_modifier]: WWDC20-10185-clear_modifier
 
-[duplicate_preview]: duplicate_preview.png
+[duplicate_preview]: WWDC20-10185-duplicate_preview
 
-[inspect_preview]: inspect_preview.png
+[inspect_preview]: WWDC20-10185-inspect_preview

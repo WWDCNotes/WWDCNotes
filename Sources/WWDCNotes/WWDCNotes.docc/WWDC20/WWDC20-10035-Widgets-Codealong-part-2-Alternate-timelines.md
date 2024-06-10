@@ -121,7 +121,7 @@ In our app then we apply the new [`.onOpenURL(perform:)`][oourlDoc] to the right
 
 [wwdc20-10194]: https://www.wwdcnotes.com/notes/wwdc20/10194
 
-[familiesImage]: families.png
+[familiesImage]: WWDC20-10035-families
 
 [itpdoc]: https://developer.apple.com/documentation/widgetkit/intenttimelineprovider
 [reload]: https://developer.apple.com/documentation/widgetkit/timelinereloadpolicy

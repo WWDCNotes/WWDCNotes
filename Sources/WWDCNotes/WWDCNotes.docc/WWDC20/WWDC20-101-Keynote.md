@@ -99,9 +99,9 @@ The Apple Worldwide Developers Conference kicks off with exciting reveals, inspi
 
 [iTranslateApp]: https://apps.apple.com/us/app/itranslate-converse/id1241264761
 
-[iosImage]: ios.jpeg
-[ipadosImage]: ipados.jpg
-[watchosImage]: watchos.png
-[homeImage]: home.jpg
-[macosImage]: macos.jpg
-[catalystImage]: catalyst.jpeg
+[iosImage]: WWDC20-101-ios
+[ipadosImage]: WWDC20-101-ipados
+[watchosImage]: WWDC20-101-watchos
+[homeImage]: WWDC20-101-home
+[macosImage]: WWDC20-101-macos
+[catalystImage]: WWDC20-101-catalyst

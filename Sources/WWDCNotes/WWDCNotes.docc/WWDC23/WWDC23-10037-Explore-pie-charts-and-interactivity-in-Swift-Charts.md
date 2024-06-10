@@ -27,7 +27,7 @@ Swift Charts has come full circle: Get ready to bake up pie and donut charts in 
 
 ![A donut chart with text in the middle using the `.chartBackground` modifier.][donut]
 
-[donut]: Donut.png
+[donut]: WWDC23-10037-Donut
 
 ## Selection
 
@@ -38,7 +38,7 @@ Swift Charts has come full circle: Get ready to bake up pie and donut charts in 
 
 ![Showing an overlay that extends beyond the chart using `.annotation(...:overflowResolution:)` modifier on `RuleMark`.][selection]
 
-[selection]: Selection.png
+[selection]: WWDC23-10037-Selection
 
 - A variant of `.chartXSelection` with argument `range` allows to select a range of values (default: two finger tap on iOS, drag on macOS)
 - Use `.chartGesture` to define a custom gesture for value/range selection

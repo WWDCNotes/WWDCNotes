@@ -258,54 +258,54 @@ To learn more, refer to:
 - [Build for iPad](https://developer.apple.com/videos/play/wwdc2020/10105) will show you how to use all of this in your code.
 
 
-[Mac]: Mac.jpeg
+[Mac]: WWDC20-10206-Mac
 
-[iPhone]: iPhone.jpeg
+[iPhone]: WWDC20-10206-iPhone
 
-[flatten_navigation]: flatten_navigation.jpeg
+[flatten_navigation]: WWDC20-10206-flatten_navigation
 
-[rename_before]: rename_before.jpeg
+[rename_before]: WWDC20-10206-rename_before
 
-[rename_after]: rename_after.jpeg
+[rename_after]: WWDC20-10206-rename_after
 
-[calendar_good_popover]: calendar_good_popover.jpeg
+[calendar_good_popover]: WWDC20-10206-calendar_good_popover
 
-[calendar_bad_popover]: calendar_bad_popover.jpeg
+[calendar_bad_popover]: WWDC20-10206-calendar_bad_popover
 
-[calendar_sidebar]: calendar_sidebar.jpeg
+[calendar_sidebar]: WWDC20-10206-calendar_sidebar
 
-[lyrics]: lyrics.jpeg
+[lyrics]: WWDC20-10206-lyrics
 
-[combine_input]: combine_input.jpeg
+[combine_input]: WWDC20-10206-combine_input
 
-[looom_touch]: looom_touch.jpeg
+[looom_touch]: WWDC20-10206-looom_touch
 
-[looom_pencil]: looom_pencil.jpeg
+[looom_pencil]: WWDC20-10206-looom_pencil
 
-[home_before]: home_before.jpeg
+[home_before]: WWDC20-10206-home_before
 
-[home_after]: home_after.jpeg
+[home_after]: WWDC20-10206-home_after
 
-[portrait_or_multitasking]: portrait_or_multitasking.jpeg
+[portrait_or_multitasking]: WWDC20-10206-portrait_or_multitasking
 
-[sidebar_ipad_mac]: sidebar_ipad_mac.jpeg
+[sidebar_ipad_mac]: WWDC20-10206-sidebar_ipad_mac
 
-[sidebar_examples]: sidebar_examples.jpeg
+[sidebar_examples]: WWDC20-10206-sidebar_examples
 
-[sidebar_navigation]: sidebar_navigation.jpeg
+[sidebar_navigation]: WWDC20-10206-sidebar_navigation
 
-[flat_navigation_depth]: flat_navigation_depth.jpeg
+[flat_navigation_depth]: WWDC20-10206-flat_navigation_depth
 
-[tab_bar_navigation]: tab_bar_navigation.jpeg
+[tab_bar_navigation]: WWDC20-10206-tab_bar_navigation
 
-[tab_bar_to_sidebar]: tab_bar_to_sidebar.jpeg
+[tab_bar_to_sidebar]: WWDC20-10206-tab_bar_to_sidebar
 
-[tab_bar_compact]: tab_bar_compact.jpeg
+[tab_bar_compact]: WWDC20-10206-tab_bar_compact
 
-[sidebar_secondary]: sidebar_secondary.jpeg
+[sidebar_secondary]: WWDC20-10206-sidebar_secondary
 
-[toolbar_bad]: toolbar_bad.jpeg
+[toolbar_bad]: WWDC20-10206-toolbar_bad
 
-[toolbar_good]: toolbar_good.jpeg
+[toolbar_good]: WWDC20-10206-toolbar_good
 
-[toolbar_compact]: toolbar_compact.jpeg
+[toolbar_compact]: WWDC20-10206-toolbar_compact

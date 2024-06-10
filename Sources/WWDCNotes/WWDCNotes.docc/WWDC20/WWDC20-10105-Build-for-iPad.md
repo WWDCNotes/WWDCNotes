@@ -155,11 +155,11 @@ let collectionView = UICollectionView(frame: frame, collectionViewLayout: layout
 [CellRegistration]: https://developer.apple.com/documentation/uikit/uicollectionview/cellregistration
 [preferredSplitBehavior]: https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580909-preferredsplitbehavior
 
-[doubleImage]: double.png
-[tripleImage]: triple.png
-[doubleDisplayImage]: doubleDisplay.png
-[tripleDisplayImage]: tripleDisplay.png
-[tileImage]: tile.png
-[displaceImage]: displace.png
-[overlayImage]: overlay.png
-[navigationImage]: navigation.png
+[doubleImage]: WWDC20-10105-double
+[tripleImage]: WWDC20-10105-triple
+[doubleDisplayImage]: WWDC20-10105-doubleDisplay
+[tripleDisplayImage]: WWDC20-10105-tripleDisplay
+[tileImage]: WWDC20-10105-tile
+[displaceImage]: WWDC20-10105-displace
+[overlayImage]: WWDC20-10105-overlay
+[navigationImage]: WWDC20-10105-navigation

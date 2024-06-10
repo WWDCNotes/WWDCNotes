@@ -21,7 +21,7 @@ The Apple Worldwide Developers Conference kicks off with exciting reveals, inspi
 
 ![][ios]
 
-[ios]: ios.jpg
+[ios]: WWDC22-101-ios
 
 ### Lock Screen
 
@@ -178,7 +178,7 @@ New features:
 
 ![][watchos]
 
-[watchos]: watchos.jpg
+[watchos]: WWDC22-101-watchos
 
 - Four new Watch Faces:
   - Astronomy
@@ -213,7 +213,7 @@ New features:
 
 ![][macos]
 
-[macos]: macos.jpg
+[macos]: WWDC22-101-macos
 
 - Stage Manager
   - new way to automatically keep everything organized and give you quick access to your windows
@@ -246,7 +246,7 @@ New features:
 
 ![][ipados]
 
-[ipados]: ipados.jpg
+[ipados]: WWDC22-101-ipados
 
 - Weather.app
 - WeatherKit for developers

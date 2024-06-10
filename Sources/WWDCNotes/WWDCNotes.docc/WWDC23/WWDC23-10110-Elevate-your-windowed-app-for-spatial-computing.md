@@ -24,7 +24,7 @@ Discover how you can bring your multiplatform SwiftUI app to visionOS and the Sh
 
 ![][mouse]
 
-[mouse]: mouse.png
+[mouse]: WWDC23-10110-mouse
 
 - Glass is the standard background provided to windows by default
 - No distinction between light and dark appearances (glass takes care of both)
@@ -55,7 +55,7 @@ Discover how you can bring your multiplatform SwiftUI app to visionOS and the Sh
 
 ![][toolbar-ornament]
 
-[toolbar-ornament]: toolbar-ornament.png
+[toolbar-ornament]: WWDC23-10110-toolbar-ornament
 
 - Toolbar ornaments provide a glass capsule background automatically
 - Custom ornaments can be provided via `.ornament(attachmentAnchor: .scene(alignment: .bottom), contentAlignment: .center)`

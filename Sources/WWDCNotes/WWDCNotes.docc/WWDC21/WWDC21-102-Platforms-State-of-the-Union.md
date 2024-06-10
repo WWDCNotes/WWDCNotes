@@ -345,6 +345,6 @@ Three new frameworks:
 [xcb]: https://developer.apple.com/xcode-cloud/beta/request/#!/agree
 [XCTExpectFailure]: https://developer.apple.com/documentation/xctest/3726077-xctexpectfailure
 
-[galleryView]: galleryView.png
-[shareplay]: shareplay.png
+[galleryView]: WWDC21-102-galleryView
+[shareplay]: WWDC21-102-shareplay
 [sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-state-of-the-union.jpg

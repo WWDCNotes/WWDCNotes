@@ -89,7 +89,7 @@ vocabulary.setVocabularyStrings(playlistNames, of: .mediaPlaylistTitle)
 - Use [`MPRemoteCommandCenter`][MPRemoteCommandCenter] to handle playback intents like "next track" and more (this is the same center used to respond playback actions in the lock screen)
 - Siri reads the center's [`nowPlayingInfo`][nowPlayingInfo] to answer questions reguarding the current playing song (set properties such as `MPMediaItemPropertyTitle`, `MPMediaItemPropertyArtist`, `MPMediaItemPropertyAlbumTitle`)
 
-[popularImage]: popular.png
+[popularImage]: WWDC20-10060-popular
 
 [nowPlayingInfo]: https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter/1615903-nowplayinginfo
 [MPRemoteCommandCenter]: https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter
