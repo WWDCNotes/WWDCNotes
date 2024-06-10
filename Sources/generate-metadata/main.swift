@@ -58,7 +58,13 @@ struct Contributor {
          throw error
       }
 
-      let gitHubUser = try JSONDecoder().decode(GitHubUser.self, from: fetchedData!)
+      let gitHubUser: GitHubUser
+      do {
+         gitHubUser = try JSONDecoder().decode(GitHubUser.self, from: fetchedData!)
+      } catch {
+         print("Fetched contents were: \(String(data: fetchedData!, encoding: .utf8) ?? "N/A")")
+         throw error
+      }
 
       self.fullName = gitHubUser.name ?? githubProfileName
 
