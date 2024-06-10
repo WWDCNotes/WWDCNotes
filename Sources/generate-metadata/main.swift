@@ -60,7 +60,9 @@ struct Contributor {
 
       let gitHubUser: GitHubUser
       do {
-         gitHubUser = try JSONDecoder().decode(GitHubUser.self, from: fetchedData!)
+         let decoder = JSONDecoder()
+         decoder.keyDecodingStrategy = .convertFromSnakeCase
+         gitHubUser = try decoder.decode(GitHubUser.self, from: fetchedData!)
       } catch {
          print("Fetched contents were: \(String(data: fetchedData!, encoding: .utf8) ?? "N/A")")
          throw error
@@ -70,8 +72,14 @@ struct Contributor {
 
       let fullNameTokens = self.fullName.components(separatedBy: .whitespaces)
 
-      if let avatarURLString = gitHubUser.avatarUrl, let avatarURL = URL(string: avatarURLString) {
-         self.avatarURL = avatarURL
+      if gitHubUser.avatarUrl != nil {
+         var urlComponents = URLComponents()
+         urlComponents.scheme = "https"
+         urlComponents.host = "avatars.githubusercontent.com"
+         urlComponents.path = "/u/\(gitHubUser.id)"
+         urlComponents.queryItems = [URLQueryItem(name: "v", value: "4")]
+
+         self.avatarURL = urlComponents.url!
       } else {
          var urlComponents = URLComponents()
          urlComponents.scheme = "https"
@@ -82,7 +90,7 @@ struct Contributor {
          self.avatarURL = urlComponents.url!
       }
 
-      self.shortDescription = gitHubUser.bio ?? "No Bio on GitHub"
+      self.shortDescription = gitHubUser.bio?.components(separatedBy: .newlines)[0] ?? "No Bio on GitHub"
 
       // Fetch social links
       var links = [String: URL]()
@@ -219,14 +227,12 @@ for contributor in contributorsByProfile.values {
          @PageKind(sampleCode)
       }
 
-      ## About
+      ## Links
 
       @Row(numberOfColumns: 5) {
          @Column { ![Profile image of \(contributor.fullName)](\(contributor.avatarURL.absoluteString)) }
          @Column(size: 4) {
-            ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
-
-            \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
+      \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
          }
       }
 
