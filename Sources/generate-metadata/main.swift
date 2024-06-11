@@ -169,7 +169,10 @@ for event in events {
                         ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
 
                         [Contributed Notes](<doc:\(contributor.githubProfileName)>)
-                  \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
+                        |
+                        [GitHub](https://github.com/\(contributor.githubProfileName))
+                        |
+                  \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n|\n"))
                      }
                   }
 
@@ -232,6 +235,8 @@ for contributor in contributorsByProfile.values {
       @Row(numberOfColumns: 5) {
          @Column { ![Profile image of \(contributor.fullName)](\(contributor.avatarURL.absoluteString)) }
          @Column(size: 4) {
+            [GitHub](https://github.com/\(contributor.githubProfileName))
+
       \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n\n"))
          }
       }
