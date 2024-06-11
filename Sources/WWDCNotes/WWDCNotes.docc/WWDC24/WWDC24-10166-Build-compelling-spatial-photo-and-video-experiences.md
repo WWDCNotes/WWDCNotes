@@ -38,7 +38,7 @@ Learn how to adopt spatial photos and videos in your apps. Explore the different
 ## Stereoscopic video experiences
 
 Formats:
-- 3d video, like 3d movies available in Apple TV and Disney+. Renders flat.
+- 3D video, like 3D movies available in Apple TV and Disney+. Renders flat.
 - Spatial video, captured on iPhone 15 pro and Vision Pro. Renders through a window.
 - Apple Immersive video, for high-end professional content. 180 degree, 8k resolution, spatial audio.
 
@@ -75,7 +75,7 @@ Detection Methods
 Presentation Options
 - PreviewApplication API (spawn Quicklook scene). See "What's new in Quick Look for spatial computing".
 - Element Fullscreen API (Javascript). Open spatial photos in Safari. See "Optimize for the Spatial Web".
-- AVPlayerViewController. Supports 2D and 3D video content, also HTTP Live Streaming for spatial video. Only displays as 3D if full screen. Shows 3D video, not spatial. Use PreviewApplication if you need spatial.
+- AVPlayerViewController. Supports 2D and 3D video content, also HTTP Live Streaming for spatial video. Only displays as 3D if full screen. Shows 3D video, not spatial video. Use PreviewApplication if you need spatial video display.
 
 ## Create custom spatial media
 
