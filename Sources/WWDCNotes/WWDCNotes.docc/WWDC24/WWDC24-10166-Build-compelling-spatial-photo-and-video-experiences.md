@@ -19,22 +19,6 @@ Learn how to adopt spatial photos and videos in your apps. Explore the different
  [13:14 - Deep dive into spatial media formats](https://developer.apple.com/videos/play/wwdc2024/10166/?time=794)  
 [21:16 - Wrap-up](https://developer.apple.com/videos/play/wwdc2024/10166/?time=1276)  
 
-### Resources
-
-- AVCam
-- Converting side-by-side 3D video to multiview HEVC and spatial video
-- Creating spatial photos and videos with spatial metadata
-- Forum: Spatial Computing
-- Writing spatial photos
-- HD Video SD Video
-
-### Related Videos:
-- [Bring your iOS or iPadOS game to visionOS](https://developer.apple.com/videos/play/wwdc2024/10093)
-- [Enhance the immersion of media viewing in custom environments](https://developer.apple.com/videos/play/wwdc2024/10115)
-- [Optimize for the spatial web](https://developer.apple.com/videos/play/wwdc2024/10065)
-- [What’s new in Quick Look for visionOS](https://developer.apple.com/videos/play/wwdc2024/10105)
--  (WWDC23) [Deliver video content for spatial experiences](https://developer.apple.com/videos/play/wwdc2023/10071)
-
 ## Stereoscopic video experiences
 
 Formats:
@@ -109,12 +93,3 @@ Horizontal disparity adjustment: a hint to the renderer on where to place the ze
 - multiple types of stereo media
 - capture, detect, and display spatial media
 - create your own spatial media
-
-
-
-
-
-
-
-
-
