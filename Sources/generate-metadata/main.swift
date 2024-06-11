@@ -181,7 +181,7 @@ for event in events {
             sessionFileContents += """
 
                ---
-               Missing anything? Corrections? [Contributions are welcome!](doc:Contributing)
+               Missing anything? Corrections? [Contributions are welcome!](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
 
                """
          }
