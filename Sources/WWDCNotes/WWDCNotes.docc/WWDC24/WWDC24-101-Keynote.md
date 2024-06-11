@@ -12,4 +12,4 @@ Don’t miss the exciting reveal of the latest Apple software and technologies.
    }
 }
 
-@Image(source: "sketchnote", alt: "Sketchnote of WWDC Keynote 2024 with announcements of iOS 18, visionOS 2, watchOS11, iPadOS 18, macOS Sequoia, and Apple Intelligence")
+@Image(source: "WWDC24-101-sketchnote", alt: "Sketchnote of WWDC Keynote 2024 with announcements of iOS 18, visionOS 2, watchOS11, iPadOS 18, macOS Sequoia, and Apple Intelligence")

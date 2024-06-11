@@ -12,4 +12,4 @@ Discover the newest advancements on Apple platforms.
    }
 }
 
-@Image(source: "sketchnote", alt: "Sketchnote of WWDC 2024 State of the Union with details about news in Swift, SwiftUI, APIs and frameworks")
+@Image(source: "WWDC24-102-sketchnote", alt: "Sketchnote of WWDC 2024 State of the Union with details about news in Swift, SwiftUI, APIs and frameworks")
