@@ -269,6 +269,7 @@ var contributorsOverviewContents = """
    @Metadata {
       @TitleHeading("Overview")
       @PageKind(article)
+      @PageImage(purpose: icon, source: "WWDCNotes")
       @CallToAction(url: "/documentation/wwdcnotes/contributing", purpose: link, label: "Become a Contributor")
    }
 
@@ -298,7 +299,13 @@ var missingNotesContents = """
 
    This page gives you an overview of all sessions that have no notes yet. Many opportunities to contribute!
 
-   
+   @Metadata {
+      @TitleHeading("Guide")
+      @PageKind(article)
+      @PageImage(purpose: icon, source: "WWDCNotes")
+   }
+
+
    """
 
 for (year, sessions) in sessionsWithoutContributorsByYear.sorted(by: { $0.key > $1.key }) {
