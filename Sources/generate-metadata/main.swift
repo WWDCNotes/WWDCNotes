@@ -177,16 +177,16 @@ for event in events {
 
                   """
             }
-         }
 
-         if !session.relatedSessionIDs.isEmpty {
             sessionFileContents += """
 
                ---
                Missing anything? Corrections? [Contributions are welcome!](doc:Contributing)
 
                """
+         }
 
+         if !session.relatedSessionIDs.isEmpty {
             sessionFileContents += """
 
 

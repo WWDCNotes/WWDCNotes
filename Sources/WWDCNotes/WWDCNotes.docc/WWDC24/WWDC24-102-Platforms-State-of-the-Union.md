@@ -8,11 +8,8 @@ Discover the newest advancements on Apple platforms.
    @CallToAction(url: "https://developer.apple.com/wwdc24/102", purpose: link, label: "Watch Video (66 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(fbernutz)
    }
 }
 
-😱 "No Overview Available!"
-
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+@Image(source: "sketchnote", alt: "Sketchnote of WWDC 2024 State of the Union with details about news in Swift, SwiftUI, APIs and frameworks")
