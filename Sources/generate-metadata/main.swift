@@ -171,8 +171,7 @@ for event in events {
                         [Contributed Notes](<doc:\(contributor.githubProfileName)>)
                         |
                         [GitHub](https://github.com/\(contributor.githubProfileName))
-                        |
-                  \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n|\n"))
+                  \(contributor.socialLinks.map { "|\n      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
                      }
                   }
 
