@@ -87,7 +87,9 @@ Two sample projects provided, for spatial video and spatial photos.
 - Baseline, Field of View: camera properties.
 - Disparity adjustment
 
-Example: stereoscopice image of a hummingbird.
+Example: stereoscopic image of a hummingbird.
+
+Note: the following metadata discussion is put into practice in the [Writing spatial photos](https://developer.apple.com/documentation/ImageIO/writing-spatial-photos) sample app.
 
 For optimal image characteristics the left and right images should be stereo rectified, have optical axis alignment, and have no vertical disparity.
 Rectilinear: straight lines in world are straight lines on image.
