@@ -24,6 +24,7 @@ Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnote
 
 ## Topics
 
+- <doc:WWDC24>
 - <doc:WWDC23>
 - <doc:WWDC22>
 - <doc:WWDC21>

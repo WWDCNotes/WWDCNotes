@@ -119,7 +119,7 @@ let legalNotes = """
 
 let sessionByID = try Session.allSessionsByID()
 
-let events = ["WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11"]
+let events = ["WWDC24", "WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11"]
 
 var contributorsByProfile: [String: Contributor] = [:]
 var sessionIDsWithoutContributors: Set<String> = []
