@@ -137,9 +137,9 @@ Having this said, there are a few guidelines that make sure that what we are hos
 
 > Note: This step is completely **optional**. If you are short on time, feel free to skip it.
 
-To save developers even more time, we try to provide a "Key Takeaways" section at the very top of every note. The goal is to keep this summary as short as ~250 characters so the takeaways can be posted on X and Mastodon with the session title and a link to the note added. See this [thread on X](https://x.com/Jeehut/status/1667974311724949504) or this [thread on Mastodon](https://iosdev.space/@Jeehut/110527231917189918) for examples of key takeaways of WWDC23.
+To save developers even more time, we try to provide a "Key Takeaways" section at the very top of every note. The goal is to keep this summary as short as ~250 characters so the takeaways can be posted on X and Mastodon with the session title and a link to the note added. See this [thread on X](https://x.com/Jeehut/status/1667974311724949504) or this [thread on Mastodon](https://iosdev.space/@Jeehut/110527231917189918) for examples of key takeaways of WWDC23. And don't forget to add `- ` in front of each line to make it a list.
 
-You can use [this online tool](https://threadcreator.com/tools/twitter-character-counter) to check the length. Don't forget to prepend the session title on an extra line for the check and keep the total characters at 248 (32 chars are reserved for the link).
+You can use [this online tool](https://threadcreator.com/tools/twitter-character-counter) to check the length. Don't forget to prepend the session title on an extra line for the check and keep the total characters at 252 (28 chars are reserved for the link).
 
 The takeaways section should not contain any links. It is good practice to provide a fitting Emoji for every point listed. In the best case, the list is followed by 4 images that help summarize the session together with the points listed. Place the images in a grid like so:
 
