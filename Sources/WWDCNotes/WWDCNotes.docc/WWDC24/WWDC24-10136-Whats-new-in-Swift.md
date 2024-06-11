@@ -16,8 +16,8 @@ Join us for an update on Swift. We’ll briefly go through a history of Swift ov
 
 🐧 New SDK for building for Linux on macOS
 🏛️ Foundation is now cross plaform and open source
-🧪 There is a new open source Testing framework
-🏎️ here is a new Swift 6 language mode, that ensures data-race safety 
+🧪 New open source Testing framework
+🏎️ Swift 6 language mode, that ensures data-race safety 
 
 ## Presenters
 
