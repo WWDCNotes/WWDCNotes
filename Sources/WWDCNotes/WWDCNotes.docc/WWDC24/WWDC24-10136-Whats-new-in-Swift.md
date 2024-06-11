@@ -8,7 +8,7 @@ Join us for an update on Swift. We’ll briefly go through a history of Swift ov
    @CallToAction(url: "https://developer.apple.com/wwdc24/10136", purpose: link, label: "Watch Video (30 min)")
 
    @Contributors {
-      @GitHubUser("MortenGregersen")
+      @GitHubUser(MortenGregersen)
    }
 }
 
