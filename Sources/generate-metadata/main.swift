@@ -94,8 +94,16 @@ struct Contributor {
 
       // Fetch social links
       var links = [String: URL]()
-      if let blog = gitHubUser.blog, let blogURL = URL(string: blog) {
-         links["Blog"] = blogURL
+      if let blog = gitHubUser.blog {
+         var blogUrlString = blog
+
+         if !blogUrlString.hasPrefix("http") {
+            blogUrlString = "https://\(blogUrlString)"
+         }
+         
+         if let blogURL = URL(string: blogUrlString) {
+            links["Blog"] = blogURL
+         }
       }
       
       if let twitterUsername = gitHubUser.twitterUsername {
