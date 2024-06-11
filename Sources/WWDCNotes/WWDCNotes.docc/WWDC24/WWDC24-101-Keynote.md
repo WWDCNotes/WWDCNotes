@@ -8,11 +8,8 @@ Don’t miss the exciting reveal of the latest Apple software and technologies.
    @CallToAction(url: "https://developer.apple.com/wwdc24/101", purpose: link, label: "Watch Video (104 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(fbernutz)
    }
 }
 
-😱 "No Overview Available!"
-
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+@Image(source: "sketchnote", alt: "Sketchnote of WWDC Keynote 2024 with announcements of iOS 18, visionOS 2, watchOS11, iPadOS 18, macOS Sequoia, and Apple Intelligence.")
