@@ -12,6 +12,18 @@ Discover the latest productivity and performance improvements in Xcode 16. Learn
    }
 }
 
+## Key takeaways
+
+🤓 Code completion is coming and it is based on the context
+
+🏎️ There are build settings for your way to Swift 6 language mode
+
+🚀 Faster builds with Explicit built modules
+
+🧪 New open source Testing framework
+
+🔥 Instruments has gotten a Flame Graph view 
+
 ## Presenters
 
 * Daisy Hernandez, Xcode Previews Engineer
