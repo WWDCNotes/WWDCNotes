@@ -12,11 +12,27 @@ Learn the principles of the App Intents framework, like intents, entities, and q
 	}
 }
 
+## Key Takeaways
+
+Bring your app's core features to users with App Intents
+
+- 😇 Allow your apps to flow and not generate friction
+- 🧠 Empower user's creativity & flexibility
+- 🌊 Embed your app's features into the system
+
+## Presenters
+
+Christopher Nebel, App Intents Engineering
+
+## Session
+
 This session is broken down into the following sections:
 
 - Friction versus flow
 - Understanding the framework
 - Building the code
+
+Throught this session an example app is references that allows users to list and interact with their favourite hiking trails.
 
 ## Friction versus Flow
 
@@ -113,15 +129,15 @@ An intent is a type that confirms to the App Intent protocol. It has two require
 
 ```swift
 struct OpenPinnedTrail: AppIntent {
-static let title: LocalizedStringResource = "Open Pinned Trail"
+	static let title: LocalizedStringResource = "Open Pinned Trail"
 
-func perform() async throws -> some IntentResult {
-NavigationModel.shared.navigate(to: .pinned)
-return .result()
-}
+	func perform() async throws -> some IntentResult {
+		NavigationModel.shared.navigate(to: .pinned)
+		return .result()
+	}
 
-// Tell App Intents to open the app when this Intent is run
-static let openAppWhenRun: Bool = true
+	// Tell App Intents to open the app when this Intent is run
+	static let openAppWhenRun: Bool = true
 }
 ```
 
@@ -135,15 +151,15 @@ For this example, we want to create an Intent that opens a specific, user-define
 
 ```swift
 struct OpenTrail: AppIntent, OpenIntent {
-static let title: LocalizedStringResource = "Open Trail"
+	static let title: LocalizedStringResource = "Open Trail"
 
-@Parameter(title: "Trail")
-var target: TrailEntity
+	@Parameter(title: "Trail")
+	var target: TrailEntity
 
-func perform() async throws -> some IntentResult {
-NavigationModel.shared.navigate(to: target)
-return .result()
-}
+	func perform() async throws -> some IntentResult {
+		NavigationModel.shared.navigate(to: target)
+		return .result()
+	}
 }
 ```
 
@@ -158,18 +174,18 @@ Entities must have 3 things:
 
 ```swift
 struct TrailEntity: AppEntity {
-@Property(title: "Trail Name")
-var name: String
+	@Property(title: "Trail Name")
+	var name: String
 
-static let typeDisplayRepresentation: TypeDisplayRepresentation = "Trail"
+	static let typeDisplayRepresentation: TypeDisplayRepresentation = "Trail"
 
-var displayRepresentation: DisplayRepresentation {
-DisplayRepresentation(title: name, image: Image(named: imageName))
-}
+	var displayRepresentation: DisplayRepresentation {
+		DisplayRepresentation(title: name, image: Image(named: imageName))
+	}
 
-var id: Trail.ID
+	var id: Trail.ID
 
-static var defaultQuery = TrailEntityQuery() 
+	static var defaultQuery = TrailEntityQuery() 
 }
 ```
 
@@ -181,11 +197,11 @@ This example shows 2 of the query protocols:
 
 ```swift
 struct TrailEntityQuery: EntityQuery {
-func entities(for identifiers: [TrailEntity.ID]) async throws -> [TrailEntity] { ... }
+	func entities(for identifiers: [TrailEntity.ID]) async throws -> [TrailEntity] { ... }
 }
 
 extension TrailEntityQuery: EnumerableEntityQuery {
-func allEntities() async throws -> [TrailEntity] { ... }
+	func allEntities() async throws -> [TrailEntity] { ... }
 }
 ```
 
@@ -199,165 +215,165 @@ This makes the intent easier to use and read:
 	@Column(size: 1) {
 		@Image(source: "app-intent-before-parameter-summary", alt: "The Shortcuts app with an intent open that doesn't use parameter summaries showing the text 'Open Trail' with a disclosure indicator") {
 			Without Parameter Summaries
+		}
+	}
+	@Column(size: 1) {
+		@Image(source: "app-intent-after-parameter-summary", alt: "The Shortcuts app with an intent open that uses parameter summaries showing the text 'Open Trail' with Trail being a selectable box") {
+			With Parameter Summaries
+		}
+	}
+}
+
+Adjusting the previous example, we can add a parameter summary:
+
+```swift
+struct OpenTrail: AppIntent, OpenIntent {
+	...
+
+	static var parameterSummary: some ParameterSummary {
+		Summary("Open \(\.$trail)")
+	}
+}
+```
+
+### Home Screen widget
+
+- Designed for glanceable information
+- Optionally configurable
+
+```swift
+struct TrailConditionsWidget: Widget {
+	static let kind = "TrailConditionsWidget"
+
+	var body: some WidgetConfiguration {
+		AppIntentConfiguration(
+			kind: Self.kind,
+			intent: TrailConditionsConfiguration.self,
+			provider: Provider()
+		) {
+			TrailConditionsEntryView(entry: $0)
+		}
+	}
+}
+```
+
+- Create a `AppIntentConfiguration` and pass a configuration intent to the `intent` parameter.
+- Configuration Intents conform to `WidgetConfigurationIntent`
+- To make it configurable - add a parameter
+
+```swift
+struct TrailConditionsConfiguration: WidgetConfigurationIntent {
+	static var title: LocalizedStringResource = "Trail Conditions"
+
+	@Parameter(title: "Trail")
+	var trail: TrailEntity?
+}
+```
+
+### Control Center control
+
+This is the basic shape for a configurable button control:
+
+```swift
+struct TrailConditionsControl: ControlWidget {
+	var body: some ControlWidgetConfiguration {
+		AppIntentControlConfiguration(
+			kind: Self.kind,
+			intent: ...
+		) { configuration in
+			ControlWidgetButton(action: ...) {
+				...
 			}
+		}
+	}
+}
+```
+
+It still requires an intent to hold the configuration of the button contents and an intent instance to handle button taps.
+
+We can reuse the `OpenTrail` intent from before by conforming it to `ControlConfigurationIntent` and then filling in the `TrailConditionsControl` template above:
+
+```swift
+extension OpenTrailConfiguration: ControlConfigurationIntent { }
+
+struct TrailConditionsControl: ControlWidget {
+	var body: some ControlWidgetConfiguration {
+		AppIntentControlConfiguration(
+			kind: Self.kind,
+			intent: OpenTrail.self
+		) { configuration in
+			ControlWidgetButton(action: configuration) {
+				Image(systemName: configuration.target.glyph)
+				Text(configuration.target.name)
 			}
-			@Column(size: 1) {
-				@Image(source: "app-intent-after-parameter-summary", alt: "The Shortcuts app with an intent open that uses parameter summaries showing the text 'Open Trail' with Trail being a selectable box") {
-					With Parameter Summaries
-					}
-					}
-					}
-					
-					Adjusting the previous example, we can add a parameter summary:
-					
-					```swift
-					struct OpenTrail: AppIntent, OpenIntent {
-					...
-					
-					static var parameterSummary: some ParameterSummary {
-					Summary("Open \(\.$trail)")
-					}
-					}
-					```
-					
-					### Home Screen widget
-					
-					- Designed for glanceable information
-					- Optionally configurable
-					
-					```swift
-					struct TrailConditionsWidget: Widget {
-					static let kind = "TrailConditionsWidget"
-					
-					var body: some WidgetConfiguration {
-					AppIntentConfiguration(
-					kind: Self.kind,
-					intent: TrailConditionsConfiguration.self,
-					provider: Provider()
-					) {
-					TrailConditionsEntryView(entry: $0)
-					}
-					}
-					}
-					```
-					
-					- Create a `AppIntentConfiguration` and pass a configuration intent to the `intent` parameter.
-					- Configuration Intents conform to `WidgetConfigurationIntent`
-					- To make it configurable - add a parameter
-					
-					```swift
-					struct TrailConditionsConfiguration: WidgetConfigurationIntent {
-					static var title: LocalizedStringResource = "Trail Conditions"
-					
-					@Parameter(title: "Trail")
-					var trail: TrailEntity?
-					}
-					```
-					
-					### Control Center control
-					
-					This is the basic shape for a configurable button control:
-					
-					```swift
-					struct TrailConditionsControl: ControlWidget {
-					var body: some ControlWidgetConfiguration {
-					AppIntentControlConfiguration(
-					kind: Self.kind,
-					intent: ...
-					) { configuration in
-					ControlWidgetButton(action: ...) {
-					...
-					}
-					}
-					}
-					}
-					```
-					
-					It still requires an intent to hold the configuration of the button contents and an intent instance to handle button taps.
-					
-					We can reuse the `OpenTrail` intent from before by conforming it to `ControlConfigurationIntent` and then filling in the `TrailConditionsControl` template above:
-					
-					```swift
-					extension OpenTrailConfiguration: ControlConfigurationIntent { }
-					
-					struct TrailConditionsControl: ControlWidget {
-					var body: some ControlWidgetConfiguration {
-					AppIntentControlConfiguration(
-					kind: Self.kind,
-					intent: OpenTrail.self
-					) { configuration in
-					ControlWidgetButton(action: configuration) {
-					Image(systemName: configuration.target.glyph)
-					Text(configuration.target.name)
-					}
-					}
-					}
-					}
-					```
-					
-					@Image(source: "app-intent-control-center-control", alt: "iOS 18's new Control Center showing the above TrailConditionControl")
-					
-					### Spotlight and Siri
-					
-					To make an app action available to Siri and Spotlight:
-					
-					- make an App Shortcut
-					- a wrapper around an intent created by the developer
-					- system offers it in various features:
-					- Spotlight
-					- Action Button
-					- Apple Pencil Pro
-					
-					```swift
-					struct TrailShortcut: AppShortcutsProvider {
-					static var appShortcuts: [AppShortcut] {
-					AppShortcut(
-					intent: OpenPinnedTrail(),
-					phrases: [
-					"Open my pinned trail in \(.applicationName)",
-					"Show my pinned trail in \(.applicationName)"
-					],
-					shortTitle: "Open Pinned Trail",
-					systemImageName: "pin"
-					)
-					}
-					}
-					```
-					
-					Notice:
-					
-					- providing an instance of the intent
-					- could customize it's parameters to provide a specific experience
-					- phrases are needed to invoke the shortcut from Siri
-					- they must contain the application name
-					- a short title and image are for when the shortcut is displayed visually
-					
-					This is handled automatically by the system at app install - there is no need to register the shortcut, or even open the app for the user to access this shortcut.
-					
-					This is great, but for Siri - it isn't quite right. It will move the user into the app which requires them to break the flow of what they're currently doing.
-					
-					Instead, we can make a new intent that will show the content in a snippet and speak it if the user isn't looking at their screen or is using a HomePod or AirPods.
-					
-					```swift
-					struct GetPinnedTrails: AppIntent {
-					static let title: LocalizedStringResource = "Get Pinned Trail"
-					
-					func perform() async throws -> some IntentResult & ProvidesDialog & ShowsSnippetView {
-					let pinned = TrailDataManager.shared.pinned
-					return .result(
-					dialog: "The latest reported condition of \(pinned.name) is \(pinned.currentCondition)",
-					view: trailConditionsSnippetView()
-					)
-					}
-					}
-					```
-					
-					## Wrapping Up
-					
-					Using App Intents lets you:
-					
-					- Make your app flow
-					- Adopt features like Siri, Shortcuts, widgets, and more
-					- All based on App Intents
-					
-				****
+		}
+	}
+}
+```
+
+@Image(source: "app-intent-control-center-control", alt: "iOS 18's new Control Center showing the above TrailConditionControl")
+
+### Spotlight and Siri
+
+To make an app action available to Siri and Spotlight:
+
+- make an App Shortcut
+- a wrapper around an intent created by the developer
+- system offers it in various features:
+- Spotlight
+- Action Button
+- Apple Pencil Pro
+
+```swift
+struct TrailShortcut: AppShortcutsProvider {
+	static var appShortcuts: [AppShortcut] {
+		AppShortcut(
+			intent: OpenPinnedTrail(),
+			phrases: [
+				"Open my pinned trail in \(.applicationName)",
+				"Show my pinned trail in \(.applicationName)"
+			],
+			shortTitle: "Open Pinned Trail",
+			systemImageName: "pin"
+		)
+	}
+}
+```
+
+Notice:
+
+- providing an instance of the intent
+- could customize it's parameters to provide a specific experience
+- phrases are needed to invoke the shortcut from Siri
+- they must contain the application name
+- a short title and image are for when the shortcut is displayed visually
+
+This is handled automatically by the system at app install - there is no need to register the shortcut, or even open the app for the user to access this shortcut.
+
+This is great, but for Siri - it isn't quite right. It will move the user into the app which requires them to break the flow of what they're currently doing.
+
+Instead, we can make a new intent that will show the content in a snippet and speak it if the user isn't looking at their screen or is using a HomePod or AirPods.
+
+```swift
+struct GetPinnedTrails: AppIntent {
+	static let title: LocalizedStringResource = "Get Pinned Trail"
+
+	func perform() async throws -> some IntentResult & ProvidesDialog & ShowsSnippetView {
+		let pinned = TrailDataManager.shared.pinned
+		return .result(
+			dialog: "The latest reported condition of \(pinned.name) is \(pinned.currentCondition)",
+			view: trailConditionsSnippetView()
+		)
+	}
+}
+```
+
+## Wrapping Up
+
+Using App Intents lets you:
+
+- Make your app flow
+- Adopt features like Siri, Shortcuts, widgets, and more
+- All based on App Intents
+
+****
