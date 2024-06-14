@@ -54,7 +54,8 @@ struct ProductivityExtensionBundle: WidgetBundle {
     var body: some Widget {
         TimerToggle()
     }
-}```
+}
+```
 
 ## Build a control: Basic ControlWidget template
 
@@ -80,7 +81,8 @@ Declare and define the control by:
             }
         }
     }
-}```
+}
+```
 
 ## Stateful updates
 
@@ -116,7 +118,8 @@ App intents are the underlying mechanism which controls use to perform their act
         TimerManager.shared.setTimerRunning(value)
         return .result()
     }
-}```
+}
+```
 
 ## Updating the control's state from your app
 
@@ -127,7 +130,8 @@ Controls use the same refresh mechanisms as widgets and live activities:
     ControlCenter.shared.reloadControls(
         ofKind: "com.apple.Productivity.TimerToggle"
     )
-}```
+}
+```
 
 ## Sharing state across multiple devices
 
@@ -140,7 +144,8 @@ When sharing state across multiple devices use ValueProvider to fetch the contro
     }
     
     let previewValue: Bool = false
-}```
+}
+```
 
 Use `ControlPushHandler` to update state changes across devices.
 
@@ -167,7 +172,8 @@ Conform to `AppIntentControlValueProvider` and return a custom struct of the con
             .tint(.purple)
         }
     }
-}```
+}
+```
 
 Use the `.promptsForUserConfiguration()` modifier when the control requires user configuration to work.
 
