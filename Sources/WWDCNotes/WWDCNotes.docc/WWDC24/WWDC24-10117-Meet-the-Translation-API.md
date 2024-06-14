@@ -9,6 +9,7 @@ Discover how you can translate text across different languages in your app using
 
    @Contributors {
       @GitHubUser(MortenGregersen)
+      @GitHubUser(appfrosch)
    }
 }
 
@@ -28,7 +29,14 @@ Discover how you can translate text across different languages in your app using
 
 Available on iOS, iPadOS and macOS.
 
-## Simple overlay
+## [Contents of the video](https://developer.apple.com/wwdc24/10117?time=98):
+1. the 2 options available
+  1. Simple overlay
+  2. Flexible translation
+2. Language support
+3. Best practices
+
+## [Simple overlay](https://developer.apple.com/wwdc24/10117?time=13)
 
 In iOS/iPadOS 17.4 and macOS 14.4 the `.translationPresentation` modifier was added.
 This is the easiest way to show translations:
@@ -40,7 +48,7 @@ MyContentView()
 
 This will show a sheet with the translation and a possibility to change target language.
 
-## Flexible translation
+## [Flexible translation](https://developer.apple.com/wwdc24/10117?time=222)
 
 To translate one or more strings use the new `TranslationSession`:
 
@@ -79,11 +87,11 @@ struct MyView: View {
 }
 ```
 
-## Language support
+## [Language support](https://developer.apple.com/wwdc24/10117?time=498))
 
 The translation is done on-device. Downloaded ML models for translate is shared with all apps, including Apple's Translate.
 
-**The supported languages are:**
+**[The supported languages are](https://developer.apple.com/wwdc24/10117?time=693):**
 * Arabic
 * Chinese (Simplified)
 * Chinese (Traditional)
@@ -128,7 +136,7 @@ func identifyLanguage(of sample: String) -> Locale.Language? {
 }
 ```
 
-### Unsupported combinations
+### [Unsupported combinations](https://developer.apple.com/wwdc24/10117?time=724)
 
 The framework does not support every combination of languages.
 
@@ -169,7 +177,7 @@ This function returns like an `AsyncSequence`. They are not in order.
 
 Make sure to use the `clientIdentifier` on each `Request` to find the right translations.
 
-## Best practices
+## [Best practices](https://developer.apple.com/wwdc24/10117?time=768)
 
 * Develop with device, not simulator (doesn't work)
 * Attach the `.translationPresentation` to the content or container - not the button
