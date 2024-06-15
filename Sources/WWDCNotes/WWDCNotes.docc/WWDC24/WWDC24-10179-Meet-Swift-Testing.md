@@ -5,7 +5,7 @@ Introducing Swift Testing: a new package for testing your code using Swift. Expl
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @(url: "https://developer.apple.com/wwdc24/10179", purpose: link, label: "Watch Video (23 min)")
+   @CallToAction(url: "https://developer.apple.com/wwdc24/10179", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(petermolnar-dev)
