@@ -70,4 +70,4 @@ Entitlement: `com.apple.developer.app-compute-category`, setting is app-wide. Sy
 Best practices: environmental safety, try existing APIs, only request what you need.
 Ensure employee privacy.
 
-How and where to apply for entitlement: see this session's resources.
+How and where to apply for entitlement: [see this session's resources](https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis). Submit a "Development Only" request.
