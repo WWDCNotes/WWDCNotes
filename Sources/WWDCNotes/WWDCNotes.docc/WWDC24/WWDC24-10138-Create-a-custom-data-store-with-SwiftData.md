@@ -8,7 +8,7 @@ Combine the power of SwiftData's expressive, declarative modeling API with your 
    @CallToAction(url: "https://developer.apple.com/wwdc24/10138", purpose: link, label: "Watch Video")
 
    @Contributors {
-      @GitHubUser(@n3twr)
+      @GitHubUser(n3twr)
    }
 }
 

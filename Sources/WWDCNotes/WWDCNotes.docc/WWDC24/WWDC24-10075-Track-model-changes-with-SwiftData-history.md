@@ -8,7 +8,7 @@ Reveal the history of your model’s changes with SwiftData! Use the history API
    @CallToAction(url: "https://developer.apple.com/wwdc24/10075", purpose: link, label: "Watch Video")
 
    @Contributors {
-      @GitHubUser(@n3twr)
+      @GitHubUser(n3twr)
    }
 }
 
