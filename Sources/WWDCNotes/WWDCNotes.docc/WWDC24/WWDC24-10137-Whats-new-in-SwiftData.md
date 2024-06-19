@@ -10,6 +10,7 @@ To discover how to build a custom data store or use the history API in SwiftData
 
    @Contributors {
       @GitHubUser(MortenGregersen)
+      @GitHubUser(n3twr)
    }
 }
 
@@ -69,6 +70,12 @@ Macros for customizing the models:
 
 ### Unique macro
 
+Ensure data uniqueness by using the `#Unique` macro:
+
+* Unique property **combination**.
+* Prevents duplicated entries.
+* Support of **upsert** (update/insert) operations.
+
 > *Use the new `#Unique` macro to tell SwiftData which combinations of your model’s properties must always remain unique in the model data.*
 >
 > *When two model instances share the same unique values, SwiftData will perform an upsert on collision with an existing model.*
@@ -96,14 +103,27 @@ Add the `@Attribute(.preserveValueOnDeletion)` to the properties to ensure these
 ### Reveal history with SwiftData
 
 * Track inserted, updated, and deleted models
-* Opt in to preserve values on deletion
+* Opt in to preserve values on deletion with the `#Preserve` macro.
+    * **Tombstone values** for deleted models.
 * Works with custom data stores
+* Useful for auditing and processing changes.
 
 Learn more in the session: "Track model changes with SwiftData history"
 
 ## Tailor a container
 
 It is now possible to create custom data stores for SwiftData:
+
+* Using custom storage formats (JSON archival, cloud storage, etc.)
+* Integration with actual SwiftData API...
+* ... but with incremental adoption of SwiftData full feature set.
+
+You can also customize the Model Container:
+
+* In-memory vs on-disk storage options.
+* Manage data storage & retrieval from the Data Store.
+* Define custom storage URL for the Store.
+* Enable/disable: auto-save, undo/redo, etc.
 
 ```swift
 import SwiftUI
@@ -189,6 +209,10 @@ import SwiftData
 
 ## Optimize queries
 
+* Use `@Predicate` macro to build **custom queries**.
+* Filter and sort data **efficiently**.
+* Build complex predicates with **multi-condition filtering**.
+
 ### Compound predicates
 
 In iOS 17.4 Compound predicates was added:
@@ -202,6 +226,12 @@ let predicate = #Predicate<Trip> {
 ```
 
 ### Using the new #Expression
+
+The `#Expression` macro helps you **Perform Complex Evaluations** in your Queries:
+
+* Use it in building sophisticated query conditions.
+* This macro supports arbitrary types.
+* Example: count specific items in an array for predicates.
 
 New in iOS 18, we can use the new `#Expression` from Foundation:
 
@@ -227,9 +257,12 @@ let tripsWithUnplannedItems = #Predicate<Trip>{ trip
 
 ### Index macro
 
-* Add metadata to the model
+The `#Index` macro is used to **Enhance Query Performance**:
+
+* Add metadata to the model, creating indexes on properties
 * Provides faster and more efficient queries
-* Specify properties used in queries
+* Speeds up searches and sorting on large datasets
+* Specify properties used in queries for speed up common queries
 
 Use the new `#Index` macro to mark properties as index to query models faster: 
 
