@@ -37,7 +37,7 @@ You can also use the `@Image` directive of DocC to include images rather than us
 @Image(source: "Name-of-Image-File", alt: "Optional image description.")
 ```
 
-To place an image side by side with some text (like done in the next section below), you can utilize the `@Row` and `@Column` directives:
+To place an image side by side with some text (like done in the Getting Started section below), you can utilize the `@Row` and `@Column` directives:
 
 ```Swift
 @Row(numberOfColumns: 3) {
@@ -54,6 +54,30 @@ To place an image side by side with some text (like done in the next section bel
       @Image(source: "Contributing-Row-Column-Example")
    }
 }
+```
+
+You can even put contents like images in separate tabs to better highlight differences, see <doc:WWDC24-10146-Demystify-SwiftUI-containers> for an example use case:
+
+```Swift
+@TabNavigator {
+   @Tab("Variant 1") {
+      @Image("WWDC24-101-Variant1", alt: "Optional description")
+   }
+
+   @Tab("Variant 2") {
+      @Image("WWDC24-101-Variant2", alt: "Optional description")
+   }
+
+   @Tab("Variant 3") {
+      @Image("WWDC24-101-Variant3", alt: "Optional description")
+   }
+}
+```
+
+Use the `@Video` directive to show short videos showcasing things like animations, see <doc:WWDC24-10188-Whats-new-in-SF-Symbols-6> for an example use case:
+
+```Swift
+@Video(source: "WWDC24-10188-Variable-Color", alt: "Optional video description.")
 ```
 
 Comments can be added with the `@Comment` directive like so:
