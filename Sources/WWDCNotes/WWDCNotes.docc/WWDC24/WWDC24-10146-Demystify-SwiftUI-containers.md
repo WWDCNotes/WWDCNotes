@@ -43,17 +43,15 @@ var body: some View {
 
 It's important to understand the difference between **Declared** subviews and **Resolved** subviews:
 
+* **Declared subviews**: What you define as direct subviews in a content closure.
+* **Resolved subviews**: The resulting subviews when SwiftUI rendered the contents.
 
 @TabNavigator {
    @Tab("Declared subviews") {
-      What you define as direct subviews in a content closure.
-      
       @Image(source: "WWDC24-10146-Declared-subviews")
    }
    
    @Tab("Resolved subviews") {
-      The resulting subviews when SwiftUI rendered the contents.
-      
       @Image(source: "WWDC24-10146-Resolved-subviews")
    }
 }
