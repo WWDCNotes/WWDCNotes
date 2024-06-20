@@ -130,15 +130,15 @@ In other words, one could say that container values are like preference values, 
 
 @TabNavigator {
    @Tab("Environment values") {
-      @Image("WWDC24-10146-Environment-values")
+      @Image(source: "WWDC24-10146-Environment-values")
    }
    
    @Tab("Preference values") {
-      @Image("WWDC24-10146-Preference-values")
+      @Image(source: "WWDC24-10146-Preference-values")
    }
    
    @Tab("Container values") {
-      @Image("WWDC24-10146-Container-values")
+      @Image(source: "WWDC24-10146-Container-values")
    }
 }
 
