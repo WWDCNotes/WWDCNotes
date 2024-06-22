@@ -1,6 +1,6 @@
 # WWDC22
 
-Xcode 14, Swift 5.7, iOS 16, macOS 13, tvOS 16, watchOS 9.
+Xcode 14, Swift 5.7, iOS 16, macOS 13 (Ventura), tvOS 16, watchOS 9.
 New APIs: ``WeatherKit``, ``ScreenCaptureKit``, ``Swift Regex``, and more. 
 
 @Metadata {

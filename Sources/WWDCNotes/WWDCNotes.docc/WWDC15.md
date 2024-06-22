@@ -1,7 +1,6 @@
-# WWDC17
+# WWDC15
 
-Xcode 9, Swift 4.0, iOS 11, macOS 10.13 (High Sierra), tvOS 11, watchOS 4.
-New APIs: ``Core NFC`` and more. 
+Xcode 7, Swift 2.0, iOS 9, macOS 10.11 (El Capitan), watchOS 2.
 
 @Metadata {
    @TitleHeading("Overview")

@@ -1,6 +1,6 @@
 # WWDC20
 
-Xcode 12, Swift 5.3, iOS 13, macOS 11, tvOS 14, watchOS 7.
+Xcode 12, Swift 5.3, iOS 14, macOS 11 (Big Sur), tvOS 14, watchOS 7.
 New APIs: ``WidgetKit``, ``StoreKit Testing``, and more. 
 
 @Metadata {

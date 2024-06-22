@@ -7,7 +7,7 @@ let package = Package(
     products: [
       .library(name: "WWDCNotes", targets: ["WWDCNotes"]),
       .executable(name: "generate-metadata", targets: ["generate-metadata"]),  // run on CI before each deployment, files not committed
-      .executable(name: "generate-session-stubs", targets: ["generate-session-stubs"]),  // run manually and commit files
+      .executable(name: "generate-session-stubs", targets: ["generate-session-stubs"]),  // run manually and commit files – once a year
       .executable(name: "migrate-notes", targets: ["migrate-notes"]),  // run manually once – not needed long-term
       .library(name: "Sessions", targets: ["Sessions"]),  // internal helper
     ],
