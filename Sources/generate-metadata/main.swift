@@ -242,18 +242,14 @@ for contributor in contributorsByProfile.values {
       @Metadata {
          @TitleHeading("Contributors")
          @PageKind(sampleCode)
+         @PageImage(purpose: card, source: "\(contributor.githubProfileName)")
+         @PageImage(purpose: icon, source: "\(contributor.githubProfileName)")
       }
 
-      ## About
+      ## Links
 
-      @Row(numberOfColumns: 5) {
-         @Column { ![Profile image of \(contributor.fullName)](\(contributor.avatarURL.absoluteString)) }
-         @Column(size: 4) {
-            [GitHub](https://github.com/\(contributor.githubProfileName))
+      \(contributor.socialLinks.map { "* [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
 
-      \(contributor.socialLinks.map { "      [\($0)](\($1.absoluteString))" }.joined(separator: "\n\n"))
-         }
-      }
 
       ## Contributions
 
@@ -274,6 +270,13 @@ for contributor in contributorsByProfile.values {
    }
 
    try contributorFileContents.write(toFile: contributorFilePath, atomically: true, encoding: .utf8)
+
+
+   print("Downloading profile image from \(contributor.avatarURL)…")
+
+   let avatarPath = "\(contributorsPath)/\(contributor.githubProfileName).jpeg"
+   let avatarData = try Data(contentsOf: contributor.avatarURL)
+   FileManager.default.createFile(atPath: avatarPath, contents: avatarData)
 }
 
 
@@ -290,6 +293,10 @@ var contributorsOverviewContents = """
       @PageKind(article)
       @PageImage(purpose: icon, source: "WWDCNotes")
       @CallToAction(url: "/documentation/wwdcnotes/contributing", purpose: link, label: "Become a Contributor")
+   }
+
+   @Options(scope: local) {
+      @TopicsVisualStyle(compactGrid)
    }
 
    ## Topics
