@@ -172,7 +172,9 @@ for event in events {
                sessionFileContents += """
 
                   @Row(numberOfColumns: 5) {
-                     @Column { ![Profile image of \(contributor.fullName)](\(contributor.avatarURL.absoluteString)) }
+                     @Column { 
+                        @Image(source: "\(contributor.githubProfileName)", alt: "Profile image of \(contributor.fullName)")
+                     }
                      @Column(size: 4) {
                         ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
 
