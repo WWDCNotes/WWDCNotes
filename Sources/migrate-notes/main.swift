@@ -21,6 +21,10 @@ for session in sessionByID.values {
    let imagesFolderPath = "\(contentBasePath)/images/notes/\(event.lowercased())/\(session.code)"
 
    guard FileManager.default.fileExists(atPath: notesPath) else { continue }
+   guard !FileManager.default.fileExists(atPath: sessionFilePath) else {
+      print("Skipping session \(session.id) as already migrated…")
+      continue
+   }
    let imagePaths = ((try? FileManager.default.contentsOfDirectory(atPath: imagesFolderPath)) ?? []).compactMap { (fileName) -> String? in
       guard !fileName.starts(with: ".") else { return nil }
       return "\(imagesFolderPath)/\(fileName)"
