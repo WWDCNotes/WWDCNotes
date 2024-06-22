@@ -299,7 +299,7 @@ In Xcode 16 there is new view to see the tests by tags in the Test Inspector. Ta
 A new test outline screen added to the test reports, where the test results are displayed. Apart from that the Insights report can also help in case of test failures by highlighting the overall failure status.
 
 
-## Parallel test rub
+## Parallel test run
 Swift Testing runs the test functions parallel by default, and also in randomized order to help to identify hidden dependencies between your test. That will result faster test runs, but can be also problematic if your existing test cases are not ready for that.
 
 In order to mitigate the case above, there is the [**`.serialized`**](https://developer.apple.com/documentation/testing/parallelizationtrait) trait, that can be added preferably to the Suite definition, since it has no effect on the individual test cases. This trait is inherited by the sub-suites.
