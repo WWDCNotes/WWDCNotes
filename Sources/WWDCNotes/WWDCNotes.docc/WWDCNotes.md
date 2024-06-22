@@ -8,6 +8,13 @@ Session notes shared by the community for the community.
    @PageImage(purpose: icon, source: "WWDCNotes")
 }
 
+@Options(scope: global) {
+   @AutomaticSeeAlso(disabled)
+   @AutomaticTitleHeading(enabled)
+   @AutomaticArticleSubheading(enabled)
+   @TopicsVisualStyle(list)
+}
+
 
 ## Overview
 

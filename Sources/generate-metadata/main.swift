@@ -127,7 +127,7 @@ let legalNotes = """
 
 let sessionByID = try Session.allSessionsByID()
 
-let events = ["WWDC24", "WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11"]
+let events = ["WWDC24", "WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11", "WWDC10"]
 
 var contributorsByProfile: [String: Contributor] = [:]
 var sessionIDsWithoutContributors: Set<String> = []
@@ -231,7 +231,7 @@ for contributor in contributorsByProfile.values {
    let contributedSessions = contributedSessionsIDs.compactMap { sessionByID[$0] }
    let contributedSessionByYear = Dictionary(grouping: contributedSessions, by: \.year)
 
-   let mostActiveYear = contributedSessionByYear.max { $0.value.count > $1.value.count }?.key ?? 0
+   let mostActiveYear = contributedSessionByYear.min { $0.value.count > $1.value.count }?.key ?? 0
 
    let contributorFilePath = "\(contributorsPath)/\(contributor.githubProfileName).md"
    var contributorFileContents = """
