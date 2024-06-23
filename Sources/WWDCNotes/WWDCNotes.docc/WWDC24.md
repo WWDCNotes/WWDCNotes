@@ -5,7 +5,8 @@ New APIs: Swift Testing, ``FinanceKit``, ``TabletopKit``, and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDCNotes")
+   @PageImage(purpose: icon, source: "WWDC24")
+   @PageImage(purpose: card, source: "WWDC24")
 }
 
 @Comment { Do not manually edit this file below this comment. The session link will be auto-generated. }

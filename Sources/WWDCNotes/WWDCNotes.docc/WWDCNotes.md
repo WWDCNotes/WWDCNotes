@@ -15,6 +15,9 @@ Session notes shared by the community for the community.
    @TopicsVisualStyle(list)
 }
 
+@Options(scope: local) {
+   @TopicsVisualStyle(detailedGrid)
+}
 
 ## Overview
 

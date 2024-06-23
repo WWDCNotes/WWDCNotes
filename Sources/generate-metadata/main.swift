@@ -294,6 +294,7 @@ var contributorsOverviewContents = """
       @TitleHeading("Overview")
       @PageKind(article)
       @PageImage(purpose: icon, source: "WWDCNotes")
+      @PageImage(purpose: card, source: "Contributors")
       @CallToAction(url: "/documentation/wwdcnotes/contributing", purpose: link, label: "Become a Contributor")
    }
 
@@ -331,6 +332,7 @@ var missingNotesContents = """
       @TitleHeading("Guide")
       @PageKind(article)
       @PageImage(purpose: icon, source: "WWDCNotes")
+      @PageImage(purpose: card, source: "MissingNotes")
    }
 
 
