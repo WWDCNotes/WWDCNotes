@@ -5,7 +5,7 @@ New APIs: ``MusicKit``, ``DocC``, ``StoreKit 2``, and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC21")
+   @PageImage(purpose: icon, source: "WWDC21-Icon")
    @PageImage(purpose: card, source: "WWDC21")
 }
 

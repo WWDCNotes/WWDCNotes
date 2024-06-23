@@ -34,6 +34,7 @@ Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnote
 
 ## Topics
 
+- <doc:Contributors>
 - <doc:WWDC24>
 - <doc:WWDC23>
 - <doc:WWDC22>
@@ -49,6 +50,5 @@ Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnote
 - <doc:WWDC12>
 - <doc:WWDC11>
 - <doc:WWDC10>
-- <doc:Contributors>
 
 @Comment { Add more years! }

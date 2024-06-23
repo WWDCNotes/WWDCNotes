@@ -5,7 +5,7 @@ New APIs: ``Combine``, ``Core Haptics``, ``Create ML``, and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC19")
+   @PageImage(purpose: icon, source: "WWDC19-Icon")
    @PageImage(purpose: card, source: "WWDC19")
 }
 

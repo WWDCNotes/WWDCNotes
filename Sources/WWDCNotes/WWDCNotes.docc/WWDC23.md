@@ -5,7 +5,7 @@ New APIs: ``SwiftData``, ``Observation``, ``StoreKit`` views, and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC23")
+   @PageImage(purpose: icon, source: "WWDC23-Icon")
    @PageImage(purpose: card, source: "WWDC23")
 }
 

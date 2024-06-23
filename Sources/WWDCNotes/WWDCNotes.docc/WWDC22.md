@@ -5,7 +5,7 @@ New APIs: ``WeatherKit``, ``ScreenCaptureKit``, ``Swift Regex``, and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC22")
+   @PageImage(purpose: icon, source: "WWDC22-Icon")
    @PageImage(purpose: card, source: "WWDC22")
 }
 

@@ -5,7 +5,7 @@ New APIs: ``Core NFC`` and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC17")
+   @PageImage(purpose: icon, source: "WWDC17-Icon")
    @PageImage(purpose: card, source: "WWDC17")
 }
 

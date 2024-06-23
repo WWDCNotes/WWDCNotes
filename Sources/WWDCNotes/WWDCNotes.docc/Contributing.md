@@ -7,7 +7,7 @@ All you need is Xcode and some time to watch a WWDC session video.
    @TitleHeading("Guide")
    @PageKind(article)
    @PageImage(purpose: icon, source: "WWDCNotes")
-   @PageImage(purpose: card, source: "Contributing-Live-Preview")
+   @PageImage(purpose: card, source: "Contributing")
    @CallToAction(url: "xcode://clone?repo=https%3A%2F%2Fgithub.com%2FWWDCNotes%2FWWDCNotes", purpose: link, label: "Clone Repo in Xcode")
 }
 

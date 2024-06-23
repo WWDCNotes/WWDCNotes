@@ -4,7 +4,7 @@ Xcode 5, iOS 7, macOS 10.9 (Mavericks).
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC13")
+   @PageImage(purpose: icon, source: "WWDC13-Icon")
    @PageImage(purpose: card, source: "WWDC13")
 }
 

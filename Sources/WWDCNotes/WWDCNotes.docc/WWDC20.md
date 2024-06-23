@@ -5,7 +5,7 @@ New APIs: ``WidgetKit``, ``StoreKit Testing``, and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC20")
+   @PageImage(purpose: icon, source: "WWDC20-Icon")
    @PageImage(purpose: card, source: "WWDC20")
 }
 

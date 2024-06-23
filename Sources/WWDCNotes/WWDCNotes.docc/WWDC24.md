@@ -5,7 +5,7 @@ New APIs: Swift Testing, ``FinanceKit``, ``TabletopKit``, and more.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC24")
+   @PageImage(purpose: icon, source: "WWDC24-Icon")
    @PageImage(purpose: card, source: "WWDC24")
 }
 

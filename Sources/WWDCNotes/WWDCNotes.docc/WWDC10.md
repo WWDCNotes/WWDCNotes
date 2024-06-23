@@ -4,7 +4,7 @@ iOS 4.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC10")
+   @PageImage(purpose: icon, source: "WWDC10-Icon")
    @PageImage(purpose: card, source: "WWDC10")
 }
 

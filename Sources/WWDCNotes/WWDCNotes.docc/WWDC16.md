@@ -4,7 +4,7 @@ Xcode 8, Swift 3.0, iOS 10, macOS 10.12 (Sierra), tvOS 10, watchOS 3.
 
 @Metadata {
    @TitleHeading("Overview")
-   @PageImage(purpose: icon, source: "WWDC16")
+   @PageImage(purpose: icon, source: "WWDC16-Icon")
    @PageImage(purpose: card, source: "WWDC16")
 }
 
