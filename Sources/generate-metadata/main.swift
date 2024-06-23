@@ -313,8 +313,6 @@ for (profile, _) in sessionIDsByProfile.sorted(by: { $0.value.count > $1.value.c
    contributorsOverviewContents += "- <doc:\(profile)>\n"
 }
 
-contributorsOverviewContents += "- <doc:Contributing>\n"
-
 contributorsOverviewContents += legalNotes
 
 try contributorsOverviewContents.write(toFile: contributorsOverviewFilePath, atomically: true, encoding: .utf8)
