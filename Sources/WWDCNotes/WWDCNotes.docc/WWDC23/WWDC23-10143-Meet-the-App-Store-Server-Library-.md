@@ -15,4 +15,4 @@ Discover the App Store Server Library and learn how you can take advantage of re
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

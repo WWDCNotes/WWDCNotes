@@ -15,4 +15,4 @@ New in iOS 18, iPadOS 18, and visionOS 2, the PencilKit tool picker gains the ab
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

@@ -15,4 +15,4 @@ Keep code out of the kernel and give your customers a more secure and reliable e
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

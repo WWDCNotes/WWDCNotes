@@ -15,4 +15,4 @@ Explore the latest features and improvements for Safari and WebKit. We’ll walk
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

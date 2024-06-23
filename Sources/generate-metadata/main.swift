@@ -191,7 +191,7 @@ for event in events {
             sessionFileContents += """
 
                ---
-               Missing anything? Corrections? [Contributions are welcome!](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+               Missing anything? Corrections? [Contributions are welcome!](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
 
                """
          }
@@ -312,6 +312,8 @@ var contributorsOverviewContents = """
 for (profile, _) in sessionIDsByProfile.sorted(by: { $0.value.count > $1.value.count }) {
    contributorsOverviewContents += "- <doc:\(profile)>\n"
 }
+
+contributorsOverviewContents += "- <doc:Contributing>\n"
 
 contributorsOverviewContents += legalNotes
 

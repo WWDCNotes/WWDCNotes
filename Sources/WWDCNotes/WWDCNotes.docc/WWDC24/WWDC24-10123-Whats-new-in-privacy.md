@@ -40,7 +40,7 @@ New pickers in iOS 18 have been introduced for FinanceKit, Image Playground, and
 FinanceKit allows for accessing transaction data and personal finance history from Apple Card, Savings for Card, and Apple Cash. This comes in two picker versions.
 
 1. Transaction picker. Used when your app needs to access specific existing transaction records, but not a complete and updating history. Users can be confident to engage with your feature without worrying about sharing sensitive information.
-2. Ongoing access control picker. Allows access to all financial data subsequent to a starting date. This is only the right option when your app needs access to ongoing financial data. Requires the FinanceKit distribution entitlement. Learn more at [Meet FinanceKit](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/wwdc24-2023-meet-financekit).
+2. Ongoing access control picker. Allows access to all financial data subsequent to a starting date. This is only the right option when your app needs access to ongoing financial data. Requires the FinanceKit distribution entitlement. Learn more at [Meet FinanceKit](https://wwdcnotes.com/documentation/wwdcnotes/wwdc24-2023-meet-financekit).
 
 ##### Image Playground
 
@@ -48,7 +48,7 @@ The Image Playground picker gives your app access to the system-provided, person
 
 ##### AccessorySetupKit
 
-Gives your app Bluetooth and Wi-Fi access to relevant accessories without the ability to discover devices that have never been paired to the app. Replaces the previous Bluetooth pairing prompt, the Wi-Fi network join prompt, and the Bluetooth accessory pairing confirmation - which could cause confusion for the user and make the user worry about broad permissions. Forgetting the device removes the accessory and its permissions entirely. Learn more at [Meet AccessorySetupKit](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/wwdc24-10203-meet-accessorysetupkit).
+Gives your app Bluetooth and Wi-Fi access to relevant accessories without the ability to discover devices that have never been paired to the app. Replaces the previous Bluetooth pairing prompt, the Wi-Fi network join prompt, and the Bluetooth accessory pairing confirmation - which could cause confusion for the user and make the user worry about broad permissions. Forgetting the device removes the accessory and its permissions entirely. Learn more at [Meet AccessorySetupKit](https://wwdcnotes.com/documentation/wwdcnotes/wwdc24-10203-meet-accessorysetupkit).
 
 ## Upgraded protections
 
@@ -78,7 +78,7 @@ iOS 18 automatically presents the new flow when your app requests access to Cont
 
 If your app offers a feature that allows people to search for contacts there is a new way for your app to add contacts incrementally with the **Contact Access Button** which fits within your own UI instead of being a full screen picker.
 
-It should be rare that any app would require full, ongoing access to Contacts. With the Contact Access Button, you can provide the full contact picker experience without requiring full access, and help people feel more confident sharing contacts with your app. Learn more in [Meet the Contact Access Button](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/wwdc24-10121-meet-the-contact-access-button).
+It should be rare that any app would require full, ongoing access to Contacts. With the Contact Access Button, you can provide the full contact picker experience without requiring full access, and help people feel more confident sharing contacts with your app. Learn more in [Meet the Contact Access Button](https://wwdcnotes.com/documentation/wwdcnotes/wwdc24-10121-meet-the-contact-access-button).
 
 ##### Bluetooth and Local Network
 
@@ -102,7 +102,7 @@ iOS 18 also allows people to lock and hide any app, and requiring authentication
 
 ##### Automatic passkey upgrades
 
-Passkeys are a standards-based password replacement that are easier to use, far more secure, and resistant to phishing. In iOS 18 and macOS Sequoia, apps can automatically upgrade existing accounts to use passkeys when signing in. See more in [Streamline sign-in with passkey upgrades and credential managers](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/wwdc24-10125-streamline-signin-with-passkey-upgrades-and-credential-managers)
+Passkeys are a standards-based password replacement that are easier to use, far more secure, and resistant to phishing. In iOS 18 and macOS Sequoia, apps can automatically upgrade existing accounts to use passkeys when signing in. See more in [Streamline sign-in with passkey upgrades and credential managers](https://wwdcnotes.com/documentation/wwdcnotes/wwdc24-10125-streamline-signin-with-passkey-upgrades-and-credential-managers)
 
 ##### Live Caller ID
 

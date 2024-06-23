@@ -15,4 +15,4 @@ See how the updates to UIKit controls and text styles in iOS 11 can help you des
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

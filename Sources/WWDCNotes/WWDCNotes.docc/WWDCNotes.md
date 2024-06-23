@@ -29,7 +29,7 @@ There are **two ways** to navigate the notes on this website:
 
 ## Contributing
 
-Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnotes.github.io/WWDCNotes/documentation/wwdcnotes/contributing)
+Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
 
 
 ## Topics
