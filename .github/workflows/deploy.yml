@@ -46,7 +46,6 @@ jobs:
             generate-documentation --target WWDCNotes \
             --disable-indexing \
             --transform-for-static-hosting \
-            --hosting-base-path WWDCNotes \
             --output-path ./docs
 
       # TODO: fix favicon, the below code is not working as expected
