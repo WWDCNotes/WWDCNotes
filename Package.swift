@@ -8,7 +8,6 @@ let package = Package(
       .library(name: "WWDCNotes", targets: ["WWDCNotes"]),
       .executable(name: "generate-metadata", targets: ["generate-metadata"]),  // run on CI before each deployment, files not committed
       .executable(name: "generate-session-stubs", targets: ["generate-session-stubs"]),  // run manually and commit files – once a year
-      .executable(name: "migrate-notes", targets: ["migrate-notes"]),  // run manually once – not needed long-term
       .library(name: "Sessions", targets: ["Sessions"]),  // internal helper
     ],
     dependencies: [.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.3.0")],
@@ -16,7 +15,6 @@ let package = Package(
       .target(name: "WWDCNotes"),
       .executableTarget(name: "generate-metadata", dependencies: ["Sessions"]),
       .executableTarget(name: "generate-session-stubs", dependencies: ["Sessions"]),
-      .executableTarget(name: "migrate-notes", dependencies: ["Sessions"]),
       .target(name: "Sessions", resources: [.copy("sessions.json")]),
     ]
 )
