@@ -1,6 +1,6 @@
 # WWDC Notes
 
-This repository represents the **[WWDC Notes website](https://wwdcnotes.com/beta)**.
+This repository represents the **[WWDC Notes website](https://wwdcnotes.com/)**.
 
 **Everyone** can contribute: See [what's missing](https://wwdcnotes.com/documentation/wwdcnotes/missingnotes). We look forward to having you become part of the [community](https://wwdcnotes.com/documentation/wwdcnotes/contributors)! Thank you.
 
