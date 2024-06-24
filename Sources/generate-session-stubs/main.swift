@@ -1,3 +1,5 @@
+// This file is used to generate empty session stubs for all the sessions of a year on day one of WWDC once the session details are available.
+
 import Foundation
 import Sessions
 #if os(Linux)
@@ -45,5 +47,3 @@ for session in sessionByID.values {
       try sessionFileContents.write(toFile: sessionFilePath, atomically: true, encoding: .utf8)
    }
 }
-
-// TODO: link to the sessions in the year overview document

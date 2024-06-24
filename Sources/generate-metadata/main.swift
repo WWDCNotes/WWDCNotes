@@ -1,3 +1,5 @@
+// This file is used on the GitHub Actions CI to generate dynamic data like the 'Contributors' page, the 'Written by' sections and more.
+
 import Foundation
 import Sessions
 #if os(Linux)
