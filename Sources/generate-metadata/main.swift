@@ -34,7 +34,7 @@ struct Contributor {
       var request = URLRequest(url: url)
 
       guard let token = ProcessInfo.processInfo.environment["GITHUB_TOKEN"] else {
-          fatalError("GitHub token is not set in the environment variables")
+          fatalError("GITHUB_TOKEN is not set in the environment variables")
       }
 
       request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")

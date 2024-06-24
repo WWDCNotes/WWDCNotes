@@ -33,7 +33,7 @@ One of the benefits in Swift 6 is data-race safety. The compiler will prevent ac
 
 ## When to migrate to Swift 6
 
-The Swift 6 language mode is opt-in, even for new projects. But turning it on will help avoid hard-to-reproduce crashes to due data races.
+The Swift 6 language mode is opt-in, even for new projects. But turning it on will help avoid hard-to-reproduce crashes due to data races.
 
 If you maintain a public Swift package that uses concurrenct code, you should adopt Swift 6 language mode fast so the community can benefit.
 
@@ -45,7 +45,7 @@ What the graph looked like in June 2024:
 
 @Image(source: "WWDC24-10169-Swift-6-ready-graph")
 
-You might have a data-race free code base already, thanks to hard work and fixed bug reports. But real feature of Swift 6 is that you can avoid data-race safety issues in _new_ code.
+You might have a data-race free code base already, thanks to hard work and fixed bug reports. But the real feature of Swift 6 is that you can avoid data-race safety issues in _new_ code.
 
 ## How to migrate to Swift 6
 
