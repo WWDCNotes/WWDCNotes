@@ -171,7 +171,7 @@ Let’s profile the updated code.
 
 [23]: WWDC23-10248-Screenshot_2023-06-10_at_14
 
-We still has a micro-hang. Let’s profile it on our iPad.
+We still have a micro-hang. Let’s profile it on our iPad.
 
 ![][24]
 
