@@ -52,7 +52,7 @@ To enable our UI elements to react “instantly”, it is vital to keep the main
 
 Given that every update to a UI element needs some time on the main thread, and we want these updates to happen within 100 ms to feel real. Ideally, **no work on the main thread should take longer than 100 ms**. If you can be faster, even better. Long-running work on the main thread can also cause hitches. 
 
-# Profiling you app on Xcode
+# Profiling your app on Xcode
 
 ![][5]
 
