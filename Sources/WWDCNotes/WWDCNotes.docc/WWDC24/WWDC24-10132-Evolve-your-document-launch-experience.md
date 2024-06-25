@@ -16,12 +16,11 @@ Make your document-based app stand out, and bring its unique identity into focus
 
 New design for the launch experience you can adopt, looks like this:
 
-// 1:10
+
 @Image(source: "WWDC24-10132-New-Design")
 
 The header ist customizable, with a background color or image, foreground and background accessory views, and primary and secondary buttons:
 
-// around 1:36
 @TabNavigator {
    @Tab("Background Color or Image") {
       @Image(source: "WWDC24-10132-Background")
