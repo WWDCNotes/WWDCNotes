@@ -21,10 +21,11 @@ Session notes shared by the community for the community.
 
 ## Overview
 
-There are **two ways** to navigate the notes on this website:
+There are **three ways** to navigate the notes on this website:
 
 1. If you're looking for a specific topic or session, press `Cmd+Shift+O` and search for it
 2. For session discovery, open the overview page of a year down below and explore from there
+3. Use the sidebar to either filter for a specific topic or discover from the years list
 
 
 ## Contributing
