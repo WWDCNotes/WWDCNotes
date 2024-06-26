@@ -36,17 +36,17 @@ A spring can start with any initial velocity, so we get a natural feeling. Swift
 
 ![][1]
 
-[1]: WWDC23-10158-Screenshot_2023-06-11_at_18
+[1]: WWDC23-10158-Screenshot_2023-06-11_at_18.39.10
 
 Apple has been refining a new way to configure springs that's easier to understand and to work with. It uses just 2 parameters: duration and bounce. Increasing the duration makes the animation take longer. And increasing the bounce adds bounce to the animation. All of their frameworks that support springs will use them.
 
 ![][2]
 
-[2]: WWDC23-10158-Screenshot_2023-06-11_at_18
+[2]: WWDC23-10158-Screenshot_2023-06-11_at_18.40.29
 
 ![][3]
 
-[3]: WWDC23-10158-Screenshot_2023-06-11_at_18
+[3]: WWDC23-10158-Screenshot_2023-06-11_at_18.43.40
 
 Being able to understand the math that's behind these curves helps make springs feel more approachable, but if math just makes your head spin, don't worry, it's completely optional. They’ve implemented all of this math for you.
 
@@ -123,7 +123,7 @@ But if you really want to do a conversion yourself, here are the three equations
 
 ![][4]
 
-[4]: WWDC23-10158-Screenshot_2023-06-11_at_19
+[4]: WWDC23-10158-Screenshot_2023-06-11_at_19.07.03
 
 You can call value to get the position of the spring. You just pass in a target, which is what the spring is moving towards, and the time you want to evaluate it at. You can also use the same inputs on a velocity method to evaluate the spring's velocity over time.
 

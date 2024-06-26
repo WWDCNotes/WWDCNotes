@@ -74,7 +74,7 @@ for session in sessionByID.values {
 
       sessionFileContents = sessionFileContents.replacing(
          "../../../images/notes/\(event.lowercased())/\(session.code)/\(imageFileName)",
-         with: newImageFilePath.components(separatedBy: "/").last!.components(separatedBy: ".")[0]
+         with: newImageFilePath.components(separatedBy: "/").last!.components(separatedBy: ".").dropLast().joined(separator: ".")
       )
    }
 

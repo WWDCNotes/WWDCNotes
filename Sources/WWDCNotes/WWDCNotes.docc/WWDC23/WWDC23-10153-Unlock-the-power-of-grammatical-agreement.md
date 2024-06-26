@@ -55,7 +55,7 @@ let size = AttributedString(localized: "small", options: options)
 
 ![][neutral]
 
-[neutral]: WWDC23-10153-TermsOfAddress
+[neutral]: WWDC23-10153-TermsOfAddress.neutral
 
 - New `referenceConcept` attribute in agreement, like `"\(person.name) is on ^[their](referentConcept: 1) way."`
 - You can provide custom `TermOfAddress` using `TermOfAddress.localized(language:pronouns:)` and pass array of `Mophology.Pronoun`
