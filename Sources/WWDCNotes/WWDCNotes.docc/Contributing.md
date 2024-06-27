@@ -127,7 +127,7 @@ To preview a note in Xcode while editing it, you need to open the Assistant Edit
 
 @Image(source: "Contributing-Xcode-Live-Preview")
 
-> Tip: Sometimes the Assistant Editor might not refresh or show a blank screen. In those cases, you can quickly close & reopen the Assistant Editor by using the shortcut twie. And make sure that "Documentation Preview" is selected in the Dropdown at the top of the Assistant Editor.
+> Tip: Sometimes the Assistant Editor might not refresh or show a blank screen. In those cases, you can quickly close & reopen the Assistant Editor by using the shortcut twice. And make sure that "Documentation Preview" is selected in the Dropdown at the top of the Assistant Editor.
 
 
 ### Image Name & Format
