@@ -38,7 +38,7 @@ This makes builds faster overall thanks to more efficient use of available execu
 
 @TabNavigator {
    @Tab("Implicit Timing") {
-      @Image(source: "WWDC24-10171-Explicit-Timing")
+      @Image(source: "WWDC24-10171-Implicit-Timing")
    }
    @Tab("Explicit Timing") {
       @Image(source: "WWDC24-10171-Explicit-Timing")
