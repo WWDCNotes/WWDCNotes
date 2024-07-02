@@ -8,7 +8,7 @@ Swift is a great language for writing your server applications, and powers criti
    @CallToAction(url: "https://developer.apple.com/wwdc24/10216", purpose: link, label: "Watch Video")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(dl-alexandre)
    }
 }
 
