@@ -12,7 +12,11 @@ Discover how Swift balances abstraction and performance. Learn what elements of 
    }
 }
 
-😱 "No Overview Available!"
+## Key takeaways
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+
+
+## *Presenter*
+
+John McCall, Swift Team
+
