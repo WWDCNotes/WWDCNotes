@@ -63,7 +63,6 @@ jobs:
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>Redirecting...</title>
-              <link rel="manifest" href="/manifest.json">
               <meta http-equiv="refresh" content="0; url=/documentation/wwdcnotes/">
               <script type="text/javascript">
                   window.location.href = "/documentation/wwdcnotes/";
@@ -73,26 +72,6 @@ jobs:
               <p>If you are not redirected automatically, follow this <a href="/documentation/wwdcnotes/">Link</a>.</p>
           </body>
           </html>' > ./docs/index.html
-
-          - name: Create manifest for progressive web app
-        run: |
-          echo '{
-  "name": "WWDC Notes",
-  "short_name": "WWDCNotes",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#181818",
-  "description": "Awesome docs that displays amazing things.",
-  "categories": [
-        "development",
-        "wwdc",
-        "docc"
-    ],
-  "lang": "en",
-  "id": "/?source=pwa",
-  "start_url": "/?source=pwa"
-}' > ./docs/manifest.json
       
       - name: Deploy to Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.0
