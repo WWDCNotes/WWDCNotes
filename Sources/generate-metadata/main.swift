@@ -335,6 +335,7 @@ var missingNotesContents = """
       @PageKind(article)
       @PageImage(purpose: icon, source: "WWDCNotes")
       @PageImage(purpose: card, source: "MissingNotes")
+      @CallToAction(url: "/documentation/wwdcnotes/contributing", purpose: link, label: "Learn How to Contribute")
    }
 
 
