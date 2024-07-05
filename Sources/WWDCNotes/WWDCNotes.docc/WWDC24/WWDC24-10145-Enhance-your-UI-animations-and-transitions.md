@@ -14,7 +14,7 @@ Explore how to adopt the zoom transition in navigation and presentations to incr
 
 ## Key takeaways
 
-* New fluied zoom transitions are available
+* New fluid zoom transitions are available
 * These zoom transitions are continuously interactive
 * SwiftUI Animation type now available in UIKit and AppKit
 
