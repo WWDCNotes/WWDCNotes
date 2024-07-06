@@ -136,13 +136,13 @@ Xcode Cloud builds run on ephemeral task workers, the range of IP addresses that
 4. Add required IP address ranges to server’s firewall’s inbound allowlist
     - Specifics on which IP address to allow available in 
 
- [Requirements for using Xcode Cloud]("https://developer.apple.com/documentation/xcode/requirements-for-using-xcode-cloud")
+ [Requirements for using Xcode Cloud](https://developer.apple.com/documentation/xcode/requirements-for-using-xcode-cloud)
 
 ## Connecting outside of Xcode Cloud
 
 - Use App Store Connect API to automatically start a build whenever test server has new changes.
     
- [Xcode Cloud Workflows and Builds]("https://developer.apple.com/documentation/appstoreconnectapi/xcode_cloud_workflows_and_builds")   
+ [Xcode Cloud Workflows and Builds](https://developer.apple.com/documentation/appstoreconnectapi/xcode_cloud_workflows_and_builds)   
 
 - Create new Xcode Cloud builds using `.ciBuildRuns` endpoint
     - workflow identifiers
@@ -230,7 +230,7 @@ Builds started by the App Store Connect API are considered manual
 - Allow services to respond to build events
 - Only need an HTTP server
 
-[Configuring webhooks in Xcode Cloud]("https://developer.apple.com/documentation/xcode/configuring-webhooks-in-xcode-cloud")
+[Configuring webhooks in Xcode Cloud](https://developer.apple.com/documentation/xcode/configuring-webhooks-in-xcode-cloud)
 
 When configuring a webhook, Xcode Cloud will send requests containing a JSON payload with detailed information about different build events.
 
@@ -294,10 +294,3 @@ func routes(_ app: Application) throws {
 6. Server change is pushed which causes issues
     - Integration Tests fails
     - Webhook listener prevents deployment change 
-
-
-
-
-
-
-
