@@ -12,7 +12,7 @@ Learn how to create captivating immersive experiences with ARKit’s latest feat
    }
 }
 
-Recap:
+## Recap
 
 - When app in "Full Space", you can use ARKit to get "anchors"
 - Anchor is a position and orientation in 3D space, such as `PlaneAnchor`
