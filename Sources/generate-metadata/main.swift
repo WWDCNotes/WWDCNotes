@@ -217,7 +217,9 @@ for event in events {
             sessionFileContents += "}\n\n"
          }
 
-         sessionFileContents += legalNotes
+         if !sessionContributors.isEmpty {
+            sessionFileContents += legalNotes
+         }
 
          try sessionFileContents.write(toFile: sessionFilePath, atomically: true, encoding: .utf8)
       }
