@@ -87,6 +87,8 @@ Comments can be added with the `@Comment` directive like so:
 @Comment { This text will not be rendered on the final page. }
 ```
 
+If you want to link to other sessions, you can use the `<doc:name-of-other-session>` directive which even gives you auto-completion while you're typing the name of the session (without whitespaces). For example, the above 'What's New in SF Symbols 6' link was created via `<doc:WWDC24-10188-Whats-new-in-SF-Symbols-6>` under the hoods.
+
 
 ### Getting Started
 
@@ -155,6 +157,7 @@ Having this said, there are a few guidelines that make sure that what we are hos
 
 - While quoting of individual phrases is fine, don't quote entire blocks of text. 
 - While taking individual screenshots of the sessions is fine, avoid creating a picture book.
+- Avoid screenshots where the presenters are front and center – focus on the contents instead.
 - While a short personal take can help clarify context, stay close to the session in general.
 
 
