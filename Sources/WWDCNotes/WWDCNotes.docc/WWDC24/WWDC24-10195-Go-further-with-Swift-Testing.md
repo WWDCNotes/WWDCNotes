@@ -68,7 +68,7 @@ It is for a case when the exact type of error thrown is not important.
 ```swift
 import Testing
 
-struct myTests {
+struct MyTests {
     
     @Test func sampleTest() {
         let sut = TestEntity()
@@ -85,7 +85,7 @@ In case we want to match with the specific error type, we can use the type itsel
 ```swift
 import Testing
 
-struct myTests {
+struct MyTests {
     
     @Test func sampleTestWithErrorType() {
         let sut = TestEntity()
@@ -103,7 +103,7 @@ If there is a need for customized logic during the validation, a closure based s
 ```swift
 import Testing
 
-struct myTests {
+struct MyTests {
     
     @Test func sampleTestWithCustomThrow() {
         let sut = TestEntity()
@@ -128,7 +128,7 @@ The **`throws:`** validation also available for the **`#require`** macro, if the
 ```swift
 import Testing
 
-struct myTests {
+struct MyTests {
     
     @Test func sampleTestRequire() throws {
         let sut = TestEntity()
@@ -147,7 +147,7 @@ Although disabling the test can be a solution, the **`withKnownIssue`** function
 ```swift
 import Testing
 
-struct myTests {
+struct MyTests {
     
     @Test func sampleTestRequire() throws {
         let sut = TestEntity()
@@ -279,7 +279,7 @@ extension Tag {
     @Tag static var networking: Self
 }
 
-struct myTests {
+struct MyTests {
     @Test(.tags(.formatting))
     func sampleTest()  {
         let a = 2
