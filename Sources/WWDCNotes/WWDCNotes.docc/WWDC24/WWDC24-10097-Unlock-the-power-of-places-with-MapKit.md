@@ -35,7 +35,7 @@ Discover powerful new ways to integrate maps into your apps and websites with Ma
 
 ## Place ID Lookup Tool
 
-The [tool]("https://developer.apple.com/maps/place-id-lookup/") is faster for looking up just a few IDs.
+The [tool](https://developer.apple.com/maps/place-id-lookup/) is faster for looking up just a few IDs.
 
 ## Display Annotation
 
@@ -110,9 +110,9 @@ The [tool]("https://developer.apple.com/maps/place-id-lookup/") is faster for lo
 
 ## Creating Token
 
-Fill out a short [form]("https://developer.apple.com/account/resources/services/maps-tokens") to create a MapKit JS production token that doesn't expire.
+Fill out a short [form](https://developer.apple.com/account/resources/services/maps-tokens) to create a MapKit JS production token that doesn't expire.
 
-To learn more about how this technology can be used to build and maintain collections of Place IDs, check out [Identifying Unique Locations With Place IDs]("https://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit/identifying_unique_locations_with_place_ids")
+To learn more about how this technology can be used to build and maintain collections of Place IDs, check out [Identifying Unique Locations With Place IDs](https://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit/identifying_unique_locations_with_place_ids)
 
 ## Displaying Place Cards
 
@@ -122,7 +122,7 @@ The **MapItemDetail** and **PlaceDetail** APIs offer flexibility, and support a 
 
 **Embeds** are a quick way to add a map to your website.
 
-The Create a Map [tool]("https://developer.apple.com/maps/create-a-map/") simply generates HTML.
+The Create a Map [tool](https://developer.apple.com/maps/create-a-map/) simply generates HTML.
 
 ## Displaying Details
 
