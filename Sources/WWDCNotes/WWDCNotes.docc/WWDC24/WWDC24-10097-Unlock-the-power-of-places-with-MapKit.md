@@ -35,7 +35,7 @@ Discover powerful new ways to integrate maps into your apps and websites with Ma
 
 ## Place ID Lookup Tool
 
-The [tool]("https://developer.apple.com/maps/place-id-lookup/") is faster for looking up just a few IDs.
+The [tool](https://developer.apple.com/maps/place-id-lookup/) is faster for looking up just a few IDs.
 
 ## Display Annotation
 
@@ -45,28 +45,28 @@ The [tool]("https://developer.apple.com/maps/place-id-lookup/") is faster for lo
         // Display Apple Visitor Center annotation
         
         struct PlaceMapView: View {
-        var placeID: String // "I63802885C8189B2B"
+            var placeID: String // "I63802885C8189B2B"
         
-        @State private var item: MKMapItem?
+            @State private var item: MKMapItem?
         
-        var body: some View {
-        Map {
-        if let item {
-        Marker(item: item)
-        }
-        }
-        .task {
-        guard let identifier = MKMapItem.Identifier(
-        rawValue: placeID
-        ) else {
-        return
-        }
-        let request = MKMapItemRequest(
-        mapItemIdentifier: identifier
-        )
-        item = try? await request.mapItem
-        }
-        }
+            var body: some View {
+                Map {
+                    if let item {
+                        Marker(item: item)
+                        }
+                    }
+                    .task {
+                        guard let identifier = MKMapItem.Identifier(
+                            rawValue: placeID
+                        ) else {
+                            return
+                    }
+                let request = MKMapItemRequest(
+                    mapItemIdentifier: identifier
+                )
+                item = try? await request.mapItem
+                }
+            }
         }
         ```
     }
@@ -104,15 +104,14 @@ The [tool]("https://developer.apple.com/maps/place-id-lookup/") is faster for lo
         
         <div id="map" style="width: 100dvw; height: 100dvh;"></div>
         ```
-        
     }
 }
 
 ## Creating Token
 
-Fill out a short [form]("https://developer.apple.com/account/resources/services/maps-tokens") to create a MapKit JS production token that doesn't expire.
+Fill out a short [form](https://developer.apple.com/account/resources/services/maps-tokens) to create a MapKit JS production token that doesn't expire.
 
-To learn more about how this technology can be used to build and maintain collections of Place IDs, check out [Identifying Unique Locations With Place IDs]("https://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit/identifying_unique_locations_with_place_ids")
+To learn more about how this technology can be used to build and maintain collections of Place IDs, check out [Identifying Unique Locations With Place IDs](https://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit/identifying_unique_locations_with_place_ids)
 
 ## Displaying Place Cards
 
@@ -122,7 +121,7 @@ The **MapItemDetail** and **PlaceDetail** APIs offer flexibility, and support a 
 
 **Embeds** are a quick way to add a map to your website.
 
-The Create a Map [tool]("https://developer.apple.com/maps/create-a-map/") simply generates HTML.
+The Create a Map [tool](https://developer.apple.com/maps/create-a-map/) simply generates HTML.
 
 ## Displaying Details
 
@@ -210,39 +209,38 @@ The Create a Map [tool]("https://developer.apple.com/maps/create-a-map/") simply
         }
         ```
         }
-        @Tab("Javascript") {
-            ```javascript
-            // Show visitor center details (visitor-center-details.js)
-            window.entryPoint = () => {
-                const id = "I63802885C8189B2B";
-                const lookup = new mapkit.PlaceLookup();
-                lookup.getPlace(id, annotatePlace);
-            };
-            
-            const annotatePlace = (error, place) => {
-                const el = document.getElementById("place");
-                const detail = new mapkit.PlaceDetail(el, place, {
-                    colorScheme: mapkit.PlaceDetail.ColorSchemes.Adaptive
-                });
-            };
-            ```
-            
-            ```javascript
-            <!-- Set MapKit JS to call entry point after loading -->
-            <script
-                crossorigin async
-                src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"
-                data-callback="entryPoint"
-                data-token="TODO: Add your token here"
-            ></script>
-            
-            <script src="visitor-center.js"></script>
-            
-            <div id="map" style="width: 100dvw; height: 100dvh;"></div>
-            ```
-        }
+    @Tab("Javascript") {
+        ```javascript
+        // Show visitor center details (visitor-center-details.js)
+        window.entryPoint = () => {
+            const id = "I63802885C8189B2B";
+            const lookup = new mapkit.PlaceLookup();
+            lookup.getPlace(id, annotatePlace);
+        };
+        
+        const annotatePlace = (error, place) => {
+            const el = document.getElementById("place");
+            const detail = new mapkit.PlaceDetail(el, place, {
+                colorScheme: mapkit.PlaceDetail.ColorSchemes.Adaptive
+            });
+        };
+        ```
+        
+        ```javascript
+        <!-- Set MapKit JS to call entry point after loading -->
+        <script
+            crossorigin async
+            src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"
+            data-callback="entryPoint"
+            data-token="TODO: Add your token here"
+        ></script>
+        
+        <script src="visitor-center.js"></script>
+        
+        <div id="map" style="width: 100dvw; height: 100dvh;"></div>
+        ```
     }
-}
+    }
     
 ## Place Card API
 
