@@ -3,13 +3,14 @@
 Discover how you can remotely update Live Activities in your app when you push content through Apple Push Notification service (APNs). We’ll show you how to configure your first Live Activity push locally so you can quickly iterate on your implementation. Learn best practices for determining your push priority and configuring alerting updates, and explore how to further improve your Live Activities with relevance score and stale date.
 
 @Metadata {
-   @TitleHeading("WWDC23")
-   @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10185", purpose: link, label: "Watch Video (18 min)")
+  @TitleHeading("WWDC23")
+  @PageKind(sampleCode)
+  @CallToAction(url: "https://developer.apple.com/wwdc23/10185", purpose: link, label: "Watch Video (18 min)")
 
-   @Contributors {
-      @GitHubUser(rusik)
-   }
+  @Contributors {
+    @GitHubUser(srujanc)
+    @GitHubUser(rusik)
+  }
 }
 
 Live Activities are a great way to display glanceable information to someone about an ongoing activity. ActivityKit enables your app to start, update, and end Live Activities. Then, by utilizing WidgetKit and SwiftUI, you can build the UI that displays the information to the user. Check out [Meet ActivityKit](https://developer.apple.com/videos/play/wwdc2023/10184) session to learn more about these technologies. Live Activities can now be updated with push notifications, providing real-time updates without significantly impacting battery life.
