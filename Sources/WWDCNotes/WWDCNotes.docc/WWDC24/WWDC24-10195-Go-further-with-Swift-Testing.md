@@ -17,7 +17,7 @@ Learn how to write a sweet set of (test) suites using Swift Testing’s baked-in
 
 🔃 For repetitive tests use the Parameterized tests.
 
-📋 Use Suits and Tags for organizing tests.
+📋 Use Suites and Tags for organizing tests.
 
 🔀 Async code test with `withCheckedContinuation` and `confirmation`.
 
@@ -259,8 +259,8 @@ func cook(_ ingredient: Ingredient, into dish: Dish) async throws {
 
 ## Organizing tests
 There are 2 main options to organize our test cases:
-* Using Suits
-* Add Tags to Suits or Tests
+* Using Suites
+* Add Tags to Suites or Tests
 
 ### Suite
 The **`@Suite`** annotation can be added to any Swift type, however types containing **`@Test`** functions or suites will be implicitly annotated. 
