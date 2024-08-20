@@ -20,8 +20,8 @@ Discover powerful new ways to integrate maps into your apps and websites with Ma
 
 ## Presenters
 
-** Mike Wilson, Mapkit Engineer**
-** Jeff Meininger, MapKit Engineer**
+- **Mike Wilson, Mapkit Engineer**
+- **Jeff Meininger, MapKit Engineer**
 
 @Image(source: "WWDC24-10097-mapkit-features")
 
@@ -45,28 +45,28 @@ The [tool](https://developer.apple.com/maps/place-id-lookup/) is faster for look
         // Display Apple Visitor Center annotation
         
         struct PlaceMapView: View {
-        var placeID: String // "I63802885C8189B2B"
+            var placeID: String // "I63802885C8189B2B"
         
-        @State private var item: MKMapItem?
+            @State private var item: MKMapItem?
         
         var body: some View {
-        Map {
-        if let item {
-        Marker(item: item)
-        }
-        }
-        .task {
-        guard let identifier = MKMapItem.Identifier(
-        rawValue: placeID
-        ) else {
-        return
-        }
-        let request = MKMapItemRequest(
-        mapItemIdentifier: identifier
-        )
-        item = try? await request.mapItem
-        }
-        }
+            Map {
+                if let item {
+                    Marker(item: item)
+                }
+            }
+            .task {
+                guard let identifier = MKMapItem.Identifier(
+                    rawValue: placeID
+                ) else {
+                    return
+                }
+                let request = MKMapItemRequest(
+                    mapItemIdentifier: identifier
+                )
+                item = try? await request.mapItem
+                }
+            }
         }
         ```
     }
@@ -210,37 +210,36 @@ The Create a Map [tool](https://developer.apple.com/maps/create-a-map/) simply g
         }
         ```
         }
-        @Tab("Javascript") {
-            ```javascript
-            // Show visitor center details (visitor-center-details.js)
-            window.entryPoint = () => {
-                const id = "I63802885C8189B2B";
-                const lookup = new mapkit.PlaceLookup();
-                lookup.getPlace(id, annotatePlace);
-            };
-            
-            const annotatePlace = (error, place) => {
-                const el = document.getElementById("place");
-                const detail = new mapkit.PlaceDetail(el, place, {
-                    colorScheme: mapkit.PlaceDetail.ColorSchemes.Adaptive
-                });
-            };
-            ```
-            
-            ```javascript
-            <!-- Set MapKit JS to call entry point after loading -->
-            <script
-                crossorigin async
-                src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"
-                data-callback="entryPoint"
-                data-token="TODO: Add your token here"
-            ></script>
-            
-            <script src="visitor-center.js"></script>
-            
-            <div id="map" style="width: 100dvw; height: 100dvh;"></div>
-            ```
-        }
+    @Tab("Javascript") {
+        ```javascript
+        // Show visitor center details (visitor-center-details.js)
+        window.entryPoint = () => {
+            const id = "I63802885C8189B2B";
+            const lookup = new mapkit.PlaceLookup();
+            lookup.getPlace(id, annotatePlace);
+        };
+        
+        const annotatePlace = (error, place) => {
+            const el = document.getElementById("place");
+            const detail = new mapkit.PlaceDetail(el, place, {
+                colorScheme: mapkit.PlaceDetail.ColorSchemes.Adaptive
+            });
+        };
+        ```
+        
+        ```javascript
+        <!-- Set MapKit JS to call entry point after loading -->
+        <script
+            crossorigin async
+            src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"
+            data-callback="entryPoint"
+            data-token="TODO: Add your token here"
+        ></script>
+        
+        <script src="visitor-center.js"></script>
+        
+        <div id="map" style="width: 100dvw; height: 100dvh;"></div>
+        ```
     }
 }
     
