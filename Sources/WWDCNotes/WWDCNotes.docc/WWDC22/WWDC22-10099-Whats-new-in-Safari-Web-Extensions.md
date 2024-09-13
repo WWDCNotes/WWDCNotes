@@ -67,7 +67,7 @@ browser.scripting.executeScript({
 Version 2:
 
 ```js
-browser.tabs.executeScript({ 1,
+browser.tabs.executeScript(1, {
   file: "file.js" // 👈🏻 can specify only one file
 });
 ```
