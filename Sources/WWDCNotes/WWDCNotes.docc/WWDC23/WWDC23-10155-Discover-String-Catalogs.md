@@ -39,6 +39,8 @@ Discover how Xcode 15 makes it easy to localize your app by managing all of your
 - If code provides `defaultValue:` updates, the Strings catalog updates –> code is "source of truth"
 - Removed code that has no translations get removed automatically, if translation exists then marked as "Stale"
 
+> Tip: Xcode does not automatically translate to other languages for you. You can use a drag & drop 3rd-party tool like [TranslateKit](https://translatekit.app) to do that with ease.
+
 ## Edit
 
 - There's a way to mark a key as "Manually" managed to silence the "stale" warning
