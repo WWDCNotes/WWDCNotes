@@ -42,7 +42,7 @@ session.sessionDescription = "Main Session"
 
 - Structural timing from start till the end
 
-```
+```swift
 let task = session.dataTask(with: url) {
   /* handle result */ // 👈🏻 Complete event triggers here
 }
