@@ -148,7 +148,7 @@ func plantingRoses() {
 
 Tests can be in suites and have a list of inputs:
 
-```
+```swift
 import Testing
 @testable import BOTanist
 
