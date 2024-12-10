@@ -92,7 +92,7 @@ If you want to link to other sessions, you can use the `<doc:name-of-other-sessi
 
 ### Getting Started
 
-The **first step** to edit or create notes is to **check out the WWDCNotes Git repository**. The easiest way to do this is to press the "Clone Repo in Xcode" button at the top of this page. Then, just confirm the `main` branch and choose the folder you want to clone it to.
+The **first step** to edit or create notes is to **check out the WWDCNotes Git repository**. The easiest way to do this is to press the "Clone Repo in Xcode" button at the top of this page. Then, just confirm the `main` branch and choose the folder you want to clone it to. Alternatively, you can manually clone [the repository from GitHub](https://github.com/WWDCNotes/WWDCNotes) and open the project in Xcode.
 
 From there, there are two possible paths for you:
 
