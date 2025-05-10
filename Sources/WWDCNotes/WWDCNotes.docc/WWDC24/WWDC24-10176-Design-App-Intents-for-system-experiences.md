@@ -9,6 +9,7 @@ App Intents power system experiences in controls, Spotlight, Siri, and more. Fin
 
    @Contributors {
       @GitHubUser(lorin-vr)
+      @GitHubUser(alexkaessner)
    }
 }
 
@@ -39,7 +40,7 @@ App Intents power system experiences in controls, Spotlight, Siri, and more. Fin
 
 ## What should  be an app intent?
 
-Where previously Apple recommended creating an app intent for each "habitual action" of an app, this guideline has broadened in iOS 18 to recommend that "anything your app does should be an app intent." 
+> Important: Where previously Apple recommended creating an app intent for each "habitual action" of an app, this guideline has broadened in iOS 18 to recommend that "anything your app does should be an app intent." 
 
 When designing app intents, use these verbs as a starting point:
 
@@ -57,17 +58,27 @@ Create app intents for audio playback, recording and live activities so that the
 
 ## Structuring app intents
 
-Keep app intent parameter summaries readable by carefully choosing a verb and naming parameter options to fit with their verb.
+### Parameter types
+
+Keep app intent parameter summaries readable by carefully choosing a verb and naming parameter options to fit with their verb as a sentence.
+
+Parameters can be built-in parameters (numbers, text, dates, …), custom static parameters aka app enums (e.g. tabs of the app) or dynamic parameter aka app entities that update over time (e.g. notes folders).
+
+### Optional/required parameters
 
 Prefer optional parameters over required parameters. Optional parameters allow the app intent to perform a useful, default behaviour even if the user doesn't provide the parameter. 
 
 If your parameter is required, write a concise, clear follow-up question for the user to provide it.
 
+### Toggles
+
 If your app intent allows switching between two states (e.g. Flashlight can either be "on" or "off"), always provide "Toggle" as the default parameter so that the user can easily switch between states without using a parameter.
 @Image(source: "WWDC24-10176-Toggle", alt: "A toggle app intent for the Flashlight app")
 
-In iOS 18, Apple no longer discourages bringing an app to the foreground as part of an app intent. Apple now recommends foregrounding an app to show the effect of an app intent (e.g. "Create new Freeform board") or to navigate to a view in your app (e.g. "Open Stopwatch").
+### Open Intents
 
+> Important: In iOS 18, Apple no longer discourages bringing an app to the foreground as part of an app intent. Apple now recommends foregrounding an app to show the effect of an app intent (e.g. "Create new Freeform board") or to navigate to a view in your app (e.g. "Open Stopwatch").
 
+The toggle "Open When Run" of an action allows users to opt-out of this behaviour, if they want to perform multiple actions per shortcut.
 
-
+> Tip: For more information on how to create App Intents check out the session: <doc:WWDC22-10032-Dive-into-App-Intents>.
