@@ -52,20 +52,20 @@ Learn about the new Contacts authorization modes and how to improve Contacts acc
 @State var authorizationStatus: CNAuthorizationStatus = .notDetermined
 
 var body: some View {
-List {
-// Show Results for App's Data Store
-ForEach(searchResults(for: searchText)) { person in
-ResultRow(person)
-}
-
-// Show Results from ContactAccessButton
-if authorizationStatus == .limited || authorizationStatus == .notDetermined {
-ContactAccessButton(queryString: searchText) { identifiers in 
-let contacts = await fetchContacts(withIdentifiers: identifiers)
-dismissSearch(withResult: contacts)
-}
-}
-}
+    List {
+        // Show Results for App's Data Store
+        ForEach(searchResults(for: searchText)) { person in
+            ResultRow(person)
+        }
+    
+        // Show Results from ContactAccessButton
+        if authorizationStatus == .limited || authorizationStatus == .notDetermined {
+            ContactAccessButton(queryString: searchText) { identifiers in 
+                let contacts = await fetchContacts(withIdentifiers: identifiers)
+                dismissSearch(withResult: contacts)
+            }
+        }
+    }
 }
 ```
 
