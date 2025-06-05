@@ -160,6 +160,11 @@ Having this said, there are a few guidelines that make sure that what we are hos
 - Avoid screenshots where the presenters are front and center – focus on the contents instead.
 - While a short personal take can help clarify context, stay close to the session in general.
 
+### Community Support
+
+If you still have any questions after reading this guide, or need help with Markdown, DocC, or Git, join our friendly Slack community! Experienced contributors and maintainers are ready to help:
+
+ [Join our Slack Now](https://join.slack.com/t/wwdc-notes/shared_invite/zt-1wbsoo705-bydJ430uZSRILstG5GxEzg)
 
 ### Key Takeaways
 
