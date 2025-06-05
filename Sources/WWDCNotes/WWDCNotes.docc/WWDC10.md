@@ -8,4 +8,4 @@ iOS 4.
    @PageImage(purpose: card, source: "WWDC10")
 }
 
-@Comment { Do not manually edit this file below this comment. The session link will be auto-generated. }
+@Comment { Do not manually edit this file below this comment. The session links will be auto-generated. }

@@ -8,4 +8,4 @@ Xcode 5, iOS 7, macOS 10.9 (Mavericks).
    @PageImage(purpose: card, source: "WWDC13")
 }
 
-@Comment { Do not manually edit this file below this comment. The session link will be auto-generated. }
+@Comment { Do not manually edit this file below this comment. The session links will be auto-generated. }
