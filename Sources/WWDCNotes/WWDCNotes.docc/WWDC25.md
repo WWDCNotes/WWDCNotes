@@ -10,3 +10,7 @@ New APIs: [PENDING], [PENDING], and more.
 }
 
 @Comment { Do not manually edit this file below this comment. The session links will be auto-generated. }
+
+## Waiting for the Keynote
+
+This page will be filled with a list of all sessions from WWDC25 within just a few hours after the keynote has ended. Please be patient. ⏳
