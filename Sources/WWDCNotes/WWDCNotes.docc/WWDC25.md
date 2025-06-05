@@ -1,6 +1,6 @@
 # WWDC25
 
-[PENDING]: Xcode ??, Swift ??, iOS/macOS/tvOS/visionOS ??.
+Xcode [PENDING], Swift [PENDING], iOS/macOS/tvOS/visionOS [PENDING].
 New APIs: [PENDING], [PENDING], and more. 
 
 @Metadata {
