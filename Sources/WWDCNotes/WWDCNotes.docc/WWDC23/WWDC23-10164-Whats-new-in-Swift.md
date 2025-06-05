@@ -8,7 +8,7 @@ Join us for an update on Swift. We’ll show you how APIs are becoming more exte
    @CallToAction(url: "https://developer.apple.com/wwdc23/10164", purpose: link, label: "Watch Video (43 min)")
 
    @Contributors {
-      @GitHubUser(kyaw-codes)
+      @GitHubUser(KyawTheMonkey)
       @GitHubUser(multitudes)
    }
 }

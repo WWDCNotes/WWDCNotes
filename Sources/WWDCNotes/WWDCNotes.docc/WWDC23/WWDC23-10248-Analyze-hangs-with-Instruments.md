@@ -8,7 +8,7 @@ User interface elements often mimic real-world interactions, including real-time
    @CallToAction(url: "https://developer.apple.com/wwdc23/10248", purpose: link, label: "Watch Video (42 min)")
 
    @Contributors {
-      @GitHubUser(kyaw-codes)
+      @GitHubUser(KyawTheMonkey)
    }
 }
 
