@@ -8,11 +8,147 @@ Learn what’s new in SwiftUI to build great apps for any Apple platform. We’l
    @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2025/256", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(philptr)
    }
 }
 
-😱 "No Overview Available!"
+## Key Takeaways
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+- SwiftUI adopts the new look and feel of the OS out of the box, but provides a variety of tools to customize the behavior.
+- Better interoperability with other frameworks across the board (like AppKit, RealityKit, and WebKit) provides additional flexibility and optionality for advanced use cases and incremental adoption.
+- New views and functionality open SwiftUI to new use cases that previously required bridging, like rich text editing and web views.
+
+## Adopt the new design
+
+### Toolbars
+
+- New [`ToolbarSpacer`](https://developer.apple.com/documentation/swiftui/toolbarspacer) API to separate buttons.
+- `borderedProminent` appearance for toolbar items supports tinting via the `tint` modifier.
+
+### Bottom aligned search fields on iOS
+
+- Use `searchable` on the outside of the `NavigationSplitView` to get the bottom aligned search automatically.
+- On iPad, the new search appearance is on the top trailing corner.
+- For tab based apps, you can get the morphing search tab by using [the `role` initializer](https://developer.apple.com/documentation/swiftui/tab/init(role:content:)) on your `Tab`: `Tab(role: .search) { … }`
+
+### Custom views
+
+- Custom views can adopt the new look too.
+- [`glassEffect`](https://developer.apple.com/documentation/swiftui/view/glasseffect(_:in:isenabled:)) modifier can be applied to reflect the content behind your custom view.
+
+### Menu bar on iPadOS
+
+- Using the `commands` modifier now yields the same result across iPad and Mac.
+
+### Adopt fluid resizing
+
+- On **iPadOS**, migrate off APIs that fix the screen to full size.
+    - Remove `UIRequiresFullScreen`. It is now deprecated.
+    - Watch [Elevate the design of your iPad app](https://developer.apple.com/videos/play/wwdc2025/208) to learn more.
+- On **macOS**, for window resizes caused by content size changes, SwiftUI now synchronizes the animation between content and window sizes.
+    - Use the new [`windowResizeAnchor`](https://developer.apple.com/documentation/swiftui/view/windowresizeanchor(_:)) API to customize where the animation originates.
+    - Great for animating tab switching in the settings window on macOS.
+
+To learn more about adopting the new design, watch [Build a SwiftUI app with the new design](https://developer.apple.com/videos/play/wwdc2025/323).
+
+## SwiftUI performance
+
+Key performance improvement areas:
+- Lists
+    - Improvements to large lists and incremental updates.
+- Scrolling
+    - Improved scheduling for updates on iOS and macOS.
+- Debugging and profiling
+
+New SwiftUI Performance instrument in Xcode
+- Watch [Optimize SwiftUI performance with Instruments](https://developer.apple.com/videos/play/wwdc2025/306).
+
+@Image(source: "WWDC25-256-SwiftUI-Xcode-Instruments")
+
+## Animatable macro
+
+New `@Animatable` macro allows you to delete manual custom `animatableData` property declarations.
+
+You can exclude properties that shouldn’t be animatable as `@AnimatableIgnored` within your `@Animatable` annotated type.
+
+```swift
+@Animatable
+struct LoadingArc: Shape {
+    var center: CGPoint
+    var radius: CGFloat
+    var startAngle: Angle
+    var endAngle: Angle
+    @AnimatableIgnored var drawPathClockwise: Bool
+}
+```
+
+## SwiftUI on visionOS
+
+More volumetric and spatial layout options.
+- To learn more about new layout techniques like the [`spatialOverlay`](https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content:)) modifier, watch Meet SwiftUI spatial layout.
+- To learn more about volumes and scenes, watch [Set the scene with SwiftUI in visionOS](https://developer.apple.com/videos/play/wwdc2025/290).
+
+## SwiftUI across the system
+
+### Scene bridging
+
+- Allows you to request scenes from AppKit and UIKit contexts.
+- Mac apps can now render remote immersive spaces using a new scene.
+    - Uses `CompositorServices` under the hood.
+    - To learn more, watch [What’s new in Metal rendering for immersive apps](https://developer.apple.com/videos/play/wwdc2025/294).
+- A new [`AssistiveAccess`](https://developer.apple.com/documentation/swiftui/assistiveaccess) scene type allows your app to take advantage of the special mode for users with cognitive disabilities.
+    - To learn more, watch [Customize your app for Assistive Access](https://developer.apple.com/videos/play/wwdc2025/238).
+
+### Enhancements to AppKit interoperability
+
+- You can show sheets in `NSWindow`s with SwiftUI `View`s in them.
+- AppKit gestures can be bridged to SwiftUI using [`NSGestureRecognizerRepresentable`](https://developer.apple.com/documentation/swiftui/nsgesturerecognizerrepresentable).
+- `NSHostingView` can be used in Interface Builder.
+
+### Improvements to RealityKit interoperability
+
+- RealityKit entities now conform to `Observable`.
+    - Makes it trivial to observe changes in SwiftUI views.
+- An improved coordinate conversion API.
+- Enhanced support for presentations right from RealityKit.
+    - For instance, you can present SwiftUI popovers directly from a RealityKit `Entity` using the new `PresentationComponent` API.
+    - To learn more, watch [Better together: SwiftUI and RealityKit](https://developer.apple.com/videos/play/wwdc2025/274).
+
+### Platform adoption
+
+- Custom Controls are coming to macOS and watchOS.
+- Widgets are coming to visionOS and CarPlay.
+    - To learn about additions to widgets, watch [What’s new in widgets](https://developer.apple.com/videos/play/wwdc2025/278).
+
+## New & updated SwiftUI views
+
+### WebView
+
+- New SwiftUI view for showing web content.
+- Powered by WebKit.
+- Can show `URL`s or `WebPage`s.
+- `WebPage` is a new `Observable` type that enables rich interaction with the web.
+- To learn more about these APIs and the better WebKit interoperability, watch [Meet WebKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2025/231).
+
+### 3D Charts
+
+- Declared using `Chart3D`
+- Could use `z` axis specific modifiers like `chartZScale` to specify e.g. scales
+- To learn more, watch [Bring Swift Charts to the third dimension](https://developer.apple.com/videos/play/wwdc2025/313).
+
+@Image(source: "WWDC25-256-3D-Charts")
+
+### Drag & Drop
+
+- New variant of the `draggable` modifier [accepts a `containerItemID`](https://developer.apple.com/documentation/swiftui/view/draggable(containeritemid:)).
+- [`dragContainer`](https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in:_:)) modifier makes the target view a container for drag items.
+- SwiftUI requests drag items lazily when a drop occurs.
+- Customize the drag behavior by adopting the new [`dragConfiguration`](https://developer.apple.com/documentation/swiftui/view/dragconfiguration(_:)) modifier.
+- Observe drag event updates, use the new [`onDragSessionUpdated`](https://developer.apple.com/documentation/swiftui/view/ondragsessionupdated(_:)) modifier.
+- To customize the drag preview for multiple items, you can specify the formation of the items using the [`dragPreviewsFormation`](https://developer.apple.com/documentation/swiftui/view/dragpreviewsformation(_:)) modifier.
+
+### Rich text editing
+
+- `TextEditor` now accepts an `AttributedString`.
+- Introduces abilities to add paragraph styles, transform attributes, and constrain text inputs.
+- Watch [Cook up a rich text experience in SwiftUI with AttributedString](https://developer.apple.com/videos/play/wwdc2025/280) and [Explore localization with Xcode](https://developer.apple.com/videos/play/wwdc2025/225).
