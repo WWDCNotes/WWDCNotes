@@ -5,7 +5,7 @@ Find out how you can use object tracking to turn real-world objects into virtual
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10101", purpose: link, label: "Watch Video (17 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10101", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

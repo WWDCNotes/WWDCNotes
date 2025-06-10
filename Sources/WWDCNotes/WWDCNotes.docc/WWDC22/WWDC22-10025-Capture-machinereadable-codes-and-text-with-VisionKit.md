@@ -5,7 +5,7 @@ Meet the Data Scanner in VisionKit: This framework combines AVCapture and Vision
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10025", purpose: link, label: "Watch Video (12 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10025", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

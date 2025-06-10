@@ -5,7 +5,7 @@ Learn how Core ML works with the CPU, GPU, and Neural Engine to power on-device,
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10027", purpose: link, label: "Watch Video (23 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10027", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

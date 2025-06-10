@@ -5,7 +5,7 @@ Get ready to explore Safari’s rich set of tools for web developers and designe
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10262", purpose: link, label: "Watch Video (21 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10262", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

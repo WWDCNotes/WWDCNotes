@@ -5,7 +5,7 @@ Discover how you can use Metal to accelerate your PyTorch model training on macO
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10063", purpose: link, label: "Watch Video (29 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10063", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

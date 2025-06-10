@@ -5,7 +5,7 @@ Learn how ShazamKit can help you build custom catalogs and support exact matchin
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10028", purpose: link, label: "Watch Video (19 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10028", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

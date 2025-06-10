@@ -5,7 +5,7 @@ Learn how ResearchKit and CareKit can work together to take the tedium out of pa
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10069", purpose: link, label: "Watch Video (15 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10069", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

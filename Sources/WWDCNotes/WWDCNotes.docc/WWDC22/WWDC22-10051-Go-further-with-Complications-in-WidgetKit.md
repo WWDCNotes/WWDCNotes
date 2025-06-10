@@ -5,7 +5,7 @@ Discover how you can use WidgetKit to create beautiful complications on watch fa
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10051", purpose: link, label: "Watch Video (10 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10051", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

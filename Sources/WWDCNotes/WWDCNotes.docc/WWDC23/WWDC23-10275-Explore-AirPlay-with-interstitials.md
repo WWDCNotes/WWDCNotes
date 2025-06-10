@@ -5,7 +5,7 @@ Learn how you can use HLS Interstitials with AirPlay to create seamless transiti
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10275", purpose: link, label: "Watch Video (19 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10275", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Create stunning visuals for your augmented reality experiences with cutting-edge
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10075", purpose: link, label: "Watch Video (29 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10075", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

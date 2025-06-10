@@ -5,7 +5,7 @@ Discover best practices when creating 3D content for Quick Look on visionOS. Weâ
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10274", purpose: link, label: "Watch Video (22 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10274", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

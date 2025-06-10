@@ -5,7 +5,7 @@ SwiftUI helps you build great apps on all Apple platforms and is the preferred t
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10207", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10207", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

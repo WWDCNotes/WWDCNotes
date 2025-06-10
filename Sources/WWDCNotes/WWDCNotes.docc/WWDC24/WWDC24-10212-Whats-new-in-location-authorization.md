@@ -5,7 +5,7 @@ Location authorization is turning 2.0. Learn about new recommendations and techn
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10212", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10212", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

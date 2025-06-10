@@ -5,7 +5,7 @@ Discover how you can use the latest authorization-focused APIs in LocalAuthentic
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10108", purpose: link, label: "Watch Video (15 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10108", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Learn how to bring great machine learning (ML) based experiences to your app. We
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10017", purpose: link, label: "Watch Video (17 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10017", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

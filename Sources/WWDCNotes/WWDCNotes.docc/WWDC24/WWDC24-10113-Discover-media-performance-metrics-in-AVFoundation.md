@@ -5,7 +5,7 @@ Discover how you can monitor, analyze, and improve user experience with the new 
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10113", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10113", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Consistent and intuitive control of media playback is key to many apps on tvOS, 
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/251", purpose: link, label: "Watch Video (14 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2017/251", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

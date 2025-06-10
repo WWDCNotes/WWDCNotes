@@ -5,7 +5,7 @@ Create ML makes it easy to build custom machine learning models for image classi
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10019", purpose: link, label: "Watch Video (25 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10019", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

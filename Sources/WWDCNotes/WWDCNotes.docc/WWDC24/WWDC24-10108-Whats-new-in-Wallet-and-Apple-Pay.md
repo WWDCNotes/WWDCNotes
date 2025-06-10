@@ -5,7 +5,7 @@ Take passes and payments to the next level with new enhancements to Wallet and A
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10108", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10108", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

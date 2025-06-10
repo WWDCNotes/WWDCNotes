@@ -5,7 +5,7 @@ Discover how you can deliver rich app experiences that include animation, sound,
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10278", purpose: link, label: "Watch Video (16 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10278", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

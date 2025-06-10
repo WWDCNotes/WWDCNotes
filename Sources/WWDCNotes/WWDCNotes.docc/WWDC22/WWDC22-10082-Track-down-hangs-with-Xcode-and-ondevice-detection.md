@@ -5,7 +5,7 @@ Learn how you can increase responsiveness and eliminate hangs in your app and ma
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10082", purpose: link, label: "Watch Video (17 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10082", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

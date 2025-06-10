@@ -5,7 +5,7 @@ With Create ML, your app’s ability to understand the expressiveness of the hum
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10039", purpose: link, label: "Watch Video (26 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10039", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

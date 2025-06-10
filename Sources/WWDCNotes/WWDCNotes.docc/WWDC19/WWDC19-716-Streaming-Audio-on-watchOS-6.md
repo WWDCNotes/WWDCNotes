@@ -5,7 +5,7 @@ Streaming audio on Apple Watch allows customers to enjoy your content wherever t
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/716", purpose: link, label: "Watch Video (8 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2019/716", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

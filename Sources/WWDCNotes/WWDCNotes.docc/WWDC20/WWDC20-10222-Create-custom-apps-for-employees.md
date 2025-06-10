@@ -5,7 +5,7 @@ Build enterprise apps for your employees to help them solve problems and streaml
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10222", purpose: link, label: "Watch Video (14 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10222", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

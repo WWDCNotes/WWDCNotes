@@ -5,7 +5,7 @@ iPadOS 18 introduces a new navigation system that gives people the flexibility t
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10147", purpose: link, label: "Watch Video (15 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10147", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

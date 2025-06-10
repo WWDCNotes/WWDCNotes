@@ -5,7 +5,7 @@ Fine-tune your audio app or plug-in for Apple silicon Macs: We’ll show you how
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10224", purpose: link, label: "Watch Video (10 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10224", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

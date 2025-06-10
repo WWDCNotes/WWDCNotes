@@ -5,7 +5,7 @@ Elevate your accessory setup experience with AccessorySetupKit. Display a beauti
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10203", purpose: link, label: "Watch Video")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10203", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

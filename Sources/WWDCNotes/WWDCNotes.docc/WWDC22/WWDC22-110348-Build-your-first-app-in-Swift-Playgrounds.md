@@ -5,7 +5,7 @@ Learn how you can easily prototype and build apps with Swift Playgrounds. We’l
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110348", purpose: link, label: "Watch Video (15 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/110348", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

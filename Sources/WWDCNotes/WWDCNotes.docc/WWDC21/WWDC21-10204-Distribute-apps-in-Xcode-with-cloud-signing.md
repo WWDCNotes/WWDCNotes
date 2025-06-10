@@ -5,7 +5,7 @@ Discover how to distribute your apps directly to App Store Connect and all the d
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10204", purpose: link, label: "Watch Video (21 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10204", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

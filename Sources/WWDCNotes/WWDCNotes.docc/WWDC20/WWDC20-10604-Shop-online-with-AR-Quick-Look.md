@@ -5,7 +5,7 @@ AR Quick Look adds a new dimension to online shopping: We'll show you how to eas
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10604", purpose: link, label: "Watch Video (18 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10604", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

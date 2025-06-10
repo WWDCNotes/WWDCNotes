@@ -5,7 +5,7 @@ Dive into the architecture for the next generation of CarPlay. Learn how your ve
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10111", purpose: link, label: "Watch Video (27 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10111", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

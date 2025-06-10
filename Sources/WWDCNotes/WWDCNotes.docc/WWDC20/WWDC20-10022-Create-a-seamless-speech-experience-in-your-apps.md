@@ -5,7 +5,7 @@ Augment your app’s accessibility experience with speech synthesis: Discover th
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10022", purpose: link, label: "Watch Video (8 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10022", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

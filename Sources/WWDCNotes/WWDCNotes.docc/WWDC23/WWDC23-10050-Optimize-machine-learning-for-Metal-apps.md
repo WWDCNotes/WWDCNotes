@@ -5,7 +5,7 @@ Discover the latest enhancements to accelerated ML training in Metal. Find out a
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10050", purpose: link, label: "Watch Video (21 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10050", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

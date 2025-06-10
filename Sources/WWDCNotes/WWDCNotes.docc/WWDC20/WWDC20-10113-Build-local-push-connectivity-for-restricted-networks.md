@@ -5,7 +5,7 @@ Leverage local push connectivity and deliver notifications from your application
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10113", purpose: link, label: "Watch Video (13 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10113", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

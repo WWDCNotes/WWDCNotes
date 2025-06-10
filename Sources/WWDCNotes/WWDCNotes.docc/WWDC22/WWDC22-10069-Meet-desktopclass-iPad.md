@@ -5,7 +5,7 @@ Learn how you can bring desktop-class features to your iPad app. Explore updates
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10069", purpose: link, label: "Watch Video (16 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10069", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

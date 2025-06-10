@@ -5,7 +5,7 @@ Discover proposed schema and structure updates to the Universal Scene Descriptio
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10613", purpose: link, label: "Watch Video (24 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10613", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

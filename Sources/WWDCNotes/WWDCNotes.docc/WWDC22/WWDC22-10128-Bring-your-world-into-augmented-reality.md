@@ -5,7 +5,7 @@ Follow along as we demonstrate how you can use Object Capture and RealityKit to 
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10128", purpose: link, label: "Watch Video (26 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10128", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

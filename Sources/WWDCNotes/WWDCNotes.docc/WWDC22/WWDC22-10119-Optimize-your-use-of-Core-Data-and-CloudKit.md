@@ -5,7 +5,7 @@ Join us as we explore the three parts of the development cycle that can help you
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10119", purpose: link, label: "Watch Video (26 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10119", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

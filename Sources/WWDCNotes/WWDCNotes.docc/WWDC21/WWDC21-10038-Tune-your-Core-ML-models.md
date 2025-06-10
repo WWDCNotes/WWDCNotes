@@ -5,7 +5,7 @@ Bring the power of machine learning directly to your apps with Core ML. Discover
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10038", purpose: link, label: "Watch Video (24 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10038", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

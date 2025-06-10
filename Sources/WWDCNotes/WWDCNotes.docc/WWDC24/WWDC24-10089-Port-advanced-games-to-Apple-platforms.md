@@ -5,7 +5,7 @@ Discover how simple it can be to reach players on Apple platforms worldwide. Weâ
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10089", purpose: link, label: "Watch Video (29 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10089", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

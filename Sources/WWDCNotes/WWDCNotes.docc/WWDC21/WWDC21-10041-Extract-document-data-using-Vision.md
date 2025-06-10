@@ -5,7 +5,7 @@ Discover how Vision can provide expert image recognition and analysis in your ap
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10041", purpose: link, label: "Watch Video (19 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10041", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

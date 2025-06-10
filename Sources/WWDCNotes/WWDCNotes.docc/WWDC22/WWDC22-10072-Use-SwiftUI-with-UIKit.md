@@ -5,7 +5,7 @@ Learn how to take advantage of the power of SwiftUI in your UIKit app. Build cus
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10072", purpose: link, label: "Watch Video (26 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10072", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

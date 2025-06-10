@@ -5,7 +5,7 @@ Harness the power of WeatherKit to get detailed weather forecast data such as pr
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10067", purpose: link, label: "Watch Video (16 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10067", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

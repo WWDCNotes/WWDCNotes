@@ -5,7 +5,7 @@ It’s now easier than ever to deliver academic tests on the Mac. Learn how educ
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10005", purpose: link, label: "Watch Video (12 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10005", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

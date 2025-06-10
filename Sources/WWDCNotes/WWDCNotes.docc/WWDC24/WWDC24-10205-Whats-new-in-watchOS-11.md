@@ -5,7 +5,7 @@ Explore new opportunities on Apple Watch, including bringing Double Tap support 
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10205", purpose: link, label: "Watch Video (14 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10205", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

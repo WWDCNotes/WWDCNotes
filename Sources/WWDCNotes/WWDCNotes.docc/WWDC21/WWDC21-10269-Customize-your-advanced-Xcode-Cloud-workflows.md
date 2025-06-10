@@ -5,7 +5,7 @@ Xcode Cloud integrates with Apple Developer tools and services, all major source
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10269", purpose: link, label: "Watch Video (21 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10269", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

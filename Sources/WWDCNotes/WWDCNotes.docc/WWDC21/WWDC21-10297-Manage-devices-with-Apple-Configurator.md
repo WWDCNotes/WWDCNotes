@@ -5,7 +5,7 @@ Apple Configurator is now more capable than ever. Whether you’re provisioning 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10297", purpose: link, label: "Watch Video (9 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10297", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

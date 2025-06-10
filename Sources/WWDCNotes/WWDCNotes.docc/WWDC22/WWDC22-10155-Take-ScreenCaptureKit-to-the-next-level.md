@@ -5,7 +5,7 @@ Discover how you can support complex screen capture experiences for people using
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10155", purpose: link, label: "Watch Video (37 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10155", purpose: link, label: "Watch Video (37 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

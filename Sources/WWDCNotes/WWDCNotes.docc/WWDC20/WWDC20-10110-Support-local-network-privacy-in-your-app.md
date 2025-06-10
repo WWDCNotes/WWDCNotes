@@ -5,7 +5,7 @@ Local network privacy provides added transparency when apps connect to devices o
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10110", purpose: link, label: "Watch Video (12 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10110", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

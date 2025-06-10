@@ -5,7 +5,7 @@ Discover how you can bring AVFoundation, AVFAudio, and AudioToolbox to your apps
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10256", purpose: link, label: "Watch Video (29 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10256", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Elevate your spatial computing experience using RealityKit audio. Discover how s
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/111801", purpose: link, label: "Watch Video (23 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/111801", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

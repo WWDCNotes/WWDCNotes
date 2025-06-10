@@ -5,7 +5,7 @@ Elevate your app’s data persistence with improvements in Core Data. Learn how 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10186", purpose: link, label: "Watch Video (23 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10186", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

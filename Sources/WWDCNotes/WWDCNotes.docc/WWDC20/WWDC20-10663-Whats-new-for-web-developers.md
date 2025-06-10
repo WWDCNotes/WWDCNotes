@@ -5,7 +5,7 @@ Explore the latest features and improvements for Safari and WebKit. We’ll walk
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10663", purpose: link, label: "Watch Video (36 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10663", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Transform your audio and video content into fragmented MPEG-4 files for a faster
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10011", purpose: link, label: "Watch Video (22 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10011", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

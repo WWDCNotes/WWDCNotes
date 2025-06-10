@@ -5,7 +5,7 @@ Discover how the SharedWithYou framework can augment your app's collaboration in
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10093", purpose: link, label: "Watch Video (28 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10093", purpose: link, label: "Watch Video (28 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

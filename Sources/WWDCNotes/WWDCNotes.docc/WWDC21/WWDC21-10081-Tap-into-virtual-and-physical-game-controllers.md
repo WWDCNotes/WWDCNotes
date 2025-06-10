@@ -5,7 +5,7 @@ It’s time to up your input game: Learn about the latest improvements to virtua
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10081", purpose: link, label: "Watch Video (15 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10081", purpose: link, label: "Watch Video (15 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

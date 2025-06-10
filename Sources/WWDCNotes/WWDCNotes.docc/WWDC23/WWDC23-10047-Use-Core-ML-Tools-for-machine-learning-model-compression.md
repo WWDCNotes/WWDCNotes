@@ -5,7 +5,7 @@ Discover how to reduce the footprint of machine learning models in your app with
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10047", purpose: link, label: "Watch Video (25 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10047", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

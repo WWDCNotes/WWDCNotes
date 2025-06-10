@@ -5,7 +5,7 @@ Glyphs are a powerful communication tool and a fundamental element of your appâ€
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/823", purpose: link, label: "Watch Video (11 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2017/823", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

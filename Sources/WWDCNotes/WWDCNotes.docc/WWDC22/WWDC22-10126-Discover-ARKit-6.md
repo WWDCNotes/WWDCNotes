@@ -5,7 +5,7 @@ Discover how you can build more refined and powerful augmented reality apps with
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10126", purpose: link, label: "Watch Video (19 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10126", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

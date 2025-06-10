@@ -5,7 +5,7 @@ Take your custom machine learning models to the next level with Create ML Compon
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10020", purpose: link, label: "Watch Video (13 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10020", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

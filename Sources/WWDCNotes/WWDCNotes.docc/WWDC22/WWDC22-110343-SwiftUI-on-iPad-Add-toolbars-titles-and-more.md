@@ -5,7 +5,7 @@ Get ready to tune up your iPad app’s toolbars with SwiftUI. We’ll show you h
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110343", purpose: link, label: "Watch Video (13 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/110343", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ The Metal shading language is a powerful C++ based language that allows apps to 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10229", purpose: link, label: "Watch Video (24 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10229", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

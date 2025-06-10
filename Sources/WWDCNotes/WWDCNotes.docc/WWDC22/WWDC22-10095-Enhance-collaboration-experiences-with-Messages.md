@@ -5,7 +5,7 @@ Discover how you can help improve communication and collaboration in your app wi
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10095", purpose: link, label: "Watch Video (24 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10095", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

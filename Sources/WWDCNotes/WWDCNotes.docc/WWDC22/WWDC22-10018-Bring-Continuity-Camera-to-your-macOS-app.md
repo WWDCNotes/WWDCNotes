@@ -5,7 +5,7 @@ Discover how you can use iPhone as an external camera in any Mac app with Contin
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10018", purpose: link, label: "Watch Video (19 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10018", purpose: link, label: "Watch Video (19 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

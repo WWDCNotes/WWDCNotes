@@ -6,7 +6,7 @@ The cast and creators of the Apple TV+ hit show Mythic Quest: Raven’s Banquet 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10969", purpose: link, label: "Watch Video (26 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10969", purpose: link, label: "Watch Video (26 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

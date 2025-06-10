@@ -5,7 +5,7 @@ Find out how Bluetooth devices can send timely and relevant alerts to Apple Watc
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10135", purpose: link, label: "Watch Video (13 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10135", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

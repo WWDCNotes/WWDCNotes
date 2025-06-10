@@ -5,7 +5,7 @@ EDR is Apple’s High Dynamic Range representation and rendering pipeline. Explo
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10161", purpose: link, label: "Watch Video (34 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10161", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

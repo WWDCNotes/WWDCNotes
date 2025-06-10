@@ -5,7 +5,7 @@ Learn how you can get iPhone involved in your Apple Watch-based workout apps wit
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10023", purpose: link, label: "Watch Video (12 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10023", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

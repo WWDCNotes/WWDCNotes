@@ -5,7 +5,7 @@ Discover how AVCapture and PhotoKit can help you create more responsive and deli
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10105", purpose: link, label: "Watch Video (34 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10105", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

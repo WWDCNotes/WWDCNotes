@@ -5,7 +5,7 @@ Meet Metal mesh shaders — a modern and flexible pipeline in Metal for GPU-driv
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10162", purpose: link, label: "Watch Video (17 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10162", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

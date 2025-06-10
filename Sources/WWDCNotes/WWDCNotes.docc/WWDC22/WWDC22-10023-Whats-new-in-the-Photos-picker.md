@@ -5,7 +5,7 @@ PHPicker provides simple and secure integration between your app and the system 
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10023", purpose: link, label: "Watch Video (14 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10023", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Learn about enhancements to Picture in Picture and full screen improvements on m
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10290", purpose: link, label: "Watch Video (8 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10290", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

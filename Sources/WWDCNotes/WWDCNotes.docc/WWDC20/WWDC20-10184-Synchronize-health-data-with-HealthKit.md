@@ -5,7 +5,7 @@ HealthKit provides you the tools to smartly manage health data anywhere, whether
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10184", purpose: link, label: "Watch Video (22 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10184", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

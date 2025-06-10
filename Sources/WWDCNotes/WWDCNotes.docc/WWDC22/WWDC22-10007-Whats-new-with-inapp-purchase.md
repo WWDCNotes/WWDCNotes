@@ -5,7 +5,7 @@ Learn how you can make your in-app purchase experience even better on iPhone, iP
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10007", purpose: link, label: "Watch Video (47 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10007", purpose: link, label: "Watch Video (47 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

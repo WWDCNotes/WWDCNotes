@@ -5,7 +5,7 @@ We’re coming in loud and clear to help you bring walkie-talkie communication t
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10117", purpose: link, label: "Watch Video (21 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10117", purpose: link, label: "Watch Video (21 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Shared with You helps people easily find content in your app that someone has sh
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10094", purpose: link, label: "Watch Video (18 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10094", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

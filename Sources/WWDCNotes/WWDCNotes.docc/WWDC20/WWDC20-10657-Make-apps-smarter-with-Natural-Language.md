@@ -5,7 +5,7 @@ Explore how you can leverage the Natural Language framework to better analyze an
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10657", purpose: link, label: "Watch Video (41 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10657", purpose: link, label: "Watch Video (41 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

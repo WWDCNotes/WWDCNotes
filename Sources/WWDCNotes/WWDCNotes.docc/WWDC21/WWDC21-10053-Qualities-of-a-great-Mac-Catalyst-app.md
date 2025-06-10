@@ -5,7 +5,7 @@ Discover best practices, tools, and techniques to help craft the best possible M
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10053", purpose: link, label: "Watch Video (24 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10053", purpose: link, label: "Watch Video (24 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Choosing a custom font for your app can be a daunting task involving both functi
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/815", purpose: link, label: "Watch Video (14 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2017/815", purpose: link, label: "Watch Video (14 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Find out how you can use the FileProvider framework to build a comprehensive clo
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10182", purpose: link, label: "Watch Video (17 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10182", purpose: link, label: "Watch Video (17 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Analyze aggregated power and performance data from multiple versions of your app
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10076", purpose: link, label: "Watch Video (11 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10076", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

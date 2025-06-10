@@ -5,7 +5,7 @@ Learn how to build and deliver even better purchase experiences using the App St
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10061", purpose: link, label: "Watch Video (23 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10061", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

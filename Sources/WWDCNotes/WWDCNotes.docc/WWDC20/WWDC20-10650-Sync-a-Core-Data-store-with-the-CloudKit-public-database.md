@@ -5,7 +5,7 @@ Discover how Core Data can help you adopt the CloudKit public database in your a
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10650", purpose: link, label: "Watch Video (18 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10650", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

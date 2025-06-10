@@ -5,7 +5,7 @@ Deliver a smooth streaming audio experience straight to the wrist. We’ll talk 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10636", purpose: link, label: "Watch Video (7 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10636", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

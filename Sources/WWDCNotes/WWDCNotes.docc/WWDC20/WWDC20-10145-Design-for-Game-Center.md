@@ -5,7 +5,7 @@ Get your game's interface ready for Game Center. We’ll show you how to deliver
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10145", purpose: link, label: "Watch Video (18 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10145", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

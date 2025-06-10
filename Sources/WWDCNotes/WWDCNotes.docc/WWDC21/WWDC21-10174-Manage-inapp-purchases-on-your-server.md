@@ -5,7 +5,7 @@ Discover the latest updates to managing in-app purchases on your server. Explore
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10174", purpose: link, label: "Watch Video (33 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10174", purpose: link, label: "Watch Video (33 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

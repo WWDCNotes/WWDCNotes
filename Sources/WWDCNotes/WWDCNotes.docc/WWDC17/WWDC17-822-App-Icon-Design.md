@@ -5,7 +5,7 @@ An app icon is the face of your app on the home screen. Learn key design princip
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/822", purpose: link, label: "Watch Video (10 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2017/822", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Tab Bars can't grow with dynamic text, but the Large Content Viewer helps them t
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/261", purpose: link, label: "Watch Video (13 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2019/261", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

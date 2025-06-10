@@ -5,7 +5,7 @@ RealityKit is Apple’s rendering, animation, physics, and audio engine built fr
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10612", purpose: link, label: "Watch Video (25 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10612", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

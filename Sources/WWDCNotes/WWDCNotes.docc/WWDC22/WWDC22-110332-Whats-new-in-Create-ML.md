@@ -5,7 +5,7 @@ Discover the latest updates to Create ML. We’ll share improvements to Create M
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110332", purpose: link, label: "Watch Video (16 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/110332", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

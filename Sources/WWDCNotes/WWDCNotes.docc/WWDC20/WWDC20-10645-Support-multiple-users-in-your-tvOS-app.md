@@ -5,7 +5,7 @@ Share your living room —&nbsp;not your Apple TV apps. When you support profile
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10645", purpose: link, label: "Watch Video (8 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10645", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

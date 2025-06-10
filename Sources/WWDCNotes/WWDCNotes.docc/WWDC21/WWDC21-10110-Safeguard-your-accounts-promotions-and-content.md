@@ -5,7 +5,7 @@ Discover how to keep your accounts, apps, and content protected. We’ll explore
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10110", purpose: link, label: "Watch Video (11 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10110", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

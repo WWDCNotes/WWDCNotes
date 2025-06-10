@@ -5,7 +5,7 @@ Discover how you can integrate custom rotors and help people who use VoiceOver n
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10116", purpose: link, label: "Watch Video (10 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10116", purpose: link, label: "Watch Video (10 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Learn how to optimize your machine learning and AI models to leverage the power 
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10159", purpose: link, label: "Watch Video (30 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10159", purpose: link, label: "Watch Video (30 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

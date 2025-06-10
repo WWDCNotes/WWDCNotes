@@ -5,7 +5,7 @@ It’s never been easier to test your CloudKit containers. We’ll introduce you
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10118", purpose: link, label: "Watch Video (9 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10118", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

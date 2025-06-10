@@ -5,7 +5,7 @@ Discover how Core Data is adopting the new concurrency capabilities of Swift 5.5
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10017", purpose: link, label: "Watch Video (27 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10017", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Find out how people can use Face ID or Touch ID on their iOS or iPadOS device to
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10279", purpose: link, label: "Watch Video (7 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10279", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

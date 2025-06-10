@@ -5,7 +5,7 @@ Achieve photorealistic 3D scenes in your apps and games through ray tracing, a c
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10149", purpose: link, label: "Watch Video (29 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10149", purpose: link, label: "Watch Video (29 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

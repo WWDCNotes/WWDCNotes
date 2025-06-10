@@ -5,7 +5,7 @@ Learn how to create clear, informative, and helpful alerts that will make your a
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/813", purpose: link, label: "Watch Video (11 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2017/813", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

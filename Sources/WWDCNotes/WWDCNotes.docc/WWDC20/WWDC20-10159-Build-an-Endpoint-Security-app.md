@@ -5,7 +5,7 @@ System Extensions improve the reliability and security of macOS. Learn about the
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10159", purpose: link, label: "Watch Video (41 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10159", purpose: link, label: "Watch Video (41 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

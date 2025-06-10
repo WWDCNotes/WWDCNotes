@@ -5,7 +5,7 @@ Learn how you can provide safe and fast authentication in your app using Sign in
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10122", purpose: link, label: "Watch Video (23 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10122", purpose: link, label: "Watch Video (23 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

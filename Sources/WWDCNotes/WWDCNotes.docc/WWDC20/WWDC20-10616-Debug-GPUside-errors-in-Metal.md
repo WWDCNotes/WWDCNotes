@@ -5,7 +5,7 @@ Track down even the trickiest GPU-side programming errors with enhanced reportin
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10616", purpose: link, label: "Watch Video (20 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10616", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Find out how URLSession can help your apps transfer large files and recover from
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10006", purpose: link, label: "Watch Video (20 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10006", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

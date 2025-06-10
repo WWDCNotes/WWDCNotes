@@ -5,7 +5,7 @@ Find out how network latency can affect your apps when trying to get full benefi
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10078", purpose: link, label: "Watch Video (18 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10078", purpose: link, label: "Watch Video (18 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

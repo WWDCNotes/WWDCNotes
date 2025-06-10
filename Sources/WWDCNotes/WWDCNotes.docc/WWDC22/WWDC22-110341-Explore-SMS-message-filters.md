@@ -5,7 +5,7 @@ SMS message filter extensions can help people manage Messages by filtering SMS m
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110341", purpose: link, label: "Watch Video (12 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/110341", purpose: link, label: "Watch Video (12 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

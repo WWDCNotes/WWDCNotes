@@ -5,7 +5,7 @@ Learn how you can build guided instructional content designed for Swift Playgrou
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/110349", purpose: link, label: "Watch Video (20 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/110349", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

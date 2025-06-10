@@ -5,7 +5,7 @@ CarPlay is a smarter, safer way to use your iPhone in the car. Learn how CarPlay
 @Metadata {
    @TitleHeading("WWDC16")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc16/722", purpose: link, label: "Watch Video (30 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2016/722", purpose: link, label: "Watch Video (30 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

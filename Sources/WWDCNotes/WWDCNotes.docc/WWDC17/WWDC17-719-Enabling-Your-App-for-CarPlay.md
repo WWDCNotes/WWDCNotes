@@ -5,7 +5,7 @@ Understand how to enable your audio, messaging, VoIP calling or automaker app fo
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/719", purpose: link, label: "Watch Video (27 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2017/719", purpose: link, label: "Watch Video (27 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

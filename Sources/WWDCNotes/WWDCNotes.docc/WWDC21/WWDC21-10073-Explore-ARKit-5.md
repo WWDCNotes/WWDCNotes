@@ -5,7 +5,7 @@ Build the next generation of augmented reality apps with ARKit 5. Explore how yo
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10073", purpose: link, label: "Watch Video (20 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10073", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

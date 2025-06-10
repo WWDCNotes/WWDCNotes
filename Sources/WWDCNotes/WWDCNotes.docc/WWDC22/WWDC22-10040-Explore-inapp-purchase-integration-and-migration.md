@@ -6,7 +6,7 @@ Learn how you can migrate to the latest App Store Server APIs and incorporate Ap
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10040", purpose: link, label: "Watch Video (40 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10040", purpose: link, label: "Watch Video (40 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

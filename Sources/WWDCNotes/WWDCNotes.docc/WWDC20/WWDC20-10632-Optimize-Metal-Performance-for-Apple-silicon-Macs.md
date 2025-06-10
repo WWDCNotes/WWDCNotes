@@ -5,7 +5,7 @@ Apple silicon Macs are a transformative new platform for graphics-intensive apps
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10632", purpose: link, label: "Watch Video (45 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10632", purpose: link, label: "Watch Video (45 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

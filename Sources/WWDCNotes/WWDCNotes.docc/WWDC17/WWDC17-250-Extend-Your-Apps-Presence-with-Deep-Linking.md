@@ -5,7 +5,7 @@ Learn about deep linking and how universal links can be used to make your app’
 @Metadata {
    @TitleHeading("WWDC17")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc17/250", purpose: link, label: "Watch Video (3 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2017/250", purpose: link, label: "Watch Video (3 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

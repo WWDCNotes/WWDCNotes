@@ -5,7 +5,7 @@ We’ll take you through the latest updates to CloudKit Console and discover how
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10115", purpose: link, label: "Watch Video (7 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10115", purpose: link, label: "Watch Video (7 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

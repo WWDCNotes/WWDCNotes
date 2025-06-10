@@ -5,7 +5,7 @@ Discover how you can create custom iconography with the latest rendering modes i
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10250", purpose: link, label: "Watch Video (25 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10250", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

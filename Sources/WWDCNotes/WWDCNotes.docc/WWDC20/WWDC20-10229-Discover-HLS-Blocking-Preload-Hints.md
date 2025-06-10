@@ -5,7 +5,7 @@ Learn how to implement Blocking Preload Hints for Low-Latency HLS to reduce deli
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10229", purpose: link, label: "Watch Video (9 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10229", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

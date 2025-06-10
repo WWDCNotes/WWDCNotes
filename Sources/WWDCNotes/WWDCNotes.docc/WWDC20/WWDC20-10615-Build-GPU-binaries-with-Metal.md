@@ -5,7 +5,7 @@ Power up your shader pipeline with enhancements to the Metal shader compilation 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10615", purpose: link, label: "Watch Video (36 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10615", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

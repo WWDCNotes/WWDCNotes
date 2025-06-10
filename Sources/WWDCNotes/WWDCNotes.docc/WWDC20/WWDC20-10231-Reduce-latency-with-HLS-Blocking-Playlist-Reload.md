@@ -5,7 +5,7 @@ Blocking Playlist Reload is a required component of Low-Latency HLS that improve
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10231", purpose: link, label: "Watch Video (8 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10231", purpose: link, label: "Watch Video (8 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

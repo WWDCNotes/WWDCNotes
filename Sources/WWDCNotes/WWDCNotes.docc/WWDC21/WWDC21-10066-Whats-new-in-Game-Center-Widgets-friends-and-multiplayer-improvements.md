@@ -5,7 +5,7 @@ Power up your online gaming experience with GameKit and adopt features like mult
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10066", purpose: link, label: "Watch Video (22 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10066", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

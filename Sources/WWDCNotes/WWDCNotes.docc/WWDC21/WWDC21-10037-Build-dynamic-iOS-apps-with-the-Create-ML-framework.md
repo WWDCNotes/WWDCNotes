@@ -5,7 +5,7 @@ Discover how your app can train Core ML models fully on device with the Create M
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10037", purpose: link, label: "Watch Video (16 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10037", purpose: link, label: "Watch Video (16 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

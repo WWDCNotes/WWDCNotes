@@ -5,7 +5,7 @@ Discover how to tailor your Mac Catalyst app so that it looks and feels even mor
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10056", purpose: link, label: "Watch Video (37 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10056", purpose: link, label: "Watch Video (37 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

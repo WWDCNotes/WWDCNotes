@@ -5,7 +5,7 @@ When people use hardware keyboards with your app, they’re not only getting a m
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10109", purpose: link, label: "Watch Video (11 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10109", purpose: link, label: "Watch Video (11 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

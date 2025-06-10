@@ -5,7 +5,7 @@ Join us for an unforgettable award ceremony celebrating developers and their out
 @Metadata {
    @TitleHeading("WWDC19")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc19/104", purpose: link, label: "Watch Video (49 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2019/104", purpose: link, label: "Watch Video (49 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

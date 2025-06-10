@@ -5,7 +5,7 @@ Discover how Xcode can automatically track down infinite loops, unused code, and
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10202", purpose: link, label: "Watch Video (9 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10202", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

@@ -5,7 +5,7 @@ Discover how you can bring Calendar into your app and help people better manage 
 @Metadata {
    @TitleHeading("WWDC23")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc23/10052", purpose: link, label: "Watch Video (22 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2023/10052", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

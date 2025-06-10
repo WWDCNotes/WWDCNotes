@@ -5,7 +5,7 @@ Find out how to integrate advertising into your Low-Latency HLS streams through 
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10232", purpose: link, label: "Watch Video (9 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10232", purpose: link, label: "Watch Video (9 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

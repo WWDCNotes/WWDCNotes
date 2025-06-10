@@ -5,7 +5,7 @@ Keep code out of the kernel and give your customers a more secure and reliable e
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10210", purpose: link, label: "Watch Video (36 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10210", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

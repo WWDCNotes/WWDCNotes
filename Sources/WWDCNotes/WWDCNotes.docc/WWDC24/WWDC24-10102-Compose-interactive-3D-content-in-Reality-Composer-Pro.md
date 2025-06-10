@@ -5,7 +5,7 @@ Discover how the Timeline view in Reality Composer Pro can bring your 3D content
 @Metadata {
    @TitleHeading("WWDC24")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc24/10102", purpose: link, label: "Watch Video (34 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2024/10102", purpose: link, label: "Watch Video (34 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

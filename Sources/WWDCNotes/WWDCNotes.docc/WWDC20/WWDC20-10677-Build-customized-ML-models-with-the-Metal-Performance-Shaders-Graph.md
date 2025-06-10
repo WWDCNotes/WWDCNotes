@@ -5,7 +5,7 @@ Discover the Metal Performance Shaders (MPS) Graph, which extends Metal's Comput
 @Metadata {
    @TitleHeading("WWDC20")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc20/10677", purpose: link, label: "Watch Video (39 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2020/10677", purpose: link, label: "Watch Video (39 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

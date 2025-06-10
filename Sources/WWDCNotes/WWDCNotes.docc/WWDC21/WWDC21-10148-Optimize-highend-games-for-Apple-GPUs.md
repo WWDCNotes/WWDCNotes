@@ -5,7 +5,7 @@ Optimize your high-end games for Apple GPUs: We’ll show you how you can use ou
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10148", purpose: link, label: "Watch Video (32 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10148", purpose: link, label: "Watch Video (32 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

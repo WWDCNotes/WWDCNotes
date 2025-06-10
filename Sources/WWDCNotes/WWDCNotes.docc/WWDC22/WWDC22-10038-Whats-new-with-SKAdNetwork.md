@@ -5,7 +5,7 @@ SKAdNetwork helps advertisers measure the success of ad campaigns while maintain
 @Metadata {
    @TitleHeading("WWDC22")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc22/10038", purpose: link, label: "Watch Video (20 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2022/10038", purpose: link, label: "Watch Video (20 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

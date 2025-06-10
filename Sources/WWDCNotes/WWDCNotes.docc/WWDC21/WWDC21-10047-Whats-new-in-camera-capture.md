@@ -5,7 +5,7 @@ Learn how you can interact with Video Effects in Control Center including Center
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10047", purpose: link, label: "Watch Video (36 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10047", purpose: link, label: "Watch Video (36 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)

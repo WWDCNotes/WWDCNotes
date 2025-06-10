@@ -5,7 +5,7 @@ Recurring leaderboards are a great way to encourage players to keep coming back 
 @Metadata {
    @TitleHeading("WWDC21")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://developer.apple.com/wwdc21/10067", purpose: link, label: "Watch Video (25 min)")
+   @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2021/10067", purpose: link, label: "Watch Video (25 min)")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)
