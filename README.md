@@ -17,6 +17,6 @@ https://join.slack.com/t/wwdc-notes/shared_invite/zt-1wbsoo705-bydJ430uZSRILstG5
 
 # Legal
 
-All content copyright © 2011 – 2024 Apple Inc. All rights reserved.
+All content copyright © 2011 – 2025 Apple Inc. All rights reserved.
 Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, App Store, iPadOS, watchOS, tvOS, Mac, macOS, Vision Pro, and visionOS are trademarks of Apple Inc., registered in the U.S. and other countries.
 This repository is not made by, affiliated with, nor endorsed by Apple.

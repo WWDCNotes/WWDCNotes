@@ -121,7 +121,7 @@ let legalNotes = """
    @Small {
       **Legal Notice**
 
-      All content copyright © 2012 – 2024 Apple Inc. All rights reserved.
+      All content copyright © 2012 – 2025 Apple Inc. All rights reserved.
       Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, Apple Vision, Apple Watch, App Store, iPadOS, watchOS, visionOS, tvOS, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.
       This website is not made by, affiliated with, nor endorsed by Apple.
    }
@@ -129,7 +129,7 @@ let legalNotes = """
 
 let sessionByID = try Session.allSessionsByID()
 
-let events = ["WWDC24", "WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11", "WWDC10"]
+let events = ["WWDC25", "WWDC24", "WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11", "WWDC10"]
 
 var contributorsByProfile: [String: Contributor] = [:]
 var sessionIDsWithoutContributors: Set<String> = []
