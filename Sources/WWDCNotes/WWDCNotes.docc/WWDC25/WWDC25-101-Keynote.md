@@ -8,11 +8,8 @@ Don’t miss the exciting reveal of the latest Apple software and technologies.
    @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2025/101", purpose: link, label: "Watch Video (92 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(fbernutz)
    }
 }
 
-😱 "No Overview Available!"
-
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+@Image(source: "WWDC25-101-sketchnote", alt: "Sketchnote of WWDC Keynote 2025 with announcements of iOS 26, visionOS 26, watchOS 26, iPadOS 26, macOS Tahoe, New Design, and Apple Intelligence")
