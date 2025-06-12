@@ -12,10 +12,6 @@ Discover how to play immersive videos in visionOS apps. We’ll cover various im
    }
 }
 
-## Key takeaways
-
-- 
-
 ## Video profiles
 
 @Image(source: "WWDC25-296-Video-Profiles")
