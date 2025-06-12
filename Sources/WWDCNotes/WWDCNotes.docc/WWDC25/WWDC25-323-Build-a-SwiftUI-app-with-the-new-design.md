@@ -8,7 +8,7 @@ Explore the ways Liquid Glass transforms the look and feel of your app. Discover
    @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2025/323", purpose: link, label: "Watch Video (22 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(alexkaessner)
    }
 }
 
