@@ -26,7 +26,7 @@ The speaker explains lots of thoughts and ideas behind the design system. I reco
 - Consistent shapes with curvature, size, and proportions provide unified rhythm to UI → concentricity
 
 ### Three shape types
-@Image(source: "WWDC25-356-shapes", alt: "")
+@Image(source: "WWDC25-356-shapes")
 
 Shape      | Corner Radius
 ---------- | ---
@@ -41,11 +41,11 @@ Concentric | Calculated radius by subtracting padding from parent.
 
 @TabNavigator {
     @Tab("Rectangle Controls") {
-        @Image(source: "WWDC25-356-control-shapes1", alt: "")
+        @Image(source: "WWDC25-356-control-shapes1")
     }
     
     @Tab("Capsule Controls") {
-        @Image(source: "WWDC25-356-control-shapes2", alt: "")
+        @Image(source: "WWDC25-356-control-shapes2")
     }
 }
 
@@ -68,7 +68,7 @@ Use concentric shape with fallback radius for components that need to work insid
 - Liquid Glass defines new functional layer above content.
 - Relationships between surfaces depicted by how they appear and stay connected to source.
 
-@Image(source: "WWDC25-356-action-sheet", alt: "")
+@Image(source: "WWDC25-356-action-sheet")
 
 - Example: Action Sheets don't appear at bottom of screen, but spring from action itself.
 - Use same approach for custom controls.
@@ -77,17 +77,17 @@ Use concentric shape with fallback radius for components that need to work insid
 ### Reflect navigation focus
 - Subtle material variation reinforces intent.
 
-@Image(source: "WWDC25-356-modal-sheet", alt: "")
+@Image(source: "WWDC25-356-modal-sheet")
 
 - Use dimming layer to signal modality of sheets, if task interrupts main flow.
 
 @TabNavigator {
     @Tab("Normal Sheet") {
-        @Image(source: "WWDC25-356-modal-sheet2", alt: "")
+        @Image(source: "WWDC25-356-modal-sheet2")
     }
     
     @Tab("Extended Sheet") {
-        @Image(source: "WWDC25-356-modal-sheet3", alt: "")
+        @Image(source: "WWDC25-356-modal-sheet3")
     }
 }
 
@@ -109,13 +109,13 @@ Use concentric shape with fallback radius for components that need to work insid
     - Otherwise hard to separate buttons.
 - Put text-buttons in own container.
 
-@Image(source: "WWDC25-356-primary-button", alt: "")
+@Image(source: "WWDC25-356-primary-button")
 
 - Primary actions (like Done) stays separate and tinted.
     - Blue checkmark on iOS and iPadOS.
     - Prominent text button on macOS.
 
-@Image(source: "WWDC25-356-tab-bar-accessory-view", alt: "")
+@Image(source: "WWDC25-356-tab-bar-accessory-view")
 - Search is now placed at bottom for quicker access.
 - Tab bars can support persistent features using accessory views.
 - Avoid screen-specific actions in the tab bar (like checkout button)!
@@ -123,7 +123,7 @@ Use concentric shape with fallback radius for components that need to work insid
 ### Prioritize content
 - Elements with Liquid Glass require clear separation from content (legibility).
 
-@Image(source: "WWDC25-356-edge-effect", alt: "")
+@Image(source: "WWDC25-356-edge-effect")
 
 - Scroll edge effects reinforce that!
 - Scroll edge effects are not decorative!
@@ -135,7 +135,7 @@ Style | Use
 Soft (Default)  | Interactive elements. (Subtle blur)
 Hard  | Interactive text, controls without background or pinned table headers. (More opaque and hard edge)
 
-@Image(source: "WWDC25-356-edge-effect-panels", alt: "")
+@Image(source: "WWDC25-356-edge-effect-panels")
 
 - Apply one edge effect per view.
     - Don't mix or stack soft and hard style in one view.
@@ -167,11 +167,11 @@ Only use icons that are clear to user. Generally, a label is always better than 
 
 @TabNavigator {
     @Tab("Menu Do") {
-        @Image(source: "WWDC25-356-menu-do", alt: "")
+        @Image(source: "WWDC25-356-menu-do")
     }
     
     @Tab("Menu Don't") {
-        @Image(source: "WWDC25-356-menu-dont", alt: "")
+        @Image(source: "WWDC25-356-menu-dont")
     }
 }
 
@@ -181,7 +181,7 @@ Only use icons that are clear to user. Generally, a label is always better than 
 - [List of preferred glyphs in HIG](https://developer.apple.com/design/human-interface-guidelines/icons#Standard-icons)
 
 ### Structure components to scale
-@Image(source: "WWDC25-356-shared-anatomy", alt: "")
+@Image(source: "WWDC25-356-shared-anatomy")
 
 - Define shared anatomy and same core interactions across systems.
 - Example: Menu on macOS and iOS might not look exactly same, but work the same.
