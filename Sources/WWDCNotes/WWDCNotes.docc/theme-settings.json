@@ -2,7 +2,10 @@
   "theme": {
     "color": {
       "header": "#00123E",
-      "documentation-intro-fill": "radial-gradient(circle at top, var(--color-header) 30%, #000 100%)",
+      "documentation-intro-fill": {
+        "light": "radial-gradient(circle at top, #B3C7E6 30%, #e6ecf7 100%)",
+        "dark": "radial-gradient(circle at top, var(--color-header) 30%, #000 100%)"
+      },
       "documentation-intro-accent": "var(--color-header)"
     }
   }
