@@ -38,7 +38,7 @@ Learn what’s new in SwiftUI to build great apps for any Apple platform. We’l
 
 ### Menu bar on iPadOS
 
-- Using the `commands` modifier now yields the same result across iPad and Mac.
+- Using the [`commands`](https://developer.apple.com/documentation/swiftui/scene/commands(content:)) modifier now yields the same result across iPad and Mac.
 
 ### Adopt fluid resizing
 
@@ -85,7 +85,8 @@ struct LoadingArc: Shape {
 ## SwiftUI on visionOS
 
 More volumetric and spatial layout options.
-- To learn more about new layout techniques like the [`spatialOverlay`](https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content:)) modifier, watch Meet SwiftUI spatial layout.
+- To learn more about new layout techniques like the [`spatialOverlay`](https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content:)) modifier, watch <doc:WWDC25-273-Meet-SwiftUI-spatial-layout>.
+- New `manipulable` modifier allows users to pick up objects.
 - To learn more about volumes and scenes, watch <doc:WWDC25-290-Set-the-scene-with-SwiftUI-in-visionOS>.
 
 ## SwiftUI across the system
@@ -116,7 +117,7 @@ More volumetric and spatial layout options.
 
 ### Platform adoption
 
-- Custom Controls are coming to macOS and watchOS.
+- Custom Control Center [Controls](https://developer.apple.com/documentation/swiftui/controlwidget) are coming to macOS and watchOS.
 - Widgets are coming to visionOS and CarPlay.
     - To learn about additions to widgets, watch <doc:WWDC25-278-Whats-new-in-widgets>.
 
