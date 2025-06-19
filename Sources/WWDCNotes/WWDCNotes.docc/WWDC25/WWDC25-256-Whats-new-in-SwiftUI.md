@@ -38,18 +38,18 @@ Learn what’s new in SwiftUI to build great apps for any Apple platform. We’l
 
 ### Menu bar on iPadOS
 
-- Using the `commands` modifier now yields the same result across iPad and Mac.
+- Using the [`commands`](https://developer.apple.com/documentation/swiftui/scene/commands(content:)) modifier now yields the same result across iPad and Mac.
 
 ### Adopt fluid resizing
 
 - On **iPadOS**, migrate off APIs that fix the screen to full size.
     - Remove `UIRequiresFullScreen`. It is now deprecated.
-    - Watch [Elevate the design of your iPad app](https://developer.apple.com/videos/play/wwdc2025/208) to learn more.
+    - Watch <doc:WWDC25-208-Elevate-the-design-of-your-iPad-app> to learn more.
 - On **macOS**, for window resizes caused by content size changes, SwiftUI now synchronizes the animation between content and window sizes.
     - Use the new [`windowResizeAnchor`](https://developer.apple.com/documentation/swiftui/view/windowresizeanchor(_:)) API to customize where the animation originates.
     - Great for animating tab switching in the settings window on macOS.
 
-To learn more about adopting the new design, watch [Build a SwiftUI app with the new design](https://developer.apple.com/videos/play/wwdc2025/323).
+To learn more about adopting the new design, watch <doc:WWDC25-323-Build-a-SwiftUI-app-with-the-new-design>.
 
 ## SwiftUI performance
 
@@ -61,7 +61,7 @@ Key performance improvement areas:
 - Debugging and profiling
 
 New SwiftUI Performance instrument in Xcode
-- Watch [Optimize SwiftUI performance with Instruments](https://developer.apple.com/videos/play/wwdc2025/306).
+- Watch <doc:WWDC25-306-Optimize-SwiftUI-performance-with-Instruments>.
 
 @Image(source: "WWDC25-256-SwiftUI-Xcode-Instruments")
 
@@ -85,8 +85,9 @@ struct LoadingArc: Shape {
 ## SwiftUI on visionOS
 
 More volumetric and spatial layout options.
-- To learn more about new layout techniques like the [`spatialOverlay`](https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content:)) modifier, watch Meet SwiftUI spatial layout.
-- To learn more about volumes and scenes, watch [Set the scene with SwiftUI in visionOS](https://developer.apple.com/videos/play/wwdc2025/290).
+- To learn more about new layout techniques like the [`spatialOverlay`](https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content:)) modifier, watch <doc:WWDC25-273-Meet-SwiftUI-spatial-layout>.
+- New `manipulable` modifier allows users to pick up objects.
+- To learn more about volumes and scenes, watch <doc:WWDC25-290-Set-the-scene-with-SwiftUI-in-visionOS>.
 
 ## SwiftUI across the system
 
@@ -95,9 +96,9 @@ More volumetric and spatial layout options.
 - Allows you to request scenes from AppKit and UIKit contexts.
 - Mac apps can now render remote immersive spaces using a new scene.
     - Uses `CompositorServices` under the hood.
-    - To learn more, watch [What’s new in Metal rendering for immersive apps](https://developer.apple.com/videos/play/wwdc2025/294).
+    - To learn more, watch <doc:WWDC25-294-Whats-new-in-Metal-rendering-for-immersive-apps>.
 - A new [`AssistiveAccess`](https://developer.apple.com/documentation/swiftui/assistiveaccess) scene type allows your app to take advantage of the special mode for users with cognitive disabilities.
-    - To learn more, watch [Customize your app for Assistive Access](https://developer.apple.com/videos/play/wwdc2025/238).
+    - To learn more, watch <doc:WWDC25-238-Customize-your-app-for-Assistive-Access>.
 
 ### Enhancements to AppKit interoperability
 
@@ -112,13 +113,13 @@ More volumetric and spatial layout options.
 - An improved coordinate conversion API.
 - Enhanced support for presentations right from RealityKit.
     - For instance, you can present SwiftUI popovers directly from a RealityKit `Entity` using the new `PresentationComponent` API.
-    - To learn more, watch [Better together: SwiftUI and RealityKit](https://developer.apple.com/videos/play/wwdc2025/274).
+    - To learn more, watch <doc:WWDC25-274-Better-together-SwiftUI-and-RealityKit>.
 
 ### Platform adoption
 
-- Custom Controls are coming to macOS and watchOS.
+- Custom Control Center [Controls](https://developer.apple.com/documentation/swiftui/controlwidget) are coming to macOS and watchOS.
 - Widgets are coming to visionOS and CarPlay.
-    - To learn about additions to widgets, watch [What’s new in widgets](https://developer.apple.com/videos/play/wwdc2025/278).
+    - To learn about additions to widgets, watch <doc:WWDC25-278-Whats-new-in-widgets>.
 
 ## New & updated SwiftUI views
 
@@ -128,13 +129,13 @@ More volumetric and spatial layout options.
 - Powered by WebKit.
 - Can show `URL`s or `WebPage`s.
 - `WebPage` is a new `Observable` type that enables rich interaction with the web.
-- To learn more about these APIs and the better WebKit interoperability, watch [Meet WebKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2025/231).
+- To learn more about these APIs and the better WebKit interoperability, watch <doc:WWDC25-231-Meet-WebKit-for-SwiftUI>.
 
 ### 3D Charts
 
 - Declared using `Chart3D`
 - Could use `z` axis specific modifiers like `chartZScale` to specify e.g. scales
-- To learn more, watch [Bring Swift Charts to the third dimension](https://developer.apple.com/videos/play/wwdc2025/313).
+- To learn more, watch <doc:WWDC25-313-Bring-Swift-Charts-to-the-third-dimension>.
 
 @Image(source: "WWDC25-256-3D-Charts")
 
@@ -151,4 +152,4 @@ More volumetric and spatial layout options.
 
 - `TextEditor` now accepts an `AttributedString`.
 - Introduces abilities to add paragraph styles, transform attributes, and constrain text inputs.
-- Watch [Cook up a rich text experience in SwiftUI with AttributedString](https://developer.apple.com/videos/play/wwdc2025/280) and [Explore localization with Xcode](https://developer.apple.com/videos/play/wwdc2025/225).
+- Watch <doc:WWDC25-280-Codealong-Cook-up-a-rich-text-experience-in-SwiftUI-with-AttributedString> and <doc:WWDC25-225-Codealong-Explore-localization-with-Xcode>.
