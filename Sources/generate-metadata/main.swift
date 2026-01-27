@@ -8,7 +8,7 @@ import FoundationNetworking
 
 struct Contributor {
    struct GitHubUser: Codable {
-      let id: Int
+      let id: Int?
       let name: String?
       let bio: String?
       let blog: String?
@@ -74,11 +74,11 @@ struct Contributor {
 
       let fullNameTokens = self.fullName.components(separatedBy: .whitespaces)
 
-      if gitHubUser.avatarUrl != nil {
+      if gitHubUser.avatarUrl != nil, let githubUserID = gitHubUser.id {
          var urlComponents = URLComponents()
          urlComponents.scheme = "https"
          urlComponents.host = "avatars.githubusercontent.com"
-         urlComponents.path = "/u/\(gitHubUser.id)"
+         urlComponents.path = "/u/\(githubUserID)"
          urlComponents.queryItems = [URLQueryItem(name: "v", value: "4")]
 
          self.avatarURL = urlComponents.url!
