@@ -36,6 +36,7 @@ Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnote
 ## Topics
 
 - <doc:Contributors>
+- <doc:WWDC26>
 - <doc:WWDC25>
 - <doc:WWDC24>
 - <doc:WWDC23>
