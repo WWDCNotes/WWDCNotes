@@ -5,7 +5,7 @@ Map Kit allows you to embed standard or customized maps directly in your applica
 @Metadata {
    @TitleHeading("WWDC12")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2012/300/", purpose: link, label: "Read Transcript")
+   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2012/300/", purpose: link, label: "Open on WWDCIndex")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)
@@ -14,5 +14,5 @@ Map Kit allows you to embed standard or customized maps directly in your applica
 
 😱 "No Overview Available!"
 
-Be the hero to change that by reading the transcript and providing notes! It's super easy:
+Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
  [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

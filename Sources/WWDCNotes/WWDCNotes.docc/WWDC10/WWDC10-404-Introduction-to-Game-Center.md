@@ -5,7 +5,7 @@ iOS 4 includes a developer preview of Game Center, Apple's new social gaming net
 @Metadata {
    @TitleHeading("WWDC10")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2010/404/", purpose: link, label: "Read Transcript")
+   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2010/404/", purpose: link, label: "Open on WWDCIndex")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)
@@ -14,5 +14,5 @@ iOS 4 includes a developer preview of Game Center, Apple's new social gaming net
 
 😱 "No Overview Available!"
 
-Be the hero to change that by reading the transcript and providing notes! It's super easy:
+Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
  [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

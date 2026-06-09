@@ -3,7 +3,7 @@
     "description": "Per-session content-availability for the missing-session stub backfill. A stub is only worth creating if a human can consume the session somehow: ideally the original video, otherwise a public transcript. If neither exists there is nothing to take notes on, so no stub is created.",
     "decisions": {
       "video": "A working Apple video page exists (/videos/play/wwdc{year}/{code}). Stub CTA -> 'Watch Video' -> the session permalink.",
-      "transcript": "No working Apple video, but a public community transcript exists. Stub CTA -> 'Read Transcript' -> transcriptURL.",
+      "transcript": "No freely-watchable Apple video, but the wwdcindex fallback page (nonstrict.eu) has the session — it carries the (often unlisted) video AND/OR the transcript. CTA -> 'Open on WWDCIndex' -> transcriptURL.",
       "exclude": "Neither a working video nor a public transcript -> no stub created."
     },
     "transcriptSource": "wwdcindex (https://nonstrict.eu/wwdcindex/), URL pattern https://nonstrict.eu/wwdcindex/wwdc{year}/{code}/",
@@ -11,9 +11,9 @@
     "generated": "2026-06-09",
     "scope": "WWDC2010-2025 sessions that had no page on production (the backfill set). Sessions already having a page, and WWDC26, are not listed and default to standard 'Watch Video' behaviour.",
     "counts": {
-      "transcript": 842,
-      "exclude": 8,
-      "video": 83
+      "transcript": 843,
+      "exclude": 10,
+      "video": 80
     }
   },
   "sessions": {
@@ -422,7 +422,8 @@
       "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/505/"
     },
     "wwdc2010-506": {
-      "decision": "exclude"
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/506/"
     },
     "wwdc2010-507": {
       "decision": "transcript",
@@ -3546,7 +3547,7 @@
       "decision": "exclude"
     },
     "wwdc2019-201": {
-      "decision": "video"
+      "decision": "exclude"
     },
     "wwdc2019-211": {
       "decision": "video"
@@ -3573,7 +3574,7 @@
       "decision": "video"
     },
     "wwdc2019-242": {
-      "decision": "video"
+      "decision": "exclude"
     },
     "wwdc2019-305": {
       "decision": "video"
@@ -3636,7 +3637,7 @@
       "decision": "video"
     },
     "wwdc2019-801": {
-      "decision": "video"
+      "decision": "exclude"
     },
     "wwdc2019-804": {
       "decision": "exclude"

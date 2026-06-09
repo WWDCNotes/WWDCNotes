@@ -5,7 +5,7 @@ iOS and OS X games can take advantage of Game Center, Apple's social gaming netw
 @Metadata {
    @TitleHeading("WWDC12")
    @PageKind(sampleCode)
-   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2012/508/", purpose: link, label: "Read Transcript")
+   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2012/508/", purpose: link, label: "Open on WWDCIndex")
 
    @Contributors {
       @GitHubUser(<replace this with your GitHub handle>)
@@ -14,5 +14,5 @@ iOS and OS X games can take advantage of Game Center, Apple's social gaming netw
 
 😱 "No Overview Available!"
 
-Be the hero to change that by reading the transcript and providing notes! It's super easy:
+Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
  [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

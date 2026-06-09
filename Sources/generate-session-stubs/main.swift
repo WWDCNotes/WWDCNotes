@@ -57,14 +57,16 @@ for session in sessionByID.values {
          try "".write(toFile: "\(sessionMediaFolderPath)/.gitkeep", atomically: true, encoding: .utf8)
       }
 
-      // Transcript-only sessions point at the public transcript and say "read";
-      // everything else points at the video and says "watch".
-      let isTranscriptOnly = entry?.decision == "transcript"
-      let callToActionURL = isTranscriptOnly ? (entry?.transcriptURL ?? session.permalink!.absoluteString) : session.permalink!.absoluteString
-      let callToActionLabel = isTranscriptOnly
-         ? "Read Transcript"
+      // Sessions without a freely-watchable Apple video point at the wwdcindex
+      // fallback page (nonstrict.eu), which carries the often-unlisted video
+      // AND/OR the transcript — hence the neutral "Open on WWDCIndex" label.
+      // Everything else points at Apple's video.
+      let usesFallback = entry?.decision == "transcript"
+      let callToActionURL = usesFallback ? (entry?.transcriptURL ?? session.permalink!.absoluteString) : session.permalink!.absoluteString
+      let callToActionLabel = usesFallback
+         ? "Open on WWDCIndex"
          : "Watch Video\(session.lengthInMinutes != nil ? " (\(session.lengthInMinutes!) min)" : "")"
-      let consumeVerb = isTranscriptOnly ? "reading the transcript" : "watching the video"
+      let consumeVerb = usesFallback ? "watching the video or reading the transcript on WWDCIndex" : "watching the video"
 
       let sessionFileContents = """
          # \(session.title)
