@@ -34401,5 +34401,1515 @@
     "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2020\/10047",
     "year" : 2020,
     "code" : "10047"
+  },
+  "wwdc2026-101" : {
+    "code" : "101",
+    "description" : "Don’t miss the exciting reveal of the latest Apple software and technologies.",
+    "id" : "wwdc2026-101",
+    "lengthInMinutes" : 76,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/101",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Keynote",
+    "year" : 2026
+  },
+  "wwdc2026-102" : {
+    "code" : "102",
+    "description" : "Discover the newest advancements on Apple platforms.",
+    "id" : "wwdc2026-102",
+    "lengthInMinutes" : 61,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/102",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Platforms State of the Union",
+    "year" : 2026
+  },
+  "wwdc2026-201" : {
+    "code" : "201",
+    "description" : "Harness App Attest to protect your app from unauthorized modification and fraud. Uncover how attackers exploit modified apps to spoof data and bypass security checks, and how App Attest defends against these threats. Learn to generate and manage App Attest keys bound to the Secure Enclave, validate attestations and assertions, and use the fraud metric to detect abuse. Discover best practices across all Apple platforms, including new signals in iOS 27 to strengthen your validation.",
+    "id" : "wwdc2026-201",
+    "lengthInMinutes" : 20,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/201",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Secure your apps with App Attest",
+    "year" : 2026
+  },
+  "wwdc2026-203" : {
+    "code" : "203",
+    "description" : "Unlock handwriting recognition in your apps using the same powerful technology behind Apple apps like Freeform and Notes. Discover how to use handwriting recognition across a wide range of alphabets and languages, and explore new capabilities for integrating PencilKit into a wider variety of apps.",
+    "id" : "wwdc2026-203",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/203",
+    "relatedSessionIDs" : [
+      "wwdc2026-372",
+      "wwdc2025-285",
+      "wwdc2020-10148"
+    ],
+    "title" : "Read between the strokes with PencilKit",
+    "year" : 2026
+  },
+  "wwdc2026-204" : {
+    "code" : "204",
+    "description" : "Explore what’s new in WebKit — from Grid Lanes and Customizable Select, to HTML Model and Immersive Environments, and the latest for Web Extensions. You’ll also discover the work behind over 1,000 browser engine improvements that make the web more reliable.",
+    "id" : "wwdc2026-204",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/204",
+    "relatedSessionIDs" : [
+      "wwdc2026-314",
+      "wwdc2026-315",
+      "wwdc2026-215",
+      "wwdc2026-320",
+      "wwdc2026-216"
+    ],
+    "title" : "What’s new in WebKit for Safari 27",
+    "year" : 2026
+  },
+  "wwdc2026-205" : {
+    "code" : "205",
+    "description" : "Reimagine how you market your apps and games on the App Store by using your images and videos in new places. Discover how you can tell a richer story across the App Store with new visual placements on your product page, search results, and Apple Ads campaigns. Explore how to streamline all your visual assets in one place with the new Asset Library, as well as learn about a new tool to help you view your product page before it goes live.",
+    "id" : "wwdc2026-205",
+    "lengthInMinutes" : 8,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/205",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Enhance your presence on the App Store",
+    "year" : 2026
+  },
+  "wwdc2026-206" : {
+    "code" : "206",
+    "description" : "Discover the latest updates to declarative device management, Apple Business, and Apple School Manager. Explore how these advancements help you streamline deployment, strengthen security, and improve the experience for people using your managed devices. Whether you’re building device management solutions or managing enterprise fleets, you’ll learn practical ways to take advantage of these new capabilities.",
+    "id" : "wwdc2026-206",
+    "lengthInMinutes" : 23,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/206",
+    "relatedSessionIDs" : [
+      "wwdc2026-391",
+      "wwdc2026-201",
+      "wwdc2026-230"
+    ],
+    "title" : "What’s new in managing Apple devices",
+    "year" : 2026
+  },
+  "wwdc2026-207" : {
+    "code" : "207",
+    "description" : "HealthKit makes it easier to provide workout insights — like heart rate and cycling power zones — in your app. Learn to leverage the built-in, personalized zones or create custom ones. Discover how to use the current zone and time spent in each zone to provide meaningful guidance during and after workouts.",
+    "id" : "wwdc2026-207",
+    "lengthInMinutes" : 12,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/207",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Deliver workout insights with HealthKit workout zones",
+    "year" : 2026
+  },
+  "wwdc2026-209" : {
+    "code" : "209",
+    "description" : "Explore the newest design updates and developer tools for Apple Wallet passes. Refresh your passes with beautiful new styles for rich, vibrant designs. Discover new barcode formats and a flexible pass actions API. Meet Pass Designer and Pass Builder, powerful tools that simplify designing, personalizing, and distributing your passes at scale.",
+    "id" : "wwdc2026-209",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/209",
+    "relatedSessionIDs" : [
+      "wwdc2025-307",
+      "wwdc2025-202",
+      "wwdc2024-10108"
+    ],
+    "title" : "What’s new in Wallet",
+    "year" : 2026
+  },
+  "wwdc2026-210" : {
+    "code" : "210",
+    "description" : "Discover how monthly subscriptions with a 12-month commitment give people a more affordable option to pay for your subscription and secure a longer-term commitment. Explore how to configure and test this new payment option using App Store Connect, StoreKit APIs, Xcode testing, and more. Plus, learn about improvements to offer code redemption APIs, and enhancements to the App Review submission experience.",
+    "id" : "wwdc2026-210",
+    "lengthInMinutes" : 13,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/210",
+    "relatedSessionIDs" : [
+      "wwdc2022-10043",
+      "wwdc2023-10013",
+      "wwdc2023-10140",
+      "wwdc2024-10110",
+      "wwdc2026-309"
+    ],
+    "title" : "What’s new in Apple In-App Purchase",
+    "year" : 2026
+  },
+  "wwdc2026-212" : {
+    "code" : "212",
+    "description" : "Explore new features for your CarPlay audio, navigation, voice-based conversational apps, and more. Discover how to create CarPlay video apps so people can browse and watch their favorite videos in supported vehicles when parked. Learn how to integrate thumbnails, media information, and voice controls in your CarPlay app.",
+    "id" : "wwdc2026-212",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/212",
+    "relatedSessionIDs" : [
+      "wwdc2025-216"
+    ],
+    "title" : "Rev up your CarPlay app",
+    "year" : 2026
+  },
+  "wwdc2026-213" : {
+    "code" : "213",
+    "description" : "Find out how Xcode and coding agents help you translate String Catalogs using the context of your app. We’ll walk through strategies for reviewing translated output and iterating on your localizations, so you can deliver a tailored experience to people around the world.",
+    "id" : "wwdc2026-213",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/213",
+    "relatedSessionIDs" : [
+      "wwdc2024-10185",
+      "wwdc2022-10107",
+      "tech-talks-110343",
+      "wwdc2025-225",
+      "wwdc2026-259"
+    ],
+    "title" : "Translate your app using agents in Xcode",
+    "year" : 2026
+  },
+  "wwdc2026-215" : {
+    "code" : "215",
+    "description" : "Learn how the model element brings interactive 3D content to your websites — now on iOS, iPadOS, macOS, and visionOS. Discover tools for creating and optimizing 3D assets. Explore model element’s features and see how web standards are shaping the future of 3D on the web.",
+    "id" : "wwdc2026-215",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/215",
+    "relatedSessionIDs" : [
+      "wwdc2026-320",
+      "wwdc2024-10106",
+      "wwdc2025-237",
+      "wwdc2026-204"
+    ],
+    "title" : "Get started with the HTML Model Element",
+    "year" : 2026
+  },
+  "wwdc2026-216" : {
+    "code" : "216",
+    "description" : "Get started with Safari web extensions by building and testing one from the ground up — no Xcode required. Explore how content blocking, page modification, native messaging, and the permissions mode work together to create a powerful, privacy-preserving browsing experience across platforms. ",
+    "id" : "wwdc2026-216",
+    "lengthInMinutes" : 26,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/216",
+    "relatedSessionIDs" : [
+      "wwdc2026-204"
+    ],
+    "title" : "Create web extensions for Safari",
+    "year" : 2026
+  },
+  "wwdc2026-219" : {
+    "code" : "219",
+    "description" : "Learn how to create robust reading experiences for VoiceOver, Speak Screen, and more. Find out how to provide intuitive text selection, clear navigation between lines and paragraphs, and continuous reading across individual elements and multiple pages.",
+    "id" : "wwdc2026-219",
+    "lengthInMinutes" : 20,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/219",
+    "relatedSessionIDs" : [
+      "wwdc2019-248"
+    ],
+    "title" : "Enhance the accessibility of your reading app",
+    "year" : 2026
+  },
+  "wwdc2026-220" : {
+    "code" : "220",
+    "description" : "Unlock the full potential of your app’s interactive elements by making them accessible to everyone. We’ll break down how people understand and use controls with VoiceOver and other assistive technologies, exploring a variety of input methods like actions, the passthrough gesture, and direct touch. Join us for an in-depth exploration of several example controls as we refine and elevate the accessibility experience in each one.",
+    "id" : "wwdc2026-220",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/220",
+    "relatedSessionIDs" : [
+      "wwdc2024-10073"
+    ],
+    "title" : "Refine accessibility for custom controls",
+    "year" : 2026
+  },
+  "wwdc2026-221" : {
+    "code" : "221",
+    "description" : "Dynamic Type empowers people to comfortably read and interact with your app by letting them choose the text size that works best for them. You’ll learn how to get your app ready for Dynamic Type on tvOS through practical techniques for implementing font scaling and adapting your layouts for larger content. You’ll also discover how to optimize your media-focused interfaces like grids and carousels, ensuring a great experience for everyone who relies on different text sizes.",
+    "id" : "wwdc2026-221",
+    "lengthInMinutes" : 10,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/221",
+    "relatedSessionIDs" : [
+      "wwdc2024-10074"
+    ],
+    "title" : "Prepare your tvOS apps for Dynamic Type",
+    "year" : 2026
+  },
+  "wwdc2026-222" : {
+    "code" : "222",
+    "description" : "Find and fix performance problems faster than ever. Join us to explore how MetricKit equips you with vital performance metrics and actionable diagnostics to help you understand exactly where your app has opportunities for improvements. We’ll also cover how to intersect your app’s metrics and diagnostics by app state by using the StateReporting framework, providing you with the full picture to investigate optimizations in your app’s experience.",
+    "id" : "wwdc2026-222",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/222",
+    "relatedSessionIDs" : [
+      "wwdc2026-268",
+      "wwdc2026-388"
+    ],
+    "title" : "Meet the new MetricKit",
+    "year" : 2026
+  },
+  "wwdc2026-223" : {
+    "code" : "223",
+    "description" : "Elevate your app experience with Live Activities. Explore many of the places where Live Activities appear, including a new style in the Dynamic Island that delivers more information when iPhone is used in landscape. Learn how to tailor your Live Activity for each space, structure your content and data, and drive real time updates from start to finish using ActivityKit and push notifications.",
+    "id" : "wwdc2026-223",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/223",
+    "relatedSessionIDs" : [
+      "wwdc2023-10194",
+      "wwdc2024-10150",
+      "wwdc2024-10068"
+    ],
+    "title" : "Live Activities essentials",
+    "year" : 2026
+  },
+  "wwdc2026-224" : {
+    "code" : "224",
+    "description" : "Bring powerful new capabilities in macOS 27 to your Virtualization app. Discover how to automate the setup of macOS guests through user account setup on first boot. We’ll explore advanced workflows that involve passthrough of USB accessories to virtual machines, as well as custom network topologies and port forwarding. You’ll also learn about recent improvements that can enrich the experience of running your app’s virtual machines.",
+    "id" : "wwdc2026-224",
+    "lengthInMinutes" : 20,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/224",
+    "relatedSessionIDs" : [
+      "wwdc2026-389"
+    ],
+    "title" : "Expand the capabilities of your Virtualization app",
+    "year" : 2026
+  },
+  "wwdc2026-226" : {
+    "code" : "226",
+    "description" : "LiveCommunicationKit transforms your real-time communication apps into integrated experiences. We’ll show you how to deliver a rich, native conversation UI that puts your app right where people need it: from a full-screen presentation on the Lock Screen to seamless multitasking with the Dynamic Island. Join us as we step through integrating the framework for incoming, outgoing, and group conversations.",
+    "id" : "wwdc2026-226",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/226",
+    "relatedSessionIDs" : [
+      "wwdc2022-10117",
+      "wwdc2025-244"
+    ],
+    "title" : "Create live communication experiences ",
+    "year" : 2026
+  },
+  "wwdc2026-227" : {
+    "code" : "227",
+    "description" : "Learn how to prototype your app using agents in Xcode. Explore techniques for using AI to prototype interactions, iterate on layouts, and generate creative solutions to design challenges. You’ll learn how to evaluate ideas critically and refine them into polished, people-centered experiences for your app.",
+    "id" : "wwdc2026-227",
+    "lengthInMinutes" : 18,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/227",
+    "relatedSessionIDs" : [
+      "wwdc2026-259"
+    ],
+    "title" : "Create UI prototypes using agents in Xcode",
+    "year" : 2026
+  },
+  "wwdc2026-230" : {
+    "code" : "230",
+    "description" : "Explore the Automatic Assessment Configuration framework on macOS to deliver secure tests for education apps. Learn how to leverage new APIs to create a secure, configurable testing environment that incorporates more system-level features on Mac. Find out how built-in system prechecks and accessibility controls make it easier than ever to deliver a reliable exam experience.",
+    "id" : "wwdc2026-230",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/230",
+    "relatedSessionIDs" : [
+      "wwdc2026-201"
+    ],
+    "title" : "What’s new in assessment on macOS",
+    "year" : 2026
+  },
+  "wwdc2026-232" : {
+    "code" : "232",
+    "description" : "Run AI agents locally with privacy, low latency, and offline access. Dive into how MLX advancements and Mac hardware make powerful agentic workflows possible entirely on-device. You’ll explore code agents such as OpenCode, see how they integrate into Xcode, learn techniques for multi-Mac scaling, and discover how to integrate tools seamlessly — without ever leaving your machine.",
+    "id" : "wwdc2026-232",
+    "lengthInMinutes" : 13,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/232",
+    "relatedSessionIDs" : [
+      "wwdc2026-233",
+      "wwdc2026-328",
+      "wwdc2025-315",
+      "wwdc2025-298"
+    ],
+    "title" : "Run local agentic AI on the Mac using MLX",
+    "year" : 2026
+  },
+  "wwdc2026-233" : {
+    "code" : "233",
+    "description" : "Scale your machine learning workloads across multiple Macs using MLX. Learn how to tackle interconnect efficiency, large model inference, request batching, and distributed training challenges. Discover how a few Macs on your desk can replace expensive cloud infrastructure for demanding AI workloads.",
+    "id" : "wwdc2026-233",
+    "lengthInMinutes" : 22,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/233",
+    "relatedSessionIDs" : [
+      "wwdc2026-328",
+      "wwdc2026-232",
+      "wwdc2025-315",
+      "wwdc2025-298"
+    ],
+    "title" : "Explore distributed inference and training with MLX",
+    "year" : 2026
+  },
+  "wwdc2026-234" : {
+    "code" : "234",
+    "description" : "Learn how you can create photoreal visionOS environments for your apps, websites, and SharePlay experiences. Discover the design principles that make environments feel truly immersive and find out how you can create or capture reference materials, prepare high-fidelity CG assets, and craft real-time effects such as motion and lighting.",
+    "id" : "wwdc2026-234",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/234",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Design immersive environments for visionOS apps and the spatial web",
+    "year" : 2026
+  },
+  "wwdc2026-237" : {
+    "code" : "237",
+    "description" : "Unlock powerful image understanding with the latest Vision framework and Foundation Models framework updates. The new tap-to-segment request lets you segment images in new ways, and Vision now supports watchOS. Combine the new image support in Apple Foundation Model together with OCR, barcode scanning and your own tools to deliver LLM-powered visual understanding in your app.",
+    "id" : "wwdc2026-237",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/237",
+    "relatedSessionIDs" : [
+      "wwdc2025-301",
+      "wwdc2024-10163",
+      "wwdc2026-241"
+    ],
+    "title" : "What’s new in image understanding",
+    "year" : 2026
+  },
+  "wwdc2026-240" : {
+    "code" : "240",
+    "description" : "Bring your app’s content and actions to Siri with App Intents. Model your data using App Entities, adopt App Schemas to enable powerful system actions, and support natural language interactions powered by Apple Intelligence. Explore how to enable semantic search, perform actions across apps, and create contextual experiences using onscreen awareness and content transfer. Find out best practices and testing tools to build fast, reliable Siri experiences.",
+    "id" : "wwdc2026-240",
+    "lengthInMinutes" : 27,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/240",
+    "relatedSessionIDs" : [
+      "wwdc2026-344",
+      "wwdc2026-343"
+    ],
+    "title" : "Build intelligent Siri experiences with App Schemas",
+    "year" : 2026
+  },
+  "wwdc2026-241" : {
+    "code" : "241",
+    "description" : "Explore what’s new in the Foundation Models framework. Learn how to access Private Cloud Compute, integrate third-party and open source models, and work with vision capabilities. Discover context management APIs, built-in semantic search, and powerful primitives for creating agentic experiences in your apps.",
+    "id" : "wwdc2026-241",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/241",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "What’s new in the Foundation Models framework",
+    "year" : 2026
+  },
+  "wwdc2026-242" : {
+    "code" : "242",
+    "description" : "Learn how to take your intelligence features further with Foundation Models framework primitives for dynamic context and agentic workflows. We’ll walk through engineering shared context, setting up privacy boundaries, and managing key value caching. Discover how to orchestrate smooth handoffs between local and server models.\n",
+    "id" : "wwdc2026-242",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/242",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Build agentic app experiences with the Foundation Models framework",
+    "year" : 2026
+  },
+  "wwdc2026-243" : {
+    "code" : "243",
+    "description" : "Explore the enhanced FoundationModels instrument in Xcode to inspect behavior and optimize the performance of agentic flows. Learn how to inspect prompts, analyze latency, and trace control flow in advanced use cases that leverage multiple LanguageModelSessions and profiles.",
+    "id" : "wwdc2026-243",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/243",
+    "relatedSessionIDs" : [
+      "wwdc2026-334",
+      "wwdc2026-339",
+      "wwdc2026-319",
+      "wwdc2026-241",
+      "wwdc2026-242"
+    ],
+    "title" : "Debug and profile agentic app experiences with Instruments",
+    "year" : 2026
+  },
+  "wwdc2026-246" : {
+    "code" : "246",
+    "description" : "Level up basic search into a retrieval-augmented system using SpotlightSearchTool and LanguageModelSession. Explore Core Spotlight integration, delegate-based hydration patterns, and how metadata quality impacts your search results. Learn how to use custom PipelineStages for tasks like sentiment analysis. Discover best practices for indexing and building flexible, context-rich search experiences in your app.",
+    "id" : "wwdc2026-246",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/246",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "LLM search using Core Spotlight",
+    "year" : 2026
+  },
+  "wwdc2026-250" : {
+    "code" : "250",
+    "description" : "Dive deep into fundamental design principles for Apple platforms.",
+    "id" : "wwdc2026-250",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/250",
+    "relatedSessionIDs" : [
+      "wwdc2017-802",
+      "wwdc2026-290"
+    ],
+    "title" : "Principles of great design",
+    "year" : 2026
+  },
+  "wwdc2026-251" : {
+    "code" : "251",
+    "description" : "Explore practical approaches to branding using typography, color, components, and interactions that balance the familiar with the unique.",
+    "id" : "wwdc2026-251",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/251",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Communicate your brand identity on iOS",
+    "year" : 2026
+  },
+  "wwdc2026-252" : {
+    "code" : "252",
+    "description" : "Discover how you can use ScriptGraph in Reality Composer Pro 3 to create no-code 3D content for your apps and games. Learn how to take advantage of visual nodes to build animations, create interactive moments, and incorporate SwiftUI elements to add speech bubbles and other UI to your experience.",
+    "id" : "wwdc2026-252",
+    "lengthInMinutes" : 18,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/252",
+    "relatedSessionIDs" : [
+      "wwdc2026-280",
+      "wwdc2026-393",
+      "wwdc2026-281",
+      "wwdc2026-279",
+      "wwdc2026-8068",
+      "wwdc2026-393",
+      "wwdc2026-281",
+      "wwdc2026-8068"
+    ],
+    "title" : "Design no-code games with Reality Composer Pro 3",
+    "year" : 2026
+  },
+  "wwdc2026-253" : {
+    "code" : "253",
+    "description" : "Discover Music Understanding, a new framework that lets your app analyze audio across six dimensions, on device: key, rhythm, structure, pace, instrument activity, and loudness. And use the Music Understanding Lab sample app to visualize each result.",
+    "id" : "wwdc2026-253",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/253",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Meet the Music Understanding framework",
+    "year" : 2026
+  },
+  "wwdc2026-254" : {
+    "code" : "254",
+    "description" : "Bring the power of Apple Music into your app using MusicKit. We’ll cover authorization, subscription-status checks, music selection, playback control, and cross-storefront song sharing. Learn how to use the new Music Picker to let people browse the Apple Music catalog and their personal libraries. We’ll also break down the differences between SystemMusicPlayer and ApplicationMusicPlayer, and show you how to observe playback state. ",
+    "id" : "wwdc2026-254",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/254",
+    "relatedSessionIDs" : [
+      "wwdc2022-110347",
+      "wwdc2022-10148",
+      "wwdc2023-10149"
+    ],
+    "title" : "Integrate MusicKit into your app",
+    "year" : 2026
+  },
+  "wwdc2026-256" : {
+    "code" : "256",
+    "description" : "Make your video content more accessible with generated subtitles — a powerful new feature that can transcribe spoken audio or translate subtitles from another language, using on-device models. Explore caption style preview, which lets people customize and preview subtitle styles during playback, and dive into implementation details for AVKit, AVPlayerLayer, and the Media Accessibility framework.",
+    "id" : "wwdc2026-256",
+    "lengthInMinutes" : 11,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/256",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Discover generated subtitles and subtitle styles",
+    "year" : 2026
+  },
+  "wwdc2026-258" : {
+    "code" : "258",
+    "description" : "Discover the latest productivity enhancements in Xcode 27. Accelerate your development workflow through customization, coding agents, and Device Hub. Explore updates in localization, performance, and testing tools to refine your apps further.",
+    "id" : "wwdc2026-258",
+    "lengthInMinutes" : 28,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/258",
+    "relatedSessionIDs" : [
+      "wwdc2026-259",
+      "wwdc2026-260",
+      "wwdc2026-213",
+      "wwdc2025-225",
+      "wwdc2026-243",
+      "wwdc2026-268",
+      "wwdc2026-261",
+      "wwdc2024-10200"
+    ],
+    "title" : "What’s new in Xcode 27",
+    "year" : 2026
+  },
+  "wwdc2026-259" : {
+    "code" : "259",
+    "description" : "Learn how you can use coding agents in Xcode in your development process. We’ll explore multiple ways of working with agents with tips to take you from creating an initial prototype to polishing a refined app. Discover how Xcode’s coding assistant adapts to help you stay engaged with the creative work that makes coding fun, whether you’re building an app solo or working with a team.",
+    "id" : "wwdc2026-259",
+    "lengthInMinutes" : 24,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/259",
+    "relatedSessionIDs" : [
+      "wwdc2026-227",
+      "wwdc2026-213"
+    ],
+    "title" : "Xcode, agents, and you",
+    "year" : 2026
+  },
+  "wwdc2026-260" : {
+    "code" : "260",
+    "description" : "Learn how Device Hub can accelerate your development workflows. We’ll take a tour of its features and show you how to diagnose and reproduce issues quickly with devices and simulators.",
+    "id" : "wwdc2026-260",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/260",
+    "relatedSessionIDs" : [
+      "wwdc2026-278",
+      "wwdc2019-418",
+      "wwdc2026-258"
+    ],
+    "title" : "Get the most out of Device Hub",
+    "year" : 2026
+  },
+  "wwdc2026-261" : {
+    "code" : "261",
+    "description" : "Discover the latest updates to Xcode Cloud that quickly get you started building and delivering your apps. Learn essential Xcode Cloud concepts, set up cloud build and tests simply by connecting your source repository, and configure for app distribution when you’re ready to ship. Find out how webhooks and management tools extends Xcode Cloud’s capabilities, supporting your most advanced workflows.",
+    "id" : "wwdc2026-261",
+    "lengthInMinutes" : 13,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/261",
+    "relatedSessionIDs" : [
+      "tech-talks-111369",
+      "wwdc2023-10278",
+      "wwdc2024-10200",
+      "wwdc2023-10224",
+      "wwdc2026-258"
+    ],
+    "title" : "Build, deliver, and automate with Xcode Cloud",
+    "year" : 2026
+  },
+  "wwdc2026-262" : {
+    "code" : "262",
+    "description" : "Join us for an update on Swift. Discover the latest language advancements, including updates for everyday ergonomics, improved concurrency, and safer high-performance code. Explore workflow and language interoperability improvements and updates in embedded Swift.",
+    "id" : "wwdc2026-262",
+    "lengthInMinutes" : 32,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/262",
+    "relatedSessionIDs" : [
+      "wwdc2026-267",
+      "wwdc2026-265"
+    ],
+    "title" : "What’s new in Swift",
+    "year" : 2026
+  },
+  "wwdc2026-265" : {
+    "code" : "265",
+    "description" : "Build engaging live experiences with gRPC in your Swift app and backend. gRPC is an open-source RPC framework designed for high-performance, bidirectional streaming APIs. Explore how the gRPC Swift package provides a modern, safe runtime built with Swift concurrency. Learn how integrated tools streamline your workflow and help you deliver real-time features with ease.",
+    "id" : "wwdc2026-265",
+    "lengthInMinutes" : 24,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/265",
+    "relatedSessionIDs" : [
+      "wwdc2023-10171",
+      "wwdc2024-10216",
+      "wwdc2025-346"
+    ],
+    "title" : "Build real-time apps and services with gRPC and Swift",
+    "year" : 2026
+  },
+  "wwdc2026-267" : {
+    "code" : "267",
+    "description" : "Learn how to fearlessly adopt Swift Testing alongside your XCTests using test framework interoperability. Discover best practices and patterns for incrementally introducing advanced testing features that accelerate development and increase coverage.",
+    "id" : "wwdc2026-267",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/267",
+    "relatedSessionIDs" : [
+      "wwdc2026-262",
+      "wwdc2024-10179",
+      "wwdc2024-10195"
+    ],
+    "title" : "Migrate to Swift Testing",
+    "year" : 2026
+  },
+  "wwdc2026-268" : {
+    "code" : "268",
+    "description" : "Tackle app responsiveness issues with a clear workflow. Explore the Swift Concurrency instrument, Time Profiler, and System Trace to pinpoint bottlenecks. Discover how to use top functions and run comparisons to measure your improvements and confirm your fixes. And learn about other enhancements in Instruments which make each iteration of this cycle faster than ever, so you can deliver a smoother user experience in less time.",
+    "id" : "wwdc2026-268",
+    "lengthInMinutes" : 26,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/268",
+    "relatedSessionIDs" : [
+      "wwdc2022-110352",
+      "wwdc2025-308",
+      "wwdc2025-268",
+      "wwdc2023-10248",
+      "wwdc2026-258"
+    ],
+    "title" : "Profile, fix, and verify: Improve app responsiveness with Instruments",
+    "year" : 2026
+  },
+  "wwdc2026-269" : {
+    "code" : "269",
+    "description" : "Explore the latest additions to SwiftUI and discover how they can improve your apps. We’ll introduce a new Document protocol with direct disk access and snapshot-based diffing for building high-performance apps; new APIs for reordering content in lists, grids, and sections; and toolbar enhancements including visibility priority and auto-minimizing behavior. We’ll also cover expanded presentation APIs — including swipe actions on any view — plus AsyncImage caching improvements and lazy state initialization for Observable types.",
+    "id" : "wwdc2026-269",
+    "lengthInMinutes" : 28,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/269",
+    "relatedSessionIDs" : [
+      "wwdc2026-278",
+      "wwdc2026-271"
+    ],
+    "title" : "What’s new in SwiftUI",
+    "year" : 2026
+  },
+  "wwdc2026-271" : {
+    "code" : "271",
+    "description" : "Follow along as we build a game of Solitaire to explore the latest drag-and-drop capabilities in SwiftUI. We’ll show you how to use the new reordering API to let people arrange content, implement drag containers to move multiple items at once, and customize the drag-and-drop lifecycle to fit your app’s rules. To get the most out of this session, watch “Meet Transferable” from WWDC22.",
+    "id" : "wwdc2026-271",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/271",
+    "relatedSessionIDs" : [
+      "wwdc2022-10062"
+    ],
+    "title" : "Code-along: Build powerful drag and drop in SwiftUI",
+    "year" : 2026
+  },
+  "wwdc2026-272" : {
+    "code" : "272",
+    "description" : "Discover how to incrementally adopt SwiftUI in your existing AppKit or UIKit app. We’ll show you how to use the Observation framework to automatically update your views, integrate SwiftUI components into an existing view hierarchy, and bring gesture recognizers into SwiftUI. We’ll also explore how to add complete SwiftUI scenes to your app without changing your overall architecture.",
+    "id" : "wwdc2026-272",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/272",
+    "relatedSessionIDs" : [
+      "wwdc2025-243",
+      "wwdc2021-10021",
+      "wwdc2026-322",
+      "wwdc2022-10072",
+      "wwdc2022-10075",
+      "wwdc2022-10061"
+    ],
+    "title" : "Use SwiftUI with AppKit and UIKit",
+    "year" : 2026
+  },
+  "wwdc2026-274" : {
+    "code" : "274",
+    "description" : "Discover the latest enhancements to SwiftData. We’ll show you how to persist custom and third-party types using Codable, and group fetched data into sections in your SwiftUI app. We’ll also explore how to observe data store changes anywhere else using ModelResultsObserver and HistoryObserver, giving you the flexibility to drive powerful state objects, integrate with delegate-based architectures, and react precisely to model updates.",
+    "id" : "wwdc2026-274",
+    "lengthInMinutes" : 12,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/274",
+    "relatedSessionIDs" : [
+      "wwdc2026-275",
+      "wwdc2024-10075"
+    ],
+    "title" : "What’s new in SwiftData",
+    "year" : 2026
+  },
+  "wwdc2026-275" : {
+    "code" : "275",
+    "description" : "Experience SwiftData in action as we add persistence to an existing app. We’ll show you how to define your data models and seamlessly integrate persistent data with SwiftUI. You’ll also learn foundational skills for managing your app’s state using this expressive, declarative API.",
+    "id" : "wwdc2026-275",
+    "lengthInMinutes" : 22,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/275",
+    "relatedSessionIDs" : [
+      "wwdc2025-291",
+      "wwdc2026-274"
+    ],
+    "title" : "Code-along: Add persistence with SwiftData",
+    "year" : 2026
+  },
+  "wwdc2026-277" : {
+    "code" : "277",
+    "description" : "Widgets highlight your app’s most important content across the system, providing people with another opportunity to engage. Discover the different types of widgets and explore the qualities that make them memorable. Learn how to create widgets, keep them up to date, and offer ways for people to customize them through App Intents and dynamic styling.",
+    "id" : "wwdc2026-277",
+    "lengthInMinutes" : 20,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/277",
+    "relatedSessionIDs" : [
+      "wwdc2021-10048",
+      "wwdc2026-223",
+      "wwdc2023-10103",
+      "wwdc2023-10028",
+      "wwdc2025-278"
+    ],
+    "title" : "WidgetKit foundations",
+    "year" : 2026
+  },
+  "wwdc2026-278" : {
+    "code" : "278",
+    "description" : "Discover the latest updates to UIKit. Learn how to update your iPhone app layouts to work great when resized with iPhone Mirroring and on iPad. Explore new APIs for tab and navigation bars, find out how to prepare your app for new Apple Intelligence capabilities, and get introduced to a skill for your coding agent of choice that helps modernize your codebase.",
+    "id" : "wwdc2026-278",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/278",
+    "relatedSessionIDs" : [
+      "wwdc2025-282",
+      "wwdc2024-10147",
+      "wwdc2026-260",
+      "wwdc2026-343"
+    ],
+    "title" : "Modernize your UIKit app",
+    "year" : 2026
+  },
+  "wwdc2026-279" : {
+    "code" : "279",
+    "description" : "Discover the latest advancements in RealityKit designed to make your apps and games more immersive and realistic than ever. Explore powerful new capabilities including interactive cloth simulations, NavMesh pathfinding, mixed reality lighting, and customizable reverb meshes for enhanced spatial audio. Elevate your visual fidelity with improved shadows, character rendering enhancements, and support for Gaussian splatting.",
+    "id" : "wwdc2026-279",
+    "lengthInMinutes" : 23,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/279",
+    "relatedSessionIDs" : [
+      "wwdc2026-280",
+      "wwdc2026-393",
+      "wwdc2026-252",
+      "wwdc2026-281"
+    ],
+    "title" : "Explore advances in RealityKit",
+    "year" : 2026
+  },
+  "wwdc2026-280" : {
+    "code" : "280",
+    "description" : "Unlock powerful new features in Reality Composer Pro 3 for building spatial experiences. Learn how you can add content, visual effects, lighting, and interactivity to your immersive scenes — all without leaving the editor. Discover how to iterate quickly using AI-assisted features right within the editor.",
+    "id" : "wwdc2026-280",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/280",
+    "relatedSessionIDs" : [
+      "wwdc2026-252",
+      "wwdc2026-281",
+      "wwdc2026-393",
+      "wwdc2026-279",
+      "wwdc2023-10083"
+    ],
+    "title" : "Iterate your spatial scenes faster with Reality Composer Pro 3",
+    "year" : 2026
+  },
+  "wwdc2026-281" : {
+    "code" : "281",
+    "description" : "Discover how Reality Composer Pro 3 empowers you to build bigger, more ambitious spatial projects. Learn about creating project-specific plugins that let you edit custom components, run custom systems, and build your own ScriptGraph nodes—giving you complete control over your spatial authoring workflow.",
+    "id" : "wwdc2026-281",
+    "lengthInMinutes" : 22,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/281",
+    "relatedSessionIDs" : [
+      "wwdc2026-279",
+      "wwdc2026-252",
+      "wwdc2026-280",
+      "wwdc2026-393"
+    ],
+    "title" : "Extend Reality Composer Pro 3 functionality with Xcode",
+    "year" : 2026
+  },
+  "wwdc2026-282" : {
+    "code" : "282",
+    "description" : "Check out how the new Spatial Preview framework brings content from your Mac directly into visionOS. Discover how to build dynamic workflows with live-syncing and bidirectional editing across both platforms. Learn about the SpatialPreview API, device discovery, 2D and 3D session integration, and new Quick Look capabilities to elevate your Mac apps spatially.",
+    "id" : "wwdc2026-282",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/282",
+    "relatedSessionIDs" : [
+      "wwdc2026-284",
+      "wwdc2026-285",
+      "wwdc2022-10129"
+    ],
+    "title" : "Discover the Spatial Preview framework",
+    "year" : 2026
+  },
+  "wwdc2026-283" : {
+    "code" : "283",
+    "description" : "Find out how visionOS is advancing object tracking and spatial accessory input. Discover new ways to track moving and handheld objects, allowing you to bridge the physical and digital worlds. Learn about new supported classes of spatial accessories and what is needed to build your own custom accessories to enable unique interaction models in your apps.",
+    "id" : "wwdc2026-283",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/283",
+    "relatedSessionIDs" : [
+      "wwdc2024-10101",
+      "wwdc2025-289"
+    ],
+    "title" : "Explore enhancements to visionOS object tracking",
+    "year" : 2026
+  },
+  "wwdc2026-284" : {
+    "code" : "284",
+    "description" : "Learn how to bring structured 3D models to life in visionOS. We’ll cover USDZ preparation, show you how to manipulate individual entities within hierarchical assemblies, and inspect the internal components within a model with a cross-sectional plane. Create stunning exploded-view animations for design review and collaboration experiences on Apple Vision Pro.",
+    "id" : "wwdc2026-284",
+    "lengthInMinutes" : 25,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/284",
+    "relatedSessionIDs" : [
+      "wwdc2025-318",
+      "wwdc2025-274",
+      "wwdc2025-287",
+      "wwdc2026-282",
+      "wwdc2026-283",
+      "wwdc2024-10186"
+    ],
+    "title" : "Collaborate on structured 3D models in visionOS",
+    "year" : 2026
+  },
+  "wwdc2026-285" : {
+    "code" : "285",
+    "description" : "Dive into the latest advances in Universal Scene Description (USD) support on Apple platforms, including Swift-based USDKit, the new spatial preview API, and enhanced spatial web capabilities. Discover how the latest updates to the OpenUSD standard add support for accessibility, Gaussian splats, and compressed geometry. We’ll also walk through the expanded USD editing and rendering tools in Preview for Mac, showing you how to leverage these capabilities in your own apps.",
+    "id" : "wwdc2026-285",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/285",
+    "relatedSessionIDs" : [
+      "wwdc2026-282"
+    ],
+    "title" : "Discover USDKit and what’s new in OpenUSD",
+    "year" : 2026
+  },
+  "wwdc2026-286" : {
+    "code" : "286",
+    "description" : "Find out how foveated streaming delivers remotely rendered scenes to Apple Vision Pro in full fidelity. Explore how this framework combines native visionOS capabilities with third-party streaming technologies completely wirelessly, demonstrated using an OpenXR scene and NVIDIA CloudXR. Learn about the FoveatedStreaming framework, integration with the NVIDIA CloudXR SDK, and how dynamically foveated streaming provides benefits while still preserving privacy.",
+    "id" : "wwdc2026-286",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/286",
+    "relatedSessionIDs" : [
+      "wwdc2026-8071",
+      "wwdc2026-287",
+      "wwdc2026-8004"
+    ],
+    "title" : "Use foveated streaming to bring immersive content to visionOS",
+    "year" : 2026
+  },
+  "wwdc2026-287" : {
+    "code" : "287",
+    "description" : "Build next-generation apps, games, and spatial experiences using new capabilities in visionOS 27. Explore the different pathways you can use to build experiences on visionOS — from using native Apple tools and frameworks, to streaming immersive content from a Mac or PC, leveraging third-party engines, or porting existing iOS apps. Discover how to elevate your spatial computing projects with the latest advances in 3D content creation, immersive media, and object tracking.",
+    "id" : "wwdc2026-287",
+    "lengthInMinutes" : 32,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/287",
+    "relatedSessionIDs" : [
+      "wwdc2026-279",
+      "wwdc2026-280",
+      "wwdc2026-282",
+      "wwdc2026-285",
+      "wwdc2026-283",
+      "wwdc2026-393",
+      "wwdc2026-281",
+      "wwdc2026-252",
+      "wwdc2026-338",
+      "wwdc2025-403",
+      "wwdc2025-296",
+      "wwdc2026-286"
+    ],
+    "title" : "Build next-generation experiences with visionOS 27",
+    "year" : 2026
+  },
+  "wwdc2026-289" : {
+    "code" : "289",
+    "description" : "Bring your AppKit app up to date with modern macOS conventions. Dive into handling input with control events and gesture recognizers, moving beyond traditional tracking loops. Enhance keyboard navigation in your app, implement graceful state restoration after restarts, and take advantage of new corner concentricity APIs that let your interface blend seamlessly with the macOS aesthetic.",
+    "id" : "wwdc2026-289",
+    "lengthInMinutes" : 18,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/289",
+    "relatedSessionIDs" : [
+      "wwdc2026-272",
+      "wwdc2026-8072"
+    ],
+    "title" : "Modernize your AppKit app",
+    "year" : 2026
+  },
+  "wwdc2026-290" : {
+    "code" : "290",
+    "description" : "The names of your products, features, and labels can determine how people understand and navigate your app. Explore the principles behind thoughtful naming in app design, examine the patterns used across Apple apps, and learn how to make naming decisions with intention.",
+    "id" : "wwdc2026-290",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/290",
+    "relatedSessionIDs" : [
+      "wwdc2026-250"
+    ],
+    "title" : "Craft clear names for features and labels in your app",
+    "year" : 2026
+  },
+  "wwdc2026-292" : {
+    "code" : "292",
+    "description" : "Explore new patterns and best practices when implementing search in your app. Discover how search plays a key role in helping people find and navigate content, and find out how to integrate search across different navigation models and Apple platforms.",
+    "id" : "wwdc2026-292",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/292",
+    "relatedSessionIDs" : [
+      "wwdc2025-356",
+      "wwdc2025-219",
+      "wwdc2025-359"
+    ],
+    "title" : "Design intuitive search experiences",
+    "year" : 2026
+  },
+  "wwdc2026-295" : {
+    "code" : "295",
+    "description" : "Meet AppIntentsTesting, a new framework for validating your App Intents through the same infrastructure used by Siri, Shortcuts, and Spotlight. Discover how to execute intents, inspect results, and test entities and queries — all without requiring UI automation. Find out how to verify integrations like View annotations and Spotlight indexing, helping you catch bugs early in your development workflow. ",
+    "id" : "wwdc2026-295",
+    "lengthInMinutes" : 25,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/295",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Validate your App Intents adoption with AppIntentsTesting",
+    "year" : 2026
+  },
+  "wwdc2026-297" : {
+    "code" : "297",
+    "description" : "Gain insight on how visual intelligence can transform content discovery in your app. Explore how to define entities, process images, and handle multiple result types effectively. Learn best practices for optimizing speed and relevance, and discover how intents enable direct actions like opening or playing content with a single tap.",
+    "id" : "wwdc2026-297",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/297",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Best practices for integrating visual intelligence in your app",
+    "year" : 2026
+  },
+  "wwdc2026-298" : {
+    "code" : "298",
+    "description" : "Learn how to evaluate model-driven experiences using the Evaluations framework. In a probabilistic world, unit tests alone won’t suffice. Discover how to define metrics, automatically grade outputs, and aggregate statistics to ensure your AI-powered features perform reliably across Apple’s platforms.",
+    "id" : "wwdc2026-298",
+    "lengthInMinutes" : 25,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/298",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Meet the Evaluations framework",
+    "year" : 2026
+  },
+  "wwdc2026-299" : {
+    "code" : "299",
+    "description" : "Learn how to leverage advanced features of the Evaluations framework to build robust evaluations for your app. Explore evaluating flows with tool calling and dynamic conditions, and how to define what correct behavior means for your use case. Discover how to generate synthetic data, use judges effectively, and validate your datasets for reliable results.\n",
+    "id" : "wwdc2026-299",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/299",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Create robust evaluations for agentic apps",
+    "year" : 2026
+  },
+  "wwdc2026-303" : {
+    "code" : "303",
+    "description" : "Discover how to build a camera app that launches instantly so people never miss the perfect shot. Explore how to optimize the entire camera launch sequence — from app startup to first preview frame. Ensure your app has a polished camera experience by learning about new API’s that deliver faster launches, and best practices for smooth preview rendering and maintaining sustainable performance.",
+    "id" : "wwdc2026-303",
+    "lengthInMinutes" : 25,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/303",
+    "relatedSessionIDs" : [
+      "wwdc2026-304",
+      "wwdc2023-10105"
+    ],
+    "title" : "Build a responsive camera app that launches quickly",
+    "year" : 2026
+  },
+  "wwdc2026-304" : {
+    "code" : "304",
+    "description" : "Capture super high resolution photos in your app using AVFoundation. Learn when to use the three different options to capture images — RAW, exposure-bracketed, and fully processed. Walk through configuring photo capture for 24MP and 48MP images across the Main, Tele, and Ultra Wide cameras. And discover how deferred photo processing keeps your app responsive as more photos are taken.",
+    "id" : "wwdc2026-304",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/304",
+    "relatedSessionIDs" : [
+      "wwdc2026-303",
+      "wwdc2026-341",
+      "wwdc2021-10160",
+      "wwdc2021-10247",
+      "wwdc2023-10105"
+    ],
+    "title" : "Implement high resolution photo capture",
+    "year" : 2026
+  },
+  "wwdc2026-305" : {
+    "code" : "305",
+    "description" : "Harness the power of version 9 of the Core Image RAW processing APIs to dramatically improve image quality in your apps, with improved sharpness and more defined color, while using the Apple Neural Engine for optimal performance. Take advantage of the CIRAWFilter API to let your users edit RAW photos by changing exposure, noise reduction, sharpness, contrast and more. And explore new CIImageProcessor APIs that optimize performance by giving you precise control over tile sizing and buffer management.",
+    "id" : "wwdc2026-305",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/305",
+    "relatedSessionIDs" : [
+      "wwdc2021-10160",
+      "wwdc2022-10114"
+    ],
+    "title" : "Enhance RAW image processing with Core Image",
+    "year" : 2026
+  },
+  "wwdc2026-309" : {
+    "code" : "309",
+    "description" : "Discover how you can use the power of Retention Messaging to reach subscribers before they cancel. Learn how to configure this feature in App Store Connect and add subscription offers, as well as leverage the Retention Messaging API to deliver real-time messaging and alternative options that encourage people to stay subscribed to your app or game.",
+    "id" : "wwdc2026-309",
+    "lengthInMinutes" : 15,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/309",
+    "relatedSessionIDs" : [
+      "wwdc2026-205",
+      "wwdc2026-210"
+    ],
+    "title" : "Explore Retention Messaging in App Store Connect",
+    "year" : 2026
+  },
+  "wwdc2026-310" : {
+    "code" : "310",
+    "description" : "Explore techniques to build powerful shortcuts using your app’s content. New automations unlock additional ways to integrate your app with the system. Refine how your App Entity is presented to LLMs using the new “Use Model” transcript feature. Store rich information from your app inside shortcuts that is synced across devices. Learn how to combine these features to create intelligent, powerful automations that integrate seamlessly with content and features from your app.",
+    "id" : "wwdc2026-310",
+    "lengthInMinutes" : 11,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/310",
+    "relatedSessionIDs" : [
+      "wwdc2025-260"
+    ],
+    "title" : "What’s new in Shortcuts",
+    "year" : 2026
+  },
+  "wwdc2026-312" : {
+    "code" : "312",
+    "description" : "Get a first look at Now Playing — a Swift framework that connects your app’s media playback to system surfaces like the Lock Screen, Control Center, Dynamic Island, and CarPlay. Discover how to publish playback state and respond to commands using its observable API. Explore remote playback sessions, a new capability that lets your app represent media playing on external devices and bring full playback controls to those same system surfaces.",
+    "id" : "wwdc2026-312",
+    "lengthInMinutes" : 12,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/312",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Meet the Now Playing framework",
+    "year" : 2026
+  },
+  "wwdc2026-314" : {
+    "code" : "314",
+    "description" : "Build adaptive web layouts that embrace content of all shapes and sizes. Explore how Grid Lanes lets you arrange differently-shaped elements into clean, flexible designs with simple CSS. And find out how flow-tolerance helps you refine accessibility while keeping your layouts malleable.",
+    "id" : "wwdc2026-314",
+    "lengthInMinutes" : 10,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/314",
+    "relatedSessionIDs" : [
+      "wwdc2026-204",
+      "wwdc2026-315"
+    ],
+    "title" : "Learn CSS Grid Lanes",
+    "year" : 2026
+  },
+  "wwdc2026-315" : {
+    "code" : "315",
+    "description" : "Learn how to unlock full control of styling select menus on the web. The HTML select element is getting a major upgrade with a new CSS appearance value, and new pseudo-elements. Discover how the select options can contain rich content with new possibilities in HTML. Build selects that match your design system, while keeping all the accessibility and robustness of the default element.",
+    "id" : "wwdc2026-315",
+    "lengthInMinutes" : 9,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/315",
+    "relatedSessionIDs" : [
+      "wwdc2026-314",
+      "wwdc2026-204"
+    ],
+    "title" : "Rediscover the HTML select element",
+    "year" : 2026
+  },
+  "wwdc2026-319" : {
+    "code" : "319",
+    "description" : "Private Cloud Compute lets you access powerful, frontier-class models while protecting user privacy. Explore how it works and how to access it using the Foundation Models framework. Discover best practices for checking availability and handling graceful fallbacks in your apps.",
+    "id" : "wwdc2026-319",
+    "lengthInMinutes" : 10,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/319",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Build with the new Apple Foundation Model on Private Cloud Compute",
+    "year" : 2026
+  },
+  "wwdc2026-320" : {
+    "code" : "320",
+    "description" : "Transport your website’s visitors into virtual environments in Apple Vision Pro using the new Immersive API in JavaScript. Explore how to request immersive transitions from an inline model element, create compelling immersive experiences using features like video docking, and optimize performance for rich, real-world-scale experiences — all with just a few lines of code running on your website.",
+    "id" : "wwdc2026-320",
+    "lengthInMinutes" : 19,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/320",
+    "relatedSessionIDs" : [
+      "wwdc2025-237",
+      "wwdc2025-305",
+      "wwdc2026-234",
+      "wwdc2026-215",
+      "wwdc2026-204"
+    ],
+    "title" : "Explore immersive website environments in visionOS",
+    "year" : 2026
+  },
+  "wwdc2026-321" : {
+    "code" : "321",
+    "description" : "Discover the inner workings of lazy stacks in SwiftUI. We’ll explore how LazyVStack and LazyHStack estimate sizes, lazily load subviews, and prefetch content to deliver smooth scrolling experiences. We’ll also cover advanced performance optimizations, state management best practices, and tips for precise programmatic scrolling. To get the most out of this session, we recommend basic familiarity with SwiftUI layout using stacks.",
+    "id" : "wwdc2026-321",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/321",
+    "relatedSessionIDs" : [
+      "wwdc2026-271",
+      "wwdc2020-10031",
+      "wwdc2022-10056"
+    ],
+    "title" : "Dive into lazy stacks and scrolling with SwiftUI",
+    "year" : 2026
+  },
+  "wwdc2026-322" : {
+    "code" : "322",
+    "description" : "Discover how to craft rich, custom experiences by creatively composing SwiftUI layout and graphics APIs. We’ll show you how to break down complex designs and use a creative pipeline to chain simple building blocks together. Learn how to draw with layer shaders, animate with timelines, and anchor views with alignment guides.",
+    "id" : "wwdc2026-322",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/322",
+    "relatedSessionIDs" : [
+      "wwdc2024-10151"
+    ],
+    "title" : "Compose advanced graphics effects with SwiftUI",
+    "year" : 2026
+  },
+  "wwdc2026-324" : {
+    "code" : "324",
+    "description" : "Discover Core AI, Apple’s new framework for on-device AI model deployment. Tour the ecosystem, from Python libraries for converting, authoring, and optimizing models, to a Swift API for simple plug-and-play inference and advanced use cases with strict latency and memory requirements. Explore the new Core AI models repository with ready-to-run examples for popular architectures. See how deep Xcode integration, including ahead-of-time model compilation, streamlines the workflow so you can deliver smarter, more responsive app experiences.",
+    "id" : "wwdc2026-324",
+    "lengthInMinutes" : 20,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/324",
+    "relatedSessionIDs" : [
+      "wwdc2026-326",
+      "wwdc2026-325",
+      "wwdc2026-330"
+    ],
+    "title" : "Meet Core AI",
+    "year" : 2026
+  },
+  "wwdc2026-325" : {
+    "code" : "325",
+    "description" : "Dive into the complete custom model deployment workflow for Apple silicon with the new Core AI framework. Discover powerful techniques for authoring models using custom Metal kernels, alongside platform-aware compression strategies. The new Core AI Debugger offers deep intrinsic analysis, and AI-assisted workflows guide you from initial concept to optimized on-device execution.",
+    "id" : "wwdc2026-325",
+    "lengthInMinutes" : 29,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/325",
+    "relatedSessionIDs" : [
+      "wwdc2026-233",
+      "wwdc2026-232",
+      "wwdc2026-328"
+    ],
+    "title" : "Dive into Core AI model authoring and optimization",
+    "year" : 2026
+  },
+  "wwdc2026-326" : {
+    "code" : "326",
+    "description" : "Discover a curated collection of popular open-source models — including Qwen, Mistral, SAM3, and more — optimized for Apple silicon using the new Core AI Framework. Learn how to download, run, and benchmark models on your Mac, and integrate them into your app with just a few lines of code. Explore a new workflow for model compilation and on-device specialization to speed up first-time model load. Find out how to profile and optimize runtime performance with Core AI tools in Xcode.",
+    "id" : "wwdc2026-326",
+    "lengthInMinutes" : 23,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/326",
+    "relatedSessionIDs" : [
+      "wwdc2026-233",
+      "wwdc2026-232",
+      "wwdc2026-328"
+    ],
+    "title" : "Integrate on-device AI models into your app using Core AI",
+    "year" : 2026
+  },
+  "wwdc2026-328" : {
+    "code" : "328",
+    "description" : "Bring NumPy-style computing natively to Swift with MLX Swift. Discover how to eliminate cross-language friction in your machine learning workflows by handling image processing, tensor operations, and neural network training in a single, type-safe environment. Explore the APIs that let you leverage GPU acceleration while enjoying the compiler, tooling, and debugging experience you already know.",
+    "id" : "wwdc2026-328",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/328",
+    "relatedSessionIDs" : [
+      "wwdc2026-233",
+      "wwdc2026-232",
+      "wwdc2025-315",
+      "wwdc2025-298"
+    ],
+    "title" : "Explore numerical computing in Swift with MLX",
+    "year" : 2026
+  },
+  "wwdc2026-330" : {
+    "code" : "330",
+    "description" : "Unlock powerful machine learning performance with the Metal Tensor API and Metal Performance Primitives (MPP) Tensor Ops library. Discover how to create portable operations that take advantage of Neural Accelerators in Apple M5 and A19 GPUs. Learn to build custom machine learning kernels for your Core AI applications, and find out how to work effectively with quantized data formats and GPU memory optimization.",
+    "id" : "wwdc2026-330",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/330",
+    "relatedSessionIDs" : [
+      "tech-talks-111432",
+      "wwdc2025-262"
+    ],
+    "title" : "Optimize custom machine learning operations with Metal tensors",
+    "year" : 2026
+  },
+  "wwdc2026-334" : {
+    "code" : "334",
+    "description" : "Explore all the new ways to leverage Apple Foundation Models on macOS. The Foundation Models SDK for Python lets you integrate with popular tooling and evaluation packages in the Python ecosystem. Find out how to use the brand new fm command introduced in macOS 27 to streamline scripting, automate model workflows, and accelerate your development process.",
+    "id" : "wwdc2026-334",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/334",
+    "relatedSessionIDs" : [
+      "wwdc2026-339",
+      "wwdc2026-319",
+      "wwdc2026-241",
+      "wwdc2026-242"
+    ],
+    "title" : "Build AI-powered scripts with the fm CLI and Python SDK",
+    "year" : 2026
+  },
+  "wwdc2026-335" : {
+    "code" : "335",
+    "description" : "Learn comparative evaluation techniques to guide your prompt engineering and select the right model for your app. Explore how to baseline performance, expand your evaluation strategy, and convert results to JSON for integration with other tools. Discover when to apply different prompting strategies and how to iteratively refine prompts for best results.",
+    "id" : "wwdc2026-335",
+    "lengthInMinutes" : 26,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/335",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Improve your prompts by hill-climbing with Evaluations",
+    "year" : 2026
+  },
+  "wwdc2026-338" : {
+    "code" : "338",
+    "description" : "Go behind the scenes of live Apple Immersive Video production. Discover how to package immersive video, spatial audio, and scene metadata for transport over IP networks using the SMPTE 2110 standard. Harness Apple’s Immersive Media Support, Video Toolbox, and AVFoundation frameworks to power real-time Apple Immersive Video workflows. To get the most out of this session, watch “Learn about Apple Immersive Video technologies” from WWDC25.",
+    "id" : "wwdc2026-338",
+    "lengthInMinutes" : 16,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/338",
+    "relatedSessionIDs" : [
+      "wwdc2025-403",
+      "wwdc2025-296",
+      "wwdc2020-10090"
+    ],
+    "title" : "Build live production tools for Apple Immersive Video",
+    "year" : 2026
+  },
+  "wwdc2026-339" : {
+    "code" : "339",
+    "description" : "Extend the Foundation Models framework by implementing a LanguageModelExecutor for new models. Explore how to interface with the LanguageModelSession’s transcript, manage session state effectively, and optimize KV cache utilization. Find out how to support custom segment types and unlock advanced capabilities for your generative AI features.",
+    "id" : "wwdc2026-339",
+    "lengthInMinutes" : 20,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/339",
+    "relatedSessionIDs" : [
+      "wwdc2026-334",
+      "wwdc2026-319",
+      "wwdc2026-241",
+      "wwdc2026-242"
+    ],
+    "title" : "Bring an LLM provider to the Foundation Models framework",
+    "year" : 2026
+  },
+  "wwdc2026-341" : {
+    "code" : "341",
+    "description" : "Supercharge your iOS camera app with Center Stage using AVCapture APIs with the front camera on iPhone 17, iPhone 17 Pro and iPhone Air. Explore how APIs enable zoom and rotate options, for more flexible ways to frame selfies and videos and to automatically get everyone in a group shot. Integrate Center Stage for video calls to automatically adjust the framing, so you’re front and center for virtual meetings and FaceTime calls. And learn how to stabilize your video for real-time video conferencing.",
+    "id" : "wwdc2026-341",
+    "lengthInMinutes" : 17,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/341",
+    "relatedSessionIDs" : [
+      "wwdc2026-304",
+      "wwdc2023-10106",
+      "wwdc2021-10047"
+    ],
+    "title" : "Support the Center Stage front camera in your iOS app",
+    "year" : 2026
+  },
+  "wwdc2026-343" : {
+    "code" : "343",
+    "description" : "Polish how your app works with Siri using advanced App Intents APIs. Learn techniques that let people accomplish more with just their voice, help Apple Intelligence find your content, and provide context for on-screen awareness so Siri understands what’s happening in your app. ",
+    "id" : "wwdc2026-343",
+    "lengthInMinutes" : 24,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/343",
+    "relatedSessionIDs" : [
+      "wwdc2026-240",
+      "wwdc2026-344"
+    ],
+    "title" : "Explore advanced App Intents features for Siri and Apple Intelligence",
+    "year" : 2026
+  },
+  "wwdc2026-344" : {
+    "code" : "344",
+    "description" : "Dive deep into an Xcode project showing how you can make your app available to Siri. Learn how to adopt App Schemas to let people ask questions about calendar events and take natural language actions like scheduling. Discover best practices for making content available in the Spotlight semantic index and providing context for on-screen awareness. ",
+    "id" : "wwdc2026-344",
+    "lengthInMinutes" : 24,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/344",
+    "relatedSessionIDs" : [
+      "wwdc2026-240",
+      "wwdc2026-343"
+    ],
+    "title" : "Code-along: Make your app available to Siri",
+    "year" : 2026
+  },
+  "wwdc2026-345" : {
+    "code" : "345",
+    "description" : "Level up your App Intents adoption with advanced features to make it faster, more flexible, and more relevant. Find out how ValueRepresentation and RelevantEntities make your content more discoverable and allow it to travel across apps, EntityCollection improves performance, and SyncableEntity let you scale across devices. Explore richer parameter types including union values and long-running intents that handle cancellation gracefully. ",
+    "id" : "wwdc2026-345",
+    "lengthInMinutes" : 18,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/345",
+    "relatedSessionIDs" : [
+
+    ],
+    "title" : "Discover new capabilities in the App Intents framework",
+    "year" : 2026
+  },
+  "wwdc2026-347" : {
+    "code" : "347",
+    "description" : "Explore how to evaluate threats from indirect prompt injection, such as data exfiltration and unintended actions. Discover system safeguards and security best practices for using App Intents and the Foundation Models framework, including mitigations such as user confirmations, secure prompt design, and authentication.",
+    "id" : "wwdc2026-347",
+    "lengthInMinutes" : 25,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/347",
+    "relatedSessionIDs" : [
+      "wwdc2025-248",
+      "wwdc2020-10189",
+      "wwdc2026-242",
+      "wwdc2026-240",
+      "wwdc2026-343"
+    ],
+    "title" : "Secure your app: mitigate risks to agentic features",
+    "year" : 2026
+  },
+  "wwdc2026-356" : {
+    "code" : "356",
+    "description" : "Go behind the scenes and learn from CD PROJEKT RED how Cyberpunk 2077 came to Mac, setting a new standard for AAA gaming on macOS. Explore how the team leveraged Apple’s robust hardware, software, and development tools to bring this high-fidelity experience to life. Learn how you can apply similar techniques to your games. Find out how the innovative ‘For this Mac’ preset automatically optimizes graphical settings to balance visual fidelity and frame rate across the Mac lineup.",
+    "id" : "wwdc2026-356",
+    "lengthInMinutes" : 27,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/356",
+    "relatedSessionIDs" : [
+      "wwdc2026-357",
+      "wwdc2026-388",
+      "wwdc2026-8037",
+      "wwdc2026-8040",
+      "wwdc2026-8038"
+    ],
+    "title" : "Bringing Cyberpunk 2077 to Mac",
+    "year" : 2026
+  },
+  "wwdc2026-357" : {
+    "code" : "357",
+    "description" : "Kickstart your game’s journey to Apple platforms with new agentic skills in Game Porting Toolkit 4 that can dramatically accelerate the process of porting your game. Explore how to work alongside your AI coding assistant to adopt Metal 4, integrate MetalFX, and tune your game for Apple hardware. Find out how agents can autonomously troubleshoot GPU rendering issues using Metal debugging tools, empowering you to focus on what matters most.",
+    "id" : "wwdc2026-357",
+    "lengthInMinutes" : 28,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/357",
+    "relatedSessionIDs" : [
+      "wwdc2025-211",
+      "wwdc2026-8037",
+      "wwdc2026-8038",
+      "wwdc2026-8040"
+    ],
+    "title" : "Speedrun your game port with agentic coding",
+    "year" : 2026
+  },
+  "wwdc2026-358" : {
+    "code" : "358",
+    "description" : "Dive deeper into the techniques you can use to create compelling touch experiences for your games. We’ll share expert insights from indie to AAA game development, explore best practices for intuitive touch controls, and show you how to take advantage of Apple technologies like Touch Controller framework and Metal for great performance. ",
+    "id" : "wwdc2026-358",
+    "lengthInMinutes" : 24,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/358",
+    "relatedSessionIDs" : [
+      "meet-with-apple-243",
+      "meet-with-apple-240",
+      "wwdc2026-8040"
+    ],
+    "title" : "Make your game great with touch",
+    "year" : 2026
+  },
+  "wwdc2026-359" : {
+    "code" : "359",
+    "description" : "Discover how to integrate machine learning into your real-time rendering pipeline using Metal 4. We’ll explore practical adoption patterns and best practices for achieving production-quality results with MetalFX neural denoising, featuring real-world insights from Maxon’s Redshift Live. Learn how to train and deploy a neural tone mapper using the ML command encoder inline with your graphics work. Finally, dive into the new tensor API to build and evaluate small, specialized neural networks directly within your shaders.",
+    "id" : "wwdc2026-359",
+    "lengthInMinutes" : 22,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/359",
+    "relatedSessionIDs" : [
+      "wwdc2025-211",
+      "wwdc2025-262",
+      "wwdc2026-8037"
+    ],
+    "title" : "Build real-time neural rendering pipelines with Metal",
+    "year" : 2026
+  },
+  "wwdc2026-369" : {
+    "code" : "369",
+    "description" : "Get started with Channel Sounding to bring distance and direction awareness to your Bluetooth accessories. Dive into the new Nearby Interaction and Core Bluetooth APIs, and walk through the accessory-side changes you’ll need. Optimize power consumption while ensuring a smooth, responsive experience.",
+    "id" : "wwdc2026-369",
+    "lengthInMinutes" : 8,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/369",
+    "relatedSessionIDs" : [
+      "wwdc2024-10203",
+      "wwdc2021-10165",
+      "wwdc2026-8130",
+      "wwdc2026-8131"
+    ],
+    "title" : "Find your accessory with Bluetooth Channel Sounding",
+    "year" : 2026
+  },
+  "wwdc2026-370" : {
+    "code" : "370",
+    "description" : "Discover how to combine the convenience of built-in text views with the control of TextKit. We’ll show you how new APIs make it easy to extend UITextView and NSTextView with custom behaviors like line numbers and collapsible sections. We’ll also explore the TextKit architecture and walk through new caching and reuse policies for text attachments. To get the most out of this session, watch “Meet TextKit 2” from WWDC21 and “What’s New in TextKit and text views” from WWDC22.",
+    "id" : "wwdc2026-370",
+    "lengthInMinutes" : 23,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/370",
+    "relatedSessionIDs" : [
+      "wwdc2021-10061",
+      "wwdc2022-10090",
+      "wwdc2026-219"
+    ],
+    "title" : "Elevate your app’s text experience with TextKit",
+    "year" : 2026
+  },
+  "wwdc2026-372" : {
+    "code" : "372",
+    "description" : "Craft a canvas-based application with PaperKit. Explore the new data model APIs that let you access, create, and modify markup elements. Learn how to add custom controls and annotations, and discover best practices for integrating these features into your app to build a fully featured creative canvas.",
+    "id" : "wwdc2026-372",
+    "lengthInMinutes" : 7,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/372",
+    "relatedSessionIDs" : [
+      "wwdc2026-203",
+      "wwdc2026-375",
+      "wwdc2025-285"
+    ],
+    "title" : "Unwrap PaperKit",
+    "year" : 2026
+  },
+  "wwdc2026-375" : {
+    "code" : "375",
+    "description" : "Enable high-quality image creation in your app using Image Playground. With a new generative model that runs on Private Cloud Compute, users can make images in virtually any style, including photorealistic, in your app. You can also specify dimensions for use in even more places, and allow people to modify images using natural language descriptions and touch. Explore how to adopt Image Playground, generate images from descriptions and photos, and manage feature availability in your app.",
+    "id" : "wwdc2026-375",
+    "lengthInMinutes" : 14,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/375",
+    "relatedSessionIDs" : [
+      "wwdc2026-319",
+      "wwdc2026-203",
+      "wwdc2024-10220"
+    ],
+    "title" : "Create high quality images using Image Playground",
+    "year" : 2026
+  },
+  "wwdc2026-378" : {
+    "code" : "378",
+    "description" : "Unlock native Apple In-App Purchases for your Unity game with the new StoreKit plug-in. Reduce download sizes with the new Background Assets plug-in, which delivers language-specific asset packs so each player gets just what they need. Plus, a new Steam Asset Converter helps you migrate existing builds.",
+    "id" : "wwdc2026-378",
+    "lengthInMinutes" : 9,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/378",
+    "relatedSessionIDs" : [
+      "meet-with-apple-239",
+      "wwdc2022-10065",
+      "wwdc2025-325",
+      "wwdc2026-205"
+    ],
+    "title" : "Unlock in-game content with StoreKit and Background Assets",
+    "year" : 2026
+  },
+  "wwdc2026-379" : {
+    "code" : "379",
+    "description" : "Uncover how Trust Insights can help protect people from social scams and coercion. Explore how this new framework uses privacy-preserving machine learning to detect when someone may be coached into risky actions. Find out how to integrate Trust Insights into your app, interpret its signals, and design thoughtful interventions that safeguard people while respecting their privacy.",
+    "id" : "wwdc2026-379",
+    "lengthInMinutes" : 13,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/379",
+    "relatedSessionIDs" : [
+      "wwdc2026-201"
+    ],
+    "title" : "Meet Trust Insights",
+    "year" : 2026
+  },
+  "wwdc2026-388" : {
+    "code" : "388",
+    "description" : "Track down hard-to-find game performance issues with powerful Metal tools. Discover how to collect rich performance data using Game Performance Overview in Instruments, run background traces with metalperftrace on macOS and Control Center on iOS, and use the new StateReporting API to correlate metrics directly to your game’s runtime state. Turn hours of telemetry into clear, actionable insights.",
+    "id" : "wwdc2026-388",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/388",
+    "relatedSessionIDs" : [
+      "tech-talks-111374"
+    ],
+    "title" : "Find and fix performance issues in your Metal games",
+    "year" : 2026
+  },
+  "wwdc2026-389" : {
+    "code" : "389",
+    "description" : "Meet container machines, a new tool included in Container that offers a lightweight persistent Linux environment on Mac. Explore how container machines work and how the design of Containerization allows for a performant and seamless experience when developing for Linux on macOS.",
+    "id" : "wwdc2026-389",
+    "lengthInMinutes" : 11,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/389",
+    "relatedSessionIDs" : [
+      "wwdc2025-346"
+    ],
+    "title" : "Discover container machines",
+    "year" : 2026
+  },
+  "wwdc2026-391" : {
+    "code" : "391",
+    "description" : "Discover how to reach more customers by offering subscriptions to groups and organizations. The Group Purchases feature lets a single subscriber buy multiple seats and invite others directly from your app. Volume Purchasing through Apple Business and Apple School Manager puts your subscriptions in front of enterprise and education buyers who already procure apps at scale. Learn how to offer these subscriptions and the options to configure availability and pricing in App Store Connect. ",
+    "id" : "wwdc2026-391",
+    "lengthInMinutes" : 7,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/391",
+    "relatedSessionIDs" : [
+      "wwdc2026-206"
+    ],
+    "title" : "Offer subscriptions to groups and organizations",
+    "year" : 2026
+  },
+  "wwdc2026-393" : {
+    "code" : "393",
+    "description" : "Discover how to build rich interactivity and stunning visual effects entirely within Reality Composer Pro using its powerful suite of graph-based tools. Learn to craft dynamic materials with Shader Graph, blend skeletal animations with Animation Graph, and simulate particle effects with Compute Graph. Go further by wiring up app interactivity with Script Graph, coordinating scene events with Sequencer, and designing intelligent NPC behaviors with Behavior Trees — all without leaving the editor.",
+    "id" : "wwdc2026-393",
+    "lengthInMinutes" : 21,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/393",
+    "relatedSessionIDs" : [
+      "wwdc2026-281",
+      "wwdc2026-279",
+      "wwdc2026-252",
+      "wwdc2026-280",
+      "wwdc2023-10202"
+    ],
+    "title" : "Supercharge your spatial workflows with Reality Composer Pro 3",
+    "year" : 2026
+  },
+  "wwdc2026-394" : {
+    "code" : "394",
+    "description" : "Get the inside track on everything Apple has to offer — and make the most of every session, lab, and moment.",
+    "id" : "wwdc2026-394",
+    "lengthInMinutes" : 1,
+    "permalink" : "https:\/\/developer.apple.com\/videos\/play\/wwdc2026\/394",
+    "relatedSessionIDs" : [
+      "articles-112094",
+      "articles-112098",
+      "articles-112096"
+    ],
+    "title" : "Get ready for WWDC26",
+    "year" : 2026
   }
 }
