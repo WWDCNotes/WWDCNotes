@@ -1,7 +1,6 @@
 # WWDC26
 
-Xcode 27, Swift, iOS/iPadOS/macOS/tvOS/visionOS/watchOS 27.
-New this year: the ``Evaluations`` framework, ``Core AI``, the ``Music Understanding`` framework, major ``Foundation Models`` updates, and coding agents across Xcode.
+Xcode 27, Swift, iOS/iPadOS/macOS/tvOS/visionOS/watchOS 27. New APIs: Evaluations, Core AI, Music Understanding, Foundation Models updates, and more.
 
 @Metadata {
    @TitleHeading("Overview")
