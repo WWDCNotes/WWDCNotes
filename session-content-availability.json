@@ -1,0 +1,3662 @@
+{
+  "_meta": {
+    "description": "Per-session content-availability for the missing-session stub backfill. A stub is only worth creating if a human can consume the session somehow: ideally the original video, otherwise a public transcript. If neither exists there is nothing to take notes on, so no stub is created.",
+    "decisions": {
+      "video": "A working Apple video page exists (/videos/play/wwdc{year}/{code}). Stub CTA -> 'Watch Video' -> the session permalink.",
+      "transcript": "No working Apple video, but a public community transcript exists. Stub CTA -> 'Read Transcript' -> transcriptURL.",
+      "exclude": "Neither a working video nor a public transcript -> no stub created."
+    },
+    "transcriptSource": "wwdcindex (https://nonstrict.eu/wwdcindex/), URL pattern https://nonstrict.eu/wwdcindex/wwdc{year}/{code}/",
+    "checkMethod": "HTTP redirect-follow on /videos/play (must stay on the session page, not bounce to the year listing) + a HEAD/GET on the nonstrict transcript URL. The 2010/2011 .mov download.action links were additionally verified in an authenticated Apple Developer browser session (they redirect to the account page = no video).",
+    "generated": "2026-06-09",
+    "scope": "WWDC2010-2025 sessions that had no page on production (the backfill set). Sessions already having a page, and WWDC26, are not listed and default to standard 'Watch Video' behaviour.",
+    "counts": {
+      "transcript": 842,
+      "exclude": 8,
+      "video": 83
+    }
+  },
+  "sessions": {
+    "wwdc2010-100": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/100/"
+    },
+    "wwdc2010-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/101/"
+    },
+    "wwdc2010-102": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/102/"
+    },
+    "wwdc2010-103": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/103/"
+    },
+    "wwdc2010-104": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/104/"
+    },
+    "wwdc2010-105": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/105/"
+    },
+    "wwdc2010-106": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/106/"
+    },
+    "wwdc2010-107": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/107/"
+    },
+    "wwdc2010-108": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/108/"
+    },
+    "wwdc2010-109": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/109/"
+    },
+    "wwdc2010-110": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/110/"
+    },
+    "wwdc2010-111": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/111/"
+    },
+    "wwdc2010-112": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/112/"
+    },
+    "wwdc2010-113": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/113/"
+    },
+    "wwdc2010-114": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/114/"
+    },
+    "wwdc2010-115": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/115/"
+    },
+    "wwdc2010-116": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/116/"
+    },
+    "wwdc2010-117": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/117/"
+    },
+    "wwdc2010-118": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/118/"
+    },
+    "wwdc2010-119": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/119/"
+    },
+    "wwdc2010-120": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/120/"
+    },
+    "wwdc2010-121": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/121/"
+    },
+    "wwdc2010-122": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/122/"
+    },
+    "wwdc2010-123": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/123/"
+    },
+    "wwdc2010-125": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/125/"
+    },
+    "wwdc2010-127": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/127/"
+    },
+    "wwdc2010-128": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/128/"
+    },
+    "wwdc2010-129": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/129/"
+    },
+    "wwdc2010-130": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/130/"
+    },
+    "wwdc2010-131": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/131/"
+    },
+    "wwdc2010-133": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/133/"
+    },
+    "wwdc2010-134": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/134/"
+    },
+    "wwdc2010-135": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/135/"
+    },
+    "wwdc2010-136": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/136/"
+    },
+    "wwdc2010-137": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/137/"
+    },
+    "wwdc2010-138": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/138/"
+    },
+    "wwdc2010-141": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/141/"
+    },
+    "wwdc2010-144": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/144/"
+    },
+    "wwdc2010-145": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/145/"
+    },
+    "wwdc2010-147": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/147/"
+    },
+    "wwdc2010-200": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/200/"
+    },
+    "wwdc2010-201": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/201/"
+    },
+    "wwdc2010-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/202/"
+    },
+    "wwdc2010-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/203/"
+    },
+    "wwdc2010-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/204/"
+    },
+    "wwdc2010-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/205/"
+    },
+    "wwdc2010-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/206/"
+    },
+    "wwdc2010-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/207/"
+    },
+    "wwdc2010-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/208/"
+    },
+    "wwdc2010-209": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/209/"
+    },
+    "wwdc2010-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/210/"
+    },
+    "wwdc2010-211": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/211/"
+    },
+    "wwdc2010-300": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/300/"
+    },
+    "wwdc2010-301": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/301/"
+    },
+    "wwdc2010-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/302/"
+    },
+    "wwdc2010-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/303/"
+    },
+    "wwdc2010-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/304/"
+    },
+    "wwdc2010-305": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/305/"
+    },
+    "wwdc2010-306": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/306/"
+    },
+    "wwdc2010-307": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/307/"
+    },
+    "wwdc2010-308": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/308/"
+    },
+    "wwdc2010-309": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/309/"
+    },
+    "wwdc2010-310": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/310/"
+    },
+    "wwdc2010-311": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/311/"
+    },
+    "wwdc2010-312": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/312/"
+    },
+    "wwdc2010-313": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/313/"
+    },
+    "wwdc2010-314": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/314/"
+    },
+    "wwdc2010-315": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/315/"
+    },
+    "wwdc2010-316": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/316/"
+    },
+    "wwdc2010-400": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/400/"
+    },
+    "wwdc2010-401": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/401/"
+    },
+    "wwdc2010-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/402/"
+    },
+    "wwdc2010-403": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/403/"
+    },
+    "wwdc2010-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/404/"
+    },
+    "wwdc2010-405": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/405/"
+    },
+    "wwdc2010-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/407/"
+    },
+    "wwdc2010-408": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/408/"
+    },
+    "wwdc2010-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/409/"
+    },
+    "wwdc2010-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/410/"
+    },
+    "wwdc2010-411": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/411/"
+    },
+    "wwdc2010-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/412/"
+    },
+    "wwdc2010-413": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/413/"
+    },
+    "wwdc2010-414": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/414/"
+    },
+    "wwdc2010-415": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/415/"
+    },
+    "wwdc2010-416": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/416/"
+    },
+    "wwdc2010-417": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/417/"
+    },
+    "wwdc2010-418": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/418/"
+    },
+    "wwdc2010-419": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/419/"
+    },
+    "wwdc2010-420": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/420/"
+    },
+    "wwdc2010-421": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/421/"
+    },
+    "wwdc2010-422": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/422/"
+    },
+    "wwdc2010-423": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/423/"
+    },
+    "wwdc2010-424": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/424/"
+    },
+    "wwdc2010-425": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/425/"
+    },
+    "wwdc2010-426": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/426/"
+    },
+    "wwdc2010-500": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/500/"
+    },
+    "wwdc2010-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/501/"
+    },
+    "wwdc2010-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/502/"
+    },
+    "wwdc2010-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/503/"
+    },
+    "wwdc2010-504": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/504/"
+    },
+    "wwdc2010-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/505/"
+    },
+    "wwdc2010-506": {
+      "decision": "exclude"
+    },
+    "wwdc2010-507": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/507/"
+    },
+    "wwdc2010-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/508/"
+    },
+    "wwdc2010-509": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/509/"
+    },
+    "wwdc2010-510": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/510/"
+    },
+    "wwdc2010-511": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/511/"
+    },
+    "wwdc2010-512": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2010/512/"
+    },
+    "wwdc2011-100": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/100/"
+    },
+    "wwdc2011-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/101/"
+    },
+    "wwdc2011-102": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/102/"
+    },
+    "wwdc2011-103": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/103/"
+    },
+    "wwdc2011-105": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/105/"
+    },
+    "wwdc2011-106": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/106/"
+    },
+    "wwdc2011-107": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/107/"
+    },
+    "wwdc2011-108": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/108/"
+    },
+    "wwdc2011-109": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/109/"
+    },
+    "wwdc2011-110": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/110/"
+    },
+    "wwdc2011-111": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/111/"
+    },
+    "wwdc2011-112": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/112/"
+    },
+    "wwdc2011-113": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/113/"
+    },
+    "wwdc2011-114": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/114/"
+    },
+    "wwdc2011-115": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/115/"
+    },
+    "wwdc2011-116": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/116/"
+    },
+    "wwdc2011-117": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/117/"
+    },
+    "wwdc2011-118": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/118/"
+    },
+    "wwdc2011-119": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/119/"
+    },
+    "wwdc2011-120": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/120/"
+    },
+    "wwdc2011-122": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/122/"
+    },
+    "wwdc2011-123": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/123/"
+    },
+    "wwdc2011-124": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/124/"
+    },
+    "wwdc2011-125": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/125/"
+    },
+    "wwdc2011-127": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/127/"
+    },
+    "wwdc2011-128": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/128/"
+    },
+    "wwdc2011-129": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/129/"
+    },
+    "wwdc2011-131": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/131/"
+    },
+    "wwdc2011-136": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/136/"
+    },
+    "wwdc2011-200": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/200/"
+    },
+    "wwdc2011-201": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/201/"
+    },
+    "wwdc2011-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/202/"
+    },
+    "wwdc2011-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/204/"
+    },
+    "wwdc2011-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/205/"
+    },
+    "wwdc2011-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/206/"
+    },
+    "wwdc2011-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/207/"
+    },
+    "wwdc2011-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/208/"
+    },
+    "wwdc2011-209": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/209/"
+    },
+    "wwdc2011-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/210/"
+    },
+    "wwdc2011-211": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/211/"
+    },
+    "wwdc2011-212": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/212/"
+    },
+    "wwdc2011-300": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/300/"
+    },
+    "wwdc2011-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/302/"
+    },
+    "wwdc2011-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/303/"
+    },
+    "wwdc2011-306": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/306/"
+    },
+    "wwdc2011-307": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/307/"
+    },
+    "wwdc2011-308": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/308/"
+    },
+    "wwdc2011-309": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/309/"
+    },
+    "wwdc2011-310": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/310/"
+    },
+    "wwdc2011-311": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/311/"
+    },
+    "wwdc2011-312": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/312/"
+    },
+    "wwdc2011-313": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/313/"
+    },
+    "wwdc2011-315": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/315/"
+    },
+    "wwdc2011-316": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/316/"
+    },
+    "wwdc2011-317": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/317/"
+    },
+    "wwdc2011-319": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/319/"
+    },
+    "wwdc2011-320": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/320/"
+    },
+    "wwdc2011-321": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/321/"
+    },
+    "wwdc2011-322": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/322/"
+    },
+    "wwdc2011-323": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/323/"
+    },
+    "wwdc2011-400": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/400/"
+    },
+    "wwdc2011-401": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/401/"
+    },
+    "wwdc2011-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/402/"
+    },
+    "wwdc2011-403": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/403/"
+    },
+    "wwdc2011-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/404/"
+    },
+    "wwdc2011-405": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/405/"
+    },
+    "wwdc2011-406": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/406/"
+    },
+    "wwdc2011-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/407/"
+    },
+    "wwdc2011-408": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/408/"
+    },
+    "wwdc2011-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/409/"
+    },
+    "wwdc2011-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/410/"
+    },
+    "wwdc2011-411": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/411/"
+    },
+    "wwdc2011-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/412/"
+    },
+    "wwdc2011-413": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/413/"
+    },
+    "wwdc2011-414": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/414/"
+    },
+    "wwdc2011-415": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/415/"
+    },
+    "wwdc2011-416": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/416/"
+    },
+    "wwdc2011-417": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/417/"
+    },
+    "wwdc2011-418": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/418/"
+    },
+    "wwdc2011-419": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/419/"
+    },
+    "wwdc2011-420": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/420/"
+    },
+    "wwdc2011-422": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/422/"
+    },
+    "wwdc2011-423": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/423/"
+    },
+    "wwdc2011-500": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/500/"
+    },
+    "wwdc2011-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/501/"
+    },
+    "wwdc2011-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/502/"
+    },
+    "wwdc2011-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/503/"
+    },
+    "wwdc2011-504": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/504/"
+    },
+    "wwdc2011-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/505/"
+    },
+    "wwdc2011-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/506/"
+    },
+    "wwdc2011-507": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/507/"
+    },
+    "wwdc2011-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/508/"
+    },
+    "wwdc2011-509": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/509/"
+    },
+    "wwdc2011-510": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/510/"
+    },
+    "wwdc2011-511": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/511/"
+    },
+    "wwdc2011-512": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/512/"
+    },
+    "wwdc2011-514": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/514/"
+    },
+    "wwdc2011-515": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/515/"
+    },
+    "wwdc2011-516": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/516/"
+    },
+    "wwdc2011-517": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/517/"
+    },
+    "wwdc2011-518": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/518/"
+    },
+    "wwdc2011-519": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/519/"
+    },
+    "wwdc2011-601": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2011/601/"
+    },
+    "wwdc2012-100": {
+      "decision": "exclude"
+    },
+    "wwdc2012-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/101/"
+    },
+    "wwdc2012-200": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/200/"
+    },
+    "wwdc2012-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/202/"
+    },
+    "wwdc2012-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/203/"
+    },
+    "wwdc2012-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/204/"
+    },
+    "wwdc2012-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/205/"
+    },
+    "wwdc2012-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/206/"
+    },
+    "wwdc2012-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/208/"
+    },
+    "wwdc2012-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/210/"
+    },
+    "wwdc2012-212": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/212/"
+    },
+    "wwdc2012-213": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/213/"
+    },
+    "wwdc2012-214": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/214/"
+    },
+    "wwdc2012-215": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/215/"
+    },
+    "wwdc2012-216": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/216/"
+    },
+    "wwdc2012-217": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/217/"
+    },
+    "wwdc2012-218": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/218/"
+    },
+    "wwdc2012-219": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/219/"
+    },
+    "wwdc2012-220": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/220/"
+    },
+    "wwdc2012-221": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/221/"
+    },
+    "wwdc2012-223": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/223/"
+    },
+    "wwdc2012-224": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/224/"
+    },
+    "wwdc2012-225": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/225/"
+    },
+    "wwdc2012-226": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/226/"
+    },
+    "wwdc2012-227": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/227/"
+    },
+    "wwdc2012-228": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/228/"
+    },
+    "wwdc2012-231": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/231/"
+    },
+    "wwdc2012-232": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/232/"
+    },
+    "wwdc2012-233": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/233/"
+    },
+    "wwdc2012-234": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/234/"
+    },
+    "wwdc2012-235": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/235/"
+    },
+    "wwdc2012-236": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/236/"
+    },
+    "wwdc2012-237": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/237/"
+    },
+    "wwdc2012-238": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/238/"
+    },
+    "wwdc2012-240": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/240/"
+    },
+    "wwdc2012-241": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/241/"
+    },
+    "wwdc2012-242": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/242/"
+    },
+    "wwdc2012-243": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/243/"
+    },
+    "wwdc2012-244": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/244/"
+    },
+    "wwdc2012-245": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/245/"
+    },
+    "wwdc2012-300": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/300/"
+    },
+    "wwdc2012-301": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/301/"
+    },
+    "wwdc2012-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/302/"
+    },
+    "wwdc2012-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/303/"
+    },
+    "wwdc2012-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/304/"
+    },
+    "wwdc2012-305": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/305/"
+    },
+    "wwdc2012-306": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/306/"
+    },
+    "wwdc2012-307": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/307/"
+    },
+    "wwdc2012-308": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/308/"
+    },
+    "wwdc2012-309": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/309/"
+    },
+    "wwdc2012-311": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/311/"
+    },
+    "wwdc2012-400": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/400/"
+    },
+    "wwdc2012-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/402/"
+    },
+    "wwdc2012-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/404/"
+    },
+    "wwdc2012-405": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/405/"
+    },
+    "wwdc2012-406": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/406/"
+    },
+    "wwdc2012-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/407/"
+    },
+    "wwdc2012-408": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/408/"
+    },
+    "wwdc2012-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/409/"
+    },
+    "wwdc2012-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/410/"
+    },
+    "wwdc2012-411": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/411/"
+    },
+    "wwdc2012-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/412/"
+    },
+    "wwdc2012-413": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/413/"
+    },
+    "wwdc2012-414": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/414/"
+    },
+    "wwdc2012-415": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/415/"
+    },
+    "wwdc2012-500": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/500/"
+    },
+    "wwdc2012-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/501/"
+    },
+    "wwdc2012-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/502/"
+    },
+    "wwdc2012-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/503/"
+    },
+    "wwdc2012-504": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/504/"
+    },
+    "wwdc2012-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/505/"
+    },
+    "wwdc2012-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/506/"
+    },
+    "wwdc2012-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/508/"
+    },
+    "wwdc2012-509": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/509/"
+    },
+    "wwdc2012-510": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/510/"
+    },
+    "wwdc2012-511": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/511/"
+    },
+    "wwdc2012-512": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/512/"
+    },
+    "wwdc2012-513": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/513/"
+    },
+    "wwdc2012-514": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/514/"
+    },
+    "wwdc2012-515": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/515/"
+    },
+    "wwdc2012-516": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/516/"
+    },
+    "wwdc2012-517": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/517/"
+    },
+    "wwdc2012-518": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/518/"
+    },
+    "wwdc2012-519": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/519/"
+    },
+    "wwdc2012-520": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/520/"
+    },
+    "wwdc2012-521": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/521/"
+    },
+    "wwdc2012-522": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/522/"
+    },
+    "wwdc2012-523": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/523/"
+    },
+    "wwdc2012-524": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/524/"
+    },
+    "wwdc2012-600": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/600/"
+    },
+    "wwdc2012-601": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/601/"
+    },
+    "wwdc2012-602": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/602/"
+    },
+    "wwdc2012-603": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/603/"
+    },
+    "wwdc2012-604": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/604/"
+    },
+    "wwdc2012-605": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/605/"
+    },
+    "wwdc2012-700": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/700/"
+    },
+    "wwdc2012-701": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/701/"
+    },
+    "wwdc2012-702": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/702/"
+    },
+    "wwdc2012-704": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/704/"
+    },
+    "wwdc2012-705": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/705/"
+    },
+    "wwdc2012-706": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/706/"
+    },
+    "wwdc2012-707": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/707/"
+    },
+    "wwdc2012-708": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/708/"
+    },
+    "wwdc2012-709": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/709/"
+    },
+    "wwdc2012-710": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/710/"
+    },
+    "wwdc2012-711": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/711/"
+    },
+    "wwdc2012-712": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/712/"
+    },
+    "wwdc2012-714": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2012/714/"
+    },
+    "wwdc2013-100": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/100/"
+    },
+    "wwdc2013-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/101/"
+    },
+    "wwdc2013-109": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/109/"
+    },
+    "wwdc2013-200": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/200/"
+    },
+    "wwdc2013-201": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/201/"
+    },
+    "wwdc2013-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/202/"
+    },
+    "wwdc2013-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/203/"
+    },
+    "wwdc2013-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/204/"
+    },
+    "wwdc2013-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/205/"
+    },
+    "wwdc2013-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/206/"
+    },
+    "wwdc2013-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/207/"
+    },
+    "wwdc2013-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/208/"
+    },
+    "wwdc2013-209": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/209/"
+    },
+    "wwdc2013-211": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/211/"
+    },
+    "wwdc2013-213": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/213/"
+    },
+    "wwdc2013-214": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/214/"
+    },
+    "wwdc2013-215": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/215/"
+    },
+    "wwdc2013-216": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/216/"
+    },
+    "wwdc2013-219": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/219/"
+    },
+    "wwdc2013-221": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/221/"
+    },
+    "wwdc2013-222": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/222/"
+    },
+    "wwdc2013-223": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/223/"
+    },
+    "wwdc2013-225": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/225/"
+    },
+    "wwdc2013-227": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/227/"
+    },
+    "wwdc2013-228": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/228/"
+    },
+    "wwdc2013-300": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/300/"
+    },
+    "wwdc2013-301": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/301/"
+    },
+    "wwdc2013-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/302/"
+    },
+    "wwdc2013-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/303/"
+    },
+    "wwdc2013-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/304/"
+    },
+    "wwdc2013-305": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/305/"
+    },
+    "wwdc2013-306": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/306/"
+    },
+    "wwdc2013-307": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/307/"
+    },
+    "wwdc2013-308": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/308/"
+    },
+    "wwdc2013-309": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/309/"
+    },
+    "wwdc2013-310": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/310/"
+    },
+    "wwdc2013-400": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/400/"
+    },
+    "wwdc2013-401": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/401/"
+    },
+    "wwdc2013-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/402/"
+    },
+    "wwdc2013-403": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/403/"
+    },
+    "wwdc2013-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/404/"
+    },
+    "wwdc2013-405": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/405/"
+    },
+    "wwdc2013-406": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/406/"
+    },
+    "wwdc2013-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/407/"
+    },
+    "wwdc2013-408": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/408/"
+    },
+    "wwdc2013-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/409/"
+    },
+    "wwdc2013-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/410/"
+    },
+    "wwdc2013-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/412/"
+    },
+    "wwdc2013-413": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/413/"
+    },
+    "wwdc2013-414": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/414/"
+    },
+    "wwdc2013-415": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/415/"
+    },
+    "wwdc2013-416": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/416/"
+    },
+    "wwdc2013-417": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/417/"
+    },
+    "wwdc2013-500": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/500/"
+    },
+    "wwdc2013-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/501/"
+    },
+    "wwdc2013-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/502/"
+    },
+    "wwdc2013-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/503/"
+    },
+    "wwdc2013-504": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/504/"
+    },
+    "wwdc2013-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/505/"
+    },
+    "wwdc2013-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/506/"
+    },
+    "wwdc2013-507": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/507/"
+    },
+    "wwdc2013-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/508/"
+    },
+    "wwdc2013-509": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/509/"
+    },
+    "wwdc2013-600": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/600/"
+    },
+    "wwdc2013-601": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/601/"
+    },
+    "wwdc2013-602": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/602/"
+    },
+    "wwdc2013-603": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/603/"
+    },
+    "wwdc2013-604": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/604/"
+    },
+    "wwdc2013-605": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/605/"
+    },
+    "wwdc2013-606": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/606/"
+    },
+    "wwdc2013-607": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/607/"
+    },
+    "wwdc2013-608": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/608/"
+    },
+    "wwdc2013-609": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/609/"
+    },
+    "wwdc2013-610": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/610/"
+    },
+    "wwdc2013-611": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/611/"
+    },
+    "wwdc2013-612": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/612/"
+    },
+    "wwdc2013-613": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/613/"
+    },
+    "wwdc2013-614": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/614/"
+    },
+    "wwdc2013-615": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/615/"
+    },
+    "wwdc2013-700": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/700/"
+    },
+    "wwdc2013-701": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/701/"
+    },
+    "wwdc2013-703": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/703/"
+    },
+    "wwdc2013-704": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/704/"
+    },
+    "wwdc2013-705": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/705/"
+    },
+    "wwdc2013-707": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/707/"
+    },
+    "wwdc2013-708": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/708/"
+    },
+    "wwdc2013-709": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/709/"
+    },
+    "wwdc2013-710": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/710/"
+    },
+    "wwdc2013-711": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/711/"
+    },
+    "wwdc2013-712": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/712/"
+    },
+    "wwdc2013-713": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/713/"
+    },
+    "wwdc2013-714": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2013/714/"
+    },
+    "wwdc2014-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/101/"
+    },
+    "wwdc2014-102": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/102/"
+    },
+    "wwdc2014-103": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/103/"
+    },
+    "wwdc2014-201": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/201/"
+    },
+    "wwdc2014-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/202/"
+    },
+    "wwdc2014-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/203/"
+    },
+    "wwdc2014-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/204/"
+    },
+    "wwdc2014-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/205/"
+    },
+    "wwdc2014-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/206/"
+    },
+    "wwdc2014-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/207/"
+    },
+    "wwdc2014-209": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/209/"
+    },
+    "wwdc2014-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/210/"
+    },
+    "wwdc2014-211": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/211/"
+    },
+    "wwdc2014-212": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/212/"
+    },
+    "wwdc2014-213": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/213/"
+    },
+    "wwdc2014-216": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/216/"
+    },
+    "wwdc2014-217": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/217/"
+    },
+    "wwdc2014-218": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/218/"
+    },
+    "wwdc2014-219": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/219/"
+    },
+    "wwdc2014-220": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/220/"
+    },
+    "wwdc2014-222": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/222/"
+    },
+    "wwdc2014-223": {
+      "decision": "video"
+    },
+    "wwdc2014-225": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/225/"
+    },
+    "wwdc2014-226": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/226/"
+    },
+    "wwdc2014-227": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/227/"
+    },
+    "wwdc2014-230": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/230/"
+    },
+    "wwdc2014-234": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/234/"
+    },
+    "wwdc2014-301": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/301/"
+    },
+    "wwdc2014-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/302/"
+    },
+    "wwdc2014-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/303/"
+    },
+    "wwdc2014-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/304/"
+    },
+    "wwdc2014-305": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/305/"
+    },
+    "wwdc2014-306": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/306/"
+    },
+    "wwdc2014-401": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/401/"
+    },
+    "wwdc2014-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/402/"
+    },
+    "wwdc2014-403": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/403/"
+    },
+    "wwdc2014-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/404/"
+    },
+    "wwdc2014-406": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/406/"
+    },
+    "wwdc2014-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/407/"
+    },
+    "wwdc2014-408": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/408/"
+    },
+    "wwdc2014-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/409/"
+    },
+    "wwdc2014-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/410/"
+    },
+    "wwdc2014-411": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/411/"
+    },
+    "wwdc2014-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/412/"
+    },
+    "wwdc2014-413": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/413/"
+    },
+    "wwdc2014-414": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/414/"
+    },
+    "wwdc2014-415": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/415/"
+    },
+    "wwdc2014-416": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/416/"
+    },
+    "wwdc2014-417": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/417/"
+    },
+    "wwdc2014-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/501/"
+    },
+    "wwdc2014-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/502/"
+    },
+    "wwdc2014-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/503/"
+    },
+    "wwdc2014-504": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/504/"
+    },
+    "wwdc2014-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/505/"
+    },
+    "wwdc2014-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/506/"
+    },
+    "wwdc2014-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/508/"
+    },
+    "wwdc2014-509": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/509/"
+    },
+    "wwdc2014-510": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/510/"
+    },
+    "wwdc2014-511": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/511/"
+    },
+    "wwdc2014-512": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/512/"
+    },
+    "wwdc2014-513": {
+      "decision": "video"
+    },
+    "wwdc2014-514": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/514/"
+    },
+    "wwdc2014-515": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/515/"
+    },
+    "wwdc2014-516": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/516/"
+    },
+    "wwdc2014-517": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/517/"
+    },
+    "wwdc2014-601": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/601/"
+    },
+    "wwdc2014-602": {
+      "decision": "video"
+    },
+    "wwdc2014-603": {
+      "decision": "video"
+    },
+    "wwdc2014-604": {
+      "decision": "video"
+    },
+    "wwdc2014-605": {
+      "decision": "video"
+    },
+    "wwdc2014-606": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/606/"
+    },
+    "wwdc2014-608": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/608/"
+    },
+    "wwdc2014-609": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/609/"
+    },
+    "wwdc2014-610": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/610/"
+    },
+    "wwdc2014-611": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/611/"
+    },
+    "wwdc2014-612": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/612/"
+    },
+    "wwdc2014-701": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/701/"
+    },
+    "wwdc2014-702": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/702/"
+    },
+    "wwdc2014-703": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/703/"
+    },
+    "wwdc2014-704": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/704/"
+    },
+    "wwdc2014-705": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/705/"
+    },
+    "wwdc2014-706": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/706/"
+    },
+    "wwdc2014-707": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/707/"
+    },
+    "wwdc2014-708": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/708/"
+    },
+    "wwdc2014-709": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/709/"
+    },
+    "wwdc2014-710": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/710/"
+    },
+    "wwdc2014-711": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/711/"
+    },
+    "wwdc2014-712": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/712/"
+    },
+    "wwdc2014-713": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/713/"
+    },
+    "wwdc2014-714": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/714/"
+    },
+    "wwdc2014-715": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/715/"
+    },
+    "wwdc2014-717": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/717/"
+    },
+    "wwdc2014-718": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2014/718/"
+    },
+    "wwdc2015-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/101/"
+    },
+    "wwdc2015-102": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/102/"
+    },
+    "wwdc2015-103": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/103/"
+    },
+    "wwdc2015-104": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/104/"
+    },
+    "wwdc2015-105": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/105/"
+    },
+    "wwdc2015-106": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/106/"
+    },
+    "wwdc2015-107": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/107/"
+    },
+    "wwdc2015-108": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/108/"
+    },
+    "wwdc2015-112": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/112/"
+    },
+    "wwdc2015-201": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/201/"
+    },
+    "wwdc2015-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/202/"
+    },
+    "wwdc2015-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/203/"
+    },
+    "wwdc2015-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/204/"
+    },
+    "wwdc2015-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/205/"
+    },
+    "wwdc2015-206": {
+      "decision": "video"
+    },
+    "wwdc2015-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/207/"
+    },
+    "wwdc2015-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/208/"
+    },
+    "wwdc2015-209": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/209/"
+    },
+    "wwdc2015-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/210/"
+    },
+    "wwdc2015-211": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/211/"
+    },
+    "wwdc2015-212": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/212/"
+    },
+    "wwdc2015-213": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/213/"
+    },
+    "wwdc2015-214": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/214/"
+    },
+    "wwdc2015-215": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/215/"
+    },
+    "wwdc2015-216": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/216/"
+    },
+    "wwdc2015-217": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/217/"
+    },
+    "wwdc2015-218": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/218/"
+    },
+    "wwdc2015-219": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/219/"
+    },
+    "wwdc2015-220": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/220/"
+    },
+    "wwdc2015-221": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/221/"
+    },
+    "wwdc2015-222": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/222/"
+    },
+    "wwdc2015-223": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/223/"
+    },
+    "wwdc2015-224": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/224/"
+    },
+    "wwdc2015-225": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/225/"
+    },
+    "wwdc2015-227": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/227/"
+    },
+    "wwdc2015-228": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/228/"
+    },
+    "wwdc2015-229": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/229/"
+    },
+    "wwdc2015-232": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/232/"
+    },
+    "wwdc2015-234": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/234/"
+    },
+    "wwdc2015-301": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/301/"
+    },
+    "wwdc2015-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/302/"
+    },
+    "wwdc2015-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/303/"
+    },
+    "wwdc2015-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/304/"
+    },
+    "wwdc2015-306": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/306/"
+    },
+    "wwdc2015-401": {
+      "decision": "video"
+    },
+    "wwdc2015-402": {
+      "decision": "video"
+    },
+    "wwdc2015-403": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/403/"
+    },
+    "wwdc2015-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/404/"
+    },
+    "wwdc2015-405": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/405/"
+    },
+    "wwdc2015-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/407/"
+    },
+    "wwdc2015-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/409/"
+    },
+    "wwdc2015-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/410/"
+    },
+    "wwdc2015-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/412/"
+    },
+    "wwdc2015-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/501/"
+    },
+    "wwdc2015-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/502/"
+    },
+    "wwdc2015-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/503/"
+    },
+    "wwdc2015-504": {
+      "decision": "video"
+    },
+    "wwdc2015-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/505/"
+    },
+    "wwdc2015-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/506/"
+    },
+    "wwdc2015-507": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/507/"
+    },
+    "wwdc2015-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/508/"
+    },
+    "wwdc2015-509": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/509/"
+    },
+    "wwdc2015-510": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/510/"
+    },
+    "wwdc2015-511": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/511/"
+    },
+    "wwdc2015-602": {
+      "decision": "video"
+    },
+    "wwdc2015-603": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/603/"
+    },
+    "wwdc2015-604": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/604/"
+    },
+    "wwdc2015-605": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/605/"
+    },
+    "wwdc2015-606": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/606/"
+    },
+    "wwdc2015-607": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/607/"
+    },
+    "wwdc2015-609": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/609/"
+    },
+    "wwdc2015-610": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/610/"
+    },
+    "wwdc2015-701": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/701/"
+    },
+    "wwdc2015-702": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/702/"
+    },
+    "wwdc2015-703": {
+      "decision": "video"
+    },
+    "wwdc2015-704": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/704/"
+    },
+    "wwdc2015-705": {
+      "decision": "video"
+    },
+    "wwdc2015-706": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/706/"
+    },
+    "wwdc2015-707": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/707/"
+    },
+    "wwdc2015-708": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/708/"
+    },
+    "wwdc2015-709": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/709/"
+    },
+    "wwdc2015-710": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/710/"
+    },
+    "wwdc2015-711": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/711/"
+    },
+    "wwdc2015-712": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/712/"
+    },
+    "wwdc2015-713": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/713/"
+    },
+    "wwdc2015-714": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/714/"
+    },
+    "wwdc2015-717": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/717/"
+    },
+    "wwdc2015-718": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/718/"
+    },
+    "wwdc2015-719": {
+      "decision": "video"
+    },
+    "wwdc2015-720": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/720/"
+    },
+    "wwdc2015-801": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/801/"
+    },
+    "wwdc2015-802": {
+      "decision": "video"
+    },
+    "wwdc2015-803": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/803/"
+    },
+    "wwdc2015-804": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2015/804/"
+    },
+    "wwdc2015-805": {
+      "decision": "video"
+    },
+    "wwdc2016-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/101/"
+    },
+    "wwdc2016-102": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/102/"
+    },
+    "wwdc2016-103": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/103/"
+    },
+    "wwdc2016-104": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/104/"
+    },
+    "wwdc2016-105": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/105/"
+    },
+    "wwdc2016-106": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/106/"
+    },
+    "wwdc2016-108": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/108/"
+    },
+    "wwdc2016-201": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/201/"
+    },
+    "wwdc2016-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/202/"
+    },
+    "wwdc2016-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/203/"
+    },
+    "wwdc2016-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/204/"
+    },
+    "wwdc2016-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/205/"
+    },
+    "wwdc2016-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/206/"
+    },
+    "wwdc2016-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/207/"
+    },
+    "wwdc2016-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/208/"
+    },
+    "wwdc2016-209": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/209/"
+    },
+    "wwdc2016-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/210/"
+    },
+    "wwdc2016-211": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/211/"
+    },
+    "wwdc2016-212": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/212/"
+    },
+    "wwdc2016-213": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/213/"
+    },
+    "wwdc2016-214": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/214/"
+    },
+    "wwdc2016-215": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/215/"
+    },
+    "wwdc2016-217": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/217/"
+    },
+    "wwdc2016-218": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/218/"
+    },
+    "wwdc2016-219": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/219/"
+    },
+    "wwdc2016-220": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/220/"
+    },
+    "wwdc2016-221": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/221/"
+    },
+    "wwdc2016-222": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/222/"
+    },
+    "wwdc2016-223": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/223/"
+    },
+    "wwdc2016-224": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/224/"
+    },
+    "wwdc2016-225": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/225/"
+    },
+    "wwdc2016-226": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/226/"
+    },
+    "wwdc2016-227": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/227/"
+    },
+    "wwdc2016-228": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/228/"
+    },
+    "wwdc2016-229": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/229/"
+    },
+    "wwdc2016-230": {
+      "decision": "video"
+    },
+    "wwdc2016-232": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/232/"
+    },
+    "wwdc2016-233": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/233/"
+    },
+    "wwdc2016-234": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/234/"
+    },
+    "wwdc2016-235": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/235/"
+    },
+    "wwdc2016-236": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/236/"
+    },
+    "wwdc2016-237": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/237/"
+    },
+    "wwdc2016-238": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/238/"
+    },
+    "wwdc2016-239": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/239/"
+    },
+    "wwdc2016-240": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/240/"
+    },
+    "wwdc2016-242": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/242/"
+    },
+    "wwdc2016-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/302/"
+    },
+    "wwdc2016-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/303/"
+    },
+    "wwdc2016-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/304/"
+    },
+    "wwdc2016-305": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/305/"
+    },
+    "wwdc2016-401": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/401/"
+    },
+    "wwdc2016-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/402/"
+    },
+    "wwdc2016-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/404/"
+    },
+    "wwdc2016-405": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/405/"
+    },
+    "wwdc2016-406": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/406/"
+    },
+    "wwdc2016-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/407/"
+    },
+    "wwdc2016-408": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/408/"
+    },
+    "wwdc2016-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/409/"
+    },
+    "wwdc2016-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/410/"
+    },
+    "wwdc2016-411": {
+      "decision": "video"
+    },
+    "wwdc2016-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/412/"
+    },
+    "wwdc2016-413": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/413/"
+    },
+    "wwdc2016-414": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/414/"
+    },
+    "wwdc2016-415": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/415/"
+    },
+    "wwdc2016-417": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/417/"
+    },
+    "wwdc2016-420": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/420/"
+    },
+    "wwdc2016-501": {
+      "decision": "video"
+    },
+    "wwdc2016-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/502/"
+    },
+    "wwdc2016-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/503/"
+    },
+    "wwdc2016-504": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/504/"
+    },
+    "wwdc2016-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/505/"
+    },
+    "wwdc2016-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/506/"
+    },
+    "wwdc2016-507": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/507/"
+    },
+    "wwdc2016-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/508/"
+    },
+    "wwdc2016-601": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/601/"
+    },
+    "wwdc2016-602": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/602/"
+    },
+    "wwdc2016-603": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/603/"
+    },
+    "wwdc2016-604": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/604/"
+    },
+    "wwdc2016-605": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/605/"
+    },
+    "wwdc2016-606": {
+      "decision": "video"
+    },
+    "wwdc2016-607": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/607/"
+    },
+    "wwdc2016-609": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/609/"
+    },
+    "wwdc2016-610": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/610/"
+    },
+    "wwdc2016-611": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/611/"
+    },
+    "wwdc2016-612": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/612/"
+    },
+    "wwdc2016-701": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/701/"
+    },
+    "wwdc2016-702": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/702/"
+    },
+    "wwdc2016-703": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/703/"
+    },
+    "wwdc2016-704": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/704/"
+    },
+    "wwdc2016-705": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/705/"
+    },
+    "wwdc2016-706": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/706/"
+    },
+    "wwdc2016-707": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/707/"
+    },
+    "wwdc2016-708": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/708/"
+    },
+    "wwdc2016-709": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/709/"
+    },
+    "wwdc2016-710": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/710/"
+    },
+    "wwdc2016-711": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/711/"
+    },
+    "wwdc2016-712": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/712/"
+    },
+    "wwdc2016-713": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/713/"
+    },
+    "wwdc2016-714": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/714/"
+    },
+    "wwdc2016-715": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/715/"
+    },
+    "wwdc2016-716": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/716/"
+    },
+    "wwdc2016-719": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/719/"
+    },
+    "wwdc2016-720": {
+      "decision": "video"
+    },
+    "wwdc2016-801": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/801/"
+    },
+    "wwdc2016-802": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/802/"
+    },
+    "wwdc2016-803": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/803/"
+    },
+    "wwdc2016-804": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2016/804/"
+    },
+    "wwdc2016-805": {
+      "decision": "video"
+    },
+    "wwdc2017-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/101/"
+    },
+    "wwdc2017-102": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/102/"
+    },
+    "wwdc2017-110": {
+      "decision": "video"
+    },
+    "wwdc2017-201": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/201/"
+    },
+    "wwdc2017-202": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/202/"
+    },
+    "wwdc2017-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/203/"
+    },
+    "wwdc2017-204": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/204/"
+    },
+    "wwdc2017-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/205/"
+    },
+    "wwdc2017-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/206/"
+    },
+    "wwdc2017-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/207/"
+    },
+    "wwdc2017-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/208/"
+    },
+    "wwdc2017-209": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/209/"
+    },
+    "wwdc2017-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/210/"
+    },
+    "wwdc2017-211": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/211/"
+    },
+    "wwdc2017-212": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/212/"
+    },
+    "wwdc2017-213": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/213/"
+    },
+    "wwdc2017-214": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/214/"
+    },
+    "wwdc2017-215": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/215/"
+    },
+    "wwdc2017-216": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/216/"
+    },
+    "wwdc2017-217": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/217/"
+    },
+    "wwdc2017-218": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/218/"
+    },
+    "wwdc2017-219": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/219/"
+    },
+    "wwdc2017-220": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/220/"
+    },
+    "wwdc2017-221": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/221/"
+    },
+    "wwdc2017-222": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/222/"
+    },
+    "wwdc2017-223": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/223/"
+    },
+    "wwdc2017-224": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/224/"
+    },
+    "wwdc2017-225": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/225/"
+    },
+    "wwdc2017-226": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/226/"
+    },
+    "wwdc2017-227": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/227/"
+    },
+    "wwdc2017-228": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/228/"
+    },
+    "wwdc2017-229": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/229/"
+    },
+    "wwdc2017-231": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/231/"
+    },
+    "wwdc2017-232": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/232/"
+    },
+    "wwdc2017-234": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/234/"
+    },
+    "wwdc2017-235": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/235/"
+    },
+    "wwdc2017-236": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/236/"
+    },
+    "wwdc2017-237": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/237/"
+    },
+    "wwdc2017-238": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/238/"
+    },
+    "wwdc2017-239": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/239/"
+    },
+    "wwdc2017-241": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/241/"
+    },
+    "wwdc2017-242": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/242/"
+    },
+    "wwdc2017-243": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/243/"
+    },
+    "wwdc2017-244": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/244/"
+    },
+    "wwdc2017-245": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/245/"
+    },
+    "wwdc2017-301": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/301/"
+    },
+    "wwdc2017-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/302/"
+    },
+    "wwdc2017-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/303/"
+    },
+    "wwdc2017-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/304/"
+    },
+    "wwdc2017-305": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/305/"
+    },
+    "wwdc2017-401": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/401/"
+    },
+    "wwdc2017-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/402/"
+    },
+    "wwdc2017-403": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/403/"
+    },
+    "wwdc2017-404": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/404/"
+    },
+    "wwdc2017-405": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/405/"
+    },
+    "wwdc2017-406": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/406/"
+    },
+    "wwdc2017-407": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/407/"
+    },
+    "wwdc2017-408": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/408/"
+    },
+    "wwdc2017-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/409/"
+    },
+    "wwdc2017-410": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/410/"
+    },
+    "wwdc2017-411": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/411/"
+    },
+    "wwdc2017-412": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/412/"
+    },
+    "wwdc2017-416": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/416/"
+    },
+    "wwdc2017-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/501/"
+    },
+    "wwdc2017-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/502/"
+    },
+    "wwdc2017-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/503/"
+    },
+    "wwdc2017-504": {
+      "decision": "video"
+    },
+    "wwdc2017-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/505/"
+    },
+    "wwdc2017-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/506/"
+    },
+    "wwdc2017-507": {
+      "decision": "video"
+    },
+    "wwdc2017-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/508/"
+    },
+    "wwdc2017-509": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/509/"
+    },
+    "wwdc2017-510": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/510/"
+    },
+    "wwdc2017-511": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/511/"
+    },
+    "wwdc2017-512": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/512/"
+    },
+    "wwdc2017-601": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/601/"
+    },
+    "wwdc2017-602": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/602/"
+    },
+    "wwdc2017-603": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/603/"
+    },
+    "wwdc2017-605": {
+      "decision": "video"
+    },
+    "wwdc2017-606": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/606/"
+    },
+    "wwdc2017-607": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/607/"
+    },
+    "wwdc2017-608": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/608/"
+    },
+    "wwdc2017-609": {
+      "decision": "video"
+    },
+    "wwdc2017-610": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/610/"
+    },
+    "wwdc2017-701": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/701/"
+    },
+    "wwdc2017-702": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/702/"
+    },
+    "wwdc2017-703": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/703/"
+    },
+    "wwdc2017-704": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/704/"
+    },
+    "wwdc2017-705": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/705/"
+    },
+    "wwdc2017-707": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/707/"
+    },
+    "wwdc2017-708": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/708/"
+    },
+    "wwdc2017-709": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/709/"
+    },
+    "wwdc2017-710": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/710/"
+    },
+    "wwdc2017-711": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/711/"
+    },
+    "wwdc2017-712": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/712/"
+    },
+    "wwdc2017-713": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/713/"
+    },
+    "wwdc2017-715": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/715/"
+    },
+    "wwdc2017-716": {
+      "decision": "video"
+    },
+    "wwdc2017-803": {
+      "decision": "video"
+    },
+    "wwdc2017-804": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/804/"
+    },
+    "wwdc2017-806": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/806/"
+    },
+    "wwdc2017-808": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2017/808/"
+    },
+    "wwdc2018-101": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/101/"
+    },
+    "wwdc2018-102": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/102/"
+    },
+    "wwdc2018-103": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/103/"
+    },
+    "wwdc2018-104": {
+      "decision": "exclude"
+    },
+    "wwdc2018-203": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/203/"
+    },
+    "wwdc2018-204": {
+      "decision": "video"
+    },
+    "wwdc2018-205": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/205/"
+    },
+    "wwdc2018-206": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/206/"
+    },
+    "wwdc2018-207": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/207/"
+    },
+    "wwdc2018-208": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/208/"
+    },
+    "wwdc2018-209": {
+      "decision": "video"
+    },
+    "wwdc2018-210": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/210/"
+    },
+    "wwdc2018-212": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/212/"
+    },
+    "wwdc2018-213": {
+      "decision": "video"
+    },
+    "wwdc2018-215": {
+      "decision": "video"
+    },
+    "wwdc2018-216": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/216/"
+    },
+    "wwdc2018-218": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/218/"
+    },
+    "wwdc2018-219": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/219/"
+    },
+    "wwdc2018-222": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/222/"
+    },
+    "wwdc2018-223": {
+      "decision": "video"
+    },
+    "wwdc2018-224": {
+      "decision": "video"
+    },
+    "wwdc2018-226": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/226/"
+    },
+    "wwdc2018-227": {
+      "decision": "video"
+    },
+    "wwdc2018-228": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/228/"
+    },
+    "wwdc2018-230": {
+      "decision": "video"
+    },
+    "wwdc2018-231": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/231/"
+    },
+    "wwdc2018-232": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/232/"
+    },
+    "wwdc2018-234": {
+      "decision": "video"
+    },
+    "wwdc2018-236": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/236/"
+    },
+    "wwdc2018-237": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/237/"
+    },
+    "wwdc2018-238": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/238/"
+    },
+    "wwdc2018-239": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/239/"
+    },
+    "wwdc2018-241": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/241/"
+    },
+    "wwdc2018-301": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/301/"
+    },
+    "wwdc2018-302": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/302/"
+    },
+    "wwdc2018-303": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/303/"
+    },
+    "wwdc2018-304": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/304/"
+    },
+    "wwdc2018-402": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/402/"
+    },
+    "wwdc2018-409": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/409/"
+    },
+    "wwdc2018-410": {
+      "decision": "video"
+    },
+    "wwdc2018-413": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/413/"
+    },
+    "wwdc2018-414": {
+      "decision": "video"
+    },
+    "wwdc2018-416": {
+      "decision": "video"
+    },
+    "wwdc2018-418": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/418/"
+    },
+    "wwdc2018-501": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/501/"
+    },
+    "wwdc2018-502": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/502/"
+    },
+    "wwdc2018-503": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/503/"
+    },
+    "wwdc2018-504": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/504/"
+    },
+    "wwdc2018-505": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/505/"
+    },
+    "wwdc2018-506": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/506/"
+    },
+    "wwdc2018-507": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/507/"
+    },
+    "wwdc2018-508": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/508/"
+    },
+    "wwdc2018-601": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/601/"
+    },
+    "wwdc2018-603": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/603/"
+    },
+    "wwdc2018-604": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/604/"
+    },
+    "wwdc2018-605": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/605/"
+    },
+    "wwdc2018-606": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/606/"
+    },
+    "wwdc2018-607": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/607/"
+    },
+    "wwdc2018-608": {
+      "decision": "video"
+    },
+    "wwdc2018-609": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/609/"
+    },
+    "wwdc2018-610": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/610/"
+    },
+    "wwdc2018-611": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/611/"
+    },
+    "wwdc2018-612": {
+      "decision": "video"
+    },
+    "wwdc2018-701": {
+      "decision": "video"
+    },
+    "wwdc2018-703": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/703/"
+    },
+    "wwdc2018-704": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/704/"
+    },
+    "wwdc2018-706": {
+      "decision": "video"
+    },
+    "wwdc2018-707": {
+      "decision": "video"
+    },
+    "wwdc2018-708": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/708/"
+    },
+    "wwdc2018-709": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/709/"
+    },
+    "wwdc2018-712": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/712/"
+    },
+    "wwdc2018-713": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/713/"
+    },
+    "wwdc2018-714": {
+      "decision": "video"
+    },
+    "wwdc2018-715": {
+      "decision": "video"
+    },
+    "wwdc2018-716": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/716/"
+    },
+    "wwdc2018-717": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/717/"
+    },
+    "wwdc2018-718": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/718/"
+    },
+    "wwdc2018-719": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/719/"
+    },
+    "wwdc2018-721": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/721/"
+    },
+    "wwdc2018-803": {
+      "decision": "video"
+    },
+    "wwdc2018-808": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/808/"
+    },
+    "wwdc2018-809": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/809/"
+    },
+    "wwdc2018-810": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2018/810/"
+    },
+    "wwdc2018-811": {
+      "decision": "video"
+    },
+    "wwdc2019-113": {
+      "decision": "exclude"
+    },
+    "wwdc2019-118": {
+      "decision": "exclude"
+    },
+    "wwdc2019-122": {
+      "decision": "exclude"
+    },
+    "wwdc2019-201": {
+      "decision": "video"
+    },
+    "wwdc2019-211": {
+      "decision": "video"
+    },
+    "wwdc2019-217": {
+      "decision": "video"
+    },
+    "wwdc2019-218": {
+      "decision": "video"
+    },
+    "wwdc2019-223": {
+      "decision": "video"
+    },
+    "wwdc2019-225": {
+      "decision": "video"
+    },
+    "wwdc2019-227": {
+      "decision": "video"
+    },
+    "wwdc2019-228": {
+      "decision": "video"
+    },
+    "wwdc2019-241": {
+      "decision": "video"
+    },
+    "wwdc2019-242": {
+      "decision": "video"
+    },
+    "wwdc2019-305": {
+      "decision": "video"
+    },
+    "wwdc2019-402": {
+      "decision": "video"
+    },
+    "wwdc2019-405": {
+      "decision": "video"
+    },
+    "wwdc2019-409": {
+      "decision": "video"
+    },
+    "wwdc2019-414": {
+      "decision": "video"
+    },
+    "wwdc2019-421": {
+      "decision": "video"
+    },
+    "wwdc2019-501": {
+      "decision": "video"
+    },
+    "wwdc2019-503": {
+      "decision": "video"
+    },
+    "wwdc2019-601": {
+      "decision": "video"
+    },
+    "wwdc2019-602": {
+      "decision": "video"
+    },
+    "wwdc2019-606": {
+      "decision": "video"
+    },
+    "wwdc2019-608": {
+      "decision": "video"
+    },
+    "wwdc2019-609": {
+      "decision": "video"
+    },
+    "wwdc2019-611": {
+      "decision": "video"
+    },
+    "wwdc2019-612": {
+      "decision": "video"
+    },
+    "wwdc2019-613": {
+      "decision": "video"
+    },
+    "wwdc2019-614": {
+      "decision": "video"
+    },
+    "wwdc2019-702": {
+      "decision": "video"
+    },
+    "wwdc2019-708": {
+      "decision": "video"
+    },
+    "wwdc2019-714": {
+      "decision": "video"
+    },
+    "wwdc2019-801": {
+      "decision": "video"
+    },
+    "wwdc2019-804": {
+      "decision": "exclude"
+    },
+    "wwdc2019-901": {
+      "decision": "video"
+    },
+    "wwdc2020-10690": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2020/10690/"
+    },
+    "wwdc2021-10293": {
+      "decision": "transcript",
+      "transcriptURL": "https://nonstrict.eu/wwdcindex/wwdc2021/10293/"
+    },
+    "wwdc2025-364": {
+      "decision": "video"
+    },
+    "wwdc2010-??": {
+      "decision": "exclude"
+    }
+  }
+}
