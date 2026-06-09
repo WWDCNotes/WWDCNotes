@@ -1,6 +1,6 @@
 # WWDC26
 
-Xcode 27, Swift, iOS/iPadOS/macOS/tvOS/visionOS/watchOS 27. New APIs: Evaluations, Core AI, Music Understanding, Foundation Models updates, and more.
+Xcode 27, Swift, any Apple OS 27. New APIs: Evaluations, Core AI, Music Understanding, Foundation Models updates, and more.
 
 @Metadata {
    @TitleHeading("Overview")
