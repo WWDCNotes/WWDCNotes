@@ -1,0 +1,18 @@
+# Source Control Management in Xcode
+
+Xcode provides powerful ways to work directly with Git and Subversion repositories. Learn how Xcode's SCM features can help you work more efficiently with your team, juggle numerous development branches, find and fix bugs, and better understand the history of your code with the Version editor.
+
+@Metadata {
+   @TitleHeading("WWDC12")
+   @PageKind(sampleCode)
+   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2012/411/", purpose: link, label: "Read Transcript")
+
+   @Contributors {
+      @GitHubUser(<replace this with your GitHub handle>)
+   }
+}
+
+😱 "No Overview Available!"
+
+Be the hero to change that by reading the transcript and providing notes! It's super easy:
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

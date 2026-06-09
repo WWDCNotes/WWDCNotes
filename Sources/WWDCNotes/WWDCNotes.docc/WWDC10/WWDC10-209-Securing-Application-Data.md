@@ -1,0 +1,18 @@
+# Securing Application Data
+
+Securing data is an important feature of any application. Learn how to use the Keychain and get recipes to protect application data. Understand how to determine data caching policies, what to do when a device locks, and how to handle upgrades and restores of iPhone OS devices.
+
+@Metadata {
+   @TitleHeading("WWDC10")
+   @PageKind(sampleCode)
+   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2010/209/", purpose: link, label: "Read Transcript")
+
+   @Contributors {
+      @GitHubUser(<replace this with your GitHub handle>)
+   }
+}
+
+😱 "No Overview Available!"
+
+Be the hero to change that by reading the transcript and providing notes! It's super easy:
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)

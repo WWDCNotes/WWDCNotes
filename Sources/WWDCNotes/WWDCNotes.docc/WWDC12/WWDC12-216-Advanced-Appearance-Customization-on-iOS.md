@@ -1,0 +1,18 @@
+# Advanced Appearance Customization on iOS
+
+Examine tips and tricks on how to customize UIKit controls. Learn best practices on how to create assets for customizing the appearance of your app and how other apps use the appearance proxy on iOS to create an immersive user experience.
+
+@Metadata {
+   @TitleHeading("WWDC12")
+   @PageKind(sampleCode)
+   @CallToAction(url: "https://nonstrict.eu/wwdcindex/wwdc2012/216/", purpose: link, label: "Read Transcript")
+
+   @Contributors {
+      @GitHubUser(<replace this with your GitHub handle>)
+   }
+}
+
+😱 "No Overview Available!"
+
+Be the hero to change that by reading the transcript and providing notes! It's super easy:
+ [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
