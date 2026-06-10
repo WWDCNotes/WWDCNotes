@@ -12,6 +12,11 @@ Discover the latest enhancements to SwiftData. We’ll show you how to persist c
    }
 }
 
+## Key Takeaways
+- 🗄️ Sectioned fetch requests supported by @Query
+- 🌈 Persist custom attribute types via Codable
+- 🕵️ Observe changes outside of SwiftUI views
+
 ## Sectioning your fetches
 - `@Query` now supports sectioned fetches
 - Access query from property wrapper via underscore-prefix name
