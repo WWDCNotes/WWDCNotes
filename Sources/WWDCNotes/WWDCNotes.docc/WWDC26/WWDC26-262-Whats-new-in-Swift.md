@@ -8,212 +8,299 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
    @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2026/262", purpose: link, label: "Watch Video (32 min)")
 
    @Contributors {
+      @GitHubUser(VictorPuga)
       @GitHubUser(leogdion)
    }
 }
 
-- 🧹 No more parentheses around optional some/any types
-- 🛡️ Task cancellation shields protect cleanup code
-- 🔓 New borrow/mutate accessors and Iterable protocol avoid copies
-- 🤝 New @c attribute exposes Swift functions to C
+## Summary
+
+- Swift 6.3 and 6.4 bring significant language and library improvements, enhancing developer efficiency and code safety.
+- New tools for task cancellation, file path manipulation, and API deprecation handling improve code management.
+- Performance tuning features in Swift simplify optimizing code without sacrificing safety.
+- Enhanced interoperability and new SDKs expand Swift's usability across platforms like Android and web apps.
+- Swift's ownership system and new APIs make high-performance programming safer and more accessible.
 
 ## Presenters
 
 * Becca, Swift Team
 * Evan, Swift Team
 
-An update on the work done during the development of Swift 6.3 and 6.4, spanning everyday language ergonomics, library updates, interoperability and platform support, performance tuning, and the future of Swift.
+## Language Improvements
 
-## Everyday ergonomics
+- **Optional Handling:** Swift 6.4 removes the need for parentheses with `some` or `any` and optional types.
+- **Error Handling:** Warnings for unhandled errors in concurrency tasks.
+- **Async Functions:** Now callable from a `defer` block.
+- **Sendable Checking:** `weak let` supports immutability, and `~Sendable` syntax for non-sendable types (doesn't stop subclasses from being `Sendable`).
+- **Initializer Enhancements:** Structs with mixed visibility properties get a second member-wise initializer.
 
-* No longer need to use parentheses for optional existential and opaque types:
+  ```swift
+   struct Briefing {
+      internal var topic: String
+      internal var scheduledAt: Date
+      private  var attendees: [Person] = []
+   }
 
-```swift
-(some Rocket)?
-(any Rocket)?
-```
+   // Generated memberwise initializers:
+   // extension Briefing {
+   //     private init(topic: String, scheduledAt: Date, attendees: [Person] = []) { 
+   //          self.topic = topic
+   //          self.scheduledAt = scheduledAt
+   //          self.attendees = attendees
+   //     }
+   // 
+   //     internal init(topic: String, scheduledAt: Date) {
+   //          self.topic = topic
+   //          self.scheduledAt = scheduledAt
+   //          self.attendees = []
+   //     }
+   // }
+  ```
 
-becomes:
+- **Cross-Platform Availability:** `anyAppleOS` condenses platform names for OS availability attributes (only supported for OSes 26 and newer).
 
-```swift
-some Rocket?
-any Rocket?
-```
+   ```swift
+   extension Mission {
+      @available(anyAppleOS 27, *)
+      func showStatus() { ... }
 
-* Xcode gives warnings when you don't handle an error inside a `Task`
-* `weak let` allows for `Sendable` classes
-* Mark types as not `Sendable` with `~Sendable` (doesn't stop subclasses from being `Sendable`)
-* Swift generates initializers for each ACL available:
+      @available(anyAppleOS 27, *)
+      @available(tvOS, unavailable)
+      func launch() { ... }
+  
+      #if os(anyAppleOS)
+      func makeLiveActivityWidget() -> some Widget { ... }
+      #endif
+   }
+   ```
 
-```swift
-struct Briefing {
-    internal var topic: String
-    internal var scheduledAt: Date
-    private var attendees: [Person] = []
-}
+- **Deprecated APIs:** `@diagnose` attribute can manage warnings for deprecated APIs.
 
-// Generated memberwise initializers:
-// extension Briefing {
-//     private init(topic: String, scheduledAt: Date, attendees: [Person] = []) {
-//          self.topic = topic
-//          self.scheduledAt = scheduledAt
-//          self.attendees = attendees
-//     }
-//
-//     internal init(topic: String, scheduledAt: Date) {
-//          self.topic = topic
-//          self.scheduledAt = scheduledAt
-//          self.attendees = []
-//     }
-// }
-```
+  ```swift
+   @diagnose(DeprecatedDeclaration, as: ignored, reason: "Flying with surplus hardware")
+   func makeApolloSoyuzMission() -> Mission {
+      CrewedMission(
+         rocket: makeSaturnIRocket(),
+         payload: makeApolloCSM(),
+         crew: [.daniellePoole, .nathanMorrison]
+      )
+   }
 
-* New `@available(anyAppleOS ...)` attribute and `#if os(anyAppleOS)` for platform availability across all of a year's releases — only supported for OSes 26 and newer:
+   @diagnose(StrictMemorySafety, as: warning)
+   func uplinkCommand(from receiver: inout Receiver, to computer: inout Computer) {
+      let commandSize = receiver.receiveInt()
+      receiver.withReceivedData(byteCount: commandSize) {
+         computer.receiveUplinkedCommand($0)
+      }
+   }
 
-```swift
-extension Mission {
-    @available(macOS 27, iOS 27, watchOS 27, tvOS 27, visionOS 27, *)
-    func showStatus() { ... }
+   @diagnose(ErrorInFutureSwiftVersion, as: error)
+   func fetchPosition() -> (x: Double, y: Double, z: Double) {
+      return self.rotation
+   }
+  ```
 
-    @available(macOS 27, iOS 27, watchOS 27, visionOS 27, *)
-    @available(tvOS, unavailable)
-    func launch() { ... }
+- **Module Selectors:** New `::` syntax disambiguates which module a declaration comes from.
 
-    #if os(macOS) || os(iOS) || os(watchOS) || os(tvOS) || os(visionOS)
-    func makeLiveActivityWidget() -> some Widget { ... }
-    #endif
-}
-```
+  ```swift
+   import Rocket
+   import GiftShopToys
 
-becomes:
+   let rocket1 = SaturnV()            // could mean `Rocket::SaturnV` or `GiftShopToys::SaturnV`
+   let rocket2 = Rocket.SaturnV()     // prefers `Rocket::Rocket.SaturnV`
+   let rocket3 = Rocket::SaturnV()    // correctly finds `Rocket::SaturnV`
+  ```
 
-```swift
-extension Mission {
-    @available(anyAppleOS 27, *)
-    func showStatus() { ... }
+## Library Updates
 
-    @available(anyAppleOS 27, *)
-    @available(tvOS, unavailable)
-    func launch() { ... }
+- **Standard Library:** New tools for task cancellation, dictionary transformations, and file paths.
 
-    #if os(anyAppleOS)
-    func makeLiveActivityWidget() -> some Widget { ... }
-    #endif
-}
-```
+  ```swift
+   // Radio for help
 
-* `@diagnose` macro for enabling, ignoring, and escalating warnings:
+   extension Radio {
+      func send(_ data: [UInt8]) {
+         if Task.isCancelled { return }
+         // ...
+      }
+   }
 
-```swift
-@diagnose(DeprecatedDeclaration, as: ignored, reason: "Flying with surplus hardware")
-func makeApolloSoyuzMission() -> Mission {
-    CrewedMission(
-        rocket: makeSaturnIRocket(),
-        payload: makeApolloCSM(),
-        crew: [.daniellePoole, .nathanMorrison]
-    )
-}
+   extension EmergencyTransponder {
+      func sendSOS() {
+         withTaskCancellationShield {
+            radio.send(makeSOSPacket())
+         }
+      }
+   }
+  ```
 
-@diagnose(StrictMemorySafety, as: warning)
-func uplinkCommand(from receiver: inout Receiver, to computer: inout Computer) {
-    let commandSize = receiver.receiveInt()
-    receiver.withReceivedData(byteCount: commandSize) {
-        computer.receiveUplinkedCommand($0)
-    }
-}
+  ```swift
+   // Map values with keys
 
-@diagnose(ErrorInFutureSwiftVersion, as: error)
-func fetchPosition() -> (x: Double, y: Double, z: Double) {
-    return self.rotation
-}
-```
+   func makeCalendarDisplayNames(for missions: [Mission: LaunchWindow]) -> [Mission: String] {
+      missions.mapKeyedValues { mission, launchWindow in
+         makeDisplayName(for: mission, in: launchWindow)
+      }
+   }
+  ```
 
-* `::` for module selectors:
+  ```swift
+   // FilePath handling macOS-named resources
 
-```swift
-import Rocket
-import GiftShopToys
+   var path: FilePath = "/var/www/static"
+   path.components.append("WWDC")
+   print(path.components)
+   // [ "var", "www", "static", "WWDC" ]
 
-let rocket1 = SaturnV()            // could mean `Rocket::SaturnV` or `GiftShopToys::SaturnV`
-let rocket2 = Rocket.SaturnV()     // prefers `Rocket::Rocket.SaturnV`
-let rocket3 = Rocket::SaturnV()    // correctly finds `Rocket::SaturnV`
-```
+   var path: FilePath = "/var/www/static/..namedresource/rsrc"
+   print(path.components)
+   // [ "var", "www", "static" ]
+  ```
 
-## Library updates
+- **Swift Testing:** Enhanced control over test behavior, including non-fatal issues, dynamic test cancellation, and new `swift test` options `--maximum-repetitions` and `--repeat-unit`.
 
-### Standard library
+   ```swift
+   // Issue severity
 
-* `withTaskCancellationShield` — `Task.isCancelled` returns `false` inside the shield
-* `mapKeyedValues` — passes both key and value, instead of just the value like `mapValues`:
+   @Test(arguments: allRockets)
+   func testBurn(rocket: Rocket) throws {
+      rocket.burn(for: .seconds(150))
+      let remaining = rocket.propellantKg / rocket.totalPropellantKg
 
-```swift
-// Map values with keys
+      if remaining < 0.10 {
+         Issue.record(
+               "\(rocket.name) remaining fuel is below 10% reserve target",
+               severity: .warning
+         )
+      }
 
-func makeCalendarDisplayNames(for missions: [Mission: LaunchWindow]) -> [Mission: String] {
-    missions.mapKeyedValues { mission, launchWindow in
-        makeDisplayName(for: mission, in: launchWindow)
-    }
-}
-```
+      #expect(remaining > 0.02, "\(rocket.name) propellant critically low - abort")
+   }
+   ```
 
-* `FilePath` for cross-platform filepath handling
+   ```swift
+   // Test Cancellation
 
-### Swift Testing
+   @Test(arguments: allRockets)
+   func testBurn(rocket: Rocket) throws {
+      // solid-fuel rocket engines can't be stopped
+      if rocket.engineType == .solid {
+         try Test.cancel("\(rocket.name) has solid fuel")
+      }
+   
+      rocket.burn(for: .seconds(150))
+      let remaining = rocket.propellantKg / rocket.totalPropellantKg
 
-* Allows for `Issue.record` severity
-* `Test.cancel` for cancelling tests — especially for parameterized tests
-* `swift test` with `--maximum-repetitions` and `--repeat-unit`
+      if remaining < 0.10 {
+         Issue.record(
+               "\(rocket.name) remaining fuel is below 10% reserve target",
+               severity: .warning
+         )
+      }
 
-### Subprocess 1.0
+      #expect(remaining > 0.02, "\(rocket.name) propellant critically low - abort")
+   }
+   ```
 
-* Simplifies running processes for all operating systems and uses modern Swift 6 paradigms
+- **Subprocess Package:** Refined APIs with improved error handling and cross-platform support.
 
-### Foundation
+   ```swift
+   // Subprocess output streaming
 
-* New `ProgressManager` using structured concurrency
-* Faster `Data` operations
-* Reduced bridging between Swift and Objective-C types
+   let result = try await Subprocess.run(.name("ls"),
+                                         input: .none,
+                                         output: .sequence,
+                                         error: .string(limit:4096)) { execution in
+         execution.standardOtput.strings().filter { $0.hasSuffix(".obj") }
+   }
 
-## Beyond Xcode: interoperability & platforms
+   for try await objectFiles in result.closureOutput {
+      print("Object file: \(objectFile)")
+   }
+   ```
 
-### Exposing Swift to C
+- **Foundation Enhancements:** Progress manager for async/await, faster data operations, and unification of URL types.
 
-* New `@c` attribute for exposing Swift to C
+  ```swift
+   // Progress reporting
 
-### Swift on more platforms
+   let manager = ProgressManager(totalCount: 100)
+   try await rocket.launch(mission.subprogress(assigningCount: 100))
 
-* Swift supports calling async and throwing Swift functions from Java
-* Official Swift SDK for Android available on swift.org
+   extension Rocket {
+      func launch(_ progress: consuming Subprogress? = nil) async throws {
+         let stage = progress?.start(totalCount: 3)
+         try await ignite(); stage?.complete(count: 1)
+         try await liftoff(); stage?.complete(count: 1)
+         try await stageSeparation(); stage?.complete(count: 1)
+      }
+   }
+  ```
 
-### Embedded Swift
+## Performance Tuning
 
-* Supports existential types and untyped throws
+- **Optimizer Control:** New `inline(always)` attribute and `@specialized` for fine-tuning optimization.
 
-## Performance tuning
+   ```swift
+   @inline(never) // or @inline(always)
+   func makeInts(randomized: Bool) -> [256 of Int] {
+      if randomized {
+         InlineArray { _ in Int.random(in: (.min)...(.max)) }
+      } else {
+         InlineArray(repeating: 0)
+      }
+   }
+   ```
 
-### Controlling the optimizer
+   ```swift
+   @specialized(where Values == [UInt8])
+   func histogram<Values>(of values: Values) -> [256 of Int] where Values: Sequence<UInt8> {
+      var result = makeInts(randomized: false)
+   
+      for value in values {
+         result[Int(value)] += 1
+      }
+   
+      return result
+   }
+   ```
 
-* More granular control over inlining optimization with `@inline(never)` and `@inline(always)`
-* New `@specialized` attribute to let external libraries know about specific concrete type implementations
+- **Ownership System:** Enhancements allow non-copyable types and improved handling of `Equatable` and `Comparable`.
+- **Iterables:** New `Iterable` protocol for more efficient loops.
+- **Accessors:** `borrow` and `mutate` accessors replace `get` and `set` for performance gains.
 
-### Ownership system
+  ```swift
+   @safe public struct UniqueBox<Value: ~Copyable>: ~Copyable {
+      private let valuePointer: UnsafeMutablePointer<Value>
 
-* `Equatable`/`Comparable`/`Hashable` are available on noncopyable types; and `Equatable`/`Comparable` are available on non-escapable types
-* Associated types can now be non-copyable or non-escapable
+      public init(_ value: consuming Value) {
+         valuePointer = UnsafeMutablePointer.allocate(capacity: 1)
+         valuePointer.initialize(to: value)
+      }
 
-### The Iterable protocol
+      public var value: Value {
+         borrow { valuePointer.pointee }
+         mutate { &valuePointer.pointee }
+      }
 
-* New `Iterable` protocol allows for _borrowing_ and prohibits _mutating_
+      deinit {
+         valuePointer.deinitialize(count: 1)
+         valuePointer.deallocate()
+      }
+   }
+   ```
 
-### borrow / mutate accessors
+- **New Safe APIs:** `UniqueBox` and `UniqueArray` for managing pointers and non-copyable elements; `Ref` / `MutableRef` — like a `Span` but for one value; storable, passable, returnable, usable in generics.
 
-* New `borrow` (read-only access to shared storage, no copy) and `mutate` (exclusive in-place modification) accessors replace `get`/`set`
+## Cross-Platform and Interoperability
 
-### New safe APIs
+- **Exposing Swift to C:** New `@c` attribute for exposing Swift functions to C.
+- **Java Interop:** Async and throwing Swift functions are now callable from Java.
+- **Android SDK:** Official Swift SDK for Android released.
+- **Swift Extension for VS Code:** Tools for easy toolchain management and WebAssembly support.
+- **JavaScript Interop:** Safer and faster bridging with JavaScript kit improvements.
+- **Embedded Swift:** Now supports existential types and untyped throws.
 
-* New `UniqueBox` and `UniqueArray` for managing pointers and non-copyable elements
-* `Ref` / `MutableRef` — like a `Span` but for one value; storable, passable, returnable, usable in generics
+## The Future of Swift
 
-## The future of Swift
-
-* Swift Build is now the default build-system backend for Swift Package Manager (consistency between SwiftPM and Xcode builds)
+- Swift Build is now the default build-system backend for Swift Package Manager, for consistency between SwiftPM and Xcode builds.
