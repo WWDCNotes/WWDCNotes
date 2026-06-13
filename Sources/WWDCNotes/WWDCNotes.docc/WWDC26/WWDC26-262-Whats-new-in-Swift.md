@@ -9,6 +9,7 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
 
    @Contributors {
       @GitHubUser(VictorPuga)
+      @GitHubUser(leogdion)
    }
 }
 
@@ -20,12 +21,17 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
 - Enhanced interoperability and new SDKs expand Swift's usability across platforms like Android and web apps.
 - Swift's ownership system and new APIs make high-performance programming safer and more accessible.
 
+## Presenters
+
+* Becca, Swift Team
+* Evan, Swift Team
+
 ## Language Improvements
 
 - **Optional Handling:** Swift 6.4 removes the need for parentheses with `some` or `any` and optional types.
 - **Error Handling:** Warnings for unhandled errors in concurrency tasks.
 - **Async Functions:** Now callable from a `defer` block.
-- **Sendable Checking:** `weak let` supports immutability, and `~Sendable` syntax for non-sendable types.
+- **Sendable Checking:** `weak let` supports immutability, and `~Sendable` syntax for non-sendable types (doesn't stop subclasses from being `Sendable`).
 - **Initializer Enhancements:** Structs with mixed visibility properties get a second member-wise initializer.
 
   ```swift
@@ -51,7 +57,7 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
    // }
   ```
 
-- **Cross-Platform Availability:** `anyAppleOS` condenses platform names for OS availability attributes.
+- **Cross-Platform Availability:** `anyAppleOS` condenses platform names for OS availability attributes (only supported for OSes 26 and newer).
 
    ```swift
    extension Mission {
@@ -94,6 +100,17 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
    }
   ```
 
+- **Module Selectors:** New `::` syntax disambiguates which module a declaration comes from.
+
+  ```swift
+   import Rocket
+   import GiftShopToys
+
+   let rocket1 = SaturnV()            // could mean `Rocket::SaturnV` or `GiftShopToys::SaturnV`
+   let rocket2 = Rocket.SaturnV()     // prefers `Rocket::Rocket.SaturnV`
+   let rocket3 = Rocket::SaturnV()    // correctly finds `Rocket::SaturnV`
+  ```
+
 ## Library Updates
 
 - **Standard Library:** New tools for task cancellation, dictionary transformations, and file paths.
@@ -118,6 +135,16 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
   ```
 
   ```swift
+   // Map values with keys
+
+   func makeCalendarDisplayNames(for missions: [Mission: LaunchWindow]) -> [Mission: String] {
+      missions.mapKeyedValues { mission, launchWindow in
+         makeDisplayName(for: mission, in: launchWindow)
+      }
+   }
+  ```
+
+  ```swift
    // FilePath handling macOS-named resources
 
    var path: FilePath = "/var/www/static"
@@ -130,7 +157,7 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
    // [ "var", "www", "static" ]
   ```
 
-- **Swift Testing:** Enhanced control over test behavior, including non-fatal issues and dynamic test cancellation.
+- **Swift Testing:** Enhanced control over test behavior, including non-fatal issues, dynamic test cancellation, and new `swift test` options `--maximum-repetitions` and `--repeat-unit`.
 
    ```swift
    // Issue severity
@@ -263,14 +290,17 @@ Join us for an update on Swift. Discover the latest language advancements, inclu
    }
    ```
 
+- **New Safe APIs:** `UniqueBox` and `UniqueArray` for managing pointers and non-copyable elements; `Ref` / `MutableRef` — like a `Span` but for one value; storable, passable, returnable, usable in generics.
+
 ## Cross-Platform and Interoperability
 
+- **Exposing Swift to C:** New `@c` attribute for exposing Swift functions to C.
+- **Java Interop:** Async and throwing Swift functions are now callable from Java.
 - **Android SDK:** Official Swift SDK for Android released.
 - **Swift Extension for VS Code:** Tools for easy toolchain management and WebAssembly support.
 - **JavaScript Interop:** Safer and faster bridging with JavaScript kit improvements.
+- **Embedded Swift:** Now supports existential types and untyped throws.
 
-## Future Developments
+## The Future of Swift
 
-- **Open Source Contributions:** Encouragement to join Swift forums and participate in community-driven enhancements.
-- **Swift's Expanding Role:** Swift used across Apple software layers, from apps to firmware, demonstrating its versatility and power.
-
+- Swift Build is now the default build-system backend for Swift Package Manager, for consistency between SwiftPM and Xcode builds.
