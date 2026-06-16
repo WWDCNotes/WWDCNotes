@@ -313,4 +313,3 @@ Other places where this is used (and where we must declare it):
 [conceptImage]: WWDC19-212-concept
 [projectImage]: WWDC19-212-project
 [infoPlistImage]: WWDC19-212-infoPlist
-[userInfoImage]: ../../../images/notes/wwdc19/212/userInfo.png

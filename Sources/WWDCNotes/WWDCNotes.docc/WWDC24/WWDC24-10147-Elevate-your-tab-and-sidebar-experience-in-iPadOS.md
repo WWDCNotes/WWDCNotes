@@ -15,4 +15,4 @@ iPadOS 18 introduces a new navigation system that gives people the flexibility t
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

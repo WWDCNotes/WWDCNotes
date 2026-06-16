@@ -108,3 +108,5 @@ try! session.process(requests: [
 ## Best Practices: Selecting the Right Output
 
 ![Output options. Shows reduced, medium, full, raw output options and deatils memory size, iOS compatibility, etc.][WWDC21-10076-output-options]
+
+[WWDC21-10076-output-options]: WWDC21-10076-output-options

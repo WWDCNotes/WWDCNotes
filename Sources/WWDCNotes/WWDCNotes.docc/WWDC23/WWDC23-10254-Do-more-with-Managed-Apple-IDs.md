@@ -15,4 +15,4 @@ Explore the latest updates to Managed Apple IDs and learn how you can use them i
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

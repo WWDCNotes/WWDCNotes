@@ -15,4 +15,4 @@ Discover how you can manage and automate your iCloud containers using CKTool JS.
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

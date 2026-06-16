@@ -69,7 +69,7 @@ A `PKStrokePoint` describe how a stroke appears at a certain location. It is com
 [PKStrokePoint]: https://developer.apple.com/documentation/pencilkit/pkstrokepoint
 [interpolatedPoints(strideBy:)]: https://developer.apple.com/documentation/pencilkit/pkstrokepath/3595222-interpolatedpoints
 
-[strokeImage]: ../../../images/notes/wwdc20/10108/stroke.png
-[splineImage]: ../../../images/notes/wwdc20/10108/spline.png
-[interpolationImage]: ../../../images/notes/wwdc20/10108/interpolation.png
-[pointImage]: ../../../images/notes/wwdc20/10108/point.png
+[strokeImage]: WWDC20-10148-stroke
+[splineImage]: WWDC20-10148-spline
+[interpolationImage]: WWDC20-10148-interpolation
+[pointImage]: WWDC20-10148-point

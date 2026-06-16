@@ -15,4 +15,4 @@ Build engaging live experiences with gRPC in your Swift app and backend. gRPC is
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

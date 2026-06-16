@@ -54,4 +54,4 @@ Learn how to build focused enterprise apps that work well together. In this sess
 
 [usDoc]: https://developer.apple.com/documentation/foundation/userdefaults
 [suiteDoc]: https://developer.apple.com/documentation/foundation/userdefaults/1409957-init
-[19-411]: ../../wwdc19/411
+[19-411]: /documentation/wwdc19-411-getting-started-with-instruments/

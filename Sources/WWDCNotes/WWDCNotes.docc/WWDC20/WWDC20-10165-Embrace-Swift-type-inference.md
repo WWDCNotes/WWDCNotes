@@ -296,7 +296,7 @@ We attempt to build again, and it succeeds this time.
 
 To learn more about integrated error tracking, read the [blog post on Swift's new diagnostic architecture](https://swift.org/blog/new-diagnostic-arch-overview/).
 
-To learn more about generics, watch [WWDC 2018's video on Swift Generics](../../wwdc18/406).
+To learn more about generics, watch [WWDC 2018's video on Swift Generics](/documentation/wwdc18-406-swift-generics-expanded/).
 
 [search_smoothie]: WWDC20-10165-search_smoothie
 [fail_behavior]: WWDC20-10165-fail_behavior

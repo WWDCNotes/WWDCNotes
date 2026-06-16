@@ -15,4 +15,4 @@ Discover how to use class inheritance to model your data. Learn how to optimize 
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

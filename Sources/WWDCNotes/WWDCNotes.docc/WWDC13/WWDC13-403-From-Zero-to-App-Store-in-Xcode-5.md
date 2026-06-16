@@ -15,4 +15,4 @@ New account management features in Xcode 5 make it easier than ever to sign and 
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

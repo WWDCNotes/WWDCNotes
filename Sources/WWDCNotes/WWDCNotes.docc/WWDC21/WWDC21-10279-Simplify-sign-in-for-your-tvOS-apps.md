@@ -15,4 +15,4 @@ Find out how people can use Face ID or Touch ID on their iOS or iPadOS device to
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

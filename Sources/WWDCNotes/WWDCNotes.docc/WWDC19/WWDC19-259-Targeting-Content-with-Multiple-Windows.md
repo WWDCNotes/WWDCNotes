@@ -14,4 +14,4 @@ Learn how to target content for a specific window in your app. Find out how to i
 
 
 
-See [Introducing Multiple Windows on iPad](../212/) session.
+See [Introducing Multiple Windows on iPad](/documentation/wwdc19-212-introducing-multiple-windows-on-ipad/) session.

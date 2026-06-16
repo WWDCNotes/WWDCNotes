@@ -120,7 +120,6 @@ More info [here][osLogMoreInfo].
 [privacyImage]: WWDC16-721-privacy
 [architectureImage]: WWDC16-721-architecture
 [apiImage]: WWDC16-721-api
-[osLogImage]: ../../../images/notes/wwdc16/721/osLog.png
 [formattersImage]: WWDC16-721-formatters
 [activityImage]: WWDC16-721-activity
 [commandImage]: WWDC16-721-command

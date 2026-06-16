@@ -98,4 +98,3 @@ This also supports other standards (so we don’t need to create our own) as:
 
 [timothyImage]: WWDC19-232-timothy
 [embeddingImage]: WWDC19-232-embedding
-[Image]: ../../../images/notes/wwdc19/232/.png

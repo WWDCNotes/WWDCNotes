@@ -15,4 +15,4 @@ Go behind the scenes and learn from CD PROJEKT RED how Cyberpunk 2077 came to Ma
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

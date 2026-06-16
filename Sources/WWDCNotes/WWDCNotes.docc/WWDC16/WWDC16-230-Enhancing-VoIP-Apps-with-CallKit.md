@@ -15,4 +15,4 @@ CallKit is a new framework that lets your VoIP app integrate tightly with the na
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

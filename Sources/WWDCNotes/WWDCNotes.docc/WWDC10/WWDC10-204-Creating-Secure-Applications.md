@@ -15,4 +15,4 @@ Secure coding helps protect a user's data from theft or corruption and prevents 
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

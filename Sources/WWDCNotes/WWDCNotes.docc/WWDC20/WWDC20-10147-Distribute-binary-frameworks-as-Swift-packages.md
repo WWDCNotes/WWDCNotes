@@ -60,4 +60,4 @@ swift package compute-checksum MyPackage-1.0.0.xcframework.zip
 
 - For more information on how to create a binary, refer to the [`Binary Frameworks In Swift`][19-446] session.
 
-[19-446]: ../../wwdc19/416/
+[19-446]: /documentation/wwdc19-416-binary-frameworks-in-swift/

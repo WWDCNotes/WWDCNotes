@@ -15,4 +15,4 @@ Join us to learn the core Swift concurrency concepts. Concurrency helps you impr
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

@@ -30,7 +30,7 @@ Cloud storage has benefit even if we only have a single device such as data back
 - Both exist on all platforms
 - Both support a wide variety of applications
 
-![existing-technologies](https://user-images.githubusercontent.com/8705231/158109333-3f1bd098-d754-4400-a150-230c9c438f96.png)
+![existing-technologies](WWDC19-202-remote1)
 
 ## What's New
 
@@ -65,7 +65,7 @@ let container = NSPersistentCloudKitContainer(name: "WWDCDemo")
 - Stable views with query generations
 - Change processing with history tracking
 
-> more on [Making Apps with Core Data](https://www.wwdcnotes.com/notes/wwdc19/230/)
+> more on [Making Apps with Core Data](/documentation/wwdc19-230-making-apps-with-core-data/)
 
 ### Add on to our foundation
 
@@ -86,7 +86,7 @@ let container = NSPersistentCloudKitContainer(name: "WWDCDemo")
 
 #### Multiple Stores
 
-![multiple-stores](https://user-images.githubusercontent.com/8705231/158109444-15de4ec7-cb83-40ce-b836-cb4eaa7bd711.png)
+![multiple-stores](WWDC19-202-remote2)
 
 
 By adding new configurations in <kbd>xcdatamodel</kbd> with a few lines of code, you can manage which entities you want to sync.
@@ -118,11 +118,11 @@ container.persistentStoreDescriptions = [ local, cloud, shared ]
 
 #### `NSPersistentCloudKitContainer`’s Schema
 
-![schema1](https://user-images.githubusercontent.com/8705231/158109577-adfae8fb-5ef0-4237-9fe9-92ccb3cc30bd.png)
+![schema1](WWDC19-202-remote3)
 
 Core Data generates subclasses of `NSManagedObject` for us to use in code. Take `Post` for example, the class Core Data generates and the record along with it that CloudKit generates will look like this:
 
-![schema2](https://user-images.githubusercontent.com/8705231/158109620-c7e554a9-ed39-4a45-9c7f-b945c81bbc91.png)
+![schema2](WWDC19-202-remote4)
 
 Core Data owns the `recordID` for all of the objects that it creates in CloudKit, and for each one CloudKit will generates a UUID to use as its record name. When the record name is combined with a zone identifier, you get a `CKRecordID`.
 
@@ -132,21 +132,21 @@ In order to implement entity inheritance, the actual entity name will be stored 
 
 You will not see `CD_xxx` and `CD_xxx_ckAsset` in the same time. If the strings are very short, it will be stored directly in `CD_xxx`.
 
-![schema3](https://user-images.githubusercontent.com/8705231/158109635-2b2c23d0-eed9-469e-bb28-ca7afefb9f3b.png)
+![schema3](WWDC19-202-remote5)
 
 But if one of them grows to be very large, approximately larger than 750KB, or if the total size of the record exceeds CloudKit’s maximum 1MB limit, you will begin to see `CD_xxx_ckAsset` fields.
 
-![schema4](https://user-images.githubusercontent.com/8705231/158109655-6067ae3f-3c21-47bf-9bbc-84249584ae42.png)
+![schema4](WWDC19-202-remote6)
 
 For a to-one relationship, in this case the `post` field in `Attachment` , the record will look like this:
 
-![schema5](https://user-images.githubusercontent.com/8705231/158109666-b74c4783-39af-4649-9775-dd79e87ae1aa.png)
+![schema5](WWDC19-202-remote7)
 
 The UUID of the related record in CloudKit will always be stored on the object it’s linked to, since `CKReference` has some limitations that will not work well for Core Data Clients.
 
 For many-to-many relationships, in this case the one between a `Post` and a `Tag` , a custom joint record will be created:
 
-![schema6](https://user-images.githubusercontent.com/8705231/158109681-69843ac2-ab05-4941-99ae-4878a0021cbf.png)
+![schema6](WWDC19-202-remote8)
 
 #### Data Modeling for collaboration
 
@@ -156,4 +156,4 @@ For many-to-many relationships, in this case the one between a `Post` and a `Tag
 - Order contributions
 - Iterate as necessary
 
-![data-modeling](https://user-images.githubusercontent.com/8705231/158109704-6a0a26a1-4400-4901-b6f5-8b08f964d629.png)
+![data-modeling](WWDC19-202-remote9)

@@ -15,4 +15,4 @@ HTTP Live Streaming lets you deliver video using HTTP from a standard Web server
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

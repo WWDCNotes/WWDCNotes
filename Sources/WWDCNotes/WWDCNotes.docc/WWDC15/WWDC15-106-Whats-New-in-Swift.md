@@ -15,4 +15,4 @@ Swift continues its rapid advancement with version 2. New optimizations make you
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

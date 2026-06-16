@@ -62,7 +62,7 @@ _See session [220][220] for an introduction regarding the three TextKit classes.
 - And `NSLayoutManager` is taking all of the text from your `NSTextStorage` and turning it into lines of glyphs inside of your `TextView`.
 
 [dataDetect]: https://developer.apple.com/documentation/foundation/nsdatadetector
-[220]: ../220
+[220]: /documentation/wwdc13-220-advanced-text-layouts-and-effects-with-text-kit/
 
 [showHideSnippetImage]: WWDC13-210-showHideSnippet
 [showHideSnippetImage2]: WWDC13-210-showHideSnippet2

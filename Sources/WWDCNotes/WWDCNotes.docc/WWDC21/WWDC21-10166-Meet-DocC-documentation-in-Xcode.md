@@ -28,7 +28,7 @@ Xcode 13 has new features to build, write, and browse documentation for Swift fr
 
 ![DOCc][DOCc]
 
-[DOCc]: ../../../images/notes/wwdc21/10166/DOCc.jpg
+[DOCc]: WWDC21-10166-docc
 
 This documentation lives right alongside the platform libraries in the Developer Documentation window right in Xcode. 
 
@@ -193,10 +193,6 @@ public struct Sloth {
 	}
 }
 ```
-
-![DOCc][DOCc11]
-
-[DOCc11]: ../../../images/notes/wwdc21/10166/DOCc11.jpg
 
 ## documenting the sloth Eat method.
 

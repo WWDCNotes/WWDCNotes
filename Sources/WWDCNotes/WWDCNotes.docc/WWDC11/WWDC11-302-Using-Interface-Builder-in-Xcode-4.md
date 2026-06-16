@@ -15,4 +15,4 @@ Xcode 4 seamlessly integrates Interface Builder within the IDE. Learn how you ca
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

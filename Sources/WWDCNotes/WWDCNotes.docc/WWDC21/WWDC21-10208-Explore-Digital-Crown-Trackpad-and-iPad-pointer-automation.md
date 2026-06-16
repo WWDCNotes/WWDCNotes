@@ -15,4 +15,4 @@ Learn how you can interact with devices in UI Tests in Xcode 13. Discover newly-
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

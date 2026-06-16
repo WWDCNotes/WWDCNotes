@@ -15,4 +15,4 @@ Discover how you can integrate CarPlay into modern vehicle systems. We’ll show
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

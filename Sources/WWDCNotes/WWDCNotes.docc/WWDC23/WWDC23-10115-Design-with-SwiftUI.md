@@ -111,10 +111,6 @@ In this year's watchOS App, a more map-centric experience for people's wrists ha
 
 To improve this experience, they tested multiple values in the SwiftUI prototype, adjusting the sensitivity of the Digital Crown until they found a zoom speed that felt natural. Once they improved the zoom speed, they started adding to the map, first adding points of interest, then UI controls, and finally, to better contextualize the map, a walking radius around the current location. 
 
-![common things should be easy and complex things should be possible][commonThings11]  
-
-[commonThings11]: ../../../images/notes/wwdc23/10115/commonThings11.jpg
-
 Adding to our SwiftUI prototype, new things surfaced that needed  attention, like the interaction of the walking radius. They  prototyped several different options. The favorite was this ticker animation, which developed as a separate SwiftUI prototype.
 
 Lots of complexity can be hidden in such a seemingly simple design. All of these details were initially opaque when they began designing. But the moment when started making prototypes, they were obvious.

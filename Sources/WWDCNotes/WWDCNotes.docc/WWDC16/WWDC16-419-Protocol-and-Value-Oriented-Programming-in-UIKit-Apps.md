@@ -17,8 +17,8 @@ Building on last year's Protocol-Oriented Programming and Building Better Apps w
 ## Prerequisites
 This session builds on the following 2 sessions from WWDC 2015:
 
-- [Protocol-Oriented Programming in Swift](../../wwdc15/408)
-- [Building Better Apps with Value Types in Swift](../../wwdc15/414)
+- [Protocol-Oriented Programming in Swift](/documentation/wwdc15-408-protocoloriented-programming-in-swift/)
+- [Building Better Apps with Value Types in Swift](/documentation/wwdc15-414-building-better-apps-with-value-types-in-swift/)
 
 ## Overview
 This session is about using value types and protocols to make our apps better. A key component is **local reasoning**, which means that when we look at some code, we don't have to think about how the rest of our code interacts with that one function/class/etc.
@@ -246,7 +246,7 @@ Generics are useful because:
 - They give us more control over types
 - They can be further optimized at compile time because the compiler has more information about what we're doing
 
-To learn more, see [Understanding Swift Performance](../416).
+To learn more, see [Understanding Swift Performance](/documentation/wwdc16-416-understanding-swift-performance/).
 
 ### Sharing code
 We have a great implementation of `DecoratingLayout`, but our app also includes other types of layouts like a `CascadingLayout`. Both show decoration on the left and content on the right with some minor differences, so we should be able to reuse a lot of code.

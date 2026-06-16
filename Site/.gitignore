@@ -1,0 +1,4 @@
+.build/
+_Site/
+*.resolved
+.sitekit-cache/

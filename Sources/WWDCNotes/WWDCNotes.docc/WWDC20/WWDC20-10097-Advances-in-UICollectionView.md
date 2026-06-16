@@ -110,7 +110,7 @@ cell.backgroundConfiguration = UIBackgroundConfiguration.clear()
 
 More to watch session [10027](https://developer.apple.com/wwdc20/10027): Modern cell configuration.
 
-[wwdc19215]: ../../wwdc19/215
-[wwdc2010045]: ../10045
+[wwdc19215]: /documentation/wwdc19-215-advances-in-collection-view-layout/
+[wwdc2010045]: /documentation/wwdc20-10045-advances-in-diffable-data-sources/
 [modern_collection_view_apis]: WWDC20-10097-modern_collection_view_apis
 [section_snapshots]: WWDC20-10097-section_snapshots

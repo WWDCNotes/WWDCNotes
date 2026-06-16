@@ -15,4 +15,4 @@ Learn how to prototype your app using agents in Xcode. Explore techniques for us
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

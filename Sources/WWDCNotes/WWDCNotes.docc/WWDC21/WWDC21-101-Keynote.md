@@ -156,4 +156,4 @@ The Apple Worldwide Developers Conference kicks off with exciting reveals, inspi
   - web extensions on iOS/iPadOS
 
 
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-keynote.jpg
+[sketchnote]: WWDC21-101-sketchnote

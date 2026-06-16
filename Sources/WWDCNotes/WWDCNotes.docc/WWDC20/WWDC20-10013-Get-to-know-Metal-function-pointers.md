@@ -15,4 +15,4 @@ Metal is a low-level, low-overhead hardware-accelerated graphics framework and s
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

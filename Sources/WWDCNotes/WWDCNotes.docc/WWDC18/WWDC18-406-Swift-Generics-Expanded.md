@@ -76,4 +76,4 @@ extension RandomAccessCollection where Self: MutableCollection {
 - Protocol Conformance
   - See [What's New in Swift][wwdc18401]
 
-[wwdc18401]: ../401
+[wwdc18401]: /documentation/wwdc18-401-whats-new-in-swift/

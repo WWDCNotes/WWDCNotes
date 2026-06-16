@@ -287,4 +287,4 @@ New features:
   - external display support
   - between iPad and the external display, you can have up to eight apps running onscreen simultaneously
 
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc22-keynote.jpg
+[sketchnote]: WWDC22-101-sketchnote

@@ -16,4 +16,4 @@ An inclusive app or game is not only usable by different people, but also welcom
 
 ![Sketchnote about 'The practice of inclusive design' at WWDC21 with a lot of practical tips on how to make your app or game more inclusive. Favorite takeaways are Tell diverse stories, adopt accessibility, avoid stereotypes, there's nothing like a normal person, language is constantly evolving.][sketchnote]
 
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-the-practice-of-inclusive-design.jpg
+[sketchnote]: WWDC21-10275-sketchnote

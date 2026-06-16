@@ -48,7 +48,7 @@ If the business does not have uploaded a custom icon, the system will display a 
 
 ![][poiImage]
 
-[wwdc20-10146]: ../10146
+[wwdc20-10146]: /documentation/wwdc20-10146-configure-and-link-your-app-clips/
 [notificationsDoc]: https://developer.apple.com/documentation/app_clips/enabling_notifications_in_app_clips
 [mc]: https://mapsconnect.apple.com
 

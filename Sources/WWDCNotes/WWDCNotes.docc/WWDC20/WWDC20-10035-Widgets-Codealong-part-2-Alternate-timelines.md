@@ -119,7 +119,7 @@ To add deep links into our app, we use the [`.widgeturl(_:)`][wurlDoc] modifier.
 
 In our app then we apply the new [`.onOpenURL(perform:)`][oourlDoc] to the right view to manage deeplinks.
 
-[wwdc20-10194]: https://www.wwdcnotes.com/notes/wwdc20/10194
+[wwdc20-10194]: /documentation/wwdc20-10194-add-configuration-and-intelligence-to-your-widgets/
 
 [familiesImage]: WWDC20-10035-families
 

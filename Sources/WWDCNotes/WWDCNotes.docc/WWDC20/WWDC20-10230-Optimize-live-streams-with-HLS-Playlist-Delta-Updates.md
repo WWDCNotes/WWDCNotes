@@ -15,4 +15,4 @@ Discover Playlist Delta Updates, an HLS feature that optimizes the delivery of l
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

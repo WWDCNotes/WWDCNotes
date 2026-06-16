@@ -1,80 +1,88 @@
-name: Deploy Session Notes to GitHub Pages
+name: Build & Deploy (Production – public SiteKit 1.0.0 → GitHub Pages, wwdcnotes.com)
+
+# Builds the WWDCNotes SiteKit site and publishes it to the gh-pages branch serving wwdcnotes.com.
+#
+# GitHub Pages has no server-side redirects, so a post-build step writes a meta-refresh stub for
+# every legacy /documentation/wwdcnotes/* URL (see Tools/redirect-stubs) so old links keep working.
+#
+# SiteKit is public, so no checkout token is needed; the only secret is the automatic GITHUB_TOKEN
+# (used to push gh-pages and for generate-metadata's GitHub avatar lookups).
+#
+# Guard: only run on GitHub.com, not on a mirror that also executes .github/workflows.
 
 on:
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
-  group: "pages"
+  group: "github-pages-prod"
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    
+  build-deploy:
+    if: ${{ github.server_url == 'https://github.com' }}
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 45
     steps:
-      - name: Check out code
+      - name: Checkout WWDCNotes
         uses: actions/checkout@v4
+        with:
+          path: Public/Content/WWDCNotes/PublicContent
 
-      # TODO: add command to fail CI if any of the following commands have non-zero exit code
+      - name: Checkout SiteKit (public, tag 1.0.0)
+        uses: actions/checkout@v4
+        with:
+          repository: FlineDev/SiteKit
+          ref: '1.0.0'
+          fetch-depth: 0
+          path: Public/SiteKit
 
-      - name: Install Swift
+      - name: Set up Swift
         uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.2"
+
+      - name: Install ImageMagick (for SiteKit's ImageResizer)
+        run: sudo apt-get update -qq && sudo apt-get install -y imagemagick webp || echo "ImageMagick install skipped - ImageResizer will fall back to no-op"
 
       - name: Generate Metadata
+        working-directory: Public/Content/WWDCNotes/PublicContent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: swift run generate-metadata
-      
-      - name: Build Documentation
-        run: |
-          swift package --allow-writing-to-directory ./docs \
-            generate-documentation --target WWDCNotes \
-            --disable-indexing \
-            --transform-for-static-hosting \
-            --output-path ./docs
 
-      # TODO: fix favicon, the below code is not working as expected
-      - name: Override Favicons
-        run: |
-          rm ./docs/favicon.svg
-          rm ./docs/favicon.ico
-          cp ./favicon.ico ./docs/favicon.ico
+      - name: Wipe stale build output before a clean build
+        working-directory: Public/Content/WWDCNotes/PublicContent/Site
+        run: rm -rf _Site
 
-      - name: Create index.html for redirection
+      - name: Build site (SiteKit DocC renderer, production base URL)
+        working-directory: Public/Content/WWDCNotes/PublicContent/Site
+        run: swift run -c release Site build --base-url https://wwdcnotes.com
+
+      # GitHub Pages has no server-side redirects. SiteKit emits stubs for the explicit Redirects.yaml
+      # rules; this step also expands the wildcard rule into a stub for every legacy session URL, so
+      # all old links resolve.
+      - name: Generate redirect stubs for old URLs
+        working-directory: Public/Content/WWDCNotes/PublicContent/Site
+        run: swift ../Tools/redirect-stubs/generate-redirect-stubs.swift _Site Redirects.yaml ../Tools/redirect-stubs/old-urls.txt https://wwdcnotes.com
+
+      - name: Override favicon (if present in repo root)
+        working-directory: Public/Content/WWDCNotes/PublicContent
         run: |
-          echo '<!DOCTYPE html>
-          <html lang="en">
-          <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Redirecting...</title>
-              <meta http-equiv="refresh" content="0; url=/documentation/wwdcnotes/">
-              <script type="text/javascript">
-                  window.location.href = "/documentation/wwdcnotes/";
-              </script>
-          </head>
-          <body>
-              <p>If you are not redirected automatically, follow this <a href="/documentation/wwdcnotes/">Link</a>.</p>
-          </body>
-          </html>' > ./docs/index.html
-      
-      - name: Deploy to Pages
-        uses: JamesIves/github-pages-deploy-action@v4.6.0
+          if [ -f favicon.ico ]; then cp favicon.ico Site/_Site/favicon.ico; fi
+
+      # No robots.txt override here: SiteKit's robots.txt already allows crawling and references
+      # the sitemap, which is what production wants.
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          branch: gh-pages
-          folder: docs
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: Public/Content/WWDCNotes/PublicContent/Site/_Site
+          publish_branch: gh-pages
+          # CNAME is mandatory: without it the wwdcnotes.com custom domain on GitHub Pages breaks.
+          cname: wwdcnotes.com

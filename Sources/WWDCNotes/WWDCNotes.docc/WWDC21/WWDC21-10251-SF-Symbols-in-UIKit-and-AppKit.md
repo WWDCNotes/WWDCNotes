@@ -15,4 +15,4 @@ Learn how you can create colorized symbols with SF Symbols 3 and customize them 
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

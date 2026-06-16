@@ -14,7 +14,7 @@ Are you mystified about why and when your app gets background processing time? N
 
 
 
-This talk sets out to explain why when your app is in the background your `BGProgressingTask`, `BPAppRefreshTask`, background push, or `URLSession` isn't running as much as you might expect it to. If you are unfamiliar with these, checkout [`Advances in App Background Execution`](../../wwdc19/707/) from WWDC19.
+This talk sets out to explain why when your app is in the background your `BGProgressingTask`, `BPAppRefreshTask`, background push, or `URLSession` isn't running as much as you might expect it to. If you are unfamiliar with these, checkout [`Advances in App Background Execution`](/documentation/wwdc19-707-advances-in-app-background-execution/) from WWDC19.
 
 ## Factors Affecting Runtime
 

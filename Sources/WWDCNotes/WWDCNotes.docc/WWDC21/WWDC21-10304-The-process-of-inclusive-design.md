@@ -16,4 +16,4 @@ Discover how you can deliver inclusive apps that can foster amazing experiences 
 
 ![Sketchnote about 'The process of inclusive design' at WWDC21 about different diversity axes, common misconcepts about inclusion and the process of building an inclusive app or game][sketchnote]
 
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-the-process-of-inclusive-design.jpg
+[sketchnote]: WWDC21-10304-sketchnote

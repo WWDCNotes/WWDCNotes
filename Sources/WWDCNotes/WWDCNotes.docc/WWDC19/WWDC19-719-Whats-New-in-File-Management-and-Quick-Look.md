@@ -64,7 +64,7 @@ Use Quick Look to edit images, PDF, and videos (iOS only).
 With iOS 13 users can edit files directly from the preview (see [`Introducing PencilKit`][wwdc19221] for more).
 Videos can be cropped and rotated in the preview (if we enable so).
 
-[wwdc19221]: ../../wwdc19/221/
+[wwdc19221]: /documentation/wwdc19-221-introducing-pencilkit/
 [documnetPickerDoc]: https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller
 [documentBrowserDoc]: https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller
 [thuDoc]: https://developer.apple.com/documentation/quicklookthumbnailing

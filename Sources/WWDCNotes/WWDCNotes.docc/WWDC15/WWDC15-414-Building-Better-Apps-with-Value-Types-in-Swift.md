@@ -759,7 +759,7 @@ In fact, Adobe Photoshop uses value semantics to implement their history feature
 - Reference semantics and unexpected mutation can lead to bugs
 - Value semantics solve these problems by giving you the expressiveness of mutability and the safety of immutability
 
-[408]: ../408
+[408]: /documentation/wwdc15-408-protocoloriented-programming-in-swift/
 
 [unintended_sharing]: WWDC15-414-unintended_sharing
 

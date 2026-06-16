@@ -22,7 +22,7 @@ This is a huge change for apps like Maps. If your app also requires precise loca
 If this is the first time you're hearing about approximate location, you may want to first watch:
 
 - [Build Trust Through Better Privacy](https://developer.apple.com/videos/play/wwdc2020/10676)
-- [What's New in Location](../10660)
+- [What's New in Location](/documentation/wwdc20-10660-whats-new-in-location/)
 
 ### Designing for Location Privacy
 

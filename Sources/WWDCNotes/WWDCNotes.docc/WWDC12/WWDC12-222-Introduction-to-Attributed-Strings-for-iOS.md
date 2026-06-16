@@ -62,6 +62,4 @@ This is list of paragraph styles (as of WWDC 2012):
 
 If we assign an attributedString to a `UILabel`, then we can still use the `UILabel` `textColor`, `textAlignment`, `lineBreakMode` etc, but bare in mind that those change will change the whole string (the rest of the attributes will remain unchanged).
 
-[replaceImage]: ../../../images/notes/wwdc12/222/replace.png
-[paragraphImage]: ../../../images/notes/wwdc12/222/paragraph.png
 [remindersImage]: WWDC12-222-reminders

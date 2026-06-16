@@ -15,4 +15,4 @@ Learn how to use LLDB, Apple's state-of-the-art debugger. Learn how to analyze s
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

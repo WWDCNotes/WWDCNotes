@@ -15,4 +15,4 @@ Gain insights into the latest in Cocoa frameworks for macOS. Hear about Dark Mod
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

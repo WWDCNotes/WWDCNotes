@@ -15,4 +15,4 @@ Portrait mode on iPhone 7 Plus showcases the power of depth in photography. In i
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

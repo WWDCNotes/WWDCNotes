@@ -347,4 +347,4 @@ Three new frameworks:
 
 [galleryView]: WWDC21-102-galleryView
 [shareplay]: WWDC21-102-shareplay
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-state-of-the-union.jpg
+[sketchnote]: WWDC21-102-sketchnote

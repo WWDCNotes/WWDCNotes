@@ -692,7 +692,7 @@ Other times to use classes:
 - Protocol extensions = magic (almost!)
 - See [Building Better Apps with Value Types in Swift][wwdc15414]!
 
-[wwdc15414]: ../414
+[wwdc15414]: /documentation/wwdc15-414-building-better-apps-with-value-types-in-swift/
 
 [inheritance_hierarchies]: WWDC15-408-inheritance_hierarchies
 

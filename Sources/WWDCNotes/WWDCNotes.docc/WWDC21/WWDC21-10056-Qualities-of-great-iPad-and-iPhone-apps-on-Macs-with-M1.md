@@ -15,4 +15,4 @@ It’s easier than ever to offer your existing iPad and iPhone apps on Macs with
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

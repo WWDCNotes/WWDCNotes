@@ -15,4 +15,4 @@ Learn how to mix C, C++, and Swift while improving the safety of your apps. We�
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

@@ -81,7 +81,7 @@ New in iOS 14 and macOS Big Sur is support for secure DNS.
 
 ![][dns]
 
-For details on how to take advantage of new DNS APIs, see [Enable Encrypted DNS](../10047).
+For details on how to take advantage of new DNS APIs, see [Enable Encrypted DNS](/documentation/wwdc20-10047-enable-encrypted-dns/).
 
 ### Looking Forward
 

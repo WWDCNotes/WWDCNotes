@@ -41,4 +41,3 @@ In Create ML we can filter which axis of which acceleration/rotation we should c
 
 [sensorsImage]: WWDC19-426-sensors
 [trainingImage]: WWDC19-426-training
-[Image]: ../../../images/notes/wwdc19/426/.png

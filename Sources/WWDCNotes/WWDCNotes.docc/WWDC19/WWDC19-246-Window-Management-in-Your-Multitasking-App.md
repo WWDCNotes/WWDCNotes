@@ -14,4 +14,4 @@ Dive into the details of window management in your Multitasking app, including h
 
 
 
-See [Introducing Multiple Windows on iPad](../212) session.
+See [Introducing Multiple Windows on iPad](/documentation/wwdc19-212-introducing-multiple-windows-on-ipad/) session.

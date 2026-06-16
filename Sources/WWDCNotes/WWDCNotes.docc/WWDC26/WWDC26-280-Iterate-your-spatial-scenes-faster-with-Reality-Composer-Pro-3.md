@@ -15,4 +15,4 @@ Unlock powerful new features in Reality Composer Pro 3 for building spatial expe
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

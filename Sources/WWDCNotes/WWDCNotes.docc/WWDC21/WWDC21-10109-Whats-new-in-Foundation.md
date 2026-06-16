@@ -260,4 +260,4 @@ These are all the localization strings needed:
 ```
 
 [AttributedString]: https://developer.apple.com/documentation/foundation/attributedstring
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-whats-new-foundation.jpg
+[sketchnote]: WWDC21-10109-sketchnote

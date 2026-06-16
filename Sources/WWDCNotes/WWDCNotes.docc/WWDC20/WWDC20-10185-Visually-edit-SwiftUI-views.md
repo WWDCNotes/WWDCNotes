@@ -101,7 +101,7 @@ var body: some View {
 ## Popularity Rating
 We want to add a star rating to display the smoothie's popularity. There's no built-in star view, but it's easy to drag and drop our own custom views as well once we've added them to the library.
 
-To learn more, see the session [Add custom views and modifiers to the Xcode Library](../10649).
+To learn more, see the session [Add custom views and modifiers to the Xcode Library](/documentation/wwdc20-10649-add-custom-views-and-modifiers-to-the-xcode-library/).
 
 ![][custom_drag_and_drop]
 

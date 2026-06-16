@@ -15,4 +15,4 @@ Share your living room —&nbsp;not your Apple TV apps. When you support profile
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

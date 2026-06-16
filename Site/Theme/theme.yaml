@@ -1,0 +1,10 @@
+name: "Docs"
+colorScheme: "ocean"
+fontPairing: "modern"
+css:
+   - "css/theme.css"
+   - "css/syntax.css"
+   - "css/wn-overrides.css"
+js:
+   - "js/theme.js"
+headInlineScript: "(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})()"

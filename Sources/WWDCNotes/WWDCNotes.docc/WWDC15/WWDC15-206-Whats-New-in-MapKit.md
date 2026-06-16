@@ -15,4 +15,4 @@ See what's new in MapKit. Learn about improvements to existing APIs and new ways
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

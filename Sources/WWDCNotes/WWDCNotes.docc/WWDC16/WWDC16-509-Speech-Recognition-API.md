@@ -15,4 +15,4 @@ iOS 10 brings a brand new Speech Recognition API that allows you to perform rapi
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

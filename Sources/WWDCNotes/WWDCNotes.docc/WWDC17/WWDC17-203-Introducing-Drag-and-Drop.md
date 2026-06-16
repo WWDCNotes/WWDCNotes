@@ -15,4 +15,4 @@ Drag and Drop has arrived in iOS 11! Learn the fundamentals behind the new iOS D
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video or reading the transcript on WWDCIndex and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

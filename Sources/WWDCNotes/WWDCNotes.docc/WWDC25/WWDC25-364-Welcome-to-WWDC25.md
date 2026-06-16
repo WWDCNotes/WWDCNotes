@@ -15,4 +15,4 @@ There’s so much to dive into at WWDC25. Here’s a quick guide to help get you
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

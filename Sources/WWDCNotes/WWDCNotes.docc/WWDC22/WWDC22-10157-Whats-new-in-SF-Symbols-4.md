@@ -53,11 +53,11 @@ Explore the latest updates to SF Symbols, Apple’s extensive library of iconogr
 - Easy annotation for custom symbols
 - You define a shape setup, e.g. “frosting”, “cup cake base” here
 
-| ![](https://user-images.githubusercontent.com/6942160/172727010-c769b9eb-aab7-4088-8e1c-617d1de1b7d5.png) | ![](https://user-images.githubusercontent.com/6942160/172727026-e43cd2a6-e257-4897-8084-f00fb632d520.png) |
+| ![](WWDC22-10157-remote1) | ![](WWDC22-10157-remote2) |
 
 - allows erasing of parts of the shape to customize shapes, like here
 
-![](https://user-images.githubusercontent.com/6942160/172727088-29b09c94-470a-4f25-803e-c3889b7f1445.png)
+![](WWDC22-10157-remote3)
 
 
 [gif1]: WWDC22-10157-speaker

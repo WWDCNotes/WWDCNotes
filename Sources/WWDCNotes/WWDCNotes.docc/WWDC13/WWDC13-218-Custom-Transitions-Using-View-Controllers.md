@@ -500,8 +500,8 @@ coordinator = [viewController transitionCoordinator];
 }];
 ```
 
-[endState]: ../../../images/notes/wwdc13/218/endState.png
-[startState]: ../../../images/notes/wwdc13/218/startState.png
+[endState]: WWDC13-218-endstate
+[startState]: WWDC13-218-startstate
 [interactiveTransitioningStates]: WWDC13-218-interactiveTransitioningStates
 [UIViewControllerTransitionCoordinator]: https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinator
 [UIViewControllerTransitionCoordinatorContext]: https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext

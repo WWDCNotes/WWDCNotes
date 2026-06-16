@@ -89,7 +89,7 @@ Discover web apps for Mac — a powerful way to experience your website from the
 
 # Related Sessions
 
-- [Meet passkeys - WWDC22](https://wwdcnotes.com/notes/wwdc22/10092/)
+- [Meet passkeys - WWDC22](/documentation/wwdc22-10092-meet-passkeys/)
 - [Meet Web Push for Safari - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10098/)
 - [Rediscover Safari developer features - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10262)
 - [What's new in Web Inspector - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10118)

@@ -30,7 +30,7 @@ There are **three ways** to navigate the notes on this website:
 
 ## Contributing
 
-Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+Missing anything? Found a mistake? [Contributions are welcome!](/documentation/contributing/)
 
 
 ## Topics
@@ -55,3 +55,8 @@ Missing anything? Found a mistake? [Contributions are welcome!](https://wwdcnote
 - <doc:WWDC10>
 
 @Comment { Add more years! }
+
+### Guides
+
+- <doc:Contributing>
+- <doc:MissingNotes>

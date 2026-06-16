@@ -14,7 +14,7 @@ Experience Swift 6 migration in action as we update an existing sample app. Lear
 
 ## Introduction
 
-The session first reviewed how the CoffeeTracker sample app was migrated to Swift concurrency in [this session from WWDC21](https://wwdcnotes.com/documentation/wwdcnotes/wwdc21-10194-swift-concurrency-update-a-sample-app):
+The session first reviewed how the CoffeeTracker sample app was migrated to Swift concurrency in [this session from WWDC21](/documentation/wwdc21-10194-swift-concurrency-update-a-sample-app/):
 
 @TabNavigator {
    @Tab("Pre-concurrency queue structure") {

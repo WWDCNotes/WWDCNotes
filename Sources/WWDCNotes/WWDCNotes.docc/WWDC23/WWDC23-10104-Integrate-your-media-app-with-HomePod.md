@@ -60,9 +60,9 @@ Make sure your app responds all intents as fast as possible. Requests will timeo
 
 # Related Sessions
 
-- [Introducing SiriKit Media Intents - WWDC19](https://wwdcnotes.com/notes/wwdc19/207/)
-- [Expand your SiriKit Media Intents to more platforms - WWDC20](https://wwdcnotes.com/notes/wwdc20/10061/)
-- [Tune up your AirPlay audio experience - WWDC23](https://wwdcnotes.com/notes/wwdc23/10238/)
+- [Introducing SiriKit Media Intents - WWDC19](/documentation/wwdc19-207-introducing-sirikit-media-intents/)
+- [Expand your SiriKit Media Intents to more platforms - WWDC20](/documentation/wwdc20-10061-expand-your-sirikit-media-intents-to-more-platforms/)
+- [Tune up your AirPlay audio experience - WWDC23](/documentation/wwdc23-10238-tune-up-your-airplay-audio-experience/)
 
 [dataflow]: WWDC23-10104-dataflow
 [music-and-radio-examples]: WWDC23-10104-music-and-radio-examples

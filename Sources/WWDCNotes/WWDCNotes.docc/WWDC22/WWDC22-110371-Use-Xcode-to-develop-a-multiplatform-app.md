@@ -29,7 +29,7 @@ Learn how you can build apps for multiple Apple platforms using Xcode 14. We'll 
 - recommended especially for SwiftUI or Mac Catalyst projects
 - if you're starting from scratch, use the improved <kbd>Multiplatform App</kbd> template 
 
-![multiplatform-app-template](https://user-images.githubusercontent.com/72805/184593197-850fdf02-c859-4c7d-b7eb-828097ab5b84.png)
+![multiplatform-app-template](WWDC22-110371-remote1)
 
 The multiplatform app template uses SwiftUI for its lifecycle and interface, which starts us out with a target configured by default to support iPhone, iPad, and Mac.
 
@@ -38,7 +38,7 @@ The multiplatform app template uses SwiftUI for its lifecycle and interface, whi
 	- in the `General` tab, we can see a list of all the destinations our app support
 	- there we can add as many destinations as we like
 
-![upgrade-existing-codebase](https://user-images.githubusercontent.com/72805/184593738-a055442c-e20f-4c04-bedf-be01061ad84c.png)
+![upgrade-existing-codebase](WWDC22-110371-remote2)
 
 ### Choosing between Mac and Mac Catalyst
 
@@ -48,7 +48,7 @@ If your app makes heavy use of UIKit or Storyboards, Mac Catalyst would be a gre
 
 Custom configuration in place editor 
 
-![custom-configuration-in-place-editor](https://user-images.githubusercontent.com/72805/184594756-e50d2e6f-78a1-428a-886b-e4bd066a017f.png)
+![custom-configuration-in-place-editor](WWDC22-110371-remote3)
 
 ### Signing Certificate and Provisioning Profile
 
@@ -59,7 +59,7 @@ With Automatic Signing turned on, the necessary Signing Certificate and Provisio
 - Most settings in the target editor now come with a <kbd>Conditions</kbd> option
 - <kbd>Conditions</kbd> lets us specify different values based on which SDK is being targeted (macOS, iOS, ..)
 
-![conditionalize-individual-files](https://user-images.githubusercontent.com/72805/184594071-9fee2758-9e4e-4060-b815-855bd3790812.png)
+![conditionalize-individual-files](WWDC22-110371-remote4)
 
 - App capabilities that can be shared across different destinations will get combined into a single entitlements file
 

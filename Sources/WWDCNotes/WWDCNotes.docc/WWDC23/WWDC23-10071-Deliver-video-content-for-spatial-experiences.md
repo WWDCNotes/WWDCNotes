@@ -258,7 +258,7 @@ The metadata and video track should be multiplexed with the video so that HLS pa
 
 ![3D audiovisual media][threeDAudiovisualMedia12]
 
-[threeDAudiovisualMedia12]: ../../../images/notes/wwdc23/10071/threeDAudiovisualMedia12.jpg
+[threeDAudiovisualMedia12]: WWDC23-10071-threeDAudiovisualMedia12
 
 # Captions and 3D video
 - Reuse your 2D captions with your 3D video  

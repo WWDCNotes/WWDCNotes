@@ -19,7 +19,7 @@ The words and phrases you choose for your app matter. Whether you’re writing a
 - All Apple devices greet with “hello” (like the original Mac)
 - An app with the words removed looks empty (proves the point how important words are)
     
-![](https://user-images.githubusercontent.com/6942160/173164516-a3312a35-8324-4a8b-86df-499bd07a0c79.png)
+![](WWDC22-10037-remote1)
 
 
 - Structure, timing and feeling people have are important, too
@@ -74,7 +74,7 @@ The words and phrases you choose for your app matter. Whether you’re writing a
     - Never label alert buttons “Yes” and “No”, be more specific
     - Don’t use things like “Oops”, “Sorry” and “Please” too much
         
-| ![](https://user-images.githubusercontent.com/6942160/173164530-73ac4c73-c482-4ebd-856c-0fd467143bcd.png) | ![](https://user-images.githubusercontent.com/6942160/173164538-6b46b8e7-6107-4cbb-ab7d-b6fec2ae4cd6.png) |
+| ![](WWDC22-10037-remote2) | ![](WWDC22-10037-remote3) |
 
 - Create useful empty states
     - Give helpful hints, or party in an inbox for example

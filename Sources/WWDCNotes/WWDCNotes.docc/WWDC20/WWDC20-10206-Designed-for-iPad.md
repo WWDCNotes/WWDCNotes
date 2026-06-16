@@ -254,7 +254,7 @@ Making a great iPad app doesn't come for free. You need to design specifically f
 
 To learn more, refer to:
 
-- [Design with iOS Pickers, Menus, and Actions](../10205) to learn more about iOS/iPadOS 14 controls. These also work well with Catalyst.
+- [Design with iOS Pickers, Menus, and Actions](/documentation/wwdc20-10205-design-with-ios-pickers-menus-and-actions/) to learn more about iOS/iPadOS 14 controls. These also work well with Catalyst.
 - [Build for iPad](https://developer.apple.com/videos/play/wwdc2020/10105) will show you how to use all of this in your code.
 
 

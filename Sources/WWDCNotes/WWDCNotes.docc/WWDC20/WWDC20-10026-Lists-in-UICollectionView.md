@@ -28,7 +28,7 @@ Download the [sample code](https://developer.apple.com/documentation/uikit/views
 
 * `UICollectionLayoutListConfiguration` is the only new type required to build a `list`.
 * `UICollectionLayoutListConfiguration` is built on top of `NSCollectionLayoutSection` as well as `UICollectionViewCompositionalLayout`.
-* For more refer to the [Advances in Collection View Layout](../../wwdc19/215) session.
+* For more refer to the [Advances in Collection View Layout](/documentation/wwdc19-215-advances-in-collection-view-layout/) session.
 
 ## [List Configuration](https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration)
 * Gives the styles form table view such as `.plain`, `.grouped` and `.insetGrouped`.

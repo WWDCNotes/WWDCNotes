@@ -15,4 +15,4 @@ Get ready to launch into space — a new SwiftUI scene type that can help you ma
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

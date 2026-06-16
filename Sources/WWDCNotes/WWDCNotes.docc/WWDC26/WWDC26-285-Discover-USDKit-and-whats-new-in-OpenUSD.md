@@ -15,4 +15,4 @@ Dive into the latest advances in Universal Scene Description (USD) support on Ap
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

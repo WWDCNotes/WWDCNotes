@@ -155,5 +155,5 @@ The parenthesis around the `repeat (each item).evaluate()` make the return value
 
 # Related Sessions
 
-- [Embrace Swift Generics - WWDC22](https://wwdcnotes.com/notes/wwdc22/110352/)
-- [Design protocol interfaces in Swift - WWDC22](https://wwdcnotes.com/notes/wwdc22/110353/)
+- [Embrace Swift Generics - WWDC22](/documentation/wwdc22-110352-embrace-swift-generics/)
+- [Design protocol interfaces in Swift - WWDC22](/documentation/wwdc22-110353-design-protocol-interfaces-in-swift/)

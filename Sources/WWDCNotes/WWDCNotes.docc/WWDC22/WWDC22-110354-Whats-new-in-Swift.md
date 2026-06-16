@@ -329,4 +329,4 @@ func addEntries2(_ entries: any Collection<MailmapEntry>, to mailmap: inout any 
 [swift-distributed-actors]: https://github.com/apple/swift-distributed-actors
 [SWIM_Protocol]: https://en.wikipedia.org/wiki/SWIM_Protocol
 [aap]: http://github.com/apple/swift-async-algorithms
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc22-whats-new-in-swift.jpg
+[sketchnote]: WWDC22-110354-sketchnote

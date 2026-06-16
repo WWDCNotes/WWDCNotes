@@ -57,7 +57,7 @@ PencilKit helps power creativity, writing, drawing, and animation in your iPad a
 
 - PencilKit in iOS 14 provides access to strokes, for more, check session [`Inspect, modify, and construct PencilKit drawings`][20-10148]
 
-[20-10148]: ../10148
+[20-10148]: /documentation/wwdc20-10148-inspect-modify-and-construct-pencilkit-drawings/
 [showsDrawingPolicyControls]: https://developer.apple.com/documentation/pencilkit/pktoolpicker/3552394-showsdrawingpolicycontrols
 [PKCanvasView]: https://developer.apple.com/documentation/pencilkit/pkcanvasview
 [drawingPolicy]: https://developer.apple.com/documentation/pencilkit/pkcanvasview/3552388-drawingpolicy

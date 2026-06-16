@@ -100,7 +100,7 @@ For more, refer to the [`Create app clips for other businesses`][20-10118] sessi
 For more information, see the [App Clips's Human Interface Guidelines][hig]
 
 
-[20-10118]: ../10118
+[20-10118]: /documentation/wwdc20-10118-create-app-clips-for-other-businesses/
 [hig]: https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/
 
 [iconDiffImage]: WWDC20-10172-iconDiff

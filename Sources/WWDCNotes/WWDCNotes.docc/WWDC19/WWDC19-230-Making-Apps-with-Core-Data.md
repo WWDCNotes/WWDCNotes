@@ -370,10 +370,10 @@ container.loadPersistentStores(completionHandler: { (_, error) in
 ```
 
 [app]: https://developer.apple.com/documentation/coredata/synchronizing_a_local_store_to_the_cloud
-[combine]: ../721
-[data-sources]: ../220
+[combine]: /documentation/wwdc19-721-combine-in-practice/
+[data-sources]: /documentation/wwdc19-220-advances-in-ui-data-sources/
 [proposal-240]: https://github.com/apple/swift-evolution/blob/master/proposals/0240-ordered-collection-diffing.md
-[foundation]: ../723
+[foundation]: /documentation/wwdc19-723-advances-in-foundation/
 [best-practices]: https://developer.apple.com/videos/play/wwdc2018/224
 [demo]: WWDC19-230-demo
 [shape]: WWDC19-230-shape

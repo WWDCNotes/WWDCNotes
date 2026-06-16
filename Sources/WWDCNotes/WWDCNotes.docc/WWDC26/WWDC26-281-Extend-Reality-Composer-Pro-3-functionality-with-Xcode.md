@@ -15,4 +15,4 @@ Discover how Reality Composer Pro 3 empowers you to build bigger, more ambitious
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

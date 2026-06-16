@@ -15,4 +15,4 @@ Make decoding and displaying ProRes content easier in your Mac app: Learn how to
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

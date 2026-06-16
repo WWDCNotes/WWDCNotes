@@ -28,7 +28,7 @@ Learn how App Store App Analytics can provide unique insights and help you measu
 
 ## Metrics
 
-![](https://user-images.githubusercontent.com/6942160/173164338-e2638cd5-8442-4ec7-8dc8-5d0894f0531f.png)
+![](WWDC22-10044-remote1)
 
 Comparable metrics:
 
@@ -47,7 +47,7 @@ Comparable metrics:
 
 ## Taking action
 
-![](https://user-images.githubusercontent.com/6942160/173164346-8aed5a55-b231-44e3-90c8-ffcd76fd58f6.png)
+![](WWDC22-10044-remote2)
 
 Ways you can act on specific parts you’re missing out on:
 

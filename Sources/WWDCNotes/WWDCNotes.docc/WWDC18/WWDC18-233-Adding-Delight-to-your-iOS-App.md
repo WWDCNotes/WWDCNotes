@@ -239,10 +239,8 @@ this stream allow a continuous talk between devices, but we need to do this fast
 [wwdc15412]: https://developer.apple.com/videos/wwdc/2015/?id=412
 [wwdc16219]: https://developer.apple.com/videos/wwdc/2016/?id=219
 [wwdc16418]: https://developer.apple.com/videos/wwdc/2016/?id=418
-[wwdc17413]: ../../wwdc17/413
+[wwdc17413]: /documentation/wwdc17-413-app-startup-time-past-present-and-future/
 
 [car2ndScreenImage]: WWDC18-233-car2ndScreen
 [userActivityContinueImage]: WWDC18-233-userActivityContinue
 [streamImage]: WWDC18-233-stream
-[Image]: ../../../images/notes/wwdc18/233/.png
-[Image]: ../../../images/notes/wwdc18/233/.png

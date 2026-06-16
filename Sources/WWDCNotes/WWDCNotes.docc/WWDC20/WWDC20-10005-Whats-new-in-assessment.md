@@ -15,4 +15,4 @@ It’s now easier than ever to deliver academic tests on the Mac. Learn how educ
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

@@ -15,4 +15,4 @@ AR Quick Look is a built-in viewer for experiencing high-quality content in 3D a
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

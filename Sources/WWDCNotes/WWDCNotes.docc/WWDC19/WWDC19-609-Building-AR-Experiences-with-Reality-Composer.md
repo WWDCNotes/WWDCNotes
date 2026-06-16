@@ -15,4 +15,4 @@ Reality Composer is a tool that lets anyone quickly prototype and build AR scene
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

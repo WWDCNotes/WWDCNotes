@@ -15,4 +15,4 @@ Learn how to bring your Live Activities and widgets to CarPlay and CarPlay Ultra
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

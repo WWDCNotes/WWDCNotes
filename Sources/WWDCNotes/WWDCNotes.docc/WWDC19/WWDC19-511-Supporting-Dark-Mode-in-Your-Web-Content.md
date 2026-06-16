@@ -15,4 +15,4 @@ With system-wide Dark Mode support in iOS and macOS, you'll want to make sure yo
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

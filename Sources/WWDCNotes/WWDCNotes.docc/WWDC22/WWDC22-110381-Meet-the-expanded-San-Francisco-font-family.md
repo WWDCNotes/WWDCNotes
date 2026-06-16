@@ -39,7 +39,7 @@ Discover the latest additions to San Francisco – the system font for Apple pla
 
 - Full overview of all styles:
     
-![](https://user-images.githubusercontent.com/6942160/173163906-cf9c9b03-6b46-4869-bb54-d3afca115efe.png)
+![](WWDC22-110381-remote1)
 
 
 - Styles towards center have more neutral voice
@@ -59,7 +59,7 @@ Discover the latest additions to San Francisco – the system font for Apple pla
     - Photos app combines Compressed Semibold for Title, Expanded Bold for Subtitle
     - A world of possible combinations:
 
-![](https://user-images.githubusercontent.com/6942160/173163915-f9884e76-e2ab-4c51-be10-b0b98b011a74.png)
+![](WWDC22-110381-remote2)
 
 
 - News app uses Condensed or Compressed for title to fit more in, giving the title personality
@@ -77,7 +77,7 @@ Discover the latest additions to San Francisco – the system font for Apple pla
 - Extending the linguistic coverage of San Francisco, started last year
 - SF Arabic introduced last year, features full gamut of weights
     
-![](https://user-images.githubusercontent.com/6942160/173163935-7fa777f0-379a-4dd6-9f2e-9a6224fd70c4.png)
+![](WWDC22-110381-remote3)
 
 - Optical sizes are tailored for Arabic, fine-tuned for legibility
 - Many extras like vocals and Quranic notations added

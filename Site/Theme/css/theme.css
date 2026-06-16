@@ -1,0 +1,2195 @@
+/* ============================================================
+   SiteKit Universal Theme — Classic layout template
+
+   ONE shared theme for every SiteKit blueprint. The Classic
+   layout template styles blog articles, listings, rich-content
+   cards (link cards), promotions, author chrome and static
+   pages — so a site needs only a colorScheme + token overrides
+   in Theme/theme.yaml, not a bespoke theme.css.
+
+   - Design tokens (colors, fonts, spacing) come from tokens.css,
+     generated from colorScheme + fontPairing in theme.yaml.
+   - Base reset / accessibility lives in SiteKit's base.css
+     (auto-included before this file).
+   - Every component color is a var(--color-*) token. The single
+     exception is the draft-preview banner, which keeps a fixed
+     semantic amber — there is no --color-warning token yet.
+
+   Class names target the HTML the built-in SiteKit renderers
+   actually emit (OutputFileRenderer+*, MarkdownRenderer,
+   SectionListingRenderer, …). Podcast episode components
+   (episode-*, chapter-*, host-*) are styled in a later round.
+   ============================================================ */
+
+/* Prevent horizontal overflow from wide elements (hover tooltips
+   with white-space: nowrap near the right edge, wide code blocks).
+   `clip` on <html> does NOT create a scroll container, so iOS
+   Safari momentum scrolling is preserved. */
+html {
+   overflow-x: clip;
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+h1, h2, h3, h4, h5, h6 {
+   font-family: var(--font-heading);
+   font-weight: 700;
+   line-height: 1.3;
+   color: var(--color-text);
+}
+
+h1 { font-size: 2.25rem; margin-bottom: 0.5em; letter-spacing: -0.025em; }
+h2 { font-size: 1.75rem; margin-top: 2em; margin-bottom: 0.5em; letter-spacing: -0.02em; }
+h3 { font-size: 1.375rem; margin-top: 1.5em; margin-bottom: 0.5em; }
+h4 { font-size: 1.125rem; margin-top: 1.25em; margin-bottom: 0.5em; }
+
+p {
+   margin-bottom: 1.25em;
+}
+
+strong {
+   font-weight: 600;
+}
+
+/* ============================================================
+   Skip Link (Accessibility)
+   ============================================================ */
+.sk-skip-link {
+   position: absolute;
+   top: -100%;
+   left: 0;
+   background: var(--color-accent);
+   color: #fff;
+   padding: 0.5rem 1rem;
+   z-index: 100;
+   border-radius: 0 0 var(--radius) 0;
+   font-weight: 500;
+}
+
+.sk-skip-link:focus {
+   top: 0;
+   color: #fff;
+}
+
+/* ============================================================
+   Site Header & Navigation
+   ============================================================ */
+.sk-site-header {
+   position: sticky;
+   top: 0;
+   z-index: 50;
+   background: var(--color-header-bg, rgba(250, 251, 252, 0.92));
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
+   border-bottom: 1px solid var(--color-border-light);
+   height: var(--header-height);
+}
+
+[data-theme="dark"] .sk-site-header {
+   background: var(--color-header-bg, rgba(23, 25, 35, 0.92));
+}
+
+.sk-site-nav {
+   display: flex;
+   align-items: center;
+   max-width: var(--max-width);
+   margin: 0 auto;
+   padding: 0 1.5rem;
+   height: 100%;
+}
+
+.sk-site-logo {
+   font-family: var(--font-heading);
+   font-size: 1.35rem;
+   font-weight: 700;
+   color: var(--color-text);
+   letter-spacing: -0.02em;
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.sk-site-logo img {
+   height: var(--logo-size, 32px);
+   width: var(--logo-size, 32px);
+   border-radius: var(--logo-radius, 6px);
+}
+
+.sk-site-logo-text {
+   font-family: var(--font-heading);
+   font-size: 1.35rem;
+   font-weight: 700;
+   letter-spacing: -0.02em;
+}
+
+.sk-site-logo:hover {
+   color: var(--color-accent);
+}
+
+.sk-nav-list {
+   display: flex;
+   list-style: none;
+   gap: 0.25rem;
+   flex: 1;
+   justify-content: center;
+}
+
+.sk-nav-item a {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.375rem;
+   padding: 0.5rem 1.25rem;
+   color: var(--color-text);
+   font-weight: 600;
+   font-size: 1rem;
+   border-radius: var(--radius);
+   transition: all var(--transition);
+}
+
+.sk-nav-item a:hover,
+.sk-nav-item a.active {
+   color: var(--color-accent);
+   background: var(--color-accent-light);
+}
+
+.sk-nav-icon {
+   font-size: 0.875rem;
+   display: inline-block;
+   width: 1em;
+   text-align: center;
+}
+
+.sk-search-btn {
+   position: relative;
+   display: flex;
+   align-items: center;
+   background: none;
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius);
+   padding: 0.375rem 0.625rem;
+   color: var(--color-text-secondary);
+   cursor: pointer;
+   font-size: 1rem;
+   transition: all var(--transition);
+   flex-shrink: 0;
+   margin-left: 0.5rem;
+}
+
+.sk-search-btn:hover {
+   color: var(--color-accent);
+   border-color: var(--color-accent);
+}
+
+.sk-theme-toggle {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   background: none;
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius);
+   padding: 0.375rem 0.625rem;
+   color: var(--color-text-secondary);
+   cursor: pointer;
+   font-size: 0.875rem;
+   line-height: 1;
+   transition: all var(--transition);
+   flex-shrink: 0;
+   margin-left: 0.5rem;
+}
+
+.sk-theme-toggle:hover {
+   color: var(--color-accent);
+   border-color: var(--color-accent);
+}
+
+/* Header action buttons (search, theme, lang) share identical height —
+   normalised so the rendered button heights match regardless of the icon
+   or text payload inside. Padding (0.375rem 0.625rem) + line-height: 1
+   make the visual height a function of the SVG/text font-size alone, and
+   the three buttons all use 16x16 SVGs so they end up pixel-equal. */
+.sk-search-btn,
+.sk-theme-toggle,
+.sk-lang-btn {
+   line-height: 1;
+}
+
+/* Language picker — boxed icon button matching .sk-search-btn / .sk-theme-toggle */
+.sk-lang-picker {
+   position: relative;
+   flex-shrink: 0;
+   margin-left: 0.5rem;
+}
+
+.sk-lang-btn {
+   display: flex;
+   align-items: center;
+   gap: 0.375rem;
+   background: none;
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius);
+   padding: 0.375rem 0.625rem;
+   color: var(--color-text-secondary);
+   cursor: pointer;
+   font-size: 0.875rem;
+   transition: all var(--transition);
+}
+
+.sk-lang-btn:hover {
+   color: var(--color-accent);
+   border-color: var(--color-accent);
+}
+
+.sk-lang-current {
+   font-size: 0.75rem;
+   font-weight: 500;
+   letter-spacing: 0.03em;
+}
+
+.sk-lang-menu {
+   position: absolute;
+   top: 100%;
+   right: 0;
+   margin-top: 0.375rem;
+   background: var(--color-bg);
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius);
+   box-shadow: 0 4px 16px var(--color-shadow);
+   min-width: 160px;
+   z-index: 100;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(-4px);
+   transition: opacity 0.15s, visibility 0.15s, transform 0.15s;
+}
+
+.sk-lang-open .sk-lang-menu {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+}
+
+.sk-lang-option {
+   display: flex;
+   align-items: center;
+   padding: 0.5rem 1rem;
+   color: var(--color-text);
+   font-size: 0.875rem;
+   text-decoration: none;
+   transition: background 0.1s, color 0.1s;
+}
+
+.sk-lang-option:first-child {
+   border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.sk-lang-option:last-child {
+   border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.sk-lang-option:hover {
+   background: var(--color-accent-light);
+   color: var(--color-accent);
+}
+
+.sk-lang-active {
+   font-weight: 600;
+   color: var(--color-accent);
+}
+
+.sk-lang-flag {
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-right: 0.5rem;
+   flex-shrink: 0;
+}
+
+/* ============================================================
+   Main Content Area
+   ============================================================ */
+.sk-main {
+   flex: 1;
+   max-width: var(--max-width);
+   margin: 0 auto;
+   padding: 2rem 1.5rem;
+   width: 100%;
+}
+
+/* ============================================================
+   Homepage
+   ============================================================ */
+.sk-page-home .sk-main {
+   max-width: var(--max-width);
+}
+
+.sk-home-hero {
+   text-align: center;
+   padding: 4rem 1rem 3rem;
+   margin-bottom: 2rem;
+   background: var(--color-bg-alt);
+   border-radius: var(--radius-lg);
+   overflow: hidden;
+}
+
+.sk-home-title {
+   font-size: 2.75rem;
+   letter-spacing: -0.03em;
+   margin-bottom: 0.5rem;
+}
+
+.sk-home-subtitle {
+   font-size: 1.25rem;
+   color: var(--color-text-secondary);
+   max-width: 600px;
+   margin: 0 auto;
+   line-height: 1.6;
+}
+
+.sk-home-content {
+   margin-bottom: 2rem;
+}
+
+.sk-home-content ul,
+.sk-home-content ol {
+   margin-bottom: 1.25em;
+   padding-left: 1.5rem;
+}
+
+.sk-home-content li {
+   margin-bottom: 0.375em;
+   line-height: 1.65;
+}
+
+.sk-home-content h2 {
+   font-size: 1.5rem;
+   margin-top: 2.5rem;
+   margin-bottom: 1rem;
+   padding-bottom: 0.5rem;
+   border-bottom: 2px solid var(--color-accent-light);
+}
+
+.sk-home-section-title {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+.sk-home-recent {
+   margin-bottom: 2rem;
+}
+
+.sk-home-all-posts {
+   text-align: right;
+   margin-top: 0.5rem;
+   margin-bottom: 0;
+}
+
+.sk-home-all-posts a {
+   font-size: 0.9375rem;
+   font-weight: 600;
+   color: var(--color-accent);
+}
+
+/* ============================================================
+   Listing Pages (section, category, tag listings)
+   ============================================================ */
+.sk-listing {
+   max-width: var(--max-width);
+   margin: 0 auto;
+}
+
+.sk-listing-header {
+   margin-bottom: 2rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid var(--color-border-light);
+}
+
+.sk-listing-title-row {
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
+.sk-listing-title {
+   font-size: 2rem;
+   margin-bottom: 0.25rem;
+}
+
+.sk-listing-description {
+   color: var(--color-text-secondary);
+   font-size: 1.0625rem;
+   margin-bottom: 0.5rem;
+}
+
+.sk-listing-count {
+   color: var(--color-text-muted);
+   font-size: 0.9375rem;
+}
+
+.sk-listing-rss {
+   font-size: 0.875rem;
+   color: var(--color-text-muted);
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.sk-listing-rss:hover {
+   color: var(--color-accent);
+}
+
+/* Group titles split a combined listing into per-section blocks. */
+.sk-listing-group-title {
+   font-size: 1.35rem;
+   margin-top: 2.5rem;
+   margin-bottom: 1rem;
+   padding-bottom: 0.5rem;
+   border-bottom: 2px solid var(--color-accent-light);
+   color: var(--color-text);
+   scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.sk-listing-group-title:first-of-type {
+   margin-top: 0.5rem;
+}
+
+/* Section jump navigation — pill links to each group on a combined listing. */
+.sk-section-jump-nav {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.sk-jump-link {
+   display: inline-block;
+   padding: 0.375rem 0.875rem;
+   background: var(--color-bg-alt);
+   border: 1px solid var(--color-border);
+   border-radius: 100px;
+   font-size: 0.875rem;
+   color: var(--color-text-secondary);
+   text-decoration: none;
+   transition: all var(--transition);
+}
+
+.sk-jump-link:hover {
+   color: var(--color-accent);
+   border-color: var(--color-accent);
+   background: var(--color-accent-light);
+}
+
+/* ============================================================
+   Post List / Article Cards
+   ============================================================ */
+.sk-post-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+   gap: 1.25rem;
+   list-style: none;
+}
+
+.sk-post-card {
+   position: relative;
+   background: var(--color-bg-card);
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius-lg);
+   transition: all var(--transition);
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.sk-post-card:hover {
+   border-color: var(--color-accent);
+   box-shadow: 0 4px 16px var(--color-shadow);
+   transform: translateY(-2px);
+}
+
+.sk-post-card article {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Invisible overlay link making the whole card clickable. */
+.sk-post-link {
+   position: absolute;
+   inset: 0;
+   z-index: 1;
+}
+
+/* Image preview — full-bleed at the top of the card. */
+.sk-post-image-container {
+   width: 100%;
+   height: 180px;
+   overflow: hidden;
+   background: var(--color-bg-alt);
+}
+
+.sk-post-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.sk-post-content {
+   padding: 1.25rem 1.5rem 0.75rem;
+   flex: 1;
+}
+
+.sk-post-title {
+   font-size: 1.125rem;
+   margin: 0 0 0.375rem 0;
+   letter-spacing: -0.01em;
+   line-height: 1.4;
+}
+
+.sk-post-title a {
+   color: var(--color-text);
+   text-decoration: none;
+}
+
+.sk-post-title a:hover {
+   color: var(--color-accent);
+}
+
+.sk-post-date {
+   display: block;
+   color: var(--color-text-muted);
+   font-size: 0.8125rem;
+   margin-bottom: 0.5rem;
+}
+
+.sk-post-summary {
+   color: var(--color-text-secondary);
+   font-size: 0.875rem;
+   line-height: 1.6;
+   margin-bottom: 0;
+   display: -webkit-box;
+   /* Configurable per blueprint or site. Default 3 lines fits a typical
+      blog-post summary; newsletter editions override to ~6 because each
+      edition summary covers several articles. Override by setting
+      --post-summary-line-clamp on :root, .sk-page-*, or .sk-post-card. */
+   -webkit-line-clamp: var(--post-summary-line-clamp, 3);
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+/* Footer sits above the invisible card link so its tags stay clickable. */
+.sk-post-footer {
+   padding: 0.75rem 1.5rem 1rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   flex-wrap: wrap;
+   position: relative;
+   z-index: 2;
+}
+
+.sk-post-category a {
+   display: inline-block;
+   padding: 0.125rem 0.5rem;
+   background: var(--color-accent-light);
+   color: var(--color-accent);
+   font-size: 0.75rem;
+   font-weight: 600;
+   border-radius: 100px;
+   text-transform: uppercase;
+   letter-spacing: 0.04em;
+}
+
+.sk-post-footer .sk-tag-list-inline {
+   position: relative;
+   z-index: 2;
+}
+
+.sk-post-footer .sk-tag-link {
+   font-size: 0.75rem;
+   padding: 0.125rem 0.5rem;
+}
+
+.sk-empty {
+   color: var(--color-text-muted);
+   font-style: italic;
+   text-align: center;
+   padding: 2rem;
+}
+
+/* ============================================================
+   Article Page
+   ============================================================ */
+.sk-article {
+   max-width: var(--content-width);
+   margin: 0 auto;
+}
+
+.sk-article-header {
+   margin-bottom: 2.5rem;
+   padding-bottom: 1.5rem;
+   border-bottom: 1px solid var(--color-border-light);
+}
+
+.sk-article-title {
+   font-size: 2.5rem;
+   letter-spacing: -0.03em;
+   line-height: 1.2;
+   margin-bottom: 0.75rem;
+}
+
+.sk-article-summary {
+   font-size: 1.25rem;
+   color: var(--color-text-secondary);
+   line-height: 1.6;
+   margin-bottom: 1rem;
+}
+
+.sk-article-meta {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+   flex-wrap: wrap;
+}
+
+.sk-article-date,
+.sk-article-read-time {
+   color: var(--color-text-muted);
+   font-size: 0.9375rem;
+}
+
+.sk-article-read-time::before {
+   content: "·";
+   margin: 0 0.375rem;
+}
+
+/* Category pill — pushed to the trailing edge of the meta row. */
+.sk-article-category {
+   display: inline-block;
+   padding: 0.25rem 0.75rem;
+   background: var(--color-accent-light);
+   color: var(--color-accent);
+   font-size: 0.8125rem;
+   font-weight: 600;
+   border-radius: 100px;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   margin-left: auto;
+}
+
+/* Author byline */
+.sk-article-byline {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+}
+
+.sk-article-author-image {
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   object-fit: cover;
+   flex-shrink: 0;
+}
+
+.sk-article-byline-text {
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+   padding: 0.125rem 0;
+}
+
+.sk-article-author {
+   font-weight: 600;
+   font-size: 0.9375rem;
+   color: var(--color-text);
+   text-decoration: none;
+}
+
+a.sk-article-author:hover {
+   color: var(--color-accent);
+}
+
+.sk-article-byline-details {
+   display: flex;
+   align-items: center;
+   gap: 0;
+   font-size: 0.875rem;
+   color: var(--color-text-muted);
+}
+
+/* Translation notice for AI-translated articles in unverified languages. */
+.sk-translation-notice {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 0.625rem 1rem;
+   margin-bottom: 1.5rem;
+   background: var(--color-bg-alt);
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius);
+   font-size: 0.8125rem;
+   color: var(--color-text-secondary);
+}
+
+.sk-translation-notice i {
+   color: var(--color-text-muted);
+   flex-shrink: 0;
+}
+
+.sk-translation-notice-link {
+   color: var(--color-accent);
+   white-space: nowrap;
+   margin-left: auto;
+}
+
+/* Hero image — feature image, often the LCP element. */
+.sk-article-hero {
+   margin: -0.5rem 0 2rem;
+}
+
+.sk-article-hero img {
+   width: 100%;
+   height: auto;
+   border-radius: var(--radius-lg);
+   display: block;
+}
+
+/* ============================================================
+   Article Body Content
+   ============================================================ */
+.sk-article-body {
+   max-width: var(--content-width);
+   margin: 0 auto;
+   font-size: 1.0625rem;
+   line-height: 1.8;
+}
+
+.sk-article-body h2 {
+   font-size: 1.625rem;
+   margin-top: 2.5rem;
+}
+
+.sk-article-body h3 {
+   font-size: 1.25rem;
+   margin-top: 2rem;
+}
+
+.sk-article-body p {
+   margin-bottom: 1.25em;
+}
+
+.sk-article-body ul,
+.sk-article-body ol {
+   margin-bottom: 1.25em;
+   padding-left: 1.5rem;
+}
+
+.sk-article-body li {
+   margin-bottom: 0.375em;
+   line-height: 1.65;
+}
+
+.sk-article-body img {
+   border-radius: var(--radius);
+   margin: 1.5rem 0;
+}
+
+.sk-article-body video {
+   display: block;
+   max-width: 100%;
+   margin: 1.5rem auto;
+   border-radius: var(--radius-lg);
+}
+
+.sk-article-body blockquote {
+   border-left: 3px solid var(--color-accent);
+   padding: 0.75rem 1.25rem;
+   margin: 1.5rem 0;
+   background: var(--color-bg-alt);
+   border-radius: 0 var(--radius) var(--radius) 0;
+   color: var(--color-text-secondary);
+}
+
+.sk-article-body blockquote p:last-child {
+   margin-bottom: 0;
+}
+
+.sk-article-body table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 1.5rem 0;
+   font-size: 0.9375rem;
+}
+
+.sk-article-body th,
+.sk-article-body td {
+   padding: 0.75rem 1rem;
+   text-align: left;
+   border-bottom: 1px solid var(--color-border);
+}
+
+.sk-article-body th {
+   font-weight: 600;
+   background: var(--color-bg-alt);
+}
+
+.sk-article-body hr {
+   border: none;
+   height: 1px;
+   background: var(--color-border);
+   margin: 2.5rem 0;
+}
+
+.sk-article-footer {
+   margin-top: 3rem;
+   padding-top: 1.5rem;
+   border-top: 1px solid var(--color-border-light);
+}
+
+/* ============================================================
+   Code Blocks
+   ============================================================ */
+code {
+   background: var(--color-code-bg);
+   color: var(--color-code-text);
+   padding: 0.15rem 0.4rem;
+   border-radius: 4px;
+   font-size: 0.85em;
+   font-family: var(--font-mono);
+}
+
+pre {
+   background: var(--color-code-bg);
+   color: var(--color-code-text);
+   border-radius: var(--radius-lg);
+   padding: 1.25rem 1.5rem;
+   margin: 1.5rem 0;
+   overflow-x: auto;
+   font-family: var(--font-mono);
+   font-size: 0.875rem;
+   line-height: 1.6;
+}
+
+pre code {
+   background: none;
+   color: inherit;
+   padding: 0;
+   border-radius: 0;
+   font-size: inherit;
+}
+
+/* ============================================================
+   Article Prev/Next Navigation
+   ============================================================ */
+.sk-article-nav {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+   margin: 2rem 0 1.5rem;
+}
+
+.sk-article-nav-prev,
+.sk-article-nav-next {
+   display: flex;
+   flex-direction: column;
+   padding: 1rem 1.25rem;
+   background: var(--color-bg-card);
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius-lg);
+   transition: all var(--transition);
+   text-decoration: none;
+}
+
+.sk-article-nav-next {
+   text-align: right;
+}
+
+.sk-article-nav-prev:hover,
+.sk-article-nav-next:hover {
+   border-color: var(--color-accent);
+   box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.sk-article-nav-empty {
+   visibility: hidden;
+}
+
+.sk-article-nav-label {
+   font-size: 0.8125rem;
+   color: var(--color-text-muted);
+   font-weight: 500;
+   margin-bottom: 0.25rem;
+}
+
+.sk-article-nav-title {
+   font-size: 0.9375rem;
+   font-weight: 600;
+   color: var(--color-text);
+   line-height: 1.4;
+}
+
+/* Back / breadcrumb link below the article footer. */
+.sk-back-link {
+   margin: 0;
+}
+
+.sk-back-link a {
+   color: var(--color-text-muted);
+   font-size: 0.9375rem;
+   transition: color var(--transition);
+}
+
+.sk-back-link a:hover {
+   color: var(--color-accent);
+}
+
+/* ============================================================
+   Tags
+   ============================================================ */
+.sk-tag-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+   list-style: none;
+   margin-bottom: 1.5rem;
+}
+
+.sk-tag-list-inline {
+   display: inline-flex;
+   margin-bottom: 0;
+   gap: 0.375rem;
+}
+
+.sk-post-footer .sk-tag-list {
+   margin-top: 0;
+}
+
+/* .sk-tag is the <li> container — kept minimal so it never double-borders
+   the .sk-tag-link pill it wraps. */
+.sk-tag {
+   display: inline-flex;
+   align-items: center;
+}
+
+/* .sk-tag-link is the actual <a> pill. */
+.sk-tag-link {
+   display: inline-block;
+   padding: 0.25rem 0.75rem;
+   background: var(--color-bg-alt);
+   border: 1px solid var(--color-border);
+   border-radius: 100px;
+   font-size: 0.8125rem;
+   color: var(--color-text-secondary);
+   text-decoration: none;
+   transition: all var(--transition);
+}
+
+.sk-tag-link:hover {
+   background: var(--color-accent-light);
+   border-color: var(--color-accent);
+   color: var(--color-accent);
+}
+
+.sk-tag-link:hover::after {
+   content: " \2192";
+}
+
+.sk-tag-count {
+   font-size: 0.8125rem;
+   color: var(--color-text-muted);
+   margin-left: 0.25rem;
+}
+
+/* Tag-index listing uses larger pills than the inline article variant. */
+.sk-tag-index {
+   gap: 0.75rem;
+}
+
+.sk-tag-index .sk-tag-link {
+   padding: 0.375rem 1rem;
+   font-size: 0.9375rem;
+}
+
+/* ============================================================
+   Link Cards — @LinkCard block directive (MarkdownRenderer)
+   ============================================================ */
+.sk-link-card {
+   display: block;
+   padding: 1rem 1.25rem;
+   margin: 1.5rem 0;
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius-lg);
+   background: var(--color-bg-card);
+   color: var(--color-text);
+   text-decoration: none;
+   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.sk-link-card:hover {
+   border-color: var(--color-accent);
+   box-shadow: 0 4px 12px var(--color-shadow);
+   transform: translateY(-1px);
+}
+
+/* Link cards inside an article body must not inherit body link underlines. */
+.sk-article-body .sk-link-card,
+.sk-article-body .sk-link-card * {
+   text-decoration: none;
+}
+
+.sk-link-card-source {
+   display: flex;
+   align-items: center;
+   gap: 0.375rem;
+   font-size: 0.75rem;
+   color: var(--color-text-muted);
+   margin-bottom: 0.375rem;
+}
+
+.sk-link-card-source svg {
+   width: 16px;
+   height: 16px;
+   fill: currentColor;
+}
+
+.sk-link-card-title {
+   display: block;
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--color-accent);
+   margin-bottom: 0.25rem;
+}
+
+.sk-link-card-description {
+   display: block;
+   font-size: 0.875rem;
+   color: var(--color-text-secondary);
+   line-height: 1.5;
+}
+
+/* ============================================================
+   Promotional Boxes — PromotionEnricher / OutputFileRenderer
+   ------------------------------------------------------------
+   SiteKit picks promo cards by `style` and emits .sk-promo-<style>
+   (highlight / info / oss / …). The universal theme renders every
+   style with one accent-tinted look: a single shared accent keeps
+   the visual identity consistent across a site. Per-style semantic
+   colors would need new --color-info / --color-warning tokens.
+   ============================================================ */
+.sk-promo-container {
+   margin: 2.5rem 0 1.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.sk-promo {
+   display: flex;
+   gap: 0.75rem;
+   padding: 1.25rem 1.5rem;
+   background: var(--color-accent-light);
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius-lg);
+}
+
+.sk-promo-emoji {
+   font-size: 1.25rem;
+   line-height: 1.6;
+   flex-shrink: 0;
+}
+
+.sk-promo-text {
+   font-size: 0.9375rem;
+   line-height: 1.6;
+   color: var(--color-text);
+}
+
+.sk-promo-text a {
+   color: var(--color-accent);
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.sk-promo-text a:hover {
+   text-decoration: underline;
+}
+
+.sk-promo-link {
+   display: inline-block;
+   margin-top: 0.5rem;
+   padding: 0.375rem 0.75rem;
+   border: 1px solid var(--color-accent);
+   border-radius: var(--radius);
+   color: var(--color-accent);
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.sk-promo-link::after {
+   content: " →";
+}
+
+.sk-promo-link:hover {
+   background: var(--color-accent);
+   color: #fff;
+}
+
+/* Inline promotion: integrated into the article flow between sections. */
+.sk-promo-inline {
+   margin: 2rem 0;
+}
+
+/* Follow-me footer: subtle conversational CTA below the article. */
+.sk-author-follow {
+   margin-top: 1.5rem;
+   padding: 0 0.5rem;
+}
+
+.sk-author-follow p {
+   color: var(--color-text-muted);
+   font-size: 0.875rem;
+   line-height: 1.6;
+}
+
+.sk-author-follow a {
+   color: var(--color-accent);
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.sk-author-follow a:hover {
+   text-decoration: underline;
+}
+
+/* ============================================================
+   Podcast — episode list, episode detail, host & subscribe chrome
+   ------------------------------------------------------------
+   Classes emitted by PodcastListingRenderer / PodcastEpisodeRenderer
+   / PodcastHomePageRenderer — bare names, not `sk-`-prefixed. The
+   universal theme renders a SiteBuilder.podcast(...) site with no
+   per-site CSS. No entrance animation is applied: SiteKit's podcast
+   renderers emit static markup (no `.animate-in` hook), so episode
+   cards must be visible by default.
+   ============================================================ */
+
+/* --- Podcast listing header --- */
+.listing-header {
+   margin-bottom: 2rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid var(--color-border-light);
+}
+
+.listing-header h1 {
+   font-size: 2rem;
+   margin: 0;
+}
+
+.listing-title-row {
+   display: flex;
+   align-items: baseline;
+   gap: 1rem;
+}
+
+.subscribe-podcast {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.35rem;
+   margin-left: auto;
+   font-size: 0.875rem;
+   font-weight: 600;
+   color: var(--color-text-muted);
+   text-decoration: none;
+   white-space: nowrap;
+   transition: color var(--transition);
+}
+
+.subscribe-podcast:hover {
+   color: var(--color-accent);
+}
+
+/* --- Episode list + cards --- */
+.episode-list {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   max-width: var(--wide-content-width);
+   margin: 0 auto;
+}
+
+.episode-card {
+   position: relative;
+   display: flex;
+   align-items: flex-start;
+   gap: 1.1rem;
+   padding: 1.15rem 1.4rem;
+   background: var(--color-bg-card);
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius-lg);
+   overflow: hidden;
+   transition: all var(--transition);
+}
+
+.episode-card:hover {
+   border-color: var(--color-accent);
+   box-shadow: 0 4px 16px var(--color-shadow);
+   transform: translateY(-2px);
+}
+
+/* Accent edge revealed on hover. */
+.episode-card::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   width: 4px;
+   background: var(--color-accent);
+   opacity: 0;
+   transition: opacity var(--transition);
+}
+
+.episode-card:hover::before {
+   opacity: 1;
+}
+
+.episode-card-number {
+   flex-shrink: 0;
+   min-width: 3rem;
+   padding-top: 0.1rem;
+   font-family: var(--font-heading);
+   font-size: 1.3rem;
+   font-weight: 700;
+   text-align: right;
+   color: var(--color-accent);
+   letter-spacing: -0.02em;
+}
+
+.episode-card-content {
+   flex: 1;
+   min-width: 0;
+}
+
+.episode-card-title {
+   font-family: var(--font-heading);
+   font-size: 1.0625rem;
+   font-weight: 700;
+   line-height: 1.35;
+   margin: 0 0 0.2rem;
+}
+
+/* The title link's ::after overlay makes the whole card clickable. */
+.episode-card-link {
+   color: var(--color-text);
+   text-decoration: none;
+}
+
+.episode-card-link::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   z-index: 1;
+}
+
+.episode-card-link:hover {
+   color: var(--color-accent);
+}
+
+.episode-card-meta {
+   font-size: 0.8125rem;
+   color: var(--color-text-muted);
+}
+
+.episode-card-summary {
+   margin-top: 0.35rem;
+   font-size: 0.875rem;
+   color: var(--color-text-secondary);
+   line-height: 1.55;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+/* Tags sit above the card overlay link so they stay clickable. */
+.episode-card-tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.375rem;
+   margin-top: 0.5rem;
+   position: relative;
+   z-index: 2;
+}
+
+.episode-card-duration {
+   position: absolute;
+   top: 1.15rem;
+   right: 1.4rem;
+   font-family: var(--font-heading);
+   font-size: 0.75rem;
+   font-weight: 700;
+   color: var(--color-text-muted);
+   letter-spacing: 0.03em;
+   white-space: nowrap;
+}
+
+/* --- Episode detail page --- */
+.episode-detail {
+   max-width: var(--content-width);
+   margin: 0 auto;
+}
+
+/* Player block: hero + chapters joined into one connected unit. */
+.episode-player-block {
+   margin-bottom: 2rem;
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius-lg);
+   overflow: hidden;
+   box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+.episode-hero {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   padding: 1.5rem;
+   background: var(--color-bg-alt);
+}
+
+.episode-hero-top {
+   display: flex;
+   gap: 1.5rem;
+   align-items: flex-start;
+}
+
+.episode-hero-artwork {
+   width: 120px;
+   height: 120px;
+   flex-shrink: 0;
+   border-radius: var(--radius);
+   object-fit: cover;
+   box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.episode-hero-content {
+   flex: 1;
+   min-width: 0;
+}
+
+.episode-number {
+   display: inline-block;
+   margin-bottom: 0.6rem;
+   padding: 0.25rem 0.8rem;
+   background: var(--color-accent);
+   color: #fff;
+   font-family: var(--font-heading);
+   font-size: 0.75rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+   border-radius: 100px;
+}
+
+.episode-title {
+   font-size: 1.875rem;
+   font-weight: 700;
+   line-height: 1.2;
+   letter-spacing: -0.02em;
+   margin: 0 0 0.5rem;
+}
+
+.episode-hero-meta-row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
+.episode-meta {
+   font-size: 0.875rem;
+   color: var(--color-text-muted);
+}
+
+.episode-download {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.3rem;
+   padding: 0.3rem 0.7rem;
+   border-radius: var(--radius);
+   color: var(--color-accent);
+   font-size: 0.8125rem;
+   font-weight: 600;
+   white-space: nowrap;
+   transition: all var(--transition);
+}
+
+.episode-download:hover {
+   background: var(--color-accent-light);
+   color: var(--color-accent-hover);
+}
+
+.episode-summary {
+   margin: 0;
+   font-size: 0.95rem;
+   color: var(--color-text-secondary);
+   line-height: 1.65;
+   font-style: italic;
+}
+
+/* Native HTML audio player. */
+.episode-hero audio {
+   width: 100%;
+   height: 42px;
+   border-radius: var(--radius);
+}
+
+/* Chapters — connected below the hero inside the player block. */
+.episode-chapters {
+   background: var(--color-bg-card);
+   border-top: 1px solid var(--color-border-light);
+}
+
+.episode-chapters h2 {
+   margin: 0;
+   padding: 1.1rem 1.4rem 0.7rem;
+   font-size: 0.75rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   color: var(--color-accent);
+}
+
+.chapters-grid {
+   columns: 2;
+   column-gap: 0;
+}
+
+/* Chapter rows are <button>s (seek-on-click is JS the theme may add later);
+   they render as a static, readable chapter list without that JS. */
+.chapter-item {
+   display: flex;
+   align-items: baseline;
+   gap: 0.75rem;
+   width: 100%;
+   padding: 0.6rem 1.4rem;
+   border: none;
+   border-top: 1px solid var(--color-border-light);
+   background: transparent;
+   color: var(--color-text);
+   font: inherit;
+   font-size: 0.875rem;
+   text-align: left;
+   cursor: pointer;
+   break-inside: avoid;
+   transition: background var(--transition);
+}
+
+.chapter-item:hover {
+   background: var(--color-accent-light);
+}
+
+.chapter-time {
+   flex-shrink: 0;
+   font-family: var(--font-mono);
+   font-size: 0.8125rem;
+   font-weight: 600;
+   color: var(--color-accent);
+   white-space: nowrap;
+}
+
+.chapter-title {
+   flex: 1;
+   min-width: 0;
+}
+
+/* Show notes. */
+.episode-shownotes {
+   margin-bottom: 2rem;
+   padding: 1.4rem 1.6rem;
+   background: var(--color-bg-card);
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius-lg);
+}
+
+.episode-shownotes > h2 {
+   margin: 0 0 1.1rem;
+   font-size: 0.75rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   color: var(--color-accent);
+}
+
+.shownotes-body h2,
+.shownotes-body h3 {
+   margin: 1.5rem 0 0.5rem;
+}
+
+.shownotes-body h2 {
+   font-size: 1.1rem;
+   padding-bottom: 0.35rem;
+   border-bottom: 1px solid var(--color-border-light);
+}
+
+.shownotes-body h3 {
+   font-size: 0.95rem;
+}
+
+.shownotes-body p,
+.shownotes-body li {
+   font-size: 0.9375rem;
+   line-height: 1.65;
+}
+
+.shownotes-body ul,
+.shownotes-body ol {
+   margin: 0.4rem 0 0.8rem 1.5rem;
+}
+
+.shownotes-body li {
+   margin-bottom: 0.3rem;
+}
+
+/* Episode prev/next navigation. */
+.episode-nav {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+   margin-top: 2.5rem;
+   padding-top: 2rem;
+   border-top: 1px solid var(--color-border-light);
+}
+
+.episode-nav-prev,
+.episode-nav-next {
+   display: flex;
+   flex-direction: column;
+   padding: 1rem 1.25rem;
+   background: var(--color-bg-card);
+   border: 1px solid var(--color-border-light);
+   border-radius: var(--radius-lg);
+   text-decoration: none;
+   transition: all var(--transition);
+}
+
+.episode-nav-prev:hover,
+.episode-nav-next:hover {
+   border-color: var(--color-accent);
+   box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.episode-nav-next {
+   text-align: right;
+}
+
+.episode-nav-empty {
+   visibility: hidden;
+}
+
+.episode-nav-label {
+   margin-bottom: 0.25rem;
+   font-size: 0.8125rem;
+   font-weight: 600;
+   color: var(--color-accent);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.episode-nav-title {
+   font-size: 0.9375rem;
+   font-weight: 600;
+   color: var(--color-text);
+   line-height: 1.4;
+}
+
+.episode-back-link {
+   margin-top: 1.5rem;
+   font-size: 0.9375rem;
+   font-weight: 600;
+}
+
+.episode-back-link a {
+   color: var(--color-text-muted);
+}
+
+.episode-back-link a:hover {
+   color: var(--color-accent);
+}
+
+/* --- Podcast home: host previews + subscribe links --- */
+.host-previews {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2rem;
+   margin-top: 1.5rem;
+}
+
+.host-preview {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.4rem;
+}
+
+.host-preview img {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 2px solid var(--color-border);
+}
+
+.host-preview-name {
+   font-size: 0.8125rem;
+   font-weight: 600;
+   color: var(--color-text-secondary);
+}
+
+/* Subscribe links render in normal flow (one accent treatment for every
+   platform — see the per-platform note in the round report). */
+.podcast-subscribe {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0.4rem;
+   margin-top: 1.5rem;
+}
+
+.podcast-subscribe-label {
+   width: 100%;
+   margin-bottom: 0.3rem;
+   font-size: 0.6875rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+   color: var(--color-text-muted);
+}
+
+.podcast-subscribe-link {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.35rem;
+   padding: 0.375rem 0.75rem;
+   background: var(--color-bg-card);
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius);
+   color: var(--color-text);
+   font-size: 0.8125rem;
+   font-weight: 600;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all var(--transition);
+}
+
+.podcast-subscribe-link:hover {
+   border-color: var(--color-accent);
+   color: var(--color-accent);
+   transform: translateY(-1px);
+}
+
+/* Short labels swap in for full labels on narrow viewports (see responsive). */
+.podcast-subscribe-label-short {
+   display: none;
+}
+
+/* ============================================================
+   Static Pages
+   ============================================================ */
+.sk-static-page {
+   max-width: var(--static-page-width, var(--wide-content-width));
+   margin: 0 auto;
+}
+
+.sk-static-page h1 {
+   margin-bottom: 1rem;
+}
+
+/* ============================================================
+   Search Modal
+   ============================================================ */
+.sk-search-btn .sk-tooltip {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-top: 0.5rem;
+   background: var(--color-text);
+   color: var(--color-bg);
+   font-size: 0.75rem;
+   font-weight: 500;
+   padding: 0.25rem 0.5rem;
+   border-radius: 4px;
+   white-space: nowrap;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.15s, visibility 0.15s;
+   pointer-events: none;
+}
+
+.sk-search-btn:hover .sk-tooltip {
+   opacity: 1;
+   visibility: visible;
+}
+
+.sk-search-overlay {
+   position: fixed;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 1000;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   padding-top: min(15vh, 120px);
+   opacity: 0;
+   transition: opacity 0.15s;
+}
+
+.sk-search-overlay.sk-search-visible {
+   opacity: 1;
+}
+
+.sk-search-modal {
+   background: var(--color-bg);
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius-lg);
+   box-shadow: 0 16px 48px var(--color-shadow-lg);
+   width: min(600px, 90vw);
+   max-height: min(500px, 70vh);
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   transform: translateY(-8px);
+   transition: transform 0.15s;
+}
+
+.sk-search-visible .sk-search-modal {
+   transform: translateY(0);
+}
+
+.sk-search-header {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+   padding: 1rem 1.25rem;
+   border-bottom: 1px solid var(--color-border-light);
+}
+
+.sk-search-close {
+   background: none;
+   border: none;
+   color: var(--color-text-muted);
+   cursor: pointer;
+   font-size: 1.25rem;
+   padding: 0.25rem;
+   line-height: 1;
+   transition: color var(--transition);
+   flex-shrink: 0;
+}
+
+.sk-search-close:hover {
+   color: var(--color-text);
+}
+
+.sk-search-input {
+   flex: 1;
+   border: none;
+   outline: none;
+   font-size: 1.125rem;
+   font-family: var(--font-sans);
+   color: var(--color-text);
+   background: transparent;
+}
+
+.sk-search-input::placeholder {
+   color: var(--color-text-muted);
+}
+
+.sk-search-kbd {
+   font-size: 0.6875rem;
+   color: var(--color-text-muted);
+   background: var(--color-bg-alt);
+   border: 1px solid var(--color-border-light);
+   border-radius: 4px;
+   padding: 0.125rem 0.375rem;
+   font-family: var(--font-mono);
+   flex-shrink: 0;
+}
+
+.sk-search-results {
+   overflow-y: auto;
+   padding: 0.5rem 0;
+}
+
+.sk-search-section {
+   padding: 0.75rem 1.25rem 0.375rem;
+   font-size: 0.6875rem;
+   font-weight: 700;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   color: var(--color-text-muted);
+}
+
+.sk-search-tag {
+   display: block;
+   padding: 0.5rem 1.25rem;
+   color: var(--color-text);
+   text-decoration: none;
+   font-size: 0.9375rem;
+   transition: background var(--transition);
+}
+
+.sk-search-tag:hover {
+   background: var(--color-bg-alt);
+}
+
+.sk-search-tag::before {
+   content: "# ";
+   color: var(--color-accent);
+   font-weight: 600;
+}
+
+.sk-search-post {
+   display: block;
+   padding: 0.625rem 1.25rem;
+   text-decoration: none;
+   transition: background var(--transition);
+}
+
+.sk-search-post:hover {
+   background: var(--color-bg-alt);
+}
+
+.sk-search-post-title {
+   display: block;
+   color: var(--color-text);
+   font-size: 0.9375rem;
+   font-weight: 500;
+   line-height: 1.4;
+}
+
+.sk-search-post-summary {
+   display: block;
+   color: var(--color-text-muted);
+   font-size: 0.8125rem;
+   line-height: 1.4;
+   margin-top: 0.125rem;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.sk-search-no-results {
+   padding: 2rem 1.25rem;
+   text-align: center;
+   color: var(--color-text-muted);
+   font-size: 0.9375rem;
+}
+
+mark.sk-search-highlight {
+   background: transparent;
+   color: inherit;
+   font-weight: 700;
+}
+
+.sk-search-spinner {
+   width: 16px;
+   height: 16px;
+   border: 2px solid var(--color-border-light);
+   border-top-color: var(--color-accent);
+   border-radius: 50%;
+   animation: sk-spin 0.6s linear infinite;
+   flex-shrink: 0;
+}
+
+.sk-search-header-spinner {
+   margin-right: 0.25rem;
+}
+
+@keyframes sk-spin {
+   to { transform: rotate(360deg); }
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.sk-site-footer {
+   background: var(--color-footer-bg, var(--color-bg-alt));
+   border-top: 1px solid var(--color-border-light);
+   /* Bottom padding respects the iPhone home-indicator safe area so footer
+      content is never clipped behind it; falls back to 1.5rem elsewhere. */
+   padding: 1.5rem 1.5rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
+   margin-top: var(--footer-margin-top, 3rem);
+}
+
+.sk-footer-inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: var(--max-width);
+   margin: 0 auto;
+   padding: 0 1.5rem;
+   gap: 1.5rem;
+}
+
+.sk-footer-left {
+   display: flex;
+   align-items: center;
+}
+
+.sk-footer-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.sk-footer-right {
+   display: flex;
+   align-items: center;
+}
+
+.sk-footer-links {
+   display: flex;
+   gap: 1.25rem;
+   list-style: none;
+   margin: 0;
+   line-height: 1;
+}
+
+.sk-footer-links a {
+   color: var(--color-text-secondary);
+   font-size: 0.8125rem;
+   transition: color var(--transition);
+}
+
+.sk-footer-links a:hover {
+   color: var(--color-accent);
+}
+
+.sk-social-links {
+   display: flex;
+   gap: 0.75rem;
+   list-style: none;
+   margin: 0;
+   line-height: 1;
+}
+
+.sk-social-links a {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.375rem;
+   color: var(--color-text-secondary);
+   font-size: 0.8125rem;
+   font-weight: 500;
+   transition: color var(--transition);
+}
+
+.sk-social-links a:hover {
+   color: var(--color-accent);
+}
+
+.sk-social-icon {
+   flex-shrink: 0;
+}
+
+.sk-copyright {
+   color: var(--color-text-secondary);
+   font-size: 0.8125rem;
+   white-space: nowrap;
+   margin: 0;
+   line-height: 1;
+}
+
+.sk-attribution-link {
+   text-decoration: none;
+}
+
+/* ============================================================
+   Error Page
+   ============================================================ */
+.sk-error-page {
+   text-align: center;
+   padding: 4rem 1rem;
+}
+
+.sk-error-code {
+   font-size: 6rem;
+   font-weight: 800;
+   color: var(--color-accent);
+   line-height: 1;
+   margin-bottom: 0.5rem;
+   letter-spacing: -0.04em;
+}
+
+.sk-error-message {
+   font-size: 1.25rem;
+   color: var(--color-text-secondary);
+   margin: 0 auto 2rem;
+   max-width: 480px;
+}
+
+.sk-error-action a {
+   display: inline-block;
+   padding: 0.625rem 1.5rem;
+   background: var(--color-accent);
+   color: #fff;
+   border-radius: var(--radius);
+   font-weight: 500;
+   transition: background var(--transition);
+}
+
+.sk-error-action a:hover {
+   background: var(--color-accent-hover);
+   color: #fff;
+}
+
+/* ============================================================
+   Draft Preview Banner
+   ------------------------------------------------------------
+   Keeps a fixed semantic amber: a draft warning must read as a
+   warning regardless of the site's accent. There is no
+   --color-warning token yet — adding one is the proper fix.
+   ============================================================ */
+.sk-draft-banner {
+   padding: 0.75rem 1rem;
+   margin-bottom: 1.5rem;
+   background: #fef3c7;
+   border: 1px solid #f59e0b;
+   border-radius: var(--radius);
+   font-size: 0.875rem;
+   color: #92400e;
+}
+
+[data-theme="dark"] .sk-draft-banner {
+   background: #451a03;
+   border-color: #d97706;
+   color: #fde68a;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 768px) {
+   .sk-main {
+      padding: 1.5rem 1rem;
+   }
+
+   h1 { font-size: 1.75rem; }
+   h2 { font-size: 1.375rem; }
+
+   .sk-article-title {
+      font-size: 1.875rem;
+   }
+
+   .sk-home-hero {
+      padding: 2.5rem 1rem 2rem;
+   }
+
+   .sk-home-title {
+      font-size: 2rem;
+   }
+
+   .sk-home-subtitle {
+      font-size: 1.0625rem;
+   }
+
+   .sk-post-list {
+      grid-template-columns: 1fr;
+   }
+
+   .sk-article-nav {
+      grid-template-columns: 1fr;
+   }
+
+   .sk-article-nav-next {
+      text-align: left;
+   }
+
+   /* Stack header chrome vertically so 4 nav items + 3 chrome buttons + logo
+      do not force the page wider than the viewport. */
+   .sk-site-header {
+      height: auto;
+      padding: 0.5rem 0;
+   }
+
+   .sk-site-nav {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0 1rem;
+   }
+
+   .sk-nav-list {
+      gap: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .sk-nav-item a {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+   }
+
+   /* Right-side chrome (search + theme + lang) joins a second row on its own. */
+   .sk-search-btn,
+   .sk-theme-toggle,
+   .sk-lang-picker {
+      margin-left: 0;
+   }
+
+   .sk-footer-inner {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.75rem;
+   }
+
+   .sk-footer-left,
+   .sk-footer-center {
+      flex-direction: column;
+      gap: 0.5rem;
+   }
+
+   .sk-footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .sk-social-links {
+      justify-content: center;
+   }
+
+   /* Podcast — stack the episode hero, single-column chapters + nav. */
+   .episode-hero-top {
+      flex-direction: column;
+   }
+
+   .chapters-grid {
+      columns: 1;
+   }
+
+   .episode-nav {
+      grid-template-columns: 1fr;
+   }
+
+   .episode-nav-next {
+      text-align: left;
+   }
+
+   .episode-card-duration {
+      position: static;
+      margin-top: 0.35rem;
+   }
+}
+
+/* Podcast subscribe buttons: swap full labels for short ones once the
+   button row would otherwise wrap awkwardly. */
+@media (max-width: 640px) {
+   .podcast-subscribe-label-full {
+      display: none;
+   }
+
+   .podcast-subscribe-label-short {
+      display: inline;
+   }
+}

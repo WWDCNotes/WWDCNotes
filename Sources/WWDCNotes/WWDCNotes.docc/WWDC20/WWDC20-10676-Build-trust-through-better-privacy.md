@@ -220,12 +220,12 @@ In addition, users are able to choose to not be asked by any app to be tracked:
 
 For more information, refer to the [`What's New with in App Purchases`][20-10661] session.
 
-[20-10660]: ../10660
-[20-10162]: ../10162
-[20-10641]: ../10641
-[20-10120]: ../10120
+[20-10660]: /documentation/wwdc20-10660-whats-new-in-location/
+[20-10162]: /documentation/wwdc20-10162-design-for-location-privacy/
+[20-10641]: /documentation/wwdc20-10641-handle-the-limited-photos-library-in-your-app/
+[20-10120]: /documentation/wwdc20-10120-streamline-your-app-clip/
 [20-10115]: https://developer.apple.com/videos/play/wwdc2020/10115
-[20-10047]: ../10047
+[20-10047]: /documentation/wwdc20-10047-enable-encrypted-dns/
 [20-10110]: https://developer.apple.com/videos/play/wwdc2020/10110
 [20-10668]: https://developer.apple.com/videos/play/wwdc2020/10668
 [20-10661]: https://developer.apple.com/videos/play/wwdc2020/10661

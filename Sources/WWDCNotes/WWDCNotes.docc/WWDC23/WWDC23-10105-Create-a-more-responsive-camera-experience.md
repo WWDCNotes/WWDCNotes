@@ -15,4 +15,4 @@ Discover how AVCapture and PhotoKit can help you create more responsive and deli
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

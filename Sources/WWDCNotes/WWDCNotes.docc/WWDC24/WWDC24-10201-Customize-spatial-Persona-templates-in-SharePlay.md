@@ -15,4 +15,4 @@ Learn how to use custom spatial Persona templates in your visionOS SharePlay exp
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

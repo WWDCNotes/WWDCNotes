@@ -15,4 +15,4 @@ The enhanced and new APIs in HomeKit enable smart home developers to integrate w
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

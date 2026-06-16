@@ -42,8 +42,8 @@ The first part of the session is a recap of the other [notification][wwdc18710] 
 
 - (New in watchOS 5) Interactive notifications (like iOS 12), available if you have a watch app
 
-[wwdc18710]: ../710/
-[wwdc18711]: ../711/
+[wwdc18710]: /documentation/wwdc18-710-whats-new-in-user-notifications/
+[wwdc18711]: /documentation/wwdc18-711-using-grouped-notifications/
 
 [1Image]: WWDC18-806-1
 [2Image]: WWDC18-806-2

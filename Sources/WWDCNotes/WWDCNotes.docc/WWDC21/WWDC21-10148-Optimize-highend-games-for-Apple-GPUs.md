@@ -15,4 +15,4 @@ Optimize your high-end games for Apple GPUs: We’ll show you how you can use ou
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

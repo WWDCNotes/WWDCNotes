@@ -146,7 +146,7 @@ Migration: Swift Testing and XCTests can co-exist and share a singe unit test ta
 
 Avoid calling `XCTAssert` from Swift Testing tests, or `#expect` from XCTests.
 
-## Avaliability
+## Availability
 Swift Testing is integrated with Swift Package Manager CLI, Xcode 16 and VS Code Swift Extension.
 
 Swift Testing is Open Source.

@@ -1,0 +1,608 @@
+# WWDCNotes SEO redirects: old DocC double-segment URLs -> new SiteKit URLs.
+# Consumed at build time (enabled via SiteConfig.yaml docc.redirectsFile).
+# Static rules must precede dynamic (wildcard) ones.
+redirects:
+  # Site root: the home lives at /documentation/ (canonical root consolidation).
+  - from: "/"
+    to: "/documentation/"
+    status: 301
+  - from: "/documentation/wwdcnotes"
+    to: "/documentation/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc12-212-basics+habits-building-your-software-projects-to-last"
+    to: "/documentation/wwdc12-212-basics-habits-building-your-software-projects-to-last/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc12-212-basics+habits-building-your-software-projects-to-last/"
+    to: "/documentation/wwdc12-212-basics-habits-building-your-software-projects-to-last/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc12-217-layerbacked-views-appkit-+-core-animation"
+    to: "/documentation/wwdc12-217-layerbacked-views-appkit-core-animation/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc12-217-layerbacked-views-appkit-+-core-animation/"
+    to: "/documentation/wwdc12-217-layerbacked-views-appkit-core-animation/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc15-701-wallet--the-home-for-apple-pay-and-more"
+    to: "/documentation/wwdc15-701-wallet-the-home-for-apple-pay-and-more/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc15-701-wallet--the-home-for-apple-pay-and-more/"
+    to: "/documentation/wwdc15-701-wallet-the-home-for-apple-pay-and-more/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc16-511-avcapturephotooutput--beyond-the-basics"
+    to: "/documentation/wwdc16-511-avcapturephotooutput-beyond-the-basics/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc16-511-avcapturephotooutput--beyond-the-basics/"
+    to: "/documentation/wwdc16-511-avcapturephotooutput-beyond-the-basics/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc19-261-large-content-viewer--ensuring-readability-for-everyone"
+    to: "/documentation/wwdc19-261-large-content-viewer-ensuring-readability-for-everyone/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc19-261-large-content-viewer--ensuring-readability-for-everyone/"
+    to: "/documentation/wwdc19-261-large-content-viewer-ensuring-readability-for-everyone/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc19-304-app-distribution--from-adhoc-to-enterprise"
+    to: "/documentation/wwdc19-304-app-distribution-from-adhoc-to-enterprise/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc19-304-app-distribution--from-adhoc-to-enterprise/"
+    to: "/documentation/wwdc19-304-app-distribution-from-adhoc-to-enterprise/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10015-build-apps-that-share-data-through-cloudkit-and-core-data-"
+    to: "/documentation/wwdc21-10015-build-apps-that-share-data-through-cloudkit-and-core-data/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10015-build-apps-that-share-data-through-cloudkit-and-core-data-/"
+    to: "/documentation/wwdc21-10015-build-apps-that-share-data-through-cloudkit-and-core-data/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10078-ar-quick-look-meet-object-capture-"
+    to: "/documentation/wwdc21-10078-ar-quick-look-meet-object-capture/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10078-ar-quick-look-meet-object-capture-/"
+    to: "/documentation/wwdc21-10078-ar-quick-look-meet-object-capture/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10205-review-code-and-collaborate-in-xcode-"
+    to: "/documentation/wwdc21-10205-review-code-and-collaborate-in-xcode/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10205-review-code-and-collaborate-in-xcode-/"
+    to: "/documentation/wwdc21-10205-review-code-and-collaborate-in-xcode/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10212-analyze-http-traffic-in-instruments-"
+    to: "/documentation/wwdc21-10212-analyze-http-traffic-in-instruments/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc21-10212-analyze-http-traffic-in-instruments-/"
+    to: "/documentation/wwdc21-10212-analyze-http-traffic-in-instruments/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10061-bring-multiple-windows-to-your-swiftui-app-"
+    to: "/documentation/wwdc22-10061-bring-multiple-windows-to-your-swiftui-app/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10061-bring-multiple-windows-to-your-swiftui-app-/"
+    to: "/documentation/wwdc22-10061-bring-multiple-windows-to-your-swiftui-app/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10137-swift-charts-raise-the-bar-"
+    to: "/documentation/wwdc22-10137-swift-charts-raise-the-bar/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10137-swift-charts-raise-the-bar-/"
+    to: "/documentation/wwdc22-10137-swift-charts-raise-the-bar/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10160-program-metal-in-c++-with-metalcpp"
+    to: "/documentation/wwdc22-10160-program-metal-in-c-with-metalcpp/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10160-program-metal-in-c++-with-metalcpp/"
+    to: "/documentation/wwdc22-10160-program-metal-in-c-with-metalcpp/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10167-create-your-privacy-nutrition-label-"
+    to: "/documentation/wwdc22-10167-create-your-privacy-nutrition-label/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-10167-create-your-privacy-nutrition-label-/"
+    to: "/documentation/wwdc22-10167-create-your-privacy-nutrition-label/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-110367-simplify-c++-templates-with-concepts"
+    to: "/documentation/wwdc22-110367-simplify-c-templates-with-concepts/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-110367-simplify-c++-templates-with-concepts/"
+    to: "/documentation/wwdc22-110367-simplify-c-templates-with-concepts/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-110441-design-for-arabic-"
+    to: "/documentation/wwdc22-110441-design-for-arabic/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc22-110441-design-for-arabic-/"
+    to: "/documentation/wwdc22-110441-design-for-arabic/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10041-explore-advances-in-declarative-device-management-"
+    to: "/documentation/wwdc23-10041-explore-advances-in-declarative-device-management/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10041-explore-advances-in-declarative-device-management-/"
+    to: "/documentation/wwdc23-10041-explore-advances-in-declarative-device-management/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10106-support-external-cameras-in-your-ipados-app-"
+    to: "/documentation/wwdc23-10106-support-external-cameras-in-your-ipados-app/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10106-support-external-cameras-in-your-ipados-app-/"
+    to: "/documentation/wwdc23-10106-support-external-cameras-in-your-ipados-app/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10143-meet-the-app-store-server-library-"
+    to: "/documentation/wwdc23-10143-meet-the-app-store-server-library/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10143-meet-the-app-store-server-library-/"
+    to: "/documentation/wwdc23-10143-meet-the-app-store-server-library/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10172-mix-swift-and-c++"
+    to: "/documentation/wwdc23-10172-mix-swift-and-c/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10172-mix-swift-and-c++/"
+    to: "/documentation/wwdc23-10172-mix-swift-and-c/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10194-design-dynamic-live-activities-"
+    to: "/documentation/wwdc23-10194-design-dynamic-live-activities/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10194-design-dynamic-live-activities-/"
+    to: "/documentation/wwdc23-10194-design-dynamic-live-activities/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10274-create-3d-models-for-quick-look-spatial-experiences-"
+    to: "/documentation/wwdc23-10274-create-3d-models-for-quick-look-spatial-experiences/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc23-10274-create-3d-models-for-quick-look-spatial-experiences-/"
+    to: "/documentation/wwdc23-10274-create-3d-models-for-quick-look-spatial-experiences/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc25-203-get-to-know-the-managedapp-framework-"
+    to: "/documentation/wwdc25-203-get-to-know-the-managedapp-framework/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc25-203-get-to-know-the-managedapp-framework-/"
+    to: "/documentation/wwdc25-203-get-to-know-the-managedapp-framework/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc25-288-bring-your-scenekit-project-to-realitykit-"
+    to: "/documentation/wwdc25-288-bring-your-scenekit-project-to-realitykit/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc25-288-bring-your-scenekit-project-to-realitykit-/"
+    to: "/documentation/wwdc25-288-bring-your-scenekit-project-to-realitykit/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc25-311-safely-mix-c-c++-and-swift"
+    to: "/documentation/wwdc25-311-safely-mix-c-c-and-swift/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc25-311-safely-mix-c-c++-and-swift/"
+    to: "/documentation/wwdc25-311-safely-mix-c-c-and-swift/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc26-226-create-live-communication-experiences-"
+    to: "/documentation/wwdc26-226-create-live-communication-experiences/"
+    status: 301
+  - from: "/documentation/wwdcnotes/wwdc26-226-create-live-communication-experiences-/"
+    to: "/documentation/wwdc26-226-create-live-communication-experiences/"
+    status: 301
+  - from: "/documentation/wwdcnotes/abadikaka"
+    to: "/documentation/contributors/abadikaka/"
+    status: 301
+  - from: "/documentation/wwdcnotes/abadikaka/"
+    to: "/documentation/contributors/abadikaka/"
+    status: 301
+  - from: "/documentation/wwdcnotes/adamwalz"
+    to: "/documentation/contributors/adamwalz/"
+    status: 301
+  - from: "/documentation/wwdcnotes/adamwalz/"
+    to: "/documentation/contributors/adamwalz/"
+    status: 301
+  - from: "/documentation/wwdcnotes/alexkaessner"
+    to: "/documentation/contributors/alexkaessner/"
+    status: 301
+  - from: "/documentation/wwdcnotes/alexkaessner/"
+    to: "/documentation/contributors/alexkaessner/"
+    status: 301
+  - from: "/documentation/wwdcnotes/antonio081014"
+    to: "/documentation/contributors/antonio081014/"
+    status: 301
+  - from: "/documentation/wwdcnotes/antonio081014/"
+    to: "/documentation/contributors/antonio081014/"
+    status: 301
+  - from: "/documentation/wwdcnotes/appfrosch"
+    to: "/documentation/contributors/appfrosch/"
+    status: 301
+  - from: "/documentation/wwdcnotes/appfrosch/"
+    to: "/documentation/contributors/appfrosch/"
+    status: 301
+  - from: "/documentation/wwdcnotes/arnoappenzeller"
+    to: "/documentation/contributors/arnoappenzeller/"
+    status: 301
+  - from: "/documentation/wwdcnotes/arnoappenzeller/"
+    to: "/documentation/contributors/arnoappenzeller/"
+    status: 301
+  - from: "/documentation/wwdcnotes/atahhan"
+    to: "/documentation/contributors/atahhan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/atahhan/"
+    to: "/documentation/contributors/atahhan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/blackjacx"
+    to: "/documentation/contributors/blackjacx/"
+    status: 301
+  - from: "/documentation/wwdcnotes/blackjacx/"
+    to: "/documentation/contributors/blackjacx/"
+    status: 301
+  - from: "/documentation/wwdcnotes/cecile-lebleu"
+    to: "/documentation/contributors/cecile-lebleu/"
+    status: 301
+  - from: "/documentation/wwdcnotes/cecile-lebleu/"
+    to: "/documentation/contributors/cecile-lebleu/"
+    status: 301
+  - from: "/documentation/wwdcnotes/chrisvasselli"
+    to: "/documentation/contributors/chrisvasselli/"
+    status: 301
+  - from: "/documentation/wwdcnotes/chrisvasselli/"
+    to: "/documentation/contributors/chrisvasselli/"
+    status: 301
+  - from: "/documentation/wwdcnotes/coughski"
+    to: "/documentation/contributors/coughski/"
+    status: 301
+  - from: "/documentation/wwdcnotes/coughski/"
+    to: "/documentation/contributors/coughski/"
+    status: 301
+  - from: "/documentation/wwdcnotes/daemonloki"
+    to: "/documentation/contributors/daemonloki/"
+    status: 301
+  - from: "/documentation/wwdcnotes/daemonloki/"
+    to: "/documentation/contributors/daemonloki/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dagronf"
+    to: "/documentation/contributors/dagronf/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dagronf/"
+    to: "/documentation/contributors/dagronf/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dasautoooo"
+    to: "/documentation/contributors/dasautoooo/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dasautoooo/"
+    to: "/documentation/contributors/dasautoooo/"
+    status: 301
+  - from: "/documentation/wwdcnotes/davidleee"
+    to: "/documentation/contributors/davidleee/"
+    status: 301
+  - from: "/documentation/wwdcnotes/davidleee/"
+    to: "/documentation/contributors/davidleee/"
+    status: 301
+  - from: "/documentation/wwdcnotes/derrickshowers"
+    to: "/documentation/contributors/derrickshowers/"
+    status: 301
+  - from: "/documentation/wwdcnotes/derrickshowers/"
+    to: "/documentation/contributors/derrickshowers/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dl-alexandre"
+    to: "/documentation/contributors/dl-alexandre/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dl-alexandre/"
+    to: "/documentation/contributors/dl-alexandre/"
+    status: 301
+  - from: "/documentation/wwdcnotes/donnywals"
+    to: "/documentation/contributors/donnywals/"
+    status: 301
+  - from: "/documentation/wwdcnotes/donnywals/"
+    to: "/documentation/contributors/donnywals/"
+    status: 301
+  - from: "/documentation/wwdcnotes/drewvolz"
+    to: "/documentation/contributors/drewvolz/"
+    status: 301
+  - from: "/documentation/wwdcnotes/drewvolz/"
+    to: "/documentation/contributors/drewvolz/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dustynaugust"
+    to: "/documentation/contributors/dustynaugust/"
+    status: 301
+  - from: "/documentation/wwdcnotes/dustynaugust/"
+    to: "/documentation/contributors/dustynaugust/"
+    status: 301
+  - from: "/documentation/wwdcnotes/elkraneo"
+    to: "/documentation/contributors/elkraneo/"
+    status: 301
+  - from: "/documentation/wwdcnotes/elkraneo/"
+    to: "/documentation/contributors/elkraneo/"
+    status: 301
+  - from: "/documentation/wwdcnotes/fbernutz"
+    to: "/documentation/contributors/fbernutz/"
+    status: 301
+  - from: "/documentation/wwdcnotes/fbernutz/"
+    to: "/documentation/contributors/fbernutz/"
+    status: 301
+  - from: "/documentation/wwdcnotes/feifanzhou"
+    to: "/documentation/contributors/feifanzhou/"
+    status: 301
+  - from: "/documentation/wwdcnotes/feifanzhou/"
+    to: "/documentation/contributors/feifanzhou/"
+    status: 301
+  - from: "/documentation/wwdcnotes/halmueller"
+    to: "/documentation/contributors/halmueller/"
+    status: 301
+  - from: "/documentation/wwdcnotes/halmueller/"
+    to: "/documentation/contributors/halmueller/"
+    status: 301
+  - from: "/documentation/wwdcnotes/harlbo"
+    to: "/documentation/contributors/harlbo/"
+    status: 301
+  - from: "/documentation/wwdcnotes/harlbo/"
+    to: "/documentation/contributors/harlbo/"
+    status: 301
+  - from: "/documentation/wwdcnotes/harrison-heinig"
+    to: "/documentation/contributors/harrison-heinig/"
+    status: 301
+  - from: "/documentation/wwdcnotes/harrison-heinig/"
+    to: "/documentation/contributors/harrison-heinig/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ismehimeh"
+    to: "/documentation/contributors/ismehimeh/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ismehimeh/"
+    to: "/documentation/contributors/ismehimeh/"
+    status: 301
+  - from: "/documentation/wwdcnotes/javierdemartin"
+    to: "/documentation/contributors/javierdemartin/"
+    status: 301
+  - from: "/documentation/wwdcnotes/javierdemartin/"
+    to: "/documentation/contributors/javierdemartin/"
+    status: 301
+  - from: "/documentation/wwdcnotes/jeehut"
+    to: "/documentation/contributors/jeehut/"
+    status: 301
+  - from: "/documentation/wwdcnotes/jeehut/"
+    to: "/documentation/contributors/jeehut/"
+    status: 301
+  - from: "/documentation/wwdcnotes/joforsell"
+    to: "/documentation/contributors/joforsell/"
+    status: 301
+  - from: "/documentation/wwdcnotes/joforsell/"
+    to: "/documentation/contributors/joforsell/"
+    status: 301
+  - from: "/documentation/wwdcnotes/johnbaer3"
+    to: "/documentation/contributors/johnbaer3/"
+    status: 301
+  - from: "/documentation/wwdcnotes/johnbaer3/"
+    to: "/documentation/contributors/johnbaer3/"
+    status: 301
+  - from: "/documentation/wwdcnotes/kabirkhaan"
+    to: "/documentation/contributors/kabirkhaan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/kabirkhaan/"
+    to: "/documentation/contributors/kabirkhaan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/kslazinski"
+    to: "/documentation/contributors/kslazinski/"
+    status: 301
+  - from: "/documentation/wwdcnotes/kslazinski/"
+    to: "/documentation/contributors/kslazinski/"
+    status: 301
+  - from: "/documentation/wwdcnotes/kyawthemonkey"
+    to: "/documentation/contributors/kyawthemonkey/"
+    status: 301
+  - from: "/documentation/wwdcnotes/kyawthemonkey/"
+    to: "/documentation/contributors/kyawthemonkey/"
+    status: 301
+  - from: "/documentation/wwdcnotes/lordmooch"
+    to: "/documentation/contributors/lordmooch/"
+    status: 301
+  - from: "/documentation/wwdcnotes/lordmooch/"
+    to: "/documentation/contributors/lordmooch/"
+    status: 301
+  - from: "/documentation/wwdcnotes/lorin-vr"
+    to: "/documentation/contributors/lorin-vr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/lorin-vr/"
+    to: "/documentation/contributors/lorin-vr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mackuba"
+    to: "/documentation/contributors/mackuba/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mackuba/"
+    to: "/documentation/contributors/mackuba/"
+    status: 301
+  - from: "/documentation/wwdcnotes/marcoeidinger"
+    to: "/documentation/contributors/marcoeidinger/"
+    status: 301
+  - from: "/documentation/wwdcnotes/marcoeidinger/"
+    to: "/documentation/contributors/marcoeidinger/"
+    status: 301
+  - from: "/documentation/wwdcnotes/marcolg97"
+    to: "/documentation/contributors/marcolg97/"
+    status: 301
+  - from: "/documentation/wwdcnotes/marcolg97/"
+    to: "/documentation/contributors/marcolg97/"
+    status: 301
+  - from: "/documentation/wwdcnotes/matteom"
+    to: "/documentation/contributors/matteom/"
+    status: 301
+  - from: "/documentation/wwdcnotes/matteom/"
+    to: "/documentation/contributors/matteom/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mbbischoff"
+    to: "/documentation/contributors/mbbischoff/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mbbischoff/"
+    to: "/documentation/contributors/mbbischoff/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mikaelacaron"
+    to: "/documentation/contributors/mikaelacaron/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mikaelacaron/"
+    to: "/documentation/contributors/mikaelacaron/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mikakruschel"
+    to: "/documentation/contributors/mikakruschel/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mikakruschel/"
+    to: "/documentation/contributors/mikakruschel/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mike011"
+    to: "/documentation/contributors/mike011/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mike011/"
+    to: "/documentation/contributors/mike011/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mortengregersen"
+    to: "/documentation/contributors/mortengregersen/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mortengregersen/"
+    to: "/documentation/contributors/mortengregersen/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mtschmidt"
+    to: "/documentation/contributors/mtschmidt/"
+    status: 301
+  - from: "/documentation/wwdcnotes/mtschmidt/"
+    to: "/documentation/contributors/mtschmidt/"
+    status: 301
+  - from: "/documentation/wwdcnotes/multitudes"
+    to: "/documentation/contributors/multitudes/"
+    status: 301
+  - from: "/documentation/wwdcnotes/multitudes/"
+    to: "/documentation/contributors/multitudes/"
+    status: 301
+  - from: "/documentation/wwdcnotes/n3twr"
+    to: "/documentation/contributors/n3twr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/n3twr/"
+    to: "/documentation/contributors/n3twr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/nikolaikhud"
+    to: "/documentation/contributors/nikolaikhud/"
+    status: 301
+  - from: "/documentation/wwdcnotes/nikolaikhud/"
+    to: "/documentation/contributors/nikolaikhud/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ninjalikescheez"
+    to: "/documentation/contributors/ninjalikescheez/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ninjalikescheez/"
+    to: "/documentation/contributors/ninjalikescheez/"
+    status: 301
+  - from: "/documentation/wwdcnotes/parjohns"
+    to: "/documentation/contributors/parjohns/"
+    status: 301
+  - from: "/documentation/wwdcnotes/parjohns/"
+    to: "/documentation/contributors/parjohns/"
+    status: 301
+  - from: "/documentation/wwdcnotes/petermolnar-dev"
+    to: "/documentation/contributors/petermolnar-dev/"
+    status: 301
+  - from: "/documentation/wwdcnotes/petermolnar-dev/"
+    to: "/documentation/contributors/petermolnar-dev/"
+    status: 301
+  - from: "/documentation/wwdcnotes/philptr"
+    to: "/documentation/contributors/philptr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/philptr/"
+    to: "/documentation/contributors/philptr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/pitt500"
+    to: "/documentation/contributors/pitt500/"
+    status: 301
+  - from: "/documentation/wwdcnotes/pitt500/"
+    to: "/documentation/contributors/pitt500/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rakeshneela"
+    to: "/documentation/contributors/rakeshneela/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rakeshneela/"
+    to: "/documentation/contributors/rakeshneela/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ramitsharma991"
+    to: "/documentation/contributors/ramitsharma991/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ramitsharma991/"
+    to: "/documentation/contributors/ramitsharma991/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rayfix"
+    to: "/documentation/contributors/rayfix/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rayfix/"
+    to: "/documentation/contributors/rayfix/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rogerluan"
+    to: "/documentation/contributors/rogerluan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rogerluan/"
+    to: "/documentation/contributors/rogerluan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ronyfadel"
+    to: "/documentation/contributors/ronyfadel/"
+    status: 301
+  - from: "/documentation/wwdcnotes/ronyfadel/"
+    to: "/documentation/contributors/ronyfadel/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rusik"
+    to: "/documentation/contributors/rusik/"
+    status: 301
+  - from: "/documentation/wwdcnotes/rusik/"
+    to: "/documentation/contributors/rusik/"
+    status: 301
+  - from: "/documentation/wwdcnotes/skhillon"
+    to: "/documentation/contributors/skhillon/"
+    status: 301
+  - from: "/documentation/wwdcnotes/skhillon/"
+    to: "/documentation/contributors/skhillon/"
+    status: 301
+  - from: "/documentation/wwdcnotes/spanage"
+    to: "/documentation/contributors/spanage/"
+    status: 301
+  - from: "/documentation/wwdcnotes/spanage/"
+    to: "/documentation/contributors/spanage/"
+    status: 301
+  - from: "/documentation/wwdcnotes/srujanc"
+    to: "/documentation/contributors/srujanc/"
+    status: 301
+  - from: "/documentation/wwdcnotes/srujanc/"
+    to: "/documentation/contributors/srujanc/"
+    status: 301
+  - from: "/documentation/wwdcnotes/stevenpaulhoward"
+    to: "/documentation/contributors/stevenpaulhoward/"
+    status: 301
+  - from: "/documentation/wwdcnotes/stevenpaulhoward/"
+    to: "/documentation/contributors/stevenpaulhoward/"
+    status: 301
+  - from: "/documentation/wwdcnotes/suzgupta"
+    to: "/documentation/contributors/suzgupta/"
+    status: 301
+  - from: "/documentation/wwdcnotes/suzgupta/"
+    to: "/documentation/contributors/suzgupta/"
+    status: 301
+  - from: "/documentation/wwdcnotes/teacup"
+    to: "/documentation/contributors/teacup/"
+    status: 301
+  - from: "/documentation/wwdcnotes/teacup/"
+    to: "/documentation/contributors/teacup/"
+    status: 301
+  - from: "/documentation/wwdcnotes/terlan98"
+    to: "/documentation/contributors/terlan98/"
+    status: 301
+  - from: "/documentation/wwdcnotes/terlan98/"
+    to: "/documentation/contributors/terlan98/"
+    status: 301
+  - from: "/documentation/wwdcnotes/thecodedself"
+    to: "/documentation/contributors/thecodedself/"
+    status: 301
+  - from: "/documentation/wwdcnotes/thecodedself/"
+    to: "/documentation/contributors/thecodedself/"
+    status: 301
+  - from: "/documentation/wwdcnotes/tianskylan"
+    to: "/documentation/contributors/tianskylan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/tianskylan/"
+    to: "/documentation/contributors/tianskylan/"
+    status: 301
+  - from: "/documentation/wwdcnotes/trav-ma"
+    to: "/documentation/contributors/trav-ma/"
+    status: 301
+  - from: "/documentation/wwdcnotes/trav-ma/"
+    to: "/documentation/contributors/trav-ma/"
+    status: 301
+  - from: "/documentation/wwdcnotes/victorpuga"
+    to: "/documentation/contributors/victorpuga/"
+    status: 301
+  - from: "/documentation/wwdcnotes/victorpuga/"
+    to: "/documentation/contributors/victorpuga/"
+    status: 301
+  - from: "/documentation/wwdcnotes/vielfaltsoftware"
+    to: "/documentation/contributors/vielfaltsoftware/"
+    status: 301
+  - from: "/documentation/wwdcnotes/vielfaltsoftware/"
+    to: "/documentation/contributors/vielfaltsoftware/"
+    status: 301
+  - from: "/documentation/wwdcnotes/zntfdr"
+    to: "/documentation/contributors/zntfdr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/zntfdr/"
+    to: "/documentation/contributors/zntfdr/"
+    status: 301
+  - from: "/documentation/wwdcnotes/*"
+    to: "/documentation/:splat"
+    status: 301

@@ -88,15 +88,15 @@ func expectedPrecipitationIn24Hours(for valueInMillimeters: Measurement<UnitLeng
 - Adjust a column width in a table like list to the longest label
 - use `Grid` view in SwiftUI to implement this
 
-![](https://user-images.githubusercontent.com/6942160/172727878-1b7caf7d-8705-4881-b9c4-3845e7fc6e5d.png)
+![](WWDC22-10110-remote1)
 
 - use two or more lines if needed, e.g. for German on watchOS
 - Sometimes a horizontal stack can be changed to a vertical to fit
 
-![](https://user-images.githubusercontent.com/6942160/172727893-dc33f6e5-9a68-4c85-8e07-5e6fceb355c5.png)
+![](WWDC22-10110-remote2)
 
 - Possible with [`ViewThatFits`][ViewThatFits] in SwiftUI now
 
-![](https://user-images.githubusercontent.com/6942160/172727909-1d610bf6-f4b4-41ae-91df-d7713a96105d.png)
+![](WWDC22-10110-remote3)
 
 [ViewThatFits]: https://developer.apple.com/documentation/swiftui/viewthatfits

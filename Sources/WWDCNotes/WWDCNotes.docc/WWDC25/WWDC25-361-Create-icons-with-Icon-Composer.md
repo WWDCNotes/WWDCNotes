@@ -1,3 +1,6 @@
+---
+tags: [iOS, iPadOS, macOS, watchOS]
+---
 # Create icons with Icon Composer
 
 Learn how to use Icon Composer to make updated app icons for iOS, iPadOS, macOS, and watchOS. Find out how to export assets from your design tool of choice, add them to Icon Composer, apply real-time glass properties and other effects, and preview and adjust for different platforms and appearance modes.
@@ -27,10 +30,11 @@ Learn how to use Icon Composer to make updated app icons for iOS, iPadOS, macOS,
 - It's best to design app icons with vectors so you can scale the exported SVGs
 - Use app icon design template with the grid system to size your vectors right
 - The grid and rounded rectangles of the templates have changed
-- The watchOS template uses 1088x1088 to use same grid as 1024x1024 but add some padding for the circle
 - Layers supported like on tvOS/visionOS icons, most apps fine with background/foreground, but more layers possible
 - Effects like Blur, Shadow, Specular, Opacity, and Translucency should be added in Icon Composer
 - So keep things flat and opaque in your design tool, export multiple layers (keep text on extra layers)
+
+> Tip: The watchOS template uses 1088×1088 to share the same grid as 1024×1024, but adds some padding for the circle.
 
 @Image(source: "WWDC25-361-Supported-Effects")
 
@@ -44,7 +48,8 @@ Learn how to use Icon Composer to make updated app icons for iOS, iPadOS, macOS,
 
 - SVG doesn't preserve fonts, so convert text to outlines before exporting
 - For other things not supported by SVG like custom gradients or raster images, export layers as PNG
-- Never include rounded rectangle or circle masks in exports, also use full canvas
+
+> Note: Never include a rounded rectangle or circle mask in your exports, and always use the full canvas.
 
 ## Icon Composer
 

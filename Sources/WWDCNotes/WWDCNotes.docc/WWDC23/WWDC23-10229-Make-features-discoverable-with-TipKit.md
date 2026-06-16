@@ -25,13 +25,13 @@ Teach people how to use your app with TipKit! Learn how you can create effective
 
 ![][Recommended]
 
-[Recommended]: ../../../images/notes/wwdc23/10224/Recommended.png
+[Recommended]: WWDC23-10229-Recommended
 
 - Not recommended for: Promotional messages, Error messages, pure information that is not actionable, too complex text
 
 ![][NotRecommended]
 
-[NotRecommended]: ../../../images/notes/wwdc23/10224/NotRecommended.png
+[NotRecommended]: WWDC23-10229-NotRecommended
 
 - Call `TipsCenter.shared.configure` on app start (e.g. `init()` of `App`)
 - `Tip` protocol optionally has an `asset: Image` to show an icon alongside tip
@@ -55,7 +55,7 @@ Example with both parameter-based and event-based rules combined:
 
 ![][CombinedRules]
 
-[CombinedRules]: ../../../images/notes/wwdc23/10224/CombinedRules.png
+[CombinedRules]: WWDC23-10229-CombinedRules
 
 - You can not only use `.count` on `Event` but also `.donations` which have a `date` property for more complex logic, like "3 times within last week"
 - You can even specify your custom `DonationValue` types with additional details like `ID`s of your models or more
@@ -80,4 +80,4 @@ Example with both parameter-based and event-based rules combined:
 
 ![][LaunchArguments]
 
-[LaunchArguments]: ../../../images/notes/wwdc23/10224/LaunchArguments.png
+[LaunchArguments]: WWDC23-10229-LaunchArguments

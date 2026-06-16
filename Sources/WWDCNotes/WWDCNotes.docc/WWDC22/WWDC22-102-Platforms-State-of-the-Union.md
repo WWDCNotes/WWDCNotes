@@ -297,4 +297,4 @@ struct MyApp: App {
 [visionkit]: https://developer.apple.com/documentation/visionkit
 [enabling_live_text_interactions_with_images]: https://developer.apple.com/documentation/visionkit/enabling_live_text_interactions_with_images
 [datascannerviewcontroller]: https://developer.apple.com/documentation/visionkit/datascannerviewcontroller
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc22-state-of-the-union.jpg
+[sketchnote]: WWDC22-102-sketchnote

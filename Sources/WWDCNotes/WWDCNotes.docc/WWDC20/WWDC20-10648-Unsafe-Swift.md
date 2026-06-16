@@ -87,7 +87,7 @@ ptr.pointee = 23 // UNDEFINED BEHAVIOR
 * `ptr.pointee` is dereferencing pointer `ptr`.
 * Dereferencing a `NULL` pointer is a serious programming error.
 * Xcode provides Address Sanitizer to help you catch memory corruption errors.
-* For more, refer to [Safely manage pointers in Swift](../10167/) session.
+* For more, refer to [Safely manage pointers in Swift](/documentation/wwdc20-10167-safely-manage-pointers-in-swift/) session.
 
 ![][address_sanitizer]
 

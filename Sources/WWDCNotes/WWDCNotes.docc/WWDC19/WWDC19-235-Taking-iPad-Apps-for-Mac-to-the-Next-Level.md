@@ -74,5 +74,3 @@ In MacOS, we archive the app with “My Mac” as target in order to export our 
 
 Most are automatically enabled by looking at the `info.plist` file, however some needs to be manually activated: in particular keychain and push notification capabilities.
 
-[targetImage]: ../../../images/notes/wwdc19/235/target.png
-[segmentImage]: ../../../images/notes/wwdc19/235/segment.png

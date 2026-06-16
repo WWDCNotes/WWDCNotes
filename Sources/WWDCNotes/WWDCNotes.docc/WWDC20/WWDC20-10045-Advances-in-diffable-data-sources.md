@@ -200,5 +200,5 @@ dataSource.reorderingHandlers.didReorder = { [weak self] transaction in
 }
 ```
 
-[wwdc19220]: ../../wwdc19/220
+[wwdc19220]: /documentation/wwdc19-220-advances-in-ui-data-sources/
 [section_snapshots]: WWDC20-10045-section_snapshots

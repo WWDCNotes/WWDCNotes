@@ -356,7 +356,7 @@ var isRelative: Bool {
 ```
 ![][9]
 
-[9]: ../../../images/notes/wwdc23/10164/IMG_991CDD186BB4-1.jpeg
+[9]: WWDC23-10164-IMG_991CDD186BB4-1
 
 ## Attached macro roles
 Attached macros are classified into five different roles based on how they augment the declaration they are attached to.

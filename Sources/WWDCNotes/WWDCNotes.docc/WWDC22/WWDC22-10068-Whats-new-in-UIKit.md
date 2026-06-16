@@ -16,4 +16,4 @@ Discover the latest updates and improvements to UIKit and learn how to build bet
 
 ![Sketchnote of what’s new in UIKit with productivity improvements, control enhancements, API refinements and news about UIKit and SwiftUI][sketchnote]
 
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc22-whats-new-in-uikit.jpg
+[sketchnote]: WWDC22-10068-sketchnote

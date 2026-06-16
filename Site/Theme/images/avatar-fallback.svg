@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="Contributor avatar">
+   <defs>
+      <clipPath id="avatarFallbackClip">
+         <circle cx="20" cy="20" r="20"/>
+      </clipPath>
+   </defs>
+   <circle cx="20" cy="20" r="20" fill="#c7ccd6"/>
+   <g clip-path="url(#avatarFallbackClip)" fill="#ffffff">
+      <circle cx="20" cy="15" r="7"/>
+      <ellipse cx="20" cy="33" rx="12.5" ry="11"/>
+   </g>
+</svg>

@@ -25,50 +25,7 @@ struct Contributor {
    init(githubProfileName: String) throws {
       self.githubProfileName = githubProfileName
 
-      var components = URLComponents()
-      components.scheme = "https"
-      components.host = "api.github.com"
-      components.path = "/users/\(githubProfileName)"
-
-      let url = components.url!
-      var request = URLRequest(url: url)
-
-      guard let token = ProcessInfo.processInfo.environment["GITHUB_TOKEN"] else {
-          fatalError("GITHUB_TOKEN is not set in the environment variables")
-      }
-
-      request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-
-      let semaphore = DispatchSemaphore(value: 0)
-
-      var fetchedData: Data?
-      var fetchError: Error?
-
-      print("Fetching GitHub profile details for '\(githubProfileName)'…")
-
-      let task = URLSession.shared.dataTask(with: request) { data, response, error in
-         fetchedData = data
-         fetchError = error
-         semaphore.signal()
-      }
-
-      task.resume()
-      semaphore.wait()
-
-      if let error = fetchError {
-         print("Error fetching data: \(error.localizedDescription)")
-         throw error
-      }
-
-      let gitHubUser: GitHubUser
-      do {
-         let decoder = JSONDecoder()
-         decoder.keyDecodingStrategy = .convertFromSnakeCase
-         gitHubUser = try decoder.decode(GitHubUser.self, from: fetchedData!)
-      } catch {
-         print("Fetched contents were: \(String(data: fetchedData!, encoding: .utf8) ?? "N/A")")
-         throw error
-      }
+      let gitHubUser = try Self.fetchGitHubUser(profileName: githubProfileName)
 
       self.fullName = gitHubUser.name ?? githubProfileName
 
@@ -94,42 +51,104 @@ struct Contributor {
 
       self.shortDescription = gitHubUser.bio?.components(separatedBy: .newlines)[0] ?? "No Bio on GitHub"
 
-      // Fetch social links
+      // Fetch social links. The GitHub API returns unset profile fields as empty strings,
+      // not null - an unguarded "" would render a dead button pointing at "https://".
       var links = [String: URL]()
-      if let blog = gitHubUser.blog {
+      if let blog = gitHubUser.blog?.trimmingCharacters(in: .whitespacesAndNewlines), !blog.isEmpty {
          var blogUrlString = blog
 
          if !blogUrlString.hasPrefix("http") {
             blogUrlString = "https://\(blogUrlString)"
          }
-         
-         if let blogURL = URL(string: blogUrlString) {
-            links["Blog"] = blogURL
+
+         if let blogURL = URL(string: blogUrlString), blogURL.host != nil {
+            links["Blog/Website"] = blogURL
          }
       }
-      
-      if let twitterUsername = gitHubUser.twitterUsername {
+
+      if let twitterUsername = gitHubUser.twitterUsername?.trimmingCharacters(in: .whitespacesAndNewlines), !twitterUsername.isEmpty {
          links["X/Twitter"] = URL(string: "https://x.com/\(twitterUsername)")
       }
 
       self.socialLinks = links
    }
-}
 
-let legalNotes = """
+   /// Fetches a GitHub user profile via the public REST API.
+   ///
+   /// The public `/users/{login}` endpoint is readable without authentication (rate-limited to 60 requests/hour);
+   /// a token only raises that ceiling to 5 000/hour. When a token is present we try it first and transparently
+   /// retry unauthenticated on any auth/rate-limit failure, so the build stays green whether it runs with a real
+   /// GitHub PAT or no token at all.
+   static func fetchGitHubUser(profileName: String) throws -> GitHubUser {
+      var components = URLComponents()
+      components.scheme = "https"
+      components.host = "api.github.com"
+      components.path = "/users/\(profileName)"
+      let url = components.url!
 
-   @Small {
-      **Legal Notice**
+      // Use GITHUB_TOKEN if set. An env var that is present but empty (e.g. a CI secret that is unset yet still
+      // exported as "") counts as "no token", not as an empty credential.
+      let environment = ProcessInfo.processInfo.environment
+      let token = environment["GITHUB_TOKEN"].flatMap { $0.isEmpty ? nil : $0 }
 
-      All content copyright © 2012 – 2025 Apple Inc. All rights reserved.
-      Swift, the Swift logo, Swift Playgrounds, Xcode, Instruments, Cocoa Touch, Touch ID, FaceID, iPhone, iPad, Safari, Apple Vision, Apple Watch, App Store, iPadOS, watchOS, visionOS, tvOS, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.
-      This website is not made by, affiliated with, nor endorsed by Apple.
+      print("Fetching GitHub profile details for '\(profileName)'…")
+
+      // First attempt: authenticated when a token is available, otherwise straight to the public path.
+      var (data, status) = Self.performRequest(url: url, token: token)
+
+      // 401 (bad credentials) or 403 (rate limit) → retry once without the Authorization
+      // header. The public profile is readable unauthenticated, so this recovers the lookup instead of failing.
+      if status != 200, token != nil {
+         print("   Authenticated lookup returned HTTP \(status); retrying unauthenticated…")
+         (data, status) = Self.performRequest(url: url, token: nil)
+      }
+
+      guard let data else {
+         throw URLError(.badServerResponse)
+      }
+
+      if status != 200 {
+         print("   Warning: GitHub lookup for '\(profileName)' returned HTTP \(status); using fallback profile data.")
+      }
+
+      let decoder = JSONDecoder()
+      decoder.keyDecodingStrategy = .convertFromSnakeCase
+      do {
+         return try decoder.decode(GitHubUser.self, from: data)
+      } catch {
+         print("Fetched contents were: \(String(data: data, encoding: .utf8) ?? "N/A")")
+         throw error
+      }
    }
-   """
+
+   /// Synchronously performs a GET against the GitHub API, returning the response body and HTTP status code
+   /// (0 when the transport itself failed). GitHub requires a User-Agent header on every request, so we always set one.
+   private static func performRequest(url: URL, token: String?) -> (Data?, Int) {
+      var request = URLRequest(url: url)
+      request.setValue("application/vnd.github+json", forHTTPHeaderField: "Accept")
+      request.setValue("WWDCNotes-generate-metadata", forHTTPHeaderField: "User-Agent")
+      if let token {
+         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+      }
+
+      let semaphore = DispatchSemaphore(value: 0)
+      var resultData: Data?
+      var statusCode = 0
+      let task = URLSession.shared.dataTask(with: request) { data, response, _ in
+         resultData = data
+         statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
+         semaphore.signal()
+      }
+      task.resume()
+      semaphore.wait()
+      return (resultData, statusCode)
+   }
+}
 
 let sessionByID = try Session.allSessionsByID()
 
-let events = ["WWDC25", "WWDC24", "WWDC23", "WWDC22", "WWDC21", "WWDC20", "WWDC19", "WWDC18", "WWDC17", "WWDC16", "WWDC15", "WWDC14", "WWDC13", "WWDC12", "WWDC11", "WWDC10"]
+
+let events = Set(sessionByID.values.map(\.year)).sorted(by: >).map { "WWDC\($0 - 2000)" }
 
 var contributorsByProfile: [String: Contributor] = [:]
 var sessionIDsWithoutContributors: Set<String> = []
@@ -168,63 +187,14 @@ for event in events {
             }
          }
 
-         if !sessionContributors.isEmpty {
-            sessionFileContents += "\n\n## Written By\n"
-            for contributor in sessionContributors {
-               sessionFileContents += """
 
-                  @Row(numberOfColumns: 5) {
-                     @Column { 
-                        @Image(source: "\(contributor.githubProfileName)", alt: "Profile image of \(contributor.fullName)")
-                     }
-                     @Column(size: 4) {
-                        ### [\(contributor.fullName)](<doc:\(contributor.githubProfileName)>)
-
-                        [Contributed Notes](<doc:\(contributor.githubProfileName)>)
-                        |
-                        [GitHub](https://github.com/\(contributor.githubProfileName))
-                  \(contributor.socialLinks.map { "|\n      [\($0)](\($1.absoluteString))" }.joined(separator: "\n"))
-                     }
-                  }
-
-                  """
-            }
-
-            sessionFileContents += """
-
-               ---
-               Missing anything? Corrections? [Contributions are welcome!](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
-
-               """
-         }
-
-         if !session.relatedSessionIDs.isEmpty {
-            sessionFileContents += """
-
-
-               ## Related Sessions
-
-               @Links(visualStyle: list) {
-
-               """
-
-            for relatedSessionID in session.relatedSessionIDs {
-               if let relatedSession = sessionByID[relatedSessionID] {
-                  sessionFileContents += "   - <doc:\(relatedSession.fileName)>\n"
-               }
-            }
-
-            sessionFileContents += "}\n\n"
-         }
-
-         if !sessionContributors.isEmpty {
-            sessionFileContents += legalNotes
-         }
 
          try sessionFileContents.write(toFile: sessionFilePath, atomically: true, encoding: .utf8)
       }
    }
 }
+
+
 
 
 // MARK: - Generate all Contributor/<Profile>.md
@@ -299,7 +269,7 @@ var contributorsOverviewContents = """
       @PageKind(article)
       @PageImage(purpose: icon, source: "WWDCNotes")
       @PageImage(purpose: card, source: "Contributors")
-      @CallToAction(url: "/documentation/wwdcnotes/contributing", purpose: link, label: "Become a Contributor")
+      @CallToAction(url: "/documentation/contributing/", purpose: link, label: "Become a Contributor")
    }
 
    @Options(scope: local) {
@@ -317,7 +287,6 @@ for (profile, _) in sessionIDsByProfile.sorted(by: { $0.value.count > $1.value.c
    contributorsOverviewContents += "- <doc:\(profile)>\n"
 }
 
-contributorsOverviewContents += legalNotes
 
 try contributorsOverviewContents.write(toFile: contributorsOverviewFilePath, atomically: true, encoding: .utf8)
 
@@ -337,7 +306,7 @@ var missingNotesContents = """
       @PageKind(article)
       @PageImage(purpose: icon, source: "WWDCNotes")
       @PageImage(purpose: card, source: "MissingNotes")
-      @CallToAction(url: "/documentation/wwdcnotes/contributing", purpose: link, label: "Learn How to Contribute")
+      @CallToAction(url: "/documentation/contributing/", purpose: link, label: "Learn How to Contribute")
    }
 
 

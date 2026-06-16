@@ -15,4 +15,4 @@ Discover how to incrementally adopt SwiftUI in your existing AppKit or UIKit app
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

@@ -15,4 +15,4 @@ Discover how to bring Genmoji to life in your app. We’ll go over how to render
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

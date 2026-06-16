@@ -1,0 +1,71 @@
+/* ============================================================================
+   WWDCNotes BRAND LAYER – overrides SiteKit core --color-* tokens with the
+   WWDCNotes palette (Claude Design handoff) + the prism key-visual + logo.
+   Per Blamenco: do NOT duplicate component classes – core docc.css styles
+   everything from these tokens; we only re-point the tokens + add brand prism.
+   Light = blue accent (#0060ff), Dark = orange accent (#ff9142).
+   ========================================================================== */
+html[data-theme="light"], html:not([data-theme="dark"]){
+  /* accent darkened from #0a66ff to meet WCAG AA: link 4.64:1 on --color-bg, white-on-accent 5.10:1 (hue-preserved H217) */
+  --color-accent:#0060ff; --color-accent-hover:#004dcc; --color-accent-contrast:#ffffff;
+  --color-bg:#f3f4f7; --color-bg-alt:#e8eaef; --color-bg-card:#ffffff;
+  --color-border:#dadce3; --color-border-light:#e4e6ec;
+  /* text-muted darkened from #83838b to meet WCAG AA (4.5:1) on --color-bg; was 3.42:1 */
+  --color-text:#1d1d1f; --color-text-secondary:#54545c; --color-text-muted:#6b6b72;
+}
+html[data-theme="dark"]{
+  /* accent #ff9142 unchanged (link 8.78:1 passes AA); contrast ink darkened to #0a1018 so the watch-video button (.sk-docc-watch reads --color-accent-contrast) is AA in dark */
+  --color-accent:#ff9142; --color-accent-hover:#ffa25f; --color-accent-contrast:#0a1018;
+  --color-bg:#080b14; --color-bg-alt:#161c2b; --color-bg-card:#161d2e;
+  --color-border:#262f44; --color-border-light:#1b2233;
+  /* text-muted lightened from #6f7891 to meet WCAG AA (4.5:1) on --color-bg; was 4.47:1 */
+  --color-text:#eef1f7; --color-text-secondary:#a7b0c2; --color-text-muted:#757e98;
+}
+
+/* Wordmark 2nd tone ("Notes") → secondary gray, matching the restrained
+   two-tone (the colorful mascot logo carries the brand color). Core sets
+   --color-docc-wordmark-2 on `.sk-docc-layout` (default --color-accent); override it at
+   the same layer with a higher-specificity selector so it wins regardless of CSS load
+   order. var(--color-text-secondary) is inherited from html[data-theme] → correct per theme. */
+html .sk-docc-layout { --color-docc-wordmark-2: var(--color-text-secondary); }
+
+/* Prism key-visual (brand) – exact 4-layer radial glow from the design */
+.sk-docc-hero-prism{
+  background:
+    radial-gradient(40% 60% at 80% 20%, #ff5e8a99, transparent 60%),
+    radial-gradient(45% 70% at 60% 80%, #4e8bffaa, transparent 60%),
+    radial-gradient(40% 60% at 95% 60%, #a05cff99, transparent 60%),
+    radial-gradient(35% 50% at 70% 40%, #43d6a088, transparent 60%);
+  filter:blur(14px); opacity:.85; transform:rotate(-8deg);
+}
+/* AI accent (brand, not theme-driven) for the Community/AI switch when it lands */
+:root{ --sk-docc-ai:#7a5cff; --sk-docc-ai-grad-a:#6a5cff; --sk-docc-ai-grad-b:#a05cff; }
+
+/* Wordmark 2nd tone ("Notes") uses the secondary-text gray, not the brand accent: the colorful
+   mascot logo carries the brand color, so the wordmark stays understated. A plain component
+   override here would NOT win (this file loads before core docc.css, which sets
+   .sk-docc-brand-2 { color: var(--color-accent) }), so the token is overridden via the
+   higher-specificity selector above. */
+
+/* wwdc.ai AI-summary fallback link – injected by theme.js as a sibling directly
+   below the stub empty-state card (.sk-docc-empty) on WWDC26 session pages only.
+   Understated footnote: small, muted, clearly external/unofficial, with breathing
+   room above so it does not crowd the card. */
+.wn-aisum{ margin:1rem 0 0; font-size:.75rem; line-height:1.5; color:var(--color-text-muted); text-align:center; }
+.wn-aisum-link{ color:var(--color-accent); font-weight:500; text-decoration:none; }
+.wn-aisum-link:hover{ color:var(--color-accent-hover); text-decoration:underline; }
+.wn-aisum-note{ color:var(--color-text-muted); }
+
+/* Footer left column + "Built with SiteKit" attribution – injected by theme.js.
+   The brand sentence is folded into footerDisclaimer, so the standalone brand
+   heading is hidden. theme.js groups the description and the attribution into
+   .wn-footer-leftcol, which takes the left flex column (mirroring the original
+   description item) so the footer keeps its two columns: left text | right legal.
+   The attribution is a small, muted line below the description; "SiteKit" is
+   always shown in the accent link colour. */
+/* html-prefixed so it beats core docc.css, which loads after wn-overrides.css */
+html .sk-docc-footer-brand{ display:none; }
+.wn-footer-leftcol{ flex:1 1 240px; }
+.wn-builtwith{ margin:.4rem 0 0; font-size:.8rem; color:var(--color-text-muted); }
+.wn-builtwith-link{ color:var(--color-accent); text-decoration:none; }
+.wn-builtwith-link:hover{ color:var(--color-accent-hover); text-decoration:underline; }

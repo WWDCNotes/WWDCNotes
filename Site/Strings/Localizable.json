@@ -1,0 +1,14 @@
+{
+   "doccSearch": {
+      "comment": "WWDCNotes appbar search-pill label. Overrides the SiteKit built-in default ('Search') with 'Search sessions'. Merged over the built-in per key by UIStrings.",
+      "localizations": {
+         "en": "Search sessions"
+      }
+   },
+   "doccFilter": {
+      "comment": "WWDCNotes sidebar-tree filter-input placeholder. Overrides the SiteKit built-in default with 'Filter sessions & years'. Distinct from doccSearch (the full-text appbar search). Merged over the built-in per key by UIStrings.",
+      "localizations": {
+         "en": "Filter sessions & years"
+      }
+   }
+}

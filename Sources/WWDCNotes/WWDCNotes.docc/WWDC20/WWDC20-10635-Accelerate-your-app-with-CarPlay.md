@@ -15,4 +15,4 @@ CarPlay is the smarter, safer way for people to use iPhone in the car. We’ll s
 😱 "No Overview Available!"
 
 Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](https://wwdcnotes.com/documentation/wwdcnotes/contributing)
+ [Learn More…](/documentation/contributing/)

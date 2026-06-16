@@ -16,4 +16,4 @@ Discover the latest updates and improvements to UIKit and learn how to build bet
 
 ![Sketchnote about what’s new in UIKit at WWDC21 about improvements in productivity, UI refinements, performance, API Enhancements and security and privacy changes. My favorite changes are new half height sheets, new UIButton API and the system location button for one-time access to locations.][sketchnote]
 
-[sketchnote]: https://fbernutz.github.io/images/sketchnotes/wwdc21-whats-new-in-uikit.jpg
+[sketchnote]: WWDC21-10059-sketchnote

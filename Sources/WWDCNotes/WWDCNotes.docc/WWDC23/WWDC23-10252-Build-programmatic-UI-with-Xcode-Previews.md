@@ -297,7 +297,7 @@ Another example. First, we pass in the attributes we want to use in the initiali
 }
 ```
 
-Check out the session ["Bring Widgets to Life"](https://developer.apple.com/videos/play/wwdc2023/10028) to learn more [(WWDCNotes)](https://www.wwdcnotes.com/notes/wwdc23/10028/)
+Check out the session ["Bring Widgets to Life"](https://developer.apple.com/videos/play/wwdc2023/10028) to learn more [(WWDCNotes)](/documentation/wwdc23-10028-bring-widgets-to-life/)
 
 # Previews in your project
 There are three different scenarios that affect setting up a project, providing data, and leveraging the capabilities of our devices.

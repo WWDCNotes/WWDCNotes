@@ -1,0 +1,9 @@
+/* Code block base styles — syntax colors provided by Highlight.js CDN theme */
+
+pre code {
+   font-family: var(--font-mono, "JetBrains Mono", "SF Mono", Menlo, Monaco, monospace);
+}
+
+pre code.hljs {
+   border-radius: var(--radius, 0.5rem);
+}
