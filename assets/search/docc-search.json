@@ -1,0 +1,21 @@
+{
+  "count" : 2304,
+  "shards" : [
+    "\/assets\/search\/docc-search-0.json",
+    "\/assets\/search\/docc-search-1.json",
+    "\/assets\/search\/docc-search-2.json",
+    "\/assets\/search\/docc-search-3.json",
+    "\/assets\/search\/docc-search-4.json",
+    "\/assets\/search\/docc-search-5.json",
+    "\/assets\/search\/docc-search-6.json",
+    "\/assets\/search\/docc-search-7.json",
+    "\/assets\/search\/docc-search-8.json",
+    "\/assets\/search\/docc-search-9.json",
+    "\/assets\/search\/docc-search-10.json",
+    "\/assets\/search\/docc-search-11.json",
+    "\/assets\/search\/docc-search-12.json",
+    "\/assets\/search\/docc-search-13.json",
+    "\/assets\/search\/docc-search-14.json",
+    "\/assets\/search\/docc-search-15.json"
+  ]
+}

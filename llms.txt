@@ -1,0 +1,18 @@
+# WWDCNotes
+
+> Session notes shared by the community, for the community.
+
+## Content Feeds
+
+- [RSS Feed (all sections)](https://wwdcnotes.com/feed.xml): Full-text feed of all articles
+- [Documentation RSS](https://wwdcnotes.com/documentation/feed.xml): Documentation only
+- [Sitemap](https://wwdcnotes.com/sitemap.xml): Complete page index with last-modified dates
+
+## Machine-Readable Indexes
+
+- [Navigation Index](https://wwdcnotes.com/assets/nav-index.json): Structured metadata for all articles (title, summary, tags, URL, section) plus tag display names and app catalog
+- [Full-Text Search Index](https://wwdcnotes.com/assets/search-index.json): Plain text content of all articles for search and analysis
+
+## Sections
+
+- [Documentation](https://wwdcnotes.com/documentation/): 2378 posts

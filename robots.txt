@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+User-agent: ClaudeBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: Claude-SearchBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: GPTBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: OAI-SearchBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: Google-Extended
+Crawl-delay: 1
+Allow: /
+
+User-agent: PerplexityBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: CCBot
+Crawl-delay: 1
+Allow: /
+
+Sitemap: https://wwdcnotes.com/sitemap.xml
