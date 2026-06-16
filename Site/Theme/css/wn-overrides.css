@@ -69,3 +69,13 @@ html .sk-docc-footer-brand{ display:none; }
 .wn-builtwith{ margin:.4rem 0 0; font-size:.8rem; color:var(--color-text-muted); }
 .wn-builtwith-link{ color:var(--color-accent); text-decoration:none; }
 .wn-builtwith-link:hover{ color:var(--color-accent-hover); text-decoration:underline; }
+
+/* Contributors card: show the real contributor-avatar mosaic instead of the generative
+   gradient tiles. Scoped to the card linking to /contributors/ so no other card is affected;
+   the image is cover-cropped into the key-visual slot exactly like the year banners. */
+a[href$="/contributors/"] .sk-docc-mosaic{
+   background-image:url('/assets/contributors-mosaic.jpeg');
+   background-size:cover;
+   background-position:center;
+}
+a[href$="/contributors/"] .sk-docc-mosaic .sk-docc-mosaic-tile{ display:none; }
