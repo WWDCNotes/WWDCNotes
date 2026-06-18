@@ -1,4 +1,4 @@
-name: Build & Deploy (Production – public SiteKit 1.0.0 → GitHub Pages, wwdcnotes.com)
+name: Build & Deploy (Production – public SiteKit 1.0.1 → GitHub Pages, wwdcnotes.com)
 
 # Builds the WWDCNotes SiteKit site and publishes it to the gh-pages branch serving wwdcnotes.com.
 #
@@ -33,11 +33,11 @@ jobs:
         with:
           path: Public/Content/WWDCNotes/PublicContent
 
-      - name: Checkout SiteKit (public, tag 1.0.0)
+      - name: Checkout SiteKit (public, tag 1.0.1)
         uses: actions/checkout@v4
         with:
           repository: FlineDev/SiteKit
-          ref: '1.0.0'
+          ref: '1.0.1'
           fetch-depth: 0
           path: Public/SiteKit
 

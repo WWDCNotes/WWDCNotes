@@ -12,6 +12,7 @@ let package = Package(
          name: "Site",
          dependencies: [
             .product(name: "SiteKit", package: "SiteKit"),
+            .product(name: "SiteKitSyntaxHighlighting", package: "SiteKit"),
          ]
       ),
    ]
