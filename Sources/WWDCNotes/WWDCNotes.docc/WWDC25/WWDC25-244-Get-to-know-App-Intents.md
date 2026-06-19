@@ -366,6 +366,8 @@ struct LandmarkEntity: IndexedEntity {
   - Is an `AppEntity` with Core Spotlight attribute set
 - Add indexing keys to `@Property`
 
+@Image(source: "WWDC25-244-Spotlight")
+
 - Tapping Spotlight result opens app by default
 - Open corresponding view via a `OpenIntent`:
 
@@ -410,6 +412,8 @@ struct LandmarkEntityQuery: EntityQuery {
     }
 }
 ```
+
+@Image(source: "WWDC25-244-Suggested-Entities")
 
 - Use [`EnumerableEntityQuery`](https://developer.apple.com/documentation/appintents/enumerableentityquery) with `allEntities()` function **if all entities can fit in memory**
 - Use `EntityPropertyQuery` for more complicated queries:
