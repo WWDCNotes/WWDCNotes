@@ -15128,7 +15128,7 @@
       },
       "wwdc25-244-get-to-know-app-intents" : {
         "framework" : "appintents",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Get to know App Intents",
         "url" : "\/documentation\/wwdc25-244-get-to-know-app-intents\/"
       },
@@ -15828,7 +15828,7 @@
       },
       "wwdc26-213-translate-your-app-using-agents-in-xcode" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Translate your app using agents in Xcode",
         "url" : "\/documentation\/wwdc26-213-translate-your-app-using-agents-in-xcode\/"
       },
@@ -16020,7 +16020,7 @@
       },
       "wwdc26-265-build-realtime-apps-and-services-with-grpc-and-swift" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Build real-time apps and services with gRPC and Swift",
         "url" : "\/documentation\/wwdc26-265-build-realtime-apps-and-services-with-grpc-and-swift\/"
       },
@@ -16044,7 +16044,7 @@
       },
       "wwdc26-271-codealong-build-powerful-drag-and-drop-in-swiftui" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Code-along: Build powerful drag and drop in SwiftUI",
         "url" : "\/documentation\/wwdc26-271-codealong-build-powerful-drag-and-drop-in-swiftui\/"
       },
