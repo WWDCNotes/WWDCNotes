@@ -15936,7 +15936,7 @@
       },
       "wwdc26-242-build-agentic-app-experiences-with-the-foundation-models-framework" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Build agentic app experiences with the Foundation Models framework",
         "url" : "\/documentation\/wwdc26-242-build-agentic-app-experiences-with-the-foundation-models-framework\/"
       },
