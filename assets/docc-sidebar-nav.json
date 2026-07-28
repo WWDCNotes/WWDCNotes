@@ -15990,7 +15990,7 @@
       },
       "wwdc26-258-whats-new-in-xcode-27" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "What’s new in Xcode 27",
         "url" : "\/documentation\/wwdc26-258-whats-new-in-xcode-27\/"
       },
