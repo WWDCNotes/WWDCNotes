@@ -6768,7 +6768,7 @@
       },
       "wwdc18-219-image-and-graphics-best-practices" : {
         "framework" : "media",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Image and Graphics Best Practices",
         "url" : "\/documentation\/wwdc18-219-image-and-graphics-best-practices\/"
       },
@@ -15918,7 +15918,7 @@
       },
       "wwdc26-237-whats-new-in-image-understanding" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "What’s new in image understanding",
         "url" : "\/documentation\/wwdc26-237-whats-new-in-image-understanding\/"
       },
@@ -15930,7 +15930,7 @@
       },
       "wwdc26-241-whats-new-in-the-foundation-models-framework" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "What’s new in the Foundation Models framework",
         "url" : "\/documentation\/wwdc26-241-whats-new-in-the-foundation-models-framework\/"
       },
@@ -15996,7 +15996,7 @@
       },
       "wwdc26-259-xcode-agents-and-you" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Xcode, agents, and you",
         "url" : "\/documentation\/wwdc26-259-xcode-agents-and-you\/"
       },
@@ -16398,7 +16398,7 @@
       },
       "wwdc26-389-discover-container-machines" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Discover container machines",
         "url" : "\/documentation\/wwdc26-389-discover-container-machines\/"
       },
