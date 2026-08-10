@@ -14288,7 +14288,7 @@
       },
       "wwdc24-10108-whats-new-in-wallet-and-apple-pay" : {
         "framework" : "docs",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "What’s new in Wallet and Apple Pay",
         "url" : "\/documentation\/wwdc24-10108-whats-new-in-wallet-and-apple-pay\/"
       },
@@ -15786,7 +15786,7 @@
       },
       "wwdc26-204-whats-new-in-webkit-for-safari-27" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "What’s new in WebKit for Safari 27",
         "url" : "\/documentation\/wwdc26-204-whats-new-in-webkit-for-safari-27\/"
       },
