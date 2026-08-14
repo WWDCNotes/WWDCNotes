@@ -8,11 +8,32 @@ Uncover how Trust Insights can help protect people from social scams and coercio
    @CallToAction(url: "https://developer.apple.com/videos/play/wwdc2026/379", purpose: link, label: "Watch Video (13 min)")
 
    @Contributors {
-      @GitHubUser(<replace this with your GitHub handle>)
+      @GitHubUser(mini-min)
    }
 }
 
-😱 "No Overview Available!"
+## Key Takeaways
 
-Be the hero to change that by watching the video and providing notes! It's super easy:
- [Learn More…](/documentation/contributing/)
+- Use Trust Insights to detect and respond to social engineering threats
+
+## Problems
+- Common coercion patterns
+  - Tech support scams - fake alerts prompt remote access, deceiving the user into handing over control
+  - Authority impersonation - posing as banks, government, or law enforcement to collect sensitive information
+  - Family emergency fraud - urgent money requests exploiting emotional bonds (increasingly via AI deepfakes)
+
+- Real-time coaching makes detection especially difficult
+  - Attackers guide victims via calls/chat, but the user performs the action themselves - authenticated and legitimate
+  - Existing protections (multi-factor auth, biometrics) don't help, because the user is the one acting
+
+> Key Points:
+> Authentication confirms *who* is acting, but not *whether* they're acting freely
+> → behavioral context can distinguish genuine intent from a coerced action (while preserving privacy)
+
+## Integrate True Insights into app
+### Step 1. Configuration
+- requires an entitlement configure this in Xcode by declaring the capability on app target
+
+## Requirements 
+
+## Privacy Architecture
