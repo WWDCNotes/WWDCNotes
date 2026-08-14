@@ -14630,7 +14630,7 @@
       },
       "wwdc24-10184-a-swift-tour-explore-swifts-features-and-design" : {
         "framework" : "swift",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "A Swift Tour: Explore Swift’s features and design",
         "url" : "\/documentation\/wwdc24-10184-a-swift-tour-explore-swifts-features-and-design\/"
       },
