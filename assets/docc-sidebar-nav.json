@@ -16206,7 +16206,7 @@
       },
       "wwdc26-312-meet-the-now-playing-framework" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Meet the Now Playing framework",
         "url" : "\/documentation\/wwdc26-312-meet-the-now-playing-framework\/"
       },
