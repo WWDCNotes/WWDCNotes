@@ -16236,7 +16236,7 @@
       },
       "wwdc26-321-dive-into-lazy-stacks-and-scrolling-with-swiftui" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Dive into lazy stacks and scrolling with SwiftUI",
         "url" : "\/documentation\/wwdc26-321-dive-into-lazy-stacks-and-scrolling-with-swiftui\/"
       },
