@@ -15248,7 +15248,7 @@
       },
       "wwdc25-268-embracing-swift-concurrency" : {
         "framework" : "swift",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Embracing Swift concurrency",
         "url" : "\/documentation\/wwdc25-268-embracing-swift-concurrency\/"
       },
