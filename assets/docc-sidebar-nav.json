@@ -15954,7 +15954,7 @@
       },
       "wwdc26-250-principles-of-great-design" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Principles of great design",
         "url" : "\/documentation\/wwdc26-250-principles-of-great-design\/"
       },
