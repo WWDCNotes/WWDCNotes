@@ -15924,7 +15924,7 @@
       },
       "wwdc26-240-build-intelligent-siri-experiences-with-app-schemas" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Build intelligent Siri experiences with App Schemas",
         "url" : "\/documentation\/wwdc26-240-build-intelligent-siri-experiences-with-app-schemas\/"
       },
