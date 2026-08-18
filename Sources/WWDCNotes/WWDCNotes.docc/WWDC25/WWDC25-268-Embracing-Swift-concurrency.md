@@ -14,7 +14,10 @@ Join us to learn the core Swift concurrency concepts. Concurrency helps you impr
 
 ## Key Takeaways
 
-- suggest journey from sigle-threaded to concurrent
+- Introduce only the concurrency you need
+- Interleaving improves system performance
+- Profile and optimize first
+- Swift catches data races at compile time
 
 > Tip: Apps need to use concurrency sparingly, should only introduce concurrency as you need it.
 
@@ -115,7 +118,7 @@ func fetchAndDisplayImage(url: URL) async throws {
 @concurrent
 func decodeImage(_ data: Data, at url: URL) async -> Image {
     if let image = cachedImage[url] {   // error: main actor-isolated property 'cachedImage'
-        return image                     // can't be accessed from outside the main actor
+        return image                    // can't be accessed from outside the main actor
     }
 
     // decode image
@@ -129,8 +132,6 @@ func decodeImage(_ data: Data, at url: URL) async -> Image {
   - When a task suspends, its thread runs other ready tasks, on resume it may continue on any available thread
 
 @Image(source: "WWDC25-268-concurrent-thread-pool.jpeg", alt: "The concurrent thread pool of background threads")
-
-- Data-race problem: a `@concurrent` function can't access main-actor-isolated state (e.g. `cachedImage`) → the compiler shows exactly where, so you don't introduce bugs while adding concurrency
 
 > Tip: Strategies to break ties to the main actor
 > 1. Move the main-actor code into a caller that always runs on the main actor
@@ -169,6 +170,129 @@ public class JSONDecoder {
 ```
 
 ## Step 3. Sharing data without data-races
+- Each hop between the main actor and the concurrent pool shares data across threads (URL out, `Data` back, decoded image back)
+- Sharing mutable state across threads is error-prone → Swift catches these mistakes at compile time, so you can add concurrency with confidence
+
+@Image(source: "WWDC25-268-data-shared.jpeg", alt: "Data crossing between the main actor and the concurrent pool")
+
+- `Sendable`: a protocol marking types that are always safe to share concurrently; sharing across actors/tasks triggers a Sendable check
+- Value types are safe because sharing is really copying — each copy is independent, so changes on one thread don't affect another
+  - Basic types (`Int`, `String`, `Date`, `URL`) and collections of them are implicitly `Sendable`
+  - Structs/enums are `Sendable` when all stored properties are `Sendable`
+  - Main-actor-isolated types are implicitly `Sendable` (the actor serializes access)
+
+```swift
+// Value types are Sendable
+extension URL: Sendable {}
+
+// Collections of Sendable elements
+extension Array: Sendable where Element: Sendable {}
+
+// Structs and enums with Sendable storage
+struct ImageRequest: Sendable {
+    var url: URL
+}
+
+// Main-actor types are implicitly Sendable
+@MainActor class ImageModel: Sendable { ... }
+```
+
+@Image(source: "WWDC25-268-sendable.jpeg", alt: "Examples of Sendable types")
+
+- Reference types (classes) are different — many variables point to the same object, so a mutable class is not `Sendable`
+  - A model class usually starts on the main actor; if it needs background work, make it `nonisolated` but keep it non-`Sendable` (prevents two threads from mutating it at once)
+- Sending a non-`Sendable` object (e.g. a mutable `image`) into a concurrent task while the main actor still uses it risks a data race → Swift catches it at compile time
+
+```swift
+// error: sending 'image' to concurrent task risks data races with uses on the main actor
+func scaleAndDisplay(imageName: String) {
+    let image = loadImage(imageName)
+    Task { @concurrent in
+        image.scaleImage(by: 0.5)
+    }
+    view.displayImage(image)
+}
+```
+
+- Fix: finish all the work before hopping to the main thread, so nothing is shared concurrently
+
+```swift
+// Option 1 — make the whole function `@concurrent`; only the final UI update hops back with `await`
+@concurrent
+func scaleAndDisplay(imageName: String) async {
+    let image = loadImage(imageName)
+    image.scaleImage(by: 0.5)
+    await view.displayImage(image)
+}
+ 
+// Option 2 — keep the function on the main actor, wrap the work in `Task { @concurrent in }`, then `await` the UI update
+func scaleAndDisplay(imageName: String) {
+    Task { @concurrent in
+        let image = loadImage(imageName)
+        image.scaleImage(by: 0.5)
+        await view.displayImage(image)
+    }
+}
+```
+
+- Order matters too — once you hand `image` to the main actor (`await view.displayImage`), you can't keep mutating it concurrently
+
+> Tip: You can still send an object between tasks — just make all mutations before sending it
+
+```swift
+// error: sending 'image' risks data races — access can happen concurrently
+@concurrent
+func scaleAndDisplay(imageName: String) async {
+    let image = loadImage(imageName)
+    image.scaleImage(by: 0.5)
+    await view.displayImage(image)   // image handed to the main actor here
+    image.applyAnotherEffect()       // ...but still mutated concurrently → error
+}
+
+// Fix: finish all mutations before handing the image off to the main actor
+@concurrent
+func scaleAndDisplay(imageName: String) async {
+    let image = loadImage(imageName)
+    image.scaleImage(by: 0.5)
+    image.applyAnotherEffect()
+    await view.displayImage(image)
+}
+```
 
 ## Step 4. Actor: move data off the main thread
- 
+- As an app grows, more subsystem state piles up on the main actor
+- Background tasks then keep hopping to the main thread to touch that state → contention
+  - many small hops add up to UI glitches
+- Define your own `actor` to isolate that data onto its own domain, off the main actor
+  - An actor isolates its state so only one task touches it at a time (access is serialized)
+  - call its methods with `await` from outside
+  - Actors are reference types but are `Sendable` (serialized access → no data race)
+  - A program can have many independent actor objects, none tied to a single thread → frees the main thread for the UI
+
+```swift
+// Before: a main-actor class → every access hops to the main thread
+final class NetworkManager {
+    var openConnections: [URL: Connection] = [:]
+    func openConnection(for url: URL) async -> Connection { ... }
+    func closeConnection(_ connection: Connection, for url: URL) async { ... }
+}
+
+// After: an actor → manages its own isolation, off the main actor
+actor NetworkManager {
+    var openConnections: [URL: Connection] = [:]
+    func openConnection(for url: URL) async -> Connection { ... }
+    func closeConnection(_ connection: Connection, for url: URL) async { ... }
+}
+```
+
+> Note: Reach for an actor only when main-actor data forces too much code onto the main thread — then split out one non-UI subsystem (e.g. networking). Keep UI-facing and model classes on the main actor (or non-`Sendable`) so you don't invite lots of concurrent access.
+
+- Recommended build settings
+  - Approachable Concurrency: enables upcoming features that make concurrency easier → adopt in all projects
+  - For UI-focused Swift modules (e.g. your main app module), set the default actor isolation to Main Actor
+
+@Image(source: "WWDC25-268-approachable-concurrency.jpeg", alt: "Recommended build settings: Approachable Concurrency and Main Actor default isolation")
+
+> Tip: The journey — start single-threaded on the main actor → add `async`/`await` to hide latency → `@concurrent` for heavy work → share data safely with `Sendable` → introduce actors for shared mutable state. Profile to decide what to move off the main thread.
+
+@Image(source: "WWDC25-268-concurrency-architecture.jpeg", alt: "The concurrency journey from single-threaded to actors")
