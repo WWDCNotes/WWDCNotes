@@ -232,7 +232,7 @@ try await AIModel.specialize(contentsOf: modelURL)
 
 @Image(source: "WWDC26-324-peek-inside-specialization.jpeg", alt: "A peek inside specialization: compilation and executable generation")
 
-@Image(source: "WWDC26-324-aot-compilation.png", alt: "Ahead-of-time compilation moves work off the user's device")
+@Image(source: "WWDC26-324-aot-compilation.jpeg", alt: "Ahead-of-time compilation moves work off the user's device")
 
 ## Wrap up
 - Core AI runs on all Apple silicon: Python tools you already know, a modern Swift framework, and debugging tools
