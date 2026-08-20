@@ -138,3 +138,16 @@ import SwiftData
     }
 }
 ```
+
+## Dynamic Compound Predicates
+- Note: This wasn't mentioned in the talk, but [was noted in the WWDC Q&A by an Apple Engineer](https://developer.apple.com/forums/thread/832230?answerId=891843022#891843022) as new addition to the 2027 releases.
+
+- Dynamically construct a conjunction or disjunction of subpredicates
+  - Use [`Predicate(any:)`](https://developer.apple.com/documentation/foundation/predicate/init(any:)) if at least one subpredicate must be satisfied
+  - Use [`Predicate(all:)`](https://developer.apple.com/documentation/foundation/predicate/init(any:)) if all subpredicates must be satisfied
+- Learn more in the [API proposal](https://forums.swift.org/t/pitch-initializers-for-joining-a-sequence-of-predicates/85652)
+
+```swift
+let predicates = [#Predicate<Int> { $0 > 2 }, #Predicate<Int> { $0 <= 9 }, #Predicate<Int> { $0 != 5 }, #Predicate<Int> { $0 % 2 != 0 }]
+let conjunction = Predicate(all: predicates)
+```
