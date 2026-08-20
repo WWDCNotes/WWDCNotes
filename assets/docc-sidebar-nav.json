@@ -15242,7 +15242,7 @@
       },
       "wwdc25-266-explore-concurrency-in-swiftui" : {
         "framework" : "swiftui",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Explore concurrency in SwiftUI",
         "url" : "\/documentation\/wwdc25-266-explore-concurrency-in-swiftui\/"
       },
@@ -16032,7 +16032,7 @@
       },
       "wwdc26-268-profile-fix-and-verify-improve-app-responsiveness-with-instruments" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Profile, fix, and verify: Improve app responsiveness with Instruments",
         "url" : "\/documentation\/wwdc26-268-profile-fix-and-verify-improve-app-responsiveness-with-instruments\/"
       },
@@ -16248,7 +16248,7 @@
       },
       "wwdc26-324-meet-core-ai" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Meet Core AI",
         "url" : "\/documentation\/wwdc26-324-meet-core-ai\/"
       },
@@ -16308,7 +16308,7 @@
       },
       "wwdc26-343-explore-advanced-app-intents-features-for-siri-and-apple-intelligence" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Explore advanced App Intents features for Siri and Apple Intelligence",
         "url" : "\/documentation\/wwdc26-343-explore-advanced-app-intents-features-for-siri-and-apple-intelligence\/"
       },
