@@ -14744,7 +14744,7 @@
       },
       "wwdc24-10217-explore-swift-performance" : {
         "framework" : "swift",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Explore Swift performance",
         "url" : "\/documentation\/wwdc24-10217-explore-swift-performance\/"
       },
