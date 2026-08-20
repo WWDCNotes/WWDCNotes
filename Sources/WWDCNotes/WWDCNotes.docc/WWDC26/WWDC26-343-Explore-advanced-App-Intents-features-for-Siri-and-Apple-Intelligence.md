@@ -21,7 +21,7 @@ Polish how your app works with Siri using advanced App Intents APIs. Learn techn
 - Act on notifications, now playing or alarms
 
 ## Before Starting
-This talk extends mostly on things from <doc:WWDC24-10210-Bring-your-apps-core-features-to-users-with-App-Intents>. Check out this talk as well as <doc:WWDC25-244-Get-to-know-App-Intents> for more in-depth information and alternative/more standard ways.
+This talk extends mostly on things from <doc:WWDC26-240-Build-intelligent-Siri-experiences-with-App-Schemas>. Check out this talk – as well as <doc:WWDC25-244-Get-to-know-App-Intents> – for more in-depth information and alternative/more standard ways.
 
 ## Customize how Siri responds
 ### Custom Response when Action Performed
@@ -198,7 +198,7 @@ struct SearchAudioLibraryIntent {
 
 ### Onscreen Awareness
 - Improve onscreen awareness with `.userActivity` (one primary action) and `.appEntityIdentifier` (many items in one view)
-- Use `.appEntityIdentifier(forSelectionType:)` on lists to avoid attaching to every item
+- Use `.appEntityIdentifier(forSelectionType:)` on `List` to avoid attaching to every item
   - System fetches identifiers lazily and discover entities scrolled off screen
 
 ```swift

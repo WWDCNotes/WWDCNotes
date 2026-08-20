@@ -106,7 +106,6 @@ struct SendMessageIntent {
 
 ```swift
 // View annotations
-
 List {
     ForEach(messages) { message in
         MessageRow(message: message)
@@ -139,6 +138,8 @@ extension ContactEntity: Transferable {
     - Use [`IntentValueQuery`](https://developer.apple.com/documentation/appintents/intentvaluequery) to match with existing content of your app
     - Use `IntentValueRepresentation` for something new
 - `IntentValueQuery` conceptually similar to `EntityQuery`
+
+- Note: The [Apple docs note](https://developer.apple.com/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri#Support-conversions-between-your-app-entities-and-equivalent-system-types) that the import and export handling is only available when matching to [`IntentPerson`](https://developer.apple.com/documentation/appintents/intentperson), [`PlaceDescriptor`](https://developer.apple.com/documentation/geotoolbox/placedescriptor), or [`PersonNameComponents`](https://developer.apple.com/documentation/foundation/personnamecomponents).
 
 ### Example: Map incoming IntentPerson to existing ContactEntity
 ```swift
