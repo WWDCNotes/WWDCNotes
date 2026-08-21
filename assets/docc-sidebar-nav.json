@@ -15864,7 +15864,7 @@
       },
       "wwdc26-222-meet-the-new-metrickit" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Meet the new MetricKit",
         "url" : "\/documentation\/wwdc26-222-meet-the-new-metrickit\/"
       },
