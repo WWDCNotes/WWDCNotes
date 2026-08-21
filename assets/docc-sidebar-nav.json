@@ -16068,7 +16068,7 @@
       },
       "wwdc26-277-widgetkit-foundations" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "WidgetKit foundations",
         "url" : "\/documentation\/wwdc26-277-widgetkit-foundations\/"
       },
