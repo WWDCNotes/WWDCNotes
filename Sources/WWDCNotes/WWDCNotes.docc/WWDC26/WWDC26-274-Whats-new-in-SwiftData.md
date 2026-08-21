@@ -144,7 +144,7 @@ import SwiftData
 
 - Dynamically construct a conjunction or disjunction of subpredicates
   - Use [`Predicate(any:)`](https://developer.apple.com/documentation/foundation/predicate/init(any:)) if at least one subpredicate must be satisfied
-  - Use [`Predicate(all:)`](https://developer.apple.com/documentation/foundation/predicate/init(any:)) if all subpredicates must be satisfied
+  - Use [`Predicate(all:)`](https://developer.apple.com/documentation/foundation/predicate/init(all:)) if all subpredicates must be satisfied
 - Learn more in the [API proposal](https://forums.swift.org/t/pitch-initializers-for-joining-a-sequence-of-predicates/85652)
 
 ```swift
