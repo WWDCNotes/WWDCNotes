@@ -14,6 +14,11 @@ Discover how understanding disability can help you create better apps for everyo
 
 ## Key Takeaways
 
+- Designing for disability helps everyone
+- Disability arises from the inclusion gap
+- Support multiple senses and offer customization
+- Adopt Accessibility APIs and track inclusion debt
+
 ## Presenters
 - Chris Romney, Apple Design Team
 - Lisa Mirth, Apple Design Team
@@ -44,11 +49,36 @@ Discover how understanding disability can help you create better apps for everyo
 
 - "Nothing about us without us": involve members of the disability community to gain real insight instead of making assumptions
 
-## Pratical things make app more inclusive
+## Practical things to make an app more inclusive
 ### 1. Support Multiple senses
+- Let people get information and provide input in more than one way, so the app does not rely on a single sense
+  - e.g. captions give a visual way to access audio (and also help people who need to stay quiet)
+- **Accessibility Reader**: shows visual text, plays it aloud, and highlights words as they are read, combining sight and hearing
+- Check that people can use their different senses: sight, hearing, touch, voice, and cognitive skills
+
+@Image(source: "WWDC25-316-support-multiple-senses", alt: "Accessibility Reader showing text visually while highlighting words as they are read aloud")
 
 ### 2. Provide customization
+- Let people personalize the UI and interactions for each sense, so the app adapts to people rather than the other way around
+  - e.g. Accessibility Reader lets you adjust text size, colors, and fonts (including high-legibility characters)
 
-### 3. Adopt Aceessibility API
+@Image(source: "WWDC25-316-provide-customization", alt: "The same app offering both a data-rich layout and a simplified, minimal layout")
 
-### 4. Track inclusion dept
+### 3. Adopt Accessibility APIs
+- Adopt Apple's Accessibility APIs so your app works with the assistive technologies people rely on
+  - VoiceOver: add accessibility labels and actions so people can use the app without seeing the screen
+  - Switch / Voice Control: let people use a touchscreen without having to touch the screen
+  - Larger Text: scales text up to 3x, so add layout adjustments to keep it legible
+- Learn more: [developer.apple.com/accessibility](https://developer.apple.com/accessibility)
+
+@Image(source: "WWDC25-316-accessibility-apis", alt: "An app working with VoiceOver, Larger Text, and other assistive technologies")
+
+### 4. Track inclusion debt
+- Inclusion is a journey, not a one-time task
+  - gaps are normal, like technical debt ("inclusion debt")
+- Be aware of the gap so you can plan to close it, and treat it as an opportunity for creativity and innovation
+- Collaborate with people who have disabilities to discover and close the gap
+
+## Next Steps
+- Learn more about the Accessibility APIs: <doc:WWDC24-10073-Catch-up-on-accessibility-in-SwiftUI>
+- Highlight your app's accessibility on the App Store: <doc:WWDC25-224-Evaluate-your-app-for-Accessibility-Nutrition-Labels>
