@@ -6792,7 +6792,7 @@
       },
       "wwdc18-223-embracing-algorithms" : {
         "framework" : "docs",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Embracing Algorithms",
         "url" : "\/documentation\/wwdc18-223-embracing-algorithms\/"
       },
@@ -15500,7 +15500,7 @@
       },
       "wwdc25-316-principles-of-inclusive-app-design" : {
         "framework" : "design",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Principles of inclusive app design",
         "url" : "\/documentation\/wwdc25-316-principles-of-inclusive-app-design\/"
       },
@@ -15870,7 +15870,7 @@
       },
       "wwdc26-223-live-activities-essentials" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Live Activities essentials",
         "url" : "\/documentation\/wwdc26-223-live-activities-essentials\/"
       },
@@ -15900,7 +15900,7 @@
       },
       "wwdc26-232-run-local-agentic-ai-on-the-mac-using-mlx" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Run local agentic AI on the Mac using MLX",
         "url" : "\/documentation\/wwdc26-232-run-local-agentic-ai-on-the-mac-using-mlx\/"
       },
@@ -15972,7 +15972,7 @@
       },
       "wwdc26-253-meet-the-music-understanding-framework" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Meet the Music Understanding framework",
         "url" : "\/documentation\/wwdc26-253-meet-the-music-understanding-framework\/"
       },
@@ -16050,7 +16050,7 @@
       },
       "wwdc26-272-use-swiftui-with-appkit-and-uikit" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Use SwiftUI with AppKit and UIKit",
         "url" : "\/documentation\/wwdc26-272-use-swiftui-with-appkit-and-uikit\/"
       },
@@ -16074,7 +16074,7 @@
       },
       "wwdc26-278-modernize-your-uikit-app" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Modernize your UIKit app",
         "url" : "\/documentation\/wwdc26-278-modernize-your-uikit-app\/"
       },
@@ -16242,7 +16242,7 @@
       },
       "wwdc26-322-compose-advanced-graphics-effects-with-swiftui" : {
         "framework" : null,
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Compose advanced graphics effects with SwiftUI",
         "url" : "\/documentation\/wwdc26-322-compose-advanced-graphics-effects-with-swiftui\/"
       },
