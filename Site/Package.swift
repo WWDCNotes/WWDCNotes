@@ -6,6 +6,7 @@ let package = Package(
    platforms: [.macOS(.v26)],
    dependencies: [
       .package(path: "../../../../SiteKit"),
+      .package(url: "https://github.com/apple/swift-log.git", exact: "1.15.1"),
    ],
    targets: [
       .executableTarget(
