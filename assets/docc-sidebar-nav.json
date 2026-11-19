@@ -15320,7 +15320,7 @@
       },
       "wwdc25-282-make-your-uikit-app-more-flexible" : {
         "framework" : "docs",
-        "isStub" : true,
+        "isStub" : false,
         "title" : "Make your UIKit app more flexible",
         "url" : "\/documentation\/wwdc25-282-make-your-uikit-app-more-flexible\/"
       },
